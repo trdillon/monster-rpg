@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     public float moveSpeed;
     public LayerMask foregroundLayer;
+    public LayerMask fightgroundLayer;
 
     private bool isMoving;
     private Vector2 input;
@@ -60,6 +61,8 @@ public class PlayerController : MonoBehaviour
         transform.position = targetPos;
 
         isMoving = false;
+
+        CheckForEncounters();
     }
 
     private bool IsWalkable(Vector3 targetPos)
@@ -69,5 +72,16 @@ public class PlayerController : MonoBehaviour
             return false;
         }
         return true;
+    }
+
+    private void CheckForEncounters()
+    {
+        if (Physics2D.OverlapCircle(transform.position, 0.2f, fightgroundLayer) != null)
+        {
+            if (Random.Range(1, 101) <= 5) //TODO - decide the percentage of event triggers
+            {
+                Debug.Log("Encounter triggered."); //TODO - change this when battle system is implemented
+            }
+        }
     }
 }
