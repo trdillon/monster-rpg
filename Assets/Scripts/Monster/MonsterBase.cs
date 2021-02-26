@@ -25,6 +25,8 @@ public class MonsterBase : ScriptableObject
     [SerializeField] int spDefense;
     [SerializeField] int speed;
 
+    [SerializeField] List<LearnableMove> learnableMoves;
+
     public string Name
     {
         get { return name; }
@@ -77,5 +79,10 @@ public class MonsterBase : ScriptableObject
     public int Speed
     {
         get { return speed; }
+    }
+
+    public List<LearnableMove> LearnableMoves
+    {
+        get { return learnableMoves; }
     }
 }
