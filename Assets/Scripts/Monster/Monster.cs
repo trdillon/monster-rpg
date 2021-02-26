@@ -7,10 +7,28 @@ public class Monster
     MonsterBase monsterBase;
     int level;
 
+    public int CurrentHp { get; set; }
+
+    public List<Move> Moves { get; set; }
+
     public Monster(MonsterBase mBase, int mLvl)
     {
         monsterBase = mBase;
         level = mLvl;
+        CurrentHp = monsterBase.MaxHp;
+
+        // Generate move list
+        Moves = new List<Move>();
+        foreach (var move in monsterBase.LearnableMoves) //TODO - refactor this to account for optional learned moves or forgetting moves
+        {
+            if (move.LevelLearned <= level)
+            {
+                Moves.Add(new Move(move.Base));
+            }
+
+            if (Moves.Count >= 4)
+                break;
+        }
     }
 
     public int MaxHp
