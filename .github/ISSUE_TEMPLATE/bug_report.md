@@ -6,33 +6,44 @@ labels: bug
 assignees: ''
 
 ---
+<!-- Thank you for submitting a bug report! Please fill out the following sections -->
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+## Description
+<!-- Description of what the bug is. -->
 
-**To Reproduce**
-Steps to reproduce the behavior:
+#### Steps to Reproduce
+<!-- What steps to take to reproduce the behavior, please be specific -->
 1. Go to '...'
 2. Click on '....'
 3. Scroll down to '....'
 4. See error
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+#### Expected behavior
+<!-- What did you expect to happen? -->
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+#### Actual behavior
+<!-- What happened instead of the expected behavior? -->
 
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
+#### Screenshots
+<!-- Screenshots of the bug, if applicable -->
 
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
+### Configuration
+<!-- Please provide details of your config -->
 
-**Additional context**
-Add any other context about the problem here.
+**Build:**
+ - Build version: <!-- [e.g. 1042] -->
+ - Branch: <!-- [e.g. master] -->
+
+**Desktop:**
+ - OS: <!-- [e.g. iOS] -->
+ - Browser: <!-- [e.g. chrome, safari] -->
+ - Version: <!-- [e.g. 22] -->
+
+**Mobile:**
+ - Device: <!-- [e.g. iPhone6] -->
+ - OS: <!-- [e.g. iOS8.1] -->
+ - Browser: <!-- [e.g. stock browser, safari] -->
+ - Version: <!-- [e.g. 22] -->
+
+#### Additional context
+<!-- Add any other context about the problem here. -->
