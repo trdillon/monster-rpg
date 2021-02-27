@@ -6,15 +6,16 @@ labels: enhancement
 assignees: ''
 
 ---
+<!-- Thanks for submitting your feature request! Please fill out the following sections -->
 
-**Provide a description of the feature you are requesting**
-A clear and concise description of what the feature would be, how it should work, etc
+## Description
+<!-- What the feature would be, how it should work, etc -->
 
-**Propose a solution or implementation for this feature**
-A clear and concise description of how you intend to implement this feature
+## Solution
+<!-- How do you intend to implement this feature? -->
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
+### Alternatives
+<!-- Any alternative solutions or features you've considered. -->
 
-**Additional context**
-Add any other context or screenshots about the feature request here.
+### Additional Context
+<!-- Add any other context or screenshots about the feature request here. -->
