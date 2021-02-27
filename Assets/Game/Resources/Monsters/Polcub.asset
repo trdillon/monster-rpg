@@ -16,8 +16,8 @@ MonoBehaviour:
   description: A polar bear cub that is equally tough and clumsy. This curious cub
     has thick skin and fortitude for days. Typically a slow mover and not interested
     in creating conflict, but it isn't known to back down from any challenger.
-  frontSprite: {fileID: 0}
-  backSprite: {fileID: 0}
+  frontSprite: {fileID: 21300000, guid: 0b21f1bfd9b2b6048b4f8c2a8e9825c6, type: 3}
+  backSprite: {fileID: 21300000, guid: 1f16ea8ce4e96ff4588b09aaf95d7b55, type: 3}
   primaryType: 2
   secondaryType: 0
   maxHp: 44
@@ -26,10 +26,4 @@ MonoBehaviour:
   spAttack: 50
   spDefense: 64
   speed: 43
-  learnableMoves:
-  - moveBase: {fileID: 11400000, guid: a20f484b53130084c890b7cc758964de, type: 2}
-    levelLearned: 1
-  - moveBase: {fileID: 11400000, guid: b34583eea17426940a405184311529d5, type: 2}
-    levelLearned: 4
-  - moveBase: {fileID: 11400000, guid: 513a89e2ac183a94fb9780d6ae3789de, type: 2}
-    levelLearned: 7
+  learnableMoves: []

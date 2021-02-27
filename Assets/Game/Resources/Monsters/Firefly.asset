@@ -16,8 +16,8 @@ MonoBehaviour:
   description: A fire breathing bird that ironically cannot fly. A fast and ferocious
     attacker, usually the aggressor in the fight. While its attacks are deadly, it
     doesn't take much to put out Firefly's flame.
-  frontSprite: {fileID: 0}
-  backSprite: {fileID: 0}
+  frontSprite: {fileID: 21300000, guid: 488d3b71df625f642ba73eaccbaff701, type: 3}
+  backSprite: {fileID: 21300000, guid: ac6e9f5d214ff65428eeb9d967d55684, type: 3}
   primaryType: 3
   secondaryType: 0
   maxHp: 39
@@ -26,10 +26,4 @@ MonoBehaviour:
   spAttack: 60
   spDefense: 50
   speed: 65
-  learnableMoves:
-  - moveBase: {fileID: 11400000, guid: c277d99d2796e064f96a87aa08154662, type: 2}
-    levelLearned: 1
-  - moveBase: {fileID: 11400000, guid: 0d46fe406ab82d44fb379c4d9156b25c, type: 2}
-    levelLearned: 4
-  - moveBase: {fileID: 11400000, guid: d48926211c4fedc4a9d577586feba815, type: 2}
-    levelLearned: 7
+  learnableMoves: []
