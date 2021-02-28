@@ -59,9 +59,25 @@ public class Monster
         get { return Mathf.FloorToInt((Base.Speed * Level) / 100f) + 5; }
     }
 
-    public bool TakeDamage(Move move, Monster attacker)
+    public DamageDetails TakeDamage(Move move, Monster attacker)
     {
-        float modifiers = Random.Range(0.85f, 1f);
+        // critical hit chance is 6.25%
+        float critical = 1f;
+        if (Random.value * 100f <= 6.25f)
+            critical = 2f;
+
+        // type effectiveness per TypeChart
+        float type = TypeChart.GetEffectiveness(move.Base.Type, this.Base.PrimaryType) * TypeChart.GetEffectiveness(move.Base.Type, this.Base.SecondaryType);
+
+        var damageDetails = new DamageDetails()
+        {
+            Critical = critical,
+            TypeEffectiveness = type,
+            Downed = false
+        };
+
+        // damage calculation based on the original monster catching game's formula
+        float modifiers = Random.Range(0.85f, 1f) * type * critical;
         float a = (2 * attacker.Level + 10) / 250f;
         float d = a * move.Base.Power * ((float) attacker.Attack / Defense) + 2;
         int damage = Mathf.FloorToInt(d * modifiers);
@@ -70,9 +86,9 @@ public class Monster
         if (CurrentHp <= 0)
         {
             CurrentHp = 0;
-            return true;
+            damageDetails.Downed = true;
         }
-        return false;
+        return damageDetails;
     }
 
     public Move GetRandomMove()

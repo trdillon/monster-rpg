@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Tackle
   description: Tackles the opponent. Normal attack.
-  type: 1
+  type: 0
   power: 40
   accuracy: 100
   energy: 40

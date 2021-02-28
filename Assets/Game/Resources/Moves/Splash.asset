@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Splash
   description: Splashes the opponent with water. Aqua attack.
-  type: 2
+  type: 1
   power: 40
   accuracy: 100
   energy: 30

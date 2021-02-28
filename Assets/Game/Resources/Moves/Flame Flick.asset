@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Flame Flick
   description: Flicks the opponent with a flame. Ember attack with a chance to burn.
-  type: 3
+  type: 2
   power: 40
   accuracy: 100
   energy: 25

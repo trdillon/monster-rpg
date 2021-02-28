@@ -17,7 +17,7 @@ MonoBehaviour:
     with a good mix of speed and strength, it is a formidable foe for most creatures.
   frontSprite: {fileID: 21300000, guid: d5d9d46661269a94080001d9c969eca2, type: 3}
   backSprite: {fileID: 21300000, guid: 4d9bb1f4e241bb84b9bfaf1af4d1bbc2, type: 3}
-  primaryType: 4
+  primaryType: 3
   secondaryType: 0
   maxHp: 45
   attack: 49
@@ -27,8 +27,8 @@ MonoBehaviour:
   speed: 45
   learnableMoves:
   - moveBase: {fileID: 11400000, guid: c277d99d2796e064f96a87aa08154662, type: 2}
-    levelLearned: 0
+    levelLearned: 1
   - moveBase: {fileID: 11400000, guid: 0d46fe406ab82d44fb379c4d9156b25c, type: 2}
-    levelLearned: 0
+    levelLearned: 4
   - moveBase: {fileID: 11400000, guid: 79a2b519f50a22447a5178433c28e4f7, type: 2}
-    levelLearned: 0
+    levelLearned: 7

@@ -39,7 +39,6 @@ public class BattleSystem : MonoBehaviour
         dialogBox.SetMoveList(playerMonster.Monster.Moves);
 
         yield return dialogBox.TypeDialog($"You have encountered an enemy {enemyMonster.Monster.Base.Name}!");
-        yield return new WaitForSeconds(1f);
 
         PlayerAction();
     }
@@ -63,12 +62,12 @@ public class BattleSystem : MonoBehaviour
     {
         var move = playerMonster.Monster.Moves[currentMove];
         yield return dialogBox.TypeDialog($"{playerMonster.Monster.Base.Name} used {move.Base.Name}!");
-        yield return new WaitForSeconds(1f);
         //TODO - fix bug where player can attack repeatedly out of turn
-        bool isDowned = enemyMonster.Monster.TakeDamage(move, playerMonster.Monster);
+        var damageDetails = enemyMonster.Monster.TakeDamage(move, playerMonster.Monster);
         yield return enemyHUD.UpdateHP();
+        yield return ShowDamageDetails(damageDetails);
 
-        if (isDowned)
+        if (damageDetails.Downed)
         {
             yield return dialogBox.TypeDialog($"{enemyMonster.Monster.Base.Name} has been taken down!");
         }
@@ -83,12 +82,12 @@ public class BattleSystem : MonoBehaviour
         state = BattleState.EnemyMove;
         var move = enemyMonster.Monster.GetRandomMove();
         yield return dialogBox.TypeDialog($"{enemyMonster.Monster.Base.Name} used {move.Base.Name}!");
-        yield return new WaitForSeconds(1f);
 
-        bool isDowned = playerMonster.Monster.TakeDamage(move, enemyMonster.Monster);
+        var damageDetails = playerMonster.Monster.TakeDamage(move, enemyMonster.Monster);
         yield return playerHUD.UpdateHP();
+        yield return ShowDamageDetails(damageDetails);
 
-        if (isDowned)
+        if (damageDetails.Downed)
         {
             yield return dialogBox.TypeDialog($"{playerMonster.Monster.Base.Name} has been taken down!");
         }
@@ -96,6 +95,17 @@ public class BattleSystem : MonoBehaviour
         {
             PlayerAction();
         }
+    }
+
+    IEnumerator ShowDamageDetails(DamageDetails damageDetails)
+    {
+        if (damageDetails.Critical > 1f)
+            yield return dialogBox.TypeDialog("That was a critical hit!");
+
+        if (damageDetails.TypeEffectiveness > 1f)
+            yield return dialogBox.TypeDialog("That attack type is very strong!");
+        else if (damageDetails.TypeEffectiveness < 1f)
+            yield return dialogBox.TypeDialog("That attack type is not very strong!");
     }
 
     void HandleActionSelection()

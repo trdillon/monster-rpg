@@ -29,6 +29,8 @@ public class BattleDialogBox : MonoBehaviour
             dialogText.text += letter;
             yield return new WaitForSeconds(1f / lettersPerSecond);
         }
+        // give the player time to read the dialog
+        yield return new WaitForSeconds(1f);
     }
 
     public void EnableDialogText(bool enabled)
@@ -79,7 +81,7 @@ public class BattleDialogBox : MonoBehaviour
             if (i < moves.Count)
                 moveTexts[i].text = moves[i].Base.Name;
             else
-                moveTexts[i].text = "---";
+                moveTexts[i].text = "-";
         }
     }
 }

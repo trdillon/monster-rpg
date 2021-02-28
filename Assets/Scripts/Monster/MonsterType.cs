@@ -4,15 +4,15 @@ using UnityEngine;
 
 public enum MonsterType
 {
-   None,
-   Normal,
-   Aqua,
-   Ember,
-   Earth,
-   Shock,
-   Air,
-   Spirit,
-   Force,
-   Shadow,
-   Light
+    Normal,
+    Aqua,
+    Ember,
+    Earth,
+    Shock,
+    Air,
+    Spirit,
+    Force,
+    Shadow,
+    Light,
+    None
 }
