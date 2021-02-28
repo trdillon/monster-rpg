@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Roar
   description: Lets out a bellowing roar, raising the monster's Attack.
-  type: 1
+  type: 0
   power: 0
   accuracy: 0
   energy: 30

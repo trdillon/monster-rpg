@@ -45,4 +45,21 @@ public class MoveBase : ScriptableObject
     {
         get { return energy; }
     }
+
+    public bool IsSpecial
+    {
+        get
+        {
+            if (type == MonsterType.Air || type == MonsterType.Aqua || type == MonsterType.Earth ||
+                type == MonsterType.Ember || type == MonsterType.Force || type == MonsterType.Light ||
+                type == MonsterType.Shadow || type == MonsterType.Shock || type == MonsterType.Spirit)
+            {
+                return true;
+            }
+            else
+            { 
+                return false;
+            }
+        }
+    }
 }

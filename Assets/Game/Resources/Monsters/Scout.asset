@@ -15,9 +15,9 @@ MonoBehaviour:
   name: Scout
   description: A forest wolf that excels at tracking and hunting. A balanced fighter
     with a good mix of speed and strength, it is a formidable foe for most creatures.
-  frontSprite: {fileID: 0}
-  backSprite: {fileID: 0}
-  primaryType: 4
+  frontSprite: {fileID: 21300000, guid: d5d9d46661269a94080001d9c969eca2, type: 3}
+  backSprite: {fileID: 21300000, guid: 4d9bb1f4e241bb84b9bfaf1af4d1bbc2, type: 3}
+  primaryType: 3
   secondaryType: 0
   maxHp: 45
   attack: 49

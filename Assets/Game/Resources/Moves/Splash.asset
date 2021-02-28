@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7872732f20cf1c346868d61da89a7f54, type: 3}
   m_Name: Splash
   m_EditorClassIdentifier: 
-  name: 
+  name: Splash
   description: Splashes the opponent with water. Aqua attack.
-  type: 2
+  type: 1
   power: 40
   accuracy: 100
   energy: 30
