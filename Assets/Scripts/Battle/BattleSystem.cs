@@ -62,6 +62,8 @@ public class BattleSystem : MonoBehaviour
 
     IEnumerator PerformPlayerMove()
     {
+        state = BattleState.Busy;
+
         var move = playerMonster.Monster.Moves[currentMove];
         move.Energy--;
         yield return dialogBox.TypeDialog($"{playerMonster.Monster.Base.Name} used {move.Base.Name}!");
