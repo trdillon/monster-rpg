@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,16 +10,17 @@ public class BattleSystem : MonoBehaviour
     [SerializeField] BattleHUD playerHUD;
     [SerializeField] BattleHUD enemyHUD;
     [SerializeField] BattleDialogBox dialogBox;
+    public event Action<bool> OnBattleFinish;
     BattleState state;
     int currentAction;
     int currentMove;
 
-    private void Start()
+    public void StartBattle()
     {
         StartCoroutine(SetupBattle());
     }
 
-    private void Update()
+    public void HandleUpdate()
     {
         if (state == BattleState.PlayerAction)
         {
@@ -76,6 +78,8 @@ public class BattleSystem : MonoBehaviour
         {
             enemyMonster.PlayDownedAnimation();
             yield return dialogBox.TypeDialog($"{enemyMonster.Monster.Base.Name} has been taken down!");
+            yield return new WaitForSeconds(2f);
+            OnBattleFinish(true); // true for won battle
         }
         else
         {
@@ -101,6 +105,8 @@ public class BattleSystem : MonoBehaviour
         {
             playerMonster.PlayDownedAnimation();
             yield return dialogBox.TypeDialog($"{playerMonster.Monster.Base.Name} has been taken down!");
+            yield return new WaitForSeconds(2f);
+            OnBattleFinish(false); // false for lost battle
         }
         else
         {

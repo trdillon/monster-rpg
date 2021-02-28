@@ -33,6 +33,7 @@ public class BattleMonster : MonoBehaviour
         else
             image.sprite = Monster.Base.FrontSprite;
 
+        image.color = originalColor;
         PlayBattleStartAnimation();
     }
 
