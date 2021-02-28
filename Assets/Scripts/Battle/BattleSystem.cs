@@ -63,6 +63,7 @@ public class BattleSystem : MonoBehaviour
     IEnumerator PerformPlayerMove()
     {
         var move = playerMonster.Monster.Moves[currentMove];
+        move.Energy--;
         yield return dialogBox.TypeDialog($"{playerMonster.Monster.Base.Name} used {move.Base.Name}!");
 
         playerMonster.PlayAttackAnimation();
@@ -90,7 +91,9 @@ public class BattleSystem : MonoBehaviour
     IEnumerator PerformEnemyMove()
     {
         state = BattleState.EnemyMove;
+
         var move = enemyMonster.Monster.GetRandomMove();
+        move.Energy--;
         yield return dialogBox.TypeDialog($"{enemyMonster.Monster.Base.Name} used {move.Base.Name}!");
 
         enemyMonster.PlayAttackAnimation();
