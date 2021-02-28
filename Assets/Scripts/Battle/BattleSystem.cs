@@ -62,6 +62,11 @@ public class BattleSystem : MonoBehaviour
     {
         var move = playerMonster.Monster.Moves[currentMove];
         yield return dialogBox.TypeDialog($"{playerMonster.Monster.Base.Name} used {move.Base.Name}!");
+
+        playerMonster.PlayAttackAnimation();
+        yield return new WaitForSeconds(0.5f);
+        enemyMonster.PlayHitAnimation();
+
         //TODO - fix bug where player can attack repeatedly out of turn
         var damageDetails = enemyMonster.Monster.TakeDamage(move, playerMonster.Monster);
         yield return enemyHUD.UpdateHP();
@@ -69,6 +74,7 @@ public class BattleSystem : MonoBehaviour
 
         if (damageDetails.Downed)
         {
+            enemyMonster.PlayDownedAnimation();
             yield return dialogBox.TypeDialog($"{enemyMonster.Monster.Base.Name} has been taken down!");
         }
         else
@@ -83,12 +89,17 @@ public class BattleSystem : MonoBehaviour
         var move = enemyMonster.Monster.GetRandomMove();
         yield return dialogBox.TypeDialog($"{enemyMonster.Monster.Base.Name} used {move.Base.Name}!");
 
+        enemyMonster.PlayAttackAnimation();
+        yield return new WaitForSeconds(0.5f);
+        playerMonster.PlayHitAnimation();
+
         var damageDetails = playerMonster.Monster.TakeDamage(move, enemyMonster.Monster);
         yield return playerHUD.UpdateHP();
         yield return ShowDamageDetails(damageDetails);
 
         if (damageDetails.Downed)
         {
+            playerMonster.PlayDownedAnimation();
             yield return dialogBox.TypeDialog($"{playerMonster.Monster.Base.Name} has been taken down!");
         }
         else
