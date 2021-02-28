@@ -59,6 +59,45 @@ public class BattleSystem : MonoBehaviour
         dialogBox.EnableMoveSelector(true);
     }
 
+    IEnumerator PerformPlayerMove()
+    {
+        var move = playerMonster.Monster.Moves[currentMove];
+        yield return dialogBox.TypeDialog($"{playerMonster.Monster.Base.Name} used {move.Base.Name}!");
+        yield return new WaitForSeconds(1f);
+        //TODO - fix bug where player can attack repeatedly out of turn
+        bool isDowned = enemyMonster.Monster.TakeDamage(move, playerMonster.Monster);
+        yield return enemyHUD.UpdateHP();
+
+        if (isDowned)
+        {
+            yield return dialogBox.TypeDialog($"{enemyMonster.Monster.Base.Name} has been taken down!");
+        }
+        else
+        {
+            StartCoroutine(PerformEnemyMove());
+        }
+    }
+
+    IEnumerator PerformEnemyMove()
+    {
+        state = BattleState.EnemyMove;
+        var move = enemyMonster.Monster.GetRandomMove();
+        yield return dialogBox.TypeDialog($"{enemyMonster.Monster.Base.Name} used {move.Base.Name}!");
+        yield return new WaitForSeconds(1f);
+
+        bool isDowned = playerMonster.Monster.TakeDamage(move, enemyMonster.Monster);
+        yield return playerHUD.UpdateHP();
+
+        if (isDowned)
+        {
+            yield return dialogBox.TypeDialog($"{playerMonster.Monster.Base.Name} has been taken down!");
+        }
+        else
+        {
+            PlayerAction();
+        }
+    }
+
     void HandleActionSelection()
     {
         if (Input.GetKeyDown(KeyCode.DownArrow))
@@ -112,5 +151,12 @@ public class BattleSystem : MonoBehaviour
         }
 
         dialogBox.UpdateMoveSelection(currentMove, playerMonster.Monster.Moves[currentMove]);
+
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            dialogBox.EnableMoveSelector(false);
+            dialogBox.EnableDialogText(true);
+            StartCoroutine(PerformPlayerMove());
+        }
     }
 }

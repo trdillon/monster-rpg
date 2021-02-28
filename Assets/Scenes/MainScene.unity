@@ -3396,7 +3396,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monsterBase: {fileID: 11400000, guid: 037162b05ccdadf43a507fd23d5b7d64, type: 2}
-  level: 7
+  level: 9
   isPlayerMonster: 1
 --- !u!1 &1338626718
 GameObject:
@@ -4193,7 +4193,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monsterBase: {fileID: 11400000, guid: 08fe71a8bca62d0468ada7da52ccd5a7, type: 2}
-  level: 5
+  level: 7
   isPlayerMonster: 0
 --- !u!1 &1996428039
 GameObject:
