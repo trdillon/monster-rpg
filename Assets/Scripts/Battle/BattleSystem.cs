@@ -1,23 +1,22 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BattleSystem : MonoBehaviour
 {
     [SerializeField] BattleMonster playerMonster;
     [SerializeField] BattleMonster enemyMonster;
-    [SerializeField] BattleHUD playerHUD;
-    [SerializeField] BattleHUD enemyHUD;
     [SerializeField] BattleDialogBox dialogBox;
     [SerializeField] PartyScreen partyScreen;
-    public event Action<bool> OnBattleFinish;
+
+    BattleState state;
     MonsterParty playerParty;
     Monster wildMonster;
-    BattleState state;
     int currentAction;
     int currentMove;
     int currentMember;
+
+    public event Action<bool> OnBattleOver;
 
     public void StartBattle(MonsterParty playerParty, Monster wildMonster)
     {
@@ -28,11 +27,11 @@ public class BattleSystem : MonoBehaviour
 
     public void HandleUpdate()
     {
-        if (state == BattleState.PlayerAction)
+        if (state == BattleState.ActionSelection)
         {
             HandleActionSelection();
         }
-        else if (state == BattleState.PlayerMove)
+        else if (state == BattleState.MoveSelection)
         {
             HandleMoveSelection();
         }
@@ -46,25 +45,25 @@ public class BattleSystem : MonoBehaviour
     {
         playerMonster.Setup(playerParty.GetHealthyMonster()); //TODO - handle setup with no healthy monsters
         enemyMonster.Setup(wildMonster);
-        playerHUD.SetData(playerMonster.Monster);
-        enemyHUD.SetData(enemyMonster.Monster);
         partyScreen.Init();
         dialogBox.SetMoveList(playerMonster.Monster.Moves);
 
         yield return dialogBox.TypeDialog($"You have encountered an enemy {enemyMonster.Monster.Base.Name}!");
-        PlayerAction();
+        ActionSelection();
     }
 
-    void PlayerAction()
+    void ActionSelection()
     {
-        state = BattleState.PlayerAction;
+        state = BattleState.ActionSelection;
+
         dialogBox.SetDialog("Select an action:");
         dialogBox.EnableActionSelector(true);
     }
 
-    void PlayerMove()
+    void MoveSelection()
     {
-        state = BattleState.PlayerMove;
+        state = BattleState.MoveSelection;
+
         dialogBox.EnableDialogText(false);
         dialogBox.EnableActionSelector(false);
         dialogBox.EnableMoveSelector(true);
@@ -73,78 +72,53 @@ public class BattleSystem : MonoBehaviour
     void OpenPartyScreen()
     {
         state = BattleState.PartyScreen;
+
         partyScreen.SetPartyData(playerParty.Monsters);
         partyScreen.gameObject.SetActive(true);
     }
 
-    IEnumerator PerformPlayerMove()
+    IEnumerator PlayerMove()
     {
-        state = BattleState.Busy;
+        state = BattleState.UseMove;
 
         var move = playerMonster.Monster.Moves[currentMove];
-        move.Energy--;
-        yield return dialogBox.TypeDialog($"{playerMonster.Monster.Base.Name} used {move.Base.Name}!");
+        yield return UseMove(playerMonster, enemyMonster, move);
 
-        playerMonster.PlayAttackAnimation();
-        yield return new WaitForSeconds(0.5f);
-        enemyMonster.PlayHitAnimation();
-
-        //TODO - fix bug where player can attack repeatedly out of turn
-        var damageDetails = enemyMonster.Monster.TakeDamage(move, playerMonster.Monster);
-        yield return enemyHUD.UpdateHP();
-        yield return ShowDamageDetails(damageDetails);
-
-        if (damageDetails.Downed)
-        {
-            enemyMonster.PlayDownedAnimation();
-            yield return dialogBox.TypeDialog($"{enemyMonster.Monster.Base.Name} has been taken down!");
-            yield return dialogBox.TypeDialog($"You have won the battle!");
-            yield return new WaitForSeconds(2f);
-            OnBattleFinish(true); // true for won battle
-        }
-        else
-        {
-            StartCoroutine(PerformEnemyMove());
-        }
+        if (state == BattleState.UseMove)
+            StartCoroutine(EnemyMove());
     }
 
-    IEnumerator PerformEnemyMove()
+    IEnumerator EnemyMove()
     {
-        state = BattleState.EnemyMove;
+        state = BattleState.UseMove;
 
         var move = enemyMonster.Monster.GetRandomMove();
+        yield return UseMove(enemyMonster, playerMonster, move);
+
+        if (state == BattleState.UseMove)
+            ActionSelection();
+    }
+
+    IEnumerator UseMove(BattleMonster attackingMonster, BattleMonster defendingMonster, Move move)
+    {
         move.Energy--;
-        yield return dialogBox.TypeDialog($"{enemyMonster.Monster.Base.Name} used {move.Base.Name}!");
+        yield return dialogBox.TypeDialog($"{attackingMonster.Monster.Base.Name} used {move.Base.Name}!");
 
-        enemyMonster.PlayAttackAnimation();
+        attackingMonster.PlayAttackAnimation();
         yield return new WaitForSeconds(0.5f);
-        playerMonster.PlayHitAnimation();
+        defendingMonster.PlayHitAnimation();
 
-        var damageDetails = playerMonster.Monster.TakeDamage(move, enemyMonster.Monster);
-        yield return playerHUD.UpdateHP();
+        var damageDetails = defendingMonster.Monster.TakeDamage(move, attackingMonster.Monster);
+        yield return defendingMonster.Hud.UpdateHP();
         yield return ShowDamageDetails(damageDetails);
 
         if (damageDetails.Downed)
         {
-            playerMonster.PlayDownedAnimation();
-            yield return dialogBox.TypeDialog($"{playerMonster.Monster.Base.Name} has been taken down!");
+            defendingMonster.PlayDownedAnimation();
+            yield return dialogBox.TypeDialog($"{defendingMonster.Monster.Base.Name} has been taken down!");
             yield return new WaitForSeconds(2f);
 
-            var nextMonster = playerParty.GetHealthyMonster();
-            if (nextMonster != null)
-            {
-                OpenPartyScreen();
-            }
-            else
-            {
-                yield return dialogBox.TypeDialog($"You have lost the battle!");
-                yield return new WaitForSeconds(2f);
-                OnBattleFinish(false); // false for lost battle
-            }
-        }
-        else
-        {
-            PlayerAction();
+            CheckIfBattleIsOver(defendingMonster);
         }
     }
 
@@ -168,11 +142,31 @@ public class BattleSystem : MonoBehaviour
             yield return new WaitForSeconds(2f);
         }
         playerMonster.Setup(newMonster);
-        playerHUD.SetData(newMonster);
         dialogBox.SetMoveList(newMonster.Moves);
         yield return dialogBox.TypeDialog($"You have switched to {newMonster.Base.Name}!");
 
-        StartCoroutine(PerformEnemyMove());
+        StartCoroutine(EnemyMove());
+    }
+
+    void CheckIfBattleIsOver(BattleMonster downedMonster)
+    {
+        if (downedMonster.IsPlayerMonster)
+        {
+            var nextMonster = playerParty.GetHealthyMonster();
+            if (nextMonster != null)
+                OpenPartyScreen();
+            else
+                BattleOver(false); // false for lost battle
+        }
+        else
+            BattleOver(true); // true for won battle
+    }
+
+    void BattleOver(bool won)
+    {
+        state = BattleState.BattleOver;
+
+        OnBattleOver(won);
     }
 
     void HandleActionSelection()
@@ -195,7 +189,7 @@ public class BattleSystem : MonoBehaviour
             if (currentAction == 0)
             {
                 // Fight
-                PlayerMove();
+                MoveSelection();
             }
             else if (currentAction == 1)
             {
@@ -232,13 +226,13 @@ public class BattleSystem : MonoBehaviour
         {
             dialogBox.EnableMoveSelector(false);
             dialogBox.EnableDialogText(true);
-            StartCoroutine(PerformPlayerMove());
+            StartCoroutine(PlayerMove());
         }
         else if (Input.GetKeyDown(KeyCode.X))
         {
             dialogBox.EnableMoveSelector(false);
             dialogBox.EnableDialogText(true);
-            PlayerAction();
+            ActionSelection();
         }
     }
 
@@ -272,14 +266,14 @@ public class BattleSystem : MonoBehaviour
             }
 
             state = BattleState.Busy;
-            partyScreen.gameObject.SetActive(false);
 
+            partyScreen.gameObject.SetActive(false);
             StartCoroutine(SwitchMonster(selectedMember));
         }
         else if (Input.GetKeyDown(KeyCode.X))
         {
             partyScreen.gameObject.SetActive(false);
-            PlayerAction();
+            ActionSelection();
         }
     }
 }

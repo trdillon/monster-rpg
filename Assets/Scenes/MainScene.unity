@@ -612,13 +612,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dbc970c53fe4fb4db64554b34a2489c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
   foregroundLayer:
     serializedVersion: 2
     m_Bits: 64
   fightgroundLayer:
     serializedVersion: 2
     m_Bits: 128
+  moveSpeed: 5
 --- !u!95 &225907025
 Animator:
   serializedVersion: 3
@@ -4116,6 +4116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayerMonster: 1
+  hud: {fileID: 1279435897}
 --- !u!1001 &1315709970
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4273,8 +4274,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerMonster: {fileID: 1303786886}
   enemyMonster: {fileID: 1978073289}
-  playerHUD: {fileID: 1279435897}
-  enemyHUD: {fileID: 1482348519}
   dialogBox: {fileID: 2146497624}
   partyScreen: {fileID: 316494955}
 --- !u!1 &1347669708
@@ -5147,6 +5146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayerMonster: 0
+  hud: {fileID: 1482348519}
 --- !u!1 &1996428039
 GameObject:
   m_ObjectHideFlags: 0

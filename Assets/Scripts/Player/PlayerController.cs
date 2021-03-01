@@ -1,16 +1,17 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float moveSpeed;
+    private Animator animator;
+    private Vector2 input;
+    private bool isMoving;
+
     public LayerMask foregroundLayer;
     public LayerMask fightgroundLayer;
-    private bool isMoving;
-    private Vector2 input;
-    private Animator animator;
+    public float moveSpeed;
+
     public event Action OnEncounter;
 
     private void Awake()
@@ -54,10 +55,9 @@ public class PlayerController : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, targetPos, moveSpeed * Time.deltaTime);
             yield return null;
         }
+
         transform.position = targetPos;
-
         isMoving = false;
-
         CheckForEncounters();
     }
 
@@ -74,7 +74,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Physics2D.OverlapCircle(transform.position, 0.2f, fightgroundLayer) != null)
         {
-            if (UnityEngine.Random.Range(1, 101) <= 5) //TODO - decide the percentage of event triggers
+            if (UnityEngine.Random.Range(1, 101) <= 7) //TODO - decide the percentage of event triggers
             {
                 animator.SetBool("isMoving", false);
                 OnEncounter();

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GameController : MonoBehaviour
@@ -7,12 +5,13 @@ public class GameController : MonoBehaviour
     [SerializeField] PlayerController playerController;
     [SerializeField] BattleSystem battleSystem;
     [SerializeField] Camera worldCamera;
+
     GameState state;
 
     private void Start()
     {
         playerController.OnEncounter += StartBattle;
-        battleSystem.OnBattleFinish += EndBattle;
+        battleSystem.OnBattleOver += EndBattle;
     }
 
     private void Update()
@@ -38,6 +37,7 @@ public class GameController : MonoBehaviour
     void StartBattle()
     {
         state = GameState.Battle;
+
         battleSystem.gameObject.SetActive(true);
         worldCamera.gameObject.SetActive(false);
 
@@ -50,6 +50,7 @@ public class GameController : MonoBehaviour
     void EndBattle(bool won)
     {
         state = GameState.World;
+
         battleSystem.gameObject.SetActive(false);
         worldCamera.gameObject.SetActive(true);
     }
