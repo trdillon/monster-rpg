@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Move", menuName = "Monster/Create a new move")]
@@ -18,38 +16,30 @@ public class MoveBase : ScriptableObject
     [SerializeField] int accuracy;
     [SerializeField] int energy;
 
-    public string Name
-    {
+    public string Name {
         get { return name; }
     }
 
-    public string Description
-    {
+    public string Description {
         get { return description; }
     }
 
-    public MonsterType Type
-    {
+    public MonsterType Type {
         get { return type; }
     }
 
-    public int Power
-    {
+    public int Power {
         get { return power; }
     }
-    public int Accuracy
-    {
+    public int Accuracy {
         get { return accuracy; }
     }
-    public int Energy
-    {
+    public int Energy {
         get { return energy; }
     }
 
-    public bool IsSpecial
-    {
-        get
-        {
+    public bool IsSpecial {
+        get {
             if (type == MonsterType.Air || type == MonsterType.Aqua || type == MonsterType.Earth ||
                 type == MonsterType.Ember || type == MonsterType.Force || type == MonsterType.Light ||
                 type == MonsterType.Shadow || type == MonsterType.Shock || type == MonsterType.Spirit)

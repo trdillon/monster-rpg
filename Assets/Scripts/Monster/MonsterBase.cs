@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -27,62 +26,55 @@ public class MonsterBase : ScriptableObject
 
     [SerializeField] List<LearnableMove> learnableMoves;
 
-    public string Name
-    {
+    public string Name {
         get { return name; }
     }
 
-    public string Description
-    {
+    public string Description {
         get { return description; }
     }
 
-    public Sprite FrontSprite
-    {
+    public Sprite FrontSprite {
         get { return frontSprite; }
     }
 
-    public Sprite BackSprite
-    {
+    public Sprite BackSprite {
         get { return backSprite; }
     }
 
-    public MonsterType PrimaryType
-    {
+    public MonsterType PrimaryType {
         get { return primaryType; }
     }
-    public MonsterType SecondaryType
-    {
+
+    public MonsterType SecondaryType {
         get { return secondaryType; }
     }
 
-    public int MaxHp
-    {
+    public int MaxHp {
         get { return maxHp; }
     }
-    public int Attack
-    {
+    
+    public int Attack {
         get { return attack; }
     }
-    public int Defense
-    {
+    
+    public int Defense {
         get { return defense; }
     }
-    public int SpAttack
-    {
+    
+    public int SpAttack {
         get { return spAttack; }
     }
-    public int SpDefense
-    {
+    
+    public int SpDefense {
         get { return spDefense; }
     }
-    public int Speed
-    {
+    
+    public int Speed {
         get { return speed; }
     }
 
-    public List<LearnableMove> LearnableMoves
-    {
+    public List<LearnableMove> LearnableMoves {
         get { return learnableMoves; }
     }
 }

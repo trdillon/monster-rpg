@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
@@ -7,11 +5,19 @@ using DG.Tweening;
 public class BattleMonster : MonoBehaviour
 {
     [SerializeField] bool isPlayerMonster;
+    [SerializeField] BattleHUD hud;
+
     Image image;
     Vector3 originalPos;
     Color originalColor;
 
     public Monster Monster { get; set; }
+    public bool IsPlayerMonster { 
+        get { return isPlayerMonster; } 
+    }
+    public BattleHUD Hud {
+        get { return hud; }
+    }
 
     private void Awake()
     {
@@ -29,6 +35,7 @@ public class BattleMonster : MonoBehaviour
         else
             image.sprite = Monster.Base.FrontSprite;
 
+        hud.SetData(monster);
         image.color = originalColor;
         PlayBattleStartAnimation();
     }

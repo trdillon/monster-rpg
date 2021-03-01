@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,21 +6,41 @@ public class Monster
 {
     [SerializeField] MonsterBase _base;
     [SerializeField] int level;
-    public MonsterBase Base {
-        get
-        {
-            return _base;
-        }
-    }
-    public int Level {
-        get
-        {
-            return level;
-        }
-    }
+    
     public int CurrentHp { get; set; }
     public List<Move> Moves { get; set; }
+    
+    public MonsterBase Base {
+        get { return _base; }
+    }
+    public int Level {
+        get { return level; }
+    }
 
+    public int MaxHp {
+        get { return Mathf.FloorToInt((Base.MaxHp * Level) / 100f) + 10; }
+    }
+
+    public int Attack {
+        get { return Mathf.FloorToInt((Base.Attack * Level) / 100f) + 5; }
+    }
+
+    public int Defense {
+        get { return Mathf.FloorToInt((Base.Defense * Level) / 100f) + 5; }
+    }
+
+    public int SpAttack {
+        get { return Mathf.FloorToInt((Base.SpAttack * Level) / 100f) + 5; }
+    }
+
+    public int SpDefense {
+        get { return Mathf.FloorToInt((Base.SpDefense * Level) / 100f) + 5; }
+    }
+
+    public int Speed {
+        get { return Mathf.FloorToInt((Base.Speed * Level) / 100f) + 5; }
+    }
+    
     public void Init()
     {
         CurrentHp = MaxHp;
@@ -38,36 +57,6 @@ public class Monster
             if (Moves.Count >= 4)
                 break;
         }
-    }
-
-    public int MaxHp
-    {
-        get { return Mathf.FloorToInt((Base.MaxHp * Level) / 100f) + 10; }
-    }
-
-    public int Attack
-    {
-        get { return Mathf.FloorToInt((Base.Attack * Level) / 100f) + 5; }
-    }
-
-    public int Defense
-    {
-        get { return Mathf.FloorToInt((Base.Defense * Level) / 100f) + 5; }
-    }
-
-    public int SpAttack
-    {
-        get { return Mathf.FloorToInt((Base.SpAttack * Level) / 100f) + 5; }
-    }
-
-    public int SpDefense
-    {
-        get { return Mathf.FloorToInt((Base.SpDefense * Level) / 100f) + 5; }
-    }
-
-    public int Speed
-    {
-        get { return Mathf.FloorToInt((Base.Speed * Level) / 100f) + 5; }
     }
 
     public DamageDetails TakeDamage(Move move, Monster attacker)
