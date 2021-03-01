@@ -11,12 +11,16 @@ public class BattleSystem : MonoBehaviour
     [SerializeField] BattleHUD enemyHUD;
     [SerializeField] BattleDialogBox dialogBox;
     public event Action<bool> OnBattleFinish;
+    MonsterParty playerParty;
+    Monster wildMonster;
     BattleState state;
     int currentAction;
     int currentMove;
 
-    public void StartBattle()
+    public void StartBattle(MonsterParty playerParty, Monster wildMonster)
     {
+        this.playerParty = playerParty;
+        this.wildMonster = wildMonster;
         StartCoroutine(SetupBattle());
     }
 
@@ -34,14 +38,13 @@ public class BattleSystem : MonoBehaviour
 
     public IEnumerator SetupBattle()
     {
-        playerMonster.Setup();
-        enemyMonster.Setup();
+        playerMonster.Setup(playerParty.GetHealthyMonster()); //TODO - handle setup with no healthy monsters
+        enemyMonster.Setup(wildMonster);
         playerHUD.SetData(playerMonster.Monster);
         enemyHUD.SetData(enemyMonster.Monster);
         dialogBox.SetMoveList(playerMonster.Monster.Moves);
 
         yield return dialogBox.TypeDialog($"You have encountered an enemy {enemyMonster.Monster.Base.Name}!");
-
         PlayerAction();
     }
 
@@ -81,6 +84,7 @@ public class BattleSystem : MonoBehaviour
         {
             enemyMonster.PlayDownedAnimation();
             yield return dialogBox.TypeDialog($"{enemyMonster.Monster.Base.Name} has been taken down!");
+            yield return dialogBox.TypeDialog($"You have won the battle!");
             yield return new WaitForSeconds(2f);
             OnBattleFinish(true); // true for won battle
         }
@@ -111,7 +115,23 @@ public class BattleSystem : MonoBehaviour
             playerMonster.PlayDownedAnimation();
             yield return dialogBox.TypeDialog($"{playerMonster.Monster.Base.Name} has been taken down!");
             yield return new WaitForSeconds(2f);
-            OnBattleFinish(false); // false for lost battle
+
+            var nextMonster = playerParty.GetHealthyMonster();
+            if (nextMonster != null)
+            {
+                playerMonster.Setup(nextMonster);
+                playerHUD.SetData(nextMonster);
+                dialogBox.SetMoveList(nextMonster.Moves);
+
+                yield return dialogBox.TypeDialog($"You have switched to {nextMonster.Base.Name}!");
+                PlayerAction();
+            }
+            else
+            {
+                yield return dialogBox.TypeDialog($"You have lost the battle!");
+                yield return new WaitForSeconds(2f);
+                OnBattleFinish(false); // false for lost battle
+            }
         }
         else
         {

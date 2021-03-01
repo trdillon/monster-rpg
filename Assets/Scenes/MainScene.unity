@@ -526,6 +526,7 @@ GameObject:
   - component: {fileID: 225907022}
   - component: {fileID: 225907024}
   - component: {fileID: 225907025}
+  - component: {fileID: 225907026}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -637,6 +638,23 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &225907026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225907021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abcb05ef3dd8d0e4cae1c3f241d6346d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monsters:
+  - _base: {fileID: 11400000, guid: 037162b05ccdadf43a507fd23d5b7d64, type: 2}
+    level: 7
+  - _base: {fileID: 11400000, guid: 875c84c591e13614ca6291675fe33305, type: 2}
+    level: 4
 --- !u!1 &239425615
 GameObject:
   m_ObjectHideFlags: 0
@@ -2159,6 +2177,7 @@ GameObject:
   m_Component:
   - component: {fileID: 588867496}
   - component: {fileID: 588867495}
+  - component: {fileID: 588867497}
   m_Layer: 0
   m_Name: Grid
   m_TagString: Untagged
@@ -2195,6 +2214,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &588867497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588867494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70e143b5483023840b4fc43039c89fd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wildMonsters:
+  - _base: {fileID: 11400000, guid: 08fe71a8bca62d0468ada7da52ccd5a7, type: 2}
+    level: 5
+  - _base: {fileID: 11400000, guid: 037162b05ccdadf43a507fd23d5b7d64, type: 2}
+    level: 5
+  - _base: {fileID: 11400000, guid: 875c84c591e13614ca6291675fe33305, type: 2}
+    level: 5
 --- !u!1 &779119256
 GameObject:
   m_ObjectHideFlags: 0
@@ -3396,8 +3434,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05a13cb8339452c4d87c44e3cf9134bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monsterBase: {fileID: 11400000, guid: 037162b05ccdadf43a507fd23d5b7d64, type: 2}
-  level: 9
   isPlayerMonster: 1
 --- !u!1 &1338626718
 GameObject:
@@ -4239,8 +4275,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05a13cb8339452c4d87c44e3cf9134bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monsterBase: {fileID: 11400000, guid: 08fe71a8bca62d0468ada7da52ccd5a7, type: 2}
-  level: 7
   isPlayerMonster: 0
 --- !u!1 &1996428039
 GameObject:

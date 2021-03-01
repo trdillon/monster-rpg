@@ -6,10 +6,6 @@ using DG.Tweening;
 
 public class BattleMonster : MonoBehaviour
 {
-    // For testing these are set in the inspector
-    //TODO - set these dynamically
-    [SerializeField] MonsterBase monsterBase;
-    [SerializeField] int level;
     [SerializeField] bool isPlayerMonster;
     Image image;
     Vector3 originalPos;
@@ -24,9 +20,9 @@ public class BattleMonster : MonoBehaviour
         originalColor = image.color;
     }
 
-    public void Setup()
+    public void Setup(Monster monster)
     {
-        Monster = new Monster(monsterBase, level);
+        Monster = monster;
 
         if (isPlayerMonster)
             image.sprite = Monster.Base.BackSprite;
