@@ -15,8 +15,8 @@ grew up playing obsessively.
 ## About
 
 This game is set in a 2D fantasy world modeled after a famous region. Most of the details are purposefully vague at this point to leave flexibility in the story
-design later. Currently the game is in Build 1.0.1 with only very basic functionality and placeholder art. The character can walk around the world, trigger
-random battles with enemy monsters, and battle until one of the monsters is downed.
+design later. Currently the game is in Build 1.0.1 with only basic functionality and placeholder art. The character can walk around the world, trigger
+random battles with enemy monsters, and utilize a monster party system to fight in battles.
 
 ## Install
 
@@ -27,6 +27,8 @@ This project uses Unity, which is currently the only way to install/access the g
 Character movement: Up/Down/Left/Right arrows or W/A/S/D keys
 
 Action: Z
+
+Go Back in UI: X
 
 ## Roadmap
 
@@ -49,7 +51,9 @@ Future Versions
 
 ## Contributing
 
-Feel free to dive in! [Check out our issues](https://github.com/trdillon/monster-rpg/issues) or create a new one.
+Contributions are always welcome! Please read our [Contributing Guide](https://github.com/trdillon/monster-rpg/blob/master/CONTRIBUTING.md) to get started.
+
+[Check out our issues](https://github.com/trdillon/monster-rpg/issues) or create a new one.
 
 Currently help is needed with original artwork for the game. Please contact me if you are interested in contributing some or see our 
 [issues](https://github.com/trdillon/monster-rpg/issues?q=is%3Aopen+is%3Aissue+label%3Aart) with the [ART] tag.
