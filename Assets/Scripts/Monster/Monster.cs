@@ -9,7 +9,9 @@ public class Monster
     
     public int CurrentHp { get; set; }
     public List<Move> Moves { get; set; }
-    
+    public Dictionary<MonsterStat, int> Stats { get; private set; }
+    public Dictionary<MonsterStat, int> StatsChanged { get; private set; }
+
     public MonsterBase Base {
         get { return _base; }
     }
@@ -17,34 +19,30 @@ public class Monster
         get { return level; }
     }
 
-    public int MaxHp {
-        get { return Mathf.FloorToInt((Base.MaxHp * Level) / 100f) + 10; }
-    }
+    public int MaxHp { get; private set; }
 
     public int Attack {
-        get { return Mathf.FloorToInt((Base.Attack * Level) / 100f) + 5; }
+        get { return GetStat(MonsterStat.Attack); }
     }
 
     public int Defense {
-        get { return Mathf.FloorToInt((Base.Defense * Level) / 100f) + 5; }
+        get { return GetStat(MonsterStat.Defense); }
     }
 
     public int SpAttack {
-        get { return Mathf.FloorToInt((Base.SpAttack * Level) / 100f) + 5; }
+        get { return GetStat(MonsterStat.SpAttack); }
     }
 
     public int SpDefense {
-        get { return Mathf.FloorToInt((Base.SpDefense * Level) / 100f) + 5; }
+        get { return GetStat(MonsterStat.SpDefense); }
     }
 
     public int Speed {
-        get { return Mathf.FloorToInt((Base.Speed * Level) / 100f) + 5; }
+        get { return GetStat(MonsterStat.Speed); }
     }
     
     public void Init()
     {
-        CurrentHp = MaxHp;
-
         // Generate move list
         Moves = new List<Move>();
         foreach (var move in Base.LearnableMoves) //TODO - refactor this to account for optional learned moves or forgetting moves
@@ -56,6 +54,58 @@ public class Monster
 
             if (Moves.Count >= 4)
                 break;
+        }
+
+        CalculateStats();
+        CurrentHp = MaxHp;
+
+        StatsChanged = new Dictionary<MonsterStat, int>()
+        {
+            {MonsterStat.Attack, 0},
+            {MonsterStat.Defense, 0},
+            {MonsterStat.SpAttack, 0},
+            {MonsterStat.SpDefense, 0},
+            {MonsterStat.Speed, 0}
+        };
+    }
+
+    void CalculateStats()
+    {
+        Stats = new Dictionary<MonsterStat, int>();
+        Stats.Add(MonsterStat.Attack, Mathf.FloorToInt((Base.Attack * Level) / 100f) + 5);
+        Stats.Add(MonsterStat.Defense, Mathf.FloorToInt((Base.Defense * Level) / 100f) + 5);
+        Stats.Add(MonsterStat.SpAttack, Mathf.FloorToInt((Base.SpAttack * Level) / 100f) + 5);
+        Stats.Add(MonsterStat.SpDefense, Mathf.FloorToInt((Base.SpDefense * Level) / 100f) + 5);
+        Stats.Add(MonsterStat.Speed, Mathf.FloorToInt((Base.Speed * Level) / 100f) + 5);
+        MaxHp = Mathf.FloorToInt((Base.MaxHp * Level) / 100f) + 10;
+    }
+
+    int GetStat(MonsterStat stat)
+    {
+        int statVal = Stats[stat];
+
+        // Stat changes based on original game's formula
+        int changeVal = StatsChanged[stat];
+        var changeVals = new float[] { 1f, 1.5f, 2f, 2.5f, 3f, 3.5f, 4f };
+
+        if (changeVal >= 0)
+            statVal = Mathf.FloorToInt(statVal * changeVals[changeVal]);
+        else
+            statVal = Mathf.FloorToInt(statVal / changeVals[-changeVal]);
+
+        return statVal;
+    }
+
+    public void ApplyStatChanges(List<StatChange> statChanges)
+    {
+        foreach (var statChange in statChanges)
+        {
+            var stat = statChange.stat;
+            var changeVal = statChange.changeVal;
+
+            StatsChanged[stat] = Mathf.Clamp(StatsChanged[stat] + changeVal, -6, 6);
+
+            Debug.Log($"{stat} has been changed by {changeVal}. {stat} is now {GetStat(stat)}");
         }
     }
 
@@ -76,8 +126,8 @@ public class Monster
             Downed = false
         };
 
-        float attack = (move.Base.IsSpecial) ? attacker.SpAttack : attacker.Attack;
-        float defense = (move.Base.IsSpecial) ? SpDefense : Defense;
+        float attack = (move.Base.Category == MoveCategory.Special) ? attacker.SpAttack : attacker.Attack;
+        float defense = (move.Base.Category == MoveCategory.Special) ? SpDefense : Defense;
 
         // damage calculation based on the original monster catching game's formula
         float modifiers = Random.Range(0.85f, 1f) * type * critical;

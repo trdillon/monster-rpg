@@ -15,6 +15,12 @@ MonoBehaviour:
   name: Growl
   description: Growls at the opponent, lowering their Attack.
   type: 0
+  category: 2
+  effects:
+    statChanges:
+    - stat: 0
+      changeVal: -1
+  target: 1
   power: 0
   accuracy: 100
   energy: 40

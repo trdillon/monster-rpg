@@ -108,11 +108,26 @@ public class BattleSystem : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         defendingMonster.PlayHitAnimation();
 
-        var damageDetails = defendingMonster.Monster.TakeDamage(move, attackingMonster.Monster);
-        yield return defendingMonster.Hud.UpdateHP();
-        yield return ShowDamageDetails(damageDetails);
+        if (move.Base.Category == MoveCategory.Status)
+        {
+            var effects = move.Base.Effects;
+            if (effects.StatChanges != null)
+            {
+                if (move.Base.Target == MoveTarget.Self)
+                    attackingMonster.Monster.ApplyStatChanges(effects.StatChanges);
+                else
+                    defendingMonster.Monster.ApplyStatChanges(effects.StatChanges);
+            }
 
-        if (damageDetails.Downed)
+        }
+        else
+        {
+            var damageDetails = defendingMonster.Monster.TakeDamage(move, attackingMonster.Monster);
+            yield return defendingMonster.Hud.UpdateHP();
+            yield return ShowDamageDetails(damageDetails);
+        }
+
+        if (defendingMonster.Monster.CurrentHp <= 0)
         {
             defendingMonster.PlayDownedAnimation();
             yield return dialogBox.TypeDialog($"{defendingMonster.Monster.Base.Name} has been taken down!");

@@ -15,6 +15,9 @@ MonoBehaviour:
   name: Splash
   description: Splashes the opponent with water. Aqua attack.
   type: 1
+  category: 1
+  effects: {fileID: 0}
+  target: 0
   power: 40
   accuracy: 100
   energy: 30

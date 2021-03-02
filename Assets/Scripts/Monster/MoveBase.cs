@@ -10,6 +10,9 @@ public class MoveBase : ScriptableObject
     [SerializeField] string description;
 
     [SerializeField] MonsterType type;
+    [SerializeField] MoveCategory category;
+    [SerializeField] MoveEffects effects;
+    [SerializeField] MoveTarget target;
 
     // Move stats
     [SerializeField] int power;
@@ -28,6 +31,18 @@ public class MoveBase : ScriptableObject
         get { return type; }
     }
 
+    public MoveCategory Category {
+        get { return category; }
+    }
+
+    public MoveEffects Effects {
+        get { return effects; }
+    }
+
+    public MoveTarget Target {
+        get { return target; }
+    }
+
     public int Power {
         get { return power; }
     }
@@ -36,20 +51,5 @@ public class MoveBase : ScriptableObject
     }
     public int Energy {
         get { return energy; }
-    }
-
-    public bool IsSpecial {
-        get {
-            if (type == MonsterType.Air || type == MonsterType.Aqua || type == MonsterType.Earth ||
-                type == MonsterType.Ember || type == MonsterType.Force || type == MonsterType.Light ||
-                type == MonsterType.Shadow || type == MonsterType.Shock || type == MonsterType.Spirit)
-            {
-                return true;
-            }
-            else
-            { 
-                return false;
-            }
-        }
     }
 }

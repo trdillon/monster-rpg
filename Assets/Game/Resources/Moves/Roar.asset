@@ -15,6 +15,12 @@ MonoBehaviour:
   name: Roar
   description: Lets out a bellowing roar, raising the monster's Attack.
   type: 0
+  category: 2
+  effects:
+    statChanges:
+    - stat: 0
+      changeVal: 1
+  target: 0
   power: 0
   accuracy: 0
   energy: 30
