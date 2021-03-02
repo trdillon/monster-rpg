@@ -119,6 +119,9 @@ public class BattleSystem : MonoBehaviour
                     defendingMonster.Monster.ApplyStatChanges(effects.StatChanges);
             }
 
+            yield return ShowStatusChanges(attackingMonster.Monster);
+            yield return ShowStatusChanges(defendingMonster.Monster);
+
         }
         else
         {
@@ -146,6 +149,15 @@ public class BattleSystem : MonoBehaviour
             yield return dialogBox.TypeDialog("That attack type is very strong!");
         else if (damageDetails.TypeEffectiveness < 1f)
             yield return dialogBox.TypeDialog("That attack type is not very strong!");
+    }
+
+    IEnumerator ShowStatusChanges(Monster monster)
+    {
+        while (monster.StatusChanges.Count > 0)
+        {
+            var message = monster.StatusChanges.Dequeue();
+            yield return dialogBox.TypeDialog(message);
+        }
     }
 
     IEnumerator SwitchMonster(Monster newMonster)
@@ -181,6 +193,7 @@ public class BattleSystem : MonoBehaviour
     {
         state = BattleState.BattleOver;
 
+        playerParty.Monsters.ForEach(p => p.OnBattleOver());
         OnBattleOver(won);
     }
 
