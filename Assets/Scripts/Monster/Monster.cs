@@ -11,6 +11,7 @@ public class Monster
     public List<Move> Moves { get; set; }
     public Dictionary<MonsterStat, int> Stats { get; private set; }
     public Dictionary<MonsterStat, int> StatsChanged { get; private set; }
+    public Queue<string> StatusChanges { get; private set; } = new Queue<string>();
 
     public MonsterBase Base {
         get { return _base; }
@@ -58,15 +59,7 @@ public class Monster
 
         CalculateStats();
         CurrentHp = MaxHp;
-
-        StatsChanged = new Dictionary<MonsterStat, int>()
-        {
-            {MonsterStat.Attack, 0},
-            {MonsterStat.Defense, 0},
-            {MonsterStat.SpAttack, 0},
-            {MonsterStat.SpDefense, 0},
-            {MonsterStat.Speed, 0}
-        };
+        ResetStatsChanged();
     }
 
     void CalculateStats()
@@ -78,6 +71,18 @@ public class Monster
         Stats.Add(MonsterStat.SpDefense, Mathf.FloorToInt((Base.SpDefense * Level) / 100f) + 5);
         Stats.Add(MonsterStat.Speed, Mathf.FloorToInt((Base.Speed * Level) / 100f) + 5);
         MaxHp = Mathf.FloorToInt((Base.MaxHp * Level) / 100f) + 10;
+    }
+
+    void ResetStatsChanged()
+    {
+        StatsChanged = new Dictionary<MonsterStat, int>()
+        {
+            {MonsterStat.Attack, 0},
+            {MonsterStat.Defense, 0},
+            {MonsterStat.SpAttack, 0},
+            {MonsterStat.SpDefense, 0},
+            {MonsterStat.Speed, 0}
+        };
     }
 
     int GetStat(MonsterStat stat)
@@ -104,6 +109,12 @@ public class Monster
             var changeVal = statChange.changeVal;
 
             StatsChanged[stat] = Mathf.Clamp(StatsChanged[stat] + changeVal, -6, 6);
+
+            if (changeVal > 0)
+                StatusChanges.Enqueue($"{Base.Name}'s {stat} increased!");
+            else
+                StatusChanges.Enqueue($"{Base.Name}'s {stat} decreased!");
+
 
             Debug.Log($"{stat} has been changed by {changeVal}. {stat} is now {GetStat(stat)}");
         }
@@ -148,5 +159,10 @@ public class Monster
     {
         int i = Random.Range(0, Moves.Count);
         return Moves[i];
+    }
+
+    public void OnBattleOver()
+    {
+        ResetStatsChanged();
     }
 }
