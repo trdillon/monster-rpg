@@ -49,7 +49,7 @@ public class BattleSystem : MonoBehaviour
         dialogBox.SetMoveList(playerMonster.Monster.Moves);
 
         yield return dialogBox.TypeDialog($"You have encountered an enemy {enemyMonster.Monster.Base.Name}!");
-        ActionSelection();
+        CheckWhoIsFaster();
     }
 
     void ActionSelection()
@@ -187,6 +187,14 @@ public class BattleSystem : MonoBehaviour
         }
         else
             BattleOver(true); // true for won battle
+    }
+
+    void CheckWhoIsFaster()
+    {
+        if (playerMonster.Monster.Speed >= enemyMonster.Monster.Speed)
+            ActionSelection();
+        else
+            StartCoroutine(EnemyMove());
     }
 
     void BattleOver(bool won)
