@@ -125,6 +125,9 @@ public class Monster
 
     public void SetStatus(ConditionID conditionID)
     {
+        // Only one status effect at a time
+        if (Status != null) return;
+
         Status = ConditionDB.Conditions[conditionID];
         Status?.OnStart?.Invoke(this);
         StatusChanges.Enqueue($"{Base.Name} {Status.StartMessage}");
