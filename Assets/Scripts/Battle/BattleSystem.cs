@@ -110,18 +110,7 @@ public class BattleSystem : MonoBehaviour
 
         if (move.Base.Category == MoveCategory.Status)
         {
-            var effects = move.Base.Effects;
-            if (effects.StatChanges != null)
-            {
-                if (move.Base.Target == MoveTarget.Self)
-                    attackingMonster.Monster.ApplyStatChanges(effects.StatChanges);
-                else
-                    defendingMonster.Monster.ApplyStatChanges(effects.StatChanges);
-            }
-
-            yield return ShowStatusChanges(attackingMonster.Monster);
-            yield return ShowStatusChanges(defendingMonster.Monster);
-
+            yield return UseMoveEffects(move, attackingMonster.Monster, defendingMonster.Monster);
         }
         else
         {
@@ -138,6 +127,21 @@ public class BattleSystem : MonoBehaviour
 
             CheckIfBattleIsOver(defendingMonster);
         }
+    }
+
+    IEnumerator UseMoveEffects(Move move, Monster attackingMonster, Monster defendingMonster)
+    {
+        var effects = move.Base.Effects;
+        if (effects.StatChanges != null)
+        {
+            if (move.Base.Target == MoveTarget.Self)
+                attackingMonster.ApplyStatChanges(effects.StatChanges);
+            else
+                defendingMonster.ApplyStatChanges(effects.StatChanges);
+        }
+
+        yield return ShowStatusChanges(attackingMonster);
+        yield return ShowStatusChanges(defendingMonster);
     }
 
     IEnumerator ShowDamageDetails(DamageDetails damageDetails)
