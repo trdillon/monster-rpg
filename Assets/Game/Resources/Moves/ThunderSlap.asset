@@ -10,14 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7872732f20cf1c346868d61da89a7f54, type: 3}
-  m_Name: Flame Flick
+  m_Name: ThunderSlap
   m_EditorClassIdentifier: 
-  name: Flame Flick
-  description: Flicks the opponent with a flame. Ember attack with a chance to burn.
-  type: 2
-  category: 1
-  effects: {fileID: 0}
-  target: 0
-  power: 40
+  name: Thunder Slap
+  description: 'Slaps the opponent with a resounding wave of thunder, leaving it
+    partially paralyzed. '
+  type: 4
+  category: 2
+  effects:
+    statChanges: []
+    status: 4
+  target: 1
+  power: 0
   accuracy: 100
   energy: 25

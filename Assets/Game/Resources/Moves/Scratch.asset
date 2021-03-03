@@ -13,8 +13,13 @@ MonoBehaviour:
   m_Name: Scratch
   m_EditorClassIdentifier: 
   name: Scratch
-  description: Scratches the opponent. Normal attack.
+  description: Scratches the opponent.
   type: 0
+  category: 0
+  effects:
+    statChanges: []
+    status: 0
+  target: 0
   power: 40
   accuracy: 100
   energy: 35

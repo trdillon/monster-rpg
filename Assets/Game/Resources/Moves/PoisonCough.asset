@@ -10,14 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7872732f20cf1c346868d61da89a7f54, type: 3}
-  m_Name: Branch Smack
+  m_Name: PoisonCough
   m_EditorClassIdentifier: 
-  name: Branch Smack
-  description: Smacks the opponent with a tree branch. Earth attack.
-  type: 3
-  category: 1
-  effects: {fileID: 0}
-  target: 0
-  power: 45
+  name: Poison Cough
+  description: Coughs at the opponent, releasing a poisonous gas that inflicts damage
+    over time.
+  type: 0
+  category: 2
+  effects:
+    statChanges: []
+    status: 1
+  target: 1
+  power: 0
   accuracy: 100
   energy: 25

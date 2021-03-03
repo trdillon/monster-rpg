@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: Splash
   m_EditorClassIdentifier: 
   name: Splash
-  description: Splashes the opponent with water. Aqua attack.
+  description: Splashes the opponent with water.
   type: 1
   category: 1
-  effects: {fileID: 0}
+  effects:
+    statChanges: []
+    status: 0
   target: 0
   power: 40
   accuracy: 100
