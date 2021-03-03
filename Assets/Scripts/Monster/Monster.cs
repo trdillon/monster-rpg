@@ -8,10 +8,13 @@ public class Monster
     [SerializeField] int level;
     
     public int CurrentHp { get; set; }
+    public bool IsHpChanged { get; set; }
     public List<Move> Moves { get; set; }
     public Dictionary<MonsterStat, int> Stats { get; private set; }
     public Dictionary<MonsterStat, int> StatsChanged { get; private set; }
     public Queue<string> StatusChanges { get; private set; } = new Queue<string>();
+    public Condition Status { get; private set; }
+    public int StatusTimer { get; set; }
 
     public MonsterBase Base {
         get { return _base; }
@@ -120,6 +123,24 @@ public class Monster
         }
     }
 
+    public void SetStatus(ConditionID conditionID)
+    {
+        Status = ConditionDB.Conditions[conditionID];
+        Status?.OnStart?.Invoke(this);
+        StatusChanges.Enqueue($"{Base.Name} {Status.StartMessage}");
+    }
+
+    public void RemoveStatus()
+    {
+        Status = null;
+    }
+
+    public void UpdateHP(int damage)
+    {
+        CurrentHp = Mathf.Clamp(CurrentHp - damage, 0, MaxHp);
+        IsHpChanged = true;
+    }
+
     public DamageDetails TakeDamage(Move move, Monster attacker)
     {
         // critical hit chance is 6.25%
@@ -146,12 +167,8 @@ public class Monster
         float d = a * move.Base.Power * ((float)attack / defense) + 2;
         int damage = Mathf.FloorToInt(d * modifiers);
 
-        CurrentHp -= damage;
-        if (CurrentHp <= 0)
-        {
-            CurrentHp = 0;
-            damageDetails.Downed = true;
-        }
+        UpdateHP(damage);
+
         return damageDetails;
     }
 
@@ -159,6 +176,19 @@ public class Monster
     {
         int i = Random.Range(0, Moves.Count);
         return Moves[i];
+    }
+
+    public bool OnTurnBegin()
+    {
+        if (Status?.OnTurnStart != null)
+            return Status.OnTurnStart(this);
+        else
+            return true;
+    }
+
+    public void OnTurnOver()
+    {
+        Status?.OnTurnEnd?.Invoke(this);
     }
 
     public void OnBattleOver()

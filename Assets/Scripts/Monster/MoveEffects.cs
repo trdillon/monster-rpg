@@ -5,10 +5,13 @@ using UnityEngine;
 public class MoveEffects
 {
     [SerializeField] List<StatChange> statChanges;
+    [SerializeField] ConditionID status;
 
     public List<StatChange> StatChanges {
         get { return statChanges; }
     }
 
-
+    public ConditionID Status {
+        get { return status; }
+    }
 }

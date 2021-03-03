@@ -9,9 +9,12 @@ public class BattleSystem : MonoBehaviour
     [SerializeField] BattleDialogBox dialogBox;
     [SerializeField] PartyScreen partyScreen;
 
-    BattleState state;
     MonsterParty playerParty;
     Monster wildMonster;
+
+    BattleState state;
+
+    // Indices for UI and monster selection
     int currentAction;
     int currentMove;
     int currentMember;
@@ -44,7 +47,7 @@ public class BattleSystem : MonoBehaviour
     public IEnumerator SetupBattle()
     {
         playerMonster.Setup(playerParty.GetHealthyMonster()); //TODO - handle setup with no healthy monsters
-        enemyMonster.Setup(wildMonster);
+        enemyMonster.Setup(wildMonster); //TODO - handle setup with enemy character
         partyScreen.Init();
         dialogBox.SetMoveList(playerMonster.Monster.Moves);
 
@@ -84,6 +87,7 @@ public class BattleSystem : MonoBehaviour
         var move = playerMonster.Monster.Moves[currentMove];
         yield return UseMove(playerMonster, enemyMonster, move);
 
+        // UseMove checks if the battle is over and sets state to BattleOver if it is
         if (state == BattleState.UseMove)
             StartCoroutine(EnemyMove());
     }
@@ -95,19 +99,30 @@ public class BattleSystem : MonoBehaviour
         var move = enemyMonster.Monster.GetRandomMove();
         yield return UseMove(enemyMonster, playerMonster, move);
 
+        // UseMove checks if the battle is over and sets state to BattleOver if it is
         if (state == BattleState.UseMove)
             ActionSelection();
     }
 
     IEnumerator UseMove(BattleMonster attackingMonster, BattleMonster defendingMonster, Move move)
     {
+        // Check for statuses like paralyze or sleep before trying to attack
+        bool canAttack = attackingMonster.Monster.OnTurnBegin();
+        if (!canAttack)
+        {
+            yield return ShowStatusChanges(attackingMonster.Monster);
+            yield break;
+        }
+        yield return ShowStatusChanges(attackingMonster.Monster);
+
+        // Visuals for the move
         move.Energy--;
         yield return dialogBox.TypeDialog($"{attackingMonster.Monster.Base.Name} used {move.Base.Name}!");
-
         attackingMonster.PlayAttackAnimation();
         yield return new WaitForSeconds(0.5f);
         defendingMonster.PlayHitAnimation();
 
+        // If status move then don't deal damage, switch to UseMoveEffects coroutine
         if (move.Base.Category == MoveCategory.Status)
         {
             yield return UseMoveEffects(move, attackingMonster.Monster, defendingMonster.Monster);
@@ -119,6 +134,7 @@ public class BattleSystem : MonoBehaviour
             yield return ShowDamageDetails(damageDetails);
         }
 
+        // Handle downed monster and check if we continue
         if (defendingMonster.Monster.CurrentHp <= 0)
         {
             defendingMonster.PlayDownedAnimation();
@@ -127,17 +143,40 @@ public class BattleSystem : MonoBehaviour
 
             CheckIfBattleIsOver(defendingMonster);
         }
+
+        // Check for status changes like poison and update Monster/HUD
+        attackingMonster.Monster.OnTurnOver();
+        yield return ShowStatusChanges(attackingMonster.Monster);
+        yield return attackingMonster.Hud.UpdateHP();
+
+        // Attacking monster can be downed from status effects
+        if (attackingMonster.Monster.CurrentHp <= 0)
+        {
+            attackingMonster.PlayDownedAnimation();
+            yield return dialogBox.TypeDialog($"{attackingMonster.Monster.Base.Name} has been taken down!");
+            yield return new WaitForSeconds(2f);
+
+            CheckIfBattleIsOver(attackingMonster);
+        }
     }
 
     IEnumerator UseMoveEffects(Move move, Monster attackingMonster, Monster defendingMonster)
     {
         var effects = move.Base.Effects;
+
+        // Stat changes
         if (effects.StatChanges != null)
         {
             if (move.Base.Target == MoveTarget.Self)
                 attackingMonster.ApplyStatChanges(effects.StatChanges);
             else
                 defendingMonster.ApplyStatChanges(effects.StatChanges);
+        }
+
+        // Status conditions
+        if (effects.Status != ConditionID.NON)
+        {
+            defendingMonster.SetStatus(effects.Status);
         }
 
         yield return ShowStatusChanges(attackingMonster);
@@ -178,6 +217,7 @@ public class BattleSystem : MonoBehaviour
         dialogBox.SetMoveList(newMonster.Moves);
         yield return dialogBox.TypeDialog($"You have switched to {newMonster.Base.Name}!");
 
+        // If monster was downed, reset the turn. If monster was switched, forfeit the turn.
         if (isSwitchForced)
             CheckWhoIsFaster();
         else
@@ -200,10 +240,10 @@ public class BattleSystem : MonoBehaviour
 
     void CheckWhoIsFaster()
     {
-        if (playerMonster.Monster.Speed >= enemyMonster.Monster.Speed)
+        if (playerMonster.Monster.Speed >= enemyMonster.Monster.Speed) //TODO - randomize attacker for equal speeds
             ActionSelection();
         else
-            StartCoroutine(EnemyMove());   
+            StartCoroutine(EnemyMove());
     }
 
     void BattleOver(bool won)

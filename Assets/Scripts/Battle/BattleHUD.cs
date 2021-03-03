@@ -20,6 +20,11 @@ public class BattleHUD : MonoBehaviour
 
     public IEnumerator UpdateHP()
     {
-        yield return hpBar.SetHPSlider((float) _monster.CurrentHp / _monster.MaxHp);
+        if (_monster.IsHpChanged)
+        {
+            yield return hpBar.SetHPSlider((float)_monster.CurrentHp / _monster.MaxHp);
+            _monster.IsHpChanged = false;
+        }
+        
     }
 }
