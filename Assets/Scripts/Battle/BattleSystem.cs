@@ -162,8 +162,10 @@ public class BattleSystem : MonoBehaviour
 
     IEnumerator SwitchMonster(Monster newMonster)
     {
+        bool isSwitchForced = true;
         if (playerMonster.Monster.CurrentHp > 0)
         {
+            isSwitchForced = false;
             yield return dialogBox.TypeDialog($"{playerMonster.Monster.Base.Name}, fall back!");
             playerMonster.PlayDownedAnimation(); //TODO - create animation for returning to party
             yield return new WaitForSeconds(2f);
@@ -172,7 +174,10 @@ public class BattleSystem : MonoBehaviour
         dialogBox.SetMoveList(newMonster.Moves);
         yield return dialogBox.TypeDialog($"You have switched to {newMonster.Base.Name}!");
 
-        StartCoroutine(EnemyMove());
+        if (isSwitchForced)
+            CheckWhoIsFaster();
+        else
+            StartCoroutine(EnemyMove());
     }
 
     void CheckIfBattleIsOver(BattleMonster downedMonster)
@@ -194,7 +199,7 @@ public class BattleSystem : MonoBehaviour
         if (playerMonster.Monster.Speed >= enemyMonster.Monster.Speed)
             ActionSelection();
         else
-            StartCoroutine(EnemyMove());
+            StartCoroutine(EnemyMove());   
     }
 
     void BattleOver(bool won)
