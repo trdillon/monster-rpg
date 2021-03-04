@@ -18,8 +18,16 @@ MonoBehaviour:
   category: 1
   effects:
     statChanges: []
+    status: 0
+    volatileStatus: 0
+  moveSecondaryEffects:
+  - statChanges: []
     status: 2
+    volatileStatus: 0
+    chance: 10
+    target: 1
   target: 1
   power: 40
   accuracy: 100
   energy: 25
+  alwaysHits: 0

@@ -71,6 +71,9 @@ public class Monster
         RemoveVolatileStatus();
     }
 
+    //
+    // STATS
+    //
     void CalculateStats()
     {
         Stats = new Dictionary<MonsterStat, int>();
@@ -131,6 +134,9 @@ public class Monster
         }
     }
 
+    //
+    // STATUS AND CONDITION
+    //
     public void SetStatus(ConditionID conditionID)
     {
         // Only one status effect at a time
@@ -163,6 +169,9 @@ public class Monster
         VolatileStatus = null;
     }
 
+    //
+    // HP AND DAMAGE
+    //
     public void UpdateHP(int damage)
     {
         CurrentHp = Mathf.Clamp(CurrentHp - damage, 0, MaxHp);
@@ -200,6 +209,9 @@ public class Monster
         return damageDetails;
     }
 
+    //
+    // HELPER FUNCTIONS
+    //
     public Move GetRandomMove()
     {
         int i = UnityEngine.Random.Range(0, Moves.Count);

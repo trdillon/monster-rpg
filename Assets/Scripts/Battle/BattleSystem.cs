@@ -91,13 +91,26 @@ public class BattleSystem : MonoBehaviour
             // If status move then don't deal damage, switch to UseMoveEffects coroutine
             if (move.Base.Category == MoveCategory.Status)
             {
-                yield return UseMoveEffects(move, attackingMonster.Monster, defendingMonster.Monster);
+                yield return UseMoveEffects(move.Base.Effects, attackingMonster.Monster, defendingMonster.Monster, move.Base.Target);
             }
             else
             {
                 var damageDetails = defendingMonster.Monster.TakeDamage(move, attackingMonster.Monster);
                 yield return defendingMonster.Hud.UpdateHP();
                 yield return ShowDamageDetails(damageDetails);
+            }
+
+            // Check for secondary move effects
+            if (move.Base.MoveSecondaryEffects != null && 
+                move.Base.MoveSecondaryEffects.Count > 0 &&
+                attackingMonster.Monster.CurrentHp > 0)
+            {
+                foreach (var effect in move.Base.MoveSecondaryEffects)
+                {
+                    var rng = UnityEngine.Random.Range(1, 101);
+                    if (rng <= effect.Chance)
+                        yield return UseMoveEffects(effect, attackingMonster.Monster, defendingMonster.Monster, effect.Target);
+                }
             }
 
             // Handle downed monster and check if we continue
@@ -131,14 +144,12 @@ public class BattleSystem : MonoBehaviour
         }
     }
 
-    IEnumerator UseMoveEffects(Move move, Monster attackingMonster, Monster defendingMonster)
+    IEnumerator UseMoveEffects(MoveEffects effects, Monster attackingMonster, Monster defendingMonster, MoveTarget moveTarget)
     {
-        var effects = move.Base.Effects;
-
         // Stat changes
         if (effects.StatChanges != null)
         {
-            if (move.Base.Target == MoveTarget.Self)
+            if (moveTarget == MoveTarget.Self)
                 attackingMonster.ApplyStatChanges(effects.StatChanges);
             else
                 defendingMonster.ApplyStatChanges(effects.StatChanges);
