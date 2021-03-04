@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7872732f20cf1c346868d61da89a7f54, type: 3}
+  m_Name: QuickJab
+  m_EditorClassIdentifier: 
+  name: Quick Jab
+  description: Throws a quick jab at the opponent, striking them before they have
+    a chance to attack.
+  type: 0
+  category: 0
+  effects:
+    statChanges: []
+    status: 0
+    volatileStatus: 0
+  moveSecondaryEffects: []
+  target: 0
+  power: 40
+  accuracy: 100
+  energy: 30
+  priority: 1
+  alwaysHits: 0

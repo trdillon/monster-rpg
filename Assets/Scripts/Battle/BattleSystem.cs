@@ -52,9 +52,17 @@ public class BattleSystem : MonoBehaviour
             // Get monster moves
             playerMonster.Monster.CurrentMove = playerMonster.Monster.Moves[currentMove];
             enemyMonster.Monster.CurrentMove = enemyMonster.Monster.GetRandomMove();
+            int playerPriority = playerMonster.Monster.CurrentMove.Base.Priority;
+            int enemyPriority = enemyMonster.Monster.CurrentMove.Base.Priority;
 
             // Check who goes first
-            bool isPlayerFirst = playerMonster.Monster.Speed >= enemyMonster.Monster.Speed;
+            bool isPlayerFirst = true;
+
+            if (enemyPriority > playerPriority)
+                isPlayerFirst = false;
+            else if (playerPriority == enemyPriority)
+                isPlayerFirst = playerMonster.Monster.Speed >= enemyMonster.Monster.Speed;
+
             var firstMonster = (isPlayerFirst) ? playerMonster : enemyMonster;
             var secondMonster = (isPlayerFirst) ? enemyMonster : playerMonster;
 
