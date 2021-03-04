@@ -4,8 +4,20 @@ using UnityEngine;
 
 public class ConditionDB
 {
+    public static void Init()
+    {
+        foreach (var entry in Conditions)
+        {
+            var conditionId = entry.Key;
+            var condition = entry.Value;
+
+            condition.Id = conditionId;
+        }
+    }
+
     public static Dictionary<ConditionID, Condition> Conditions { get; set; } = new Dictionary<ConditionID, Condition>()
     {
+        // Status conditions
         {
             ConditionID.PSN,
             new Condition()
@@ -89,6 +101,40 @@ public class ConditionDB
                         monster.StatusChanges.Enqueue($"{monster.Base.Name} has thawed, it's no longer frozen!");
                         return true;
                     }
+                    return false;
+                }
+            }
+        },
+        // Volatile status conditions
+        {
+            ConditionID.CNF,
+            new Condition()
+            {
+                Name = "Confusion",
+                StartMessage = "has been confused and doesn't know what to do!",
+                OnStart = (Monster monster) =>
+                {
+                    monster.VolatileStatusTimer = Random.Range(1, 5);
+                    Debug.Log($"Confused for {monster.VolatileStatusTimer} turns.");
+                },
+                OnTurnStart = (Monster monster) =>
+                {
+                    if (monster.VolatileStatusTimer <= 0)
+                    {
+                        monster.RemoveVolatileStatus();
+                        monster.StatusChanges.Enqueue($"{monster.Base.Name} has snapped out of it's confusion!");
+                        return true;
+                    }
+
+                    monster.VolatileStatusTimer--;
+                    
+                    // 50/50 chance attack hurts self
+                    if (Random.Range(1, 3) == 1)
+                        return true;
+
+                    // Attack will hurt self
+                    monster.StatusChanges.Enqueue($"{monster.Base.Name} is suffering from the effects of the confusion! It attacked itself!");
+                    monster.UpdateHP(monster.MaxHp / 8);
                     return false;
                 }
             }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,8 +14,11 @@ public class Monster
     public Dictionary<MonsterStat, int> Stats { get; private set; }
     public Dictionary<MonsterStat, int> StatsChanged { get; private set; }
     public Queue<string> StatusChanges { get; private set; } = new Queue<string>();
+    public event Action OnStatusChange;
     public Condition Status { get; private set; }
+    public Condition VolatileStatus { get; private set; }
     public int StatusTimer { get; set; }
+    public int VolatileStatusTimer { get; set; }
 
     public MonsterBase Base {
         get { return _base; }
@@ -63,6 +67,8 @@ public class Monster
         CalculateStats();
         CurrentHp = MaxHp;
         ResetStatsChanged();
+        RemoveStatus();
+        RemoveVolatileStatus();
     }
 
     void CalculateStats()
@@ -131,11 +137,28 @@ public class Monster
         Status = ConditionDB.Conditions[conditionID];
         Status?.OnStart?.Invoke(this);
         StatusChanges.Enqueue($"{Base.Name} {Status.StartMessage}");
+        OnStatusChange?.Invoke();
+    }
+
+    public void SetVolatileStatus(ConditionID conditionID)
+    {
+        // Only one volatile status effect at a time
+        if (VolatileStatus != null) return;
+
+        VolatileStatus = ConditionDB.Conditions[conditionID];
+        VolatileStatus?.OnStart?.Invoke(this);
+        StatusChanges.Enqueue($"{Base.Name} {VolatileStatus.StartMessage}");
     }
 
     public void RemoveStatus()
     {
         Status = null;
+        OnStatusChange?.Invoke();
+    }
+
+    public void RemoveVolatileStatus()
+    {
+        VolatileStatus = null;
     }
 
     public void UpdateHP(int damage)
@@ -148,7 +171,7 @@ public class Monster
     {
         // critical hit chance is 6.25%
         float critical = 1f;
-        if (Random.value * 100f <= 6.25f)
+        if (UnityEngine.Random.value * 100f <= 6.25f)
             critical = 2f;
 
         // type effectiveness per TypeChart
@@ -165,7 +188,7 @@ public class Monster
         float defense = (move.Base.Category == MoveCategory.Special) ? SpDefense : Defense;
 
         // damage calculation based on the original monster catching game's formula
-        float modifiers = Random.Range(0.85f, 1f) * type * critical;
+        float modifiers = UnityEngine.Random.Range(0.85f, 1f) * type * critical;
         float a = (2 * attacker.Level + 10) / 250f;
         float d = a * move.Base.Power * ((float)attack / defense) + 2;
         int damage = Mathf.FloorToInt(d * modifiers);
@@ -177,25 +200,38 @@ public class Monster
 
     public Move GetRandomMove()
     {
-        int i = Random.Range(0, Moves.Count);
+        int i = UnityEngine.Random.Range(0, Moves.Count);
         return Moves[i];
     }
 
     public bool OnTurnBegin()
     {
+        bool canAttack = true;
+
         if (Status?.OnTurnStart != null)
-            return Status.OnTurnStart(this);
-        else
-            return true;
+        {
+            if(!Status.OnTurnStart(this))
+                canAttack = false;
+        }
+
+        if (VolatileStatus?.OnTurnStart != null)
+        {
+            if (!VolatileStatus.OnTurnStart(this))
+                canAttack = false;
+        }
+
+        return canAttack;
     }
 
     public void OnTurnOver()
     {
         Status?.OnTurnEnd?.Invoke(this);
+        VolatileStatus?.OnTurnEnd?.Invoke(this);
     }
 
     public void OnBattleOver()
     {
+        RemoveVolatileStatus();
         ResetStatsChanged();
     }
 }
