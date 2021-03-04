@@ -4,7 +4,7 @@ public enum BattleState
     Busy,
     ActionSelection,
     MoveSelection,
-    UseMove,
+    ExecutingTurn,
     BattleOver,
     PartyScreen
 }

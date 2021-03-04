@@ -10,9 +10,13 @@ public class Monster
     
     public int CurrentHp { get; set; }
     public bool IsHpChanged { get; set; }
+
+    public Move CurrentMove { get; set; }
     public List<Move> Moves { get; set; }
+
     public Dictionary<MonsterStat, int> Stats { get; private set; }
     public Dictionary<MonsterStat, int> StatsChanged { get; private set; }
+
     public Queue<string> StatusChanges { get; private set; } = new Queue<string>();
     public event Action OnStatusChange;
     public Condition Status { get; private set; }

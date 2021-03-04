@@ -13,6 +13,7 @@ public class BattleSystem : MonoBehaviour
     Monster wildMonster;
 
     BattleState state;
+    BattleState? prevState;
 
     // Indices for UI and monster selection
     int currentAction;
@@ -39,30 +40,63 @@ public class BattleSystem : MonoBehaviour
         dialogBox.SetMoveList(playerMonster.Monster.Moves);
 
         yield return dialogBox.TypeDialog($"You have encountered an enemy {enemyMonster.Monster.Base.Name}!");
-        CheckWhoIsFaster();
+        ActionSelection();
     }
 
-    IEnumerator PlayerMove()
+    IEnumerator ExecuteTurn(BattleAction playerAction)
     {
-        state = BattleState.UseMove;
+        state = BattleState.ExecutingTurn;
 
-        var move = playerMonster.Monster.Moves[currentMove];
-        yield return UseMove(playerMonster, enemyMonster, move);
+        if (playerAction == BattleAction.Move)
+        {
+            // Get monster moves
+            playerMonster.Monster.CurrentMove = playerMonster.Monster.Moves[currentMove];
+            enemyMonster.Monster.CurrentMove = enemyMonster.Monster.GetRandomMove();
 
-        // UseMove checks if the battle is over and sets state to BattleOver if it is
-        if (state == BattleState.UseMove)
-            StartCoroutine(EnemyMove());
-    }
+            // Check who goes first
+            bool isPlayerFirst = playerMonster.Monster.Speed >= enemyMonster.Monster.Speed;
+            var firstMonster = (isPlayerFirst) ? playerMonster : enemyMonster;
+            var secondMonster = (isPlayerFirst) ? enemyMonster : playerMonster;
 
-    IEnumerator EnemyMove()
-    {
-        state = BattleState.UseMove;
+            // Store incase it gets downed and switched before its move
+            var lastMonster = secondMonster.Monster;
 
-        var move = enemyMonster.Monster.GetRandomMove();
-        yield return UseMove(enemyMonster, playerMonster, move);
+            // First turn
+            yield return UseMove(firstMonster, secondMonster, firstMonster.Monster.CurrentMove);
+            yield return CleanUpTurn(firstMonster);
+            if (state == BattleState.BattleOver) yield break;
 
-        // UseMove checks if the battle is over and sets state to BattleOver if it is
-        if (state == BattleState.UseMove)
+            // Second turn
+            if (lastMonster.CurrentHp > 0)
+            {
+                yield return UseMove(secondMonster, firstMonster, secondMonster.Monster.CurrentMove);
+                yield return CleanUpTurn(secondMonster);
+                if (state == BattleState.BattleOver) yield break;
+            }
+        }
+        else if (playerAction == BattleAction.SwitchMonster)
+        {
+            // Switch monster
+            var selectedMember = playerParty.Monsters[currentMember];
+            state = BattleState.Busy;
+            yield return SwitchMonster(selectedMember);
+
+            // Enemy turn
+            var enemyMove = enemyMonster.Monster.GetRandomMove();
+            yield return UseMove(enemyMonster, playerMonster, enemyMove);
+            yield return CleanUpTurn(enemyMonster);
+            if (state == BattleState.BattleOver) yield break;
+        }
+        else if (playerAction == BattleAction.UseItem)
+        {
+            // Use item
+        }
+        else if (playerAction == BattleAction.Run)
+        {
+            // Run
+        }
+
+        if (state != BattleState.BattleOver)
             ActionSelection();
     }
 
@@ -126,22 +160,7 @@ public class BattleSystem : MonoBehaviour
         else
         {
             yield return dialogBox.TypeDialog($"{attackingMonster.Monster.Base.Name} missed their attack!");
-        }
-
-        // Check for status changes like poison and update Monster/HUD
-        attackingMonster.Monster.OnTurnOver();
-        yield return ShowStatusChanges(attackingMonster.Monster);
-        yield return attackingMonster.Hud.UpdateHP();
-
-        // Attacking monster can be downed from status effects
-        if (attackingMonster.Monster.CurrentHp <= 0)
-        {
-            attackingMonster.PlayDownedAnimation();
-            yield return dialogBox.TypeDialog($"{attackingMonster.Monster.Base.Name} has been taken down!");
-            yield return new WaitForSeconds(2f);
-
-            CheckIfBattleIsOver(attackingMonster);
-        }
+        }        
     }
 
     IEnumerator UseMoveEffects(MoveEffects effects, Monster attackingMonster, Monster defendingMonster, MoveTarget moveTarget)
@@ -193,36 +212,45 @@ public class BattleSystem : MonoBehaviour
 
     IEnumerator SwitchMonster(Monster newMonster)
     {
-        bool isSwitchForced = true;
         if (playerMonster.Monster.CurrentHp > 0)
         {
-            isSwitchForced = false;
             yield return dialogBox.TypeDialog($"{playerMonster.Monster.Base.Name}, fall back!");
             playerMonster.PlayDownedAnimation(); //TODO - create animation for returning to party
             yield return new WaitForSeconds(2f);
         }
         playerMonster.Setup(newMonster);
         dialogBox.SetMoveList(newMonster.Moves);
-        yield return dialogBox.TypeDialog($"You have switched to {newMonster.Base.Name}!");
+        yield return dialogBox.TypeDialog($"It's your turn now, {newMonster.Base.Name}!");
 
-        // If monster was downed, reset the turn. If monster was switched, forfeit the turn.
-        if (isSwitchForced)
-            CheckWhoIsFaster();
-        else
-            StartCoroutine(EnemyMove());
+        state = BattleState.ExecutingTurn;
+    }
+
+    IEnumerator CleanUpTurn(BattleMonster attackingMonster)
+    {
+        // Skip if battle is over
+        if (state == BattleState.BattleOver) yield break;
+        // Wait for monster switch, etc
+        yield return new WaitUntil(() => state == BattleState.ExecutingTurn);
+
+        // Check for status changes like poison and update Monster/HUD
+        attackingMonster.Monster.OnTurnOver();
+        yield return ShowStatusChanges(attackingMonster.Monster);
+        yield return attackingMonster.Hud.UpdateHP();
+
+        // Attacking monster can be downed from status effects
+        if (attackingMonster.Monster.CurrentHp <= 0)
+        {
+            attackingMonster.PlayDownedAnimation();
+            yield return dialogBox.TypeDialog($"{attackingMonster.Monster.Base.Name} has been taken down!");
+            yield return new WaitForSeconds(2f);
+
+            CheckIfBattleIsOver(attackingMonster);
+        }
     }
 
     //
     // HELPER FUNCTIONS
     //
-    void CheckWhoIsFaster()
-    {
-        if (playerMonster.Monster.Speed >= enemyMonster.Monster.Speed) //TODO - randomize attacker for equal speeds
-            ActionSelection();
-        else
-            StartCoroutine(EnemyMove());
-    }
-
     bool CheckIfMoveHits(Move move, Monster attackingMonster, Monster defendingMonster)
     {
         if (move.Base.AlwaysHits)
@@ -342,6 +370,7 @@ public class BattleSystem : MonoBehaviour
             else if (currentAction == 2)
             {
                 // Monsters
+                prevState = state;
                 OpenPartyScreen();
             }
             else if (currentAction == 3)
@@ -370,7 +399,7 @@ public class BattleSystem : MonoBehaviour
         {
             dialogBox.EnableMoveSelector(false);
             dialogBox.EnableDialogText(true);
-            StartCoroutine(PlayerMove());
+            StartCoroutine(ExecuteTurn(BattleAction.Move));
         }
         else if (Input.GetKeyDown(KeyCode.X))
         {
@@ -409,10 +438,19 @@ public class BattleSystem : MonoBehaviour
                 return;
             }
 
-            state = BattleState.Busy;
-
             partyScreen.gameObject.SetActive(false);
-            StartCoroutine(SwitchMonster(selectedMember));
+
+            // If player switched monster voluntarily it should count as a turn move
+            // If monster was downed and forced switch then it should trigger a new turn
+            if (prevState == BattleState.ActionSelection)
+            {
+                prevState = null;
+                StartCoroutine(ExecuteTurn(BattleAction.SwitchMonster));
+            } else
+            {
+                state = BattleState.Busy;
+                StartCoroutine(SwitchMonster(selectedMember));
+            }  
         }
         else if (Input.GetKeyDown(KeyCode.X))
         {
