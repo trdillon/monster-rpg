@@ -28,22 +28,9 @@ public class BattleSystem : MonoBehaviour
         StartCoroutine(SetupBattle());
     }
 
-    public void HandleUpdate()
-    {
-        if (state == BattleState.ActionSelection)
-        {
-            HandleActionSelection();
-        }
-        else if (state == BattleState.MoveSelection)
-        {
-            HandleMoveSelection();
-        }
-        else if (state == BattleState.PartyScreen)
-        {
-            HandlePartySelection();
-        }
-    }
-
+    //
+    // BATTLE COROUTINES
+    //
     public IEnumerator SetupBattle()
     {
         playerMonster.Setup(playerParty.GetHealthyMonster()); //TODO - handle setup with no healthy monsters
@@ -53,31 +40,6 @@ public class BattleSystem : MonoBehaviour
 
         yield return dialogBox.TypeDialog($"You have encountered an enemy {enemyMonster.Monster.Base.Name}!");
         CheckWhoIsFaster();
-    }
-
-    void ActionSelection()
-    {
-        state = BattleState.ActionSelection;
-
-        dialogBox.SetDialog("Select an action:");
-        dialogBox.EnableActionSelector(true);
-    }
-
-    void MoveSelection()
-    {
-        state = BattleState.MoveSelection;
-
-        dialogBox.EnableDialogText(false);
-        dialogBox.EnableActionSelector(false);
-        dialogBox.EnableMoveSelector(true);
-    }
-
-    void OpenPartyScreen()
-    {
-        state = BattleState.PartyScreen;
-
-        partyScreen.SetPartyData(playerParty.Monsters);
-        partyScreen.gameObject.SetActive(true);
     }
 
     IEnumerator PlayerMove()
@@ -108,41 +70,49 @@ public class BattleSystem : MonoBehaviour
     {
         // Check for statuses like paralyze or sleep before trying to attack
         bool canAttack = attackingMonster.Monster.OnTurnBegin();
+
         if (!canAttack)
         {
             yield return ShowStatusChanges(attackingMonster.Monster);
             yield return attackingMonster.Hud.UpdateHP();
             yield break;
         }
+
         yield return ShowStatusChanges(attackingMonster.Monster);
-
-        // Visuals for the move
-        move.Energy--;
         yield return dialogBox.TypeDialog($"{attackingMonster.Monster.Base.Name} used {move.Base.Name}!");
-        attackingMonster.PlayAttackAnimation();
-        yield return new WaitForSeconds(0.5f);
-        defendingMonster.PlayHitAnimation();
+        move.Energy--;
 
-        // If status move then don't deal damage, switch to UseMoveEffects coroutine
-        if (move.Base.Category == MoveCategory.Status)
+        if (CheckIfMoveHits(move, attackingMonster.Monster, defendingMonster.Monster))
         {
-            yield return UseMoveEffects(move, attackingMonster.Monster, defendingMonster.Monster);
+            attackingMonster.PlayAttackAnimation();
+            yield return new WaitForSeconds(0.5f);
+            defendingMonster.PlayHitAnimation();
+
+            // If status move then don't deal damage, switch to UseMoveEffects coroutine
+            if (move.Base.Category == MoveCategory.Status)
+            {
+                yield return UseMoveEffects(move, attackingMonster.Monster, defendingMonster.Monster);
+            }
+            else
+            {
+                var damageDetails = defendingMonster.Monster.TakeDamage(move, attackingMonster.Monster);
+                yield return defendingMonster.Hud.UpdateHP();
+                yield return ShowDamageDetails(damageDetails);
+            }
+
+            // Handle downed monster and check if we continue
+            if (defendingMonster.Monster.CurrentHp <= 0)
+            {
+                defendingMonster.PlayDownedAnimation();
+                yield return dialogBox.TypeDialog($"{defendingMonster.Monster.Base.Name} has been taken down!");
+                yield return new WaitForSeconds(2f);
+
+                CheckIfBattleIsOver(defendingMonster);
+            }
         }
         else
         {
-            var damageDetails = defendingMonster.Monster.TakeDamage(move, attackingMonster.Monster);
-            yield return defendingMonster.Hud.UpdateHP();
-            yield return ShowDamageDetails(damageDetails);
-        }
-
-        // Handle downed monster and check if we continue
-        if (defendingMonster.Monster.CurrentHp <= 0)
-        {
-            defendingMonster.PlayDownedAnimation();
-            yield return dialogBox.TypeDialog($"{defendingMonster.Monster.Base.Name} has been taken down!");
-            yield return new WaitForSeconds(2f);
-
-            CheckIfBattleIsOver(defendingMonster);
+            yield return dialogBox.TypeDialog($"{attackingMonster.Monster.Base.Name} missed their attack!");
         }
 
         // Check for status changes like poison and update Monster/HUD
@@ -231,6 +201,41 @@ public class BattleSystem : MonoBehaviour
             StartCoroutine(EnemyMove());
     }
 
+    //
+    // HELPER FUNCTIONS
+    //
+    void CheckWhoIsFaster()
+    {
+        if (playerMonster.Monster.Speed >= enemyMonster.Monster.Speed) //TODO - randomize attacker for equal speeds
+            ActionSelection();
+        else
+            StartCoroutine(EnemyMove());
+    }
+
+    bool CheckIfMoveHits(Move move, Monster attackingMonster, Monster defendingMonster)
+    {
+        if (move.Base.AlwaysHits)
+            return true;
+
+        // Stat changes based on original game's formula
+        float moveAccuracy = move.Base.Accuracy;
+        int accuracy = attackingMonster.StatsChanged[MonsterStat.Accuracy];
+        int evasion = defendingMonster.StatsChanged[MonsterStat.Evasion];
+        var changeVals = new float[] { 1f, 4f / 3f, 5f / 3f, 2f, 7f / 3f, 8f / 3f, 3f };
+
+        if (accuracy > 0)
+            moveAccuracy *= changeVals[accuracy];
+        else if (accuracy < 0)
+            moveAccuracy /= changeVals[-accuracy];
+
+        if (evasion > 0)
+            moveAccuracy /= changeVals[evasion];
+        else if (evasion < 0)
+            moveAccuracy *= changeVals[evasion];
+
+        return UnityEngine.Random.Range(1, 101) <= moveAccuracy;
+    }
+
     void CheckIfBattleIsOver(BattleMonster downedMonster)
     {
         if (downedMonster.IsPlayerMonster)
@@ -245,20 +250,56 @@ public class BattleSystem : MonoBehaviour
             BattleOver(true); // true for won battle
     }
 
-    void CheckWhoIsFaster()
-    {
-        if (playerMonster.Monster.Speed >= enemyMonster.Monster.Speed) //TODO - randomize attacker for equal speeds
-            ActionSelection();
-        else
-            StartCoroutine(EnemyMove());
-    }
-
     void BattleOver(bool won)
     {
         state = BattleState.BattleOver;
 
         playerParty.Monsters.ForEach(p => p.OnBattleOver());
         OnBattleOver(won);
+    }
+
+    // 
+    // SELECTOR FUNCTIONS
+    //
+    public void HandleUpdate()
+    {
+        if (state == BattleState.ActionSelection)
+        {
+            HandleActionSelection();
+        }
+        else if (state == BattleState.MoveSelection)
+        {
+            HandleMoveSelection();
+        }
+        else if (state == BattleState.PartyScreen)
+        {
+            HandlePartySelection();
+        }
+    }
+
+    void ActionSelection()
+    {
+        state = BattleState.ActionSelection;
+
+        dialogBox.SetDialog("Select an action:");
+        dialogBox.EnableActionSelector(true);
+    }
+
+    void MoveSelection()
+    {
+        state = BattleState.MoveSelection;
+
+        dialogBox.EnableDialogText(false);
+        dialogBox.EnableActionSelector(false);
+        dialogBox.EnableMoveSelector(true);
+    }
+
+    void OpenPartyScreen()
+    {
+        state = BattleState.PartyScreen;
+
+        partyScreen.SetPartyData(playerParty.Monsters);
+        partyScreen.gameObject.SetActive(true);
     }
 
     void HandleActionSelection()

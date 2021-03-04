@@ -18,6 +18,7 @@ public class MoveBase : ScriptableObject
     [SerializeField] int power;
     [SerializeField] int accuracy;
     [SerializeField] int energy;
+    [SerializeField] bool alwaysHits;
 
     public string Name {
         get { return name; }
@@ -51,5 +52,9 @@ public class MoveBase : ScriptableObject
     }
     public int Energy {
         get { return energy; }
+    }
+
+    public bool AlwaysHits {
+        get { return alwaysHits; }
     }
 }
