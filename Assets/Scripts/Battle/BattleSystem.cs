@@ -111,6 +111,7 @@ public class BattleSystem : MonoBehaviour
         if (!canAttack)
         {
             yield return ShowStatusChanges(attackingMonster.Monster);
+            yield return attackingMonster.Hud.UpdateHP();
             yield break;
         }
         yield return ShowStatusChanges(attackingMonster.Monster);
@@ -177,6 +178,12 @@ public class BattleSystem : MonoBehaviour
         if (effects.Status != ConditionID.NON)
         {
             defendingMonster.SetStatus(effects.Status);
+        }
+
+        // Volatile status conditions
+        if (effects.VolatileStatus != ConditionID.NON)
+        {
+            defendingMonster.SetVolatileStatus(effects.VolatileStatus);
         }
 
         yield return ShowStatusChanges(attackingMonster);
