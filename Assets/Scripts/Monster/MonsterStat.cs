@@ -4,5 +4,8 @@ public enum MonsterStat
     Defense,
     SpAttack,
     SpDefense,
-    Speed
+    Speed,
+    // Only used for hit calculation
+    Accuracy,
+    Evasion
 }

@@ -90,7 +90,9 @@ public class Monster
             {MonsterStat.Defense, 0},
             {MonsterStat.SpAttack, 0},
             {MonsterStat.SpDefense, 0},
-            {MonsterStat.Speed, 0}
+            {MonsterStat.Speed, 0},
+            {MonsterStat.Accuracy, 0},
+            {MonsterStat.Evasion, 0}
         };
     }
 
@@ -125,7 +127,7 @@ public class Monster
                 StatusChanges.Enqueue($"{Base.Name}'s {stat} decreased!");
 
 
-            Debug.Log($"{stat} has been changed by {changeVal}. {stat} is now {GetStat(stat)}");
+            Debug.Log($"{stat} has been changed by {changeVal}.");
         }
     }
 
