@@ -121,7 +121,12 @@ public class BattleSystem : MonoBehaviour
         }
 
         yield return ShowStatusChanges(attackingMonster.Monster);
-        yield return dialogBox.TypeDialog($"{attackingMonster.Monster.Base.Name} used {move.Base.Name}!");
+
+        if (attackingMonster.IsPlayerMonster)
+            yield return dialogBox.TypeDialog($"{attackingMonster.Monster.Base.Name} used {move.Base.Name}!");
+        else
+            yield return dialogBox.TypeDialog($"Enemy {attackingMonster.Monster.Base.Name} used {move.Base.Name}!");
+
         move.Energy--;
 
         if (CheckIfMoveHits(move, attackingMonster.Monster, defendingMonster.Monster))
@@ -159,7 +164,12 @@ public class BattleSystem : MonoBehaviour
             if (defendingMonster.Monster.CurrentHp <= 0)
             {
                 defendingMonster.PlayDownedAnimation();
-                yield return dialogBox.TypeDialog($"{defendingMonster.Monster.Base.Name} has been taken down!");
+
+                if (defendingMonster.IsPlayerMonster)
+                    yield return dialogBox.TypeDialog($"{defendingMonster.Monster.Base.Name} has been taken down!");
+                else
+                    yield return dialogBox.TypeDialog($"Enemy {defendingMonster.Monster.Base.Name} has been taken down!");
+
                 yield return new WaitForSeconds(2f);
 
                 CheckIfBattleIsOver(defendingMonster);
@@ -167,7 +177,10 @@ public class BattleSystem : MonoBehaviour
         }
         else
         {
-            yield return dialogBox.TypeDialog($"{attackingMonster.Monster.Base.Name} missed their attack!");
+            if (attackingMonster.IsPlayerMonster)
+                yield return dialogBox.TypeDialog($"{attackingMonster.Monster.Base.Name} missed their attack!");
+            else
+                yield return dialogBox.TypeDialog($"Enemy {attackingMonster.Monster.Base.Name} missed their attack!");
         }        
     }
 
@@ -249,7 +262,12 @@ public class BattleSystem : MonoBehaviour
         if (attackingMonster.Monster.CurrentHp <= 0)
         {
             attackingMonster.PlayDownedAnimation();
-            yield return dialogBox.TypeDialog($"{attackingMonster.Monster.Base.Name} has been taken down!");
+
+            if (attackingMonster.IsPlayerMonster)
+                yield return dialogBox.TypeDialog($"{attackingMonster.Monster.Base.Name} has been taken down!");
+            else
+                yield return dialogBox.TypeDialog($"Enemy {attackingMonster.Monster.Base.Name} has been taken down!");
+
             yield return new WaitForSeconds(2f);
 
             CheckIfBattleIsOver(attackingMonster);
