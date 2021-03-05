@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
 
     public LayerMask foregroundLayer;
     public LayerMask fightgroundLayer;
+    public LayerMask interactLayer;
     public float moveSpeed;
 
     public event Action OnEncounter;
@@ -19,6 +20,9 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
+    //
+    // MOVEMENT
+    //
     public void HandleUpdate()
     {
         if(!isMoving)
@@ -44,6 +48,9 @@ public class PlayerController : MonoBehaviour
         }
 
         animator.SetBool("isMoving", isMoving);
+
+        if (Input.GetKeyDown(KeyCode.Z))
+            Interact();
     }
 
     IEnumerator Move(Vector3 targetPos)
@@ -61,9 +68,27 @@ public class PlayerController : MonoBehaviour
         CheckForEncounters();
     }
 
+    //
+    // INTERACTION
+    //
+    void Interact()
+    {
+        var lookingAt = new Vector3(animator.GetFloat("moveX"), animator.GetFloat("moveY"));
+        var nextTile = transform.position + lookingAt;
+
+        var collider = Physics2D.OverlapCircle(nextTile, 0.3f, interactLayer);
+        if (collider != null)
+        {
+            collider.GetComponent<Interactable>()?.Interact();
+        }
+    }
+
+    //
+    // HELPER FUNCTIONS
+    //
     private bool IsWalkable(Vector3 targetPos)
     {
-        if (Physics2D.OverlapCircle(targetPos, 0.1f, foregroundLayer) != null)
+        if (Physics2D.OverlapCircle(targetPos, 0.1f, foregroundLayer | interactLayer) != null)
         {
             return false;
         }
