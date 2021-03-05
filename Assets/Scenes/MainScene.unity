@@ -341,7 +341,7 @@ SpriteRenderer:
   m_SortingLayerID: -310553249
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8020143640844766479, guid: 53cb1cd9a6ca9234c8fa00e05af318f8, type: 3}
+  m_Sprite: {fileID: 7152930139536384079, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -383,7 +383,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1, y: 2}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -426,9 +426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-    strings:
-    - Hello, welcome to the world.
-    - My name is Taro-kun.
+    strings: []
 --- !u!1 &225907021
 GameObject:
   m_ObjectHideFlags: 0
@@ -440,8 +438,8 @@ GameObject:
   - component: {fileID: 225907023}
   - component: {fileID: 225907022}
   - component: {fileID: 225907024}
-  - component: {fileID: 225907025}
   - component: {fileID: 225907026}
+  - component: {fileID: 225907025}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -494,7 +492,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 2}
+  m_Size: {x: 0.84375, y: 1.40625}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -537,25 +535,38 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   moveSpeed: 5
---- !u!95 &225907025
-Animator:
-  serializedVersion: 3
+--- !u!114 &225907025
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 225907021}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d255a306cc0a9f64781981b021c52f4f, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 525ca2a005b69b144bfa53bec249b8a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkDownSprites:
+  - {fileID: 7152930139536384079, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
+  - {fileID: -5725962078152895296, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
+  - {fileID: -8401692288953904933, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
+  - {fileID: 7888922196035610388, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
+  walkUpSprites:
+  - {fileID: -4445699719359273135, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
+  - {fileID: 1892806461834874077, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
+  - {fileID: -8627026541424588849, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
+  - {fileID: -6780520195603233165, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
+  walkLeftSprites:
+  - {fileID: -1038918931832879880, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
+  - {fileID: 2690600881683387669, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
+  - {fileID: 6634202828824015816, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
+  - {fileID: -5008138227279614530, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
+  walkRightSprites:
+  - {fileID: -3303779423006393323, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
+  - {fileID: -790699523677361007, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
+  - {fileID: 8470420716495695676, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
+  - {fileID: 6167071470516247665, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
 --- !u!114 &225907026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1798,7 +1809,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &437036385
 RectTransform:
   m_ObjectHideFlags: 0
