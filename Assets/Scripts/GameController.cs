@@ -17,6 +17,8 @@ public class GameController : MonoBehaviour
     {
         playerController.OnEncounter += StartBattle;
         battleSystem.OnBattleOver += EndBattle;
+        DialogController.Instance.OnShowDialog += StartDialog;
+        DialogController.Instance.OnCloseDialog += EndDialog;
     }
 
     private void Update()
@@ -29,6 +31,10 @@ public class GameController : MonoBehaviour
         {
             battleSystem.HandleUpdate();
         }
+        else if (state == GameState.Dialog)
+        {
+            DialogController.Instance.HandleUpdate();
+        }
         else if (state == GameState.Menu)
         {
             // Menu controller
@@ -39,6 +45,9 @@ public class GameController : MonoBehaviour
         }
     }
 
+    //
+    // BATTLE
+    //
     void StartBattle()
     {
         state = GameState.Battle;
@@ -59,4 +68,27 @@ public class GameController : MonoBehaviour
         battleSystem.gameObject.SetActive(false);
         worldCamera.gameObject.SetActive(true);
     }
+
+    //
+    // DIALOG
+    //
+    void StartDialog()
+    {
+        state = GameState.Dialog;
+    }
+
+    void EndDialog()
+    {
+        if (state == GameState.Dialog)
+            state = GameState.World;
+        //TODO - handle character dialog segue to battle
+    }
+
+    //
+    // MENU
+    //
+
+    //
+    // PAUSE
+    //
 }
