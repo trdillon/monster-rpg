@@ -72,6 +72,11 @@ public class BattleDialogBox : MonoBehaviour
 
         energyText.text = $"Energy: {move.Energy}/{move.Base.Energy}";
         typeText.text = "Type: " + move.Base.Type.ToString();
+
+        if (move.Energy == 0)
+            energyText.color = Color.red;
+        else
+            energyText.color = Color.black;
     }
 
     public void SetMoveList(List<Move> moves)

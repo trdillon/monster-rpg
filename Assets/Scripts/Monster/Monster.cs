@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 [System.Serializable]
@@ -218,8 +219,10 @@ public class Monster
     //
     public Move GetRandomMove()
     {
-        int i = UnityEngine.Random.Range(0, Moves.Count);
-        return Moves[i];
+        var usableMoves = Moves.Where(m => m.Energy > 0).ToList(); //TODO - handle case with no usable moves
+
+        int i = UnityEngine.Random.Range(0, usableMoves.Count);
+        return usableMoves[i];
     }
 
     public bool OnTurnBegin()
