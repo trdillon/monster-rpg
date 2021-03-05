@@ -145,7 +145,11 @@ public class Monster
     public void SetStatus(ConditionID conditionID)
     {
         // Only one status effect at a time
-        if (Status != null) return;
+        if (Status != null)
+        {
+            StatusChanges.Enqueue($"{Base.Name} is already being affected by another condition!");
+            return;
+        }
 
         Status = ConditionDB.Conditions[conditionID];
         Status?.OnStart?.Invoke(this);
