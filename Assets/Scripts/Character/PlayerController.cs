@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private Animator animator;
+    private CharacterAnimator animator;
     private Vector2 input;
     private bool isMoving;
 
@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
-        animator = GetComponent<Animator>();
+        animator = GetComponent<CharacterAnimator>();
     }
 
     //
@@ -35,8 +35,8 @@ public class PlayerController : MonoBehaviour
 
             if(input != Vector2.zero)
             {
-                animator.SetFloat("moveX", input.x);
-                animator.SetFloat("moveY", input.y);
+                animator.MoveX = input.x;
+                animator.MoveY = input.y;
 
                 var targetPos = transform.position;
                 targetPos.x += input.x;
@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        animator.SetBool("isMoving", isMoving);
+        animator.IsMoving = isMoving;
 
         if (Input.GetKeyDown(KeyCode.Z))
             Interact();
@@ -73,7 +73,7 @@ public class PlayerController : MonoBehaviour
     //
     void Interact()
     {
-        var lookingAt = new Vector3(animator.GetFloat("moveX"), animator.GetFloat("moveY"));
+        var lookingAt = new Vector3(animator.MoveX, animator.MoveY);
         var nextTile = transform.position + lookingAt;
 
         var collider = Physics2D.OverlapCircle(nextTile, 0.3f, interactLayer);
@@ -101,7 +101,7 @@ public class PlayerController : MonoBehaviour
         {
             if (UnityEngine.Random.Range(1, 101) <= 7) //TODO - decide the percentage of event triggers
             {
-                animator.SetBool("isMoving", false);
+                animator.IsMoving = false;
                 OnEncounter();
             }
         }
