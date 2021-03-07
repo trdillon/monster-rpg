@@ -294,6 +294,8 @@ GameObject:
   - component: {fileID: 199644584}
   - component: {fileID: 199644583}
   - component: {fileID: 199644585}
+  - component: {fileID: 199644587}
+  - component: {fileID: 199644586}
   m_Layer: 8
   m_Name: NPC
   m_TagString: Untagged
@@ -360,7 +362,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 199644580}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.5, y: 2.8, z: 0}
+  m_LocalPosition: {x: -4.5, y: 2.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -426,7 +428,60 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-    strings: []
+    strings:
+    - Hey, welcome to the world of monsters.
+    - Good luck!
+  movementPattern:
+  - {x: 2, y: 0}
+  - {x: 0, y: 2}
+  - {x: -2, y: 0}
+  - {x: 0, y: -2}
+  movementPatternTime: 2
+--- !u!114 &199644586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199644580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 525ca2a005b69b144bfa53bec249b8a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkDownSprites:
+  - {fileID: 7152930139536384079, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
+  - {fileID: -5725962078152895296, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
+  - {fileID: -8401692288953904933, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
+  - {fileID: 7888922196035610388, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
+  walkUpSprites:
+  - {fileID: -4445699719359273135, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
+  - {fileID: 1892806461834874077, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
+  - {fileID: -8627026541424588849, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
+  - {fileID: -6780520195603233165, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
+  walkLeftSprites:
+  - {fileID: -1038918931832879880, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
+  - {fileID: 2690600881683387669, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
+  - {fileID: 6634202828824015816, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
+  - {fileID: -5008138227279614530, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
+  walkRightSprites:
+  - {fileID: -3303779423006393323, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
+  - {fileID: -790699523677361007, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
+  - {fileID: 8470420716495695676, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
+  - {fileID: 6167071470516247665, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
+--- !u!114 &199644587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199644580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84f169ff2c273ca479aae92f90caa438, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
 --- !u!1 &225907021
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,8 +493,9 @@ GameObject:
   - component: {fileID: 225907023}
   - component: {fileID: 225907022}
   - component: {fileID: 225907024}
-  - component: {fileID: 225907026}
+  - component: {fileID: 225907027}
   - component: {fileID: 225907025}
+  - component: {fileID: 225907026}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -525,16 +581,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dbc970c53fe4fb4db64554b34a2489c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  foregroundLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  fightgroundLayer:
-    serializedVersion: 2
-    m_Bits: 128
-  interactLayer:
-    serializedVersion: 2
-    m_Bits: 256
-  moveSpeed: 5
 --- !u!114 &225907025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -592,6 +638,19 @@ MonoBehaviour:
     level: 2
   - _base: {fileID: 11400000, guid: 037162b05ccdadf43a507fd23d5b7d64, type: 2}
     level: 3
+--- !u!114 &225907027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225907021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84f169ff2c273ca479aae92f90caa438, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
 --- !u!1 &251412312
 GameObject:
   m_ObjectHideFlags: 0
@@ -4102,6 +4161,7 @@ GameObject:
   - component: {fileID: 1347669710}
   - component: {fileID: 1347669709}
   - component: {fileID: 1347669711}
+  - component: {fileID: 1347669712}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -4153,6 +4213,27 @@ MonoBehaviour:
   dialogBox: {fileID: 437036384}
   dialogText: {fileID: 954615735}
   lettersPerSecond: 45
+--- !u!114 &1347669712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1347669708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfc898197ec3bee49ac1ddb0a8a0a005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  encountersLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &1404901494
 GameObject:
   m_ObjectHideFlags: 0
