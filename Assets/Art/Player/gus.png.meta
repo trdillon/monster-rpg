@@ -1,55 +1,55 @@
 fileFormatVersion: 2
-guid: 53cb1cd9a6ca9234c8fa00e05af318f8
+guid: 3506cc3f189d48e43857fe5de5377705
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8020143640844766479
-    second: spritesheet_0
+      213: 880231291406045695
+    second: gus-1
   - first:
-      213: -6251682230944352461
-    second: spritesheet_1
+      213: -4101229301456021584
+    second: gus-2
   - first:
-      213: -1259408508766424310
-    second: spritesheet_2
+      213: 3698387406507301872
+    second: gus-3
   - first:
-      213: -5962389079421231736
-    second: spritesheet_3
+      213: -3505928669650504026
+    second: gus-4
   - first:
-      213: 2788568348960109317
-    second: spritesheet_4
+      213: 4907542694546458950
+    second: gus-5
   - first:
-      213: 226702753830753226
-    second: spritesheet_5
+      213: -8295987082180297689
+    second: gus-6
   - first:
-      213: -7921052967969465774
-    second: spritesheet_6
+      213: 4189663924183455587
+    second: gus-7
   - first:
-      213: -1370661682523340017
-    second: spritesheet_7
+      213: 966471145356176990
+    second: gus-8
   - first:
-      213: -8276262488406422588
-    second: spritesheet_8
+      213: 3967475003460924831
+    second: gus-9
   - first:
-      213: -5906973516983679737
-    second: spritesheet_9
+      213: 1510101942682237580
+    second: gus-10
   - first:
-      213: 5777552420452043588
-    second: spritesheet_10
+      213: 4895899671705142651
+    second: gus-11
   - first:
-      213: 1269540525142108225
-    second: spritesheet_11
+      213: -6532461562134943205
+    second: gus-12
   - first:
-      213: -2630129836624287915
-    second: spritesheet_12
+      213: -8278551886045786360
+    second: gus-13
   - first:
-      213: -7676219313036738927
-    second: spritesheet_13
+      213: -5687298332529069498
+    second: gus-14
   - first:
-      213: 6985626698306143173
-    second: spritesheet_14
+      213: 3168402398906451873
+    second: gus-15
   - first:
-      213: 4773514653529381359
-    second: spritesheet_15
+      213: -7246388641585605614
+    second: gus-16
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -94,7 +94,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -136,6 +136,18 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -163,337 +175,337 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spritesheet_0
+      name: gus-1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 61
+        y: 18
+        width: 27
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5888889}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f0d092816264d4f60800000000000000
-      internalID: 8020143640844766479
+      spriteID: ff1d07422b5373c00800000000000000
+      internalID: 880231291406045695
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_1
+      name: gus-2
       rect:
         serializedVersion: 2
-        x: 16
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 119
+        y: 19
+        width: 27
+        height: 44
+      alignment: 9
+      pivot: {x: 0.5, y: 0.60227275}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 337b0ff32209d39a0800000000000000
-      internalID: -6251682230944352461
+      spriteID: 0b75a48fda18517c0800000000000000
+      internalID: -4101229301456021584
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_2
+      name: gus-3
       rect:
         serializedVersion: 2
         x: 32
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 18
+        width: 27
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5888889}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a037fd742aea58ee0800000000000000
-      internalID: -1259408508766424310
+      spriteID: 0fb55a650cf435330800000000000000
+      internalID: 3698387406507301872
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_3
+      name: gus-4
       rect:
         serializedVersion: 2
-        x: 48
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 90
+        y: 19
+        width: 27
+        height: 44
+      alignment: 9
+      pivot: {x: 0.5, y: 0.60227275}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 88ddd6ce8b6514da0800000000000000
-      internalID: -5962389079421231736
+      spriteID: 6a6bf9d3370785fc0800000000000000
+      internalID: -3505928669650504026
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_4
+      name: gus-5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 235
+        y: 20
+        width: 27
+        height: 43
+      alignment: 9
+      pivot: {x: 0.5, y: 0.59302324}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 5033aaf832cf2b620800000000000000
-      internalID: 2788568348960109317
+      spriteID: 649418454181b1440800000000000000
+      internalID: 4907542694546458950
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_5
+      name: gus-6
       rect:
         serializedVersion: 2
-        x: 16
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 206
+        y: 20
+        width: 27
+        height: 43
+      alignment: 9
+      pivot: {x: 0.5, y: 0.61627907}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ac35fa714f8652300800000000000000
-      internalID: 226702753830753226
+      spriteID: 72cf969e3bbbedc80800000000000000
+      internalID: -8295987082180297689
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_6
+      name: gus-7
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 177
+        y: 20
+        width: 27
+        height: 43
+      alignment: 9
+      pivot: {x: 0.5, y: 0.59302324}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 25a502d0b44c21290800000000000000
-      internalID: -7921052967969465774
+      spriteID: 3675939242da42a30800000000000000
+      internalID: 4189663924183455587
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_7
+      name: gus-8
       rect:
         serializedVersion: 2
-        x: 48
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 148
+        y: 20
+        width: 27
+        height: 43
+      alignment: 9
+      pivot: {x: 0.5, y: 0.61627907}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f0305f9367e6afce0800000000000000
-      internalID: -1370661682523340017
+      spriteID: e5eae98d268996d00800000000000000
+      internalID: 966471145356176990
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_8
+      name: gus-9
       rect:
         serializedVersion: 2
-        x: 0
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 341
+        y: 19
+        width: 21
+        height: 44
+      alignment: 9
+      pivot: {x: 0.5, y: 0.60227275}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4cb05a6cd1fc42d80800000000000000
-      internalID: -8276262488406422588
+      spriteID: f95b78cbe7d4f0730800000000000000
+      internalID: 3967475003460924831
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_9
+      name: gus-10
       rect:
         serializedVersion: 2
-        x: 16
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 410
+        y: 20
+        width: 21
+        height: 43
+      alignment: 9
+      pivot: {x: 0.5, y: 0.59302324}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7054c8ef1e6360ea0800000000000000
-      internalID: -5906973516983679737
+      spriteID: c8ab33c47b5f4f410800000000000000
+      internalID: 1510101942682237580
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_10
+      name: gus-11
       rect:
         serializedVersion: 2
-        x: 32
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 317
+        y: 19
+        width: 22
+        height: 44
+      alignment: 9
+      pivot: {x: 0.47727272, y: 0.60227275}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 44b0e3cc05dfd2050800000000000000
-      internalID: 5777552420452043588
+      spriteID: b75cfe3dfcab1f340800000000000000
+      internalID: 4895899671705142651
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_11
+      name: gus-12
       rect:
         serializedVersion: 2
-        x: 48
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1
+        y: 18
+        width: 29
+        height: 45
+      alignment: 9
+      pivot: {x: 0.43103448, y: 0.5888889}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 148ee0d91605e9110800000000000000
-      internalID: 1269540525142108225
+      spriteID: b1aad08d1d80855a0800000000000000
+      internalID: -6532461562134943205
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_12
+      name: gus-13
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 364
+        y: 19
+        width: 21
+        height: 44
+      alignment: 9
+      pivot: {x: 0.5, y: 0.60227275}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 5576ade39d6ef7bd0800000000000000
-      internalID: -2630129836624287915
+      spriteID: 80fc999dbecac1d80800000000000000
+      internalID: -8278551886045786360
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_13
+      name: gus-14
       rect:
         serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 387
+        y: 20
+        width: 21
+        height: 43
+      alignment: 9
+      pivot: {x: 0.5, y: 0.59302324}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 19eb3748437987590800000000000000
-      internalID: -7676219313036738927
+      spriteID: 642fee59c48a211b0800000000000000
+      internalID: -5687298332529069498
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_14
+      name: gus-15
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 292
+        y: 19
+        width: 23
+        height: 44
+      alignment: 9
+      pivot: {x: 0.54347825, y: 0.60227275}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 5c3c50e787ee1f060800000000000000
-      internalID: 6985626698306143173
+      spriteID: 1a78054e13d68fb20800000000000000
+      internalID: 3168402398906451873
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_15
+      name: gus-16
       rect:
         serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 264
+        y: 20
+        width: 26
+        height: 43
+      alignment: 9
+      pivot: {x: 0.5576923, y: 0.61627907}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: fe99db5494eee3240800000000000000
-      internalID: 4773514653529381359
+      spriteID: 2145dd96ce7af6b90800000000000000
+      internalID: -7246388641585605614
       vertices: []
       indices: 
       edges: []
@@ -501,7 +513,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 

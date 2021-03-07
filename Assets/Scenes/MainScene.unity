@@ -499,7 +499,7 @@ GameObject:
   - component: {fileID: 225907029}
   - component: {fileID: 225907028}
   m_Layer: 9
-  m_Name: Player
+  m_Name: PlayerGus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -545,12 +545,12 @@ SpriteRenderer:
   m_SortingLayerID: -310553249
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7152930139536384079, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
+  m_Sprite: {fileID: 880231291406045695, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.84375, y: 1.40625}
+  m_Size: {x: 0.27, y: 0.45}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -596,25 +596,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkDownSprites:
-  - {fileID: 7152930139536384079, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
-  - {fileID: -5725962078152895296, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
-  - {fileID: -8401692288953904933, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
-  - {fileID: 7888922196035610388, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
+  - {fileID: 880231291406045695, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
+  - {fileID: -4101229301456021584, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
+  - {fileID: 3698387406507301872, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
+  - {fileID: -3505928669650504026, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
   walkUpSprites:
-  - {fileID: -4445699719359273135, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
-  - {fileID: 1892806461834874077, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
-  - {fileID: -8627026541424588849, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
-  - {fileID: -6780520195603233165, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
+  - {fileID: 4907542694546458950, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
+  - {fileID: -8295987082180297689, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
+  - {fileID: 4189663924183455587, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
+  - {fileID: 966471145356176990, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
   walkLeftSprites:
-  - {fileID: -1038918931832879880, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
-  - {fileID: 2690600881683387669, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
-  - {fileID: 6634202828824015816, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
-  - {fileID: -5008138227279614530, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
+  - {fileID: 3967475003460924831, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
+  - {fileID: 1510101942682237580, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
+  - {fileID: 4895899671705142651, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
+  - {fileID: -6532461562134943205, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
   walkRightSprites:
-  - {fileID: -3303779423006393323, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
-  - {fileID: -790699523677361007, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
-  - {fileID: 8470420716495695676, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
-  - {fileID: 6167071470516247665, guid: e329be9aef20d7d4a8df3cee58d9289a, type: 3}
+  - {fileID: -8278551886045786360, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
+  - {fileID: -5687298332529069498, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
+  - {fileID: 3168402398906451873, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
+  - {fileID: -7246388641585605614, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
 --- !u!114 &225907026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -690,9 +690,9 @@ BoxCollider2D:
   m_Offset: {x: 0.00000011920929, y: -0.040094137}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 2}
-    newSize: {x: 0.84375, y: 1.40625}
+    pivot: {x: 0.5, y: 0.5888889}
+    oldSize: {x: 0.84375, y: 1.40625}
+    newSize: {x: 0.27, y: 0.45}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
