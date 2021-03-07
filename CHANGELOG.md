@@ -3,9 +3,27 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
+## [1.0.4] - 2021-03-07
+
 ## [1.0.3] - 2021-03-05
 ### Added
+- Custom animation system
+- NPCs with walking patterns
+- World dialog system
+- Texture packer importer plugin
 - Changelog
+
+### Changed
+- Refactor player controller, move common behavior to character superclass
+- Transparency sort mode to Y axis
+- Map layer names to be more descriptive
+- Update Unity to 2020.2.7f1
+
+### Fixed
+- Bug where monster can use moves with 0 energy
+- Ambiguous dialog text when monster attacking
+- Duplicate status move having no feedback dialog
+- Multiple bugs with NPC behavior
 
 ## [1.0.2] - 2021-03-01
 ### Added
