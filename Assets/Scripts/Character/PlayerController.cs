@@ -4,20 +4,14 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private CharacterAnimator animator;
+    private Character character;
     private Vector2 input;
-    private bool isMoving;
-
-    public LayerMask foregroundLayer;
-    public LayerMask fightgroundLayer;
-    public LayerMask interactLayer;
-    public float moveSpeed;
 
     public event Action OnEncounter;
 
     private void Awake()
     {
-        animator = GetComponent<CharacterAnimator>();
+        character = GetComponent<Character>();
     }
 
     //
@@ -25,7 +19,7 @@ public class PlayerController : MonoBehaviour
     //
     public void HandleUpdate()
     {
-        if(!isMoving)
+        if(!character.IsMoving)
         {
             input.x = Input.GetAxisRaw("Horizontal");
             input.y = Input.GetAxisRaw("Vertical");
@@ -35,37 +29,14 @@ public class PlayerController : MonoBehaviour
 
             if(input != Vector2.zero)
             {
-                animator.MoveX = input.x;
-                animator.MoveY = input.y;
-
-                var targetPos = transform.position;
-                targetPos.x += input.x;
-                targetPos.y += input.y;
-
-                if (IsWalkable(targetPos))
-                    StartCoroutine(Move(targetPos));
+                StartCoroutine(character.Move(input, CheckForEncounters));
             }
         }
 
-        animator.IsMoving = isMoving;
+        character.HandleUpdate();
 
         if (Input.GetKeyDown(KeyCode.Z))
             Interact();
-    }
-
-    IEnumerator Move(Vector3 targetPos)
-    {
-        isMoving = true;
-
-        while ((targetPos - transform.position).sqrMagnitude > Mathf.Epsilon)
-        {
-            transform.position = Vector3.MoveTowards(transform.position, targetPos, moveSpeed * Time.deltaTime);
-            yield return null;
-        }
-
-        transform.position = targetPos;
-        isMoving = false;
-        CheckForEncounters();
     }
 
     //
@@ -73,10 +44,10 @@ public class PlayerController : MonoBehaviour
     //
     void Interact()
     {
-        var lookingAt = new Vector3(animator.MoveX, animator.MoveY);
+        var lookingAt = new Vector3(character.Animator.MoveX, character.Animator.MoveY);
         var nextTile = transform.position + lookingAt;
 
-        var collider = Physics2D.OverlapCircle(nextTile, 0.3f, interactLayer);
+        var collider = Physics2D.OverlapCircle(nextTile, 0.3f, MapLayers.Instance.InteractLayer);
         if (collider != null)
         {
             collider.GetComponent<Interactable>()?.Interact();
@@ -86,22 +57,13 @@ public class PlayerController : MonoBehaviour
     //
     // HELPER FUNCTIONS
     //
-    private bool IsWalkable(Vector3 targetPos)
-    {
-        if (Physics2D.OverlapCircle(targetPos, 0.1f, foregroundLayer | interactLayer) != null)
-        {
-            return false;
-        }
-        return true;
-    }
-
     private void CheckForEncounters()
     {
-        if (Physics2D.OverlapCircle(transform.position, 0.2f, fightgroundLayer) != null)
+        if (Physics2D.OverlapCircle(transform.position, 0.2f, MapLayers.Instance.EncountersLayer) != null)
         {
             if (UnityEngine.Random.Range(1, 101) <= 7) //TODO - decide the percentage of event triggers
             {
-                animator.IsMoving = false;
+                character.Animator.IsMoving = false;
                 OnEncounter();
             }
         }

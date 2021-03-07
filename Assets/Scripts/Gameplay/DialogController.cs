@@ -17,6 +17,7 @@ public class DialogController : MonoBehaviour
     int currentString = 0;
     bool isTyping;
 
+    public bool IsShowing { get; private set; }
     public static DialogController Instance { get; private set; }
 
     private void Awake()
@@ -30,6 +31,7 @@ public class DialogController : MonoBehaviour
         // Otherwise we might skip the first string
         yield return new WaitForEndOfFrame();
         OnShowDialog?.Invoke();
+        IsShowing = true;
         this.dialog = dialog;
         dialogBox.SetActive(true);
         StartCoroutine(TypeDialog(dialog.Strings[0]));
@@ -59,6 +61,7 @@ public class DialogController : MonoBehaviour
             else
             {
                 currentString = 0;
+                IsShowing = false;
                 dialogBox.SetActive(false);
                 OnCloseDialog?.Invoke();
             }
