@@ -49,12 +49,13 @@ public class NPCController : MonoBehaviour, Interactable
         state = NPCState.Idle;
     }
 
-    public void Interact()
+    public void Interact(Transform interactChar)
     {
         if (state == NPCState.Idle)
         {
             state = NPCState.Interacting;
 
+            character.TurnToInteract(interactChar.position);
             StartCoroutine(DialogController.Instance.ShowDialog(dialog, () => {
                 idleTimer = 0f;
                 state = NPCState.Idle;
