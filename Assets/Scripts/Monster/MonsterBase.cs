@@ -10,8 +10,8 @@ public class MonsterBase : ScriptableObject
     [TextArea]
     [SerializeField] string description;
 
-    [SerializeField] Sprite frontSprite;
-    [SerializeField] Sprite backSprite;
+    [SerializeField] Sprite leftSprite;
+    [SerializeField] Sprite rightSprite;
 
     [SerializeField] MonsterType primaryType;
     [SerializeField] MonsterType secondaryType;
@@ -34,12 +34,12 @@ public class MonsterBase : ScriptableObject
         get { return description; }
     }
 
-    public Sprite FrontSprite {
-        get { return frontSprite; }
+    public Sprite LeftSprite {
+        get { return leftSprite; }
     }
 
-    public Sprite BackSprite {
-        get { return backSprite; }
+    public Sprite RightSprite {
+        get { return rightSprite; }
     }
 
     public MonsterType PrimaryType {

@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: df53028c99a3f9f43aa62467b2589e84, type: 3}
-  m_Name: Polcub
+  m_Name: Tortoad
   m_EditorClassIdentifier: 
-  name: Polcub
+  name: Tortoad
   description: A polar bear cub that is equally tough and clumsy. This curious cub
     has thick skin and fortitude for days. Typically a slow mover and not interested
     in creating conflict, but it isn't known to back down from any challenger.
-  frontSprite: {fileID: 21300000, guid: 0b21f1bfd9b2b6048b4f8c2a8e9825c6, type: 3}
-  backSprite: {fileID: 21300000, guid: 1f16ea8ce4e96ff4588b09aaf95d7b55, type: 3}
+  leftSprite: {fileID: 21300000, guid: 71ec3ea6a39751f45a69898fa778f240, type: 3}
+  rightSprite: {fileID: 21300000, guid: aec368220e450a042ba3361dda2a5fb4, type: 3}
   primaryType: 1
   secondaryType: 0
   maxHp: 44
