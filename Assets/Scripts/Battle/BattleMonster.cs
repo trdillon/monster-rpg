@@ -31,9 +31,9 @@ public class BattleMonster : MonoBehaviour
         Monster = monster;
 
         if (isPlayerMonster)
-            image.sprite = Monster.Base.BackSprite;
+            image.sprite = Monster.Base.LeftSprite;
         else
-            image.sprite = Monster.Base.FrontSprite;
+            image.sprite = Monster.Base.RightSprite;
 
         hud.SetData(monster);
         image.color = originalColor;

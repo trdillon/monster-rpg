@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: df53028c99a3f9f43aa62467b2589e84, type: 3}
-  m_Name: Scout
+  m_Name: Wabbi
   m_EditorClassIdentifier: 
-  name: Scout
+  name: Wabbi
   description: A forest wolf that excels at tracking and hunting. A balanced fighter
     with a good mix of speed and strength, it is a formidable foe for most creatures.
-  frontSprite: {fileID: 21300000, guid: d5d9d46661269a94080001d9c969eca2, type: 3}
-  backSprite: {fileID: 21300000, guid: 4d9bb1f4e241bb84b9bfaf1af4d1bbc2, type: 3}
+  leftSprite: {fileID: 21300000, guid: 392474c6cd8a37541aca2aa6efb2a222, type: 3}
+  rightSprite: {fileID: 21300000, guid: ef952544459a7fa43b3c7089c7729cf0, type: 3}
   primaryType: 3
   secondaryType: 0
   maxHp: 45
