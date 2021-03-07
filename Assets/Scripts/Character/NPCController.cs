@@ -21,9 +21,6 @@ public class NPCController : MonoBehaviour, Interactable
 
     private void Update()
     {
-        // Stop movement pattern to interact
-        if (DialogController.Instance.IsShowing) return;
-
         if (state == NPCState.Idle)
         {
             idleTimer += Time.deltaTime;
@@ -51,6 +48,14 @@ public class NPCController : MonoBehaviour, Interactable
     public void Interact()
     {
         if (state == NPCState.Idle)
-            StartCoroutine(DialogController.Instance.ShowDialog(dialog));
+        {
+            state = NPCState.Interacting;
+
+            StartCoroutine(DialogController.Instance.ShowDialog(dialog, () => {
+                idleTimer = 0f;
+                state = NPCState.Idle;
+            }));
+        }
+            
     }
 }

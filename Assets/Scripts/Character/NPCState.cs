@@ -1,5 +1,6 @@
 public enum NPCState
 {
     Idle,
-    Walking
+    Walking,
+    Interacting
 }

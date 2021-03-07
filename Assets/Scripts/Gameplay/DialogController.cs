@@ -13,6 +13,7 @@ public class DialogController : MonoBehaviour
     public event Action OnShowDialog;
     public event Action OnCloseDialog;
 
+    Action onDialogFinished;
     Dialog dialog;
     int currentString = 0;
     bool isTyping;
@@ -25,7 +26,7 @@ public class DialogController : MonoBehaviour
         Instance = this;
     }
 
-    public IEnumerator ShowDialog(Dialog dialog)
+    public IEnumerator ShowDialog(Dialog dialog, Action onFinished = null)
     {
         // Wait so the Z key isn't immediately counted as pressed
         // Otherwise we might skip the first string
@@ -33,6 +34,7 @@ public class DialogController : MonoBehaviour
         OnShowDialog?.Invoke();
         IsShowing = true;
         this.dialog = dialog;
+        onDialogFinished = onFinished;
         dialogBox.SetActive(true);
         StartCoroutine(TypeDialog(dialog.Strings[0]));
     }
@@ -63,6 +65,7 @@ public class DialogController : MonoBehaviour
                 currentString = 0;
                 IsShowing = false;
                 dialogBox.SetActive(false);
+                onDialogFinished?.Invoke();
                 OnCloseDialog?.Invoke();
             }
         }
