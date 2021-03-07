@@ -178,12 +178,12 @@ TextureImporter:
       name: gus-1
       rect:
         serializedVersion: 2
-        x: 61
-        y: 18
-        width: 27
-        height: 45
+        x: 36
+        y: 19
+        width: 32
+        height: 52
       alignment: 9
-      pivot: {x: 0.5, y: 0.5888889}
+      pivot: {x: 0.5, y: 0.59615386}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -199,12 +199,12 @@ TextureImporter:
       name: gus-2
       rect:
         serializedVersion: 2
-        x: 119
-        y: 19
-        width: 27
-        height: 44
+        x: 1
+        y: 73
+        width: 35
+        height: 54
       alignment: 9
-      pivot: {x: 0.5, y: 0.60227275}
+      pivot: {x: 0.4857143, y: 0.5925926}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -220,12 +220,12 @@ TextureImporter:
       name: gus-3
       rect:
         serializedVersion: 2
-        x: 32
-        y: 18
-        width: 27
-        height: 45
+        x: 38
+        y: 75
+        width: 32
+        height: 52
       alignment: 9
-      pivot: {x: 0.5, y: 0.5888889}
+      pivot: {x: 0.5, y: 0.59615386}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -241,12 +241,12 @@ TextureImporter:
       name: gus-4
       rect:
         serializedVersion: 2
-        x: 90
-        y: 19
-        width: 27
-        height: 44
+        x: 70
+        y: 21
+        width: 31
+        height: 52
       alignment: 9
-      pivot: {x: 0.5, y: 0.60227275}
+      pivot: {x: 0.516129, y: 0.61538464}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -262,12 +262,12 @@ TextureImporter:
       name: gus-5
       rect:
         serializedVersion: 2
-        x: 235
-        y: 20
-        width: 27
-        height: 43
+        x: 162
+        y: 24
+        width: 32
+        height: 50
       alignment: 9
-      pivot: {x: 0.5, y: 0.59302324}
+      pivot: {x: 0.5, y: 0.6}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -283,12 +283,12 @@ TextureImporter:
       name: gus-6
       rect:
         serializedVersion: 2
-        x: 206
-        y: 20
-        width: 27
-        height: 43
+        x: 72
+        y: 76
+        width: 31
+        height: 51
       alignment: 9
-      pivot: {x: 0.5, y: 0.61627907}
+      pivot: {x: 0.516129, y: 0.627451}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -304,12 +304,12 @@ TextureImporter:
       name: gus-7
       rect:
         serializedVersion: 2
-        x: 177
-        y: 20
-        width: 27
-        height: 43
+        x: 186
+        y: 77
+        width: 32
+        height: 50
       alignment: 9
-      pivot: {x: 0.5, y: 0.59302324}
+      pivot: {x: 0.5, y: 0.6}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -325,12 +325,12 @@ TextureImporter:
       name: gus-8
       rect:
         serializedVersion: 2
-        x: 148
-        y: 20
-        width: 27
-        height: 43
+        x: 103
+        y: 23
+        width: 31
+        height: 51
       alignment: 9
-      pivot: {x: 0.5, y: 0.61627907}
+      pivot: {x: 0.48387095, y: 0.627451}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -346,12 +346,12 @@ TextureImporter:
       name: gus-9
       rect:
         serializedVersion: 2
-        x: 341
-        y: 19
-        width: 21
-        height: 44
+        x: 160
+        y: 76
+        width: 24
+        height: 51
       alignment: 9
-      pivot: {x: 0.5, y: 0.60227275}
+      pivot: {x: 0.5, y: 0.60784316}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -367,12 +367,12 @@ TextureImporter:
       name: gus-10
       rect:
         serializedVersion: 2
-        x: 410
-        y: 20
-        width: 21
-        height: 43
+        x: 196
+        y: 25
+        width: 24
+        height: 50
       alignment: 9
-      pivot: {x: 0.5, y: 0.59302324}
+      pivot: {x: 0.5, y: 0.6}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -388,12 +388,12 @@ TextureImporter:
       name: gus-11
       rect:
         serializedVersion: 2
-        x: 317
-        y: 19
-        width: 22
-        height: 44
+        x: 133
+        y: 76
+        width: 25
+        height: 51
       alignment: 9
-      pivot: {x: 0.47727272, y: 0.60227275}
+      pivot: {x: 0.48, y: 0.60784316}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -409,12 +409,12 @@ TextureImporter:
       name: gus-12
       rect:
         serializedVersion: 2
-        x: 1
-        y: 18
-        width: 29
-        height: 45
+        x: 220
+        y: 77
+        width: 30
+        height: 50
       alignment: 9
-      pivot: {x: 0.43103448, y: 0.5888889}
+      pivot: {x: 0.43333334, y: 0.62}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -430,12 +430,12 @@ TextureImporter:
       name: gus-13
       rect:
         serializedVersion: 2
-        x: 364
-        y: 19
-        width: 21
-        height: 44
+        x: 136
+        y: 23
+        width: 24
+        height: 51
       alignment: 9
-      pivot: {x: 0.5, y: 0.60227275}
+      pivot: {x: 0.5, y: 0.60784316}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -451,12 +451,12 @@ TextureImporter:
       name: gus-14
       rect:
         serializedVersion: 2
-        x: 387
-        y: 20
-        width: 21
-        height: 43
+        x: 222
+        y: 25
+        width: 24
+        height: 50
       alignment: 9
-      pivot: {x: 0.5, y: 0.59302324}
+      pivot: {x: 0.5, y: 0.6}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -472,12 +472,12 @@ TextureImporter:
       name: gus-15
       rect:
         serializedVersion: 2
-        x: 292
-        y: 19
-        width: 23
-        height: 44
+        x: 105
+        y: 76
+        width: 26
+        height: 51
       alignment: 9
-      pivot: {x: 0.54347825, y: 0.60227275}
+      pivot: {x: 0.53846157, y: 0.60784316}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -493,12 +493,12 @@ TextureImporter:
       name: gus-16
       rect:
         serializedVersion: 2
-        x: 264
-        y: 20
-        width: 26
-        height: 43
+        x: 1
+        y: 19
+        width: 33
+        height: 52
       alignment: 9
-      pivot: {x: 0.5576923, y: 0.61627907}
+      pivot: {x: 0.54545456, y: 0.61538464}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
