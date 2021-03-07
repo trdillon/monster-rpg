@@ -7,6 +7,7 @@ public class MapLayers : MonoBehaviour
     [SerializeField] LayerMask objectsLayer;
     [SerializeField] LayerMask encountersLayer;
     [SerializeField] LayerMask interactLayer;
+    [SerializeField] LayerMask playerLayer;
 
     public static MapLayers Instance { get; set; }
 
@@ -23,5 +24,9 @@ public class MapLayers : MonoBehaviour
     }
     public LayerMask InteractLayer {
         get => interactLayer;
+    }
+
+    public LayerMask PlayerLayer {
+        get => playerLayer;
     }
 }

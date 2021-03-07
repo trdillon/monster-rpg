@@ -32,7 +32,7 @@ public class Character : MonoBehaviour
         targetPos.x += moveVector.x;
         targetPos.y += moveVector.y;
 
-        if (!IsWalkable(targetPos))
+        if (!IsPathWalkable(targetPos))
             yield break;
 
         IsMoving = true;
@@ -62,6 +62,20 @@ public class Character : MonoBehaviour
         {
             return false;
         }
+        return true;
+    }
+
+    private bool IsPathWalkable(Vector3 targetPath)
+    {
+        var path = targetPath - transform.position;
+        var direction = path.normalized;
+        var origin = transform.position + direction; // start at the next tile over or we collide with the character
+        var length = path.magnitude - 1; // 1 less because we start checking from the next tile over
+
+        if (Physics2D.BoxCast(origin, new Vector2(0.2f, 0.2f), 0f, direction, length,
+            MapLayers.Instance.ObjectsLayer | MapLayers.Instance.InteractLayer | MapLayers.Instance.PlayerLayer) == true)
+            return false; // we found a collider on the path
+
         return true;
     }
 }
