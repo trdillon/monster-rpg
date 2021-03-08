@@ -1,12 +1,18 @@
 version: 2
 importPivots: 1
 tpsheetFileNames:
-- Assets/Art/Player/gus.tpsheet
+- Assets/Art/Character/gus.tpsheet
+- Assets/Art/Character/karen.tpsheet
+- Assets/Art/Character/leather_thug.tpsheet
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
 textureFileNames:
-- Assets/Art/Player/gus.png
+- Assets/Art/Character/gus.png
+- Assets/Art/Character/karen.png
+- Assets/Art/Character/leather_thug.png
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
 normalmapFileNames:
+- 
+- 
 - 
 - Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
 enableDebugOutput: 0

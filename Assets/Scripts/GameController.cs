@@ -15,7 +15,8 @@ public class GameController : MonoBehaviour
 
     private void Start()
     {
-        playerController.OnEncounter += StartBattle;
+        playerController.OnEncounter += StartWildBattle;
+        playerController.OnLoS += StartCharBattle;
         battleSystem.OnBattleOver += EndBattle;
         DialogController.Instance.OnShowDialog += StartDialog;
         DialogController.Instance.OnCloseDialog += EndDialog;
@@ -48,7 +49,7 @@ public class GameController : MonoBehaviour
     //
     // BATTLE
     //
-    void StartBattle()
+    void StartWildBattle()
     {
         state = GameState.Battle;
 
@@ -56,9 +57,19 @@ public class GameController : MonoBehaviour
         worldCamera.gameObject.SetActive(false);
 
         var playerParty = playerController.GetComponent<MonsterParty>();
-        var wildMonster = FindObjectOfType<MapArea>().GetComponent<MapArea>().GetRandomMonster();
-
+        var wildMonster = FindObjectOfType<MapArea>().GetComponent<MapArea>().GetRandomMonster(); //TODO - refactor this, it seems dangerous
         battleSystem.StartBattle(playerParty, wildMonster);
+    }
+
+    void StartCharBattle(Collider2D battlerCollider)
+    {
+        var battler = battlerCollider.GetComponentInParent<BattlerController>();
+        if (battler != null)
+        {
+            state = GameState.Cutscene;
+
+            StartCoroutine(battler.TriggerBattle(playerController));
+        }
     }
 
     void EndBattle(bool won)
@@ -81,7 +92,6 @@ public class GameController : MonoBehaviour
     {
         if (state == GameState.Dialog)
             state = GameState.World;
-        //TODO - handle character dialog segue to battle
     }
 
     //

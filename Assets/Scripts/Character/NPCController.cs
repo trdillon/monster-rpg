@@ -40,11 +40,10 @@ public class NPCController : MonoBehaviour, Interactable
         state = NPCState.Walking;
 
         var oldPos = transform.position;
-
         yield return character.Move(movementPattern[currentMovement]);
 
         if (transform.position != oldPos)
-            currentMovement = (currentMovement + 1) % movementPattern.Count;
+            currentMovement = (currentMovement + 1) % movementPattern.Count; // Loop back after the last move
 
         state = NPCState.Idle;
     }
@@ -53,22 +52,22 @@ public class NPCController : MonoBehaviour, Interactable
     {
         if (state == NPCState.Idle)
         {
+            state = NPCState.Interacting;
+
+            character.TurnToInteract(interactChar.position);
+
             if (dialog.Strings.Count > 0)
             {
-                state = NPCState.Interacting;
-
-                character.TurnToInteract(interactChar.position);
                 StartCoroutine(DialogController.Instance.ShowDialog(dialog, () =>
                 {
                     idleTimer = 0f;
-                    
+                    state = NPCState.Idle;
                 }));
             }
             else
             { 
-                // Turn to acknowledge the interaction but do nothing
-                state = NPCState.Interacting;
-                character.TurnToInteract(interactChar.position);
+                // Avoid an exception if there's no dialog to show
+                idleTimer = 0f;
                 state = NPCState.Idle;
             }
         }

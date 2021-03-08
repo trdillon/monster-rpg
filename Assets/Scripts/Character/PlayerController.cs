@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     private Vector2 input;
 
     public event Action OnEncounter;
+    public event Action<Collider2D> OnLoS;
 
     private void Awake()
     {
@@ -29,7 +30,7 @@ public class PlayerController : MonoBehaviour
 
             if(input != Vector2.zero)
             {
-                StartCoroutine(character.Move(input, CheckForEncounters));
+                StartCoroutine(character.Move(input, OnMoved));
             }
         }
 
@@ -57,6 +58,12 @@ public class PlayerController : MonoBehaviour
     //
     // HELPER FUNCTIONS
     //
+    private void OnMoved()
+    {
+        CheckForEncounters();
+        CheckForBattlers();
+    }
+
     private void CheckForEncounters()
     {
         if (Physics2D.OverlapCircle(transform.position, 0.2f, MapLayers.Instance.EncountersLayer) != null)
@@ -66,6 +73,16 @@ public class PlayerController : MonoBehaviour
                 character.Animator.IsMoving = false;
                 OnEncounter();
             }
+        }
+    }
+
+    private void CheckForBattlers()
+    {
+        var collider = Physics2D.OverlapCircle(transform.position, 0.2f, MapLayers.Instance.LosLayer);
+        if (collider != null)
+        {
+            character.Animator.IsMoving = false;
+            OnLoS?.Invoke(collider);
         }
     }
 }

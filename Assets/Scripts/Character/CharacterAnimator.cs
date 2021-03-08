@@ -8,6 +8,7 @@ public class CharacterAnimator : MonoBehaviour
     [SerializeField] List<Sprite> walkUpSprites;
     [SerializeField] List<Sprite> walkLeftSprites;
     [SerializeField] List<Sprite> walkRightSprites;
+    [SerializeField] DefaultDirection defaultDirection = DefaultDirection.Down;
 
     SpriteAnimator walkDownAnimation;
     SpriteAnimator walkUpAnimation;
@@ -17,10 +18,15 @@ public class CharacterAnimator : MonoBehaviour
 
     SpriteRenderer spriteRenderer;
 
+    bool wasMoving;
+
     public float MoveX { get; set; }
     public float MoveY { get; set; }
     public bool IsMoving { get; set; }
-    bool wasMoving;
+
+    public DefaultDirection DefaultDirection {
+        get => defaultDirection;
+    }
 
     private void Start()
     {
@@ -29,6 +35,7 @@ public class CharacterAnimator : MonoBehaviour
         walkUpAnimation = new SpriteAnimator(walkUpSprites, spriteRenderer);
         walkLeftAnimation = new SpriteAnimator(walkLeftSprites, spriteRenderer);
         walkRightAnimation = new SpriteAnimator(walkRightSprites, spriteRenderer);
+        SetDefaultDirection(defaultDirection);
         currentAnimation = walkDownAnimation;
     }
 
@@ -54,5 +61,17 @@ public class CharacterAnimator : MonoBehaviour
             spriteRenderer.sprite = currentAnimation.Frames[0];
 
         wasMoving = IsMoving;
+    }
+
+    public void SetDefaultDirection(DefaultDirection direction)
+    {
+        if (direction == DefaultDirection.Down)
+            MoveY = -1;
+        else if (direction == DefaultDirection.Up)
+            MoveY = 1;
+        else if (direction == DefaultDirection.Left)
+            MoveX = -1;
+        else if (direction == DefaultDirection.Right)
+            MoveX = 1;
     }
 }
