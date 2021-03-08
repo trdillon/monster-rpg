@@ -1,11 +1,10 @@
-# 2D Monster RPG
+# RavaR
 
-This project is a currently unnamed 2D monster catching RPG. It is modeled after the popular style of tile-hopping, turn-based monster fighters that many of us
-grew up playing obsessively.
+RavaR is a 2D monster catching RPG game made with Unity and C#.
 
 ## Table of Contents
 
-- [Background](#background)
+- [About](#about)
 - [Install](#install)
 - [Roadmap](#roadmap)
 - [Maintainers](#maintainers)
@@ -14,13 +13,13 @@ grew up playing obsessively.
 
 ## About
 
-This game is set in a 2D fantasy world modeled after a famous region. Most of the details are purposefully vague at this point to leave flexibility in the story
-design later. Currently the game is in Build 1.0.1 with only basic functionality and placeholder art. The character can walk around the world, trigger
-random battles with enemy monsters, and utilize a monster party system to fight in battles.
+RavaR is a fantasy world with multiple regions to explore, battle and capture different Battokuri. Battokuri (battle creatures) roam free and can be captured, leveled, battled and traded. Check out the Wiki for more information.
 
 ## Install
 
-This project uses Unity, which is currently the only way to install/access the game until a demo version is released.
+1. Fork/clone the repo
+2. Open in Unity
+3. Build Project
 
 ## Controls
 
@@ -32,10 +31,11 @@ Go Back in UI: X
 
 ## Roadmap
 
-Demo Version 1.0
+Demo Version 1.1
 - Complete first town map with boss fight
 - 20 monsters available
 - Inventory system
+- Questing system
 
 Future Versions
 - Multiple towns/regions with bosses
@@ -43,7 +43,6 @@ Future Versions
 - 100+ monsters
 - Cross-platform
 - Multiplayer
-- Game Wiki
 
 ## Maintainers
 
@@ -55,12 +54,6 @@ Contributions are always welcome! Please read our [Contributing Guide](https://g
 
 [Check out our issues](https://github.com/trdillon/monster-rpg/issues) or create a new one.
 
-Currently help is needed with original artwork for the game. Please contact me if you are interested in contributing some or see our 
-[issues](https://github.com/trdillon/monster-rpg/issues?q=is%3Aopen+is%3Aissue+label%3Aart) with the [ART] tag.
-
 ## License
 
 [MIT](LICENSE)
-
-Disclaimer: Some of the placeholder art currently used in this project is for development and testing purposes only. This art will not be included in any
-distributed versions of the game.
