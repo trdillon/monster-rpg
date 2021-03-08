@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BattlerController : MonoBehaviour
+public class BattlerController : MonoBehaviour, Interactable
 {
     [SerializeField] string name;
     [SerializeField] Sprite sprite;
@@ -29,6 +29,14 @@ public class BattlerController : MonoBehaviour
     private void Start()
     {
         RotateLoS(character.Animator.DefaultDirection);
+    }
+
+    public void Interact(Transform interactChar)
+    {
+        character.TurnToInteract(interactChar.position);
+        StartCoroutine(DialogController.Instance.ShowDialog(introDialog, () => {
+            GameController.Instance.StartCharBattle(this);
+        }));
     }
 
     public IEnumerator TriggerBattle(PlayerController player)
@@ -63,5 +71,5 @@ public class BattlerController : MonoBehaviour
             angle = 90f;
 
         los.transform.eulerAngles = new Vector3(0f, 0f, angle);
-    }    
+    } 
 }
