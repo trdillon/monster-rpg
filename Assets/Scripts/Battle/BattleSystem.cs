@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BattleSystem : MonoBehaviour
 {
@@ -8,24 +9,40 @@ public class BattleSystem : MonoBehaviour
     [SerializeField] BattleMonster enemyMonster;
     [SerializeField] BattleDialogBox dialogBox;
     [SerializeField] PartyScreen partyScreen;
+    [SerializeField] Image playerImage;
+    [SerializeField] Image battlerImage;
 
+    PlayerController player;
+    BattlerController battler;
     MonsterParty playerParty;
+    MonsterParty battlerParty;
     Monster wildMonster;
 
     BattleState state;
     BattleState? prevState;
 
-    // Indices for UI and monster selection
     int currentAction;
     int currentMove;
     int currentMember;
+    bool isCharBattle = false;
 
     public event Action<bool> OnBattleOver;
 
-    public void StartBattle(MonsterParty playerParty, Monster wildMonster)
+    public void StartWildBattle(MonsterParty playerParty, Monster wildMonster)
     {
         this.playerParty = playerParty;
         this.wildMonster = wildMonster;
+        StartCoroutine(SetupBattle());
+    }
+
+    public void StartCharBattle(MonsterParty playerParty, MonsterParty battlerParty)
+    {
+        this.playerParty = playerParty;
+        this.battlerParty = battlerParty;
+        isCharBattle = true;
+        player = playerParty.GetComponent<PlayerController>();
+        battler = battlerParty.GetComponent<BattlerController>();
+
         StartCoroutine(SetupBattle());
     }
 
@@ -34,12 +51,46 @@ public class BattleSystem : MonoBehaviour
     //
     public IEnumerator SetupBattle()
     {
-        playerMonster.Setup(playerParty.GetHealthyMonster()); //TODO - handle setup with no healthy monsters
-        enemyMonster.Setup(wildMonster); //TODO - handle setup with enemy character
-        partyScreen.Init();
-        dialogBox.SetMoveList(playerMonster.Monster.Moves);
+        playerMonster.HideHud();
+        enemyMonster.HideHud();
 
-        yield return dialogBox.TypeDialog($"You have encountered an enemy {enemyMonster.Monster.Base.Name}!");
+        if (!isCharBattle)
+        {
+            // Wild
+            playerMonster.Setup(playerParty.GetHealthyMonster()); //TODO - handle setup with no healthy monsters
+            enemyMonster.Setup(wildMonster);
+            dialogBox.SetMoveList(playerMonster.Monster.Moves);
+            yield return dialogBox.TypeDialog($"You have encountered an enemy {enemyMonster.Monster.Base.Name}!");
+        }
+        else
+        {
+            // Character
+            // Show character sprites
+            playerMonster.gameObject.SetActive(false);
+            enemyMonster.gameObject.SetActive(false);
+            playerImage.gameObject.SetActive(true);
+            battlerImage.gameObject.SetActive(true);
+            playerImage.sprite = player.Sprite;
+            battlerImage.sprite = battler.Sprite;
+            yield return dialogBox.TypeDialog($"{battler.Name} has challenged you to a battle!");
+
+            // Deploy enemy monster
+            battlerImage.gameObject.SetActive(false); //TODO - animate this
+            enemyMonster.gameObject.SetActive(true);
+            var enemyLeadMonster = battlerParty.GetHealthyMonster();
+            enemyMonster.Setup(enemyLeadMonster);
+            yield return dialogBox.TypeDialog($"{battler.Name} has deployed {enemyLeadMonster.Base.Name} to the battle!");
+
+            // Deploy player monster
+            playerImage.gameObject.SetActive(false); //TODO - animate this too
+            playerMonster.gameObject.SetActive(true);
+            var playerLeadMonster = playerParty.GetHealthyMonster();
+            playerMonster.Setup(playerLeadMonster);
+            dialogBox.SetMoveList(playerMonster.Monster.Moves);
+            yield return dialogBox.TypeDialog($"You have deployed {playerLeadMonster.Base.Name} to the battle!");
+        }
+        
+        partyScreen.Init();
         ActionSelection();
     }
 
@@ -246,6 +297,16 @@ public class BattleSystem : MonoBehaviour
         state = BattleState.ExecutingTurn;
     }
 
+    IEnumerator SwitchEnemyMonster(Monster nextMonster)
+    {
+        state = BattleState.Busy;
+
+        enemyMonster.Setup(nextMonster);
+        yield return dialogBox.TypeDialog($"{battler.Name} has deployed {nextMonster.Base.Name} to the battle!");
+
+        state = BattleState.ExecutingTurn;
+    }
+
     IEnumerator CleanUpTurn(BattleMonster attackingMonster)
     {
         // Skip if battle is over
@@ -309,10 +370,21 @@ public class BattleSystem : MonoBehaviour
             if (nextMonster != null)
                 OpenPartyScreen();
             else
-                BattleOver(false); // false for lost battle
+                BattleOver(false); // lost battle
         }
         else
-            BattleOver(true); // true for won battle
+        {
+            if (!isCharBattle)
+                BattleOver(true); // won battle
+            else
+            {
+                var nextEnemyMonster = battlerParty.GetHealthyMonster();
+                if (nextEnemyMonster != null)
+                    StartCoroutine(SwitchEnemyMonster(nextEnemyMonster));
+                else
+                    BattleOver(true); // won battle
+            }
+        }   
     }
 
     void BattleOver(bool won)
@@ -329,17 +401,11 @@ public class BattleSystem : MonoBehaviour
     public void HandleUpdate()
     {
         if (state == BattleState.ActionSelection)
-        {
             HandleActionSelection();
-        }
         else if (state == BattleState.MoveSelection)
-        {
             HandleMoveSelection();
-        }
         else if (state == BattleState.PartyScreen)
-        {
             HandlePartySelection();
-        }
     }
 
     void ActionSelection()

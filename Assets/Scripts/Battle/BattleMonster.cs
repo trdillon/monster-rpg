@@ -35,11 +35,20 @@ public class BattleMonster : MonoBehaviour
         else
             image.sprite = Monster.Base.RightSprite;
 
+        hud.gameObject.SetActive(true);
         hud.SetData(monster);
         image.color = originalColor;
         PlayBattleStartAnimation();
     }
 
+    public void HideHud()
+    {
+        Hud.gameObject.SetActive(false);
+    }
+
+    //
+    // ANIMATIONS
+    //
     public void PlayBattleStartAnimation()
     {
         if (isPlayerMonster)

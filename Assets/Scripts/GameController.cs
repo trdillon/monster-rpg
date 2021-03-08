@@ -8,15 +8,18 @@ public class GameController : MonoBehaviour
 
     GameState state;
 
+    public static GameController Instance { get; private set; }
+
     private void Awake()
     {
+        Instance = this;
         ConditionDB.Init();
     }
 
     private void Start()
     {
         playerController.OnEncounter += StartWildBattle;
-        playerController.OnLoS += StartCharBattle;
+        playerController.OnLoS += StartCharEncounter;
         battleSystem.OnBattleOver += EndBattle;
         DialogController.Instance.OnShowDialog += StartDialog;
         DialogController.Instance.OnCloseDialog += EndDialog;
@@ -58,10 +61,10 @@ public class GameController : MonoBehaviour
 
         var playerParty = playerController.GetComponent<MonsterParty>();
         var wildMonster = FindObjectOfType<MapArea>().GetComponent<MapArea>().GetRandomMonster(); //TODO - refactor this, it seems dangerous
-        battleSystem.StartBattle(playerParty, wildMonster);
+        battleSystem.StartWildBattle(playerParty, wildMonster);
     }
 
-    void StartCharBattle(Collider2D battlerCollider)
+    void StartCharEncounter(Collider2D battlerCollider)
     {
         var battler = battlerCollider.GetComponentInParent<BattlerController>();
         if (battler != null)
@@ -70,6 +73,18 @@ public class GameController : MonoBehaviour
 
             StartCoroutine(battler.TriggerBattle(playerController));
         }
+    }
+
+    public void StartCharBattle(BattlerController battler)
+    {
+        state = GameState.Battle;
+
+        battleSystem.gameObject.SetActive(true);
+        worldCamera.gameObject.SetActive(false);
+
+        var playerParty = playerController.GetComponent<MonsterParty>();
+        var battlerParty = battler.GetComponent<MonsterParty>();
+        battleSystem.StartCharBattle(playerParty, battlerParty);
     }
 
     void EndBattle(bool won)

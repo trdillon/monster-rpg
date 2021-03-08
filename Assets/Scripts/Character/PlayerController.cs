@@ -4,11 +4,22 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField] string name;
+    [SerializeField] Sprite sprite;
+
     private Character character;
     private Vector2 input;
 
     public event Action OnEncounter;
     public event Action<Collider2D> OnLoS;
+
+    public string Name {
+        get => name;
+    }
+
+    public Sprite Sprite {
+        get => sprite;
+    }
 
     private void Awake()
     {

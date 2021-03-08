@@ -4,12 +4,22 @@ using UnityEngine;
 
 public class BattlerController : MonoBehaviour
 {
+    [SerializeField] string name;
+    [SerializeField] Sprite sprite;
     [SerializeField] Dialog introDialog;
     [SerializeField] Dialog outroDialog;
     [SerializeField] GameObject alert;
     [SerializeField] GameObject los;
 
     Character character;
+
+    public string Name {
+        get => name;
+    }
+
+    public Sprite Sprite {
+        get => sprite;
+    }
 
     private void Awake()
     {
@@ -36,7 +46,7 @@ public class BattlerController : MonoBehaviour
 
         // Show dialog for trash talk then start battle
         yield return DialogController.Instance.ShowDialog(introDialog, () => {
-            Debug.Log("Start battle bro");
+            GameController.Instance.StartCharBattle(this);
         });
     }
 
