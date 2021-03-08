@@ -68,15 +68,6 @@ public class Character : MonoBehaviour
         }
     }
 
-    private bool IsWalkable(Vector3 targetPos)
-    {
-        if (Physics2D.OverlapCircle(targetPos, 0.1f, MapLayers.Instance.ObjectsLayer | MapLayers.Instance.InteractLayer) != null)
-        {
-            return false;
-        }
-        return true;
-    }
-
     private bool IsPathWalkable(Vector3 targetPath)
     {
         var path = targetPath - transform.position;
