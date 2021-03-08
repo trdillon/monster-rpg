@@ -53,14 +53,24 @@ public class NPCController : MonoBehaviour, Interactable
     {
         if (state == NPCState.Idle)
         {
-            state = NPCState.Interacting;
+            if (dialog.Strings.Count > 0)
+            {
+                state = NPCState.Interacting;
 
-            character.TurnToInteract(interactChar.position);
-            StartCoroutine(DialogController.Instance.ShowDialog(dialog, () => {
-                idleTimer = 0f;
+                character.TurnToInteract(interactChar.position);
+                StartCoroutine(DialogController.Instance.ShowDialog(dialog, () =>
+                {
+                    idleTimer = 0f;
+                    
+                }));
+            }
+            else
+            { 
+                // Turn to acknowledge the interaction but do nothing
+                state = NPCState.Interacting;
+                character.TurnToInteract(interactChar.position);
                 state = NPCState.Idle;
-            }));
+            }
         }
-            
     }
 }

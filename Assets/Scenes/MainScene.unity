@@ -3309,9 +3309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-    strings:
-    - Hey, welcome to the world of monsters.
-    - Good luck!
+    strings: []
   movementPattern:
   - {x: 4, y: 0}
   - {x: 0, y: 4}
@@ -5080,7 +5078,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1338626719
 Transform:
   m_ObjectHideFlags: 0
