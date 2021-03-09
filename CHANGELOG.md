@@ -3,7 +3,35 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
+## [1.0.5] - 2021-03-09
+
+
 ## [1.0.4] - 2021-03-07
+### Added
+- 6 new monsters
+- NPC battlers
+- LoS logic
+- Default direction/animation for NPCs
+
+### Changed
+- Game name
+- Main character sprite and name
+- Monster sprites
+- Tileset
+- Game font
+- Battle background images
+- UI redesign
+- Rename Art/Player to Art/Character
+
+### Fixed
+- Broken object colliders from sprite size change
+- Exception when interacting with NPC without dialog
+- NPCs quit moving after interaction
+- Roar having 0 accuracy
+- No longer allow player to exit party screen with downed monster
+- Battlers now have walk animation on LoS encounters
+- Multiple trainer battle bugs
+
 
 ## [1.0.3] - 2021-03-05
 ### Added
