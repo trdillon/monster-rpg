@@ -12,6 +12,7 @@ public class BattlerController : MonoBehaviour, Interactable
     [SerializeField] GameObject los;
 
     Character character;
+    bool isDefeated = false;
 
     public string Name {
         get => name;
@@ -34,9 +35,13 @@ public class BattlerController : MonoBehaviour, Interactable
     public void Interact(Transform interactChar)
     {
         character.TurnToInteract(interactChar.position);
-        StartCoroutine(DialogController.Instance.ShowDialog(introDialog, () => {
-            GameController.Instance.StartCharBattle(this);
-        }));
+        if (!isDefeated)
+            StartCoroutine(DialogController.Instance.ShowDialog(introDialog, () =>
+            {
+                GameController.Instance.StartCharBattle(this);
+            }));
+        else
+            StartCoroutine(DialogController.Instance.ShowDialog(outroDialog));
     }
 
     public IEnumerator TriggerBattle(PlayerController player)
@@ -53,11 +58,15 @@ public class BattlerController : MonoBehaviour, Interactable
         yield return character.Move(tile);
 
         // Show dialog for trash talk then start battle
+        player.Character.TurnToInteract(transform.position);
         yield return DialogController.Instance.ShowDialog(introDialog, () => {
             GameController.Instance.StartCharBattle(this);
         });
     }
 
+    //
+    // HELPER FUNCTIONS
+    //
     public void RotateLoS(DefaultDirection direction)
     {
         float angle = 0f;
@@ -71,5 +80,12 @@ public class BattlerController : MonoBehaviour, Interactable
             angle = 90f;
 
         los.transform.eulerAngles = new Vector3(0f, 0f, angle);
-    } 
+    }
+
+    public void Defeated()
+    {
+        isDefeated = true;
+        los.gameObject.SetActive(false);
+        //TODO - have the battler return to its starting position
+    }
 }

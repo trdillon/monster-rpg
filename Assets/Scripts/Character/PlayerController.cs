@@ -21,6 +21,10 @@ public class PlayerController : MonoBehaviour
         get => sprite;
     }
 
+    public Character Character {
+        get => character;
+    }
+
     private void Awake()
     {
         character = GetComponent<Character>();

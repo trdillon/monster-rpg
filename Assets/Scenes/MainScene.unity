@@ -3288,7 +3288,7 @@ MonoBehaviour:
   - {fileID: -8548217009676704590, guid: fac3a8e0619de344f911ade53c2c7e0d, type: 3}
   - {fileID: -6709117376253479263, guid: fac3a8e0619de344f911ade53c2c7e0d, type: 3}
   - {fileID: -3071435449043004934, guid: fac3a8e0619de344f911ade53c2c7e0d, type: 3}
-  defaultDirection: 1
+  defaultDirection: 0
 --- !u!114 &870110086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3321,7 +3321,8 @@ MonoBehaviour:
     - Hey, you!
     - What are you looking at!?!
   outroDialog:
-    strings: []
+    strings:
+    - I demand a recount!
   alert: {fileID: 1882805209}
   los: {fileID: 2145175540}
 --- !u!61 &870110088
@@ -3451,12 +3452,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monsters:
-  - _base: {fileID: 11400000, guid: 08fe71a8bca62d0468ada7da52ccd5a7, type: 2}
-    level: 4
   - _base: {fileID: 11400000, guid: 875c84c591e13614ca6291675fe33305, type: 2}
-    level: 4
-  - _base: {fileID: 11400000, guid: 037162b05ccdadf43a507fd23d5b7d64, type: 2}
-    level: 4
+    level: 3
 --- !u!1 &954615733
 GameObject:
   m_ObjectHideFlags: 0
