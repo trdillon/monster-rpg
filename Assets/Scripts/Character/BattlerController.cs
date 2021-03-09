@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BattlerController : MonoBehaviour, Interactable
@@ -14,13 +13,8 @@ public class BattlerController : MonoBehaviour, Interactable
     Character character;
     bool isDefeated = false;
 
-    public string Name {
-        get => name;
-    }
-
-    public Sprite Sprite {
-        get => sprite;
-    }
+    public string Name => name;
+    public Sprite Sprite => sprite;
 
     private void Awake()
     {
@@ -40,6 +34,7 @@ public class BattlerController : MonoBehaviour, Interactable
     public void Interact(Transform interactChar)
     {
         character.TurnToInteract(interactChar.position);
+
         if (!isDefeated)
             StartCoroutine(DialogController.Instance.ShowDialog(introDialog, () =>
             {

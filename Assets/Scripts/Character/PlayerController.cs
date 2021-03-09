@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -13,17 +12,9 @@ public class PlayerController : MonoBehaviour
     public event Action OnEncounter;
     public event Action<Collider2D> OnLoS;
 
-    public string Name {
-        get => name;
-    }
-
-    public Sprite Sprite {
-        get => sprite;
-    }
-
-    public Character Character {
-        get => character;
-    }
+    public string Name => name;
+    public Sprite Sprite => sprite;
+    public Character Character => character;
 
     private void Awake()
     {
@@ -44,9 +35,7 @@ public class PlayerController : MonoBehaviour
             if (input.x != 0) input.y = 0;
 
             if(input != Vector2.zero)
-            {
                 StartCoroutine(character.Move(input, OnMoved));
-            }
         }
 
         character.HandleUpdate();
@@ -62,12 +51,10 @@ public class PlayerController : MonoBehaviour
     {
         var lookingAt = new Vector3(character.Animator.MoveX, character.Animator.MoveY);
         var nextTile = transform.position + lookingAt;
-
         var collider = Physics2D.OverlapCircle(nextTile, 0.3f, MapLayers.Instance.InteractLayer);
+
         if (collider != null)
-        {
             collider.GetComponent<Interactable>()?.Interact(transform);
-        }
     }
 
     //
@@ -94,6 +81,7 @@ public class PlayerController : MonoBehaviour
     private void CheckForBattlers()
     {
         var collider = Physics2D.OverlapCircle(transform.position, 0.2f, MapLayers.Instance.LosLayer);
+
         if (collider != null)
         {
             character.Animator.IsMoving = false;

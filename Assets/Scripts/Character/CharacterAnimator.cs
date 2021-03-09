@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -15,7 +14,6 @@ public class CharacterAnimator : MonoBehaviour
     SpriteAnimator walkLeftAnimation;
     SpriteAnimator walkRightAnimation;
     SpriteAnimator currentAnimation;
-
     SpriteRenderer spriteRenderer;
 
     bool wasMoving;
@@ -24,9 +22,7 @@ public class CharacterAnimator : MonoBehaviour
     public float MoveY { get; set; }
     public bool IsMoving { get; set; }
 
-    public DefaultDirection DefaultDirection {
-        get => defaultDirection;
-    }
+    public DefaultDirection DefaultDirection => defaultDirection;
 
     private void Start()
     {

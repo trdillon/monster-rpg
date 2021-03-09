@@ -1,19 +1,14 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Character : MonoBehaviour
 {
     CharacterAnimator animator;
-
     public float moveSpeed;
 
     public bool IsMoving { get; private set; }
-
-    public CharacterAnimator Animator {
-        get => animator;
-    }
+    public CharacterAnimator Animator => animator;
 
     private void Awake()
     {

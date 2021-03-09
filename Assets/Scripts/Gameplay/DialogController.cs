@@ -1,6 +1,5 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,13 +9,13 @@ public class DialogController : MonoBehaviour
     [SerializeField] Text dialogText;
     [SerializeField] int lettersPerSecond;
 
-    public event Action OnShowDialog;
-    public event Action OnCloseDialog;
-
-    Action onDialogFinished;
     Dialog dialog;
     int currentString = 0;
     bool isTyping;
+
+    Action onDialogFinished;
+    public event Action OnShowDialog;
+    public event Action OnCloseDialog;
 
     public bool IsShowing { get; private set; }
     public static DialogController Instance { get; private set; }
@@ -43,11 +42,13 @@ public class DialogController : MonoBehaviour
     {
         isTyping = true;
         dialogText.text = "";
+
         foreach (var letter in dialog.ToCharArray())
         {
             dialogText.text += letter;
             yield return new WaitForSeconds(1f / lettersPerSecond);
         }
+
         isTyping = false;
     }
 
@@ -57,9 +58,7 @@ public class DialogController : MonoBehaviour
         {
             ++currentString;
             if (currentString < dialog.Strings.Count)
-            {
                 StartCoroutine(TypeDialog(dialog.Strings[currentString]));
-            }
             else
             {
                 currentString = 0;

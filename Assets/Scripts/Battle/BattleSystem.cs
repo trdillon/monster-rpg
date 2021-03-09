@@ -7,11 +7,12 @@ public class BattleSystem : MonoBehaviour
 {
     [SerializeField] BattleMonster playerMonster;
     [SerializeField] BattleMonster enemyMonster;
+    [SerializeField] BattleAnimator battleAnimator;
     [SerializeField] BattleDialogBox dialogBox;
     [SerializeField] PartyScreen partyScreen;
     [SerializeField] Image playerImage;
     [SerializeField] Image battlerImage;
-
+    
     PlayerController player;
     BattlerController battler;
     MonsterParty playerParty;
@@ -33,6 +34,7 @@ public class BattleSystem : MonoBehaviour
     {
         this.playerParty = playerParty;
         this.wildMonster = wildMonster;
+        player = playerParty.GetComponent<PlayerController>();
         StartCoroutine(SetupBattle());
     }
 
@@ -43,7 +45,6 @@ public class BattleSystem : MonoBehaviour
         isCharBattle = true;
         player = playerParty.GetComponent<PlayerController>();
         battler = battlerParty.GetComponent<BattlerController>();
-
         StartCoroutine(SetupBattle());
     }
 
@@ -144,6 +145,8 @@ public class BattleSystem : MonoBehaviour
         else if (playerAction == BattleAction.UseItem)
         {
             // Use item
+            dialogBox.EnableActionSelector(false);
+            yield return ActivateCrystal();
         }
         else if (playerAction == BattleAction.Run)
         {
@@ -285,6 +288,7 @@ public class BattleSystem : MonoBehaviour
             playerMonster.PlayDownedAnimation(); //TODO - create animation for returning to party
             yield return new WaitForSeconds(2f);
         }
+
         playerMonster.Setup(newMonster);
         dialogBox.SetMoveList(newMonster.Moves);
         yield return dialogBox.TypeDialog($"It's your turn now, {newMonster.Base.Name}!");
@@ -309,6 +313,52 @@ public class BattleSystem : MonoBehaviour
         yield return dialogBox.TypeDialog($"{battler.Name} has deployed {nextMonster.Base.Name} to the battle!");
 
         state = BattleState.ExecutingTurn;
+    }
+
+    IEnumerator ActivateCrystal()
+    {
+        state = BattleState.Busy;
+
+        if (isCharBattle)
+        {
+            state = BattleState.ExecutingTurn;
+
+            yield return dialogBox.TypeDialog($"You can't steal {enemyMonster.Monster.Base.Name} from {battler.Name}!");
+            yield break;
+        }
+
+        yield return dialogBox.TypeDialog($"{player.Name} activated a Capture Crystal!");
+        int beamCount = TryToCapture(enemyMonster.Monster);
+        Debug.Log($"Beam count: {beamCount}");
+        yield return battleAnimator.PlayCrystalAnimation(playerMonster, enemyMonster, beamCount);
+
+        if (beamCount == 4)
+        {
+            // Capture
+            //TODO - finish capture animation
+            yield return dialogBox.TypeDialog($"{enemyMonster.Monster.Base.Name} was captured!");
+            playerParty.AddMonster(enemyMonster.Monster);
+            yield return dialogBox.TypeDialog($"{enemyMonster.Monster.Base.Name} was added to your team!");
+            yield return new WaitForSeconds(2f);
+            battleAnimator.CleanUp();
+            BattleOver(true);
+        }
+        else
+        {
+            // Fail
+            //TODO - finish failed animation
+            if (beamCount < 2)
+                yield return dialogBox.TypeDialog($"{enemyMonster.Monster.Base.Name} broke away easily!");
+            else
+                yield return dialogBox.TypeDialog($"{enemyMonster.Monster.Base.Name} was almost captured!");
+
+            battleAnimator.PlayFailAnimation();
+
+            state = BattleState.ExecutingTurn;
+        }
+
+        yield return new WaitForSeconds(2.1f);
+        battleAnimator.CleanUp(); // Call clean up again just to be safe
     }
 
     IEnumerator CleanUpTurn(BattleMonster attackingMonster)
@@ -343,6 +393,28 @@ public class BattleSystem : MonoBehaviour
     //
     // HELPER FUNCTIONS
     //
+    int TryToCapture(Monster monster)
+    {
+        // Algo is from g3/4
+        float a = (3 * monster.MaxHp - 2 * monster.CurrentHp) * monster.Base.CatchRate * ConditionDB.GetStatusBonus(monster.Status) / (3 * monster.MaxHp);
+
+        if (a >= 255)
+            return 4;
+
+        float b = 1048560 / Mathf.Sqrt(Mathf.Sqrt(16711680 / a));
+
+        int beamCount = 0;
+
+        while (beamCount < 4)
+        {
+            if (UnityEngine.Random.Range(0, 65535) >= b)
+                break;
+
+            ++beamCount;
+        }
+
+        return beamCount;
+    }
     bool CheckIfMoveHits(Move move, Monster attackingMonster, Monster defendingMonster)
     {
         if (move.Base.AlwaysHits)
@@ -372,6 +444,7 @@ public class BattleSystem : MonoBehaviour
         if (downedMonster.IsPlayerMonster)
         {
             var nextMonster = playerParty.GetHealthyMonster();
+
             if (nextMonster != null)
                 OpenPartyScreen();
             else
@@ -384,6 +457,7 @@ public class BattleSystem : MonoBehaviour
             else
             {
                 var nextEnemyMonster = battlerParty.GetHealthyMonster();
+
                 if (nextEnemyMonster != null)
                     StartCoroutine(ChoiceSelection(nextEnemyMonster));
                 else
@@ -486,6 +560,7 @@ public class BattleSystem : MonoBehaviour
             else if (currentAction == 1)
             {
                 // Items
+                StartCoroutine(ExecuteTurn(BattleAction.UseItem));
             }
             else if (currentAction == 2)
             {
@@ -542,6 +617,7 @@ public class BattleSystem : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Z))
         {
             dialogBox.EnableChoiceSelector(false);
+
             if (isChoiceYes)
             {
                 prevState = BattleState.ChoiceSelection;
@@ -577,11 +653,13 @@ public class BattleSystem : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Z))
         {
             var selectedMember = playerParty.Monsters[currentMember];
+
             if (selectedMember.CurrentHp <= 0)
             {
                 partyScreen.SetMessageText("That monster is downed and cannot be used!");
                 return;
             }
+
             if (selectedMember == playerMonster.Monster)
             {
                 partyScreen.SetMessageText("That monster is already being used!");

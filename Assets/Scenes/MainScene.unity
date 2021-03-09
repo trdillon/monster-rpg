@@ -638,10 +638,6 @@ MonoBehaviour:
     level: 7
   - _base: {fileID: 11400000, guid: 875c84c591e13614ca6291675fe33305, type: 2}
     level: 2
-  - _base: {fileID: 11400000, guid: 08fe71a8bca62d0468ada7da52ccd5a7, type: 2}
-    level: 2
-  - _base: {fileID: 11400000, guid: 037162b05ccdadf43a507fd23d5b7d64, type: 2}
-    level: 3
 --- !u!114 &225907027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1830,7 +1826,7 @@ RectTransform:
   - {fileID: 2146497621}
   - {fileID: 316494952}
   m_Father: {fileID: 1338626719}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1895,7 +1891,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: -2104482473
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!1 &519420028
@@ -3250,7 +3246,7 @@ GameObject:
   - component: {fileID: 870110087}
   - component: {fileID: 870110092}
   m_Layer: 8
-  m_Name: BattlerLeatherThug1
+  m_Name: NPBThugGordo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4246,6 +4242,52 @@ RectTransform:
   m_AnchoredPosition: {x: 280.48, y: -4.7225}
   m_SizeDelta: {x: 225.25, y: 90.555}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1196428719
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1196428721}
+  - component: {fileID: 1196428720}
+  m_Layer: 0
+  m_Name: BattleAnimator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1196428720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196428719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 022de6908f96968418a1eb9450c61c10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crystalSprite: {fileID: 4055206248114480650, guid: 0f19dd37050a6ba448a49e03e9d608cf, type: 3}
+  beamSprite: {fileID: 145920578979454082, guid: 8b65c25743c71a04faffde22197269de, type: 3}
+  burstSprite: {fileID: 765397561323905773, guid: ce06273d95939cc4fbdb81fd3ed7ac65, type: 3}
+--- !u!4 &1196428721
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196428719}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.5972614, y: 0.35111618, z: -1195.0459}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1338626719}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1199434707
 GameObject:
   m_ObjectHideFlags: 0
@@ -5352,6 +5394,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1968803383}
+  - {fileID: 1196428721}
   - {fileID: 513852345}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -5370,6 +5413,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerMonster: {fileID: 1303786886}
   enemyMonster: {fileID: 1978073289}
+  battleAnimator: {fileID: 1196428720}
   dialogBox: {fileID: 2146497624}
   partyScreen: {fileID: 316494955}
   playerImage: {fileID: 1799665711}

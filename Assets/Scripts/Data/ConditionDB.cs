@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,9 +9,20 @@ public class ConditionDB
         {
             var conditionId = entry.Key;
             var condition = entry.Value;
-
             condition.Id = conditionId;
         }
+    }
+
+    public static float GetStatusBonus(Condition condition)
+    {
+        if (condition == null)
+            return 1f;
+        else if (condition.Id == ConditionID.FRZ || condition.Id == ConditionID.SLP)
+            return 2f;
+        else if (condition.Id == ConditionID.BRN || condition.Id == ConditionID.PAR || condition.Id == ConditionID.PSN)
+            return 1.5f;
+        else
+            return 1f;
     }
 
     public static Dictionary<ConditionID, Condition> Conditions { get; set; } = new Dictionary<ConditionID, Condition>()

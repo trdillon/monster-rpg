@@ -8,16 +8,7 @@ public class MoveEffects
     [SerializeField] ConditionID status;
     [SerializeField] ConditionID volatileStatus;
 
-    public List<StatChange> StatChanges {
-        get { return statChanges; }
-    }
-
-    public ConditionID Status {
-        get { return status; }
-    }
-
-    public ConditionID VolatileStatus
-    {
-        get { return volatileStatus; }
-    }
+    public List<StatChange> StatChanges => statChanges;
+    public ConditionID Status => status;
+    public ConditionID VolatileStatus => volatileStatus;
 }

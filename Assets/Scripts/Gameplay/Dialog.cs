@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,7 +6,5 @@ public class Dialog
 {
     [SerializeField] List<string> strings;
 
-    public List<string> Strings {
-        get { return strings; }
-    }
+    public List<string> Strings => strings;
 }
