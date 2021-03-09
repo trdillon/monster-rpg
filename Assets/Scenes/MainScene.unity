@@ -3453,7 +3453,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monsters:
   - _base: {fileID: 11400000, guid: 875c84c591e13614ca6291675fe33305, type: 2}
-    level: 3
+    level: 2
+  - _base: {fileID: 11400000, guid: 037162b05ccdadf43a507fd23d5b7d64, type: 2}
+    level: 2
+  - _base: {fileID: 11400000, guid: 08fe71a8bca62d0468ada7da52ccd5a7, type: 2}
+    level: 2
 --- !u!1 &954615733
 GameObject:
   m_ObjectHideFlags: 0

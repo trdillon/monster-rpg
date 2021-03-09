@@ -20,7 +20,12 @@ MonoBehaviour:
     statChanges:
     - stat: 0
       changeVal: 1
+    status: 0
+    volatileStatus: 0
+  moveSecondaryEffects: []
   target: 0
   power: 0
-  accuracy: 0
+  accuracy: 100
   energy: 30
+  priority: 0
+  alwaysHits: 0
