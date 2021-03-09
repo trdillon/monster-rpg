@@ -24,9 +24,11 @@ public class NPCController : MonoBehaviour, Interactable
         if (state == NPCState.Idle)
         {
             idleTimer += Time.deltaTime;
+
             if (idleTimer > movementPatternTime)
             {
                 idleTimer = 0f;
+
                 if (movementPattern.Count > 0)
                     StartCoroutine(Walk());
             }

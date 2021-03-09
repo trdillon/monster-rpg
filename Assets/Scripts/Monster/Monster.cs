@@ -10,48 +10,35 @@ public class Monster
     [SerializeField] int level;
     
     public int CurrentHp { get; set; }
+    public int MaxHp { get; private set; }
     public bool IsHpChanged { get; set; }
-
+    public int StatusTimer { get; set; }
+    public int VolatileStatusTimer { get; set; }
+    
     public Move CurrentMove { get; set; }
     public List<Move> Moves { get; set; }
+    public Condition Status { get; private set; }
+    public Condition VolatileStatus { get; private set; }
 
     public Dictionary<MonsterStat, int> Stats { get; private set; }
     public Dictionary<MonsterStat, int> StatsChanged { get; private set; }
+    public Queue<string> StatusChanges { get; private set; }
 
-    public Queue<string> StatusChanges { get; private set; } = new Queue<string>();
     public event Action OnStatusChange;
-    public Condition Status { get; private set; }
-    public Condition VolatileStatus { get; private set; }
-    public int StatusTimer { get; set; }
-    public int VolatileStatusTimer { get; set; }
+    
+    public MonsterBase Base => _base;
+    public int Level => level;
+    public int Attack => GetStat(MonsterStat.Attack);
+    public int Defense => GetStat(MonsterStat.Defense);
+    public int SpAttack => GetStat(MonsterStat.SpAttack);
+    public int SpDefense => GetStat(MonsterStat.SpDefense);
+    public int Speed => GetStat(MonsterStat.Speed);
 
-    public MonsterBase Base {
-        get { return _base; }
-    }
-    public int Level {
-        get { return level; }
-    }
-
-    public int MaxHp { get; private set; }
-
-    public int Attack {
-        get { return GetStat(MonsterStat.Attack); }
-    }
-
-    public int Defense {
-        get { return GetStat(MonsterStat.Defense); }
-    }
-
-    public int SpAttack {
-        get { return GetStat(MonsterStat.SpAttack); }
-    }
-
-    public int SpDefense {
-        get { return GetStat(MonsterStat.SpDefense); }
-    }
-
-    public int Speed {
-        get { return GetStat(MonsterStat.Speed); }
+    public Monster (MonsterBase mbase, int mlvl)
+    {
+        _base = mbase;
+        level = mlvl;
+        Init();
     }
     
     public void Init()
@@ -61,14 +48,13 @@ public class Monster
         foreach (var move in Base.LearnableMoves) //TODO - refactor this to account for optional learned moves or forgetting moves
         {
             if (move.LevelLearned <= Level)
-            {
                 Moves.Add(new Move(move.Base));
-            }
 
             if (Moves.Count >= 4)
                 break;
         }
 
+        StatusChanges = new Queue<string>();
         CalculateStats();
         CurrentHp = MaxHp;
         ResetStatsChanged();
@@ -126,16 +112,12 @@ public class Monster
         {
             var stat = statChange.stat;
             var changeVal = statChange.changeVal;
-
             StatsChanged[stat] = Mathf.Clamp(StatsChanged[stat] + changeVal, -6, 6);
 
             if (changeVal > 0)
                 StatusChanges.Enqueue($"{Base.Name}'s {stat} increased!");
             else
                 StatusChanges.Enqueue($"{Base.Name}'s {stat} decreased!");
-
-
-            Debug.Log($"{stat} has been changed by {changeVal}.");
         }
     }
 
@@ -224,7 +206,6 @@ public class Monster
     public Move GetRandomMove()
     {
         var usableMoves = Moves.Where(m => m.Energy > 0).ToList(); //TODO - handle case with no usable moves
-
         int i = UnityEngine.Random.Range(0, usableMoves.Count);
         return usableMoves[i];
     }

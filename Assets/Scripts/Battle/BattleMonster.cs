@@ -12,12 +12,9 @@ public class BattleMonster : MonoBehaviour
     Color originalColor;
 
     public Monster Monster { get; set; }
-    public bool IsPlayerMonster { 
-        get { return isPlayerMonster; } 
-    }
-    public BattleHUD Hud {
-        get { return hud; }
-    }
+    public bool IsPlayerMonster => isPlayerMonster;
+    public BattleHUD Hud => hud;
+    public Image Image => image;
 
     private void Awake()
     {
@@ -38,6 +35,7 @@ public class BattleMonster : MonoBehaviour
         hud.gameObject.SetActive(true);
         hud.SetData(monster);
         image.color = originalColor;
+        transform.localScale = new Vector3(1, 1, 1);
         PlayBattleStartAnimation();
     }
 
@@ -48,7 +46,7 @@ public class BattleMonster : MonoBehaviour
 
     //
     // ANIMATIONS
-    //
+    //TODO - move these to BattleAnimator?
     public void PlayBattleStartAnimation()
     {
         if (isPlayerMonster)
@@ -82,5 +80,11 @@ public class BattleMonster : MonoBehaviour
         var sequence = DOTween.Sequence();
         sequence.Append(image.transform.DOLocalMoveY(originalPos.y - 150f, 0.5f));
         sequence.Join(image.DOFade(0f, 0.5f));
+    }
+
+    public void PlayCaptureAnimation()
+    {
+        var sequence = DOTween.Sequence();
+        sequence.Append(image.transform.DOShakePosition(5f, 3));
     }
 }

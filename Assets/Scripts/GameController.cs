@@ -30,25 +30,11 @@ public class GameController : MonoBehaviour
     private void Update()
     {
         if (state == GameState.World)
-        {
             playerController.HandleUpdate();
-        }
         else if (state == GameState.Battle)
-        {
             battleSystem.HandleUpdate();
-        }
         else if (state == GameState.Dialog)
-        {
             DialogController.Instance.HandleUpdate();
-        }
-        else if (state == GameState.Menu)
-        {
-            // Menu controller
-        }
-        else if (state == GameState.Pause)
-        {
-            // Pause controller
-        }
     }
 
     //
@@ -62,8 +48,10 @@ public class GameController : MonoBehaviour
         worldCamera.gameObject.SetActive(false);
 
         var playerParty = playerController.GetComponent<MonsterParty>();
-        var wildMonster = FindObjectOfType<MapArea>().GetComponent<MapArea>().GetRandomMonster(); //TODO - refactor this, it seems dangerous
-        battleSystem.StartWildBattle(playerParty, wildMonster);
+        var wildMonster = FindObjectOfType<MapArea>().GetComponent<MapArea>().GetRandomMonster();
+        var enemyMonster = new Monster(wildMonster.Base, wildMonster.Level);
+
+        battleSystem.StartWildBattle(playerParty, enemyMonster);
     }
 
     void StartCharEncounter(Collider2D battlerCollider)
@@ -117,12 +105,4 @@ public class GameController : MonoBehaviour
         if (state == GameState.Dialog)
             state = GameState.World;
     }
-
-    //
-    // MENU
-    //
-
-    //
-    // PAUSE
-    //
 }

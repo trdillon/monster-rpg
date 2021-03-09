@@ -4,77 +4,34 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Monster", menuName = "Monster/Create a new monster")] 
 public class MonsterBase : ScriptableObject
 {
-    // Monster definition
     [SerializeField] string name;
-
     [TextArea]
     [SerializeField] string description;
-
-    [SerializeField] Sprite leftSprite;
-    [SerializeField] Sprite rightSprite;
-
-    [SerializeField] MonsterType primaryType;
-    [SerializeField] MonsterType secondaryType;
-
-    // Monster base stats
     [SerializeField] int maxHp;
     [SerializeField] int attack;
     [SerializeField] int defense;
     [SerializeField] int spAttack;
     [SerializeField] int spDefense;
     [SerializeField] int speed;
-
+    [SerializeField] int catchRate = 255;
+    [SerializeField] Sprite leftSprite;
+    [SerializeField] Sprite rightSprite;
+    [SerializeField] MonsterType primaryType;
+    [SerializeField] MonsterType secondaryType;
     [SerializeField] List<LearnableMove> learnableMoves;
 
-    public string Name {
-        get { return name; }
-    }
-
-    public string Description {
-        get { return description; }
-    }
-
-    public Sprite LeftSprite {
-        get { return leftSprite; }
-    }
-
-    public Sprite RightSprite {
-        get { return rightSprite; }
-    }
-
-    public MonsterType PrimaryType {
-        get { return primaryType; }
-    }
-
-    public MonsterType SecondaryType {
-        get { return secondaryType; }
-    }
-
-    public int MaxHp {
-        get { return maxHp; }
-    }
-    
-    public int Attack {
-        get { return attack; }
-    }
-    
-    public int Defense {
-        get { return defense; }
-    }
-    
-    public int SpAttack {
-        get { return spAttack; }
-    }
-    
-    public int SpDefense {
-        get { return spDefense; }
-    }
-    
-    public int Speed {
-        get { return speed; }
-    }
-
-    public List<LearnableMove> LearnableMoves {
-        get { return learnableMoves; }
-    }
+    public string Name => name;
+    public string Description => description;
+    public int MaxHp => maxHp;
+    public int Attack => attack;
+    public int Defense => defense;
+    public int SpAttack => spAttack;
+    public int SpDefense => spDefense;
+    public int Speed => speed;
+    public int CatchRate => catchRate;
+    public Sprite LeftSprite => leftSprite;
+    public Sprite RightSprite => rightSprite;
+    public MonsterType PrimaryType => primaryType;
+    public MonsterType SecondaryType => secondaryType;
+    public List<LearnableMove> LearnableMoves => learnableMoves;
 }

@@ -41,9 +41,7 @@ public class BattleHUD : MonoBehaviour
     void SetStatusText()
     {
         if (_monster.Status == null)
-        {
             statusText.text = "";
-        }
         else
         {
             statusText.text = _monster.Status.Id.ToString().ToUpper();
@@ -58,6 +56,5 @@ public class BattleHUD : MonoBehaviour
             yield return hpBar.SetHPSlider((float)_monster.CurrentHp / _monster.MaxHp);
             _monster.IsHpChanged = false;
         }
-        
     }
 }

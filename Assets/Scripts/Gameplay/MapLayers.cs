@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MapLayers : MonoBehaviour
@@ -17,23 +15,9 @@ public class MapLayers : MonoBehaviour
         Instance = this;
     }
 
-    public LayerMask ObjectsLayer {
-        get => objectsLayer;
-    }
-
-    public LayerMask EncountersLayer {
-        get => encountersLayer;
-    }
-
-    public LayerMask InteractLayer {
-        get => interactLayer;
-    }
-
-    public LayerMask PlayerLayer {
-        get => playerLayer;
-    }
-
-    public LayerMask LosLayer {
-        get => losLayer;
-    }
+    public LayerMask ObjectsLayer => objectsLayer;
+    public LayerMask EncountersLayer => encountersLayer;
+    public LayerMask InteractLayer => interactLayer;
+    public LayerMask PlayerLayer => playerLayer;
+    public LayerMask LosLayer  => losLayer;
 }
