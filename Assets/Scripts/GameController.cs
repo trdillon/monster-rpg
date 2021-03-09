@@ -6,6 +6,8 @@ public class GameController : MonoBehaviour
     [SerializeField] BattleSystem battleSystem;
     [SerializeField] Camera worldCamera;
 
+    BattlerController battler;
+
     GameState state;
 
     public static GameController Instance { get; private set; }
@@ -82,6 +84,7 @@ public class GameController : MonoBehaviour
         battleSystem.gameObject.SetActive(true);
         worldCamera.gameObject.SetActive(false);
 
+        this.battler = battler;
         var playerParty = playerController.GetComponent<MonsterParty>();
         var battlerParty = battler.GetComponent<MonsterParty>();
         battleSystem.StartCharBattle(playerParty, battlerParty);
@@ -90,6 +93,12 @@ public class GameController : MonoBehaviour
     void EndBattle(bool won)
     {
         state = GameState.World;
+
+        if (battler != null && won == true)
+        {
+            battler.Defeated();
+            battler = null;
+        }
 
         battleSystem.gameObject.SetActive(false);
         worldCamera.gameObject.SetActive(true);

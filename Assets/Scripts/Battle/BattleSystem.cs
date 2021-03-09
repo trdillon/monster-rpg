@@ -65,13 +65,7 @@ public class BattleSystem : MonoBehaviour
         else
         {
             // Character
-            // Show character sprites
-            playerMonster.gameObject.SetActive(false);
-            enemyMonster.gameObject.SetActive(false);
-            playerImage.gameObject.SetActive(true);
-            battlerImage.gameObject.SetActive(true);
-            playerImage.sprite = player.Sprite;
-            battlerImage.sprite = battler.Sprite;
+            ShowCharacterSprites();
             yield return dialogBox.TypeDialog($"{battler.Name} has challenged you to a battle!");
 
             // Deploy enemy monster
@@ -382,9 +376,19 @@ public class BattleSystem : MonoBehaviour
                 if (nextEnemyMonster != null)
                     StartCoroutine(SwitchEnemyMonster(nextEnemyMonster));
                 else
-                    BattleOver(true); // won battle
+                    BattleOver(true); // won battle      
             }
         }   
+    }
+
+    void ShowCharacterSprites()
+    {
+        playerMonster.gameObject.SetActive(false);
+        enemyMonster.gameObject.SetActive(false);
+        playerImage.gameObject.SetActive(true);
+        battlerImage.gameObject.SetActive(true);
+        playerImage.sprite = player.Sprite;
+        battlerImage.sprite = battler.Sprite;
     }
 
     void BattleOver(bool won)
