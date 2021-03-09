@@ -32,6 +32,11 @@ public class BattlerController : MonoBehaviour, Interactable
         RotateLoS(character.Animator.DefaultDirection);
     }
 
+    private void Update()
+    {
+        character.HandleUpdate();
+    }
+
     public void Interact(Transform interactChar)
     {
         character.TurnToInteract(interactChar.position);
