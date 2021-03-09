@@ -24,6 +24,7 @@ public class BattleSystem : MonoBehaviour
     int currentAction;
     int currentMove;
     int currentMember;
+    bool isChoiceYes = true;
     bool isCharBattle = false;
 
     public event Action<bool> OnBattleOver;
@@ -288,13 +289,22 @@ public class BattleSystem : MonoBehaviour
         dialogBox.SetMoveList(newMonster.Moves);
         yield return dialogBox.TypeDialog($"It's your turn now, {newMonster.Base.Name}!");
 
-        state = BattleState.ExecutingTurn;
+        if (prevState == null)
+        {
+            state = BattleState.ExecutingTurn;
+        }
+        else if (prevState == BattleState.ChoiceSelection)
+        {
+            prevState = null;
+            StartCoroutine(SwitchEnemyMonster());
+        }
     }
 
-    IEnumerator SwitchEnemyMonster(Monster nextMonster)
+    IEnumerator SwitchEnemyMonster()
     {
         state = BattleState.Busy;
 
+        var nextMonster = battlerParty.GetHealthyMonster();
         enemyMonster.Setup(nextMonster);
         yield return dialogBox.TypeDialog($"{battler.Name} has deployed {nextMonster.Base.Name} to the battle!");
 
@@ -375,7 +385,7 @@ public class BattleSystem : MonoBehaviour
             {
                 var nextEnemyMonster = battlerParty.GetHealthyMonster();
                 if (nextEnemyMonster != null)
-                    StartCoroutine(SwitchEnemyMonster(nextEnemyMonster));
+                    StartCoroutine(ChoiceSelection(nextEnemyMonster));
                 else
                     BattleOver(true); // won battle      
             }
@@ -409,6 +419,8 @@ public class BattleSystem : MonoBehaviour
             HandleActionSelection();
         else if (state == BattleState.MoveSelection)
             HandleMoveSelection();
+        else if (state == BattleState.ChoiceSelection)
+            HandleChoiceSelection();
         else if (state == BattleState.PartyScreen)
             HandlePartySelection();
     }
@@ -428,6 +440,17 @@ public class BattleSystem : MonoBehaviour
         dialogBox.EnableDialogText(false);
         dialogBox.EnableActionSelector(false);
         dialogBox.EnableMoveSelector(true);
+    }
+
+    IEnumerator ChoiceSelection(Monster nextMonster)
+    {
+        state = BattleState.Busy;
+
+        yield return dialogBox.TypeDialog($"{battler.Name} is about to deploy {nextMonster.Base.Name}! Do you want to switch your monster too?");
+
+        state = BattleState.ChoiceSelection;
+
+        dialogBox.EnableChoiceSelector(true);
     }
 
     void OpenPartyScreen()
@@ -509,6 +532,33 @@ public class BattleSystem : MonoBehaviour
         }
     }
 
+    void HandleChoiceSelection()
+    {
+        if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.UpArrow))
+            isChoiceYes = !isChoiceYes;
+
+        dialogBox.UpdateChoiceSelection(isChoiceYes);
+
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            dialogBox.EnableChoiceSelector(false);
+            if (isChoiceYes)
+            {
+                prevState = BattleState.ChoiceSelection;
+                OpenPartyScreen();
+            }
+            else
+            {
+                StartCoroutine(SwitchEnemyMonster());
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.X)) 
+        {
+            dialogBox.EnableChoiceSelector(false);
+            StartCoroutine(SwitchEnemyMonster());
+        }
+    }
+
     void HandlePartySelection()
     {
         if (Input.GetKeyDown(KeyCode.RightArrow))
@@ -554,8 +604,21 @@ public class BattleSystem : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.X))
         {
+            if (playerMonster.Monster.CurrentHp <= 0)
+            {
+                partyScreen.SetMessageText("You must select a monster!");
+                return;
+            }
+
             partyScreen.gameObject.SetActive(false);
-            ActionSelection();
+
+            if (prevState == BattleState.ChoiceSelection)
+            {
+                prevState = null;
+                StartCoroutine(SwitchEnemyMonster());
+            }   
+            else
+                ActionSelection();
         }
     }
 }
