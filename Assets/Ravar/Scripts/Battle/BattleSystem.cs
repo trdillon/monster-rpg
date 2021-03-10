@@ -29,13 +29,12 @@ namespace Itsdits.Ravar.Battle
         private MonsterParty playerParty;
         private MonsterParty battlerParty;
         private MonsterObj wildMonster;
-
         private BattleState state;
         private BattleState? prevState;
-
         private int currentAction;
         private int currentMove;
         private int currentMember;
+        private int escapeAttempts;
         private bool isChoiceYes = true;
         private bool isCharBattle = false;
         #endregion
@@ -110,6 +109,7 @@ namespace Itsdits.Ravar.Battle
                 yield return dialogBox.TypeDialog($"You have deployed {playerLeadMonster.Base.Name} to the battle!");
             }
 
+            escapeAttempts = 0;
             partyScreen.Init();
             ActionSelection();
         }
@@ -189,6 +189,7 @@ namespace Itsdits.Ravar.Battle
             else if (playerAction == BattleAction.Run)
             {
                 // Run from the battle.
+                yield return AttemptRun();
             }
 
             // Return to ActionSelection.
@@ -394,7 +395,7 @@ namespace Itsdits.Ravar.Battle
             }
 
             yield return dialogBox.TypeDialog($"{player.Name} activated a Capture Crystal!");
-            int beamCount = TryToCapture(enemyMonster.Monster);
+            int beamCount = AttemptCapture(enemyMonster.Monster);
             Debug.Log($"Beam count: {beamCount}");
             yield return battleAnimator.PlayCrystalAnimation(playerMonster, enemyMonster, beamCount);
 
@@ -433,6 +434,49 @@ namespace Itsdits.Ravar.Battle
             battleAnimator.CleanUp();
         }
 
+        private IEnumerator AttemptRun()
+        {
+            state = BattleState.Busy;
+
+            if (isCharBattle)
+            {
+                yield return dialogBox.TypeDialog($"You can't run away from enemy Battlers!");
+
+                state = BattleState.ExecutingTurn;
+
+                yield break;
+            }
+
+            ++escapeAttempts;
+
+            // Algo is from g3/4.
+            int playerSpeed = playerMonster.Monster.Speed;
+            int enemySpeed = enemyMonster.Monster.Speed;
+
+            if (playerSpeed > enemySpeed)
+            {
+                yield return dialogBox.TypeDialog($"You ran away from the enemy {enemyMonster.Monster.Base.Name}!");
+                BattleOver(true);
+            }
+            else
+            {
+                float f = (playerSpeed * 128) / enemySpeed + 30 * escapeAttempts;
+                f = f % 256;
+
+                if (UnityEngine.Random.Range(0, 256) < f)
+                {
+                    yield return dialogBox.TypeDialog($"You ran away from the enemy {enemyMonster.Monster.Base.Name}!");
+                    BattleOver(true);
+                }
+                else
+                {
+                    yield return dialogBox.TypeDialog($"You couldn't run from the enemy {enemyMonster.Monster.Base.Name}!");
+
+                    state = BattleState.ExecutingTurn;
+                }
+            }
+        }
+
         private IEnumerator CleanUpTurn(BattleMonster attackingMonster)
         {
             // Skip if battle is over
@@ -469,7 +513,7 @@ namespace Itsdits.Ravar.Battle
         }
         #endregion
         #region Helper Functions
-        private int TryToCapture(MonsterObj monster)
+        private int AttemptCapture(MonsterObj monster)
         {
             // Algo is from g3/4.
             float a = (3 * monster.MaxHp - 2 * monster.CurrentHp) * monster.Base.CatchRate * ConditionDB.GetStatusBonus(monster.Status) / (3 * monster.MaxHp);
@@ -687,6 +731,7 @@ namespace Itsdits.Ravar.Battle
                 else if (currentAction == 3)
                 {
                     // Run
+                    StartCoroutine(ExecuteTurn(BattleAction.Run));
                 }
             }
         }
