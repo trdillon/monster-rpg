@@ -17,7 +17,7 @@ namespace Itsdits.Ravar.UI.Party
         /// </summary>
         public void Init()
         {
-            members = GetComponentsInChildren<PartyMemberUI>();
+            members = GetComponentsInChildren<PartyMemberUI>(true);
         }
 
         /// <summary>
@@ -32,6 +32,7 @@ namespace Itsdits.Ravar.UI.Party
             {
                 if (i < monsters.Count)
                 {
+                    members[i].gameObject.SetActive(true);
                     members[i].SetData(monsters[i]);
                 } 
                 else
