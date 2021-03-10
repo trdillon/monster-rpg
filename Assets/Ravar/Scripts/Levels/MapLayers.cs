@@ -1,23 +1,25 @@
 using UnityEngine;
 
-public class MapLayers : MonoBehaviour
-{
-    [SerializeField] LayerMask objectsLayer;
-    [SerializeField] LayerMask encountersLayer;
-    [SerializeField] LayerMask interactLayer;
-    [SerializeField] LayerMask playerLayer;
-    [SerializeField] LayerMask losLayer;
-
-    public static MapLayers Instance { get; set; }
-
-    private void Awake()
+namespace Itsdits.Ravar.Levels { 
+    public class MapLayers : MonoBehaviour
     {
-        Instance = this;
-    }
+        public static MapLayers Instance { get; set; }
 
-    public LayerMask ObjectsLayer => objectsLayer;
-    public LayerMask EncountersLayer => encountersLayer;
-    public LayerMask InteractLayer => interactLayer;
-    public LayerMask PlayerLayer => playerLayer;
-    public LayerMask LosLayer  => losLayer;
+        [SerializeField] LayerMask objectsLayer;
+        [SerializeField] LayerMask encountersLayer;
+        [SerializeField] LayerMask interactLayer;
+        [SerializeField] LayerMask playerLayer;
+        [SerializeField] LayerMask losLayer;
+
+        public LayerMask ObjectsLayer => objectsLayer;
+        public LayerMask EncountersLayer => encountersLayer;
+        public LayerMask InteractLayer => interactLayer;
+        public LayerMask PlayerLayer => playerLayer;
+        public LayerMask LosLayer => losLayer;
+
+        private void Awake()
+        {
+            Instance = this;
+        }
+    }
 }

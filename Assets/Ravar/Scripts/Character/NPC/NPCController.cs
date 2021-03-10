@@ -1,76 +1,88 @@
+using Itsdits.Ravar.UI;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NPCController : MonoBehaviour, Interactable
-{
-    [SerializeField] Dialog dialog;
-    [SerializeField] List<Vector2> movementPattern;
-    [SerializeField] float movementPatternTime;
-
-    Character character;
-    NPCState state;
-
-    float idleTimer = 0f;
-    int currentMovement = 0;
-
-    private void Awake()
+namespace Itsdits.Ravar.Character.NPC { 
+    public class NPCController : MonoBehaviour, IInteractable
     {
-        character = GetComponent<Character>();
-    }
+        [SerializeField] string _name;
+        [SerializeField] Dialog dialog;
+        [SerializeField] List<Vector2> movementPattern;
+        [SerializeField] float movementPatternTime;
 
-    private void Update()
-    {
-        if (state == NPCState.Idle)
+        private Character character;
+        private NPCState state;
+        private float idleTimer = 0f;
+        private int currentMovement = 0;
+
+        public string Name => _name;
+
+        private void Awake()
         {
-            idleTimer += Time.deltaTime;
-
-            if (idleTimer > movementPatternTime)
-            {
-                idleTimer = 0f;
-
-                if (movementPattern.Count > 0)
-                    StartCoroutine(Walk());
-            }
+            character = GetComponent<Character>();
         }
 
-        character.HandleUpdate();
-    }
-
-    IEnumerator Walk()
-    {
-        state = NPCState.Walking;
-
-        var oldPos = transform.position;
-        yield return character.Move(movementPattern[currentMovement]);
-
-        if (transform.position != oldPos)
-            currentMovement = (currentMovement + 1) % movementPattern.Count; // Loop back after the last move
-
-        state = NPCState.Idle;
-    }
-
-    public void Interact(Transform interactChar)
-    {
-        if (state == NPCState.Idle)
+        private void Update()
         {
-            state = NPCState.Interacting;
-
-            character.TurnToInteract(interactChar.position);
-
-            if (dialog.Strings.Count > 0)
+            if (state == NPCState.Idle)
             {
-                StartCoroutine(DialogController.Instance.ShowDialog(dialog, () =>
+                idleTimer += Time.deltaTime;
+                if (idleTimer > movementPatternTime)
                 {
                     idleTimer = 0f;
-                    state = NPCState.Idle;
-                }));
+                    if (movementPattern.Count > 0)
+                    {
+                        StartCoroutine(Walk());
+                    }  
+                }
             }
-            else
-            { 
-                // Avoid an exception if there's no dialog to show
-                idleTimer = 0f;
-                state = NPCState.Idle;
+            character.HandleUpdate();
+        }
+
+        private IEnumerator Walk()
+        {
+            state = NPCState.Walking;
+
+            var oldPos = transform.position;
+            yield return character.Move(movementPattern[currentMovement]);
+
+            if (transform.position != oldPos)
+            {
+                // Loop back after the last move
+                currentMovement = (currentMovement + 1) % movementPattern.Count;
+            }
+
+            state = NPCState.Idle;
+        }
+
+        /// <summary>
+        /// Interact with the player.
+        /// </summary>
+        /// <param name="interactChar">Player</param>
+        public void Interact(Transform interactChar)
+        {
+            if (state == NPCState.Idle)
+            {
+                state = NPCState.Interacting;
+
+                character.TurnToInteract(interactChar.position);
+                if (dialog.Strings.Count > 0)
+                {
+                    StartCoroutine(DialogController.Instance.ShowDialog(dialog, () =>
+                    {
+                        idleTimer = 0f;
+
+                        state = NPCState.Idle;
+                    }));
+                }
+                else
+                { 
+                    // Avoid an exception if there's no dialog to show.
+                    idleTimer = 0f;
+
+                    state = NPCState.Idle;
+                }
             }
         }
     }

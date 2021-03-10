@@ -2,32 +2,44 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class MonsterParty : MonoBehaviour
-{
-    [SerializeField] List<Monster> monsters;
-
-    public List<Monster> Monsters => monsters;
-
-    private void Start()
+namespace Itsdits.Ravar.Monster { 
+    public class MonsterParty : MonoBehaviour
     {
-        foreach (var monster in monsters)
-            monster.Init();
-    }
+        [SerializeField] List<MonsterObj> monsters;
 
-    public Monster GetHealthyMonster()
-    {
-        return monsters.Where(x => x.CurrentHp > 0).FirstOrDefault();
-    }
+        public List<MonsterObj> Monsters => monsters;
 
-    public void AddMonster(Monster newMonster)
-    {
-        if (monsters.Count < 6)
+        private void Start()
         {
-            monsters.Add(newMonster);
+            foreach (var monster in monsters)
+            {
+                monster.Init();
+            }
         }
-        else
+
+        /// <summary>
+        /// Get the next healthy monster in the party.
+        /// </summary>
+        /// <returns>Next monster to fight with</returns>
+        public MonsterObj GetHealthyMonster()
         {
-            //TODO - send to storage bank
+            return monsters.Where(x => x.CurrentHp > 0).FirstOrDefault();
+        }
+
+        /// <summary>
+        /// Add a new monster to the team.
+        /// </summary>
+        /// <param name="newMonster">Monster to add</param>
+        public void AddMonster(MonsterObj newMonster)
+        {
+            if (monsters.Count < 6)
+            {
+                monsters.Add(newMonster);
+            }
+            else
+            {
+                //TODO - send to storage bank
+            }
         }
     }
 }

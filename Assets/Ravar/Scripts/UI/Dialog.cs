@@ -1,10 +1,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
-public class Dialog
+namespace Itsdits.Ravar.UI
 {
-    [SerializeField] List<string> strings;
+    [System.Serializable]
+    public class Dialog
+    {
+        [SerializeField] List<string> strings;
 
-    public List<string> Strings => strings;
+        public List<string> Strings => strings;
+    }
 }

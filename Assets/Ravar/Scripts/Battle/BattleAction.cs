@@ -1,7 +1,10 @@
-public enum BattleAction
+namespace Itsdits.Ravar.Battle
 {
-    Move,
-    SwitchMonster,
-    UseItem,
-    Run
+    public enum BattleAction
+    {
+        Move,
+        SwitchMonster,
+        UseItem,
+        Run
+    }
 }

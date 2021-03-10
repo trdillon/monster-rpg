@@ -427,6 +427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4ecbbc1fdadfa34b8e46343e07b9ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _name: Karen
   dialog:
     strings:
     - Hey, welcome to RavaR!
@@ -449,16 +450,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 525ca2a005b69b144bfa53bec249b8a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultDirection: 0
   walkDownSprites:
   - {fileID: 949774158526358821, guid: ef2e719d76616104daee2fcdf3599f51, type: 3}
   - {fileID: -3637778463231195592, guid: ef2e719d76616104daee2fcdf3599f51, type: 3}
   - {fileID: 2384649965088593961, guid: ef2e719d76616104daee2fcdf3599f51, type: 3}
   - {fileID: -7514074729311698958, guid: ef2e719d76616104daee2fcdf3599f51, type: 3}
-  walkUpSprites:
-  - {fileID: 8491483722219407288, guid: ef2e719d76616104daee2fcdf3599f51, type: 3}
-  - {fileID: 983069083194977514, guid: ef2e719d76616104daee2fcdf3599f51, type: 3}
-  - {fileID: -8949221876696129054, guid: ef2e719d76616104daee2fcdf3599f51, type: 3}
-  - {fileID: 7555117688024648071, guid: ef2e719d76616104daee2fcdf3599f51, type: 3}
   walkLeftSprites:
   - {fileID: 4985574267327464659, guid: ef2e719d76616104daee2fcdf3599f51, type: 3}
   - {fileID: 3082958067603979584, guid: ef2e719d76616104daee2fcdf3599f51, type: 3}
@@ -469,7 +466,11 @@ MonoBehaviour:
   - {fileID: -6532161045843136328, guid: ef2e719d76616104daee2fcdf3599f51, type: 3}
   - {fileID: -8253415841752514641, guid: ef2e719d76616104daee2fcdf3599f51, type: 3}
   - {fileID: -6968198509380877110, guid: ef2e719d76616104daee2fcdf3599f51, type: 3}
-  defaultDirection: 0
+  walkUpSprites:
+  - {fileID: 8491483722219407288, guid: ef2e719d76616104daee2fcdf3599f51, type: 3}
+  - {fileID: 983069083194977514, guid: ef2e719d76616104daee2fcdf3599f51, type: 3}
+  - {fileID: -8949221876696129054, guid: ef2e719d76616104daee2fcdf3599f51, type: 3}
+  - {fileID: 7555117688024648071, guid: ef2e719d76616104daee2fcdf3599f51, type: 3}
 --- !u!114 &199644587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -584,7 +585,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dbc970c53fe4fb4db64554b34a2489c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Gus
+  _name: Gus
   sprite: {fileID: 21300000, guid: a0e8a29eddec6794f9e41d070886352f, type: 3}
 --- !u!114 &225907025
 MonoBehaviour:
@@ -598,16 +599,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 525ca2a005b69b144bfa53bec249b8a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultDirection: 0
   walkDownSprites:
   - {fileID: 880231291406045695, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
   - {fileID: -4101229301456021584, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
   - {fileID: 3698387406507301872, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
   - {fileID: -3505928669650504026, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
-  walkUpSprites:
-  - {fileID: 4907542694546458950, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
-  - {fileID: -8295987082180297689, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
-  - {fileID: 4189663924183455587, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
-  - {fileID: 966471145356176990, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
   walkLeftSprites:
   - {fileID: 3967475003460924831, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
   - {fileID: 1510101942682237580, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
@@ -618,7 +615,11 @@ MonoBehaviour:
   - {fileID: -5687298332529069498, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
   - {fileID: 3168402398906451873, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
   - {fileID: -7246388641585605614, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
-  defaultDirection: 0
+  walkUpSprites:
+  - {fileID: 4907542694546458950, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
+  - {fileID: -8295987082180297689, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
+  - {fileID: 4189663924183455587, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
+  - {fileID: 966471145356176990, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
 --- !u!114 &225907026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3244,16 +3245,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 525ca2a005b69b144bfa53bec249b8a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultDirection: 0
   walkDownSprites:
   - {fileID: 8279891041327275569, guid: fac3a8e0619de344f911ade53c2c7e0d, type: 3}
   - {fileID: -4196845079734034598, guid: fac3a8e0619de344f911ade53c2c7e0d, type: 3}
   - {fileID: 1402613840194353149, guid: fac3a8e0619de344f911ade53c2c7e0d, type: 3}
   - {fileID: -4151096803586869099, guid: fac3a8e0619de344f911ade53c2c7e0d, type: 3}
-  walkUpSprites:
-  - {fileID: 1506054971702264442, guid: fac3a8e0619de344f911ade53c2c7e0d, type: 3}
-  - {fileID: -6138626906724651156, guid: fac3a8e0619de344f911ade53c2c7e0d, type: 3}
-  - {fileID: -6025518513204739913, guid: fac3a8e0619de344f911ade53c2c7e0d, type: 3}
-  - {fileID: -6216198179717294723, guid: fac3a8e0619de344f911ade53c2c7e0d, type: 3}
   walkLeftSprites:
   - {fileID: 5571188764390211417, guid: fac3a8e0619de344f911ade53c2c7e0d, type: 3}
   - {fileID: 8472100186418374955, guid: fac3a8e0619de344f911ade53c2c7e0d, type: 3}
@@ -3264,7 +3261,11 @@ MonoBehaviour:
   - {fileID: -8548217009676704590, guid: fac3a8e0619de344f911ade53c2c7e0d, type: 3}
   - {fileID: -6709117376253479263, guid: fac3a8e0619de344f911ade53c2c7e0d, type: 3}
   - {fileID: -3071435449043004934, guid: fac3a8e0619de344f911ade53c2c7e0d, type: 3}
-  defaultDirection: 0
+  walkUpSprites:
+  - {fileID: 1506054971702264442, guid: fac3a8e0619de344f911ade53c2c7e0d, type: 3}
+  - {fileID: -6138626906724651156, guid: fac3a8e0619de344f911ade53c2c7e0d, type: 3}
+  - {fileID: -6025518513204739913, guid: fac3a8e0619de344f911ade53c2c7e0d, type: 3}
+  - {fileID: -6216198179717294723, guid: fac3a8e0619de344f911ade53c2c7e0d, type: 3}
 --- !u!114 &870110086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3290,7 +3291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aba5f7e6f86786a4b9c9b361f3a86f13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Thug Gordo
+  _name: Thug Gordo
   sprite: {fileID: 21300000, guid: fa03519e345914b4db59e26a01626567, type: 3}
   introDialog:
     strings:
@@ -4311,9 +4312,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 022de6908f96968418a1eb9450c61c10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crystalSprite: {fileID: 4055206248114480650, guid: 0f19dd37050a6ba448a49e03e9d608cf, type: 3}
   beamSprite: {fileID: 145920578979454082, guid: 8b65c25743c71a04faffde22197269de, type: 3}
   burstSprite: {fileID: 765397561323905773, guid: ce06273d95939cc4fbdb81fd3ed7ac65, type: 3}
+  crystalSprite: {fileID: 4055206248114480650, guid: 0f19dd37050a6ba448a49e03e9d608cf, type: 3}
 --- !u!4 &1196428721
 Transform:
   m_ObjectHideFlags: 0
@@ -5075,11 +5076,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 565c14fdc17df864db9fad61703682c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerMonster: {fileID: 1303786886}
-  enemyMonster: {fileID: 1978073289}
   battleAnimator: {fileID: 1196428720}
   dialogBox: {fileID: 2146497624}
   partyScreen: {fileID: 316494955}
+  playerMonster: {fileID: 1303786886}
+  enemyMonster: {fileID: 1978073289}
   playerImage: {fileID: 1799665711}
   battlerImage: {fileID: 1083146083}
 --- !u!1 &1347669708

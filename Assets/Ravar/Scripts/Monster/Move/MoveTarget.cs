@@ -1,5 +1,7 @@
-public enum MoveTarget
-{
-    Self,
-    Enemy
+namespace Itsdits.Ravar.Monster.Move { 
+    public enum MoveTarget
+    {
+        Self,
+        Enemy
+    }
 }

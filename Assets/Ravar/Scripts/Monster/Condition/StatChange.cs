@@ -1,6 +1,9 @@
-[System.Serializable]
-public class StatChange
+namespace Itsdits.Ravar.Monster.Condition
 {
-    public MonsterStat stat;
-    public int changeVal;
+    [System.Serializable]
+    public class StatChange
+    {
+        public MonsterStat stat;
+        public int changeVal;
+    }
 }

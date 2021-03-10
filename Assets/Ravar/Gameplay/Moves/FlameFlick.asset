@@ -12,10 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7872732f20cf1c346868d61da89a7f54, type: 3}
   m_Name: FlameFlick
   m_EditorClassIdentifier: 
-  name: Flame Flick
+  _name: Flame Flick
   description: Flicks the opponent with a flame. Chance to burn.
+  power: 40
+  accuracy: 100
+  energy: 25
+  priority: 0
+  alwaysHits: 0
   type: 2
   category: 1
+  target: 1
   effects:
     statChanges: []
     status: 0
@@ -26,8 +32,3 @@ MonoBehaviour:
     volatileStatus: 0
     chance: 10
     target: 1
-  target: 1
-  power: 40
-  accuracy: 100
-  energy: 25
-  alwaysHits: 0

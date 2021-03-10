@@ -1,9 +1,12 @@
-public enum GameState
+namespace Itsdits.Ravar
 {
-    World,
-    Battle,
-    Dialog,
-    Cutscene,
-    Menu,
-    Pause
+    public enum GameState
+    {
+        World,
+        Battle,
+        Dialog,
+        Cutscene,
+        Menu,
+        Pause
+    }
 }

@@ -1,47 +1,74 @@
+using Itsdits.Ravar.Monster;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PartyScreen : MonoBehaviour
+namespace Itsdits.Ravar.UI.Party
 {
-    [SerializeField] Text messageText;
-
-    PartyMemberUI[] members;
-    List<Monster> monsters;
-
-    public void Init()
+    public class PartyScreen : MonoBehaviour
     {
-        members = GetComponentsInChildren<PartyMemberUI>();
-    }
+        [SerializeField] Text messageText;
 
-    public void SetPartyData(List<Monster> monsters) 
-    {
-        this.monsters = monsters;
+        private PartyMemberUI[] members;
+        private List<MonsterObj> monsters;
 
-        for (int i = 0; i < members.Length; i++)
+        /// <summary>
+        /// Initialize the members array.
+        /// </summary>
+        public void Init()
         {
-            if (i < monsters.Count)
-                members[i].SetData(monsters[i]);
-            else
-                members[i].gameObject.SetActive(false);
+            members = GetComponentsInChildren<PartyMemberUI>();
         }
 
-        messageText.text = "Select a monster";
-    }
-
-    public void UpdateMemberSelection(int selectedMember)
-    {
-        for (int i = 0; i < monsters.Count; i++)
+        /// <summary>
+        /// Set the data for the monsters.
+        /// </summary>
+        /// <param name="monsters">Monsters in party</param>
+        public void SetPartyData(List<MonsterObj> monsters)
         {
-            if (i == selectedMember)
-                members[i].SetSelected(true);
-            else
-                members[i].SetSelected(false);
-        }
-    }
+            this.monsters = monsters;
 
-    public void SetMessageText(string message)
-    {
-        messageText.text = message;
+            for (int i = 0; i < members.Length; i++)
+            {
+                if (i < monsters.Count)
+                {
+                    members[i].SetData(monsters[i]);
+                } 
+                else
+                {
+                    members[i].gameObject.SetActive(false);
+                }   
+            }
+            messageText.text = "Select a monster";
+        }
+
+        /// <summary>
+        /// Handle change in selected monster.
+        /// </summary>
+        /// <param name="selectedMember">Index of monster selected</param>
+        public void UpdateMemberSelection(int selectedMember)
+        {
+            for (int i = 0; i < monsters.Count; i++)
+            {
+                if (i == selectedMember)
+                {
+                    members[i].SetSelected(true);
+                } 
+                else
+                {
+                    members[i].SetSelected(false);
+                }
+            }
+        }
+
+        /// <summary>
+        /// Set the text of the message box.
+        /// </summary>
+        /// <param name="message">String to display</param>
+        public void SetMessageText(string message)
+        {
+            messageText.text = message;
+        }
     }
 }
+

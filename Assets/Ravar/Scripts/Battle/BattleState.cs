@@ -1,11 +1,14 @@
-public enum BattleState
+namespace Itsdits.Ravar.Battle
 {
-    Start,
-    Busy,
-    ActionSelection,
-    MoveSelection,
-    ChoiceSelection,
-    ExecutingTurn,
-    BattleOver,
-    PartyScreen
+    public enum BattleState
+    {
+        Start,
+        Busy,
+        ActionSelection,
+        MoveSelection,
+        ChoiceSelection,
+        ExecutingTurn,
+        BattleOver,
+        PartyScreen
+    }
 }

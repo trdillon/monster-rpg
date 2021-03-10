@@ -1,7 +1,10 @@
-public enum DefaultDirection
+namespace Itsdits.Ravar.Character
 {
-    Down,
-    Up,
-    Left,
-    Right
+    public enum DefaultDirection
+    {
+        Down,
+        Up,
+        Left,
+        Right
+    }
 }

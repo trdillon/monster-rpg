@@ -12,19 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df53028c99a3f9f43aa62467b2589e84, type: 3}
   m_Name: Wabbi
   m_EditorClassIdentifier: 
-  name: Wabbi
+  _name: Wabbi
   description: A forest wolf that excels at tracking and hunting. A balanced fighter
     with a good mix of speed and strength, it is a formidable foe for most creatures.
-  leftSprite: {fileID: 21300000, guid: 1244abe4a992a6346a9cda5e98ea24c2, type: 3}
-  rightSprite: {fileID: 21300000, guid: 89a6e783370c2544a824fe67bc066782, type: 3}
-  primaryType: 3
-  secondaryType: 0
   maxHp: 45
   attack: 49
   defense: 49
   spAttack: 65
   spDefense: 65
   speed: 45
+  catchRate: 255
+  leftSprite: {fileID: 21300000, guid: 1244abe4a992a6346a9cda5e98ea24c2, type: 3}
+  rightSprite: {fileID: 21300000, guid: 89a6e783370c2544a824fe67bc066782, type: 3}
+  primaryType: 3
+  secondaryType: 0
   learnableMoves:
   - moveBase: {fileID: 11400000, guid: 8d7e7bbdab74fda4d8ec4d9c05e6f9d7, type: 2}
     levelLearned: 1

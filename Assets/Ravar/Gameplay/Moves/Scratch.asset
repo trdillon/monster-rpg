@@ -12,14 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7872732f20cf1c346868d61da89a7f54, type: 3}
   m_Name: Scratch
   m_EditorClassIdentifier: 
-  name: Scratch
+  _name: Scratch
   description: Scratches the opponent.
-  type: 0
-  category: 0
-  effects:
-    statChanges: []
-    status: 0
-  target: 0
   power: 40
   accuracy: 100
   energy: 35
+  priority: 0
+  alwaysHits: 0
+  type: 0
+  category: 0
+  target: 0
+  effects:
+    statChanges: []
+    status: 0
+    volatileStatus: 0
+  moveSecondaryEffects: []

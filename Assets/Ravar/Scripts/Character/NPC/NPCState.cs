@@ -1,6 +1,9 @@
-public enum NPCState
+namespace Itsdits.Ravar.Character.NPC
 {
-    Idle,
-    Walking,
-    Interacting
+    public enum NPCState
+    {
+        Idle,
+        Walking,
+        Interacting
+    }
 }

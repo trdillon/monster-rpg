@@ -1,108 +1,124 @@
+using Itsdits.Ravar.Battle;
+using Itsdits.Ravar.Character.Battler;
+using Itsdits.Ravar.Character.Player;
+using Itsdits.Ravar.Levels;
+using Itsdits.Ravar.Monster;
+using Itsdits.Ravar.Monster.Condition;
+using Itsdits.Ravar.UI;
 using UnityEngine;
 
-public class GameController : MonoBehaviour
+namespace Itsdits.Ravar
 {
-    [SerializeField] PlayerController playerController;
-    [SerializeField] BattleSystem battleSystem;
-    [SerializeField] Camera worldCamera;
-
-    BattlerController battler;
-
-    GameState state;
-
-    public static GameController Instance { get; private set; }
-
-    private void Awake()
+    public class GameController : MonoBehaviour
     {
-        Instance = this;
-        ConditionDB.Init();
-    }
+        public static GameController Instance { get; private set; }
 
-    private void Start()
-    {
-        playerController.OnEncounter += StartWildBattle;
-        playerController.OnLoS += StartCharEncounter;
-        battleSystem.OnBattleOver += EndBattle;
-        DialogController.Instance.OnShowDialog += StartDialog;
-        DialogController.Instance.OnCloseDialog += EndDialog;
-    }
 
-    private void Update()
-    {
-        if (state == GameState.World)
-            playerController.HandleUpdate();
-        else if (state == GameState.Battle)
-            battleSystem.HandleUpdate();
-        else if (state == GameState.Dialog)
-            DialogController.Instance.HandleUpdate();
-    }
+        [SerializeField] PlayerController playerController;
+        [SerializeField] BattleSystem battleSystem;
+        [SerializeField] Camera worldCamera;
 
-    //
-    // BATTLE
-    //
-    void StartWildBattle()
-    {
-        state = GameState.Battle;
+        private BattlerController battler;
+        private GameState state;
 
-        battleSystem.gameObject.SetActive(true);
-        worldCamera.gameObject.SetActive(false);
-
-        var playerParty = playerController.GetComponent<MonsterParty>();
-        var wildMonster = FindObjectOfType<MapArea>().GetComponent<MapArea>().GetRandomMonster();
-        var enemyMonster = new Monster(wildMonster.Base, wildMonster.Level);
-
-        battleSystem.StartWildBattle(playerParty, enemyMonster);
-    }
-
-    void StartCharEncounter(Collider2D battlerCollider)
-    {
-        var battler = battlerCollider.GetComponentInParent<BattlerController>();
-        if (battler != null)
+        private void Awake()
         {
-            state = GameState.Cutscene;
-
-            StartCoroutine(battler.TriggerBattle(playerController));
-        }
-    }
-
-    public void StartCharBattle(BattlerController battler)
-    {
-        state = GameState.Battle;
-
-        battleSystem.gameObject.SetActive(true);
-        worldCamera.gameObject.SetActive(false);
-
-        this.battler = battler;
-        var playerParty = playerController.GetComponent<MonsterParty>();
-        var battlerParty = battler.GetComponent<MonsterParty>();
-        battleSystem.StartCharBattle(playerParty, battlerParty);
-    }
-
-    void EndBattle(bool won)
-    {
-        state = GameState.World;
-
-        if (battler != null && won == true)
-        {
-            battler.Defeated();
-            battler = null;
+            Instance = this;
+            ConditionDB.Init();
         }
 
-        battleSystem.gameObject.SetActive(false);
-        worldCamera.gameObject.SetActive(true);
-    }
+        private void Start()
+        {
+            playerController.OnEncounter += StartWildBattle;
+            playerController.OnLoS += StartCharEncounter;
+            battleSystem.OnBattleOver += EndBattle;
+            DialogController.Instance.OnShowDialog += StartDialog;
+            DialogController.Instance.OnCloseDialog += EndDialog;
+        }
 
-    //
-    // DIALOG
-    //
-    void StartDialog()
-    {
-        state = GameState.Dialog;
-    }
+        private void Update()
+        {
+            if (state == GameState.World)
+            {
+                playerController.HandleUpdate();
+            }
+            else if (state == GameState.Battle)
+            {
+                battleSystem.HandleUpdate();
+            }
+            else if (state == GameState.Dialog)
+            {
+                DialogController.Instance.HandleUpdate();
+            }
+        }
 
-    void EndDialog()
-    {
-        if (state == GameState.Dialog)
+        private void StartWildBattle()
+        {
+            state = GameState.Battle;
+
+            battleSystem.gameObject.SetActive(true);
+            worldCamera.gameObject.SetActive(false);
+
+            var playerParty = playerController.GetComponent<MonsterParty>();
+            var wildMonster = FindObjectOfType<MapArea>().GetComponent<MapArea>().GetRandomMonster();
+            var enemyMonster = new MonsterObj(wildMonster.Base, wildMonster.Level);
+
+            battleSystem.StartWildBattle(playerParty, enemyMonster);
+        }
+
+        private void StartCharEncounter(Collider2D battlerCollider)
+        {
+            var battler = battlerCollider.GetComponentInParent<BattlerController>();
+            if (battler != null)
+            {
+                state = GameState.Cutscene;
+
+                StartCoroutine(battler.TriggerBattle(playerController));
+            }
+        }
+
+        /// <summary>
+        /// Start a battle with enemy character.
+        /// </summary>
+        /// <param name="battler">Character to battle</param>
+        public void StartCharBattle(BattlerController battler)
+        {
+            state = GameState.Battle;
+
+            battleSystem.gameObject.SetActive(true);
+            worldCamera.gameObject.SetActive(false);
+
+            this.battler = battler;
+            var playerParty = playerController.GetComponent<MonsterParty>();
+            var battlerParty = battler.GetComponent<MonsterParty>();
+            battleSystem.StartCharBattle(playerParty, battlerParty);
+        }
+
+        private void EndBattle(bool won)
+        {
             state = GameState.World;
+
+            if (battler != null && won == true)
+            {
+                battler.SetDefeated();
+                battler = null;
+            }
+
+            battleSystem.gameObject.SetActive(false);
+            worldCamera.gameObject.SetActive(true);
+        }
+        
+        private void StartDialog()
+        {
+            state = GameState.Dialog;
+        }
+
+        private void EndDialog()
+        {
+            if (state == GameState.Dialog)
+            {
+                state = GameState.World;
+            }
+        }
     }
 }
