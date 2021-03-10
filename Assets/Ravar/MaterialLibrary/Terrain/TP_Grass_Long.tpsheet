@@ -1,0 +1,75 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:9669c7525e03c58e17e49336c41364ee:1e81ef2b09e4ab759741a38ca6392462:64ab589e5e3d7b0101ef7854d534ebc8$
+#
+:format=40300
+:texture=TS_Grass_Long.png
+:size=512x256
+:pivotpoints=enabled
+:borders=disabled
+:alphahandling=ClearTransparentPixels
+
+SmallHedge_1_TopLeft;1;223;32;32; 0.5;0.5; 0;0;0;0
+SmallHedge_2_TopMid;35;223;32;32; 0.5;0.5; 0;0;0;0
+SmallHedge_3_TopRight;69;223;32;32; 0.5;0.5; 0;0;0;0
+SmallHedge_4_CenterTopLeft;103;223;32;32; 0.5;0.5; 0;0;0;0
+SmallHedge_5_Fill;137;223;32;32; 0.5;0.5; 0;0;0;0
+SmallHedge_6_CenterTopRight;171;223;32;32; 0.5;0.5; 0;0;0;0
+SmallHedge_7_CenterBottomLeft;205;223;32;32; 0.5;0.5; 0;0;0;0
+SmallHedge_8_CenterBottomRight;239;223;32;32; 0.5;0.5; 0;0;0;0
+SmallHedge_9_BottomLeft;273;223;32;32; 0.5;0.5; 0;0;0;0
+SmallHedge_10_BottomMid;307;223;32;32; 0.5;0.5; 0;0;0;0
+SmallHedge_11_BottomRight;341;223;32;32; 0.5;0.5; 0;0;0;0
+SmallHedge_Single_1_Top;375;223;32;32; 0.5;0.5; 0;0;0;0
+SmallHedge_Single_2_Left;409;223;32;32; 0.5;0.5; 0;0;0;0
+SmallHedge_Single_3_Right;443;223;32;32; 0.5;0.5; 0;0;0;0
+SmallHedge_Single_4_Bottom;477;223;32;32; 0.5;0.5; 0;0;0;0
+SmallHedge_Single_S;1;189;32;32; 0.5;0.5; 0;0;0;0
+SmallHedge_Single_SS;1;189;32;32; 0.5;0.5; 0;0;0;0
+Stalks_1_TopLeft;35;189;32;32; 0.5;0.5; 0;0;0;0
+Stalks_2_TopMid;69;189;32;32; 0.5;0.5; 0;0;0;0
+Stalks_3_TopRight;103;189;32;32; 0.5;0.5; 0;0;0;0
+Stalks_4_CenterTopLeft;137;189;32;32; 0.5;0.5; 0;0;0;0
+Stalks_5_Fill;171;189;32;32; 0.5;0.5; 0;0;0;0
+Stalks_6_CenterTopRight;205;189;32;32; 0.5;0.5; 0;0;0;0
+Stalks_7_CML;239;189;32;32; 0.5;0.5; 0;0;0;0
+Stalks_8_CMR;273;189;32;32; 0.5;0.5; 0;0;0;0
+Stalks_9_CenterBottomLeft;307;189;32;32; 0.5;0.5; 0;0;0;0
+Stalks_10_CenterBottomRight;341;189;32;32; 0.5;0.5; 0;0;0;0
+Stalks_11_BottomLeft;375;189;32;32; 0.5;0.5; 0;0;0;0
+Stalks_12_BottomMid;409;189;32;32; 0.5;0.5; 0;0;0;0
+Stalks_13_BottomRight;443;189;32;32; 0.5;0.5; 0;0;0;0
+Stalks_CenterBottomLeft;307;189;32;32; 0.5;0.5; 0;0;0;0
+Stalks_CenterBottomRight;341;189;32;32; 0.5;0.5; 0;0;0;0
+Stalks_CenterLeft;477;189;32;32; 0.5;0.5; 0;0;0;0
+Stalks_CenterRight;1;155;32;32; 0.5;0.5; 0;0;0;0
+Stalks_CenterTopLeft;137;189;32;32; 0.5;0.5; 0;0;0;0
+Stalks_CenterTopRight;205;189;32;32; 0.5;0.5; 0;0;0;0
+Stalks_Fill;35;155;32;32; 0.5;0.5; 0;0;0;0
+Stalks_Mid;69;155;32;32; 0.5;0.5; 0;0;0;0
+Stalks_Single_1_Top;103;155;32;32; 0.5;0.5; 0;0;0;0
+Stalks_Single_3_Bottom;137;155;32;32; 0.5;0.5; 0;0;0;0
+Stalks_Single_3_Middle;171;155;32;32; 0.5;0.5; 0;0;0;0
+Stalks_Water_1_L;205;155;32;32; 0.5;0.5; 0;0;0;0
+Stalks_Water_2_M;239;155;32;32; 0.5;0.5; 0;0;0;0
+Stalks_Water_3_R;273;155;32;32; 0.5;0.5; 0;0;0;0
+Stalks_Water_Single_Bottom;307;155;32;32; 0.5;0.5; 0;0;0;0
+TallHedge_1_TopLeft;341;155;32;32; 0.5;0.5; 0;0;0;0
+TallHedge_2_TopMid;375;155;32;32; 0.5;0.5; 0;0;0;0
+TallHedge_3_TopRight;409;155;32;32; 0.5;0.5; 0;0;0;0
+TallHedge_4_CenterTopLeft;443;155;32;32; 0.5;0.5; 0;0;0;0
+TallHedge_5_Fill;477;155;32;32; 0.5;0.5; 0;0;0;0
+TallHedge_6_CenterTopRight;1;121;32;32; 0.5;0.5; 0;0;0;0
+TallHedge_7_CenterBottomLeft;35;121;32;32; 0.5;0.5; 0;0;0;0
+TallHedge_8_CenterBottomRight;69;121;32;32; 0.5;0.5; 0;0;0;0
+TallHedge_9_BottomLeft;103;121;32;32; 0.5;0.5; 0;0;0;0
+TallHedge_10_BottomMid;137;121;32;32; 0.5;0.5; 0;0;0;0
+TallHedge_11_BottomRight;171;121;32;32; 0.5;0.5; 0;0;0;0
+TallHedge_Single_1_Top;205;121;32;32; 0.5;0.5; 0;0;0;0
+TallHedge_Single_2_Left;239;121;32;32; 0.5;0.5; 0;0;0;0
+TallHedge_Single_3_Right;273;121;32;32; 0.5;0.5; 0;0;0;0
+TallHedge_Single_4_Bottom;307;121;32;32; 0.5;0.5; 0;0;0;0

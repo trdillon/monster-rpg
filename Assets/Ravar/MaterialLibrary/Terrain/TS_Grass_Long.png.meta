@@ -1,0 +1,1584 @@
+fileFormatVersion: 2
+guid: 637e6797ac514ec46941edcac6b7941a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7845213910229176604
+    second: SmallHedge_1_TopLeft
+  - first:
+      213: -6268956209141959536
+    second: SmallHedge_2_TopMid
+  - first:
+      213: -2183762719053962424
+    second: SmallHedge_3_TopRight
+  - first:
+      213: -1147512004490627485
+    second: SmallHedge_4_CenterTopLeft
+  - first:
+      213: 55649669391716741
+    second: SmallHedge_5_Fill
+  - first:
+      213: 3303037641600093518
+    second: SmallHedge_6_CenterTopRight
+  - first:
+      213: -2233200217229164827
+    second: SmallHedge_7_CenterBottomLeft
+  - first:
+      213: -7958190300095615364
+    second: SmallHedge_8_CenterBottomRight
+  - first:
+      213: -6772871743033669214
+    second: SmallHedge_9_BottomLeft
+  - first:
+      213: -4930521268608730185
+    second: SmallHedge_10_BottomMid
+  - first:
+      213: -109163992808880553
+    second: SmallHedge_11_BottomRight
+  - first:
+      213: -130039227631364588
+    second: SmallHedge_Single_1_Top
+  - first:
+      213: -3013173478245557627
+    second: SmallHedge_Single_2_Left
+  - first:
+      213: 6719276510310773293
+    second: SmallHedge_Single_3_Right
+  - first:
+      213: -5051685074126558525
+    second: SmallHedge_Single_4_Bottom
+  - first:
+      213: 7061626478276545869
+    second: SmallHedge_Single_S
+  - first:
+      213: -3646905656655835989
+    second: SmallHedge_Single_SS
+  - first:
+      213: 1529527982526283343
+    second: Stalks_1_TopLeft
+  - first:
+      213: -25240261741009262
+    second: Stalks_2_TopMid
+  - first:
+      213: -7837661892470600934
+    second: Stalks_3_TopRight
+  - first:
+      213: 986642894574710041
+    second: Stalks_4_CenterTopLeft
+  - first:
+      213: 6373309301807318212
+    second: Stalks_5_Fill
+  - first:
+      213: 3954711183146046193
+    second: Stalks_6_CenterTopRight
+  - first:
+      213: 4035208020216256488
+    second: Stalks_7_CML
+  - first:
+      213: 2139410407680763144
+    second: Stalks_8_CMR
+  - first:
+      213: 7872455875237418570
+    second: Stalks_9_CenterBottomLeft
+  - first:
+      213: 8312375223743097756
+    second: Stalks_10_CenterBottomRight
+  - first:
+      213: -5693619424650115311
+    second: Stalks_11_BottomLeft
+  - first:
+      213: -2026355366973631383
+    second: Stalks_12_BottomMid
+  - first:
+      213: 8716502925453500734
+    second: Stalks_13_BottomRight
+  - first:
+      213: -7981801207742853381
+    second: Stalks_CenterBottomLeft
+  - first:
+      213: -9042664948052010905
+    second: Stalks_CenterBottomRight
+  - first:
+      213: -5511451965703300604
+    second: Stalks_CenterLeft
+  - first:
+      213: 4564487215960196264
+    second: Stalks_CenterRight
+  - first:
+      213: 2642393034410115926
+    second: Stalks_CenterTopLeft
+  - first:
+      213: 4564479111285882698
+    second: Stalks_CenterTopRight
+  - first:
+      213: -4395767290342324349
+    second: Stalks_Fill
+  - first:
+      213: 1153635814995274656
+    second: Stalks_Mid
+  - first:
+      213: -1022436876044669012
+    second: Stalks_Single_1_Top
+  - first:
+      213: 7228707206372992768
+    second: Stalks_Single_3_Bottom
+  - first:
+      213: 7105868492700732179
+    second: Stalks_Single_3_Middle
+  - first:
+      213: -4185997874056578382
+    second: Stalks_Water_1_L
+  - first:
+      213: -277749482456868127
+    second: Stalks_Water_2_M
+  - first:
+      213: 7295569498920946429
+    second: Stalks_Water_3_R
+  - first:
+      213: 8302259581422854466
+    second: Stalks_Water_Single_Bottom
+  - first:
+      213: -6786002626085216124
+    second: TallHedge_1_TopLeft
+  - first:
+      213: 6002737575211644206
+    second: TallHedge_2_TopMid
+  - first:
+      213: 8335597278795533160
+    second: TallHedge_3_TopRight
+  - first:
+      213: -7972403878913403205
+    second: TallHedge_4_CenterTopLeft
+  - first:
+      213: -2981841592022342729
+    second: TallHedge_5_Fill
+  - first:
+      213: 2909518783172747394
+    second: TallHedge_6_CenterTopRight
+  - first:
+      213: 748862469687997380
+    second: TallHedge_7_CenterBottomLeft
+  - first:
+      213: -3628762456584622860
+    second: TallHedge_8_CenterBottomRight
+  - first:
+      213: -8283252362053345902
+    second: TallHedge_9_BottomLeft
+  - first:
+      213: -6727332741151404654
+    second: TallHedge_10_BottomMid
+  - first:
+      213: -1656793885277367967
+    second: TallHedge_11_BottomRight
+  - first:
+      213: 1355339296820224175
+    second: TallHedge_Single_1_Top
+  - first:
+      213: -6851997540248398860
+    second: TallHedge_Single_2_Left
+  - first:
+      213: -1790146274764012745
+    second: TallHedge_Single_3_Right
+  - first:
+      213: 3677768114447793304
+    second: TallHedge_Single_4_Bottom
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SmallHedge_1_TopLeft
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 223
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ee26dda383302390800000000000000
+      internalID: -7845213910229176604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallHedge_2_TopMid
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 223
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0943d99ca813009a0800000000000000
+      internalID: -6268956209141959536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallHedge_3_TopRight
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 223
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8432c098067b1b1e0800000000000000
+      internalID: -2183762719053962424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallHedge_4_CenterTopLeft
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 223
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 366f6d469e73310f0800000000000000
+      internalID: -1147512004490627485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallHedge_5_Fill
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 223
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58116f75415b5c000800000000000000
+      internalID: 55649669391716741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallHedge_6_CenterTopRight
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 223
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4d415b1c3fb6dd20800000000000000
+      internalID: 3303037641600093518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallHedge_7_CenterBottomLeft
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 223
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eefab30c341201e0800000000000000
+      internalID: -2233200217229164827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallHedge_8_CenterBottomRight
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 223
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7e67db1614de8190800000000000000
+      internalID: -7958190300095615364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallHedge_9_BottomLeft
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 223
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a9823fa80de102a0800000000000000
+      internalID: -6772871743033669214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallHedge_10_BottomMid
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 223
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bb711b7705439bb0800000000000000
+      internalID: -4930521268608730185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallHedge_11_BottomRight
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 223
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7560d5a4deb2c7ef0800000000000000
+      internalID: -109163992808880553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallHedge_Single_1_Top
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 223
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4169a2ee202023ef0800000000000000
+      internalID: -130039227631364588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallHedge_Single_2_Left
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 223
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58a9b8e9fae0f26d0800000000000000
+      internalID: -3013173478245557627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallHedge_Single_3_Right
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 223
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2233b8c26aaf3d50800000000000000
+      internalID: 6719276510310773293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallHedge_Single_4_Bottom
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 223
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ca2b87a03fc4e9b0800000000000000
+      internalID: -5051685074126558525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallHedge_Single_S
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 189
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4d8a2e2edfeff160800000000000000
+      internalID: 7061626478276545869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallHedge_Single_SS
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 189
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bac8aad90a6936dc0800000000000000
+      internalID: -3646905656655835989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalks_1_TopLeft
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 189
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4ebf78a899f93510800000000000000
+      internalID: 1529527982526283343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalks_2_TopMid
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 189
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 296a3ec9d1456aff0800000000000000
+      internalID: -25240261741009262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalks_3_TopRight
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 189
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1b8ca5d8080b3390800000000000000
+      internalID: -7837661892470600934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalks_4_CenterTopLeft
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 189
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91de9433c7241bd00800000000000000
+      internalID: 986642894574710041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalks_5_Fill
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 189
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c40be1fa0b827850800000000000000
+      internalID: 6373309301807318212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalks_6_CenterTopRight
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 189
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f25fac3ed4f1e630800000000000000
+      internalID: 3954711183146046193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalks_7_CML
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 189
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e71ccf9050fff730800000000000000
+      internalID: 4035208020216256488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalks_8_CMR
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 189
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 805e5924e66b0bd10800000000000000
+      internalID: 2139410407680763144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalks_9_CenterBottomLeft
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 189
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a46967198e4904d60800000000000000
+      internalID: 7872455875237418570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalks_10_CenterBottomRight
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 189
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9b27f2a93d7b5370800000000000000
+      internalID: 8312375223743097756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalks_11_BottomLeft
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 189
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1174773ac433cf0b0800000000000000
+      internalID: -5693619424650115311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalks_12_BottomMid
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 189
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96494d2a780f0e3e0800000000000000
+      internalID: -2026355366973631383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalks_13_BottomRight
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 189
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e312f4b8a3d37f870800000000000000
+      internalID: 8716502925453500734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalks_CenterBottomLeft
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 189
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfe04b84712fa3190800000000000000
+      internalID: -7981801207742853381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalks_CenterBottomRight
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 189
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 768db7cc320028280800000000000000
+      internalID: -9042664948052010905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalks_CenterLeft
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 189
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40a50ab53a36383b0800000000000000
+      internalID: -5511451965703300604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalks_CenterRight
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 155
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a48e1170f0585f30800000000000000
+      internalID: 4564487215960196264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalks_CenterTopLeft
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 189
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6534bfcf67aaba420800000000000000
+      internalID: 2642393034410115926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalks_CenterTopRight
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 189
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4fb2ec6199485f30800000000000000
+      internalID: 4564479111285882698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalks_Fill
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 155
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3874ddf60f81ff2c0800000000000000
+      internalID: -4395767290342324349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalks_Mid
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 155
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ab26f859a9820010800000000000000
+      internalID: 1153635814995274656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalks_Single_1_Top
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 155
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cafe81e04139fc1f0800000000000000
+      internalID: -1022436876044669012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalks_Single_3_Bottom
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 155
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0072b25a7e6815460800000000000000
+      internalID: 7228707206372992768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalks_Single_3_Middle
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 155
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31b4110eebd1d9260800000000000000
+      internalID: 7105868492700732179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalks_Water_1_L
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 155
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ba3156ac1958e5c0800000000000000
+      internalID: -4185997874056578382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalks_Water_2_M
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 155
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ea1c99315c352cf0800000000000000
+      internalID: -277749482456868127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalks_Water_3_R
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 155
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfa8b514ec11f3560800000000000000
+      internalID: 7295569498920946429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalks_Water_Single_Bottom
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 155
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 241eacf1a1d873370800000000000000
+      internalID: 8302259581422854466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TallHedge_1_TopLeft
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 155
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 480a25bb09643d1a0800000000000000
+      internalID: -6786002626085216124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TallHedge_2_TopMid
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 155
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e25316255020e4350800000000000000
+      internalID: 6002737575211644206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TallHedge_3_TopRight
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 155
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86b0259af8dfda370800000000000000
+      internalID: 8335597278795533160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TallHedge_4_CenterTopLeft
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 155
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb69b6769e45c5190800000000000000
+      internalID: -7972403878913403205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TallHedge_5_Fill
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 155
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b3e50bdede5e96d0800000000000000
+      internalID: -2981841592022342729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TallHedge_6_CenterTopRight
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 121
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 280a6520befa06820800000000000000
+      internalID: 2909518783172747394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TallHedge_7_CenterBottomLeft
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 121
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c3ff53d27e746a00800000000000000
+      internalID: 748862469687997380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TallHedge_8_CenterBottomRight
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 121
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fceff095cb04adc0800000000000000
+      internalID: -3628762456584622860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TallHedge_9_BottomLeft
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 121
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29d15eefcd9fb0d80800000000000000
+      internalID: -8283252362053345902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TallHedge_10_BottomMid
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 121
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29dc0ddc386b3a2a0800000000000000
+      internalID: -6727332741151404654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TallHedge_11_BottomRight
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 121
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 161d00a4db2e109e0800000000000000
+      internalID: -1656793885277367967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TallHedge_Single_1_Top
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 121
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa0e819d8e12fc210800000000000000
+      internalID: 1355339296820224175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TallHedge_Single_2_Left
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 121
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f3d4a36a80d8e0a0800000000000000
+      internalID: -6851997540248398860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TallHedge_Single_3_Right
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 121
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 733c3bc927f1827e0800000000000000
+      internalID: -1790146274764012745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TallHedge_Single_4_Bottom
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 121
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89c3beb4d9e0a0330800000000000000
+      internalID: 3677768114447793304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

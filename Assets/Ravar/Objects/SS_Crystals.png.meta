@@ -1,0 +1,480 @@
+fileFormatVersion: 2
+guid: a05a1e1567baafa42aac86576d08883c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3526721926047324929
+    second: Crystal_Odd_1
+  - first:
+      213: 1364251972828315458
+    second: Crystal_Odd_2
+  - first:
+      213: -1911329254269001656
+    second: Crystal_Odd_3
+  - first:
+      213: 7058809741629266755
+    second: Crystal_Regular_1
+  - first:
+      213: 7363464558889005400
+    second: Crystal_Regular_2
+  - first:
+      213: -4598687584900114378
+    second: Crystal_Regular_3
+  - first:
+      213: 2916670098984606723
+    second: Crystal_Regular_4
+  - first:
+      213: 2287564755219377752
+    second: Crystal_Regular_5
+  - first:
+      213: -5381305229269178458
+    second: Crystal_Special_1
+  - first:
+      213: 7829708825747817772
+    second: Crystal_Special_2
+  - first:
+      213: -2002006102535596735
+    second: Crystal_Special_3
+  - first:
+      213: -4424273416240980413
+    second: Crystal_Super_1
+  - first:
+      213: -2028576197869273181
+    second: Crystal_Super_2
+  - first:
+      213: 1101092745368946848
+    second: Crystal_Super_3
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Crystal_Odd_1
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 184
+        width: 77
+        height: 72
+      alignment: 9
+      pivot: {x: 0.46753246, y: 0.5138889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10bd1a708ee61f030800000000000000
+      internalID: 3526721926047324929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crystal_Odd_2
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 188
+        width: 57
+        height: 68
+      alignment: 9
+      pivot: {x: 0.5263158, y: 0.4852941}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24fbe80f0fbcee210800000000000000
+      internalID: 1364251972828315458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crystal_Odd_3
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 204
+        width: 76
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 840eb7e7b289975e0800000000000000
+      internalID: -1911329254269001656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crystal_Regular_1
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 31
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34b11e29f0ee5f160800000000000000
+      internalID: 7058809741629266755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crystal_Regular_2
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 36
+        width: 63
+        height: 70
+      alignment: 9
+      pivot: {x: 0.50793654, y: 0.51428574}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 851f1c4c008403660800000000000000
+      internalID: 7363464558889005400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crystal_Regular_3
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 187
+        width: 82
+        height: 69
+      alignment: 9
+      pivot: {x: 0.42682928, y: 0.5217391}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6389705a10e2e20c0800000000000000
+      internalID: -4598687584900114378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crystal_Regular_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 140
+        width: 58
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30c1bf870081a7820800000000000000
+      internalID: 2916670098984606723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crystal_Regular_5
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 0
+        width: 62
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85eed8b56001fbf10800000000000000
+      internalID: 2287564755219377752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crystal_Special_1
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 101
+        width: 74
+        height: 68
+      alignment: 9
+      pivot: {x: 0.47297296, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a76575c763c155b0800000000000000
+      internalID: -5381305229269178458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crystal_Special_2
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 187
+        width: 55
+        height: 69
+      alignment: 9
+      pivot: {x: 0.5090909, y: 0.5072464}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c25807581b6b8ac60800000000000000
+      internalID: 7829708825747817772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crystal_Special_3
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 50
+        width: 62
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 145933c8e027734e0800000000000000
+      internalID: -2002006102535596735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crystal_Super_1
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 125
+        width: 82
+        height: 75
+      alignment: 9
+      pivot: {x: 0.40243903, y: 0.50666666}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34e90cbc4c2d992c0800000000000000
+      internalID: -4424273416240980413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crystal_Super_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 59
+        width: 78
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4680851}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3af703622bc09d3e0800000000000000
+      internalID: -2028576197869273181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crystal_Super_3
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 169
+        width: 56
+        height: 87
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3908046}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a8c970a40ed74f00800000000000000
+      internalID: 1101092745368946848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

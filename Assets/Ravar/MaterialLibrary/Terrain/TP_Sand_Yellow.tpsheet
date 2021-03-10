@@ -1,0 +1,61 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:e267c7843f1dfc6f821d49a47a03c079:8484496ac1524521261ac646da610160:48f5c5a34e8193dc5c904834d6f46c7a$
+#
+:format=40300
+:texture=TS_Sand_Yellow.png
+:size=512x128
+:pivotpoints=enabled
+:borders=disabled
+:alphahandling=ClearTransparentPixels
+
+BASE_Sand_Large;1;95;32;32; 0.5;0.5; 0;0;0;0
+BASE_Sand_Medium;35;95;32;32; 0.5;0.5; 0;0;0;0
+BASE_Sand_Small;69;95;32;32; 0.5;0.5; 0;0;0;0
+CenterHole_1_TopLeft;103;95;32;32; 0.5;0.5; 0;0;0;0
+CenterHole_2_TopRight;137;95;32;32; 0.5;0.5; 0;0;0;0
+CenterHole_3_BottomLeft;171;95;32;32; 0.5;0.5; 0;0;0;0
+CenterHole_4_BottomRight;205;95;32;32; 0.5;0.5; 0;0;0;0
+OverPatch_1_TopLeft;239;95;32;32; 0.5;0.5; 0;0;0;0
+OverPatch_2_TopMid;273;95;32;32; 0.5;0.5; 0;0;0;0
+OverPatch_3_TopRight;307;95;32;32; 0.5;0.5; 0;0;0;0
+OverPatch_4_CenterLeft;341;95;32;32; 0.5;0.5; 0;0;0;0
+OverPatch_5_Fill;375;95;32;32; 0.5;0.5; 0;0;0;0
+OverPatch_6_CenterRight;409;95;32;32; 0.5;0.5; 0;0;0;0
+OverPatch_7_BottomLeft;443;95;32;32; 0.5;0.5; 0;0;0;0
+OverPatch_8_BottomMid;477;95;32;32; 0.5;0.5; 0;0;0;0
+OverPatch_9_BottomRight;1;61;32;32; 0.5;0.5; 0;0;0;0
+SandIsland_1_TopLeft;35;61;32;32; 0.5;0.5; 0;0;0;0
+SandIsland_2_TopMid;69;61;32;32; 0.5;0.5; 0;0;0;0
+SandIsland_3_TopRight;103;61;32;32; 0.5;0.5; 0;0;0;0
+SandIsland_4_CenterLeft;137;61;32;32; 0.5;0.5; 0;0;0;0
+SandIsland_5_Fill;375;95;32;32; 0.5;0.5; 0;0;0;0
+SandIsland_6_CenterRight;171;61;32;32; 0.5;0.5; 0;0;0;0
+SandIsland_7_BottomLeft;205;61;32;32; 0.5;0.5; 0;0;0;0
+SandIsland_8_BottomMid;239;61;32;32; 0.5;0.5; 0;0;0;0
+SandIsland_9_BottomRight;273;61;32;32; 0.5;0.5; 0;0;0;0
+SandPond_1_TopLeft;307;61;32;32; 0.5;0.5; 0;0;0;0
+SandPond_2_TopRight;341;61;32;32; 0.5;0.5; 0;0;0;0
+SandPond_3_BottomLeft;375;61;32;32; 0.5;0.5; 0;0;0;0
+SandPond_4_BottomRight;409;61;32;32; 0.5;0.5; 0;0;0;0
+SandRock_Single_Large;443;61;32;32; 0.5;0.5; 0;0;0;0
+SandRock_Single_Small;477;61;32;32; 0.5;0.5; 0;0;0;0
+Stalk_Sand_1_TopLeft;1;27;32;32; 0.5;0.5; 0;0;0;0
+Stalk_Sand_2_TopMid;35;27;32;32; 0.5;0.5; 0;0;0;0
+Stalk_Sand_3_TopRight;69;27;32;32; 0.5;0.5; 0;0;0;0
+Stalk_Sand_4_CenterLeft;103;27;32;32; 0.5;0.5; 0;0;0;0
+Stalk_Sand_5_Fill;137;27;32;32; 0.5;0.5; 0;0;0;0
+Stalk_Sand_6_CenterRight;171;27;32;32; 0.5;0.5; 0;0;0;0
+Stalk_Sand_7_BottomLeft;205;27;32;32; 0.5;0.5; 0;0;0;0
+Stalk_Sand_8_BottomMid;239;27;32;32; 0.5;0.5; 0;0;0;0
+Stalk_Sand_9_BottomRight;273;27;32;32; 0.5;0.5; 0;0;0;0
+Stalk_Sand_CenterBottomLeft;307;27;32;32; 0.5;0.5; 0;0;0;0
+Stalk_Sand_CenterBottomRight;341;27;32;32; 0.5;0.5; 0;0;0;0
+Stalk_Sand_CenterTopLeft;375;27;32;32; 0.5;0.5; 0;0;0;0
+Stalk_Sand_CenterTopRight;409;27;32;32; 0.5;0.5; 0;0;0;0
+Stalk_Sand_Single_1_Top;443;27;32;32; 0.5;0.5; 0;0;0;0
+Stalk_Sand_Single_2_Bottom;477;27;32;32; 0.5;0.5; 0;0;0;0

@@ -1,0 +1,30 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:b70aa4e6895c02bd602acc422bbb33d8:936916400d7215cd599d991fbf4a95d2:c24d7d8736574e4e7d54fe3d97e29c30$
+#
+:format=40300
+:texture=TS_Grass_Light_Dirt.png
+:size=512x64
+:pivotpoints=enabled
+:borders=disabled
+:alphahandling=ClearTransparentPixels
+
+DirtPatch_1_TopLeft;1;31;32;32; 0.5;0.5; 0;0;0;0
+DirtPatch_2_TopMid;35;31;32;32; 0.5;0.5; 0;0;0;0
+DirtPatch_3_TopRight;69;31;32;32; 0.5;0.5; 0;0;0;0
+DirtPatch_4_CenterLeft;103;31;32;32; 0.5;0.5; 0;0;0;0
+DirtPatch_5_Fill;137;31;32;32; 0.5;0.5; 0;0;0;0
+DirtPatch_6_CenterRight;171;31;32;32; 0.5;0.5; 0;0;0;0
+DirtPatch_7_BottomLeft;205;31;32;32; 0.5;0.5; 0;0;0;0
+DirtPatch_8_BottomMid;239;31;32;32; 0.5;0.5; 0;0;0;0
+DirtPatch_9_BottomRight;273;31;32;32; 0.5;0.5; 0;0;0;0
+DirtPatch_Single;307;31;32;32; 0.5;0.5; 0;0;0;0
+DirtRock_Single;341;31;32;32; 0.5;0.5; 0;0;0;0
+GrassPatch_1_TopLeft;375;31;32;32; 0.5;0.5; 0;0;0;0
+GrassPatch_2_TopRight;409;31;32;32; 0.5;0.5; 0;0;0;0
+GrassPatch_3_BottomLeft;443;31;32;32; 0.5;0.5; 0;0;0;0
+GrassPatch_4_BottomRight;477;31;32;32; 0.5;0.5; 0;0;0;0

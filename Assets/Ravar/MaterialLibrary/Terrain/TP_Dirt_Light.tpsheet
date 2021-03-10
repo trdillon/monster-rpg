@@ -1,0 +1,51 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:9a72c50ffcd8b5024250f164d96482fb:a551248e92f9fe7fb5b791e8424e2b37:b24d3130c113fcfca304d20cb9a16036$
+#
+:format=40300
+:texture=TS_Dirt_Light.png
+:size=512x128
+:pivotpoints=enabled
+:borders=disabled
+:alphahandling=ClearTransparentPixels
+
+CenterHole_1_TopLeft;1;95;32;32; 0.5;0.5; 0;0;0;0
+CenterHole_2_TopRight;35;95;32;32; 0.5;0.5; 0;0;0;0
+CenterHole_3_BottomLeft;69;95;32;32; 0.5;0.5; 0;0;0;0
+CenterHole_4_BottomRight;103;95;32;32; 0.5;0.5; 0;0;0;0
+Dirt_Weeds;137;95;32;32; 0.5;0.5; 0;0;0;0
+DirtHole_Single;171;95;32;32; 0.5;0.5; 0;0;0;0
+DirtPath_1_TopLeft;205;95;32;32; 0.5;0.5; 0;0;0;0
+DirtPath_2_TopMid;239;95;32;32; 0.5;0.5; 0;0;0;0
+DirtPath_3_TopRight;273;95;32;32; 0.5;0.5; 0;0;0;0
+DirtPath_4_CenterLeft;307;95;32;32; 0.5;0.5; 0;0;0;0
+DirtPath_5_Fill;341;95;32;32; 0.5;0.5; 0;0;0;0
+DirtPath_6_CenterRight;375;95;32;32; 0.5;0.5; 0;0;0;0
+DirtPath_7_BottomLeft;409;95;32;32; 0.5;0.5; 0;0;0;0
+DirtPath_8_BottomMid;443;95;32;32; 0.5;0.5; 0;0;0;0
+DirtPath_9_BottomRight;477;95;32;32; 0.5;0.5; 0;0;0;0
+DirtRock_BottomLeft;1;61;32;32; 0.5;0.5; 0;0;0;0
+DirtRock_BottomRight;35;61;32;32; 0.5;0.5; 0;0;0;0
+DirtRock_Center;69;61;32;32; 0.5;0.5; 0;0;0;0
+DirtRock_Scattered;103;61;32;32; 0.5;0.5; 0;0;0;0
+DirtRock_TopLeft;137;61;32;32; 0.5;0.5; 0;0;0;0
+DirtRock_TopRight;171;61;32;32; 0.5;0.5; 0;0;0;0
+DirtRocks_Large;205;61;32;32; 0.5;0.5; 0;0;0;0
+DirtRocks_Large_Medium;239;61;32;32; 0.5;0.5; 0;0;0;0
+DirtRocks_Medium;273;61;32;32; 0.5;0.5; 0;0;0;0
+DirtRocks_Medium_Small;307;61;32;32; 0.5;0.5; 0;0;0;0
+DirtRocks_Round;341;61;32;32; 0.5;0.5; 0;0;0;0
+DirtRocks_Small;375;61;32;32; 0.5;0.5; 0;0;0;0
+SoilPath_1_TopLeft;409;61;32;32; 0.5;0.5; 0;0;0;0
+SoilPath_2_TopMid;443;61;32;32; 0.5;0.5; 0;0;0;0
+SoilPath_3_TopRight;477;61;32;32; 0.5;0.5; 0;0;0;0
+SoilPath_4_CenterLeft;1;27;32;32; 0.5;0.5; 0;0;0;0
+SoilPath_5_Fill;35;27;32;32; 0.5;0.5; 0;0;0;0
+SoilPath_6_CenterRight;69;27;32;32; 0.5;0.5; 0;0;0;0
+SoilPath_7_BottomLeft;103;27;32;32; 0.5;0.5; 0;0;0;0
+SoilPath_8_BottomMid;137;27;32;32; 0.5;0.5; 0;0;0;0
+SoilPath_9_BottomRight;171;27;32;32; 0.5;0.5; 0;0;0;0

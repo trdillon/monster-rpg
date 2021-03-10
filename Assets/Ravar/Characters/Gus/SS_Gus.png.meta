@@ -1,0 +1,528 @@
+fileFormatVersion: 2
+guid: 3506cc3f189d48e43857fe5de5377705
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 880231291406045695
+    second: Gus_WalkDown_1
+  - first:
+      213: -4101229301456021584
+    second: Gus_WalkDown_2
+  - first:
+      213: 3698387406507301872
+    second: Gus_WalkDown_3
+  - first:
+      213: -3505928669650504026
+    second: Gus_WalkDown_4
+  - first:
+      213: 4907542694546458950
+    second: Gus_WalkUp_1
+  - first:
+      213: -8295987082180297689
+    second: Gus_WalkUp_2
+  - first:
+      213: 4189663924183455587
+    second: Gus_WalkUp_3
+  - first:
+      213: 966471145356176990
+    second: Gus_WalkUp_4
+  - first:
+      213: 3967475003460924831
+    second: Gus_WalkLeft_1
+  - first:
+      213: 1510101942682237580
+    second: Gus_WalkLeft_2
+  - first:
+      213: 4895899671705142651
+    second: Gus_WalkLeft_3
+  - first:
+      213: -6532461562134943205
+    second: Gus_WalkLeft_4
+  - first:
+      213: -8278551886045786360
+    second: Gus_WalkRight_1
+  - first:
+      213: -5687298332529069498
+    second: Gus_WalkRight_2
+  - first:
+      213: 3168402398906451873
+    second: Gus_WalkRight_3
+  - first:
+      213: -7246388641585605614
+    second: Gus_WalkRight_4
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Gus_WalkDown_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 19
+        width: 32
+        height: 52
+      alignment: 9
+      pivot: {x: 0.5, y: 0.59615386}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff1d07422b5373c00800000000000000
+      internalID: 880231291406045695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gus_WalkDown_2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 73
+        width: 35
+        height: 54
+      alignment: 9
+      pivot: {x: 0.4857143, y: 0.5925926}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b75a48fda18517c0800000000000000
+      internalID: -4101229301456021584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gus_WalkDown_3
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 75
+        width: 32
+        height: 52
+      alignment: 9
+      pivot: {x: 0.5, y: 0.59615386}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fb55a650cf435330800000000000000
+      internalID: 3698387406507301872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gus_WalkDown_4
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 21
+        width: 31
+        height: 52
+      alignment: 9
+      pivot: {x: 0.516129, y: 0.61538464}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a6bf9d3370785fc0800000000000000
+      internalID: -3505928669650504026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gus_WalkUp_1
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 24
+        width: 32
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 649418454181b1440800000000000000
+      internalID: 4907542694546458950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gus_WalkUp_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 76
+        width: 31
+        height: 51
+      alignment: 9
+      pivot: {x: 0.516129, y: 0.627451}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72cf969e3bbbedc80800000000000000
+      internalID: -8295987082180297689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gus_WalkUp_3
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 77
+        width: 32
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3675939242da42a30800000000000000
+      internalID: 4189663924183455587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gus_WalkUp_4
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 23
+        width: 31
+        height: 51
+      alignment: 9
+      pivot: {x: 0.48387095, y: 0.627451}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5eae98d268996d00800000000000000
+      internalID: 966471145356176990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gus_WalkLeft_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 76
+        width: 24
+        height: 51
+      alignment: 9
+      pivot: {x: 0.5, y: 0.60784316}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f95b78cbe7d4f0730800000000000000
+      internalID: 3967475003460924831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gus_WalkLeft_2
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 25
+        width: 24
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8ab33c47b5f4f410800000000000000
+      internalID: 1510101942682237580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gus_WalkLeft_3
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 76
+        width: 25
+        height: 51
+      alignment: 9
+      pivot: {x: 0.48, y: 0.60784316}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b75cfe3dfcab1f340800000000000000
+      internalID: 4895899671705142651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gus_WalkLeft_4
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 77
+        width: 30
+        height: 50
+      alignment: 9
+      pivot: {x: 0.43333334, y: 0.62}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1aad08d1d80855a0800000000000000
+      internalID: -6532461562134943205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gus_WalkRight_1
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 23
+        width: 24
+        height: 51
+      alignment: 9
+      pivot: {x: 0.5, y: 0.60784316}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80fc999dbecac1d80800000000000000
+      internalID: -8278551886045786360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gus_WalkRight_2
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 25
+        width: 24
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 642fee59c48a211b0800000000000000
+      internalID: -5687298332529069498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gus_WalkRight_3
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 76
+        width: 26
+        height: 51
+      alignment: 9
+      pivot: {x: 0.53846157, y: 0.60784316}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a78054e13d68fb20800000000000000
+      internalID: 3168402398906451873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gus_WalkRight_4
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 19
+        width: 33
+        height: 52
+      alignment: 9
+      pivot: {x: 0.54545456, y: 0.61538464}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2145dd96ce7af6b90800000000000000
+      internalID: -7246388641585605614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: a6906a546ccc5de419bef351323f9509
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
