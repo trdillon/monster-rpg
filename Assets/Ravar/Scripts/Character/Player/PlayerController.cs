@@ -73,7 +73,7 @@ namespace Itsdits.Ravar.Character.Player
 
         private void CheckForEncounters()
         {
-            if (Physics2D.OverlapCircle(transform.position, 0.2f, MapLayers.Instance.EncountersLayer) != null)
+            if (Physics2D.OverlapCircle(transform.position - new Vector3(0, 0.3f), 0.2f, MapLayers.Instance.EncountersLayer) != null)
             {
                 if (UnityEngine.Random.Range(1, 101) <= 7) //TODO - decide the percentage of event triggers
                 {
@@ -85,7 +85,7 @@ namespace Itsdits.Ravar.Character.Player
 
         private void CheckForBattlers()
         {
-            var collider = Physics2D.OverlapCircle(transform.position, 0.2f, MapLayers.Instance.LosLayer);
+            var collider = Physics2D.OverlapCircle(transform.position - new Vector3(0, 0.3f), 0.2f, MapLayers.Instance.LosLayer);
 
             if (collider != null)
             {
