@@ -23,9 +23,10 @@ namespace Itsdits.Ravar.Monster {
         #region Properties
         public int CurrentHp { get; set; }
         public int MaxHp { get; private set; }
-        public bool IsHpChanged { get; set; }
+        public int Exp { get; set; }
         public int StatusTimer { get; set; }
         public int VolatileStatusTimer { get; set; }
+        public bool IsHpChanged { get; set; }
         public MoveObj CurrentMove { get; set; }
         public List<MoveObj> Moves { get; set; }
         public ConditionObj Status { get; private set; }
@@ -63,6 +64,7 @@ namespace Itsdits.Ravar.Monster {
                     break;
                 }    
             }
+            Exp = Base.GetExpForLevel(Level);
             StatusChanges = new Queue<string>();
             CalculateStats();
             CurrentHp = MaxHp;
@@ -249,6 +251,20 @@ namespace Itsdits.Ravar.Monster {
             var usableMoves = Moves.Where(m => m.Energy > 0).ToList(); //TODO - handle case with no usable moves
             int i = UnityEngine.Random.Range(0, usableMoves.Count);
             return usableMoves[i];
+        }
+
+        /// <summary>
+        /// Checks if the monster leveled up.
+        /// </summary>
+        /// <returns></returns>
+        public bool CheckForLevelUp()
+        {
+            if (Exp > Base.GetExpForLevel(level + 1)) {
+                ++level;
+                return true;
+            }
+
+            return false;
         }
 
         /// <summary>

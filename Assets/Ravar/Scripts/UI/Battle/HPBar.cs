@@ -20,7 +20,7 @@ namespace Itsdits.Ravar.UI.Battle {
         /// </summary>
         /// <param name="newHp">HP at end of slide</param>
         /// <returns></returns>
-        public IEnumerator SetHPSlider(float newHp)
+        public IEnumerator SlideHP(float newHp)
         {
             float currentHp = health.transform.localScale.x;
             float amountToChange = currentHp - newHp;

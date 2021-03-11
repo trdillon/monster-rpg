@@ -1,3 +1,4 @@
+using DG.Tweening;
 using Itsdits.Ravar.Monster;
 using Itsdits.Ravar.Monster.Condition;
 using System.Collections;
@@ -14,6 +15,7 @@ namespace Itsdits.Ravar.UI.Battle
         [SerializeField] Text levelText;
         [SerializeField] Text statusText;
         [SerializeField] HPBar hpBar;
+        [SerializeField] GameObject xpBar;
         [SerializeField] Color psnColor;
         [SerializeField] Color brnColor;
         [SerializeField] Color slpColor;
@@ -31,9 +33,9 @@ namespace Itsdits.Ravar.UI.Battle
         {
             _monster = monster;
             nameText.text = monster.Base.Name;
-            levelText.text = "Lvl " + monster.Level;
+            SetLevel();
+            SetExp();
             hpBar.SetHP((float) monster.CurrentHp / monster.MaxHp);
-
             statusColors = new Dictionary<ConditionID, Color>()
             {
                 { ConditionID.PSN, psnColor },
@@ -47,16 +49,68 @@ namespace Itsdits.Ravar.UI.Battle
         }
 
         /// <summary>
-        /// Update the monster HP
+        /// Update the monster HP.
         /// </summary>
         /// <returns>New HP</returns>
         public IEnumerator UpdateHP()
         {
             if (_monster.IsHpChanged)
             {
-                yield return hpBar.SetHPSlider((float)_monster.CurrentHp / _monster.MaxHp);
+                yield return hpBar.SlideHP((float)_monster.CurrentHp / _monster.MaxHp);
                 _monster.IsHpChanged = false;
             }
+        }
+
+        /// <summary>
+        /// Set the monster's level.
+        /// </summary>
+        public void SetLevel()
+        {
+            levelText.text = "Lvl " + _monster.Level;
+        }
+
+        /// <summary>
+        /// Sets the XP bar.
+        /// </summary>
+        public void SetExp()
+        {
+            if (xpBar == null)
+            {
+                return;
+            }
+
+            float normalizedExp = GetNormalizedExp();
+            xpBar.transform.localScale = new Vector3(normalizedExp, 1, 1);
+        }
+
+        /// <summary>
+        /// Slide the XP bar smoothly.
+        /// </summary>
+        /// <param name="reset">For when a monster levels up</param>
+        /// <returns></returns>
+        public IEnumerator SlideExp(bool reset = false)
+        {
+            if (xpBar == null)
+            {
+                yield break;
+            }
+
+            if (reset)
+            {
+                xpBar.transform.localScale = new Vector3(0, 1, 1);
+            }
+
+            float normalizedExp = GetNormalizedExp();
+            yield return xpBar.transform.DOScaleX(normalizedExp, 1.5f).WaitForCompletion();
+        }
+
+        private float GetNormalizedExp()
+        {
+            int currLevelExp = _monster.Base.GetExpForLevel(_monster.Level);
+            int nextLevelExp = _monster.Base.GetExpForLevel(_monster.Level + 1);
+
+            float normalizedExp = (float)(_monster.Exp - currLevelExp) / (nextLevelExp - currLevelExp);
+            return Mathf.Clamp(normalizedExp, 0, 1);
         }
 
         private void SetStatusText()

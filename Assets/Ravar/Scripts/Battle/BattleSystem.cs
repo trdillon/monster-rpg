@@ -260,19 +260,7 @@ namespace Itsdits.Ravar.Battle
                 // Handle downed monster and check if we should continue.
                 if (defendingMonster.Monster.CurrentHp <= 0)
                 {
-                    defendingMonster.PlayDownedAnimation();
-
-                    if (defendingMonster.IsPlayerMonster)
-                    {
-                        yield return dialogBox.TypeDialog($"{defendingMonster.Monster.Base.Name} has been taken down!");
-                    }  
-                    else
-                    {
-                        yield return dialogBox.TypeDialog($"Enemy {defendingMonster.Monster.Base.Name} has been taken down!");
-                    }
-
-                    yield return new WaitForSeconds(2f);
-                    CheckIfBattleIsOver(defendingMonster);
+                    yield return HandleDownedMonster(defendingMonster);
                 }
             }
             else
@@ -344,6 +332,47 @@ namespace Itsdits.Ravar.Battle
                 var message = monster.StatusChanges.Dequeue();
                 yield return dialogBox.TypeDialog(message);
             }
+        }
+
+        private IEnumerator HandleDownedMonster(BattleMonster downedMonster)
+        {
+            if (downedMonster.IsPlayerMonster)
+            {
+                yield return dialogBox.TypeDialog($"{downedMonster.Monster.Base.Name} has been taken down!");
+            }
+            else
+            {
+                yield return dialogBox.TypeDialog($"Enemy {downedMonster.Monster.Base.Name} has been taken down!");
+            }
+
+            downedMonster.PlayDownedAnimation();
+            yield return new WaitForSeconds(2f);
+
+            if (!downedMonster.IsPlayerMonster)
+            {
+                // Setup exp gain variables.
+                int expBase = downedMonster.Monster.Base.ExpGiven;
+                int enemyLevel = downedMonster.Monster.Level;
+                float battlerBonus = (isCharBattle) ? 1.5f : 1f;
+
+                // Handle exp gain.
+                int expGain = Mathf.FloorToInt((expBase * enemyLevel * battlerBonus) / 7);
+                playerMonster.Monster.Exp += expGain;
+                yield return dialogBox.TypeDialog($"{playerMonster.Monster.Base.Name} has gained {expGain} experience!");
+                yield return playerMonster.Hud.SlideExp();
+
+                // While loop incase the monster gains more than 1 level.
+                while (playerMonster.Monster.CheckForLevelUp())
+                {
+                    playerMonster.Hud.SetLevel();
+                    yield return dialogBox.TypeDialog($"{playerMonster.Monster.Base.Name} has leveled up, they are now level {playerMonster.Monster.Level}!");
+                    yield return playerMonster.Hud.SlideExp(true);
+                }
+
+                yield return new WaitForSeconds(1f);
+            }
+
+            CheckIfBattleIsOver(downedMonster);
         }
 
         private IEnumerator SwitchMonster(MonsterObj newMonster)
@@ -495,19 +524,7 @@ namespace Itsdits.Ravar.Battle
             // Attacking monster can be downed from status effects
             if (attackingMonster.Monster.CurrentHp <= 0)
             {
-                attackingMonster.PlayDownedAnimation();
-
-                if (attackingMonster.IsPlayerMonster)
-                {
-                    yield return dialogBox.TypeDialog($"{attackingMonster.Monster.Base.Name} has been taken down!");
-                }
-                else
-                {
-                    yield return dialogBox.TypeDialog($"Enemy {attackingMonster.Monster.Base.Name} has been taken down!");
-                }
-
-                yield return new WaitForSeconds(2f);
-                CheckIfBattleIsOver(attackingMonster);
+                yield return HandleDownedMonster(attackingMonster);
                 yield return new WaitUntil(() => state == BattleState.ExecutingTurn);
             }
         }
