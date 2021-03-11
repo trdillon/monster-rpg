@@ -22,7 +22,7 @@ MonoBehaviour:
   spAttack: 50
   spDefense: 64
   speed: 43
-  expGiven: 300
+  expGiven: 65
   catchRate: 255
   leftSprite: {fileID: 21300000, guid: 71ec3ea6a39751f45a69898fa778f240, type: 3}
   rightSprite: {fileID: 21300000, guid: aec368220e450a042ba3361dda2a5fb4, type: 3}

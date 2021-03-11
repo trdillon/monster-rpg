@@ -48,6 +48,7 @@ namespace Itsdits.Ravar.Battle
         {
             this.playerParty = playerParty;
             this.wildMonster = wildMonster;
+            isCharBattle = false;
             player = playerParty.GetComponent<PlayerController>();
             StartCoroutine(SetupBattle());
         }
