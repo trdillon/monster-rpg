@@ -3,8 +3,29 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
-## [1.0.5] - 2021-03-09
+## [1.0.6] - 2021-03-12
 
+
+## [1.0.5] - 2021-03-09
+### Added
+- Ability to capture Battokuri
+- Animations for capturing
+- Capture Crystals
+- Style guide
+- Run from battles
+- Exp gain and leveling
+- Move management
+
+### Changed
+- Refactor code to have more consistent style, spacing, format
+- Remove old animations
+- Name first level (Fornwest)
+- Splice terrain tilset into regions
+
+### Fixed
+- Names for sprites and tilesets
+- Exception on party screen after capturing monster
+- Sprite overlap causing unintentional encounters
 
 ## [1.0.4] - 2021-03-07
 ### Added
