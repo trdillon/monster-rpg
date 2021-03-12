@@ -35,15 +35,25 @@ namespace Itsdits.Ravar.UI {
         /// <returns>onFinished</returns>
         public IEnumerator ShowDialog(Dialog dialog, Action onFinished = null)
         {
-            // Wait so the Z key isn't immediately counted as pressed
-            // Otherwise we might skip the first string
-            yield return new WaitForEndOfFrame();
-            OnShowDialog?.Invoke();
-            IsShowing = true;
-            this.dialog = dialog;
-            onDialogFinished = onFinished;
-            dialogBox.SetActive(true);
-            StartCoroutine(TypeDialog(dialog.Strings[0]));
+            if (dialog.Strings.Count > 0)
+            {
+                // Wait so the Z key isn't immediately counted as pressed,
+                // otherwise we might skip the first string.
+                yield return new WaitForEndOfFrame();
+                OnShowDialog?.Invoke();
+                IsShowing = true;
+                this.dialog = dialog;
+                onDialogFinished = onFinished;
+                dialogBox.SetActive(true);
+                StartCoroutine(TypeDialog(dialog.Strings[0]));
+            }
+            else
+            {
+                // Error if dialog was null.
+                Debug.LogError("DC001: Null dialog was passed to the controller.");
+                GameController.Instance.ReleasePlayer();
+            }
+            
         }
 
         /// <summary>

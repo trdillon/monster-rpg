@@ -15,7 +15,7 @@ MonoBehaviour:
   _name: Splash
   description: Splashes the opponent with water.
   power: 40
-  accuracy: 100
+  accuracy: 95
   energy: 30
   priority: 0
   alwaysHits: 0

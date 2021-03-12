@@ -60,7 +60,17 @@ namespace Itsdits.Ravar
             worldCamera.gameObject.SetActive(false);
 
             var playerParty = playerController.GetComponent<MonsterParty>();
+            if (playerParty == null)
+            {
+                Debug.LogError("GC001: Player party null. Failed to get party from playerController.");
+            }
+
             var wildMonster = FindObjectOfType<MapArea>().GetComponent<MapArea>().GetRandomMonster();
+            if (wildMonster == null)
+            {
+                Debug.LogError("GC002: wildMonster null. Failed to GetRandomMonster from MapArea.");
+            }
+
             var enemyMonster = new MonsterObj(wildMonster.Base, wildMonster.Level);
 
             battleSystem.StartWildBattle(playerParty, enemyMonster);
@@ -69,7 +79,11 @@ namespace Itsdits.Ravar
         private void StartCharEncounter(Collider2D battlerCollider)
         {
             var battler = battlerCollider.GetComponentInParent<BattlerController>();
-            if (battler != null)
+            if (battler == null)
+            {
+                Debug.LogError($"GC003: battlerCollider encountered, but failed to get BattlerController from it. Escaping battle sequence to attempt recovery.");
+            }
+            else
             {
                 state = GameState.Cutscene;
 
@@ -91,17 +105,45 @@ namespace Itsdits.Ravar
             this.battler = battler;
             var playerParty = playerController.GetComponent<MonsterParty>();
             var battlerParty = battler.GetComponent<MonsterParty>();
-            battleSystem.StartCharBattle(playerParty, battlerParty);
+            if (playerParty == null || battlerParty == null)
+            {
+                Debug.LogError("GC004: MonsterParty null. Failed to get party during StartCharBattle.");
+            }
+            else
+            {
+                battleSystem.StartCharBattle(playerParty, battlerParty);
+            }
         }
 
-        private void EndBattle(bool won)
+        /// <summary>
+        /// Sets the GameState to World, used to release player from error conditions, etc.
+        /// </summary>
+        public void ReleasePlayer()
+        {
+            state = GameState.World;
+        }
+
+        private void EndBattle(BattleResult result)
         {
             state = GameState.World;
 
-            if (battler != null && won == true)
+            if (battler == null)
+            {
+                Debug.LogError("GC005: EndBattle called but battler was null.");
+            }
+
+            if (battler != null && result == BattleResult.Won)
             {
                 battler.SetDefeated();
                 battler = null;
+            }
+            else if (battler != null && result == BattleResult.Lost)
+            {
+                //TODO - handle a loss
+            }
+            else
+            {
+                //TODO - handle error
             }
 
             battleSystem.gameObject.SetActive(false);
@@ -118,6 +160,10 @@ namespace Itsdits.Ravar
             if (state == GameState.Dialog)
             {
                 state = GameState.World;
+            }
+            else
+            {
+                Debug.Log($"Closing dialog from GameState.{state}.");
             }
         }
     }

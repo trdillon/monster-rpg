@@ -14,6 +14,10 @@ namespace Itsdits.Ravar.Levels {
         public MonsterObj GetRandomMonster()
         {
             var wildMonster = wildMonsters[Random.Range(0, wildMonsters.Count)]; //TODO - refactor this for monster rarity
+            if (wildMonster == null)
+            {
+                Debug.LogError("MA001: wildMonster null. Failed to retrieve from List<MonsterObj>.");
+            }
             wildMonster.Init();
             return wildMonster;
         }

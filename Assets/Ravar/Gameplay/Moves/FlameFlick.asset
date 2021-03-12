@@ -15,7 +15,7 @@ MonoBehaviour:
   _name: Flame Flick
   description: Flicks the opponent with a flame. Chance to burn.
   power: 40
-  accuracy: 100
+  accuracy: 95
   energy: 25
   priority: 0
   alwaysHits: 0

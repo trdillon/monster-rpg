@@ -43,17 +43,27 @@ namespace Itsdits.Ravar.Character.Battler
         {
             character.TurnToInteract(interactChar.position);
 
-            if (!isDefeated)
+            if (introDialog.Strings.Count > 0 && outroDialog.Strings.Count > 0)
             {
-                StartCoroutine(DialogController.Instance.ShowDialog(introDialog, () =>
+                if (!isDefeated)
                 {
-                    GameController.Instance.StartCharBattle(this);
-                }));
+                    StartCoroutine(DialogController.Instance.ShowDialog(introDialog, () =>
+                    {
+                        GameController.Instance.StartCharBattle(this);
+                    }));
+                }
+                else
+                {
+                    Debug.Log($"{Name} is set as defeated.");
+                    StartCoroutine(DialogController.Instance.ShowDialog(outroDialog));
+                }
             }
             else
             {
-                StartCoroutine(DialogController.Instance.ShowDialog(outroDialog));
-            }  
+                // Error if no dialog exists.
+                Debug.LogError($"BC001: {Name} is missing dialog.");
+                GameController.Instance.ReleasePlayer();
+            }
         }
 
         /// <summary>
@@ -78,9 +88,17 @@ namespace Itsdits.Ravar.Character.Battler
 
             // Show dialog for trash talk then start battle.
             player.Character.TurnToInteract(transform.position);
-            yield return DialogController.Instance.ShowDialog(introDialog, () => {
-                GameController.Instance.StartCharBattle(this);
-            });
+            if (introDialog.Strings.Count > 0) {
+                yield return DialogController.Instance.ShowDialog(introDialog, () => {
+                    GameController.Instance.StartCharBattle(this);
+                });
+            }
+            else
+            {
+                // Error if no dialog exists.
+                Debug.LogError($"BC002: {Name} is missing introDialog.");
+                GameController.Instance.ReleasePlayer();
+            }
         }
 
         /// <summary>

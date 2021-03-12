@@ -16,7 +16,7 @@ MonoBehaviour:
   description: Coughs at the opponent, releasing a poisonous gas that inflicts damage
     over time.
   power: 0
-  accuracy: 100
+  accuracy: 95
   energy: 25
   priority: 0
   alwaysHits: 0

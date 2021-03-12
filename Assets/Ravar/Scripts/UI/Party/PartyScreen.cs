@@ -68,7 +68,15 @@ namespace Itsdits.Ravar.UI.Party
         /// <param name="message">String to display</param>
         public void SetMessageText(string message)
         {
-            messageText.text = message;
+            if (message == null)
+            {
+                messageText.text = "";
+                Debug.LogError("PS001: SetMessageText was passed a null value.");
+            }
+            else
+            {
+                messageText.text = message;
+            }
         }
     }
 }

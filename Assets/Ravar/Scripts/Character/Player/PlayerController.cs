@@ -75,7 +75,7 @@ namespace Itsdits.Ravar.Character.Player
         {
             if (Physics2D.OverlapCircle(transform.position - new Vector3(0, 0.3f), 0.2f, MapLayers.Instance.EncountersLayer) != null)
             {
-                if (UnityEngine.Random.Range(1, 101) <= 7) //TODO - decide the percentage of event triggers
+                if (UnityEngine.Random.Range(1, 101) <= 7)
                 {
                     character.Animator.IsMoving = false;
                     OnEncounter();

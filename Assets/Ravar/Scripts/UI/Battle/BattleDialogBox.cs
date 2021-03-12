@@ -30,14 +30,22 @@ namespace Itsdits.Ravar.UI.Battle {
         /// <returns>Dialog</returns>
         public IEnumerator TypeDialog(string dialog)
         {
-            dialogText.text = "";
-            foreach (var letter in dialog.ToCharArray())
+            if (dialog == null)
             {
-                dialogText.text += letter;
-                yield return new WaitForSeconds(1f / lettersPerSecond);
+                dialogText.text = "";
+                Debug.LogError("BDB001: TypeDialog was passed a null value.");
             }
-            // Give the player time to read the dialog.
-            yield return new WaitForSeconds(1f);
+            else
+            {
+                dialogText.text = "";
+                foreach (var letter in dialog.ToCharArray())
+                {
+                    dialogText.text += letter;
+                    yield return new WaitForSeconds(1f / lettersPerSecond);
+                }
+                // Give the player time to read the dialog.
+                yield return new WaitForSeconds(1f);
+            }
         }
 
         /// <summary>
@@ -116,7 +124,15 @@ namespace Itsdits.Ravar.UI.Battle {
         /// <param name="dialog">Dialog to display</param>
         public void SetDialog(string dialog)
         {
-            dialogText.text = dialog;
+            if (dialog == null)
+            {
+                dialogText.text = "";
+                Debug.LogError("BDB002: SetDialog was passed a null value.");
+            }
+            else
+            {
+                dialogText.text = dialog;
+            }
         }
 
         /// <summary>
