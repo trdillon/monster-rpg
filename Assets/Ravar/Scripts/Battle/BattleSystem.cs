@@ -368,12 +368,43 @@ namespace Itsdits.Ravar.Battle
                     playerMonster.Hud.SetLevel();
                     yield return dialogBox.TypeDialog($"{playerMonster.Monster.Base.Name} has leveled up, they are now level {playerMonster.Monster.Level}!");
                     yield return playerMonster.Hud.SlideExp(true);
+
+                    // Learn a new move.
+                    var newMove = playerMonster.Monster.GetLearnableMove();
+                    if (newMove != null)
+                    {
+                        if (playerMonster.Monster.Moves.Count < MonsterBase.MaxNumberOfMoves)
+                        {
+                            playerMonster.Monster.LearnMove(newMove);
+                            dialogBox.SetMoveList(playerMonster.Monster.Moves);
+                            yield return dialogBox.TypeDialog($"{playerMonster.Monster.Base.Name} has learned {newMove.Base.Name}!");
+                        }
+                        else
+                        {
+                            // Forget an existing move first.
+                            yield return ForgetMoveSelection(playerMonster.Monster, newMove);
+                        }
+                    }
                 }
 
                 yield return new WaitForSeconds(1f);
             }
 
+            // Wait until move learning is finished before CheckIfBattleIsOver.
+            yield return new WaitUntil(() => state == BattleState.ExecutingTurn);
             CheckIfBattleIsOver(downedMonster);
+        }
+
+        private IEnumerator ForgetMove(MonsterObj monster, MoveObj oldMove)
+        {
+            var newMove = playerMonster.Monster.GetLearnableMove();
+            monster.ForgetMove(oldMove);
+            monster.LearnMove(newMove);
+            dialogBox.SetMoveList(monster.Moves);
+            yield return dialogBox.TypeDialog($"{playerMonster.Monster.Base.Name} has forgotten {oldMove.Base.Name}!");
+            yield return dialogBox.TypeDialog($"{playerMonster.Monster.Base.Name} has learned {newMove.Base.Name}!");
+
+            state = BattleState.ExecutingTurn;
         }
 
         private IEnumerator SwitchMonster(MonsterObj newMonster)
@@ -544,7 +575,6 @@ namespace Itsdits.Ravar.Battle
             float b = 1048560 / Mathf.Sqrt(Mathf.Sqrt(16711680 / a));
 
             int beamCount = 0;
-
             while (beamCount < 4)
             {
                 if (UnityEngine.Random.Range(0, 65535) >= b)
@@ -595,33 +625,34 @@ namespace Itsdits.Ravar.Battle
             if (downedMonster.IsPlayerMonster)
             {
                 var nextMonster = playerParty.GetHealthyMonster();
-
                 if (nextMonster != null)
                 {
                     OpenPartyScreen();
                 }
                 else
                 {
-                    BattleOver(false); // lost battle
+                    // Lost battle
+                    BattleOver(false);
                 }
             }
             else
             {
                 if (!isCharBattle)
                 {
-                    BattleOver(true); // won battle
+                    // Won battle
+                    BattleOver(true);
                 }
                 else
                 {
                     var nextEnemyMonster = battlerParty.GetHealthyMonster();
-
                     if (nextEnemyMonster != null)
                     {
                         StartCoroutine(ChoiceSelection(nextEnemyMonster));
                     }
                     else
                     {
-                        BattleOver(true); // won battle 
+                        // Won battle 
+                        BattleOver(true);
                     } 
                 }
             }
@@ -644,8 +675,10 @@ namespace Itsdits.Ravar.Battle
             playerParty.Monsters.ForEach(p => p.CleanUpMonster());
             OnBattleOver(won);
         }
+
         #endregion
         #region Selector Functions
+
         /// <summary>
         /// Handle updates to the BattleState.
         /// </summary>
@@ -656,6 +689,10 @@ namespace Itsdits.Ravar.Battle
                 HandleActionSelection();
             }
             else if (state == BattleState.MoveSelection)
+            {
+                HandleMoveSelection();
+            }
+            else if (state == BattleState.ForgetSelection)
             {
                 HandleMoveSelection();
             }
@@ -679,11 +716,26 @@ namespace Itsdits.Ravar.Battle
 
         private void MoveSelection()
         {
-            state = BattleState.MoveSelection;
+            if (state != BattleState.ForgetSelection)
+            {
+                state = BattleState.MoveSelection;
+            }
 
             dialogBox.EnableDialogText(false);
             dialogBox.EnableActionSelector(false);
             dialogBox.EnableMoveSelector(true);
+        }
+
+        private IEnumerator ForgetMoveSelection(MonsterObj monster, LearnableMove newMove)
+        {
+            prevState = BattleState.ForgetSelection;
+            state = BattleState.Busy;
+
+            yield return dialogBox.TypeDialog($"{monster.Base.Name} can learn {newMove.Base.Name}, but it's move list is full. Forget a move to learn {newMove.Base.Name}?");
+
+            state = BattleState.ChoiceSelection;
+
+            dialogBox.EnableChoiceSelector(true);
         }
 
         private IEnumerator ChoiceSelection(MonsterObj nextMonster)
@@ -725,7 +777,6 @@ namespace Itsdits.Ravar.Battle
             }
 
             currentAction = Mathf.Clamp(currentAction, 0, 3);
-
             dialogBox.UpdateActionSelection(currentAction);
 
             if (Input.GetKeyDown(KeyCode.Z))
@@ -744,6 +795,7 @@ namespace Itsdits.Ravar.Battle
                 {
                     // Monsters
                     prevState = state;
+
                     OpenPartyScreen();
                 }
                 else if (currentAction == 3)
@@ -774,20 +826,31 @@ namespace Itsdits.Ravar.Battle
             }
 
             currentMove = Mathf.Clamp(currentMove, 0, playerMonster.Monster.Moves.Count - 1);
-
             dialogBox.UpdateMoveSelection(currentMove, playerMonster.Monster.Moves[currentMove]);
 
             if (Input.GetKeyDown(KeyCode.Z))
             {
                 var move = playerMonster.Monster.Moves[currentMove];
-                if (move.Energy == 0)
-                {
-                    return;
-                }
-
                 dialogBox.EnableMoveSelector(false);
                 dialogBox.EnableDialogText(true);
-                StartCoroutine(ExecuteTurn(BattleAction.Move));
+
+                if (state == BattleState.ForgetSelection)
+                {
+                    prevState = null;
+
+                    StartCoroutine(ForgetMove(playerMonster.Monster, move));
+                }
+                else
+                {
+                    if (move.Energy == 0)
+                    {
+                        return;
+                    }
+                    else
+                    {
+                        StartCoroutine(ExecuteTurn(BattleAction.Move));
+                    }
+                }
             }
             else if (Input.GetKeyDown(KeyCode.X))
             {
@@ -799,31 +862,58 @@ namespace Itsdits.Ravar.Battle
 
         private void HandleChoiceSelection()
         {
+            //TODO - refactor this function to provide clarity on what the player is choosing.
             if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.UpArrow))
             {
                 isChoiceYes = !isChoiceYes;
             }
 
             dialogBox.UpdateChoiceSelection(isChoiceYes);
-
             if (Input.GetKeyDown(KeyCode.Z))
             {
                 dialogBox.EnableChoiceSelector(false);
-
                 if (isChoiceYes)
                 {
-                    prevState = BattleState.ChoiceSelection;
-                    OpenPartyScreen();
+                    if (prevState == BattleState.ForgetSelection)
+                    {
+                        state = BattleState.ForgetSelection;
+
+                        MoveSelection();
+                    }
+                    else
+                    {
+                        prevState = BattleState.ChoiceSelection;
+
+                        OpenPartyScreen();
+                    }
                 }
                 else
                 {
-                    StartCoroutine(SwitchEnemyMonster());
+                    if (prevState == BattleState.ForgetSelection)
+                    {
+                        prevState = null;
+
+                        state = BattleState.ExecutingTurn;
+                    }
+                    else
+                    {
+                        StartCoroutine(SwitchEnemyMonster());
+                    }
                 }
             }
             else if (Input.GetKeyDown(KeyCode.X))
             {
                 dialogBox.EnableChoiceSelector(false);
-                StartCoroutine(SwitchEnemyMonster());
+                if (prevState == BattleState.ForgetSelection)
+                {
+                    prevState = null;
+
+                    state = BattleState.ExecutingTurn;
+                }
+                else
+                {
+                    StartCoroutine(SwitchEnemyMonster());
+                }
             }
         }
 
@@ -847,7 +937,6 @@ namespace Itsdits.Ravar.Battle
             }
 
             currentMember = Mathf.Clamp(currentMember, 0, playerParty.Monsters.Count - 1);
-
             partyScreen.UpdateMemberSelection(currentMember);
 
             if (Input.GetKeyDown(KeyCode.Z))
@@ -867,17 +956,18 @@ namespace Itsdits.Ravar.Battle
                 }
 
                 partyScreen.gameObject.SetActive(false);
-
                 // If player switched monster voluntarily it should count as a turn move
                 // If monster was downed and forced switch then it should trigger a new turn
                 if (prevState == BattleState.ActionSelection)
                 {
                     prevState = null;
+
                     StartCoroutine(ExecuteTurn(BattleAction.SwitchMonster));
                 }
                 else
                 {
                     state = BattleState.Busy;
+
                     StartCoroutine(SwitchMonster(selectedMember));
                 }
             }
@@ -890,14 +980,16 @@ namespace Itsdits.Ravar.Battle
                 }
 
                 partyScreen.gameObject.SetActive(false);
-
                 if (prevState == BattleState.ChoiceSelection)
                 {
                     prevState = null;
+
                     StartCoroutine(SwitchEnemyMonster());
                 }
                 else
+                {
                     ActionSelection();
+                }  
             }
         }
         #endregion

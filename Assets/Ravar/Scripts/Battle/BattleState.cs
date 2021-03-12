@@ -6,6 +6,7 @@ namespace Itsdits.Ravar.Battle
         Busy,
         ActionSelection,
         MoveSelection,
+        ForgetSelection,
         ChoiceSelection,
         ExecutingTurn,
         BattleOver,

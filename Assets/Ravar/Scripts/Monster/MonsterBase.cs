@@ -7,6 +7,8 @@ namespace Itsdits.Ravar.Monster {
     public class MonsterBase : ScriptableObject
     {
         #region config
+        public static int MaxNumberOfMoves { get; set; } = 4;
+
         [SerializeField] string _name;
         [TextArea]
         [SerializeField] string description;

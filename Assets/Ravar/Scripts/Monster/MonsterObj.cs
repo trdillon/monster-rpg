@@ -59,7 +59,7 @@ namespace Itsdits.Ravar.Monster {
                     Moves.Add(new MoveObj(move.Base));
                 }
 
-                if (Moves.Count >= 4)
+                if (Moves.Count >= MonsterBase.MaxNumberOfMoves)
                 {
                     break;
                 }    
@@ -240,6 +240,34 @@ namespace Itsdits.Ravar.Monster {
 
             UpdateHP(damage);
             return damageDetails;
+        }
+
+        /// <summary>
+        /// Learn a move by adding it to the monster's move list.
+        /// </summary>
+        /// <param name="newMove">Move to be learned</param>
+        public void LearnMove(LearnableMove newMove)
+        {
+            if (Moves.Count > MonsterBase.MaxNumberOfMoves)
+            {
+                return;
+            }
+
+            Moves.Add(new MoveObj(newMove.Base));
+        }
+
+        public void ForgetMove(MoveObj oldMove)
+        {
+            Moves.Remove(oldMove);
+        }
+
+        /// <summary>
+        /// Gets a LearnableMove when monster levels up.
+        /// </summary>
+        /// <returns>Move that can be learned or null if list is empty</returns>
+        public LearnableMove GetLearnableMove()
+        {
+            return Base.LearnableMoves.Where(m => m.LevelLearned == level).FirstOrDefault();
         }
 
         /// <summary>

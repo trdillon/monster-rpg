@@ -28,7 +28,7 @@ MonoBehaviour:
   rightSprite: {fileID: 21300000, guid: 2c80f11eee061744cb77d876367f85fc, type: 3}
   primaryType: 2
   secondaryType: 0
-  growthRate: 1
+  growthRate: 0
   learnableMoves:
   - moveBase: {fileID: 11400000, guid: a20f484b53130084c890b7cc758964de, type: 2}
     levelLearned: 1

@@ -297,7 +297,7 @@ GameObject:
   - component: {fileID: 199644587}
   - component: {fileID: 199644586}
   m_Layer: 8
-  m_Name: NPCKaren
+  m_Name: Karen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3630,7 +3630,7 @@ GameObject:
   - component: {fileID: 870110087}
   - component: {fileID: 870110092}
   m_Layer: 8
-  m_Name: NPBThugGordo
+  m_Name: ThugGordo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3833,7 +3833,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monsters:
   - _base: {fileID: 11400000, guid: 875c84c591e13614ca6291675fe33305, type: 2}
-    level: 2
+    level: 4
+  - _base: {fileID: 11400000, guid: 875c84c591e13614ca6291675fe33305, type: 2}
+    level: 4
+  - _base: {fileID: 11400000, guid: 875c84c591e13614ca6291675fe33305, type: 2}
+    level: 4
 --- !u!1 &950810351
 GameObject:
   m_ObjectHideFlags: 0
@@ -4592,7 +4596,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: If you're seeing this, something went terribly wrong. Please notify the
-    developer.
+    developer. Error code = U001
 --- !u!222 &1048519239
 CanvasRenderer:
   m_ObjectHideFlags: 0
