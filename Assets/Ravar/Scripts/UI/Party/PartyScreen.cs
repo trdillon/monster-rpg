@@ -40,7 +40,7 @@ namespace Itsdits.Ravar.UI.Party
                     members[i].gameObject.SetActive(false);
                 }   
             }
-            messageText.text = "Select a monster";
+            messageText.text = "Select a Battokuri";
         }
 
         /// <summary>

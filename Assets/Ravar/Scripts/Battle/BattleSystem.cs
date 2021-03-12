@@ -753,7 +753,7 @@ namespace Itsdits.Ravar.Battle
         {
             state = BattleState.Busy;
 
-            yield return dialogBox.TypeDialog($"{battler.Name} is about to deploy {nextMonster.Base.Name}! Do you want to switch your monster too?");
+            yield return dialogBox.TypeDialog($"{battler.Name} is about to deploy {nextMonster.Base.Name}! Do you want to switch your Battokuri too?");
 
             state = BattleState.ChoiceSelection;
 
