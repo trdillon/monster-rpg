@@ -37,6 +37,7 @@ namespace Itsdits.Ravar.Battle
         private int escapeAttempts;
         private bool isChoiceYes = true;
         private bool isCharBattle = false;
+        private bool isMonsterDown = false;
         #endregion
         
         /// <summary>
@@ -337,6 +338,8 @@ namespace Itsdits.Ravar.Battle
 
         private IEnumerator HandleDownedMonster(BattleMonster downedMonster)
         {
+            isMonsterDown = true;
+
             if (downedMonster.IsPlayerMonster)
             {
                 yield return dialogBox.TypeDialog($"{downedMonster.Monster.Base.Name} has been taken down!");
@@ -544,7 +547,14 @@ namespace Itsdits.Ravar.Battle
             if (state == BattleState.BattleOver)
             {
                 yield break;
-            } 
+            }
+            // Skip if monster is downed
+            if (isMonsterDown)
+            {
+                isMonsterDown = false;
+                yield return new WaitUntil(() => state == BattleState.ExecutingTurn);
+                yield break;
+            }
             // Wait for monster switch, etc
             yield return new WaitUntil(() => state == BattleState.ExecutingTurn);
 
@@ -672,6 +682,7 @@ namespace Itsdits.Ravar.Battle
         {
             state = BattleState.BattleOver;
 
+            isMonsterDown = false;
             playerParty.Monsters.ForEach(p => p.CleanUpMonster());
             OnBattleOver(won);
         }

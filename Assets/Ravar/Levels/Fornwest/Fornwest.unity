@@ -633,12 +633,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monsters:
+  - _base: {fileID: 11400000, guid: 037162b05ccdadf43a507fd23d5b7d64, type: 2}
+    level: 7
   - _base: {fileID: 11400000, guid: 08fe71a8bca62d0468ada7da52ccd5a7, type: 2}
     level: 8
   - _base: {fileID: 11400000, guid: 875c84c591e13614ca6291675fe33305, type: 2}
     level: 4
-  - _base: {fileID: 11400000, guid: 037162b05ccdadf43a507fd23d5b7d64, type: 2}
-    level: 7
   - _base: {fileID: 11400000, guid: 875c84c591e13614ca6291675fe33305, type: 2}
     level: 2
 --- !u!114 &225907027

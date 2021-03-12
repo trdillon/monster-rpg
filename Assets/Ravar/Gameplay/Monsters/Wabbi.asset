@@ -29,9 +29,9 @@ MonoBehaviour:
   secondaryType: 0
   growthRate: 1
   learnableMoves:
-  - moveBase: {fileID: 11400000, guid: 8d7e7bbdab74fda4d8ec4d9c05e6f9d7, type: 2}
+  - moveBase: {fileID: 11400000, guid: c277d99d2796e064f96a87aa08154662, type: 2}
     levelLearned: 1
-  - moveBase: {fileID: 11400000, guid: 0d46fe406ab82d44fb379c4d9156b25c, type: 2}
+  - moveBase: {fileID: 11400000, guid: 140ef81265e40c341843621c888b5754, type: 2}
     levelLearned: 4
   - moveBase: {fileID: 11400000, guid: 79a2b519f50a22447a5178433c28e4f7, type: 2}
     levelLearned: 7
