@@ -1,55 +1,55 @@
 fileFormatVersion: 2
-guid: fac3a8e0619de344f911ade53c2c7e0d
+guid: 1be55108d0433cc4aba764dd1aa6c6d4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8279891041327275569
-    second: Thug_WalkDown_1
+      213: 2423726751059629900
+    second: ErrorChar_WalkDown_1
   - first:
-      213: -4196845079734034598
-    second: Thug_WalkDown_2
+      213: 7258174723207886121
+    second: ErrorChar_WalkDown_2
   - first:
-      213: 1402613840194353149
-    second: Thug_WalkDown_3
+      213: 3652049239405026752
+    second: ErrorChar_WalkDown_3
   - first:
-      213: -4151096803586869099
-    second: Thug_WalkDown_4
+      213: 5583329630910718434
+    second: ErrorChar_WalkDown_4
   - first:
-      213: 1506054971702264442
-    second: Thug_WalkUp_1
+      213: -1922523377811942926
+    second: ErrorChar_WalkLeft_1
   - first:
-      213: -6138626906724651156
-    second: Thug_WalkUp_2
+      213: -1580786866365917475
+    second: ErrorChar_WalkLeft_2
   - first:
-      213: -6025518513204739913
-    second: Thug_WalkUp_3
+      213: -1159846564368092690
+    second: ErrorChar_WalkLeft_3
   - first:
-      213: -6216198179717294723
-    second: Thug_WalkUp_4
+      213: 8484457348390384610
+    second: ErrorChar_WalkLeft_4
   - first:
-      213: 5571188764390211417
-    second: Thug_WalkLeft_1
+      213: 3145042068304504565
+    second: ErrorChar_WalkRight_1
   - first:
-      213: 8472100186418374955
-    second: Thug_WalkLeft_2
+      213: -1391858947430429793
+    second: ErrorChar_WalkRight_2
   - first:
-      213: -8555632424041126305
-    second: Thug_WalkLeft_3
+      213: 2631830992386224291
+    second: ErrorChar_WalkRight_3
   - first:
-      213: -4894170727579469988
-    second: Thug_WalkLeft_4
+      213: 1195268277009449881
+    second: ErrorChar_WalkRight_4
   - first:
-      213: 4731533213457939685
-    second: Thug_WalkRight_1
+      213: 7825975997861530793
+    second: ErrorChar_WalkUp_1
   - first:
-      213: -8548217009676704590
-    second: Thug_WalkRight_2
+      213: 7039857337815168524
+    second: ErrorChar_WalkUp_2
   - first:
-      213: -6709117376253479263
-    second: Thug_WalkRight_3
+      213: 9029467800418536703
+    second: ErrorChar_WalkUp_3
   - first:
-      213: -3071435449043004934
-    second: Thug_WalkRight_4
+      213: -3724377265308628120
+    second: ErrorChar_WalkUp_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -175,337 +175,337 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Thug_WalkDown_1
+      name: ErrorChar_WalkDown_1
       rect:
         serializedVersion: 2
-        x: 188
-        y: 8
+        x: 35
+        y: 48
         width: 32
-        height: 55
+        height: 50
       alignment: 9
-      pivot: {x: 0.5, y: 0.56363636}
+      pivot: {x: 0.5, y: 0.62}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 13e5049880518e270800000000000000
-      internalID: 8279891041327275569
+      spriteID: c47558d73aec2a120800000000000000
+      internalID: 2423726751059629900
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Thug_WalkDown_2
+      name: ErrorChar_WalkDown_2
       rect:
         serializedVersion: 2
-        x: 121
-        y: 6
+        x: 69
+        y: 150
         width: 31
-        height: 57
+        height: 51
       alignment: 9
-      pivot: {x: 0.48387095, y: 0.5614035}
+      pivot: {x: 0.48387095, y: 0.627451}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a5f5b15c2afc1c5c0800000000000000
-      internalID: -4196845079734034598
+      spriteID: 925768e84773ab460800000000000000
+      internalID: 7258174723207886121
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Thug_WalkDown_3
+      name: ErrorChar_WalkDown_3
       rect:
         serializedVersion: 2
-        x: 154
-        y: 8
+        x: 35
+        y: 100
         width: 32
-        height: 55
+        height: 50
       alignment: 9
-      pivot: {x: 0.5, y: 0.56363636}
+      pivot: {x: 0.5, y: 0.62}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: df7b4d53bd5177310800000000000000
-      internalID: 1402613840194353149
+      spriteID: 0cdd8f01f6faea230800000000000000
+      internalID: 3652049239405026752
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Thug_WalkDown_4
+      name: ErrorChar_WalkDown_4
       rect:
         serializedVersion: 2
-        x: 222
-        y: 8
+        x: 34
+        y: 152
         width: 31
-        height: 55
+        height: 51
       alignment: 9
-      pivot: {x: 0.516129, y: 0.58181816}
+      pivot: {x: 0.516129, y: 0.627451}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 598f1f953775466c0800000000000000
-      internalID: -4151096803586869099
+      spriteID: 2e1a852b7b8fb7d40800000000000000
+      internalID: 5583329630910718434
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Thug_WalkUp_1
+      name: ErrorChar_WalkLeft_1
       rect:
         serializedVersion: 2
-        x: 289
-        y: 10
-        width: 32
-        height: 53
+        x: 101
+        y: 44
+        width: 23
+        height: 51
       alignment: 9
-      pivot: {x: 0.5, y: 0.5660377}
+      pivot: {x: 0.47826087, y: 0.60784316}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a724680740596e410800000000000000
-      internalID: 1506054971702264442
+      spriteID: 2f192218c23d155e0800000000000000
+      internalID: -1922523377811942926
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Thug_WalkUp_2
+      name: ErrorChar_WalkLeft_2
       rect:
         serializedVersion: 2
-        x: 80
-        y: 5
-        width: 37
-        height: 58
+        x: 71
+        y: 203
+        width: 30
+        height: 52
       alignment: 9
-      pivot: {x: 0.43243244, y: 0.55172414}
+      pivot: {x: 0.53333336, y: 0.61538464}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c6fa5082a573fcaa0800000000000000
-      internalID: -6138626906724651156
+      spriteID: dd618ac68baef0ae0800000000000000
+      internalID: -1580786866365917475
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Thug_WalkUp_3
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 10
-        width: 32
-        height: 53
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5660377}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7b044e836de016ca0800000000000000
-      internalID: -6025518513204739913
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Thug_WalkUp_4
+      name: ErrorChar_WalkLeft_3
       rect:
         serializedVersion: 2
         x: 1
-        y: 5
-        width: 38
-        height: 58
-      alignment: 9
-      pivot: {x: 0.42105263, y: 0.55172414}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d75558cb0b0abb9a0800000000000000
-      internalID: -6216198179717294723
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Thug_WalkLeft_1
-      rect:
-        serializedVersion: 2
-        x: 465
-        y: 10
-        width: 22
-        height: 53
-      alignment: 9
-      pivot: {x: 0.45454547, y: 0.5849057}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 95f302ee9a6d05d40800000000000000
-      internalID: 5571188764390211417
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Thug_WalkLeft_2
-      rect:
-        serializedVersion: 2
-        x: 323
-        y: 9
-        width: 30
+        y: 201
+        width: 33
         height: 54
       alignment: 9
-      pivot: {x: 0.53333336, y: 0.5925926}
+      pivot: {x: 0.3939394, y: 0.5740741}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b29ecf08b32f29570800000000000000
-      internalID: 8472100186418374955
+      spriteID: ee1f1e0e1b567efe0800000000000000
+      internalID: -1159846564368092690
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Thug_WalkLeft_3
+      name: ErrorChar_WalkLeft_4
       rect:
         serializedVersion: 2
-        x: 413
-        y: 10
-        width: 24
-        height: 53
-      alignment: 9
-      pivot: {x: 0.41666666, y: 0.5849057}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f56e638d3a9444980800000000000000
-      internalID: -8555632424041126305
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Thug_WalkLeft_4
-      rect:
-        serializedVersion: 2
-        x: 355
-        y: 11
+        x: 69
+        y: 45
         width: 30
-        height: 52
+        height: 50
       alignment: 9
-      pivot: {x: 0.43333334, y: 0.59615386}
+      pivot: {x: 0.43333334, y: 0.62}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c57b28857a9641cb0800000000000000
-      internalID: -4894170727579469988
+      spriteID: 2e3f2ca7109deb570800000000000000
+      internalID: 8484457348390384610
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Thug_WalkRight_1
+      name: ErrorChar_WalkRight_1
       rect:
         serializedVersion: 2
-        x: 488
-        y: 10
-        width: 22
-        height: 53
+        x: 102
+        y: 150
+        width: 23
+        height: 51
       alignment: 9
-      pivot: {x: 0.54545456, y: 0.5849057}
+      pivot: {x: 0.5217391, y: 0.60784316}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5ec7f1f8368c9a140800000000000000
-      internalID: 4731533213457939685
+      spriteID: 5f623f4191f65ab20800000000000000
+      internalID: 3145042068304504565
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Thug_WalkRight_2
+      name: ErrorChar_WalkRight_2
       rect:
         serializedVersion: 2
-        x: 439
-        y: 11
+        x: 103
+        y: 205
         width: 24
-        height: 52
+        height: 50
       alignment: 9
-      pivot: {x: 0.5, y: 0.5769231}
+      pivot: {x: 0.5, y: 0.6}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2b4a44b8be1ae5980800000000000000
-      internalID: -8548217009676704590
+      spriteID: f9bc5f469af1face0800000000000000
+      internalID: -1391858947430429793
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Thug_WalkRight_3
+      name: ErrorChar_WalkRight_3
       rect:
         serializedVersion: 2
-        x: 387
-        y: 10
-        width: 24
-        height: 53
+        x: 101
+        y: 97
+        width: 25
+        height: 51
       alignment: 9
-      pivot: {x: 0.5833333, y: 0.5849057}
+      pivot: {x: 0.56, y: 0.60784316}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1a6b200fa4d64e2a0800000000000000
-      internalID: -6709117376253479263
+      spriteID: 3a07b02f754268420800000000000000
+      internalID: 2631830992386224291
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Thug_WalkRight_4
+      name: ErrorChar_WalkRight_4
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 97
+        width: 30
+        height: 51
+      alignment: 9
+      pivot: {x: 0.56666666, y: 0.60784316}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99301764a22769010800000000000000
+      internalID: 1195268277009449881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErrorChar_WalkUp_1
       rect:
         serializedVersion: 2
         x: 37
-        y: 7
-        width: 40
-        height: 56
+        y: 205
+        width: 32
+        height: 50
       alignment: 9
-      pivot: {x: 0.6, y: 0.5714286}
+      pivot: {x: 0.5, y: 0.6}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: af1df357bb11065d0800000000000000
-      internalID: -3071435449043004934
+      spriteID: 9ac054dc4b37b9c60800000000000000
+      internalID: 7825975997861530793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErrorChar_WalkUp_2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 43
+        width: 31
+        height: 51
+      alignment: 9
+      pivot: {x: 0.516129, y: 0.627451}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0676e133f892b160800000000000000
+      internalID: 7039857337815168524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErrorChar_WalkUp_3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 96
+        width: 32
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffc46c2df1d1f4d70800000000000000
+      internalID: 9029467800418536703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErrorChar_WalkUp_4
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 148
+        width: 31
+        height: 51
+      alignment: 9
+      pivot: {x: 0.48387095, y: 0.627451}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86b0dbb1c9a505cc0800000000000000
+      internalID: -3724377265308628120
       vertices: []
       indices: 
       edges: []
@@ -513,7 +513,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: a62fe6ba3ff13ea46a08d739837b951f
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 

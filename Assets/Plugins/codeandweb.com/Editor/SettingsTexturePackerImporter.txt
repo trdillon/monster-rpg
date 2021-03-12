@@ -1,6 +1,7 @@
 version: 2
 importPivots: 1
 tpsheetFileNames:
+- Assets/Ravar/Characters/ErrorChar/TS_ErrorChar.tpsheet
 - Assets/Ravar/Characters/Gus/TP_Gus.tpsheet
 - Assets/Ravar/Characters/Karen/TP_Karen.tpsheet
 - Assets/Ravar/Characters/Thug/TP_Thug.tpsheet
@@ -17,9 +18,10 @@ tpsheetFileNames:
 - Assets/Ravar/MaterialLibrary/Terrain/TP_Sand_Yellow.tpsheet
 - Assets/Ravar/Objects/TP_Crystals.tpsheet
 textureFileNames:
+- Assets/Ravar/Characters/ErrorChar/SS_ErrorChar.png
 - Assets/Ravar/Characters/Gus/SS_Gus.png
 - Assets/Ravar/Characters/Karen/SS_Karen.png
-- Assets/Ravar/Characters/Thug/SS_Thug.png
+- Assets/Ravar/Characters/Thug/leather_thug.png
 - Assets/Ravar/MaterialLibrary/Terrain/TS_Dirt_Dark.png
 - Assets/Ravar/MaterialLibrary/Terrain/TS_Dirt_Light.png
 - Assets/Ravar/MaterialLibrary/Terrain/TS_Dirt_Medium.png
@@ -33,6 +35,7 @@ textureFileNames:
 - Assets/Ravar/MaterialLibrary/Terrain/TS_Sand_Yellow.png
 - Assets/Ravar/Objects/SS_Crystals.png
 normalmapFileNames:
+- 
 - 
 - 
 - 
