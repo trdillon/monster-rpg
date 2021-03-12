@@ -16,7 +16,7 @@ MonoBehaviour:
   description: Perform a dance that will distract the opponent and send it into a
     confusion.
   power: 0
-  accuracy: 100
+  accuracy: 95
   energy: 25
   priority: 0
   alwaysHits: 0

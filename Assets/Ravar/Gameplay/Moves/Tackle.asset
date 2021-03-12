@@ -15,7 +15,7 @@ MonoBehaviour:
   _name: Tackle
   description: Tackles the opponent.
   power: 40
-  accuracy: 100
+  accuracy: 95
   energy: 40
   priority: 0
   alwaysHits: 0

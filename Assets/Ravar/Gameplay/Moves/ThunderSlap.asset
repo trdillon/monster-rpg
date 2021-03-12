@@ -16,7 +16,7 @@ MonoBehaviour:
   description: 'Slaps the opponent with a resounding wave of thunder, leaving it
     partially paralyzed. '
   power: 0
-  accuracy: 100
+  accuracy: 95
   energy: 25
   priority: 0
   alwaysHits: 0

@@ -15,7 +15,7 @@ MonoBehaviour:
   _name: Branch Smack
   description: Smacks the opponent with a tree branch.
   power: 45
-  accuracy: 100
+  accuracy: 95
   energy: 25
   priority: 0
   alwaysHits: 0

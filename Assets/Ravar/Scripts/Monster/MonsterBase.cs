@@ -74,6 +74,7 @@ namespace Itsdits.Ravar.Monster {
                 return GetFluctuating(level);
             }
 
+            Debug.LogError($"MB001: {Name} missing GrowthRate.");
             return -1;
         }
 

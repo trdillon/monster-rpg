@@ -69,7 +69,7 @@ namespace Itsdits.Ravar.Battle
             StartCoroutine(SetupBattle());
         }
 
-        public event Action<bool> OnBattleOver;
+        public event Action<BattleResult> OnBattleOver;
 
         #region BattleCoroutines
         /// <summary>
@@ -95,14 +95,14 @@ namespace Itsdits.Ravar.Battle
                 ShowCharacterSprites();
                 yield return dialogBox.TypeDialog($"{battler.Name} has challenged you to a battle!");
 
-                // Deploy enemy monster
+                // Deploy enemy monster.
                 battlerImage.gameObject.SetActive(false); //TODO - animate this
                 enemyMonster.gameObject.SetActive(true);
                 var enemyLeadMonster = battlerParty.GetHealthyMonster();
                 enemyMonster.Setup(enemyLeadMonster);
                 yield return dialogBox.TypeDialog($"{battler.Name} has deployed {enemyLeadMonster.Base.Name} to the battle!");
 
-                // Deploy player monster
+                // Deploy player monster.
                 playerImage.gameObject.SetActive(false); //TODO - animate this too
                 playerMonster.gameObject.SetActive(true);
                 var playerLeadMonster = playerParty.GetHealthyMonster();
@@ -125,6 +125,13 @@ namespace Itsdits.Ravar.Battle
                 // Get the monster moves.
                 playerMonster.Monster.CurrentMove = playerMonster.Monster.Moves[currentMove];
                 enemyMonster.Monster.CurrentMove = enemyMonster.Monster.GetRandomMove();
+                if (playerMonster.Monster.CurrentMove == null || enemyMonster.Monster.CurrentMove == null)
+                {
+                    Debug.LogError("BS001: CurrentMove null. Escaping battle to attempt to recover.");
+
+                    BattleOver(BattleResult.Error);
+                }
+
                 int playerPriority = playerMonster.Monster.CurrentMove.Base.Priority;
                 int enemyPriority = enemyMonster.Monster.CurrentMove.Base.Priority;
 
@@ -174,6 +181,13 @@ namespace Itsdits.Ravar.Battle
 
                 // Now it's the enemy's turn.
                 var enemyMove = enemyMonster.Monster.GetRandomMove();
+                if (enemyMove == null)
+                {
+                    Debug.LogError("BS002: enemyMove null. Escaping battle to attempt to recover.");
+
+                    BattleOver(BattleResult.Error);
+                }
+
                 yield return UseMove(enemyMonster, playerMonster, enemyMove);
                 yield return CleanUpTurn(enemyMonster);
                 if (state == BattleState.BattleOver)
@@ -252,6 +266,7 @@ namespace Itsdits.Ravar.Battle
                     foreach (var effect in move.Base.MoveSecondaryEffects)
                     {
                         var rng = UnityEngine.Random.Range(1, 101);
+                        Debug.Log($"RNG is {rng} and chance is {effect.Chance}.");
                         if (rng <= effect.Chance)
                         {
                             yield return UseMoveEffects(effect, attackingMonster.Monster, defendingMonster.Monster, effect.Target);
@@ -423,7 +438,7 @@ namespace Itsdits.Ravar.Battle
             dialogBox.SetMoveList(newMonster.Moves);
             yield return dialogBox.TypeDialog($"It's your turn now, {newMonster.Base.Name}!");
 
-            // Allow player to switch monsters after enemy replaces a downed monster
+            // Allow player to switch monsters after enemy replaces a downed monster.
             if (prevState == null)
             {
                 state = BattleState.ExecutingTurn;
@@ -473,7 +488,7 @@ namespace Itsdits.Ravar.Battle
                 yield return new WaitForSeconds(2f);
 
                 battleAnimator.CleanUp();
-                BattleOver(true);
+                BattleOver(BattleResult.Won);
             }
             else
             {
@@ -520,17 +535,19 @@ namespace Itsdits.Ravar.Battle
             if (playerSpeed > enemySpeed)
             {
                 yield return dialogBox.TypeDialog($"You ran away from the enemy {enemyMonster.Monster.Base.Name}!");
-                BattleOver(true);
+                BattleOver(BattleResult.Won);
             }
             else
             {
                 float f = (playerSpeed * 128) / enemySpeed + 30 * escapeAttempts;
                 f = f % 256;
+                int rng = UnityEngine.Random.Range(0, 256);
+                Debug.Log($"RNG is {rng} and F is {f}");
 
-                if (UnityEngine.Random.Range(0, 256) < f)
+                if (rng < f)
                 {
                     yield return dialogBox.TypeDialog($"You ran away from the enemy {enemyMonster.Monster.Base.Name}!");
-                    BattleOver(true);
+                    BattleOver(BattleResult.Won);
                 }
                 else
                 {
@@ -543,27 +560,27 @@ namespace Itsdits.Ravar.Battle
 
         private IEnumerator CleanUpTurn(BattleMonster attackingMonster)
         {
-            // Skip if battle is over
+            // Skip if battle is over.
             if (state == BattleState.BattleOver)
             {
                 yield break;
             }
-            // Skip if monster is downed
+            // Skip if monster is downed.
             if (isMonsterDown)
             {
                 isMonsterDown = false;
                 yield return new WaitUntil(() => state == BattleState.ExecutingTurn);
                 yield break;
             }
-            // Wait for monster switch, etc
+            // Wait for monster switch, etc.
             yield return new WaitUntil(() => state == BattleState.ExecutingTurn);
 
-            // Check for status changes like poison and update Monster/HUD
+            // Check for status changes like poison and update Monster/HUD.
             attackingMonster.Monster.CheckForStatusDamage();
             yield return ShowStatusChanges(attackingMonster.Monster);
             yield return attackingMonster.Hud.UpdateHP();
 
-            // Attacking monster can be downed from status effects
+            // Attacking monster can be downed from status effects.
             if (attackingMonster.Monster.CurrentHp <= 0)
             {
                 yield return HandleDownedMonster(attackingMonster);
@@ -571,11 +588,13 @@ namespace Itsdits.Ravar.Battle
             }
         }
         #endregion
+
         #region Helper Functions
         private int AttemptCapture(MonsterObj monster)
         {
             // Algo is from g3/4.
             float a = (3 * monster.MaxHp - 2 * monster.CurrentHp) * monster.Base.CatchRate * ConditionDB.GetStatusBonus(monster.Status) / (3 * monster.MaxHp);
+            Debug.Log($"A is {a}");
 
             if (a >= 255)
             {
@@ -627,7 +646,9 @@ namespace Itsdits.Ravar.Battle
                 moveAccuracy *= changeVals[evasion];
             }
 
-            return UnityEngine.Random.Range(1, 101) <= moveAccuracy;
+            int rng = UnityEngine.Random.Range(1, 101);
+            Debug.Log($"RNG is {rng} and moveAccuracy is {moveAccuracy}");
+            return rng <= moveAccuracy;
         }
 
         private void CheckIfBattleIsOver(BattleMonster downedMonster)
@@ -641,16 +662,14 @@ namespace Itsdits.Ravar.Battle
                 }
                 else
                 {
-                    // Lost battle
-                    BattleOver(false);
+                    BattleOver(BattleResult.Lost);
                 }
             }
             else
             {
                 if (!isCharBattle)
                 {
-                    // Won battle
-                    BattleOver(true);
+                    BattleOver(BattleResult.Won);
                 }
                 else
                 {
@@ -661,8 +680,7 @@ namespace Itsdits.Ravar.Battle
                     }
                     else
                     {
-                        // Won battle 
-                        BattleOver(true);
+                        BattleOver(BattleResult.Won);
                     } 
                 }
             }
@@ -678,16 +696,17 @@ namespace Itsdits.Ravar.Battle
             battlerImage.sprite = battler.Sprite;
         }
 
-        private void BattleOver(bool won)
+        private void BattleOver(BattleResult result)
         {
             state = BattleState.BattleOver;
 
             isMonsterDown = false;
             playerParty.Monsters.ForEach(p => p.CleanUpMonster());
-            OnBattleOver(won);
+            OnBattleOver(result);
         }
 
         #endregion
+
         #region Selector Functions
 
         /// <summary>
@@ -855,6 +874,7 @@ namespace Itsdits.Ravar.Battle
                 {
                     if (move.Energy == 0)
                     {
+                        Debug.Log($"No Energy for {move}.");
                         return;
                     }
                     else
@@ -956,13 +976,13 @@ namespace Itsdits.Ravar.Battle
 
                 if (selectedMember.CurrentHp <= 0)
                 {
-                    partyScreen.SetMessageText("That monster is downed and cannot be used!");
+                    partyScreen.SetMessageText("That Battokuri is downed and cannot be used!");
                     return;
                 }
 
                 if (selectedMember == playerMonster.Monster)
                 {
-                    partyScreen.SetMessageText("That monster is already being used!");
+                    partyScreen.SetMessageText("That Battokuri is already being used!");
                     return;
                 }
 
@@ -986,7 +1006,7 @@ namespace Itsdits.Ravar.Battle
             {
                 if (playerMonster.Monster.CurrentHp <= 0)
                 {
-                    partyScreen.SetMessageText("You must select a monster!");
+                    partyScreen.SetMessageText("You must select a Battokuri!");
                     return;
                 }
 

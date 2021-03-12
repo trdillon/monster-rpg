@@ -114,6 +114,7 @@ namespace Itsdits.Ravar.Animation
         /// </summary>
         public void CleanUp()
         {
+            Debug.Log("Destroying animation objects.");
             Destroy(crystalObj, 0f);
             Destroy(beamObj1, 0f);
             Destroy(beamObj2, 0f);

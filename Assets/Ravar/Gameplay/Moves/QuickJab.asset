@@ -16,7 +16,7 @@ MonoBehaviour:
   description: Throws a quick jab at the opponent, striking them before they have
     a chance to attack.
   power: 40
-  accuracy: 100
+  accuracy: 95
   energy: 30
   priority: 1
   alwaysHits: 0

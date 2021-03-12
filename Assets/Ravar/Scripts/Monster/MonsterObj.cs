@@ -46,13 +46,13 @@ namespace Itsdits.Ravar.Monster {
         public event Action OnStatusChange;
 
         /// <summary>
-        /// Initialize the monster
+        /// Initialize the monster.
         /// </summary>
         public void Init()
         {
-            // Generate move list
+            //TODO - decide how to handle move list generation with more than MaxNumberOfMoves
             Moves = new List<MoveObj>();
-            foreach (var move in Base.LearnableMoves) //TODO - refactor this to account for optional learned moves or forgetting moves
+            foreach (var move in Base.LearnableMoves)
             {
                 if (move.LevelLearned <= Level)
                 {
@@ -64,6 +64,12 @@ namespace Itsdits.Ravar.Monster {
                     break;
                 }    
             }
+
+            if (Moves.Count < 1)
+            {
+                Debug.LogError($"MO001: {Base.Name} initialized with no moves.");
+            }
+
             Exp = Base.GetExpForLevel(Level);
             StatusChanges = new Queue<string>();
             CalculateStats();
@@ -238,6 +244,7 @@ namespace Itsdits.Ravar.Monster {
             float d = a * move.Base.Power * ((float)attack / defense) + 2;
             int damage = Mathf.FloorToInt(d * modifiers);
 
+            Debug.Log($"Damage was {damage}.");
             UpdateHP(damage);
             return damageDetails;
         }
@@ -250,12 +257,17 @@ namespace Itsdits.Ravar.Monster {
         {
             if (Moves.Count > MonsterBase.MaxNumberOfMoves)
             {
+                Debug.LogError("MO002: Move count maxed. Attempt to add failed.");
                 return;
             }
 
             Moves.Add(new MoveObj(newMove.Base));
         }
 
+        /// <summary>
+        /// Forget a move to make space for a new one.
+        /// </summary>
+        /// <param name="oldMove">Move to forget</param>
         public void ForgetMove(MoveObj oldMove)
         {
             Moves.Remove(oldMove);
@@ -276,9 +288,17 @@ namespace Itsdits.Ravar.Monster {
         /// <returns>Move to use</returns>
         public MoveObj GetRandomMove()
         {
-            var usableMoves = Moves.Where(m => m.Energy > 0).ToList(); //TODO - handle case with no usable moves
-            int i = UnityEngine.Random.Range(0, usableMoves.Count);
-            return usableMoves[i];
+            var usableMoves = Moves.Where(m => m.Energy > 0).ToList();
+            if (usableMoves.Count > 0)
+            {
+                int i = UnityEngine.Random.Range(0, usableMoves.Count);
+                return usableMoves[i];
+            }
+            else
+            {
+                Debug.LogError($"MO003: {Base.Name} has no usable moves. Escaping battle sequence to recover.");
+                return null;
+            }
         }
 
         /// <summary>

@@ -23,7 +23,12 @@ namespace Itsdits.Ravar.Monster {
         /// <returns>Next monster to fight with</returns>
         public MonsterObj GetHealthyMonster()
         {
-            return monsters.Where(x => x.CurrentHp > 0).FirstOrDefault();
+            var healthyMonster = monsters.Where(x => x.CurrentHp > 0).FirstOrDefault();
+            if (healthyMonster == null)
+            {
+                Debug.LogError("MP001: GetHealthyMonster returned null MonsterObj.");
+            }
+            return healthyMonster;
         }
 
         /// <summary>

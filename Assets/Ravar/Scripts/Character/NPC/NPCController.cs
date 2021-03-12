@@ -78,7 +78,8 @@ namespace Itsdits.Ravar.Character.NPC {
                 }
                 else
                 { 
-                    // Avoid an exception if there's no dialog to show.
+                    // Error if there's no dialog to show.
+                    Debug.LogError($"NC001: {Name} doesn't have interaction dialog.");
                     idleTimer = 0f;
 
                     state = NPCState.Idle;

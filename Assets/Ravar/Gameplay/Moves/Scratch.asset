@@ -15,7 +15,7 @@ MonoBehaviour:
   _name: Scratch
   description: Scratches the opponent.
   power: 40
-  accuracy: 100
+  accuracy: 95
   energy: 35
   priority: 0
   alwaysHits: 0

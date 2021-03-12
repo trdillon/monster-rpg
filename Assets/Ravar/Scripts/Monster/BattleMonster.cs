@@ -21,6 +21,10 @@ namespace Itsdits.Ravar.Monster {
         private void Awake()
         {
             image = GetComponent<Image>();
+            if (image == null)
+            {
+                Debug.LogError($"BM001: {Monster.Base.Name} missing Image.");
+            }
             originalPos = image.transform.localPosition;
             originalColor = image.color;
         }
@@ -40,6 +44,11 @@ namespace Itsdits.Ravar.Monster {
             else
             {
                 image.sprite = Monster.Base.RightSprite;
+            }
+            
+            if (image.sprite == null)
+            {
+                Debug.LogError($"BM002: {Monster.Base.Name} missing sprite.");
             }
 
             hud.gameObject.SetActive(true);

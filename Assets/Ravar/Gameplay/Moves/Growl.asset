@@ -15,7 +15,7 @@ MonoBehaviour:
   _name: Growl
   description: Growls at the opponent, lowering their Attack.
   power: 0
-  accuracy: 100
+  accuracy: 95
   energy: 40
   priority: 0
   alwaysHits: 0
