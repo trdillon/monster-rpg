@@ -178,8 +178,8 @@ TextureImporter:
       name: ErrorChar_WalkDown_1
       rect:
         serializedVersion: 2
-        x: 35
-        y: 48
+        x: 303
+        y: 13
         width: 32
         height: 50
       alignment: 9
@@ -199,8 +199,8 @@ TextureImporter:
       name: ErrorChar_WalkDown_2
       rect:
         serializedVersion: 2
-        x: 69
-        y: 150
+        x: 270
+        y: 12
         width: 31
         height: 51
       alignment: 9
@@ -220,8 +220,8 @@ TextureImporter:
       name: ErrorChar_WalkDown_3
       rect:
         serializedVersion: 2
-        x: 35
-        y: 100
+        x: 236
+        y: 13
         width: 32
         height: 50
       alignment: 9
@@ -241,8 +241,8 @@ TextureImporter:
       name: ErrorChar_WalkDown_4
       rect:
         serializedVersion: 2
-        x: 34
-        y: 152
+        x: 203
+        y: 12
         width: 31
         height: 51
       alignment: 9
@@ -262,8 +262,8 @@ TextureImporter:
       name: ErrorChar_WalkLeft_1
       rect:
         serializedVersion: 2
-        x: 101
-        y: 44
+        x: 479
+        y: 12
         width: 23
         height: 51
       alignment: 9
@@ -283,8 +283,8 @@ TextureImporter:
       name: ErrorChar_WalkLeft_2
       rect:
         serializedVersion: 2
-        x: 71
-        y: 203
+        x: 171
+        y: 11
         width: 30
         height: 52
       alignment: 9
@@ -305,7 +305,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 201
+        y: 9
         width: 33
         height: 54
       alignment: 9
@@ -325,8 +325,8 @@ TextureImporter:
       name: ErrorChar_WalkLeft_4
       rect:
         serializedVersion: 2
-        x: 69
-        y: 45
+        x: 369
+        y: 13
         width: 30
         height: 50
       alignment: 9
@@ -346,8 +346,8 @@ TextureImporter:
       name: ErrorChar_WalkRight_1
       rect:
         serializedVersion: 2
-        x: 102
-        y: 150
+        x: 454
+        y: 12
         width: 23
         height: 51
       alignment: 9
@@ -367,8 +367,8 @@ TextureImporter:
       name: ErrorChar_WalkRight_2
       rect:
         serializedVersion: 2
-        x: 103
-        y: 205
+        x: 428
+        y: 13
         width: 24
         height: 50
       alignment: 9
@@ -388,8 +388,8 @@ TextureImporter:
       name: ErrorChar_WalkRight_3
       rect:
         serializedVersion: 2
-        x: 101
-        y: 97
+        x: 401
+        y: 12
         width: 25
         height: 51
       alignment: 9
@@ -409,8 +409,8 @@ TextureImporter:
       name: ErrorChar_WalkRight_4
       rect:
         serializedVersion: 2
-        x: 69
-        y: 97
+        x: 337
+        y: 12
         width: 30
         height: 51
       alignment: 9
@@ -430,8 +430,8 @@ TextureImporter:
       name: ErrorChar_WalkUp_1
       rect:
         serializedVersion: 2
-        x: 37
-        y: 205
+        x: 137
+        y: 13
         width: 32
         height: 50
       alignment: 9
@@ -451,8 +451,8 @@ TextureImporter:
       name: ErrorChar_WalkUp_2
       rect:
         serializedVersion: 2
-        x: 1
-        y: 43
+        x: 104
+        y: 12
         width: 31
         height: 51
       alignment: 9
@@ -472,8 +472,8 @@ TextureImporter:
       name: ErrorChar_WalkUp_3
       rect:
         serializedVersion: 2
-        x: 1
-        y: 96
+        x: 70
+        y: 13
         width: 32
         height: 50
       alignment: 9
@@ -493,8 +493,8 @@ TextureImporter:
       name: ErrorChar_WalkUp_4
       rect:
         serializedVersion: 2
-        x: 1
-        y: 148
+        x: 37
+        y: 12
         width: 31
         height: 51
       alignment: 9

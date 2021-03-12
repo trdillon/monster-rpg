@@ -3,53 +3,53 @@ guid: 3506cc3f189d48e43857fe5de5377705
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 880231291406045695
+      213: 6880106066347363494
     second: Gus_WalkDown_1
   - first:
-      213: -4101229301456021584
+      213: 7043424265637019423
     second: Gus_WalkDown_2
   - first:
-      213: 3698387406507301872
+      213: -2728185000789194573
     second: Gus_WalkDown_3
   - first:
-      213: -3505928669650504026
+      213: -7807768915777069421
     second: Gus_WalkDown_4
   - first:
-      213: 4907542694546458950
-    second: Gus_WalkUp_1
-  - first:
-      213: -8295987082180297689
-    second: Gus_WalkUp_2
-  - first:
-      213: 4189663924183455587
-    second: Gus_WalkUp_3
-  - first:
-      213: 966471145356176990
-    second: Gus_WalkUp_4
-  - first:
-      213: 3967475003460924831
+      213: 4077813123382603658
     second: Gus_WalkLeft_1
   - first:
-      213: 1510101942682237580
+      213: -1144836526775691145
     second: Gus_WalkLeft_2
   - first:
-      213: 4895899671705142651
+      213: 4458126402215533323
     second: Gus_WalkLeft_3
   - first:
-      213: -6532461562134943205
+      213: -38661143099410241
     second: Gus_WalkLeft_4
   - first:
-      213: -8278551886045786360
+      213: 602412270622008770
     second: Gus_WalkRight_1
   - first:
-      213: -5687298332529069498
+      213: -3498215985219692332
     second: Gus_WalkRight_2
   - first:
-      213: 3168402398906451873
+      213: -8298758271269835812
     second: Gus_WalkRight_3
   - first:
-      213: -7246388641585605614
+      213: -1215864531162703678
     second: Gus_WalkRight_4
+  - first:
+      213: 1984274074597376859
+    second: Gus_WalkUp_1
+  - first:
+      213: -1004087566571085604
+    second: Gus_WalkUp_2
+  - first:
+      213: -171401209409012032
+    second: Gus_WalkUp_3
+  - first:
+      213: -695948494391888588
+    second: Gus_WalkUp_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -178,8 +178,8 @@ TextureImporter:
       name: Gus_WalkDown_1
       rect:
         serializedVersion: 2
-        x: 36
-        y: 19
+        x: 108
+        y: 11
         width: 32
         height: 52
       alignment: 9
@@ -189,8 +189,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ff1d07422b5373c00800000000000000
-      internalID: 880231291406045695
+      spriteID: 6ac05a5d30c0b7f50800000000000000
+      internalID: 6880106066347363494
       vertices: []
       indices: 
       edges: []
@@ -200,7 +200,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 73
+        y: 9
         width: 35
         height: 54
       alignment: 9
@@ -210,8 +210,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0b75a48fda18517c0800000000000000
-      internalID: -4101229301456021584
+      spriteID: f1f39ab4d054fb160800000000000000
+      internalID: 7043424265637019423
       vertices: []
       indices: 
       edges: []
@@ -220,8 +220,8 @@ TextureImporter:
       name: Gus_WalkDown_3
       rect:
         serializedVersion: 2
-        x: 38
-        y: 75
+        x: 74
+        y: 11
         width: 32
         height: 52
       alignment: 9
@@ -231,8 +231,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0fb55a650cf435330800000000000000
-      internalID: 3698387406507301872
+      spriteID: 3b84962423a832ad0800000000000000
+      internalID: -2728185000789194573
       vertices: []
       indices: 
       edges: []
@@ -241,8 +241,8 @@ TextureImporter:
       name: Gus_WalkDown_4
       rect:
         serializedVersion: 2
-        x: 70
-        y: 21
+        x: 142
+        y: 11
         width: 31
         height: 52
       alignment: 9
@@ -252,92 +252,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6a6bf9d3370785fc0800000000000000
-      internalID: -3505928669650504026
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Gus_WalkUp_1
-      rect:
-        serializedVersion: 2
-        x: 162
-        y: 24
-        width: 32
-        height: 50
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 649418454181b1440800000000000000
-      internalID: 4907542694546458950
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Gus_WalkUp_2
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 76
-        width: 31
-        height: 51
-      alignment: 9
-      pivot: {x: 0.516129, y: 0.627451}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 72cf969e3bbbedc80800000000000000
-      internalID: -8295987082180297689
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Gus_WalkUp_3
-      rect:
-        serializedVersion: 2
-        x: 186
-        y: 77
-        width: 32
-        height: 50
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3675939242da42a30800000000000000
-      internalID: 4189663924183455587
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Gus_WalkUp_4
-      rect:
-        serializedVersion: 2
-        x: 103
-        y: 23
-        width: 31
-        height: 51
-      alignment: 9
-      pivot: {x: 0.48387095, y: 0.627451}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e5eae98d268996d00800000000000000
-      internalID: 966471145356176990
+      spriteID: 39e55c6d98b35a390800000000000000
+      internalID: -7807768915777069421
       vertices: []
       indices: 
       edges: []
@@ -346,8 +262,8 @@ TextureImporter:
       name: Gus_WalkLeft_1
       rect:
         serializedVersion: 2
-        x: 160
-        y: 76
+        x: 422
+        y: 12
         width: 24
         height: 51
       alignment: 9
@@ -357,8 +273,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f95b78cbe7d4f0730800000000000000
-      internalID: 3967475003460924831
+      spriteID: a8f65a73e6d479830800000000000000
+      internalID: 4077813123382603658
       vertices: []
       indices: 
       edges: []
@@ -367,8 +283,8 @@ TextureImporter:
       name: Gus_WalkLeft_2
       rect:
         serializedVersion: 2
-        x: 196
-        y: 25
+        x: 474
+        y: 13
         width: 24
         height: 50
       alignment: 9
@@ -378,8 +294,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c8ab33c47b5f4f410800000000000000
-      internalID: 1510101942682237580
+      spriteID: 77894a79e39bc10f0800000000000000
+      internalID: -1144836526775691145
       vertices: []
       indices: 
       edges: []
@@ -388,8 +304,8 @@ TextureImporter:
       name: Gus_WalkLeft_3
       rect:
         serializedVersion: 2
-        x: 133
-        y: 76
+        x: 369
+        y: 12
         width: 25
         height: 51
       alignment: 9
@@ -399,8 +315,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b75cfe3dfcab1f340800000000000000
-      internalID: 4895899671705142651
+      spriteID: b0bd8d7b7527edd30800000000000000
+      internalID: 4458126402215533323
       vertices: []
       indices: 
       edges: []
@@ -409,8 +325,8 @@ TextureImporter:
       name: Gus_WalkLeft_4
       rect:
         serializedVersion: 2
-        x: 220
-        y: 77
+        x: 309
+        y: 13
         width: 30
         height: 50
       alignment: 9
@@ -420,8 +336,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b1aad08d1d80855a0800000000000000
-      internalID: -6532461562134943205
+      spriteID: fb8f2fa25e5a67ff0800000000000000
+      internalID: -38661143099410241
       vertices: []
       indices: 
       edges: []
@@ -430,8 +346,8 @@ TextureImporter:
       name: Gus_WalkRight_1
       rect:
         serializedVersion: 2
-        x: 136
-        y: 23
+        x: 396
+        y: 12
         width: 24
         height: 51
       alignment: 9
@@ -441,8 +357,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 80fc999dbecac1d80800000000000000
-      internalID: -8278551886045786360
+      spriteID: 2c5e2c6b4c23c5800800000000000000
+      internalID: 602412270622008770
       vertices: []
       indices: 
       edges: []
@@ -451,8 +367,8 @@ TextureImporter:
       name: Gus_WalkRight_2
       rect:
         serializedVersion: 2
-        x: 222
-        y: 25
+        x: 448
+        y: 13
         width: 24
         height: 50
       alignment: 9
@@ -462,8 +378,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 642fee59c48a211b0800000000000000
-      internalID: -5687298332529069498
+      spriteID: 4d813658817d37fc0800000000000000
+      internalID: -3498215985219692332
       vertices: []
       indices: 
       edges: []
@@ -472,8 +388,8 @@ TextureImporter:
       name: Gus_WalkRight_3
       rect:
         serializedVersion: 2
-        x: 105
-        y: 76
+        x: 341
+        y: 12
         width: 26
         height: 51
       alignment: 9
@@ -483,8 +399,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1a78054e13d68fb20800000000000000
-      internalID: 3168402398906451873
+      spriteID: cdb602c2253e4dc80800000000000000
+      internalID: -8298758271269835812
       vertices: []
       indices: 
       edges: []
@@ -493,8 +409,8 @@ TextureImporter:
       name: Gus_WalkRight_4
       rect:
         serializedVersion: 2
-        x: 1
-        y: 19
+        x: 39
+        y: 11
         width: 33
         height: 52
       alignment: 9
@@ -504,8 +420,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2145dd96ce7af6b90800000000000000
-      internalID: -7246388641585605614
+      spriteID: 2c8dc0d96a1602fe0800000000000000
+      internalID: -1215864531162703678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gus_WalkUp_1
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 13
+        width: 32
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b53c469f1ce898b10800000000000000
+      internalID: 1984274074597376859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gus_WalkUp_2
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 12
+        width: 31
+        height: 51
+      alignment: 9
+      pivot: {x: 0.516129, y: 0.627451}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd0e4279da3c012f0800000000000000
+      internalID: -1004087566571085604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gus_WalkUp_3
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 13
+        width: 32
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ce7a17128f0f9df0800000000000000
+      internalID: -171401209409012032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gus_WalkUp_4
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 12
+        width: 31
+        height: 51
+      alignment: 9
+      pivot: {x: 0.48387095, y: 0.627451}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 435bdc9188e7756f0800000000000000
+      internalID: -695948494391888588
       vertices: []
       indices: 
       edges: []
@@ -513,7 +513,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: a6906a546ccc5de419bef351323f9509
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 

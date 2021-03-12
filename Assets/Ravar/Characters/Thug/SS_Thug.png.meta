@@ -3,53 +3,53 @@ guid: fac3a8e0619de344f911ade53c2c7e0d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8279891041327275569
+      213: 9203190426823913726
     second: Thug_WalkDown_1
   - first:
-      213: -4196845079734034598
+      213: -3112702456019868428
     second: Thug_WalkDown_2
   - first:
-      213: 1402613840194353149
+      213: 17607925997675694
     second: Thug_WalkDown_3
   - first:
-      213: -4151096803586869099
+      213: -295348435538743799
     second: Thug_WalkDown_4
   - first:
-      213: 1506054971702264442
-    second: Thug_WalkUp_1
-  - first:
-      213: -6138626906724651156
-    second: Thug_WalkUp_2
-  - first:
-      213: -6025518513204739913
-    second: Thug_WalkUp_3
-  - first:
-      213: -6216198179717294723
-    second: Thug_WalkUp_4
-  - first:
-      213: 5571188764390211417
+      213: 6275807532473927839
     second: Thug_WalkLeft_1
   - first:
-      213: 8472100186418374955
+      213: 1297297005751987023
     second: Thug_WalkLeft_2
   - first:
-      213: -8555632424041126305
+      213: 4731463970231361080
     second: Thug_WalkLeft_3
   - first:
-      213: -4894170727579469988
+      213: 5199812675745135234
     second: Thug_WalkLeft_4
   - first:
-      213: 4731533213457939685
+      213: 7307073697307674826
     second: Thug_WalkRight_1
   - first:
-      213: -8548217009676704590
+      213: 4953959441835672828
     second: Thug_WalkRight_2
   - first:
-      213: -6709117376253479263
+      213: 9015202079502119354
     second: Thug_WalkRight_3
   - first:
-      213: -3071435449043004934
+      213: 8620350979297695334
     second: Thug_WalkRight_4
+  - first:
+      213: -1298282952907873042
+    second: Thug_WalkUp_1
+  - first:
+      213: -9143101423193165250
+    second: Thug_WalkUp_2
+  - first:
+      213: -8007813177735966891
+    second: Thug_WalkUp_3
+  - first:
+      213: 8383383784888230626
+    second: Thug_WalkUp_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -189,8 +189,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 13e5049880518e270800000000000000
-      internalID: 8279891041327275569
+      spriteID: ef07d1fbeec48bf70800000000000000
+      internalID: 9203190426823913726
       vertices: []
       indices: 
       edges: []
@@ -210,8 +210,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a5f5b15c2afc1c5c0800000000000000
-      internalID: -4196845079734034598
+      spriteID: 4f42379ab957dc4d0800000000000000
+      internalID: -3112702456019868428
       vertices: []
       indices: 
       edges: []
@@ -231,8 +231,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: df7b4d53bd5177310800000000000000
-      internalID: 1402613840194353149
+      spriteID: ea4a25eb05e8e3000800000000000000
+      internalID: 17607925997675694
       vertices: []
       indices: 
       edges: []
@@ -252,92 +252,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 598f1f953775466c0800000000000000
-      internalID: -4151096803586869099
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Thug_WalkUp_1
-      rect:
-        serializedVersion: 2
-        x: 289
-        y: 10
-        width: 32
-        height: 53
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5660377}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a724680740596e410800000000000000
-      internalID: 1506054971702264442
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Thug_WalkUp_2
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 5
-        width: 37
-        height: 58
-      alignment: 9
-      pivot: {x: 0.43243244, y: 0.55172414}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c6fa5082a573fcaa0800000000000000
-      internalID: -6138626906724651156
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Thug_WalkUp_3
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 10
-        width: 32
-        height: 53
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5660377}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7b044e836de016ca0800000000000000
-      internalID: -6025518513204739913
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Thug_WalkUp_4
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 5
-        width: 38
-        height: 58
-      alignment: 9
-      pivot: {x: 0.42105263, y: 0.55172414}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d75558cb0b0abb9a0800000000000000
-      internalID: -6216198179717294723
+      spriteID: 90eeeb6a926b6ebf0800000000000000
+      internalID: -295348435538743799
       vertices: []
       indices: 
       edges: []
@@ -346,7 +262,7 @@ TextureImporter:
       name: Thug_WalkLeft_1
       rect:
         serializedVersion: 2
-        x: 465
+        x: 489
         y: 10
         width: 22
         height: 53
@@ -357,8 +273,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 95f302ee9a6d05d40800000000000000
-      internalID: 5571188764390211417
+      spriteID: f9844db33b5281750800000000000000
+      internalID: 6275807532473927839
       vertices: []
       indices: 
       edges: []
@@ -378,8 +294,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b29ecf08b32f29570800000000000000
-      internalID: 8472100186418374955
+      spriteID: f4b660cd0cce00210800000000000000
+      internalID: 1297297005751987023
       vertices: []
       indices: 
       edges: []
@@ -399,8 +315,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f56e638d3a9444980800000000000000
-      internalID: -8555632424041126305
+      spriteID: 83e133d996989a140800000000000000
+      internalID: 4731463970231361080
       vertices: []
       indices: 
       edges: []
@@ -420,8 +336,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c57b28857a9641cb0800000000000000
-      internalID: -4894170727579469988
+      spriteID: 28abc5c2412792840800000000000000
+      internalID: 5199812675745135234
       vertices: []
       indices: 
       edges: []
@@ -430,7 +346,7 @@ TextureImporter:
       name: Thug_WalkRight_1
       rect:
         serializedVersion: 2
-        x: 488
+        x: 465
         y: 10
         width: 22
         height: 53
@@ -441,8 +357,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5ec7f1f8368c9a140800000000000000
-      internalID: 4731533213457939685
+      spriteID: ac8cf9b20d0f76560800000000000000
+      internalID: 7307073697307674826
       vertices: []
       indices: 
       edges: []
@@ -462,8 +378,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2b4a44b8be1ae5980800000000000000
-      internalID: -8548217009676704590
+      spriteID: cf4ce4a7ddfffb440800000000000000
+      internalID: 4953959441835672828
       vertices: []
       indices: 
       edges: []
@@ -483,8 +399,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1a6b200fa4d64e2a0800000000000000
-      internalID: -6709117376253479263
+      spriteID: ab13617d68e6c1d70800000000000000
+      internalID: 9015202079502119354
       vertices: []
       indices: 
       edges: []
@@ -504,8 +420,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: af1df357bb11065d0800000000000000
-      internalID: -3071435449043004934
+      spriteID: 666da380b83a1a770800000000000000
+      internalID: 8620350979297695334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thug_WalkUp_1
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 10
+        width: 32
+        height: 53
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5660377}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee42bfd68829bfde0800000000000000
+      internalID: -1298282952907873042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thug_WalkUp_2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 5
+        width: 37
+        height: 58
+      alignment: 9
+      pivot: {x: 0.43243244, y: 0.55172414}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e32f335a2bd2d1180800000000000000
+      internalID: -9143101423193165250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thug_WalkUp_3
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 10
+        width: 32
+        height: 53
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5660377}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55f0b5197588ed090800000000000000
+      internalID: -8007813177735966891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thug_WalkUp_4
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 5
+        width: 38
+        height: 58
+      alignment: 9
+      pivot: {x: 0.42105263, y: 0.55172414}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e26802a223c75470800000000000000
+      internalID: 8383383784888230626
       vertices: []
       indices: 
       edges: []
@@ -513,7 +513,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: a62fe6ba3ff13ea46a08d739837b951f
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 

@@ -3,53 +3,53 @@ guid: ef2e719d76616104daee2fcdf3599f51
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 949774158526358821
+      213: -575014584925532753
     second: Karen_WalkDown_1
   - first:
-      213: -3637778463231195592
+      213: 3529267711922181478
     second: Karen_WalkDown_2
   - first:
-      213: 2384649965088593961
+      213: 7349192775438490060
     second: Karen_WalkDown_3
   - first:
-      213: -7514074729311698958
+      213: 5697222345614460755
     second: Karen_WalkDown_4
   - first:
-      213: 8491483722219407288
-    second: Karen_WalkUp_1
-  - first:
-      213: 983069083194977514
-    second: Karen_WalkUp_2
-  - first:
-      213: -8949221876696129054
-    second: Karen_WalkUp_3
-  - first:
-      213: 7555117688024648071
-    second: Karen_WalkUp_4
-  - first:
-      213: 4985574267327464659
+      213: 8934204463818766685
     second: Karen_WalkLeft_1
   - first:
-      213: 3082958067603979584
+      213: 6963725935969964441
     second: Karen_WalkLeft_2
   - first:
-      213: 6059023479337369377
+      213: -8392038969360310465
     second: Karen_WalkLeft_3
   - first:
-      213: 7218835162312934348
+      213: 6883089480028302622
     second: Karen_WalkLeft_4
   - first:
-      213: -5155363922512033370
+      213: 761268188398434187
     second: Karen_WalkRight_1
   - first:
-      213: -6532161045843136328
+      213: -2656357535290267789
     second: Karen_WalkRight_2
   - first:
-      213: -8253415841752514641
+      213: -6629258661648740202
     second: Karen_WalkRight_3
   - first:
-      213: -6968198509380877110
+      213: -8985881150677771417
     second: Karen_WalkRight_4
+  - first:
+      213: 5570166229123304481
+    second: Karen_WalkUp_1
+  - first:
+      213: 6025567410684755090
+    second: Karen_WalkUp_2
+  - first:
+      213: -8714307281301697960
+    second: Karen_WalkUp_3
+  - first:
+      213: 7687954023294890946
+    second: Karen_WalkUp_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -178,8 +178,8 @@ TextureImporter:
       name: Karen_WalkDown_1
       rect:
         serializedVersion: 2
-        x: 1
-        y: 25
+        x: 67
+        y: 13
         width: 30
         height: 50
       alignment: 9
@@ -189,8 +189,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5252fc7a0964e2d00800000000000000
-      internalID: 949774158526358821
+      spriteID: fad48d418432508f0800000000000000
+      internalID: -575014584925532753
       vertices: []
       indices: 
       edges: []
@@ -199,8 +199,8 @@ TextureImporter:
       name: Karen_WalkDown_2
       rect:
         serializedVersion: 2
-        x: 35
-        y: 77
+        x: 255
+        y: 13
         width: 28
         height: 50
       alignment: 9
@@ -210,8 +210,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 836c98fe2c3048dc0800000000000000
-      internalID: -3637778463231195592
+      spriteID: 665906ef84a7af030800000000000000
+      internalID: 3529267711922181478
       vertices: []
       indices: 
       edges: []
@@ -220,8 +220,8 @@ TextureImporter:
       name: Karen_WalkDown_3
       rect:
         serializedVersion: 2
-        x: 33
-        y: 25
+        x: 35
+        y: 13
         width: 30
         height: 50
       alignment: 9
@@ -231,8 +231,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 928d0c2428af71120800000000000000
-      internalID: 2384649965088593961
+      spriteID: cc9d0ed34e39df560800000000000000
+      internalID: 7349192775438490060
       vertices: []
       indices: 
       edges: []
@@ -241,8 +241,8 @@ TextureImporter:
       name: Karen_WalkDown_4
       rect:
         serializedVersion: 2
-        x: 65
-        y: 77
+        x: 225
+        y: 13
         width: 28
         height: 50
       alignment: 9
@@ -252,92 +252,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2fff2af48d4a8b790800000000000000
-      internalID: -7514074729311698958
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Karen_WalkUp_1
-      rect:
-        serializedVersion: 2
-        x: 120
-        y: 78
-        width: 30
-        height: 49
-      alignment: 9
-      pivot: {x: 0.5, y: 0.63265306}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8b746ee947fc7d570800000000000000
-      internalID: 8491483722219407288
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Karen_WalkUp_2
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 77
-        width: 32
-        height: 50
-      alignment: 9
-      pivot: {x: 0.5, y: 0.64}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: aec61856f1094ad00800000000000000
-      internalID: 983069083194977514
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Karen_WalkUp_3
-      rect:
-        serializedVersion: 2
-        x: 142
-        y: 27
-        width: 30
-        height: 49
-      alignment: 9
-      pivot: {x: 0.5, y: 0.63265306}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2e16f5f3e1afdc380800000000000000
-      internalID: -8949221876696129054
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Karen_WalkUp_4
-      rect:
-        serializedVersion: 2
-        x: 183
-        y: 78
-        width: 28
-        height: 49
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6530612}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 789cafe228b29d860800000000000000
-      internalID: 7555117688024648071
+      spriteID: 35784c4c989901f40800000000000000
+      internalID: 5697222345614460755
       vertices: []
       indices: 
       edges: []
@@ -346,8 +262,8 @@ TextureImporter:
       name: Karen_WalkLeft_1
       rect:
         serializedVersion: 2
-        x: 117
-        y: 25
+        x: 392
+        y: 13
         width: 23
         height: 50
       alignment: 9
@@ -357,8 +273,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3d4c165a161503540800000000000000
-      internalID: 4985574267327464659
+      spriteID: d5970a8df9bacfb70800000000000000
+      internalID: 8934204463818766685
       vertices: []
       indices: 
       edges: []
@@ -367,8 +283,8 @@ TextureImporter:
       name: Karen_WalkLeft_2
       rect:
         serializedVersion: 2
-        x: 213
-        y: 78
+        x: 417
+        y: 14
         width: 23
         height: 49
       alignment: 9
@@ -378,8 +294,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 04db5fc370ed8ca20800000000000000
-      internalID: 3082958067603979584
+      spriteID: 9911aa6e7df14a060800000000000000
+      internalID: 6963725935969964441
       vertices: []
       indices: 
       edges: []
@@ -388,8 +304,8 @@ TextureImporter:
       name: Karen_WalkLeft_3
       rect:
         serializedVersion: 2
-        x: 65
-        y: 25
+        x: 341
+        y: 13
         width: 24
         height: 50
       alignment: 9
@@ -399,8 +315,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 12fb7ab90c9f51450800000000000000
-      internalID: 6059023479337369377
+      spriteID: f3f1b02350d798b80800000000000000
+      internalID: -8392038969360310465
       vertices: []
       indices: 
       edges: []
@@ -409,8 +325,8 @@ TextureImporter:
       name: Karen_WalkLeft_4
       rect:
         serializedVersion: 2
-        x: 152
-        y: 78
+        x: 194
+        y: 14
         width: 29
         height: 49
       alignment: 9
@@ -420,8 +336,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cc303c545547e2460800000000000000
-      internalID: 7218835162312934348
+      spriteID: e1da056f965a58f50800000000000000
+      internalID: 6883089480028302622
       vertices: []
       indices: 
       edges: []
@@ -430,8 +346,8 @@ TextureImporter:
       name: Karen_WalkRight_1
       rect:
         serializedVersion: 2
-        x: 95
-        y: 77
+        x: 367
+        y: 13
         width: 23
         height: 50
       alignment: 9
@@ -441,8 +357,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6a94ec6a3d77478b0800000000000000
-      internalID: -5155363922512033370
+      spriteID: b873b4c4261909a00800000000000000
+      internalID: 761268188398434187
       vertices: []
       indices: 
       edges: []
@@ -451,8 +367,8 @@ TextureImporter:
       name: Karen_WalkRight_2
       rect:
         serializedVersion: 2
-        x: 205
-        y: 28
+        x: 442
+        y: 15
         width: 22
         height: 48
       alignment: 9
@@ -462,8 +378,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8b030ee332a1955a0800000000000000
-      internalID: -6532161045843136328
+      spriteID: 377679845e8b22bd0800000000000000
+      internalID: -2656357535290267789
       vertices: []
       indices: 
       edges: []
@@ -472,8 +388,8 @@ TextureImporter:
       name: Karen_WalkRight_3
       rect:
         serializedVersion: 2
-        x: 91
-        y: 25
+        x: 315
+        y: 13
         width: 24
         height: 50
       alignment: 9
@@ -483,8 +399,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: faf72c8350af57d80800000000000000
-      internalID: -8253415841752514641
+      spriteID: 690de3cde542004a0800000000000000
+      internalID: -6629258661648740202
       vertices: []
       indices: 
       edges: []
@@ -493,8 +409,8 @@ TextureImporter:
       name: Karen_WalkRight_4
       rect:
         serializedVersion: 2
-        x: 174
-        y: 27
+        x: 163
+        y: 14
         width: 29
         height: 49
       alignment: 9
@@ -504,8 +420,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ac442f3ff5cfb4f90800000000000000
-      internalID: -6968198509380877110
+      spriteID: 76b19f3e3bcbb4380800000000000000
+      internalID: -8985881150677771417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen_WalkUp_1
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 14
+        width: 30
+        height: 49
+      alignment: 9
+      pivot: {x: 0.5, y: 0.63265306}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12c85c26ca43d4d40800000000000000
+      internalID: 5570166229123304481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen_WalkUp_2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 13
+        width: 32
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29cf80c92ad1f9350800000000000000
+      internalID: 6025567410684755090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen_WalkUp_3
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 14
+        width: 30
+        height: 49
+      alignment: 9
+      pivot: {x: 0.5, y: 0.63265306}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85a8962b2bf801780800000000000000
+      internalID: -8714307281301697960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen_WalkUp_4
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 14
+        width: 28
+        height: 49
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6530612}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c3f600a37911ba60800000000000000
+      internalID: 7687954023294890946
       vertices: []
       indices: 
       edges: []
