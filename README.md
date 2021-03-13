@@ -1,5 +1,8 @@
 # RavaR
 
+![RavaR-Logo-300x250](https://user-images.githubusercontent.com/26350151/111030359-239c7c80-8445-11eb-8e8d-f1d71a5a2752.png)
+
+
 RavaR is a 2D monster catching RPG game made with Unity and C#.
 
 ## Table of Contents
@@ -50,9 +53,11 @@ Future Versions
 
 ## Contributing
 
-Contributions are always welcome! Please read our [Contributing Guide](https://github.com/trdillon/monster-rpg/blob/master/CONTRIBUTING.md) to get started.
+Contributions are always welcome! Please read our [Contributing Guide](https://github.com/trdillon/ravar/blob/master/CONTRIBUTING.md) to get started.
 
-[Check out our issues](https://github.com/trdillon/monster-rpg/issues) or create a new one.
+[Check out our issues](https://github.com/trdillon/ravar/issues) or create a new one.
+
+Please [check the style guide](https://github.com/trdillon/ravar/blob/master/Docs/style_guide.md) before contributing to help the project stay consistent.
 
 ## License
 
