@@ -435,10 +435,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monsters:
-  - _base: {fileID: 11400000, guid: 037162b05ccdadf43a507fd23d5b7d64, type: 2}
-    level: 7
   - _base: {fileID: 11400000, guid: 08fe71a8bca62d0468ada7da52ccd5a7, type: 2}
     level: 8
+  - _base: {fileID: 11400000, guid: 037162b05ccdadf43a507fd23d5b7d64, type: 2}
+    level: 7
   - _base: {fileID: 11400000, guid: 875c84c591e13614ca6291675fe33305, type: 2}
     level: 4
   - _base: {fileID: 11400000, guid: 875c84c591e13614ca6291675fe33305, type: 2}
@@ -12852,7 +12852,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4234512495102130393, guid: 9011473ac612dc7459683113ba4d8e02, type: 3}
       propertyPath: monsters.Array.size
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4234512495102130393, guid: 9011473ac612dc7459683113ba4d8e02, type: 3}
       propertyPath: monsters.Array.data[0]._base
@@ -12865,7 +12865,7 @@ PrefabInstance:
     - target: {fileID: 4234512495102130393, guid: 9011473ac612dc7459683113ba4d8e02, type: 3}
       propertyPath: monsters.Array.data[1]._base
       value: 
-      objectReference: {fileID: 11400000, guid: 08fe71a8bca62d0468ada7da52ccd5a7, type: 2}
+      objectReference: {fileID: 11400000, guid: 037162b05ccdadf43a507fd23d5b7d64, type: 2}
     - target: {fileID: 4234512495102130393, guid: 9011473ac612dc7459683113ba4d8e02, type: 3}
       propertyPath: monsters.Array.data[1].level
       value: 2
