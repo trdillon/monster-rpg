@@ -69,7 +69,7 @@ namespace Itsdits.Ravar.Character.NPC {
                 character.TurnToInteract(interactChar.position);
                 if (dialog.Strings.Count > 0)
                 {
-                    StartCoroutine(DialogController.Instance.ShowDialog(dialog, () =>
+                    StartCoroutine(DialogController.Instance.ShowDialog(dialog, Name, () =>
                     {
                         idleTimer = 0f;
 

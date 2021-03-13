@@ -9,7 +9,9 @@ namespace Itsdits.Ravar.UI {
         public static DialogController Instance { get; private set; }
 
         [SerializeField] GameObject dialogBox;
+        [SerializeField] GameObject namePlate;
         [SerializeField] Text dialogText;
+        [SerializeField] Text nameText;
         [SerializeField] int lettersPerSecond;
 
         private Dialog dialog;
@@ -33,7 +35,7 @@ namespace Itsdits.Ravar.UI {
         /// <param name="dialog">Dialog to show</param>
         /// <param name="onFinished">What to do after showing</param>
         /// <returns>onFinished</returns>
-        public IEnumerator ShowDialog(Dialog dialog, Action onFinished = null)
+        public IEnumerator ShowDialog(Dialog dialog, string name, Action onFinished = null)
         {
             if (dialog.Strings.Count > 0)
             {
@@ -45,6 +47,7 @@ namespace Itsdits.Ravar.UI {
                 this.dialog = dialog;
                 onDialogFinished = onFinished;
                 dialogBox.SetActive(true);
+                SetNamePlate(name);
                 StartCoroutine(TypeDialog(dialog.Strings[0]));
             }
             else
@@ -95,6 +98,21 @@ namespace Itsdits.Ravar.UI {
                     onDialogFinished?.Invoke();
                     OnCloseDialog?.Invoke();
                 }
+            }
+        }
+
+        private void SetNamePlate(string name)
+        {
+            if (name != null && name.Length > 1)
+            {
+                nameText.text = name;
+                namePlate.SetActive(true);
+            }
+            else
+            {
+                Debug.LogError("DC002: name null. Displaying error in namePlate.");
+                nameText.text = "Error: DC002";
+                namePlate.SetActive(true);
             }
         }
     }

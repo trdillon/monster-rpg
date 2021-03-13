@@ -15,6 +15,7 @@ namespace Itsdits.Ravar
 
 
         [SerializeField] PlayerController playerController;
+        [SerializeField] DialogController dialogController;
         [SerializeField] BattleSystem battleSystem;
         [SerializeField] Camera worldCamera;
 
