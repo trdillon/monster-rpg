@@ -47,7 +47,7 @@ namespace Itsdits.Ravar.Character.Battler
             {
                 if (!isDefeated)
                 {
-                    StartCoroutine(DialogController.Instance.ShowDialog(introDialog, () =>
+                    StartCoroutine(DialogController.Instance.ShowDialog(introDialog, Name, () =>
                     {
                         GameController.Instance.StartCharBattle(this);
                     }));
@@ -55,7 +55,7 @@ namespace Itsdits.Ravar.Character.Battler
                 else
                 {
                     Debug.Log($"{Name} is set as defeated.");
-                    StartCoroutine(DialogController.Instance.ShowDialog(outroDialog));
+                    StartCoroutine(DialogController.Instance.ShowDialog(outroDialog, Name));
                 }
             }
             else
@@ -89,7 +89,7 @@ namespace Itsdits.Ravar.Character.Battler
             // Show dialog for trash talk then start battle.
             player.Character.TurnToInteract(transform.position);
             if (introDialog.Strings.Count > 0) {
-                yield return DialogController.Instance.ShowDialog(introDialog, () => {
+                yield return DialogController.Instance.ShowDialog(introDialog, Name, () => {
                     GameController.Instance.StartCharBattle(this);
                 });
             }
