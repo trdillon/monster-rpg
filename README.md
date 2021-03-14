@@ -61,4 +61,4 @@ Please [check the style guide](https://github.com/trdillon/ravar/blob/master/Doc
 
 ## License
 
-[MIT](LICENSE)
+[GPLv3](LICENSE)
