@@ -124,11 +124,11 @@ namespace Itsdits.Ravar
             state = GameState.World;
         }
 
-        private void EndBattle(BattleResult result)
+        private void EndBattle(BattleResult result, bool isCharBattle)
         {
             state = GameState.World;
 
-            if (battler == null)
+            if (isCharBattle && battler == null)
             {
                 Debug.LogError("GC005: EndBattle called but battler was null.");
             }
@@ -161,10 +161,6 @@ namespace Itsdits.Ravar
             if (state == GameState.Dialog)
             {
                 state = GameState.World;
-            }
-            else
-            {
-                Debug.Log($"Closing dialog from GameState.{state}.");
             }
         }
     }

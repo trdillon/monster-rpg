@@ -26,7 +26,9 @@ namespace Itsdits.Ravar.Monster {
             var healthyMonster = monsters.Where(x => x.CurrentHp > 0).FirstOrDefault();
             if (healthyMonster == null)
             {
-                Debug.LogError("MP001: GetHealthyMonster returned null MonsterObj.");
+                // This doesn't always indicate an error, a Battler with a downed party will also
+                // return a null MonsterObj here, which is how we determine the battle is over.
+                //Debug.LogError("MP001: GetHealthyMonster returned null MonsterObj.");
             }
             return healthyMonster;
         }

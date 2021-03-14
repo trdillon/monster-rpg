@@ -69,7 +69,7 @@ namespace Itsdits.Ravar.Battle
             StartCoroutine(SetupBattle());
         }
 
-        public event Action<BattleResult> OnBattleOver;
+        public event Action<BattleResult, bool> OnBattleOver;
 
         #region BattleCoroutines
         /// <summary>
@@ -702,7 +702,7 @@ namespace Itsdits.Ravar.Battle
 
             isMonsterDown = false;
             playerParty.Monsters.ForEach(p => p.CleanUpMonster());
-            OnBattleOver(result);
+            OnBattleOver(result, isCharBattle);
         }
 
         #endregion
