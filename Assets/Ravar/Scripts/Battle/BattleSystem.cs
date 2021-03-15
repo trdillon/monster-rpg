@@ -692,7 +692,7 @@ namespace Itsdits.Ravar.Battle
             enemyMonster.gameObject.SetActive(false);
             playerImage.gameObject.SetActive(true);
             battlerImage.gameObject.SetActive(true);
-            playerImage.sprite = player.Sprite;
+            playerImage.sprite = player.BattleSprite;
             battlerImage.sprite = battler.Sprite;
         }
 

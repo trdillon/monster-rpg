@@ -87,7 +87,7 @@ namespace Itsdits.Ravar.Character.Battler
             yield return character.Move(tile);
 
             // Show dialog for trash talk then start battle.
-            player.Character.TurnToInteract(transform.position);
+            //player.Character.TurnToInteract(transform.position);
             if (introDialog.Strings.Count > 0) {
                 yield return DialogController.Instance.ShowDialog(introDialog, Name, () => {
                     GameController.Instance.StartCharBattle(this);
@@ -105,22 +105,22 @@ namespace Itsdits.Ravar.Character.Battler
         /// Rotate the LoS after movement.
         /// </summary>
         /// <param name="direction">Direction to rotate.</param>
-        public void RotateLoS(DefaultDirection direction)
+        public void RotateLoS(Direction direction)
         {
             float angle = 0f;
-            if (direction == DefaultDirection.Down)
+            if (direction == Direction.Down)
             {
                 angle = 0f;
             }
-            else if (direction == DefaultDirection.Up)
+            else if (direction == Direction.Up)
             {
                 angle = 180f;
             }
-            else if (direction == DefaultDirection.Left)
+            else if (direction == Direction.Left)
             {
                 angle = 270f;
             }
-            else if (direction == DefaultDirection.Right)
+            else if (direction == Direction.Right)
             {
                 angle = 90f;
             }
