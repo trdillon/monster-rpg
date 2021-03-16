@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 namespace Itsdits.Ravar.UI { 
     public class DialogController : MonoBehaviour
@@ -83,7 +84,7 @@ namespace Itsdits.Ravar.UI {
         /// </summary>
         public void HandleUpdate()
         {
-            if (Input.GetKeyDown(KeyCode.Z) && !isTyping)
+            if (Keyboard.current.zKey.wasPressedThisFrame && !isTyping)
             {
                 ++currentString;
                 if (currentString < dialog.Strings.Count)

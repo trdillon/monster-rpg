@@ -35,6 +35,7 @@ namespace Itsdits.Ravar.UI.Battle
             nameText.text = monster.Base.Name;
             SetLevel();
             SetExp();
+            Debug.Log($"{monster.Base.Name} has {monster.CurrentHp} / {monster.MaxHp} HP.");
             hpBar.SetHP((float) monster.CurrentHp / monster.MaxHp);
             statusColors = new Dictionary<ConditionID, Color>()
             {

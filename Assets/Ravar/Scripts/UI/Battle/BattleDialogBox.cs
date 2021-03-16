@@ -10,6 +10,7 @@ namespace Itsdits.Ravar.UI.Battle {
         #region config
         [SerializeField] int lettersPerSecond;
         [SerializeField] Color highlightColor;
+        [SerializeField] Color standardColor;
         [SerializeField] Text dialogText;
         [SerializeField] Text energyText;
         [SerializeField] Text typeText;
@@ -62,7 +63,7 @@ namespace Itsdits.Ravar.UI.Battle {
                 }
                 else
                 {
-                    actionTexts[i].color = Color.black;
+                    actionTexts[i].color = standardColor;
                 }
             }
         }
@@ -82,7 +83,7 @@ namespace Itsdits.Ravar.UI.Battle {
                 } 
                 else
                 {
-                    moveTexts[i].color = Color.black;
+                    moveTexts[i].color = standardColor;
                 }
             }
 
@@ -95,7 +96,7 @@ namespace Itsdits.Ravar.UI.Battle {
             }  
             else
             {
-                energyText.color = Color.black;
+                energyText.color = standardColor;
             }   
         }
 
@@ -108,12 +109,12 @@ namespace Itsdits.Ravar.UI.Battle {
             if (yes)
             {
                 yesText.color = highlightColor;
-                noText.color = Color.black;
+                noText.color = standardColor;
             }
             else
             {
                 noText.color = highlightColor;
-                yesText.color = Color.black;
+                yesText.color = standardColor;
             }
             
         }

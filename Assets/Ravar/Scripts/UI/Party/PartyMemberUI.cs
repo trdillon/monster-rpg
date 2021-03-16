@@ -10,6 +10,7 @@ namespace Itsdits.Ravar.UI.Party {
         [SerializeField] Text levelText;
         [SerializeField] HPBar hpBar;
         [SerializeField] Color highlightColor;
+        [SerializeField] Color standardColor;
 
         private MonsterObj _monster;
 
@@ -37,7 +38,7 @@ namespace Itsdits.Ravar.UI.Party {
             }
             else
             {
-                nameText.color = Color.black;
+                nameText.color = standardColor;
             }
         }
     }
