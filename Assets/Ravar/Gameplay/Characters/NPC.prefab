@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 939942729436302635}
   - component: {fileID: 939942729436302630}
   - component: {fileID: 939942729436302633}
-  - component: {fileID: 939942729436302629}
   - component: {fileID: 939942729436302628}
   - component: {fileID: 939942729436302631}
   m_Layer: 8
@@ -134,19 +133,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.851956, y: 1}
   m_EdgeRadius: 0
---- !u!114 &939942729436302629
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 939942729436302634}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84f169ff2c273ca479aae92f90caa438, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
 --- !u!114 &939942729436302628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,4 +184,4 @@ MonoBehaviour:
     - If you're seeing this something went wrong.
     - 'Please contact the developer. Error code: N001'
   movementPattern: []
-  movementPatternTime: 2
+  movementPatternDelay: 0

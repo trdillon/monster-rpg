@@ -12185,16 +12185,24 @@ PrefabInstance:
       value: Karen
       objectReference: {fileID: 0}
     - target: {fileID: 939942729436302631, guid: 47cd7455646d355439d805c64a2ac9ab, type: 3}
+      propertyPath: movementPatternDelay
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 939942729436302631, guid: 47cd7455646d355439d805c64a2ac9ab, type: 3}
+      propertyPath: dialog.strings.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 939942729436302631, guid: 47cd7455646d355439d805c64a2ac9ab, type: 3}
       propertyPath: movementPattern.Array.size
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 939942729436302631, guid: 47cd7455646d355439d805c64a2ac9ab, type: 3}
       propertyPath: dialog.strings.Array.data[0]
-      value: Welcome to the world of RavaR!
+      value: Welcome to RavaR!
       objectReference: {fileID: 0}
     - target: {fileID: 939942729436302631, guid: 47cd7455646d355439d805c64a2ac9ab, type: 3}
       propertyPath: dialog.strings.Array.data[1]
-      value: Hope you capture some good Battokuri!
+      value: If you have questions, please don't ask me.
       objectReference: {fileID: 0}
     - target: {fileID: 939942729436302631, guid: 47cd7455646d355439d805c64a2ac9ab, type: 3}
       propertyPath: movementPattern.Array.data[0].x
@@ -12257,6 +12265,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 939942729436302633, guid: 47cd7455646d355439d805c64a2ac9ab, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 0.9375
+      objectReference: {fileID: 0}
+    - target: {fileID: 939942729436302633, guid: 47cd7455646d355439d805c64a2ac9ab, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 1.5625
+      objectReference: {fileID: 0}
+    - target: {fileID: 939942729436302633, guid: 47cd7455646d355439d805c64a2ac9ab, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 0.9375
       objectReference: {fileID: 0}
@@ -12280,7 +12296,8 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 939942729436302629, guid: 47cd7455646d355439d805c64a2ac9ab, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 47cd7455646d355439d805c64a2ac9ab, type: 3}
 --- !u!1001 &1012279493349499845
 PrefabInstance:

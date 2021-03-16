@@ -4,31 +4,28 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace Itsdits.Ravar.Character.NPC { 
-    public class NPCController : MonoBehaviour, IInteractable
+    public class NPCController : Moveable, IInteractable
     {
+        [Header("Details")]
         [SerializeField] string _name;
         [SerializeField] Dialog dialog;
-        [SerializeField] List<Vector2> movementPattern;
-        [SerializeField] float movementPatternTime;
 
-        private Character character;
+        [Header("Movement")]
+        [SerializeField] List<Vector2> movementPattern;
+        [SerializeField] float movementPatternDelay;
+
         private NPCState state;
         private float idleTimer = 0f;
         private int currentMovement = 0;
 
         public string Name => _name;
 
-        private void Awake()
-        {
-            character = GetComponent<Character>();
-        }
-
         private void Update()
         {
             if (state == NPCState.Idle)
             {
                 idleTimer += Time.deltaTime;
-                if (idleTimer > movementPatternTime)
+                if (idleTimer > movementPatternDelay)
                 {
                     idleTimer = 0f;
                     if (movementPattern.Count > 0)
@@ -37,7 +34,8 @@ namespace Itsdits.Ravar.Character.NPC {
                     }  
                 }
             }
-            character.HandleUpdate();
+
+            animator.IsMoving = IsMoving;
         }
 
         private IEnumerator Walk()
@@ -45,7 +43,7 @@ namespace Itsdits.Ravar.Character.NPC {
             state = NPCState.Walking;
 
             var oldPos = transform.position;
-            yield return character.Move(movementPattern[currentMovement]);
+            yield return Move(movementPattern[currentMovement], null);
 
             if (transform.position != oldPos)
             {
@@ -57,16 +55,16 @@ namespace Itsdits.Ravar.Character.NPC {
         }
 
         /// <summary>
-        /// Interact with the player.
+        /// Interacts with a character or object.
         /// </summary>
-        /// <param name="interactChar">Player</param>
+        /// <param name="interactWith">Who or what to interact with.</param>
         public void Interact(Transform interactChar)
         {
             if (state == NPCState.Idle)
             {
                 state = NPCState.Interacting;
 
-                character.TurnToInteract(interactChar.position);
+                ChangeDirection(interactChar.position);
                 if (dialog.Strings.Count > 0)
                 {
                     StartCoroutine(DialogController.Instance.ShowDialog(dialog, Name, () =>
@@ -78,8 +76,6 @@ namespace Itsdits.Ravar.Character.NPC {
                 }
                 else
                 { 
-                    // Error if there's no dialog to show.
-                    Debug.LogError($"NC001: {Name} doesn't have interaction dialog.");
                     idleTimer = 0f;
 
                     state = NPCState.Idle;
