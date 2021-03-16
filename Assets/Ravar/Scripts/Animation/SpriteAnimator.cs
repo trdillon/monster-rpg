@@ -3,14 +3,23 @@ using UnityEngine;
 
 namespace Itsdits.Ravar.Animation
 {
+    /// <summary>
+    /// This class creates an animation object that is used to build animations.
+    /// </summary>
     public class SpriteAnimator
     {
         private int currentFrame;
         private float frameRate;
+        private float timer;
         private List<Sprite> frames;
         private SpriteRenderer spriteRenderer;
-        private float timer;
-
+        
+        /// <summary>
+        /// Constructor for a SpriteAnimator.
+        /// </summary>
+        /// <param name="frames">List<Sprite> of frames to animate.</param>
+        /// <param name="spriteRenderer">A SpriteRenderer reference.</param>
+        /// <param name="frameRate">Animation frameRate, default is 0.16f.</param>
         public SpriteAnimator(List<Sprite> frames, SpriteRenderer spriteRenderer, float frameRate = 0.16f)
         {
             this.frames = frames;
@@ -21,7 +30,7 @@ namespace Itsdits.Ravar.Animation
         public List<Sprite> Frames => frames;
 
         /// <summary>
-        /// Initialize the SpriteAnimator values at 0.
+        /// Initialize the SpriteAnimator.
         /// </summary>
         public void Start()
         {
@@ -38,6 +47,7 @@ namespace Itsdits.Ravar.Animation
             timer += Time.deltaTime;
             if (timer > frameRate)
             {
+                // Loop back after the last frame
                 currentFrame = (currentFrame + 1) % frames.Count;
                 spriteRenderer.sprite = frames[currentFrame];
                 timer -= frameRate;

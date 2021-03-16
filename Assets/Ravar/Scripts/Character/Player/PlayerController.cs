@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 namespace Itsdits.Ravar.Character.Player
 {
     /// <summary>
-    /// Controller for the Player character.
+    /// Controller for the Player character. Handles input and encounters.
     /// </summary>
     public class PlayerController : Moveable, IInteractable
     {

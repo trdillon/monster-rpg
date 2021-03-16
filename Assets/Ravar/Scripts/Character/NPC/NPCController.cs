@@ -3,7 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Itsdits.Ravar.Character.NPC { 
+namespace Itsdits.Ravar.Character.NPC 
+{
+    /// <summary>
+    /// Controller class for NPC characters. Handles dialog and movement patterns.
+    /// </summary>
     public class NPCController : Moveable, IInteractable
     {
         [Header("Details")]

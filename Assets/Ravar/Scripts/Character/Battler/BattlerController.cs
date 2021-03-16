@@ -5,6 +5,9 @@ using UnityEngine;
 
 namespace Itsdits.Ravar.Character.Battler
 {
+    /// <summary>
+    /// Controller class for Battler characters. Handles encounter triggers and line of sight.
+    /// </summary>
     public class BattlerController : Moveable, IInteractable
     {
         [Header("Details")]
