@@ -12627,7 +12627,8 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4234512495102130387, guid: 9011473ac612dc7459683113ba4d8e02, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9011473ac612dc7459683113ba4d8e02, type: 3}
 --- !u!222 &4557355395932723900
 CanvasRenderer:

@@ -151,9 +151,8 @@ GameObject:
   - component: {fileID: 4234512495102130399}
   - component: {fileID: 4234512495102130396}
   - component: {fileID: 4234512495102130397}
-  - component: {fileID: 4234512495102130387}
-  - component: {fileID: 4234512495102130384}
   - component: {fileID: 4234512495102130386}
+  - component: {fileID: 4234512495102130384}
   - component: {fileID: 4234512495102130393}
   m_Layer: 8
   m_Name: Battler
@@ -276,7 +275,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.851956, y: 1}
   m_EdgeRadius: 0
---- !u!114 &4234512495102130387
+--- !u!114 &4234512495102130386
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -285,10 +284,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 4234512495102130385}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84f169ff2c273ca479aae92f90caa438, type: 3}
+  m_Script: {fileID: 11500000, guid: aba5f7e6f86786a4b9c9b361f3a86f13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  _name: Error Battler
+  sprite: {fileID: 21300000, guid: 78bcc0d5a552b4642908b5f74d751d30, type: 3}
+  introDialog:
+    strings:
+    - If you're seeing this something went wrong.
+    - 'Please contact the developer. Error code: N002'
+  outroDialog:
+    strings:
+    - If you're seeing this something went wrong.
+    - 'Please contact the developer. Error code: N003'
+  alert: {fileID: 4234512493976123532}
+  los: {fileID: 4234512493961276577}
 --- !u!114 &4234512495102130384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -322,30 +332,6 @@ MonoBehaviour:
   - {fileID: 7039857337815168524, guid: 1be55108d0433cc4aba764dd1aa6c6d4, type: 3}
   - {fileID: 9029467800418536703, guid: 1be55108d0433cc4aba764dd1aa6c6d4, type: 3}
   - {fileID: -3724377265308628120, guid: 1be55108d0433cc4aba764dd1aa6c6d4, type: 3}
---- !u!114 &4234512495102130386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4234512495102130385}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aba5f7e6f86786a4b9c9b361f3a86f13, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _name: Error Battler
-  sprite: {fileID: 21300000, guid: 78bcc0d5a552b4642908b5f74d751d30, type: 3}
-  introDialog:
-    strings:
-    - If you're seeing this something went wrong.
-    - 'Please contact the developer. Error code: N002'
-  outroDialog:
-    strings:
-    - If you're seeing this something went wrong.
-    - 'Please contact the developer. Error code: N003'
-  alert: {fileID: 4234512493976123532}
-  los: {fileID: 4234512493961276577}
 --- !u!114 &4234512495102130393
 MonoBehaviour:
   m_ObjectHideFlags: 0

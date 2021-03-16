@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 939942729436302635}
   - component: {fileID: 939942729436302630}
   - component: {fileID: 939942729436302633}
-  - component: {fileID: 939942729436302628}
   - component: {fileID: 939942729436302631}
+  - component: {fileID: 939942729436302628}
   m_Layer: 8
   m_Name: NPC
   m_TagString: Untagged
@@ -133,6 +133,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.851956, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &939942729436302631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939942729436302634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4ecbbc1fdadfa34b8e46343e07b9ad8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _name: Error NPC
+  dialog:
+    strings:
+    - If you're seeing this something went wrong.
+    - 'Please contact the developer. Error code: N001'
+  movementPattern: []
+  movementPatternDelay: 0
 --- !u!114 &939942729436302628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,22 +185,3 @@ MonoBehaviour:
   - {fileID: 7039857337815168524, guid: 1be55108d0433cc4aba764dd1aa6c6d4, type: 3}
   - {fileID: 9029467800418536703, guid: 1be55108d0433cc4aba764dd1aa6c6d4, type: 3}
   - {fileID: -3724377265308628120, guid: 1be55108d0433cc4aba764dd1aa6c6d4, type: 3}
---- !u!114 &939942729436302631
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 939942729436302634}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4ecbbc1fdadfa34b8e46343e07b9ad8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _name: Error NPC
-  dialog:
-    strings:
-    - If you're seeing this something went wrong.
-    - 'Please contact the developer. Error code: N001'
-  movementPattern: []
-  movementPatternDelay: 0

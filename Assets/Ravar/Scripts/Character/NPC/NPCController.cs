@@ -8,6 +8,8 @@ namespace Itsdits.Ravar.Character.NPC {
     {
         [Header("Details")]
         [SerializeField] string _name;
+
+        [Header("Dialog")]
         [SerializeField] Dialog dialog;
 
         [Header("Movement")]
@@ -30,28 +32,12 @@ namespace Itsdits.Ravar.Character.NPC {
                     idleTimer = 0f;
                     if (movementPattern.Count > 0)
                     {
-                        StartCoroutine(Walk());
+                        StartCoroutine(WalkPattern());
                     }  
                 }
             }
 
             animator.IsMoving = IsMoving;
-        }
-
-        private IEnumerator Walk()
-        {
-            state = NPCState.Walking;
-
-            var oldPos = transform.position;
-            yield return Move(movementPattern[currentMovement], null);
-
-            if (transform.position != oldPos)
-            {
-                // Loop back after the last move
-                currentMovement = (currentMovement + 1) % movementPattern.Count;
-            }
-
-            state = NPCState.Idle;
         }
 
         /// <summary>
@@ -75,12 +61,29 @@ namespace Itsdits.Ravar.Character.NPC {
                     }));
                 }
                 else
-                { 
+                {
+                    // Skip the call to ShowDialog() because it would cause an exception.
                     idleTimer = 0f;
 
                     state = NPCState.Idle;
                 }
             }
+        }
+
+        private IEnumerator WalkPattern()
+        {
+            state = NPCState.Walking;
+
+            var oldPos = transform.position;
+            yield return Move(movementPattern[currentMovement], null);
+
+            if (transform.position != oldPos)
+            {
+                // Loop back after the last move
+                currentMovement = (currentMovement + 1) % movementPattern.Count;
+            }
+
+            state = NPCState.Idle;
         }
     }
 }
