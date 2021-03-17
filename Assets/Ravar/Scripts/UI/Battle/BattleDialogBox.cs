@@ -7,22 +7,32 @@ using UnityEngine.UI;
 namespace Itsdits.Ravar.UI.Battle { 
     public class BattleDialogBox : MonoBehaviour
     {
-        #region config
+        [Header("Dialog Box")]
+        [SerializeField] Text dialogText;
+
+        [Header("Action Selector")]
+        [SerializeField] List<Text> actionTexts;
+        [SerializeField] GameObject actionSelector;
+
+        [Header("Move Selector")]
+        [SerializeField] List<Text> moveTexts;
+        [SerializeField] GameObject moveSelector;
+
+        [Header("Move Details")]
+        [SerializeField] GameObject moveDetails;
+        [SerializeField] Text energyText;
+        [SerializeField] Text typeText;
+
+        [Header("Choice Selector")]
+        [SerializeField] GameObject choiceSelector;
+        [SerializeField] Text yesText;
+        [SerializeField] Text noText;
+
+        [Header("Variables")]
         [SerializeField] int lettersPerSecond;
         [SerializeField] Color highlightColor;
         [SerializeField] Color standardColor;
-        [SerializeField] Text dialogText;
-        [SerializeField] Text energyText;
-        [SerializeField] Text typeText;
-        [SerializeField] Text yesText;
-        [SerializeField] Text noText;
-        [SerializeField] GameObject actionSelector;
-        [SerializeField] GameObject moveSelector;
-        [SerializeField] GameObject choiceSelector;
-        [SerializeField] GameObject moveDetails;
-        [SerializeField] List<Text> actionTexts;
-        [SerializeField] List<Text> moveTexts;
-        #endregion
+
 
         /// <summary>
         /// Type the dialog character by character

@@ -267,7 +267,6 @@ namespace Itsdits.Ravar.Battle
                     foreach (var effect in move.Base.MoveSecondaryEffects)
                     {
                         var rng = UnityEngine.Random.Range(1, 101);
-                        Debug.Log($"RNG is {rng} and chance is {effect.Chance}.");
                         if (rng <= effect.Chance)
                         {
                             yield return UseMoveEffects(effect, attackingMonster.Monster, defendingMonster.Monster, effect.Target);
@@ -543,7 +542,6 @@ namespace Itsdits.Ravar.Battle
                 float f = (playerSpeed * 128) / enemySpeed + 30 * escapeAttempts;
                 f = f % 256;
                 int rng = UnityEngine.Random.Range(0, 256);
-                Debug.Log($"RNG is {rng} and F is {f}");
 
                 if (rng < f)
                 {
@@ -595,7 +593,6 @@ namespace Itsdits.Ravar.Battle
         {
             // Algo is from g3/4.
             float a = (3 * monster.MaxHp - 2 * monster.CurrentHp) * monster.Base.CatchRate * ConditionDB.GetStatusBonus(monster.Status) / (3 * monster.MaxHp);
-            Debug.Log($"A is {a}");
 
             if (a >= 255)
             {
@@ -648,7 +645,6 @@ namespace Itsdits.Ravar.Battle
             }
 
             int rng = UnityEngine.Random.Range(1, 101);
-            Debug.Log($"RNG is {rng} and moveAccuracy is {moveAccuracy}");
             return rng <= moveAccuracy;
         }
 

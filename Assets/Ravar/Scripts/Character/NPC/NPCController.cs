@@ -47,14 +47,14 @@ namespace Itsdits.Ravar.Character.NPC
         /// <summary>
         /// Interacts with a character or object.
         /// </summary>
-        /// <param name="interactWith">Who or what to interact with.</param>
-        public void Interact(Transform interactChar)
+        /// <param name="interactor">Who or what to interact with.</param>
+        public void InteractWith(Transform interactor)
         {
             if (state == NPCState.Idle)
             {
                 state = NPCState.Interacting;
 
-                ChangeDirection(interactChar.position);
+                ChangeDirection(interactor.position);
                 if (dialog.Strings.Count > 0)
                 {
                     StartCoroutine(DialogController.Instance.ShowDialog(dialog, Name, () =>

@@ -9,7 +9,7 @@ namespace Itsdits.Ravar.Character.Player
     /// <summary>
     /// Controller for the Player character. Handles input and encounters.
     /// </summary>
-    public class PlayerController : Moveable, IInteractable
+    public class PlayerController : Moveable
     {
         [Header("Details")]
         [SerializeField] string _name;
@@ -25,45 +25,33 @@ namespace Itsdits.Ravar.Character.Player
         public event Action<Collider2D> OnLoS;
 
         /// <summary>
-        /// Handle Update() when state = GameState.World. Used to sanitize the input to be passed to Move()
-        /// and update the CharacterAnimator.
+        /// Handles Update lifecycle when GameState.World.
         /// </summary>
         public void HandleUpdate()
         {
-            StartCoroutine(SanitizeInput(inputVector));
+            HandleInput(inputVector);
             animator.IsMoving = IsMoving;
         }
 
         /// <summary>
-        /// Updates inputVector when input is received from the Player Input component.
+        /// Update inputVector when Move event is triggered.
         /// </summary>
-        /// <param name="input">Input from the Player Input component.</param>
-        public void OnMove(InputValue input)
+        /// <param name="context">Callbacks from the InputAction cycle. Contains the Vector2 from the Player Input.</param>
+        public void OnMove(InputAction.CallbackContext context)
         {
-            inputVector = input.Get<Vector2>();
+            inputVector = context.ReadValue<Vector2>();
         }
 
         /// <summary>
-        /// Calls Interact when interact input is received from the Player Input component.
+        /// Call Interact when Interact event is triggered.
         /// </summary>
-        public void OnInteract()
+        /// <param name="context">Callbacks from the InputAction cycle.</param>
+        public void OnInteract(InputAction.CallbackContext context)
         {
-           Interact(transform);
-        }
-
-        /// <summary>
-        /// Interacts with a character or object.
-        /// </summary>
-        /// <param name="interactWith">Who or what to interact with.</param>
-        public void Interact(Transform interactWith)
-        {
-            var lookingAt = new Vector3(animator.MoveX, animator.MoveY);
-            var nextTile = transform.position + lookingAt;
-            var collider = Physics2D.OverlapCircle(nextTile, 0.3f, MapLayers.Instance.InteractLayer);
-
-            if (collider != null)
+            // Avoid calling during start and canceled callbacks to prevent duplicate calls.
+            if (context.performed)
             {
-                collider.GetComponent<IInteractable>()?.Interact(transform);
+                Interact();
             }
         }
 
@@ -95,7 +83,7 @@ namespace Itsdits.Ravar.Character.Player
             }
         }
 
-        private IEnumerator SanitizeInput(Vector2 inputVector)
+        private void HandleInput(Vector2 inputVector)
         {
             if (inputVector != Vector2.zero)
             {
@@ -108,8 +96,19 @@ namespace Itsdits.Ravar.Character.Player
 
                     // Normalize the Vector2 to avoid inputs less than 1f.
                     moveVector = inputVector.normalized;
-                    yield return Move(moveVector, CheckAfterMove);
+                    StartCoroutine(Move(moveVector, CheckAfterMove));
                 }
+            }
+        }
+
+        private void Interact()
+        {
+            var lookingAt = new Vector3(animator.MoveX, animator.MoveY);
+            var nextTile = transform.position + lookingAt;
+            var collider = Physics2D.OverlapCircle(nextTile, 0.3f, MapLayers.Instance.InteractLayer);
+            if (collider != null)
+            {
+                collider.GetComponent<IInteractable>()?.InteractWith(transform);
             }
         }
     }

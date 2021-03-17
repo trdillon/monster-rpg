@@ -8,9 +8,9 @@ namespace Itsdits.Ravar.Character
     public interface IInteractable
     {
         /// <summary>
-        /// Interact with characters, objects, world, etc.
+        /// Interact with characters, objects, etc.
         /// </summary>
-        /// <param name="interactWith">What to interact with.</param>
-        void Interact(Transform interactWith);
+        /// <param name="interactor">Who or what to interact with.</param>
+        void InteractWith(Transform interactor);
     }
 }

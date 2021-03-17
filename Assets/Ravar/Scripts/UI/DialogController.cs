@@ -4,22 +4,29 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
 
-namespace Itsdits.Ravar.UI { 
+namespace Itsdits.Ravar.UI {
+    /// <summary>
+    /// Controller class for displaying dialog.
+    /// </summary>
     public class DialogController : MonoBehaviour
     {
         public static DialogController Instance { get; private set; }
 
+        [Header("Dialog Box")]
         [SerializeField] GameObject dialogBox;
-        [SerializeField] GameObject namePlate;
         [SerializeField] Text dialogText;
+
+        [Header("Name Plate")]
+        [SerializeField] GameObject namePlate;
         [SerializeField] Text nameText;
-        [SerializeField] int lettersPerSecond;
+
+        [Header("Type Speed")]
+        [Tooltip("How fast the dialog is typed on screen, default is 45.")]
+        [SerializeField] int lettersPerSecond = 45;
 
         private Dialog dialog;
         private int currentString = 0;
         private bool isTyping;
-
-        public bool IsShowing { get; private set; }
         
         private Action onDialogFinished;
         public event Action OnShowDialog;
@@ -33,9 +40,9 @@ namespace Itsdits.Ravar.UI {
         /// <summary>
         /// Show the dialog box on the screen.
         /// </summary>
-        /// <param name="dialog">Dialog to show</param>
-        /// <param name="onFinished">What to do after showing</param>
-        /// <returns>onFinished</returns>
+        /// <param name="dialog">Dialog to show.</param>
+        /// <param name="name">Name of character to display on name plate.</param>
+        /// <param name="onFinished">What to do after showing.</param>
         public IEnumerator ShowDialog(Dialog dialog, string name, Action onFinished = null)
         {
             if (dialog.Strings.Count > 0)
@@ -44,7 +51,6 @@ namespace Itsdits.Ravar.UI {
                 // otherwise we might skip the first string.
                 yield return new WaitForEndOfFrame();
                 OnShowDialog?.Invoke();
-                IsShowing = true;
                 this.dialog = dialog;
                 onDialogFinished = onFinished;
                 dialogBox.SetActive(true);
@@ -54,33 +60,13 @@ namespace Itsdits.Ravar.UI {
             else
             {
                 // Error if dialog was null.
-                Debug.LogError("DC001: Null dialog was passed to the controller.");
+                Debug.LogError("Null dialog was passed to ShowDialog.");
                 GameController.Instance.ReleasePlayer();
             }
-            
         }
 
         /// <summary>
-        /// Type the dialog character by character.
-        /// </summary>
-        /// <param name="dialog">Dialog to type</param>
-        /// <returns></returns>
-        public IEnumerator TypeDialog(string dialog)
-        {
-            isTyping = true;
-            dialogText.text = "";
-
-            foreach (var letter in dialog.ToCharArray())
-            {
-                dialogText.text += letter;
-                yield return new WaitForSeconds(1f / lettersPerSecond);
-            }
-
-            isTyping = false;
-        }
-
-        /// <summary>
-        /// Handle user input during the dialog.
+        /// Handles Update lifecycle when GameState.Dialog.
         /// </summary>
         public void HandleUpdate()
         {
@@ -94,12 +80,25 @@ namespace Itsdits.Ravar.UI {
                 else
                 {
                     currentString = 0;
-                    IsShowing = false;
                     dialogBox.SetActive(false);
                     onDialogFinished?.Invoke();
                     OnCloseDialog?.Invoke();
                 }
             }
+        }
+
+        private IEnumerator TypeDialog(string dialog)
+        {
+            isTyping = true;
+            dialogText.text = "";
+
+            foreach (var letter in dialog.ToCharArray())
+            {
+                dialogText.text += letter;
+                yield return new WaitForSeconds(1f / lettersPerSecond);
+            }
+
+            isTyping = false;
         }
 
         private void SetNamePlate(string name)
@@ -111,8 +110,7 @@ namespace Itsdits.Ravar.UI {
             }
             else
             {
-                Debug.LogError("DC002: name null. Displaying error in namePlate.");
-                nameText.text = "Error: DC002";
+                nameText.text = "MISSING";
                 namePlate.SetActive(true);
             }
         }

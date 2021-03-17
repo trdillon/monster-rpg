@@ -244,7 +244,6 @@ namespace Itsdits.Ravar.Monster {
             float d = a * move.Base.Power * ((float)attack / defense) + 2;
             int damage = Mathf.FloorToInt(d * modifiers);
 
-            Debug.Log($"Damage was {damage}.");
             UpdateHP(damage);
             return damageDetails;
         }

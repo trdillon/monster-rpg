@@ -13,7 +13,6 @@ namespace Itsdits.Ravar
     {
         public static GameController Instance { get; private set; }
 
-
         [SerializeField] PlayerController playerController;
         [SerializeField] DialogController dialogController;
         [SerializeField] BattleSystem battleSystem;
@@ -21,6 +20,8 @@ namespace Itsdits.Ravar
 
         private BattlerController battler;
         private GameState state;
+
+        public GameState State => state;
 
         private void Awake()
         {

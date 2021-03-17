@@ -13,6 +13,7 @@ namespace Itsdits.Ravar.Character.Battler
         [Header("Details")]
         [SerializeField] string _name;
         [SerializeField] Sprite sprite;
+        [SerializeField] BattlerState state = BattlerState.Ready;
 
         [Header("Dialog")]
         [SerializeField] Dialog introDialog;
@@ -22,13 +23,13 @@ namespace Itsdits.Ravar.Character.Battler
         [SerializeField] GameObject alert;
         [SerializeField] GameObject los;
 
-        private BattlerState state = BattlerState.Ready;
-
         public string Name => _name;
         public Sprite Sprite => sprite;
+        public BattlerState State => state;
 
         private void Start()
         {
+            SetBattlerState(state);
             RotateLoS(animator.DefaultDirection);
         }
 
@@ -38,10 +39,9 @@ namespace Itsdits.Ravar.Character.Battler
         }
 
         /// <summary>
-        /// Trigger a battle after player walks into LoS
+        /// Trigger a battle after player walks into LoS.
         /// </summary>
         /// <param name="player">The player.</param>
-        /// <returns>Battle</returns>
         public IEnumerator TriggerBattle(PlayerController player)
         {
             // Show alert over head.
@@ -56,9 +56,11 @@ namespace Itsdits.Ravar.Character.Battler
             yield return Move(tile, null);
 
             // Show dialog for trash talk then start battle.
-            ChangeDirection(player.transform.position);
-            if (introDialog.Strings.Count > 0) {
-                yield return DialogController.Instance.ShowDialog(introDialog, Name, () => {
+            player.ChangeDirection(transform.position);
+            if (introDialog.Strings.Count > 0) 
+            {
+                yield return DialogController.Instance.ShowDialog(introDialog, Name, () => 
+                {
                     GameController.Instance.StartCharBattle(this);
                 });
             }
@@ -101,29 +103,31 @@ namespace Itsdits.Ravar.Character.Battler
         /// <summary>
         /// Interact with the player.
         /// </summary>
-        /// <param name="interactChar">Player</param>
-        public void Interact(Transform interactChar)
+        /// <param name="interactor">Who or what to interact with.</param>
+        public void InteractWith(Transform interactor)
         {
-            ChangeDirection(interactChar.position);
-            if (introDialog.Strings.Count > 0 && outroDialog.Strings.Count > 0)
-            {
-                if (state == BattlerState.Ready)
+            if (GameController.Instance.State == GameState.World) { 
+                ChangeDirection(interactor.position);
+                if (introDialog.Strings.Count > 0 && outroDialog.Strings.Count > 0)
                 {
-                    StartCoroutine(DialogController.Instance.ShowDialog(introDialog, Name, () =>
+                    if (state == BattlerState.Ready)
                     {
-                        GameController.Instance.StartCharBattle(this);
-                    }));
+                        StartCoroutine(DialogController.Instance.ShowDialog(introDialog, Name, () =>
+                        {
+                            GameController.Instance.StartCharBattle(this);
+                        }));
+                    }
+                    else
+                    {
+                        StartCoroutine(DialogController.Instance.ShowDialog(outroDialog, Name));
+                    }
                 }
                 else
                 {
-                    StartCoroutine(DialogController.Instance.ShowDialog(outroDialog, Name));
+                    // An exception occurs if the Battler is missing dialog, so we call ReleasePlayer()
+                    // to set state = GameState.World. Otherwise the player is stuck on the crashed dialog box.
+                    GameController.Instance.ReleasePlayer();
                 }
-            }
-            else
-            {
-                // An exception occurs if the Battler is missing dialog, so we call ReleasePlayer()
-                // to set state = GameState.World. Otherwise the player is stuck on the crashed dialog box.
-                GameController.Instance.ReleasePlayer();
             }
         }
 

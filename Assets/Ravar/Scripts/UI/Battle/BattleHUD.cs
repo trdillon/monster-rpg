@@ -10,12 +10,16 @@ namespace Itsdits.Ravar.UI.Battle
 {
     public class BattleHUD : MonoBehaviour
     {
-        #region config
+        [Header("Text Labels")]
         [SerializeField] Text nameText;
         [SerializeField] Text levelText;
         [SerializeField] Text statusText;
+
+        [Header("UI Bars")]
         [SerializeField] HPBar hpBar;
         [SerializeField] GameObject xpBar;
+
+        [Header("Status Colors")]
         [SerializeField] Color psnColor;
         [SerializeField] Color brnColor;
         [SerializeField] Color slpColor;
@@ -24,7 +28,6 @@ namespace Itsdits.Ravar.UI.Battle
 
         private Dictionary<ConditionID, Color> statusColors;
         private MonsterObj _monster;
-        #endregion
         /// <summary>
         /// Set the data in the HUD.
         /// </summary>
@@ -35,7 +38,6 @@ namespace Itsdits.Ravar.UI.Battle
             nameText.text = monster.Base.Name;
             SetLevel();
             SetExp();
-            Debug.Log($"{monster.Base.Name} has {monster.CurrentHp} / {monster.MaxHp} HP.");
             hpBar.SetHP((float) monster.CurrentHp / monster.MaxHp);
             statusColors = new Dictionary<ConditionID, Color>()
             {
