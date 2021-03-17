@@ -10,6 +10,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 namespace Itsdits.Ravar.Battle
 {
@@ -266,7 +267,6 @@ namespace Itsdits.Ravar.Battle
                     foreach (var effect in move.Base.MoveSecondaryEffects)
                     {
                         var rng = UnityEngine.Random.Range(1, 101);
-                        Debug.Log($"RNG is {rng} and chance is {effect.Chance}.");
                         if (rng <= effect.Chance)
                         {
                             yield return UseMoveEffects(effect, attackingMonster.Monster, defendingMonster.Monster, effect.Target);
@@ -542,7 +542,6 @@ namespace Itsdits.Ravar.Battle
                 float f = (playerSpeed * 128) / enemySpeed + 30 * escapeAttempts;
                 f = f % 256;
                 int rng = UnityEngine.Random.Range(0, 256);
-                Debug.Log($"RNG is {rng} and F is {f}");
 
                 if (rng < f)
                 {
@@ -594,7 +593,6 @@ namespace Itsdits.Ravar.Battle
         {
             // Algo is from g3/4.
             float a = (3 * monster.MaxHp - 2 * monster.CurrentHp) * monster.Base.CatchRate * ConditionDB.GetStatusBonus(monster.Status) / (3 * monster.MaxHp);
-            Debug.Log($"A is {a}");
 
             if (a >= 255)
             {
@@ -647,7 +645,6 @@ namespace Itsdits.Ravar.Battle
             }
 
             int rng = UnityEngine.Random.Range(1, 101);
-            Debug.Log($"RNG is {rng} and moveAccuracy is {moveAccuracy}");
             return rng <= moveAccuracy;
         }
 
@@ -692,7 +689,7 @@ namespace Itsdits.Ravar.Battle
             enemyMonster.gameObject.SetActive(false);
             playerImage.gameObject.SetActive(true);
             battlerImage.gameObject.SetActive(true);
-            playerImage.sprite = player.Sprite;
+            playerImage.sprite = player.BattleSprite;
             battlerImage.sprite = battler.Sprite;
         }
 
@@ -789,19 +786,19 @@ namespace Itsdits.Ravar.Battle
 
         private void HandleActionSelection()
         {
-            if (Input.GetKeyDown(KeyCode.RightArrow))
+            if (Keyboard.current.rightArrowKey.wasPressedThisFrame)
             {
                 ++currentAction;
             }
-            else if (Input.GetKeyDown(KeyCode.LeftArrow))
+            else if (Keyboard.current.leftArrowKey.wasPressedThisFrame)
             {
                 --currentAction;
             }
-            else if (Input.GetKeyDown(KeyCode.DownArrow))
+            else if (Keyboard.current.downArrowKey.wasPressedThisFrame)
             {
                 currentAction += 2;
             }  
-            else if (Input.GetKeyDown(KeyCode.UpArrow))
+            else if (Keyboard.current.upArrowKey.wasPressedThisFrame)
             {
                 currentAction -= 2;
             }
@@ -809,7 +806,7 @@ namespace Itsdits.Ravar.Battle
             currentAction = Mathf.Clamp(currentAction, 0, 3);
             dialogBox.UpdateActionSelection(currentAction);
 
-            if (Input.GetKeyDown(KeyCode.Z))
+            if (Keyboard.current.zKey.wasPressedThisFrame)
             {
                 if (currentAction == 0)
                 {
@@ -838,19 +835,19 @@ namespace Itsdits.Ravar.Battle
 
         private void HandleMoveSelection()
         {
-            if (Input.GetKeyDown(KeyCode.RightArrow))
+            if (Keyboard.current.rightArrowKey.wasPressedThisFrame)
             {
                 ++currentMove;
             }
-            else if (Input.GetKeyDown(KeyCode.LeftArrow))
+            else if (Keyboard.current.leftArrowKey.wasPressedThisFrame)
             {
                 --currentMove;
             }
-            else if (Input.GetKeyDown(KeyCode.DownArrow))
+            else if (Keyboard.current.downArrowKey.wasPressedThisFrame)
             {
                 currentMove += 2;
             }
-            else if (Input.GetKeyDown(KeyCode.UpArrow))
+            else if (Keyboard.current.upArrowKey.wasPressedThisFrame)
             {
                 currentMove -= 2;
             }
@@ -858,7 +855,7 @@ namespace Itsdits.Ravar.Battle
             currentMove = Mathf.Clamp(currentMove, 0, playerMonster.Monster.Moves.Count - 1);
             dialogBox.UpdateMoveSelection(currentMove, playerMonster.Monster.Moves[currentMove]);
 
-            if (Input.GetKeyDown(KeyCode.Z))
+            if (Keyboard.current.zKey.wasPressedThisFrame)
             {
                 var move = playerMonster.Monster.Moves[currentMove];
                 dialogBox.EnableMoveSelector(false);
@@ -883,7 +880,7 @@ namespace Itsdits.Ravar.Battle
                     }
                 }
             }
-            else if (Input.GetKeyDown(KeyCode.X))
+            else if (Keyboard.current.xKey.wasPressedThisFrame)
             {
                 dialogBox.EnableMoveSelector(false);
                 dialogBox.EnableDialogText(true);
@@ -894,13 +891,13 @@ namespace Itsdits.Ravar.Battle
         private void HandleChoiceSelection()
         {
             //TODO - refactor this function to provide clarity on what the player is choosing.
-            if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.UpArrow))
+            if (Keyboard.current.downArrowKey.wasPressedThisFrame || Keyboard.current.upArrowKey.wasPressedThisFrame)
             {
                 isChoiceYes = !isChoiceYes;
             }
 
             dialogBox.UpdateChoiceSelection(isChoiceYes);
-            if (Input.GetKeyDown(KeyCode.Z))
+            if (Keyboard.current.zKey.wasPressedThisFrame)
             {
                 dialogBox.EnableChoiceSelector(false);
                 if (isChoiceYes)
@@ -932,7 +929,7 @@ namespace Itsdits.Ravar.Battle
                     }
                 }
             }
-            else if (Input.GetKeyDown(KeyCode.X))
+            else if (Keyboard.current.zKey.wasPressedThisFrame)
             {
                 dialogBox.EnableChoiceSelector(false);
                 if (prevState == BattleState.ForgetSelection)
@@ -950,19 +947,19 @@ namespace Itsdits.Ravar.Battle
 
         private void HandlePartySelection()
         {
-            if (Input.GetKeyDown(KeyCode.RightArrow))
+            if (Keyboard.current.rightArrowKey.wasPressedThisFrame)
             {
                 ++currentMember;
             }
-            else if (Input.GetKeyDown(KeyCode.LeftArrow))
+            else if (Keyboard.current.leftArrowKey.wasPressedThisFrame)
             {
                 --currentMember;
             }
-            else if (Input.GetKeyDown(KeyCode.DownArrow))
+            else if (Keyboard.current.downArrowKey.wasPressedThisFrame)
             {
                 currentMember += 3;
             }
-            else if (Input.GetKeyDown(KeyCode.UpArrow))
+            else if (Keyboard.current.upArrowKey.wasPressedThisFrame)
             {
                 currentMember -= 3;
             }
@@ -970,7 +967,7 @@ namespace Itsdits.Ravar.Battle
             currentMember = Mathf.Clamp(currentMember, 0, playerParty.Monsters.Count - 1);
             partyScreen.UpdateMemberSelection(currentMember);
 
-            if (Input.GetKeyDown(KeyCode.Z))
+            if (Keyboard.current.zKey.wasPressedThisFrame)
             {
                 var selectedMember = playerParty.Monsters[currentMember];
 
@@ -1002,7 +999,7 @@ namespace Itsdits.Ravar.Battle
                     StartCoroutine(SwitchMonster(selectedMember));
                 }
             }
-            else if (Input.GetKeyDown(KeyCode.X))
+            else if (Keyboard.current.xKey.wasPressedThisFrame)
             {
                 if (playerMonster.Monster.CurrentHp <= 0)
                 {

@@ -5,9 +5,11 @@ using Itsdits.Ravar.Monster;
 
 namespace Itsdits.Ravar.Animation
 {
+    /// <summary>
+    /// Provides animation during battles.
+    /// </summary>
     public class BattleAnimator : MonoBehaviour
     {
-        #region config
         [SerializeField] GameObject beamSprite;
         [SerializeField] GameObject burstSprite;
         [SerializeField] GameObject crystalSprite;
@@ -17,7 +19,6 @@ namespace Itsdits.Ravar.Animation
         private GameObject beamObj3;
         private GameObject burstObj;
         private GameObject crystalObj;
-        #endregion
 
         /// <summary>
         /// Play the Capture Crystal animation.

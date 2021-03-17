@@ -7,21 +7,32 @@ using UnityEngine.UI;
 namespace Itsdits.Ravar.UI.Battle { 
     public class BattleDialogBox : MonoBehaviour
     {
-        #region config
-        [SerializeField] int lettersPerSecond;
-        [SerializeField] Color highlightColor;
+        [Header("Dialog Box")]
         [SerializeField] Text dialogText;
+
+        [Header("Action Selector")]
+        [SerializeField] List<Text> actionTexts;
+        [SerializeField] GameObject actionSelector;
+
+        [Header("Move Selector")]
+        [SerializeField] List<Text> moveTexts;
+        [SerializeField] GameObject moveSelector;
+
+        [Header("Move Details")]
+        [SerializeField] GameObject moveDetails;
         [SerializeField] Text energyText;
         [SerializeField] Text typeText;
+
+        [Header("Choice Selector")]
+        [SerializeField] GameObject choiceSelector;
         [SerializeField] Text yesText;
         [SerializeField] Text noText;
-        [SerializeField] GameObject actionSelector;
-        [SerializeField] GameObject moveSelector;
-        [SerializeField] GameObject choiceSelector;
-        [SerializeField] GameObject moveDetails;
-        [SerializeField] List<Text> actionTexts;
-        [SerializeField] List<Text> moveTexts;
-        #endregion
+
+        [Header("Variables")]
+        [SerializeField] int lettersPerSecond;
+        [SerializeField] Color highlightColor;
+        [SerializeField] Color standardColor;
+
 
         /// <summary>
         /// Type the dialog character by character
@@ -62,7 +73,7 @@ namespace Itsdits.Ravar.UI.Battle {
                 }
                 else
                 {
-                    actionTexts[i].color = Color.black;
+                    actionTexts[i].color = standardColor;
                 }
             }
         }
@@ -82,7 +93,7 @@ namespace Itsdits.Ravar.UI.Battle {
                 } 
                 else
                 {
-                    moveTexts[i].color = Color.black;
+                    moveTexts[i].color = standardColor;
                 }
             }
 
@@ -95,7 +106,7 @@ namespace Itsdits.Ravar.UI.Battle {
             }  
             else
             {
-                energyText.color = Color.black;
+                energyText.color = standardColor;
             }   
         }
 
@@ -108,12 +119,12 @@ namespace Itsdits.Ravar.UI.Battle {
             if (yes)
             {
                 yesText.color = highlightColor;
-                noText.color = Color.black;
+                noText.color = standardColor;
             }
             else
             {
                 noText.color = highlightColor;
-                yesText.color = Color.black;
+                yesText.color = standardColor;
             }
             
         }

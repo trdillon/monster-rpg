@@ -4,27 +4,32 @@ using UnityEngine;
 
 namespace Itsdits.Ravar.Animation
 {
+    /// <summary>
+    /// Animates the character sprites.
+    /// </summary>
     public class CharacterAnimator : MonoBehaviour
     {
-        #region config
-        [SerializeField] DefaultDirection defaultDirection = DefaultDirection.Down;
+        [SerializeField] Direction defaultDirection = Direction.Down;
+
+        [Header("Sprites")]
         [SerializeField] List<Sprite> walkDownSprites;
         [SerializeField] List<Sprite> walkLeftSprites;
         [SerializeField] List<Sprite> walkRightSprites;
         [SerializeField] List<Sprite> walkUpSprites;
 
-        private SpriteAnimator currentAnimation;
-        private SpriteRenderer spriteRenderer;
         private SpriteAnimator walkDownAnimation;
         private SpriteAnimator walkLeftAnimation;
         private SpriteAnimator walkRightAnimation;
         private SpriteAnimator walkUpAnimation;
+
+        private SpriteAnimator currentAnimation;
+        private SpriteRenderer spriteRenderer;
         private bool wasMoving;
-        #endregion
+
         public float MoveX { get; set; }
         public float MoveY { get; set; }
         public bool IsMoving { get; set; }
-        public DefaultDirection DefaultDirection => defaultDirection;
+        public Direction DefaultDirection => defaultDirection;
 
         private void Start()
         {
@@ -33,7 +38,7 @@ namespace Itsdits.Ravar.Animation
             walkLeftAnimation = new SpriteAnimator(walkLeftSprites, spriteRenderer);
             walkRightAnimation = new SpriteAnimator(walkRightSprites, spriteRenderer);
             walkUpAnimation = new SpriteAnimator(walkUpSprites, spriteRenderer);
-            SetDefaultDirection(defaultDirection);
+            SetDirection(defaultDirection);
             currentAnimation = walkDownAnimation;
         }
 
@@ -78,25 +83,25 @@ namespace Itsdits.Ravar.Animation
         /// <summary>
         /// Set the character's default facing direction. Mostly used for Battler's LoS.
         /// </summary>
-        /// <param name="direction">Down, Left, Right, Up</param>
-        public void SetDefaultDirection(DefaultDirection direction)
+        /// <param name="direction">Down, Up, Left, Right</param>
+        public void SetDirection(Direction direction)
         {
-            if (direction == DefaultDirection.Down)
+            if (direction == Direction.Down)
             {
                 MoveY = -1;
-            }   
-            else if (direction == DefaultDirection.Up)
+            }
+            else if (direction == Direction.Up)
             {
                 MoveY = 1;
-            }  
-            else if (direction == DefaultDirection.Left)
+            }
+            else if (direction == Direction.Left)
             {
                 MoveX = -1;
-            }   
-            else if (direction == DefaultDirection.Right)
+            }
+            else if (direction == Direction.Right)
             {
                 MoveX = 1;
-            }   
+            }
         }
     }
 }

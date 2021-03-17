@@ -13,7 +13,6 @@ namespace Itsdits.Ravar
     {
         public static GameController Instance { get; private set; }
 
-
         [SerializeField] PlayerController playerController;
         [SerializeField] DialogController dialogController;
         [SerializeField] BattleSystem battleSystem;
@@ -21,6 +20,8 @@ namespace Itsdits.Ravar
 
         private BattlerController battler;
         private GameState state;
+
+        public GameState State => state;
 
         private void Awake()
         {
@@ -135,7 +136,7 @@ namespace Itsdits.Ravar
 
             if (battler != null && result == BattleResult.Won)
             {
-                battler.SetDefeated();
+                battler.SetBattlerState(BattlerState.Defeated);
                 battler = null;
             }
             else if (battler != null && result == BattleResult.Lost)

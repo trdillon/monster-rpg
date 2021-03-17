@@ -6,14 +6,15 @@ using UnityEngine;
 
 namespace Itsdits.Ravar.Character
 {
-    public class Character : MonoBehaviour
-    {
-        private CharacterAnimator animator;
-
-        public float moveSpeed;
+	/// <summary>  
+	/// Abstract class for moveable characters and objects.
+	/// </summary>
+	public abstract class Moveable : MonoBehaviour
+	{
+        private float moveSpeed = 5f;
+        protected CharacterAnimator animator;
 
         public bool IsMoving { get; private set; }
-        public CharacterAnimator Animator => animator;
 
         private void Awake()
         {
@@ -21,12 +22,12 @@ namespace Itsdits.Ravar.Character
         }
 
         /// <summary>
-        /// Move the character.
+        /// Moves the character or object.
         /// </summary>
-        /// <param name="moveVector">Where the character will move to.</param>
-        /// <param name="OnMoveFinish">What happens after moving.</param>
-        /// <returns>OnMoveFinish</returns>
-        public IEnumerator Move(Vector2 moveVector, Action OnMoveFinish = null)
+        /// <param name="moveVector">Where to move to. Should be sanitized first if coming from Player Input component.</param>
+        /// <param name="OnMoveFinish">What do do after the move is completed. Used to check for encounters or LoS triggers.</param>
+        /// <returns></returns>
+        protected IEnumerator Move(Vector2 moveVector, Action OnMoveFinish)
         {
             animator.MoveX = Mathf.Clamp(moveVector.x, -1f, 1f);
             animator.MoveY = Mathf.Clamp(moveVector.y, -1f, 1f);
@@ -54,18 +55,10 @@ namespace Itsdits.Ravar.Character
         }
 
         /// <summary>
-        /// Handle updates to the CharacterAnimator.
+        /// Changes the direction the character or object is facing. Used to acknowledge interaction or set default facing directions.
         /// </summary>
-        public void HandleUpdate()
-        {
-            animator.IsMoving = IsMoving;
-        }
-
-        /// <summary>
-        /// Turn the character towards the character requesting interaction.
-        /// </summary>
-        /// <param name="targetPos">Where to turn to.</param>
-        public void TurnToInteract(Vector3 targetPos)
+        /// <param name="targetPos">Location of the tile the character or object should face to.</param>
+        public void ChangeDirection(Vector3 targetPos)
         {
             var xdiff = Mathf.Floor(targetPos.x) - Mathf.Floor(transform.position.x);
             var ydiff = Mathf.Floor(targetPos.y) - Mathf.Floor(transform.position.y);
