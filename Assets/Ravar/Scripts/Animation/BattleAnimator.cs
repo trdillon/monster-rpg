@@ -29,6 +29,13 @@ namespace Itsdits.Ravar.Animation
         /// <returns></returns>
         public IEnumerator PlayCrystalAnimation(BattleMonster playerMonster, BattleMonster enemyMonster, int beamCount)
         {
+            // Factory or Flyweight pattern for this?
+            /*
+            * TODO - refactor this animation, i'm sure there's a better way to do this
+            * My thinking was I wanted absolute control over where to position things and it seemed easiest
+            * to just create this massive block of code to achieve it, but I'm sure my inexperience is showing here big time.
+            * If it seems stupid, but it works, then I guess its not so stupid.
+            */
             //TODO - instantiate these under _Dynamic
             // Build the animation points.
             var origin = playerMonster.transform.position - new Vector3(2, 0);
@@ -89,25 +96,7 @@ namespace Itsdits.Ravar.Animation
             yield return new WaitForSeconds(1f);
             crystal.transform.DOLocalMove(origin, 1.5f);
             crystal.DOFade(0f, 1.5f);
-            yield return new WaitForSeconds(2f);
-
-            /*
-            * TODO - refactor this animation, i'm sure there's a better way to do this
-            * My thinking was I wanted absolute control over where to position things and it seemed easiest
-            * to just create this massive block of code to achieve it, but I'm sure my inexperience is showing here big time.
-            * If it seems stupid, but it works, then I guess its not so stupid.
-            */
-        }
-
-        /// <summary>
-        /// Play the failed capture animation after breaking out of PlayCaptureAnimation.
-        /// </summary>
-        public void PlayFailAnimation()
-        {
-            burstObj.transform.DOPunchPosition(new Vector3(2, 0, 0), 2f);
-            burstObj.transform.DOScale(0.1f, 1f);
-            crystalObj.transform.DOPunchRotation(new Vector3(0, 0, 90), 2f);
-            crystalObj.transform.DOScale(0.1f, 1f);
+            yield return new WaitForSeconds(2f);          
         }
 
         /// <summary>
@@ -121,6 +110,17 @@ namespace Itsdits.Ravar.Animation
             Destroy(beamObj2, 0f);
             Destroy(beamObj3, 0f);
             Destroy(burstObj, 0f);
+        }
+
+        /// <summary>
+        /// Play the failed capture animation after breaking out of PlayCaptureAnimation.
+        /// </summary>
+        public void PlayFailAnimation()
+        {
+            burstObj.transform.DOPunchPosition(new Vector3(2, 0, 0), 2f);
+            burstObj.transform.DOScale(0.1f, 1f);
+            crystalObj.transform.DOPunchRotation(new Vector3(0, 0, 90), 2f);
+            crystalObj.transform.DOScale(0.1f, 1f);
         }
     }
 }

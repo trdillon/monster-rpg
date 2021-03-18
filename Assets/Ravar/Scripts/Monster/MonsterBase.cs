@@ -6,51 +6,65 @@ namespace Itsdits.Ravar.Monster {
     [CreateAssetMenu(fileName = "Monster", menuName = "Monster/Create a new monster")]
     public class MonsterBase : ScriptableObject
     {
-        #region config
         public static int MaxNumberOfMoves { get; set; } = 4;
 
+        [Header("Details")]
         [SerializeField] string _name;
         [TextArea]
         [SerializeField] string description;
+
+        [Header("Base Stats")]
         [SerializeField] int maxHp;
         [SerializeField] int attack;
         [SerializeField] int defense;
         [SerializeField] int spAttack;
         [SerializeField] int spDefense;
         [SerializeField] int speed;
+
+        [Header("Special Stats")]
         [SerializeField] int expGiven;
         [SerializeField] int catchRate = 255;
-        [SerializeField] Sprite leftSprite;
-        [SerializeField] Sprite rightSprite;
+        [SerializeField] GrowthRate growthRate;
+
+        [Header("Types and Moves")]
         [SerializeField] MonsterType primaryType;
         [SerializeField] MonsterType secondaryType;
-        [SerializeField] GrowthRate growthRate;
         [SerializeField] List<LearnableMove> learnableMoves;
-        #endregion
-        #region Properties
+
+        [Header("Sprites")]
+        [SerializeField] Sprite leftSprite;
+        [SerializeField] Sprite rightSprite;
+
+        // Details
         public string Name => _name;
         public string Description => description;
+
+        // Base Stats
         public int MaxHp => maxHp;
         public int Attack => attack;
         public int Defense => defense;
         public int SpAttack => spAttack;
         public int SpDefense => spDefense;
         public int Speed => speed;
+
+        // Special Stats
         public int ExpGiven => expGiven;
         public int CatchRate => catchRate;
-        public Sprite LeftSprite => leftSprite;
-        public Sprite RightSprite => rightSprite;
+        public GrowthRate GrowthRate => growthRate;
+
+        // Types and Moves
         public MonsterType PrimaryType => primaryType;
         public MonsterType SecondaryType => secondaryType;
-        public GrowthRate GrowthRate => growthRate;
         public List<LearnableMove> LearnableMoves => learnableMoves;
-        #endregion
+
+        // Sprites
+        public Sprite LeftSprite => leftSprite;
+        public Sprite RightSprite => rightSprite;
 
         /// <summary>
-        /// Gets the exp required to be at the current level, used for Init function.
+        /// Gets the amount of experience required to be at the provided level.
         /// </summary>
-        /// <param name="level">Level of the monster</param>
-        /// <returns>Required exp</returns>
+        /// <param name="level">Level to get exp requirement for.</param>
         public int GetExpForLevel(int level)
         {
             if (growthRate == GrowthRate.Fast)

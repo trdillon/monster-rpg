@@ -2,20 +2,21 @@ using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 using Itsdits.Ravar.UI.Battle;
+using Itsdits.Ravar.Animation;
 
 namespace Itsdits.Ravar.Monster { 
     public class BattleMonster : MonoBehaviour
     {
-        [SerializeField] bool isPlayerMonster;
         [SerializeField] BattleHUD hud;
+        [SerializeField] bool isPlayerMonster;
 
         private Image image;
         private Vector3 originalPos;
         private Color originalColor;
 
         public MonsterObj Monster { get; set; }
-        public bool IsPlayerMonster => isPlayerMonster;
         public BattleHUD Hud => hud;
+        public bool IsPlayerMonster => isPlayerMonster;
         public Image Image => image;
 
         private void Awake()
@@ -32,7 +33,7 @@ namespace Itsdits.Ravar.Monster {
         /// <summary>
         /// Setup the monster for battle.
         /// </summary>
-        /// <param name="monster">Monster to setup</param>
+        /// <param name="monster">Monster to setup.</param>
         public void Setup(MonsterObj monster)
         {
             Monster = monster;
@@ -40,7 +41,7 @@ namespace Itsdits.Ravar.Monster {
             if (isPlayerMonster)
             {
                 image.sprite = Monster.Base.LeftSprite;
-            }  
+            }
             else
             {
                 image.sprite = Monster.Base.RightSprite;
