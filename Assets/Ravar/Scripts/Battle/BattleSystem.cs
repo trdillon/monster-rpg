@@ -16,14 +16,18 @@ namespace Itsdits.Ravar.Battle
 {
     public class BattleSystem : MonoBehaviour
     {
-        #region config
+        [Header("Monsters")]
+        [SerializeField] BattleMonster playerMonster;
+        [SerializeField] BattleMonster enemyMonster;
+
+        [Header("Characters")]
+        [SerializeField] Image playerImage;
+        [SerializeField] Image battlerImage;
+
+        [Header("UI")]
         [SerializeField] BattleAnimator battleAnimator;
         [SerializeField] BattleDialogBox dialogBox;
         [SerializeField] PartyScreen partyScreen;
-        [SerializeField] BattleMonster playerMonster;
-        [SerializeField] BattleMonster enemyMonster;
-        [SerializeField] Image playerImage;
-        [SerializeField] Image battlerImage;
 
         private PlayerController player;
         private BattlerController battler;
@@ -39,8 +43,12 @@ namespace Itsdits.Ravar.Battle
         private bool isChoiceYes = true;
         private bool isCharBattle = false;
         private bool isMonsterDown = false;
-        #endregion
-        
+
+        public BattleState State => state;
+        public BattleState? PrevState { get; set; }
+
+        public event Action<BattleResult, bool> OnBattleOver;
+
         /// <summary>
         /// Wild Monster encounter battle constructor.
         /// </summary>
@@ -70,9 +78,6 @@ namespace Itsdits.Ravar.Battle
             StartCoroutine(SetupBattle());
         }
 
-        public event Action<BattleResult, bool> OnBattleOver;
-
-        #region BattleCoroutines
         /// <summary>
         /// Setup the battle.
         /// </summary>
@@ -117,7 +122,7 @@ namespace Itsdits.Ravar.Battle
             ActionSelection();
         }
 
-        private IEnumerator ExecuteTurn(BattleAction playerAction)
+        public IEnumerator ExecuteTurn(BattleAction playerAction)
         {
             state = BattleState.ExecutingTurn;
 
@@ -586,9 +591,7 @@ namespace Itsdits.Ravar.Battle
                 yield return new WaitUntil(() => state == BattleState.ExecutingTurn);
             }
         }
-        #endregion
 
-        #region Helper Functions
         private int AttemptCapture(MonsterObj monster)
         {
             // Algo is from g3/4.
@@ -701,10 +704,6 @@ namespace Itsdits.Ravar.Battle
             playerParty.Monsters.ForEach(p => p.CleanUpMonster());
             OnBattleOver(result, isCharBattle);
         }
-
-        #endregion
-
-        #region Selector Functions
 
         /// <summary>
         /// Handle updates to the BattleState.
@@ -1020,6 +1019,5 @@ namespace Itsdits.Ravar.Battle
                 }  
             }
         }
-        #endregion
     }
 }
