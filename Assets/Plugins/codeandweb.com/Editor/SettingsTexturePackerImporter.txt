@@ -5,6 +5,9 @@ tpsheetFileNames:
 - Assets/Ravar/Characters/Gus/TP_Gus.tpsheet
 - Assets/Ravar/Characters/Karen/TP_Karen.tpsheet
 - Assets/Ravar/Characters/Thug/TP_Thug.tpsheet
+- Assets/Ravar/MaterialLibrary/Buildings/TP_Building_1.tpsheet
+- Assets/Ravar/MaterialLibrary/Buildings/TP_Building_2.tpsheet
+- Assets/Ravar/MaterialLibrary/Objects/TP_Crystals.tpsheet
 - Assets/Ravar/MaterialLibrary/Terrain/TP_Dirt_Dark.tpsheet
 - Assets/Ravar/MaterialLibrary/Terrain/TP_Dirt_Light.tpsheet
 - Assets/Ravar/MaterialLibrary/Terrain/TP_Dirt_Medium.tpsheet
@@ -16,12 +19,14 @@ tpsheetFileNames:
 - Assets/Ravar/MaterialLibrary/Terrain/TP_Lava.tpsheet
 - Assets/Ravar/MaterialLibrary/Terrain/TP_Sand_Tan.tpsheet
 - Assets/Ravar/MaterialLibrary/Terrain/TP_Sand_Yellow.tpsheet
-- Assets/Ravar/Objects/TP_Crystals.tpsheet
 textureFileNames:
 - Assets/Ravar/Characters/ErrorChar/SS_ErrorChar.png
 - Assets/Ravar/Characters/Gus/SS_Gus.png
 - Assets/Ravar/Characters/Karen/SS_Karen.png
 - Assets/Ravar/Characters/Thug/SS_Thug.png
+- Assets/Ravar/MaterialLibrary/Buildings/SS_Building_1.png
+- Assets/Ravar/MaterialLibrary/Buildings/SS_Building_2.png
+- Assets/Ravar/MaterialLibrary/Objects/SS_Crystals.png
 - Assets/Ravar/MaterialLibrary/Terrain/TS_Dirt_Dark.png
 - Assets/Ravar/MaterialLibrary/Terrain/TS_Dirt_Light.png
 - Assets/Ravar/MaterialLibrary/Terrain/TS_Dirt_Medium.png
@@ -33,8 +38,9 @@ textureFileNames:
 - Assets/Ravar/MaterialLibrary/Terrain/TS_Lava.png
 - Assets/Ravar/MaterialLibrary/Terrain/TS_Sand_Tan.png
 - Assets/Ravar/MaterialLibrary/Terrain/TS_Sand_Yellow.png
-- Assets/Ravar/Objects/SS_Crystals.png
 normalmapFileNames:
+- 
+- 
 - 
 - 
 - 
