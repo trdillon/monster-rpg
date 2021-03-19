@@ -1,0 +1,4056 @@
+fileFormatVersion: 2
+guid: 37987f962be04b84dae7656f09622bf0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8496251948581560760
+    second: Jazz_53.png
+  - first:
+      213: -3669506362457409451
+    second: Jazz_160.png
+  - first:
+      213: -1575234782765272963
+    second: Jazz_97.png
+  - first:
+      213: -9056871916656995903
+    second: Jazz_103.png
+  - first:
+      213: 1917668684946027271
+    second: Jazz_104.png
+  - first:
+      213: 5055978339052535672
+    second: Jazz_105.png
+  - first:
+      213: -4813301169293380014
+    second: Jazz_106.png
+  - first:
+      213: -525524011301695292
+    second: Jazz_107.png
+  - first:
+      213: 8222576669494818351
+    second: Jazz_108.png
+  - first:
+      213: 2146461497577774336
+    second: Jazz_109.png
+  - first:
+      213: -6991152768014162496
+    second: Jazz_11.png
+  - first:
+      213: 2989874086729966772
+    second: Jazz_96.png
+  - first:
+      213: 8482777156315847412
+    second: Jazz_94.png
+  - first:
+      213: -6231507426968606076
+    second: Jazz_93.png
+  - first:
+      213: -9062928816512792161
+    second: Jazz_92.png
+  - first:
+      213: 1012718892650925113
+    second: Jazz_91.png
+  - first:
+      213: 8931450820823698470
+    second: Jazz_81.png
+  - first:
+      213: -8398159116954309864
+    second: Jazz_75.png
+  - first:
+      213: -5020453769871861878
+    second: Jazz_12.png
+  - first:
+      213: 5315996412573655062
+    second: Jazz_73.png
+  - first:
+      213: 7262917990491081929
+    second: Jazz_72.png
+  - first:
+      213: -1600007929757807599
+    second: Jazz_71.png
+  - first:
+      213: -5407873490864302029
+    second: Jazz_70.png
+  - first:
+      213: -637647001363732315
+    second: Jazz_69.png
+  - first:
+      213: 8034419563965686649
+    second: Jazz_68.png
+  - first:
+      213: -8305037125680353784
+    second: Jazz_64.png
+  - first:
+      213: -6153308139033661997
+    second: Jazz_61.png
+  - first:
+      213: 6405996413899718985
+    second: Jazz_6.png
+  - first:
+      213: 8647511077513922485
+    second: Jazz_163.png
+  - first:
+      213: 3449221667573949637
+    second: Jazz_44.png
+  - first:
+      213: 6014090860267174890
+    second: Jazz_42.png
+  - first:
+      213: 7850232884940391243
+    second: Jazz_41.png
+  - first:
+      213: -5122889359053526499
+    second: Jazz_40.png
+  - first:
+      213: 9086391324319068759
+    second: Jazz_39.png
+  - first:
+      213: 6533209127868517827
+    second: Jazz_38.png
+  - first:
+      213: 1040960561022489669
+    second: Jazz_37.png
+  - first:
+      213: -17002354289443303
+    second: Jazz_34.png
+  - first:
+      213: -4016485612637373861
+    second: Jazz_33.png
+  - first:
+      213: -1635923559369038939
+    second: Jazz_30.png
+  - first:
+      213: -941140058242876636
+    second: Jazz_3.png
+  - first:
+      213: -1099704535533423191
+    second: Jazz_29.png
+  - first:
+      213: 4535764954195914191
+    second: Jazz_143.png
+  - first:
+      213: 1656055543986940384
+    second: Jazz_10.png
+  - first:
+      213: 7168679624449432234
+    second: Jazz_146.png
+  - first:
+      213: 7643258511598577069
+    second: Jazz_26.png
+  - first:
+      213: 2807732547023173576
+    second: Jazz_20.png
+  - first:
+      213: 6708778570816899537
+    second: Jazz_149.png
+  - first:
+      213: -3071457909284382150
+    second: Jazz_15.png
+  - first:
+      213: -2792836332437080150
+    second: Jazz_150.png
+  - first:
+      213: -5319578052699498720
+    second: Jazz_151.png
+  - first:
+      213: -1962964739179481611
+    second: Jazz_152.png
+  - first:
+      213: 8180592642535645011
+    second: Jazz_2.png
+  - first:
+      213: -8674676156897376897
+    second: Jazz_156.png
+  - first:
+      213: 738706763663539649
+    second: Jazz_157.png
+  - first:
+      213: 5877494803091374738
+    second: Jazz_100.png
+  - first:
+      213: 3461438326081672240
+    second: Jazz_99.png
+  - first:
+      213: 2512432674665605584
+    second: Jazz_1.png
+  - first:
+      213: -6787895477210688817
+    second: Jazz_95.png
+  - first:
+      213: -80443587612036122
+    second: Jazz_59.png
+  - first:
+      213: -7120137064621856659
+    second: Jazz_28.png
+  - first:
+      213: 6030348089128296422
+    second: Jazz_102.png
+  - first:
+      213: 1011930947889437221
+    second: Jazz_36.png
+  - first:
+      213: -1492438779103610370
+    second: Jazz_90.png
+  - first:
+      213: 6349987978071007307
+    second: Jazz_67.png
+  - first:
+      213: -4778250412810903656
+    second: Jazz_9.png
+  - first:
+      213: 3472403141562653330
+    second: Jazz_60.png
+  - first:
+      213: 4227346504164577943
+    second: Jazz_58.png
+  - first:
+      213: 6189608948279934026
+    second: Jazz_57.png
+  - first:
+      213: -8081843212594994057
+    second: Jazz_27.png
+  - first:
+      213: -1636720313199319320
+    second: Jazz_89.png
+  - first:
+      213: 9152896541379512741
+    second: Jazz_25.png
+  - first:
+      213: -8903031691855367180
+    second: Jazz_51.png
+  - first:
+      213: 61033674169901335
+    second: Jazz_54.png
+  - first:
+      213: 3791263086939171022
+    second: Jazz_52.png
+  - first:
+      213: 7545315214624715237
+    second: Jazz_49.png
+  - first:
+      213: -6270254024516263892
+    second: Jazz_82.png
+  - first:
+      213: 6891729715306475155
+    second: Jazz_80.png
+  - first:
+      213: -4305389604679398777
+    second: Jazz_86.png
+  - first:
+      213: 4698165767844278616
+    second: Jazz_56.png
+  - first:
+      213: 7928854908630019451
+    second: Jazz_88.png
+  - first:
+      213: -4416056572052665983
+    second: Jazz_87.png
+  - first:
+      213: 8567992719302232729
+    second: Jazz_55.png
+  - first:
+      213: 3523475647569505728
+    second: Jazz_23.png
+  - first:
+      213: -762484959615720199
+    second: Jazz_84.png
+  - first:
+      213: 7774248250483467536
+    second: Jazz_19.png
+  - first:
+      213: -7628760284774535731
+    second: Jazz_21.png
+  - first:
+      213: 6474260447240920817
+    second: Jazz_45.png
+  - first:
+      213: 4324253750019030047
+    second: Jazz_46.png
+  - first:
+      213: 6118656650070244269
+    second: Jazz_43.png
+  - first:
+      213: -4691347390389931459
+    second: Jazz_48.png
+  - first:
+      213: -7409444975832117934
+    second: Jazz_76.png
+  - first:
+      213: -7499041288420052311
+    second: Jazz_74.png
+  - first:
+      213: 724299604878999415
+    second: Jazz_24.png
+  - first:
+      213: 982591692320075532
+    second: Jazz_22.png
+  - first:
+      213: -443856215890367955
+    second: Jazz_13.png
+  - first:
+      213: 3765735450825384825
+    second: Jazz_78.png
+  - first:
+      213: 1427545687504788521
+    second: Jazz_14.png
+  - first:
+      213: -316562861620162654
+    second: Jazz_65.png
+  - first:
+      213: 2221757388257782485
+    second: Jazz_127.png
+  - first:
+      213: 4752562371501631852
+    second: Jazz_128.png
+  - first:
+      213: -2602949359244546467
+    second: Jazz_126.png
+  - first:
+      213: -1145546219609358887
+    second: Jazz_17.png
+  - first:
+      213: 4159265370622200031
+    second: Jazz_7.png
+  - first:
+      213: 2812150023803484885
+    second: Jazz_117.png
+  - first:
+      213: 5337884322225124139
+    second: Jazz_120.png
+  - first:
+      213: 6152412680242970138
+    second: Jazz_144.png
+  - first:
+      213: -1306805223034796367
+    second: Jazz_145.png
+  - first:
+      213: -2326091322538466010
+    second: Jazz_129.png
+  - first:
+      213: 6115195186240412539
+    second: Jazz_4.png
+  - first:
+      213: 4331657825250569919
+    second: Jazz_158.png
+  - first:
+      213: -3759466929301155096
+    second: Jazz_31.png
+  - first:
+      213: -5208903786725116721
+    second: Jazz_5.png
+  - first:
+      213: 8567697844140512295
+    second: Jazz_62.png
+  - first:
+      213: -6204489209351668985
+    second: Jazz_63.png
+  - first:
+      213: 3708629965530740316
+    second: Jazz_32.png
+  - first:
+      213: -7847803382176577032
+    second: Jazz_155.png
+  - first:
+      213: 8028102415066739369
+    second: Jazz_83.png
+  - first:
+      213: -496485123815046667
+    second: Jazz_85.png
+  - first:
+      213: -6042030169409727137
+    second: Jazz_66.png
+  - first:
+      213: -4592253438084764282
+    second: Jazz_98.png
+  - first:
+      213: -5102917684770048369
+    second: Jazz_101.png
+  - first:
+      213: 3032627483206964733
+    second: Jazz_8.png
+  - first:
+      213: -3127156574198095023
+    second: Jazz_35.png
+  - first:
+      213: 490794488780674790
+    second: Jazz_136.png
+  - first:
+      213: -4335376111498680519
+    second: Jazz_135.png
+  - first:
+      213: 1941715024721581304
+    second: Jazz_118.png
+  - first:
+      213: 9086701287475124807
+    second: Jazz_119.png
+  - first:
+      213: 3460055387934808771
+    second: Jazz_18.png
+  - first:
+      213: 6389867870934812266
+    second: Jazz_16.png
+  - first:
+      213: 5970695218920163534
+    second: Jazz_121.png
+  - first:
+      213: -3505433697387794664
+    second: Jazz_148.png
+  - first:
+      213: -531370898072497225
+    second: Jazz_147.png
+  - first:
+      213: 2113952223198313925
+    second: Jazz_142.png
+  - first:
+      213: 5109290561874503452
+    second: Jazz_116.png
+  - first:
+      213: -46651975716306166
+    second: Jazz_124.png
+  - first:
+      213: 430800793433540651
+    second: Jazz_125.png
+  - first:
+      213: -4331005431489864068
+    second: Jazz_130.png
+  - first:
+      213: 763373234774194682
+    second: Jazz_131.png
+  - first:
+      213: 8291704516096458810
+    second: Jazz_132.png
+  - first:
+      213: 6600529101816530857
+    second: Jazz_133.png
+  - first:
+      213: 4600266611331261225
+    second: Jazz_122.png
+  - first:
+      213: 5033750220762795591
+    second: Jazz_123.png
+  - first:
+      213: 4071055800117609185
+    second: Jazz_115.png
+  - first:
+      213: 8866083830929671257
+    second: Jazz_77.png
+  - first:
+      213: -5042354102369266104
+    second: Jazz_79.png
+  - first:
+      213: -717246178199570616
+    second: Jazz_113.png
+  - first:
+      213: 3433606289845515336
+    second: Jazz_112.png
+  - first:
+      213: 6105521577419096855
+    second: Jazz_114.png
+  - first:
+      213: -4035004481447015154
+    second: Jazz_110.png
+  - first:
+      213: 6784190848761446461
+    second: Jazz_111.png
+  - first:
+      213: 1455218484873953766
+    second: Jazz_137.png
+  - first:
+      213: 7152153096268059975
+    second: Jazz_134.png
+  - first:
+      213: -2761906381252656658
+    second: Jazz_140.png
+  - first:
+      213: 6275569655298804257
+    second: Jazz_139.png
+  - first:
+      213: 3649732458649367655
+    second: Jazz_141.png
+  - first:
+      213: 8263281456043892264
+    second: Jazz_138.png
+  - first:
+      213: 3817755255488028175
+    second: Jazz_153.png
+  - first:
+      213: -6528030087192340490
+    second: Jazz_161.png
+  - first:
+      213: -1083790778961644213
+    second: Jazz_162.png
+  - first:
+      213: -7434113057232528457
+    second: Jazz_154.png
+  - first:
+      213: -6574485275595082701
+    second: Jazz_159.png
+  - first:
+      213: -4401499706763292417
+    second: Jazz_47.png
+  - first:
+      213: 8867868607605127101
+    second: Jazz_50.png
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Jazz_53.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 479
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84e539a2edf371a80800000000000000
+      internalID: -8496251948581560760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_160.png
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 479
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 558b0bcb76b431dc0800000000000000
+      internalID: -3669506362457409451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_97.png
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 479
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d70bf6f9f44a32ae0800000000000000
+      internalID: -1575234782765272963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_103.png
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 479
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c1d2772af68f4280800000000000000
+      internalID: -9056871916656995903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_104.png
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 479
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 703391b328dec9a10800000000000000
+      internalID: 1917668684946027271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_105.png
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 479
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87fbb4bf2817a2640800000000000000
+      internalID: 5055978339052535672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_106.png
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 479
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 256bb47a618b33db0800000000000000
+      internalID: -4813301169293380014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_107.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 445
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c09c6132b6f4b8f0800000000000000
+      internalID: -525524011301695292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_108.png
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 445
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2637a37ae57c1270800000000000000
+      internalID: 8222576669494818351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_109.png
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 445
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00d1d2f0c53c9cd10800000000000000
+      internalID: 2146461497577774336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_11.png
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 445
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c5e604299f6afe90800000000000000
+      internalID: -6991152768014162496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_96.png
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 445
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b46fae04aa2e7920800000000000000
+      internalID: 2989874086729966772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_94.png
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 445
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fa110741e0e8b570800000000000000
+      internalID: 8482777156315847412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_93.png
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 445
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48ae358d20d3589a0800000000000000
+      internalID: -6231507426968606076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_92.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 411
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f998a1342420a3280800000000000000
+      internalID: -9062928816512792161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_91.png
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 411
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93c09cd9776ed0e00800000000000000
+      internalID: 1012718892650925113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_81.png
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 411
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62c41106333e2fb70800000000000000
+      internalID: 8931450820823698470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_75.png
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 411
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81beaba47ceb37b80800000000000000
+      internalID: -8398159116954309864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_12.png
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 411
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a87548355e3c35ab0800000000000000
+      internalID: -5020453769871861878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_73.png
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 411
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61024b6629636c940800000000000000
+      internalID: 5315996412573655062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_72.png
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 411
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ccc3088e611bc460800000000000000
+      internalID: 7262917990491081929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_71.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 377
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11c4afcd341abc9e0800000000000000
+      internalID: -1600007929757807599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_70.png
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 377
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33818c256bf53f4b0800000000000000
+      internalID: -5407873490864302029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_69.png
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 377
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a82f9f3e6f9627f0800000000000000
+      internalID: -637647001363732315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_68.png
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 377
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 973af96760eff7f60800000000000000
+      internalID: 8034419563965686649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_64.png
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 377
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80e24657cb49ebc80800000000000000
+      internalID: -8305037125680353784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_61.png
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 377
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dde06369de0b9aa0800000000000000
+      internalID: -6153308139033661997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_6.png
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 377
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9414bea4ccba6e850800000000000000
+      internalID: 6405996413899718985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_163.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 343
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b7097e2281220870800000000000000
+      internalID: 8647511077513922485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_44.png
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 343
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c46357f4d81edf20800000000000000
+      internalID: 3449221667573949637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_42.png
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 343
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aebf52df5c7567350800000000000000
+      internalID: 6014090860267174890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_41.png
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 343
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4346fe6731a1fc60800000000000000
+      internalID: 7850232884940391243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_40.png
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 343
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1a6cf92547d7e8b0800000000000000
+      internalID: -5122889359053526499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_39.png
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 343
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 752ba3884c8591e70800000000000000
+      internalID: 9086391324319068759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_38.png
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 343
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cd41fd561f9aaa50800000000000000
+      internalID: 6533209127868517827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_37.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 309
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 544dfe07d1c327e00800000000000000
+      internalID: 1040960561022489669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_34.png
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 309
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91e7b38e27893cff0800000000000000
+      internalID: -17002354289443303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_33.png
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 309
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5a38459d939248c0800000000000000
+      internalID: -4016485612637373861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_30.png
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 309
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a3ad14b0380c49e0800000000000000
+      internalID: -1635923559369038939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_3.png
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 309
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42bfa887a1660f2f0800000000000000
+      internalID: -941140058242876636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_29.png
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 309
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a5f4a92d801db0f0800000000000000
+      internalID: -1099704535533423191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_143.png
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 309
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcd638fb13642fe30800000000000000
+      internalID: 4535764954195914191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_10.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 275
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e968ab3ebd7bf610800000000000000
+      internalID: 1656055543986940384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_146.png
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 275
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaa93eb13244c7360800000000000000
+      internalID: 7168679624449432234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_26.png
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 275
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da5605ede1f421a60800000000000000
+      internalID: 7643258511598577069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_20.png
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 275
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c77e9120e117f620800000000000000
+      internalID: 2807732547023173576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_149.png
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 275
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d94b46c09e5a1d50800000000000000
+      internalID: 6708778570816899537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_15.png
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 275
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3a5a860e4dff55d0800000000000000
+      internalID: -3071457909284382150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_150.png
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 275
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa77849172add39d0800000000000000
+      internalID: -2792836332437080150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_151.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 241
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 027d1e502ff0d26b0800000000000000
+      internalID: -5319578052699498720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_152.png
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 241
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f5f69e48f522c4e0800000000000000
+      internalID: -1962964739179481611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_2.png
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 241
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35fd28e6aad478170800000000000000
+      internalID: 8180592642535645011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_156.png
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 241
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f75c496eefb5d9780800000000000000
+      internalID: -8674676156897376897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_157.png
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 241
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cdf75143e9604a00800000000000000
+      internalID: 738706763663539649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_100.png
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 242
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2924773126e019150800000000000000
+      internalID: 5877494803091374738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_99.png
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 242
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 034550e61df790030800000000000000
+      internalID: 3461438326081672240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_1.png
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 208
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d92787c434fdd220800000000000000
+      internalID: 2512432674665605584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_95.png
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 208
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc2506cf60d8cc1a0800000000000000
+      internalID: -6787895477210688817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_59.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 207
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e33de7bbf432eef0800000000000000
+      internalID: -80443587612036122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_28.png
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 207
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d682f175011303d90800000000000000
+      internalID: -7120137064621856659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_102.png
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 207
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ef927c03a910b350800000000000000
+      internalID: 6030348089128296422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_36.png
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 207
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52a9c2ee5d91b0e00800000000000000
+      internalID: 1011930947889437221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_90.png
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 207
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef9f28276dac94be0800000000000000
+      internalID: -1492438779103610370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_67.png
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 174
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b406ce02c60bf1850800000000000000
+      internalID: 6349987978071007307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_9.png
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 174
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89fda88d09e30bdb0800000000000000
+      internalID: -4778250412810903656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_60.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 177
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29adac97244703030800000000000000
+      internalID: 3472403141562653330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_58.png
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 175
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79218338f3d8aaa30800000000000000
+      internalID: 4227346504164577943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_57.png
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 142
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4cfdc46b88e5e550800000000000000
+      internalID: 6189608948279934026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_27.png
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 173
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 774afd6ea6687df80800000000000000
+      internalID: -8081843212594994057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_89.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 143
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e6a61ffb833949e0800000000000000
+      internalID: -1636720313199319320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_25.png
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 173
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a9c3d609ee950f70800000000000000
+      internalID: 9152896541379512741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_51.png
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 173
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f37ae6b8d3127480800000000000000
+      internalID: -8903031691855367180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_54.png
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 173
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 711eb34adc5d8d000800000000000000
+      internalID: 61033674169901335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_52.png
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 140
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec86f0bc0b54d9430800000000000000
+      internalID: 3791263086939171022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_49.png
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 140
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e17e0ef53856b860800000000000000
+      internalID: 7545315214624715237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_82.png
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 109
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c20ae399f259bf8a0800000000000000
+      internalID: -6270254024516263892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_80.png
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 109
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39ea8d089a754af50800000000000000
+      internalID: 6891729715306475155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_86.png
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 139
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78acc6927fe2044c0800000000000000
+      internalID: -4305389604679398777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_56.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 109
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8513248bfdc333140800000000000000
+      internalID: 4698165767844278616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_88.png
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 139
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7d2180d783f80e60800000000000000
+      internalID: 7928854908630019451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_87.png
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 139
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18985cae1f307b2c0800000000000000
+      internalID: -4416056572052665983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_55.png
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 139
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99a8428abff97e670800000000000000
+      internalID: 8567992719302232729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_23.png
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 118
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cdae1cee66e5e030800000000000000
+      internalID: 3523475647569505728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_84.png
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 117
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f4e68318fb1b65f0800000000000000
+      internalID: -762484959615720199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_19.png
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 208
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 015e4c5189da3eb60800000000000000
+      internalID: 7774248250483467536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_21.png
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 106
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcde76d90f2312690800000000000000
+      internalID: -7628760284774535731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_45.png
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 75
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fe182d139139d950800000000000000
+      internalID: 6474260447240920817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_46.png
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 75
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1cf880ffd5d20c30800000000000000
+      internalID: 4324253750019030047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_43.png
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 75
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dabb4022ec5d9e450800000000000000
+      internalID: 6118656650070244269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_48.png
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 105
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d323add776cf4eeb0800000000000000
+      internalID: -4691347390389931459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_76.png
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 84
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25d49b82d0d5c2990800000000000000
+      internalID: -7409444975832117934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_74.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 76
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a23cb70ead0ee790800000000000000
+      internalID: -7499041288420052311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_24.png
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 117
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77fb4c337aa3d0a00800000000000000
+      internalID: 724299604878999415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_22.png
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 96
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0fecfb20fdd2ad00800000000000000
+      internalID: 982591692320075532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_13.png
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 88
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2a61809f1b17d9f0800000000000000
+      internalID: -443856215890367955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_78.png
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 87
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 973ea88d074924430800000000000000
+      internalID: 3765735450825384825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_14.png
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 78
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92c1d544d39afc310800000000000000
+      internalID: 1427545687504788521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_65.png
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 69
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2af8c0c21c75b9bf0800000000000000
+      internalID: -316562861620162654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_127.png
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 62
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5da6430c29445de10800000000000000
+      internalID: 2221757388257782485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_128.png
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 50
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c692e36fb4e74f140800000000000000
+      internalID: 4752562371501631852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_126.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 42
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5ee5e9495770ebd0800000000000000
+      internalID: -2602949359244546467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_17.png
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 60
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dd746a58c33a10f0800000000000000
+      internalID: -1145546219609358887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_7.png
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 51
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd8058e51dda8b930800000000000000
+      internalID: 4159265370622200031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_117.png
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 54
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dab9e71c83c60720800000000000000
+      internalID: 2812150023803484885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_120.png
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 28
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b23fa5e7289f31a40800000000000000
+      internalID: 5337884322225124139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_144.png
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 42
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1ebd7d5cb2c16550800000000000000
+      internalID: 6152412680242970138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_145.png
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 33
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b6c26ac29b4ddde0800000000000000
+      internalID: -1306805223034796367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_129.png
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 16
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 625e9fc244018bfd0800000000000000
+      internalID: -2326091322538466010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_4.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 8
+        width: 15
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7bd9084f998dd450800000000000000
+      internalID: 6115195186240412539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_158.png
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 25
+        width: 32
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbee99a87d32d1c30800000000000000
+      internalID: 4331657825250569919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_31.png
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 72
+        width: 15
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e21d2e0fb0b3dbc0800000000000000
+      internalID: -3759466929301155096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_5.png
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 54
+        width: 15
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc4ff0b9a9146b7b0800000000000000
+      internalID: -5208903786725116721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_62.png
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 479
+        width: 15
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72410eeabc396e670800000000000000
+      internalID: 8567697844140512295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_63.png
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 445
+        width: 15
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70b79d7dfe935e9a0800000000000000
+      internalID: -6204489209351668985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_32.png
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 411
+        width: 15
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5634d2fd43b77330800000000000000
+      internalID: 3708629965530740316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_155.png
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 16
+        width: 32
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f981424760071390800000000000000
+      internalID: -7847803382176577032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_83.png
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 96
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a2328e9c9c896f60800000000000000
+      internalID: 8028102415066739369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_85.png
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 7
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f10dbe09612c19f0800000000000000
+      internalID: -496485123815046667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_66.png
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 377
+        width: 14
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f55d32ea295662ca0800000000000000
+      internalID: -6042030169409727137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_98.png
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 8
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68d246034d90540c0800000000000000
+      internalID: -4592253438084764282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_101.png
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 37
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f86f831f66bce29b0800000000000000
+      internalID: -5102917684770048369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_8.png
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 343
+        width: 14
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df553a0e0ae061a20800000000000000
+      internalID: 3032627483206964733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_35.png
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 309
+        width: 14
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15325e50aab1a94d0800000000000000
+      internalID: -3127156574198095023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_136.png
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 150
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e6dd79bcf6afc600800000000000000
+      internalID: 490794488780674790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_135.png
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 285
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 937286a7566a5d3c0800000000000000
+      internalID: -4335376111498680519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_118.png
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 118
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f4919ff68b52fa10800000000000000
+      internalID: 1941715024721581304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_119.png
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 264
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74a1a047da27a1e70800000000000000
+      internalID: 9086701287475124807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_18.png
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 19
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cad70d0b06940030800000000000000
+      internalID: 3460055387934808771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_16.png
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 1
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6640c049fe5da850800000000000000
+      internalID: 6389867870934812266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_121.png
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 75
+        width: 8
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec80cd1eaab2cd250800000000000000
+      internalID: 5970695218920163534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_148.png
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 3
+        width: 8
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81f2483ff923a5fc0800000000000000
+      internalID: -3505433697387794664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_147.png
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 3
+        width: 8
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b39868cbf030a8f0800000000000000
+      internalID: -531370898072497225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_142.png
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 38
+        width: 8
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cdf1e7c854465d10800000000000000
+      internalID: 2113952223198313925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_116.png
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 4
+        width: 8
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1729c222b8d7e640800000000000000
+      internalID: 5109290561874503452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_124.png
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 38
+        width: 8
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a030c5776424a5ff0800000000000000
+      internalID: -46651975716306166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_125.png
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 4
+        width: 8
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2800950a038af500800000000000000
+      internalID: 430800793433540651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_130.png
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 41
+        width: 8
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7e52c7b18d25e3c0800000000000000
+      internalID: -4331005431489864068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_131.png
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 7
+        width: 8
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af9b1c999eb089a00800000000000000
+      internalID: 763373234774194682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_132.png
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 41
+        width: 8
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a308e68735d021370800000000000000
+      internalID: 8291704516096458810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_133.png
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 7
+        width: 8
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a7076b3f3ac99b50800000000000000
+      internalID: 6600529101816530857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_122.png
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 208
+        width: 8
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9236d781c1e67df30800000000000000
+      internalID: 4600266611331261225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_123.png
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 140
+        width: 8
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74e4c94e7297bd540800000000000000
+      internalID: 5033750220762795591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_115.png
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 174
+        width: 8
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e2cdca4eab4f7830800000000000000
+      internalID: 4071055800117609185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_77.png
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 58
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 954c56b0548aa0b70800000000000000
+      internalID: 8866083830929671257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_79.png
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 41
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 846db80d8a5f50ab0800000000000000
+      internalID: -5042354102369266104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_113.png
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 112
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84778eba664db06f0800000000000000
+      internalID: -717246178199570616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_112.png
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 13
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 844f9c48abe96af20800000000000000
+      internalID: 3433606289845515336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_114.png
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 14
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7134c86b68b2bb450800000000000000
+      internalID: 6105521577419096855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_110.png
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 48
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0dcd307dc8c008c0800000000000000
+      internalID: -4035004481447015154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_111.png
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 21
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d30c1ecf1a9462e50800000000000000
+      internalID: 6784190848761446461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_137.png
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 142
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e18e7d7089f13410800000000000000
+      internalID: 1455218484873953766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_134.png
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 110
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 745944ae85d814360800000000000000
+      internalID: 7152153096268059975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_140.png
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 107
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee10d8a87ccbba9d0800000000000000
+      internalID: -2761906381252656658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_139.png
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 106
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12a4e432a5d471750800000000000000
+      internalID: 6275569655298804257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_141.png
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 254
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7643203855476a230800000000000000
+      internalID: 3649732458649367655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_138.png
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 244
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82e919a14b21da270800000000000000
+      internalID: 8263281456043892264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_153.png
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 7
+        width: 8
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0e9eb27d246bf430800000000000000
+      internalID: 3817755255488028175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_161.png
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 110
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f796d10937c765a0800000000000000
+      internalID: -6528030087192340490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_162.png
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 142
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b45b529570a95f0f0800000000000000
+      internalID: -1083790778961644213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_154.png
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 244
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bbdf83ef89b4d890800000000000000
+      internalID: -7434113057232528457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_159.png
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 254
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3347e17997cb2c4a0800000000000000
+      internalID: -6574485275595082701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_47.png
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 309
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff0536b365bbae2c0800000000000000
+      internalID: -4401499706763292417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jazz_50.png
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 343
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db7342fb38ff01b70800000000000000
+      internalID: 8867868607605127101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,53 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://assetstore.unity.com/packages/tools/sprite-management/texturepacker-importer-16641
+#
+# created with Free texture packer v0.6.6
+# http://free-tex-packer.com
+#
+:format=40300
+:texture=SS_Bldg_SisalTile.png
+:size=256x256
+:pivotpoints=enabled
+:borders=disabled
+
+SisalTile_1.png;1;223;32;32; 0.5;0.5; 0;0;0;0
+SisalTile_10.png;35;223;32;32; 0.5;0.5; 0;0;0;0
+SisalTile_12.png;69;223;32;32; 0.5;0.5; 0;0;0;0
+SisalTile_13.png;103;223;32;32; 0.5;0.5; 0;0;0;0
+SisalTile_14.png;137;223;32;32; 0.5;0.5; 0;0;0;0
+SisalTile_2.png;171;223;32;32; 0.5;0.5; 0;0;0;0
+SisalTile_21.png;205;223;32;32; 0.5;0.5; 0;0;0;0
+SisalTile_22.png;1;189;32;32; 0.5;0.5; 0;0;0;0
+SisalTile_23.png;35;189;32;32; 0.5;0.5; 0;0;0;0
+SisalTile_24.png;69;189;32;32; 0.5;0.5; 0;0;0;0
+SisalTile_25.png;103;189;32;32; 0.5;0.5; 0;0;0;0
+SisalTile_26.png;137;189;32;32; 0.5;0.5; 0;0;0;0
+SisalTile_27.png;171;189;32;32; 0.5;0.5; 0;0;0;0
+SisalTile_28.png;205;189;32;32; 0.5;0.5; 0;0;0;0
+SisalTile_29.png;1;155;32;32; 0.5;0.5; 0;0;0;0
+SisalTile_30.png;35;155;32;32; 0.5;0.5; 0;0;0;0
+SisalTile_31.png;69;155;32;32; 0.5;0.5; 0;0;0;0
+SisalTile_32.png;103;155;32;32; 0.5;0.5; 0;0;0;0
+SisalTile_34.png;137;155;32;32; 0.5;0.5; 0;0;0;0
+SisalTile_35.png;171;155;32;32; 0.5;0.5; 0;0;0;0
+SisalTile_36.png;205;155;32;32; 0.5;0.5; 0;0;0;0
+SisalTile_37.png;1;121;32;32; 0.5;0.5; 0;0;0;0
+SisalTile_6.png;35;121;32;32; 0.5;0.5; 0;0;0;0
+SisalTile_7.png;69;121;32;32; 0.5;0.5; 0;0;0;0
+SisalTile_9.png;103;121;32;32; 0.5;0.5; 0;0;0;0
+SisalTile_15.png;137;122;32;31; 0.5;0.5; 0;0;0;0
+SisalTile_20.png;171;122;32;31; 0.5;0.5; 0;0;0;0
+SisalTile_33.png;205;137;32;16; 0.5;0.5; 0;0;0;0
+SisalTile_38.png;205;119;32;16; 0.5;0.5; 0;0;0;0
+SisalTile_11.png;137;88;30;32; 0.5;0.5; 0;0;0;0
+SisalTile_5.png;169;88;30;32; 0.5;0.5; 0;0;0;0
+SisalTile_8.png;201;85;30;32; 0.5;0.5; 0;0;0;0
+SisalTile_16.png;1;104;30;15; 0.5;0.5; 0;0;0;0
+SisalTile_17.png;33;104;30;15; 0.5;0.5; 0;0;0;0
+SisalTile_18.png;65;104;30;15; 0.5;0.5; 0;0;0;0
+SisalTile_19.png;97;104;30;15; 0.5;0.5; 0;0;0;0
+SisalTile_3.png;1;70;25;32; 0.5;0.5; 0;0;0;0
+SisalTile_4.png;28;70;25;32; 0.5;0.5; 0;0;0;0
