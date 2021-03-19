@@ -1,0 +1,123 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://assetstore.unity.com/packages/tools/sprite-management/texturepacker-importer-16641
+#
+# created with Free texture packer v0.6.6
+# http://free-tex-packer.com
+#
+:format=40300
+:texture=SS_Foundations.png
+:size=512x512
+:pivotpoints=enabled
+:borders=disabled
+
+Foundation_1.png;2;478;32;32; 0.5;0.5; 0;0;0;0
+Foundation_10.png;2;442;32;32; 0.5;0.5; 0;0;0;0
+Foundation_100.png;2;406;32;32; 0.5;0.5; 0;0;0;0
+Foundation_101.png;2;370;32;32; 0.5;0.5; 0;0;0;0
+Foundation_102.png;2;334;32;32; 0.5;0.5; 0;0;0;0
+Foundation_103.png;2;298;32;32; 0.5;0.5; 0;0;0;0
+Foundation_104.png;2;262;32;32; 0.5;0.5; 0;0;0;0
+Foundation_105.png;2;226;32;32; 0.5;0.5; 0;0;0;0
+Foundation_106.png;2;190;32;32; 0.5;0.5; 0;0;0;0
+Foundation_107.png;2;154;32;32; 0.5;0.5; 0;0;0;0
+Foundation_108.png;2;118;32;32; 0.5;0.5; 0;0;0;0
+Foundation_11.png;2;82;32;32; 0.5;0.5; 0;0;0;0
+Foundation_12.png;2;46;32;32; 0.5;0.5; 0;0;0;0
+Foundation_13.png;2;10;32;32; 0.5;0.5; 0;0;0;0
+Foundation_14.png;38;478;32;32; 0.5;0.5; 0;0;0;0
+Foundation_15.png;74;478;32;32; 0.5;0.5; 0;0;0;0
+Foundation_16.png;110;478;32;32; 0.5;0.5; 0;0;0;0
+Foundation_17.png;146;478;32;32; 0.5;0.5; 0;0;0;0
+Foundation_18.png;182;478;32;32; 0.5;0.5; 0;0;0;0
+Foundation_19.png;218;478;32;32; 0.5;0.5; 0;0;0;0
+Foundation_2.png;254;478;32;32; 0.5;0.5; 0;0;0;0
+Foundation_20.png;290;478;32;32; 0.5;0.5; 0;0;0;0
+Foundation_21.png;326;478;32;32; 0.5;0.5; 0;0;0;0
+Foundation_22.png;362;478;32;32; 0.5;0.5; 0;0;0;0
+Foundation_23.png;398;478;32;32; 0.5;0.5; 0;0;0;0
+Foundation_24.png;434;478;32;32; 0.5;0.5; 0;0;0;0
+Foundation_25.png;470;478;32;32; 0.5;0.5; 0;0;0;0
+Foundation_26.png;38;442;32;32; 0.5;0.5; 0;0;0;0
+Foundation_27.png;38;406;32;32; 0.5;0.5; 0;0;0;0
+Foundation_28.png;38;370;32;32; 0.5;0.5; 0;0;0;0
+Foundation_29.png;38;334;32;32; 0.5;0.5; 0;0;0;0
+Foundation_3.png;38;298;32;32; 0.5;0.5; 0;0;0;0
+Foundation_30.png;38;262;32;32; 0.5;0.5; 0;0;0;0
+Foundation_31.png;38;226;32;32; 0.5;0.5; 0;0;0;0
+Foundation_32.png;38;190;32;32; 0.5;0.5; 0;0;0;0
+Foundation_33.png;38;154;32;32; 0.5;0.5; 0;0;0;0
+Foundation_34.png;38;118;32;32; 0.5;0.5; 0;0;0;0
+Foundation_35.png;38;82;32;32; 0.5;0.5; 0;0;0;0
+Foundation_36.png;38;46;32;32; 0.5;0.5; 0;0;0;0
+Foundation_37.png;38;10;32;32; 0.5;0.5; 0;0;0;0
+Foundation_38.png;74;442;32;32; 0.5;0.5; 0;0;0;0
+Foundation_39.png;110;442;32;32; 0.5;0.5; 0;0;0;0
+Foundation_4.png;146;442;32;32; 0.5;0.5; 0;0;0;0
+Foundation_40.png;182;442;32;32; 0.5;0.5; 0;0;0;0
+Foundation_41.png;218;442;32;32; 0.5;0.5; 0;0;0;0
+Foundation_42.png;254;442;32;32; 0.5;0.5; 0;0;0;0
+Foundation_43.png;290;442;32;32; 0.5;0.5; 0;0;0;0
+Foundation_44.png;326;442;32;32; 0.5;0.5; 0;0;0;0
+Foundation_45.png;362;442;32;32; 0.5;0.5; 0;0;0;0
+Foundation_46.png;398;442;32;32; 0.5;0.5; 0;0;0;0
+Foundation_47.png;434;442;32;32; 0.5;0.5; 0;0;0;0
+Foundation_48.png;470;442;32;32; 0.5;0.5; 0;0;0;0
+Foundation_49.png;74;406;32;32; 0.5;0.5; 0;0;0;0
+Foundation_5.png;74;370;32;32; 0.5;0.5; 0;0;0;0
+Foundation_50.png;74;334;32;32; 0.5;0.5; 0;0;0;0
+Foundation_51.png;74;298;32;32; 0.5;0.5; 0;0;0;0
+Foundation_52.png;74;262;32;32; 0.5;0.5; 0;0;0;0
+Foundation_53.png;74;226;32;32; 0.5;0.5; 0;0;0;0
+Foundation_54.png;74;190;32;32; 0.5;0.5; 0;0;0;0
+Foundation_55.png;74;154;32;32; 0.5;0.5; 0;0;0;0
+Foundation_56.png;74;118;32;32; 0.5;0.5; 0;0;0;0
+Foundation_57.png;74;82;32;32; 0.5;0.5; 0;0;0;0
+Foundation_58.png;74;46;32;32; 0.5;0.5; 0;0;0;0
+Foundation_59.png;74;10;32;32; 0.5;0.5; 0;0;0;0
+Foundation_6.png;110;406;32;32; 0.5;0.5; 0;0;0;0
+Foundation_60.png;146;406;32;32; 0.5;0.5; 0;0;0;0
+Foundation_61.png;182;406;32;32; 0.5;0.5; 0;0;0;0
+Foundation_62.png;218;406;32;32; 0.5;0.5; 0;0;0;0
+Foundation_63.png;254;406;32;32; 0.5;0.5; 0;0;0;0
+Foundation_64.png;290;406;32;32; 0.5;0.5; 0;0;0;0
+Foundation_65.png;326;406;32;32; 0.5;0.5; 0;0;0;0
+Foundation_66.png;362;406;32;32; 0.5;0.5; 0;0;0;0
+Foundation_67.png;398;406;32;32; 0.5;0.5; 0;0;0;0
+Foundation_68.png;434;406;32;32; 0.5;0.5; 0;0;0;0
+Foundation_69.png;470;406;32;32; 0.5;0.5; 0;0;0;0
+Foundation_7.png;110;370;32;32; 0.5;0.5; 0;0;0;0
+Foundation_70.png;110;334;32;32; 0.5;0.5; 0;0;0;0
+Foundation_71.png;110;298;32;32; 0.5;0.5; 0;0;0;0
+Foundation_72.png;110;262;32;32; 0.5;0.5; 0;0;0;0
+Foundation_73.png;110;226;32;32; 0.5;0.5; 0;0;0;0
+Foundation_74.png;110;190;32;32; 0.5;0.5; 0;0;0;0
+Foundation_75.png;110;154;32;32; 0.5;0.5; 0;0;0;0
+Foundation_76.png;110;118;32;32; 0.5;0.5; 0;0;0;0
+Foundation_77.png;110;82;32;32; 0.5;0.5; 0;0;0;0
+Foundation_78.png;110;46;32;32; 0.5;0.5; 0;0;0;0
+Foundation_79.png;110;10;32;32; 0.5;0.5; 0;0;0;0
+Foundation_8.png;146;370;32;32; 0.5;0.5; 0;0;0;0
+Foundation_80.png;182;370;32;32; 0.5;0.5; 0;0;0;0
+Foundation_81.png;218;370;32;32; 0.5;0.5; 0;0;0;0
+Foundation_82.png;254;370;32;32; 0.5;0.5; 0;0;0;0
+Foundation_83.png;290;370;32;32; 0.5;0.5; 0;0;0;0
+Foundation_84.png;326;370;32;32; 0.5;0.5; 0;0;0;0
+Foundation_85.png;362;370;32;32; 0.5;0.5; 0;0;0;0
+Foundation_86.png;398;370;32;32; 0.5;0.5; 0;0;0;0
+Foundation_87.png;434;370;32;32; 0.5;0.5; 0;0;0;0
+Foundation_88.png;470;370;32;32; 0.5;0.5; 0;0;0;0
+Foundation_89.png;146;334;32;32; 0.5;0.5; 0;0;0;0
+Foundation_9.png;146;298;32;32; 0.5;0.5; 0;0;0;0
+Foundation_90.png;146;262;32;32; 0.5;0.5; 0;0;0;0
+Foundation_91.png;146;226;32;32; 0.5;0.5; 0;0;0;0
+Foundation_92.png;146;190;32;32; 0.5;0.5; 0;0;0;0
+Foundation_93.png;146;154;32;32; 0.5;0.5; 0;0;0;0
+Foundation_94.png;146;118;32;32; 0.5;0.5; 0;0;0;0
+Foundation_95.png;146;82;32;32; 0.5;0.5; 0;0;0;0
+Foundation_96.png;146;46;32;32; 0.5;0.5; 0;0;0;0
+Foundation_97.png;146;10;32;32; 0.5;0.5; 0;0;0;0
+Foundation_98.png;182;334;32;32; 0.5;0.5; 0;0;0;0
+Foundation_99.png;218;334;32;32; 0.5;0.5; 0;0;0;0

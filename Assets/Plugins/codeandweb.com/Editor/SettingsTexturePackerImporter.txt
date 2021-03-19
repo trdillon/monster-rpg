@@ -5,6 +5,13 @@ tpsheetFileNames:
 - Assets/Ravar/Characters/Gus/TP_Gus.tpsheet
 - Assets/Ravar/Characters/Karen/TP_Karen.tpsheet
 - Assets/Ravar/Characters/Thug/TP_Thug.tpsheet
+- Assets/Ravar/MaterialLibrary/Buildings/Masonry/TP_Balcony.tpsheet
+- Assets/Ravar/MaterialLibrary/Buildings/Masonry/TP_CurlyArch.tpsheet
+- Assets/Ravar/MaterialLibrary/Buildings/Masonry/TP_Foundations.tpsheet
+- Assets/Ravar/MaterialLibrary/Buildings/Masonry/TP_GrandEntrance.tpsheet
+- Assets/Ravar/MaterialLibrary/Buildings/Masonry/TP_Masonry.tpsheet
+- Assets/Ravar/MaterialLibrary/Buildings/Masonry/TP_Pillars.tpsheet
+- Assets/Ravar/MaterialLibrary/Buildings/Masonry/TP_RoundArch.tpsheet
 - Assets/Ravar/MaterialLibrary/Buildings/Roofing/TP_Roof_Brown.tpsheet
 - Assets/Ravar/MaterialLibrary/Buildings/Roofing/TP_Roof_DarkBlue.tpsheet
 - Assets/Ravar/MaterialLibrary/Buildings/Roofing/TP_Roof_Deco.tpsheet
@@ -30,6 +37,13 @@ textureFileNames:
 - Assets/Ravar/Characters/Gus/SS_Gus.png
 - Assets/Ravar/Characters/Karen/SS_Karen.png
 - Assets/Ravar/Characters/Thug/SS_Thug.png
+- Assets/Ravar/MaterialLibrary/Buildings/Masonry/SS_Balcony.png
+- Assets/Ravar/MaterialLibrary/Buildings/Masonry/SS_CurlyArch.png
+- Assets/Ravar/MaterialLibrary/Buildings/Masonry/SS_Foundations.png
+- Assets/Ravar/MaterialLibrary/Buildings/Masonry/SS_GrandEntrance.png
+- Assets/Ravar/MaterialLibrary/Buildings/Masonry/SS_Masonry.png
+- Assets/Ravar/MaterialLibrary/Buildings/Masonry/SS_Pillars.png
+- Assets/Ravar/MaterialLibrary/Buildings/Masonry/SS_RoundArch.png
 - Assets/Ravar/MaterialLibrary/Buildings/Roofing/SS_Roof_Brown.png
 - Assets/Ravar/MaterialLibrary/Buildings/Roofing/SS_Roof_DarkBlue.png
 - Assets/Ravar/MaterialLibrary/Buildings/Roofing/SS_Roof_Deco.png
@@ -51,6 +65,13 @@ textureFileNames:
 - Assets/Ravar/MaterialLibrary/Terrain/TS_Sand_Tan.png
 - Assets/Ravar/MaterialLibrary/Terrain/TS_Sand_Yellow.png
 normalmapFileNames:
+- 
+- 
+- 
+- 
+- 
+- 
+- 
 - 
 - 
 - 

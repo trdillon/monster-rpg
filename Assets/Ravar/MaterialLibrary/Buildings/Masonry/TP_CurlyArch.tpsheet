@@ -1,0 +1,81 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://assetstore.unity.com/packages/tools/sprite-management/texturepacker-importer-16641
+#
+# created with Free texture packer v0.6.6
+# http://free-tex-packer.com
+#
+:format=40300
+:texture=SS_CurlyArch.png
+:size=512x128
+:pivotpoints=enabled
+:borders=disabled
+
+CurlyArch_114.png;2;122;32;4; 0.5;0.5; 0;0;0;0
+CurlyArch_117.png;38;121;32;5; 0.5;0.5; 0;0;0;0
+CurlyArch_111.png;74;118;32;8; 0.5;0.5; 0;0;0;0
+CurlyArch_12.png;110;117;32;9; 0.5;0.5; 0;0;0;0
+CurlyArch_15.png;146;117;32;9; 0.5;0.5; 0;0;0;0
+CurlyArch_18.png;182;117;32;9; 0.5;0.5; 0;0;0;0
+CurlyArch_159.png;218;113;32;13; 0.5;0.5; 0;0;0;0
+CurlyArch_162.png;254;112;32;14; 0.5;0.5; 0;0;0;0
+CurlyArch_165.png;290;112;32;14; 0.5;0.5; 0;0;0;0
+CurlyArch_150.png;326;106;32;20; 0.5;0.5; 0;0;0;0
+CurlyArch_153.png;362;106;32;20; 0.5;0.5; 0;0;0;0
+CurlyArch_156.png;398;106;32;20; 0.5;0.5; 0;0;0;0
+CurlyArch_11.png;434;94;32;32; 0.5;0.5; 0;0;0;0
+CurlyArch_110.png;470;94;32;32; 0.5;0.5; 0;0;0;0
+CurlyArch_128.png;506;94;4;32; 0.5;0.5; 0;0;0;0
+CurlyArch_112.png;2;86;32;32; 0.5;0.5; 0;0;0;0
+CurlyArch_113.png;38;85;32;32; 0.5;0.5; 0;0;0;0
+CurlyArch_115.png;74;82;32;32; 0.5;0.5; 0;0;0;0
+CurlyArch_116.png;110;81;32;32; 0.5;0.5; 0;0;0;0
+CurlyArch_118.png;146;81;32;32; 0.5;0.5; 0;0;0;0
+CurlyArch_119.png;182;81;6;32; 0.5;0.5; 0;0;0;0
+CurlyArch_120.png;192;81;6;32; 0.5;0.5; 0;0;0;0
+CurlyArch_121.png;202;81;6;32; 0.5;0.5; 0;0;0;0
+CurlyArch_122.png;212;77;6;32; 0.5;0.5; 0;0;0;0
+CurlyArch_123.png;222;77;6;32; 0.5;0.5; 0;0;0;0
+CurlyArch_124.png;232;77;6;32; 0.5;0.5; 0;0;0;0
+CurlyArch_125.png;242;77;6;32; 0.5;0.5; 0;0;0;0
+CurlyArch_126.png;252;76;32;32; 0.5;0.5; 0;0;0;0
+CurlyArch_127.png;288;76;6;32; 0.5;0.5; 0;0;0;0
+CurlyArch_130.png;298;76;4;32; 0.5;0.5; 0;0;0;0
+CurlyArch_131.png;306;76;4;32; 0.5;0.5; 0;0;0;0
+CurlyArch_133.png;314;76;4;32; 0.5;0.5; 0;0;0;0
+CurlyArch_129.png;322;70;32;32; 0.5;0.5; 0;0;0;0
+CurlyArch_13.png;358;70;32;32; 0.5;0.5; 0;0;0;0
+CurlyArch_132.png;394;70;32;32; 0.5;0.5; 0;0;0;0
+CurlyArch_134.png;430;58;6;32; 0.5;0.5; 0;0;0;0
+CurlyArch_135.png;440;58;6;32; 0.5;0.5; 0;0;0;0
+CurlyArch_136.png;450;58;8;32; 0.5;0.5; 0;0;0;0
+CurlyArch_137.png;462;58;8;32; 0.5;0.5; 0;0;0;0
+CurlyArch_138.png;474;58;8;32; 0.5;0.5; 0;0;0;0
+CurlyArch_139.png;486;58;8;32; 0.5;0.5; 0;0;0;0
+CurlyArch_140.png;498;58;8;32; 0.5;0.5; 0;0;0;0
+CurlyArch_14.png;2;50;32;32; 0.5;0.5; 0;0;0;0
+CurlyArch_141.png;38;49;6;32; 0.5;0.5; 0;0;0;0
+CurlyArch_142.png;48;49;8;32; 0.5;0.5; 0;0;0;0
+CurlyArch_144.png;60;49;4;32; 0.5;0.5; 0;0;0;0
+CurlyArch_143.png;68;46;29;32; 0.5;0.5; 0;0;0;0
+CurlyArch_147.png;101;46;4;32; 0.5;0.5; 0;0;0;0
+CurlyArch_145.png;109;45;29;32; 0.5;0.5; 0;0;0;0
+CurlyArch_146.png;142;45;29;32; 0.5;0.5; 0;0;0;0
+CurlyArch_148.png;175;45;29;32; 0.5;0.5; 0;0;0;0
+CurlyArch_149.png;208;41;32;32; 0.5;0.5; 0;0;0;0
+CurlyArch_151.png;244;40;32;32; 0.5;0.5; 0;0;0;0
+CurlyArch_152.png;280;40;32;32; 0.5;0.5; 0;0;0;0
+CurlyArch_154.png;316;34;32;32; 0.5;0.5; 0;0;0;0
+CurlyArch_155.png;352;34;32;32; 0.5;0.5; 0;0;0;0
+CurlyArch_157.png;388;34;32;32; 0.5;0.5; 0;0;0;0
+CurlyArch_158.png;424;22;32;32; 0.5;0.5; 0;0;0;0
+CurlyArch_16.png;460;22;32;32; 0.5;0.5; 0;0;0;0
+CurlyArch_160.png;2;14;32;32; 0.5;0.5; 0;0;0;0
+CurlyArch_161.png;38;10;32;32; 0.5;0.5; 0;0;0;0
+CurlyArch_163.png;74;9;32;32; 0.5;0.5; 0;0;0;0
+CurlyArch_164.png;110;9;32;32; 0.5;0.5; 0;0;0;0
+CurlyArch_166.png;146;9;32;32; 0.5;0.5; 0;0;0;0
+CurlyArch_17.png;182;5;32;32; 0.5;0.5; 0;0;0;0
+CurlyArch_19.png;218;4;32;32; 0.5;0.5; 0;0;0;0

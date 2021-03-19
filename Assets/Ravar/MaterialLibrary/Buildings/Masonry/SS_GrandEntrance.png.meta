@@ -1,0 +1,2448 @@
+fileFormatVersion: 2
+guid: 4f1c9f6552837724bad0ff9d19e096be
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1360455888415233641
+    second: GrandEntrance_3.png
+  - first:
+      213: 2877147524151113864
+    second: GrandEntrance_6.png
+  - first:
+      213: 8872559561116612952
+    second: GrandEntrance_1.png
+  - first:
+      213: 4684933247392717999
+    second: GrandEntrance_4.png
+  - first:
+      213: 5122012312936046633
+    second: GrandEntrance_2.png
+  - first:
+      213: 6165661626378783456
+    second: GrandEntrance_5.png
+  - first:
+      213: -5724856798668289126
+    second: GrandEntrance_29.png
+  - first:
+      213: -7950700837700259138
+    second: GrandEntrance_43.png
+  - first:
+      213: -6645864506697096233
+    second: GrandEntrance_44.png
+  - first:
+      213: -753706720976057390
+    second: GrandEntrance_45.png
+  - first:
+      213: -3447573760780643044
+    second: GrandEntrance_46.png
+  - first:
+      213: 3213925730480428241
+    second: GrandEntrance_70.png
+  - first:
+      213: 6159770997442849005
+    second: GrandEntrance_73.png
+  - first:
+      213: 870617364661445579
+    second: GrandEntrance_11.png
+  - first:
+      213: 8677006082901672747
+    second: GrandEntrance_14.png
+  - first:
+      213: -8506402339981765873
+    second: GrandEntrance_48.png
+  - first:
+      213: 9087869976669194713
+    second: GrandEntrance_51.png
+  - first:
+      213: -5179805177468197696
+    second: GrandEntrance_92.png
+  - first:
+      213: -3068852279089656619
+    second: GrandEntrance_95.png
+  - first:
+      213: -4531090191871300677
+    second: GrandEntrance_17.png
+  - first:
+      213: 603678075611476123
+    second: GrandEntrance_20.png
+  - first:
+      213: -7310501659906965325
+    second: GrandEntrance_32.png
+  - first:
+      213: -7315398790366495621
+    second: GrandEntrance_35.png
+  - first:
+      213: -7272237761535127397
+    second: GrandEntrance_37.png
+  - first:
+      213: 3069445377800190326
+    second: GrandEntrance_38.png
+  - first:
+      213: -8946434475648811904
+    second: GrandEntrance_39.png
+  - first:
+      213: -4513840320788485975
+    second: GrandEntrance_40.png
+  - first:
+      213: 2239836668780847856
+    second: GrandEntrance_41.png
+  - first:
+      213: 6091811330548492715
+    second: GrandEntrance_42.png
+  - first:
+      213: 7199718668301901344
+    second: GrandEntrance_23.png
+  - first:
+      213: -8666679984497677974
+    second: GrandEntrance_26.png
+  - first:
+      213: 3111290368215947867
+    second: GrandEntrance_64.png
+  - first:
+      213: -8213933687081977100
+    second: GrandEntrance_67.png
+  - first:
+      213: -3001658268700941750
+    second: GrandEntrance_86.png
+  - first:
+      213: 454781894706204667
+    second: GrandEntrance_89.png
+  - first:
+      213: -2258905526964984807
+    second: GrandEntrance_54.png
+  - first:
+      213: -3941919342525800840
+    second: GrandEntrance_57.png
+  - first:
+      213: -8868642246170195118
+    second: GrandEntrance_76.png
+  - first:
+      213: 7257588325201437207
+    second: GrandEntrance_79.png
+  - first:
+      213: -183751980859286564
+    second: GrandEntrance_28.png
+  - first:
+      213: 4306005643474709425
+    second: GrandEntrance_16.png
+  - first:
+      213: -6061171530984604710
+    second: GrandEntrance_18.png
+  - first:
+      213: 415639331976891127
+    second: GrandEntrance_19.png
+  - first:
+      213: 1797232445666850454
+    second: GrandEntrance_21.png
+  - first:
+      213: 1260440040244052299
+    second: GrandEntrance_10.png
+  - first:
+      213: -2597651826882370058
+    second: GrandEntrance_12.png
+  - first:
+      213: -3102635811427083626
+    second: GrandEntrance_13.png
+  - first:
+      213: -5978968171436507232
+    second: GrandEntrance_15.png
+  - first:
+      213: -6084527808479890997
+    second: GrandEntrance_22.png
+  - first:
+      213: -7046202949568405252
+    second: GrandEntrance_24.png
+  - first:
+      213: -1348907759656394118
+    second: GrandEntrance_25.png
+  - first:
+      213: -7756614659074527015
+    second: GrandEntrance_27.png
+  - first:
+      213: 4532749697528812859
+    second: GrandEntrance_30.png
+  - first:
+      213: 5649156773040122227
+    second: GrandEntrance_31.png
+  - first:
+      213: -3404373420596239196
+    second: GrandEntrance_33.png
+  - first:
+      213: -8376825153705968190
+    second: GrandEntrance_34.png
+  - first:
+      213: 6014182219160939351
+    second: GrandEntrance_36.png
+  - first:
+      213: -6634476913090023460
+    second: GrandEntrance_47.png
+  - first:
+      213: -2508203283400295239
+    second: GrandEntrance_49.png
+  - first:
+      213: 9174133059214595764
+    second: GrandEntrance_50.png
+  - first:
+      213: -375283364381606135
+    second: GrandEntrance_52.png
+  - first:
+      213: 5572551953669258753
+    second: GrandEntrance_53.png
+  - first:
+      213: 3812247529180297706
+    second: GrandEntrance_55.png
+  - first:
+      213: -5757884309051822266
+    second: GrandEntrance_56.png
+  - first:
+      213: -5533842582907354121
+    second: GrandEntrance_58.png
+  - first:
+      213: 6378666566822136771
+    second: GrandEntrance_59.png
+  - first:
+      213: -8605710357139285096
+    second: GrandEntrance_60.png
+  - first:
+      213: 3859654243179061025
+    second: GrandEntrance_61.png
+  - first:
+      213: -8293204635155963956
+    second: GrandEntrance_62.png
+  - first:
+      213: -658297574614181610
+    second: GrandEntrance_63.png
+  - first:
+      213: 8360826805636617076
+    second: GrandEntrance_65.png
+  - first:
+      213: -8636959103831790470
+    second: GrandEntrance_66.png
+  - first:
+      213: 4144072257496230369
+    second: GrandEntrance_68.png
+  - first:
+      213: 6912491867102784856
+    second: GrandEntrance_69.png
+  - first:
+      213: 4095736399878533488
+    second: GrandEntrance_7.png
+  - first:
+      213: 6833110123313028025
+    second: GrandEntrance_71.png
+  - first:
+      213: 4428098722246465986
+    second: GrandEntrance_72.png
+  - first:
+      213: 2978388825373265862
+    second: GrandEntrance_74.png
+  - first:
+      213: 6569738078672269661
+    second: GrandEntrance_75.png
+  - first:
+      213: -2819241257487525741
+    second: GrandEntrance_77.png
+  - first:
+      213: 1260510034072183395
+    second: GrandEntrance_78.png
+  - first:
+      213: -2719595917176700399
+    second: GrandEntrance_8.png
+  - first:
+      213: 5568771544073722866
+    second: GrandEntrance_80.png
+  - first:
+      213: 4591324790203634990
+    second: GrandEntrance_81.png
+  - first:
+      213: -1102085534298959499
+    second: GrandEntrance_85.png
+  - first:
+      213: 214829664981564672
+    second: GrandEntrance_87.png
+  - first:
+      213: 8657296385620066519
+    second: GrandEntrance_82.png
+  - first:
+      213: 8351949398739604376
+    second: GrandEntrance_83.png
+  - first:
+      213: 7800896333615755042
+    second: GrandEntrance_9.png
+  - first:
+      213: -4814550165070153117
+    second: GrandEntrance_88.png
+  - first:
+      213: -8357309553643671959
+    second: GrandEntrance_84.png
+  - first:
+      213: 4725707419492920193
+    second: GrandEntrance_90.png
+  - first:
+      213: 6181737820693997939
+    second: GrandEntrance_91.png
+  - first:
+      213: -3211135505364143238
+    second: GrandEntrance_93.png
+  - first:
+      213: 6016967788555763875
+    second: GrandEntrance_94.png
+  - first:
+      213: -1350178709597291592
+    second: GrandEntrance_96.png
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GrandEntrance_3.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 249
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96614992c6f41e210800000000000000
+      internalID: 1360455888415233641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_6.png
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 249
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 888fb6fed6eade720800000000000000
+      internalID: 2877147524151113864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_1.png
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 248
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 859f9d879e9a12b70800000000000000
+      internalID: 8872559561116612952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_4.png
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 248
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fac924777f9340140800000000000000
+      internalID: 4684933247392717999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_2.png
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 241
+        width: 32
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 920eabf9f0b051740800000000000000
+      internalID: 5122012312936046633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_5.png
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 241
+        width: 32
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ea80950594d09550800000000000000
+      internalID: 6165661626378783456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_29.png
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 239
+        width: 32
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9b856db2193d80b0800000000000000
+      internalID: -5724856798668289126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_43.png
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 238
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb2b97576bf69a190800000000000000
+      internalID: -7950700837700259138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_44.png
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 238
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d361f4417525c3a0800000000000000
+      internalID: -6645864506697096233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_45.png
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 238
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dbc5670bbb4a85f0800000000000000
+      internalID: -753706720976057390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_46.png
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 238
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1556bb3ee1c720d0800000000000000
+      internalID: -3447573760780643044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_70.png
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 238
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d416cb7c682a9c20800000000000000
+      internalID: 3213925730480428241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_73.png
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 238
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de8a5581617eb7550800000000000000
+      internalID: 6159770997442849005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_11.png
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 235
+        width: 32
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc3aee361ed051c00800000000000000
+      internalID: 870617364661445579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_14.png
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 235
+        width: 32
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2302454f0bea6870800000000000000
+      internalID: 8677006082901672747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_48.png
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 235
+        width: 32
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f03d5d0042033f980800000000000000
+      internalID: -8506402339981765873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_51.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 225
+        width: 32
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d90e4c18999e1e70800000000000000
+      internalID: 9087869976669194713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_92.png
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 217
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c4674782a2ad18b0800000000000000
+      internalID: -5179805177468197696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_95.png
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 217
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dc86b49c1f3965d0800000000000000
+      internalID: -3068852279089656619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_17.png
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 214
+        width: 32
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbb214c2a755e11c0800000000000000
+      internalID: -4531090191871300677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_20.png
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 213
+        width: 32
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b907387e202b06800800000000000000
+      internalID: 603678075611476123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_32.png
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 213
+        width: 32
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b087571971eb8a90800000000000000
+      internalID: -7310501659906965325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_35.png
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 213
+        width: 32
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7cf1ed0f8b7a7a90800000000000000
+      internalID: -7315398790366495621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_37.png
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 211
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b90548d2942d31b90800000000000000
+      internalID: -7272237761535127397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_38.png
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 211
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 679be39fe4cd89a20800000000000000
+      internalID: 3069445377800190326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_39.png
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 211
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08cf4a0ae31e7d380800000000000000
+      internalID: -8946434475648811904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_40.png
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 208
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a82192c42e9b51c0800000000000000
+      internalID: -4513840320788485975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_41.png
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 208
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f2a395459f751f10800000000000000
+      internalID: 2239836668780847856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_42.png
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 208
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba9ea0c11267a8450800000000000000
+      internalID: 6091811330548492715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_23.png
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 207
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02e12eaabf98ae360800000000000000
+      internalID: 7199718668301901344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_26.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 197
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a69270ed874c9b780800000000000000
+      internalID: -8666679984497677974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_64.png
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 189
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5a1b960b168d2b20800000000000000
+      internalID: 3111290368215947867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_67.png
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 189
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fa3dd4b4de320e80800000000000000
+      internalID: -8213933687081977100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_86.png
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 186
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4267f445b7f756d0800000000000000
+      internalID: -3001658268700941750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_89.png
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 185
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bff0e3449b5bf4600800000000000000
+      internalID: 454781894706204667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_54.png
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 182
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 914e5143461c6a0e0800000000000000
+      internalID: -2258905526964984807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_57.png
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 182
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87e128f3e3d7b49c0800000000000000
+      internalID: -3941919342525800840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_76.png
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 180
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25bc00d7dd04ce480800000000000000
+      internalID: -8868642246170195118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_79.png
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 180
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71267a1212228b460800000000000000
+      internalID: 7257588325201437207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_28.png
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 175
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdb9b160c8e237df0800000000000000
+      internalID: -183751980859286564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_16.png
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 173
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bb232c815102cb30800000000000000
+      internalID: 4306005643474709425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_18.png
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 173
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adbb3f42b9462eba0800000000000000
+      internalID: -6061171530984604710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_19.png
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 173
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fac92135c5a4c500800000000000000
+      internalID: 415639331976891127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_21.png
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 172
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69677ce136d01f810800000000000000
+      internalID: 1797232445666850454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_10.png
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 171
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b410d6bd98bfd7110800000000000000
+      internalID: 1260440040244052299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_12.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 161
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f528882d6943fbd0800000000000000
+      internalID: -2597651826882370058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_13.png
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 153
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69a9b700b2931f4d0800000000000000
+      internalID: -3102635811427083626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_15.png
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 153
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aff8224020760da0800000000000000
+      internalID: -5978968171436507232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_22.png
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 150
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc1f195023a6f8ba0800000000000000
+      internalID: -6084527808479890997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_24.png
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 149
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf06aafefbbd63e90800000000000000
+      internalID: -7046202949568405252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_25.png
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 146
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a72a9e61a87b74de0800000000000000
+      internalID: -1348907759656394118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_27.png
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 146
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d0764a5018fa5490800000000000000
+      internalID: -7756614659074527015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_30.png
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 144
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b35d6f895df87ee30800000000000000
+      internalID: 4532749697528812859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_31.png
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 144
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3796c819726d56e40800000000000000
+      internalID: 5649156773040122227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_33.png
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 144
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a4649e396c31c0d0800000000000000
+      internalID: -3404373420596239196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_34.png
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 137
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cd7ccfa7e98fbb80800000000000000
+      internalID: -8376825153705968190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_36.png
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 137
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75bee832ddaa67350800000000000000
+      internalID: 6014182219160939351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_47.png
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 137
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdf2db4066a9de3a0800000000000000
+      internalID: -6634476913090023460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_49.png
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 136
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bcf47c1762113dd0800000000000000
+      internalID: -2508203283400295239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_50.png
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 135
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b657a42961115f70800000000000000
+      internalID: 9174133059214595764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_52.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 125
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90fbbe7b4c9bacaf0800000000000000
+      internalID: -375283364381606135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_53.png
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 117
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10e7dda2a7ea55d40800000000000000
+      internalID: 5572551953669258753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_55.png
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 114
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae9f6acfde2d7e430800000000000000
+      internalID: 3812247529180297706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_56.png
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 113
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64fab2d3ab2e710b0800000000000000
+      internalID: -5757884309051822266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_58.png
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 110
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f380ea8d77d333b0800000000000000
+      internalID: -5533842582907354121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_59.png
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 110
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cb08186273958850800000000000000
+      internalID: 6378666566822136771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_60.png
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 108
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89b10d27600629880800000000000000
+      internalID: -8605710357139285096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_61.png
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 108
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12f5488b51f309530800000000000000
+      internalID: 3859654243179061025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_62.png
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 108
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccfd7e7d25e98ec80800000000000000
+      internalID: -8293204635155963956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_63.png
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 101
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 619de9cf7d14dd6f0800000000000000
+      internalID: -658297574614181610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_65.png
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 101
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 473d882aeaf970470800000000000000
+      internalID: 8360826805636617076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_66.png
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 100
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7ca784a47b532880800000000000000
+      internalID: -8636959103831790470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_68.png
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 99
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e92d9f03c3b28930800000000000000
+      internalID: 4144072257496230369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_69.png
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 99
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85d207baaba1eef50800000000000000
+      internalID: 6912491867102784856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_7.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 89
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 071b5683e8af6d830800000000000000
+      internalID: 4095736399878533488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_71.png
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 81
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bbd23b247514de50800000000000000
+      internalID: 6833110123313028025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_72.png
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 78
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c99cd9a354c37d30800000000000000
+      internalID: 4428098722246465986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_74.png
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 77
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cfcd534bdc555920800000000000000
+      internalID: 2978388825373265862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_75.png
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 74
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d513e9e79f56c2b50800000000000000
+      internalID: 6569738078672269661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_77.png
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 74
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3989457630b00e8d0800000000000000
+      internalID: -2819241257487525741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_78.png
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 72
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36220b0923b3e7110800000000000000
+      internalID: 1260510034072183395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_8.png
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 72
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11284102ced024ad0800000000000000
+      internalID: -2719595917176700399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_80.png
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 72
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fb51d7f630484d40800000000000000
+      internalID: 5568771544073722866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_81.png
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 65
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2558802299a7bf30800000000000000
+      internalID: 4591324790203634990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_85.png
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 65
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5719300bb0b94b0f0800000000000000
+      internalID: -1102085534298959499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_87.png
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 64
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00d317c217a3bf200800000000000000
+      internalID: 214829664981564672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_82.png
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 63
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d04824c135e42870800000000000000
+      internalID: 8657296385620066519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_83.png
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 63
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89359e54ab518e370800000000000000
+      internalID: 8351949398739604376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_9.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 53
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22f60de62e9524c60800000000000000
+      internalID: 7800896333615755042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_88.png
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 45
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36af1b922284f2db0800000000000000
+      internalID: -4814550165070153117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_84.png
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 42
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96e27196d3fd40c80800000000000000
+      internalID: -8357309553643671959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_90.png
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 41
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18bad433cd5159140800000000000000
+      internalID: 4725707419492920193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_91.png
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 38
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3792011bbc1f9c550800000000000000
+      internalID: 6181737820693997939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_93.png
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 38
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a73302d6541cf63d0800000000000000
+      internalID: -3211135505364143238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_94.png
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 36
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a085dd0350908350800000000000000
+      internalID: 6016967788555763875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandEntrance_96.png
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 36
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bb782ffd93334de0800000000000000
+      internalID: -1350178709597291592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
