@@ -1,0 +1,53 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://assetstore.unity.com/packages/tools/sprite-management/texturepacker-importer-16641
+#
+# created with Free texture packer v0.6.6
+# http://free-tex-packer.com
+#
+:format=40300
+:texture=SS_Bldg_Tuscany.png
+:size=256x256
+:pivotpoints=enabled
+:borders=disabled
+
+Tuscany_10.png;1;223;32;32; 0.5;0.5; 0;0;0;0
+Tuscany_12.png;35;223;32;32; 0.5;0.5; 0;0;0;0
+Tuscany_13.png;69;223;32;32; 0.5;0.5; 0;0;0;0
+Tuscany_14.png;103;223;32;32; 0.5;0.5; 0;0;0;0
+Tuscany_15.png;137;223;32;32; 0.5;0.5; 0;0;0;0
+Tuscany_20.png;171;223;32;32; 0.5;0.5; 0;0;0;0
+Tuscany_21.png;205;223;32;32; 0.5;0.5; 0;0;0;0
+Tuscany_22.png;1;189;32;32; 0.5;0.5; 0;0;0;0
+Tuscany_23.png;35;189;32;32; 0.5;0.5; 0;0;0;0
+Tuscany_24.png;69;189;32;32; 0.5;0.5; 0;0;0;0
+Tuscany_25.png;103;189;32;32; 0.5;0.5; 0;0;0;0
+Tuscany_26.png;137;189;32;32; 0.5;0.5; 0;0;0;0
+Tuscany_27.png;171;189;32;32; 0.5;0.5; 0;0;0;0
+Tuscany_28.png;205;189;32;32; 0.5;0.5; 0;0;0;0
+Tuscany_29.png;1;155;32;32; 0.5;0.5; 0;0;0;0
+Tuscany_30.png;35;155;32;32; 0.5;0.5; 0;0;0;0
+Tuscany_31.png;69;155;32;32; 0.5;0.5; 0;0;0;0
+Tuscany_32.png;103;155;32;32; 0.5;0.5; 0;0;0;0
+Tuscany_6.png;137;155;32;32; 0.5;0.5; 0;0;0;0
+Tuscany_7.png;171;155;32;32; 0.5;0.5; 0;0;0;0
+Tuscany_9.png;205;155;32;32; 0.5;0.5; 0;0;0;0
+Tuscany_34.png;1;122;32;31; 0.5;0.5; 0;0;0;0
+Tuscany_35.png;35;122;32;31; 0.5;0.5; 0;0;0;0
+Tuscany_36.png;69;122;32;31; 0.5;0.5; 0;0;0;0
+Tuscany_37.png;103;122;32;31; 0.5;0.5; 0;0;0;0
+Tuscany_16.png;137;137;32;16; 0.5;0.5; 0;0;0;0
+Tuscany_17.png;171;137;32;16; 0.5;0.5; 0;0;0;0
+Tuscany_18.png;205;137;32;16; 0.5;0.5; 0;0;0;0
+Tuscany_19.png;137;119;32;16; 0.5;0.5; 0;0;0;0
+Tuscany_33.png;171;120;31;15; 0.5;0.5; 0;0;0;0
+Tuscany_38.png;204;120;31;15; 0.5;0.5; 0;0;0;0
+Tuscany_11.png;171;86;30;32; 0.5;0.5; 0;0;0;0
+Tuscany_5.png;203;86;30;32; 0.5;0.5; 0;0;0;0
+Tuscany_8.png;1;88;30;32; 0.5;0.5; 0;0;0;0
+Tuscany_2.png;33;89;28;31; 0.5;0.5; 0;0;0;0
+Tuscany_1.png;63;89;27;31; 0.5;0.5; 0;0;0;0
+Tuscany_4.png;92;88;26;32; 0.5;0.5; 0;0;0;0
+Tuscany_3.png;120;85;24;32; 0.5;0.5; 0;0;0;0

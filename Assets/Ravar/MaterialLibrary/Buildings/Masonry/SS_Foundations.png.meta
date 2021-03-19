@@ -1,0 +1,2736 @@
+fileFormatVersion: 2
+guid: 525d3440e1ab3db439c870282dfdbac6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2194050740589978850
+    second: Foundation_1.png
+  - first:
+      213: 41168166107972041
+    second: Foundation_10.png
+  - first:
+      213: -501392562780792647
+    second: Foundation_100.png
+  - first:
+      213: -4102947553128369481
+    second: Foundation_101.png
+  - first:
+      213: 6179818117414480620
+    second: Foundation_102.png
+  - first:
+      213: 4790244785924944598
+    second: Foundation_103.png
+  - first:
+      213: -3385223577705602183
+    second: Foundation_104.png
+  - first:
+      213: -4999285994823521924
+    second: Foundation_105.png
+  - first:
+      213: 6716911566740417658
+    second: Foundation_106.png
+  - first:
+      213: -447329253457003064
+    second: Foundation_107.png
+  - first:
+      213: 7742949672495269474
+    second: Foundation_108.png
+  - first:
+      213: 7022621690080504716
+    second: Foundation_11.png
+  - first:
+      213: 4408851236625578152
+    second: Foundation_12.png
+  - first:
+      213: -1211992235962315717
+    second: Foundation_13.png
+  - first:
+      213: -4934474557017664117
+    second: Foundation_14.png
+  - first:
+      213: -8622720903507545733
+    second: Foundation_15.png
+  - first:
+      213: 6571257599749997558
+    second: Foundation_16.png
+  - first:
+      213: 1749329016151787185
+    second: Foundation_17.png
+  - first:
+      213: -7876274435782381322
+    second: Foundation_18.png
+  - first:
+      213: -8003760910991038512
+    second: Foundation_19.png
+  - first:
+      213: -2880884379755994628
+    second: Foundation_2.png
+  - first:
+      213: 7048231034980948532
+    second: Foundation_20.png
+  - first:
+      213: 2641739307011278312
+    second: Foundation_21.png
+  - first:
+      213: 1386192001047733902
+    second: Foundation_22.png
+  - first:
+      213: 7798162242093343981
+    second: Foundation_23.png
+  - first:
+      213: 6978973986308226107
+    second: Foundation_24.png
+  - first:
+      213: 5851883882468936819
+    second: Foundation_25.png
+  - first:
+      213: 6534421629153592582
+    second: Foundation_26.png
+  - first:
+      213: 6975811320879504683
+    second: Foundation_27.png
+  - first:
+      213: 4435870327200819146
+    second: Foundation_28.png
+  - first:
+      213: -5323437136650474635
+    second: Foundation_29.png
+  - first:
+      213: -8384975157258259762
+    second: Foundation_3.png
+  - first:
+      213: 8906223596754655670
+    second: Foundation_30.png
+  - first:
+      213: 1777557197212426001
+    second: Foundation_31.png
+  - first:
+      213: 6687682069192268542
+    second: Foundation_32.png
+  - first:
+      213: 8036186336510397444
+    second: Foundation_33.png
+  - first:
+      213: 6292081445531622966
+    second: Foundation_34.png
+  - first:
+      213: -216723407291271893
+    second: Foundation_35.png
+  - first:
+      213: 6182331232730315360
+    second: Foundation_36.png
+  - first:
+      213: -1615385573715435464
+    second: Foundation_37.png
+  - first:
+      213: -3488621784236375005
+    second: Foundation_38.png
+  - first:
+      213: -4476739906715676208
+    second: Foundation_39.png
+  - first:
+      213: 4496210347571877679
+    second: Foundation_4.png
+  - first:
+      213: 1606903413653383291
+    second: Foundation_40.png
+  - first:
+      213: -3243399065807976710
+    second: Foundation_41.png
+  - first:
+      213: -8090902118455080196
+    second: Foundation_42.png
+  - first:
+      213: 2983096164000649793
+    second: Foundation_43.png
+  - first:
+      213: 2432475907394173278
+    second: Foundation_44.png
+  - first:
+      213: 585905671340862161
+    second: Foundation_45.png
+  - first:
+      213: 958991490247912329
+    second: Foundation_46.png
+  - first:
+      213: 8713237388903086755
+    second: Foundation_47.png
+  - first:
+      213: -572484451462920885
+    second: Foundation_48.png
+  - first:
+      213: -3956479941939024953
+    second: Foundation_49.png
+  - first:
+      213: 3371464255817807693
+    second: Foundation_5.png
+  - first:
+      213: 3059439497424412241
+    second: Foundation_50.png
+  - first:
+      213: -7391158942540315841
+    second: Foundation_51.png
+  - first:
+      213: -2729597675072401736
+    second: Foundation_52.png
+  - first:
+      213: 7636846174873132270
+    second: Foundation_53.png
+  - first:
+      213: 4539940643410306822
+    second: Foundation_54.png
+  - first:
+      213: -7535213877868288501
+    second: Foundation_55.png
+  - first:
+      213: 4359113777273890791
+    second: Foundation_56.png
+  - first:
+      213: 2465187994287230057
+    second: Foundation_57.png
+  - first:
+      213: -1453605852002354607
+    second: Foundation_58.png
+  - first:
+      213: 8791835267192932349
+    second: Foundation_59.png
+  - first:
+      213: 9032814215735186003
+    second: Foundation_6.png
+  - first:
+      213: -7596045414380874244
+    second: Foundation_60.png
+  - first:
+      213: -7830281125088981811
+    second: Foundation_61.png
+  - first:
+      213: -9071673473233667760
+    second: Foundation_62.png
+  - first:
+      213: -6872563684055520956
+    second: Foundation_63.png
+  - first:
+      213: -6432036002968472145
+    second: Foundation_64.png
+  - first:
+      213: -8303376069564146551
+    second: Foundation_65.png
+  - first:
+      213: 6252030207921013754
+    second: Foundation_66.png
+  - first:
+      213: -7354523794610413293
+    second: Foundation_67.png
+  - first:
+      213: 7063035489191174127
+    second: Foundation_68.png
+  - first:
+      213: -2805626695157711961
+    second: Foundation_69.png
+  - first:
+      213: -4038700211210640122
+    second: Foundation_7.png
+  - first:
+      213: 606140204902442891
+    second: Foundation_70.png
+  - first:
+      213: 175691834011885034
+    second: Foundation_71.png
+  - first:
+      213: 6742313021222214141
+    second: Foundation_72.png
+  - first:
+      213: 4807365141856362480
+    second: Foundation_73.png
+  - first:
+      213: 3527148034251942455
+    second: Foundation_74.png
+  - first:
+      213: -1450470822296433547
+    second: Foundation_75.png
+  - first:
+      213: 2582059442146411985
+    second: Foundation_76.png
+  - first:
+      213: 8392543881244373093
+    second: Foundation_77.png
+  - first:
+      213: -4244196976535602873
+    second: Foundation_78.png
+  - first:
+      213: -8009133734833172460
+    second: Foundation_79.png
+  - first:
+      213: 5394756838751996216
+    second: Foundation_8.png
+  - first:
+      213: -2779196009155327977
+    second: Foundation_80.png
+  - first:
+      213: -993562717702680302
+    second: Foundation_81.png
+  - first:
+      213: -5562243549535198522
+    second: Foundation_82.png
+  - first:
+      213: -3059307113391288507
+    second: Foundation_83.png
+  - first:
+      213: -8593453537415793103
+    second: Foundation_84.png
+  - first:
+      213: -7934404475549480056
+    second: Foundation_85.png
+  - first:
+      213: -2919772294677001935
+    second: Foundation_86.png
+  - first:
+      213: -9087098762718802807
+    second: Foundation_87.png
+  - first:
+      213: 139074605702956687
+    second: Foundation_88.png
+  - first:
+      213: -8338095525144972325
+    second: Foundation_89.png
+  - first:
+      213: -3945892329522725726
+    second: Foundation_9.png
+  - first:
+      213: 3569992698656247535
+    second: Foundation_90.png
+  - first:
+      213: -9169674654379497605
+    second: Foundation_91.png
+  - first:
+      213: -6545794165212251051
+    second: Foundation_92.png
+  - first:
+      213: 1553412666131574318
+    second: Foundation_93.png
+  - first:
+      213: 5405244728783340086
+    second: Foundation_94.png
+  - first:
+      213: 4835143750335822195
+    second: Foundation_95.png
+  - first:
+      213: 970363948777929693
+    second: Foundation_96.png
+  - first:
+      213: -2852687973688371509
+    second: Foundation_97.png
+  - first:
+      213: 8169823554873964380
+    second: Foundation_98.png
+  - first:
+      213: 5572638067881948273
+    second: Foundation_99.png
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Foundation_1.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 478
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e46c042685d27e10800000000000000
+      internalID: 2194050740589978850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_10.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 442
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c18bec9a32429000800000000000000
+      internalID: 41168166107972041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_100.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 406
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b89d62ee12ba09f0800000000000000
+      internalID: -501392562780792647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_101.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 370
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b2b9b350f66f07c0800000000000000
+      internalID: -4102947553128369481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_102.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 334
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cea6301f5df13c550800000000000000
+      internalID: 6179818117414480620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_103.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 298
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d23934c04e5a7240800000000000000
+      internalID: 4790244785924944598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_104.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 262
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 973a49d77154501d0800000000000000
+      internalID: -3385223577705602183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_105.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 226
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7965f300e7fe9ab0800000000000000
+      internalID: -4999285994823521924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_106.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 190
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7c66437b73473d50800000000000000
+      internalID: 6716911566740417658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_107.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 154
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cdfd0ef964cac9f0800000000000000
+      internalID: -447329253457003064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_108.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 118
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 266cec604bb747b60800000000000000
+      internalID: 7742949672495269474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_11.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 82
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8ba33d383d557160800000000000000
+      internalID: 7022621690080504716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_12.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 46
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a8fb9237d26f2d30800000000000000
+      internalID: 4408851236625578152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_13.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 10
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3c4fe89b732e2fe0800000000000000
+      internalID: -1211992235962315717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_14.png
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 478
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8552cbc889358bb0800000000000000
+      internalID: -4934474557017664117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_15.png
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 478
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b71f81df501f55880800000000000000
+      internalID: -8622720903507545733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_16.png
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 478
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f34fa098fbc13b50800000000000000
+      internalID: 6571257599749997558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_17.png
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 478
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b6c20bc87dd64810800000000000000
+      internalID: 1749329016151787185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_18.png
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 478
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f073b5812ad1b290800000000000000
+      internalID: -7876274435782381322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_19.png
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 478
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d7e8317bddece090800000000000000
+      internalID: -8003760910991038512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_2.png
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 478
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf12ca19bea0508d0800000000000000
+      internalID: -2880884379755994628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_20.png
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 478
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43a5cee78c850d160800000000000000
+      internalID: 7048231034980948532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_21.png
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 478
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e5089737e759a420800000000000000
+      internalID: 2641739307011278312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_22.png
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 478
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8620f4d74ebc3310800000000000000
+      internalID: 1386192001047733902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_23.png
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 478
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de466d42e33a83c60800000000000000
+      internalID: 7798162242093343981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_24.png
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 478
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3cf7964ddb4ad060800000000000000
+      internalID: 6978973986308226107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_25.png
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 478
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37c0561f261163150800000000000000
+      internalID: 5851883882468936819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_26.png
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 442
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6054452d9ddeeaa50800000000000000
+      internalID: 6534421629153592582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_27.png
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 406
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2ddb29df6f0fc060800000000000000
+      internalID: 6975811320879504683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_28.png
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 370
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac720827f806f8d30800000000000000
+      internalID: 4435870327200819146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_29.png
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 334
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57b63d5012a5f16b0800000000000000
+      internalID: -5323437136650474635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_3.png
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 298
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec2752d158592ab80800000000000000
+      internalID: -8384975157258259762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_30.png
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 262
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b953ce8c23499b70800000000000000
+      internalID: 8906223596754655670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_31.png
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 226
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11f19cb5ad62ba810800000000000000
+      internalID: 1777557197212426001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_32.png
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 190
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efa54f8b86b6fcc50800000000000000
+      internalID: 6687682069192268542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_33.png
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 154
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40ccc8045e4468f60800000000000000
+      internalID: 8036186336510397444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_34.png
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 118
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63e1db2ecb6f15750800000000000000
+      internalID: 6292081445531622966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_35.png
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 82
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2534e5953b0efcf0800000000000000
+      internalID: -216723407291271893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_36.png
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 46
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06a71b2308d0cc550800000000000000
+      internalID: 6182331232730315360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_37.png
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 10
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 830a66f116ff499e0800000000000000
+      internalID: -1615385573715435464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_38.png
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 442
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 324c6e288fce59fc0800000000000000
+      internalID: -3488621784236375005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_39.png
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 442
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d1956c06cc6fd1c0800000000000000
+      internalID: -4476739906715676208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_4.png
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 442
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f27157a3d7fb56e30800000000000000
+      internalID: 4496210347571877679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_40.png
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 442
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b782c27142edc4610800000000000000
+      internalID: 1606903413653383291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_41.png
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 442
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af68ea1ebb12df2d0800000000000000
+      internalID: -3243399065807976710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_42.png
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 442
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfa8705046757bf80800000000000000
+      internalID: -8090902118455080196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_43.png
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 442
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 142d612f726166920800000000000000
+      internalID: 2983096164000649793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_44.png
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 442
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e59fce033f3e1c120800000000000000
+      internalID: 2432475907394173278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_45.png
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 442
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1daa8249a1e812800800000000000000
+      internalID: 585905671340862161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_46.png
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 442
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98b69deeda50f4d00800000000000000
+      internalID: 958991490247912329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_47.png
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 442
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aa78319d33abe870800000000000000
+      internalID: 8713237388903086755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_48.png
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 442
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b454e1fac602e08f0800000000000000
+      internalID: -572484451462920885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_49.png
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 406
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cb24c38472c719c0800000000000000
+      internalID: -3956479941939024953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_5.png
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 370
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4772fcb0e8d9ce20800000000000000
+      internalID: 3371464255817807693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_50.png
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 334
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15e18c76300557a20800000000000000
+      internalID: 3059439497424412241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_51.png
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 298
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f33ce6f0a145d6990800000000000000
+      internalID: -7391158942540315841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_52.png
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 262
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bec39560658e1ad0800000000000000
+      internalID: -2729597675072401736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_53.png
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 226
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eec1d9162278bf960800000000000000
+      internalID: 7636846174873132270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_54.png
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 190
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60764d726fb110f30800000000000000
+      internalID: 4539940643410306822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_55.png
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 154
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b06211fb6ea8d6790800000000000000
+      internalID: -7535213877868288501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_56.png
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 118
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e7ebe582eeae7c30800000000000000
+      internalID: 4359113777273890791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_57.png
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 82
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96c4c007b6b163220800000000000000
+      internalID: 2465187994287230057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_58.png
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 46
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15a78fbdd21c3dbe0800000000000000
+      internalID: -1453605852002354607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_59.png
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 10
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df749c8289fd20a70800000000000000
+      internalID: 8791835267192932349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_6.png
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 406
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3529efadba00b5d70800000000000000
+      internalID: 9032814215735186003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_60.png
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 406
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf5d712f0fc659690800000000000000
+      internalID: -7596045414380874244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_61.png
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 406
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcc00a7adc0455390800000000000000
+      internalID: -7830281125088981811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_62.png
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 406
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 059b2953a01fa1280800000000000000
+      internalID: -9071673473233667760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_63.png
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 406
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 449ee93edbfbf90a0800000000000000
+      internalID: -6872563684055520956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_64.png
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 406
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa57a8c6551dcb6a0800000000000000
+      internalID: -6432036002968472145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_65.png
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 406
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98c5629357b74cc80800000000000000
+      internalID: -8303376069564146551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_66.png
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 406
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af3c424795ca3c650800000000000000
+      internalID: 6252030207921013754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_67.png
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 406
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 311a612239b7fe990800000000000000
+      internalID: -7354523794610413293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_68.png
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 406
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fef97391b51f40260800000000000000
+      internalID: 7063035489191174127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_69.png
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 406
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ab75c6b2696019d0800000000000000
+      internalID: -2805626695157711961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_7.png
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 370
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 605ae7c4e87a3f7c0800000000000000
+      internalID: -4038700211210640122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_70.png
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 334
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b87ea4d0e41796800800000000000000
+      internalID: 606140204902442891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_71.png
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 298
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aed173ccace207200800000000000000
+      internalID: 175691834011885034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_72.png
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 262
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df9d07278f1819d50800000000000000
+      internalID: 6742313021222214141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_73.png
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 226
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ff91f1402137b240800000000000000
+      internalID: 4807365141856362480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_74.png
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 190
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73aedc31372f2f030800000000000000
+      internalID: 3527148034251942455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_75.png
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 154
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57cc3f7d874eedbe0800000000000000
+      internalID: -1450470822296433547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_76.png
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 118
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d5841ed16155d320800000000000000
+      internalID: 2582059442146411985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_77.png
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 82
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 560f273c13e487470800000000000000
+      internalID: 8392543881244373093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_78.png
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 46
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 749fec826559915c0800000000000000
+      internalID: -4244196976535602873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_79.png
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 10
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 410dba86d47d9d090800000000000000
+      internalID: -8009133734833172460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_8.png
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 370
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8390c6f13c60eda40800000000000000
+      internalID: 5394756838751996216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_80.png
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 370
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7180d1954ff4e69d0800000000000000
+      internalID: -2779196009155327977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_81.png
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 370
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 211924de8f72632f0800000000000000
+      internalID: -993562717702680302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_82.png
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 370
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c22fb336f0fec2b0800000000000000
+      internalID: -5562243549535198522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_83.png
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 370
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54f8c77a3682b85d0800000000000000
+      internalID: -3059307113391288507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_84.png
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 370
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 136f18ca98bedb880800000000000000
+      internalID: -8593453537415793103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_85.png
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 370
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88b8a92fa2553e190800000000000000
+      internalID: -7934404475549480056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_86.png
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 370
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13900ce4192ea77d0800000000000000
+      internalID: -2919772294677001935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_87.png
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 370
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98c014122d324e180800000000000000
+      internalID: -9087098762718802807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_88.png
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 370
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f86c336fd971ee100800000000000000
+      internalID: 139074605702956687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_89.png
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 334
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd3b5780c42294c80800000000000000
+      internalID: -8338095525144972325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_9.png
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 298
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2acfbd025df5d39c0800000000000000
+      internalID: -3945892329522725726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_90.png
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 262
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feec42ed1792b8130800000000000000
+      internalID: 3569992698656247535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_91.png
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 226
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b77aecf1c75ceb080800000000000000
+      internalID: -9169674654379497605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_92.png
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 190
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55cf2b943eaa825a0800000000000000
+      internalID: -6545794165212251051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_93.png
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 154
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2e6d5ae694de8510800000000000000
+      internalID: 1553412666131574318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_94.png
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 118
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6320f2f4179430b40800000000000000
+      internalID: 5405244728783340086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_95.png
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 82
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37977bc8f91e91340800000000000000
+      internalID: 4835143750335822195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_96.png
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 46
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddbf0c5cedc677d00800000000000000
+      internalID: 970363948777929693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_97.png
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 10
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc69641f6673968d0800000000000000
+      internalID: -2852687973688371509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_98.png
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 334
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c57b1e1dc3b016170800000000000000
+      internalID: 8169823554873964380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foundation_99.png
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 334
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1743ce13cccf55d40800000000000000
+      internalID: 5572638067881948273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

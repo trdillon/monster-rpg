@@ -1,0 +1,111 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://assetstore.unity.com/packages/tools/sprite-management/texturepacker-importer-16641
+#
+# created with Free texture packer v0.6.6
+# http://free-tex-packer.com
+#
+:format=40300
+:texture=SS_GrandEntrance.png
+:size=512x256
+:pivotpoints=enabled
+:borders=disabled
+
+GrandEntrance_3.png;2;249;9;5; 0.5;0.5; 0;0;0;0
+GrandEntrance_6.png;15;249;9;5; 0.5;0.5; 0;0;0;0
+GrandEntrance_1.png;28;248;11;6; 0.5;0.5; 0;0;0;0
+GrandEntrance_4.png;43;248;11;6; 0.5;0.5; 0;0;0;0
+GrandEntrance_2.png;58;241;32;13; 0.5;0.5; 0;0;0;0
+GrandEntrance_5.png;94;241;32;13; 0.5;0.5; 0;0;0;0
+GrandEntrance_29.png;130;239;32;15; 0.5;0.5; 0;0;0;0
+GrandEntrance_43.png;166;238;32;16; 0.5;0.5; 0;0;0;0
+GrandEntrance_44.png;202;238;32;16; 0.5;0.5; 0;0;0;0
+GrandEntrance_45.png;238;238;32;16; 0.5;0.5; 0;0;0;0
+GrandEntrance_46.png;274;238;32;16; 0.5;0.5; 0;0;0;0
+GrandEntrance_70.png;310;238;32;16; 0.5;0.5; 0;0;0;0
+GrandEntrance_73.png;346;238;32;16; 0.5;0.5; 0;0;0;0
+GrandEntrance_11.png;382;235;32;19; 0.5;0.5; 0;0;0;0
+GrandEntrance_14.png;418;235;32;19; 0.5;0.5; 0;0;0;0
+GrandEntrance_48.png;454;235;32;19; 0.5;0.5; 0;0;0;0
+GrandEntrance_51.png;2;225;32;19; 0.5;0.5; 0;0;0;0
+GrandEntrance_92.png;38;217;32;20; 0.5;0.5; 0;0;0;0
+GrandEntrance_95.png;74;217;32;20; 0.5;0.5; 0;0;0;0
+GrandEntrance_17.png;110;214;32;21; 0.5;0.5; 0;0;0;0
+GrandEntrance_20.png;146;213;32;21; 0.5;0.5; 0;0;0;0
+GrandEntrance_32.png;182;213;32;21; 0.5;0.5; 0;0;0;0
+GrandEntrance_35.png;218;213;32;21; 0.5;0.5; 0;0;0;0
+GrandEntrance_37.png;254;211;28;23; 0.5;0.5; 0;0;0;0
+GrandEntrance_38.png;286;211;32;23; 0.5;0.5; 0;0;0;0
+GrandEntrance_39.png;322;211;28;23; 0.5;0.5; 0;0;0;0
+GrandEntrance_40.png;354;208;28;23; 0.5;0.5; 0;0;0;0
+GrandEntrance_41.png;386;208;32;23; 0.5;0.5; 0;0;0;0
+GrandEntrance_42.png;422;208;28;23; 0.5;0.5; 0;0;0;0
+GrandEntrance_23.png;454;207;32;24; 0.5;0.5; 0;0;0;0
+GrandEntrance_26.png;2;197;32;24; 0.5;0.5; 0;0;0;0
+GrandEntrance_64.png;38;189;32;24; 0.5;0.5; 0;0;0;0
+GrandEntrance_67.png;74;189;32;24; 0.5;0.5; 0;0;0;0
+GrandEntrance_86.png;110;186;32;24; 0.5;0.5; 0;0;0;0
+GrandEntrance_89.png;146;185;32;24; 0.5;0.5; 0;0;0;0
+GrandEntrance_54.png;182;182;32;27; 0.5;0.5; 0;0;0;0
+GrandEntrance_57.png;218;182;32;27; 0.5;0.5; 0;0;0;0
+GrandEntrance_76.png;254;180;32;27; 0.5;0.5; 0;0;0;0
+GrandEntrance_79.png;290;180;32;27; 0.5;0.5; 0;0;0;0
+GrandEntrance_28.png;326;175;23;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_16.png;353;173;26;31; 0.5;0.5; 0;0;0;0
+GrandEntrance_18.png;383;173;26;31; 0.5;0.5; 0;0;0;0
+GrandEntrance_19.png;413;173;26;31; 0.5;0.5; 0;0;0;0
+GrandEntrance_21.png;443;172;26;31; 0.5;0.5; 0;0;0;0
+GrandEntrance_10.png;473;171;28;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_12.png;2;161;28;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_13.png;34;153;28;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_15.png;66;153;28;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_22.png;98;150;30;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_24.png;132;149;30;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_25.png;166;146;30;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_27.png;200;146;30;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_30.png;234;144;23;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_31.png;261;144;28;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_33.png;293;144;28;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_34.png;325;137;28;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_36.png;357;137;28;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_47.png;389;137;28;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_49.png;421;136;28;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_50.png;453;135;28;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_52.png;2;125;28;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_53.png;34;117;32;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_55.png;70;114;32;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_56.png;106;113;32;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_58.png;142;110;32;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_59.png;178;110;32;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_60.png;214;108;32;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_61.png;250;108;32;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_62.png;286;108;32;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_63.png;322;101;30;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_65.png;356;101;30;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_66.png;390;100;30;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_68.png;424;99;30;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_69.png;458;99;31;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_7.png;2;89;28;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_71.png;34;81;31;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_72.png;69;78;31;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_74.png;104;77;31;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_75.png;139;74;32;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_77.png;175;74;32;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_78.png;211;72;32;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_8.png;247;72;32;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_80.png;283;72;32;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_81.png;319;65;32;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_85.png;355;65;30;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_87.png;389;64;30;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_82.png;423;63;32;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_83.png;459;63;32;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_9.png;2;53;28;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_88.png;34;45;30;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_84.png;68;42;32;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_90.png;104;41;30;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_91.png;138;38;32;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_93.png;174;38;32;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_94.png;210;36;32;32; 0.5;0.5; 0;0;0;0
+GrandEntrance_96.png;246;36;32;32; 0.5;0.5; 0;0;0;0

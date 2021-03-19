@@ -1,0 +1,91 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://assetstore.unity.com/packages/tools/sprite-management/texturepacker-importer-16641
+#
+# created with Free texture packer v0.6.6
+# http://free-tex-packer.com
+#
+:format=40300
+:texture=SS_RoundArch.png
+:size=256x256
+:pivotpoints=enabled
+:borders=disabled
+
+RoundArch_40.png;2;230;32;24; 0.5;0.5; 0;0;0;0
+RoundArch_1.png;2;194;11;32; 0.5;0.5; 0;0;0;0
+RoundArch_11.png;17;194;23;32; 0.5;0.5; 0;0;0;0
+RoundArch_12.png;44;222;32;32; 0.5;0.5; 0;0;0;0
+RoundArch_13.png;2;158;32;32; 0.5;0.5; 0;0;0;0
+RoundArch_14.png;38;158;32;32; 0.5;0.5; 0;0;0;0
+RoundArch_15.png;80;222;9;32; 0.5;0.5; 0;0;0;0
+RoundArch_16.png;74;186;9;32; 0.5;0.5; 0;0;0;0
+RoundArch_8.png;93;222;32;32; 0.5;0.5; 0;0;0;0
+RoundArch_76.png;87;186;32;32; 0.5;0.5; 0;0;0;0
+RoundArch_75.png;74;163;32;19; 0.5;0.5; 0;0;0;0
+RoundArch_2.png;2;131;32;23; 0.5;0.5; 0;0;0;0
+RoundArch_73.png;74;132;32;27; 0.5;0.5; 0;0;0;0
+RoundArch_72.png;38;122;32;32; 0.5;0.5; 0;0;0;0
+RoundArch_22.png;2;95;7;32; 0.5;0.5; 0;0;0;0
+RoundArch_23.png;74;96;32;32; 0.5;0.5; 0;0;0;0
+RoundArch_24.png;129;222;32;32; 0.5;0.5; 0;0;0;0
+RoundArch_25.png;123;186;32;32; 0.5;0.5; 0;0;0;0
+RoundArch_26.png;13;95;7;32; 0.5;0.5; 0;0;0;0
+RoundArch_27.png;110;150;23;32; 0.5;0.5; 0;0;0;0
+RoundArch_28.png;137;150;23;32; 0.5;0.5; 0;0;0;0
+RoundArch_29.png;110;114;32;32; 0.5;0.5; 0;0;0;0
+RoundArch_3.png;146;114;11;32; 0.5;0.5; 0;0;0;0
+RoundArch_30.png;2;59;32;32; 0.5;0.5; 0;0;0;0
+RoundArch_31.png;38;60;24;32; 0.5;0.5; 0;0;0;0
+RoundArch_32.png;159;186;9;32; 0.5;0.5; 0;0;0;0
+RoundArch_33.png;24;95;9;32; 0.5;0.5; 0;0;0;0
+RoundArch_71.png;66;60;32;32; 0.5;0.5; 0;0;0;0
+RoundArch_35.png;37;104;32;14; 0.5;0.5; 0;0;0;0
+RoundArch_70.png;102;60;32;32; 0.5;0.5; 0;0;0;0
+RoundArch_7.png;165;222;32;32; 0.5;0.5; 0;0;0;0
+RoundArch_38.png;172;194;32;24; 0.5;0.5; 0;0;0;0
+RoundArch_39.png;172;166;32;24; 0.5;0.5; 0;0;0;0
+RoundArch_4.png;138;78;7;32; 0.5;0.5; 0;0;0;0
+RoundArch_10.png;164;130;23;32; 0.5;0.5; 0;0;0;0
+RoundArch_41.png;161;99;32;27; 0.5;0.5; 0;0;0;0
+RoundArch_69.png;149;70;32;25; 0.5;0.5; 0;0;0;0
+RoundArch_65.png;191;130;7;32; 0.5;0.5; 0;0;0;0
+RoundArch_63.png;197;94;7;32; 0.5;0.5; 0;0;0;0
+RoundArch_45.png;2;23;32;32; 0.5;0.5; 0;0;0;0
+RoundArch_46.png;38;39;32;17; 0.5;0.5; 0;0;0;0
+RoundArch_62.png;138;42;7;32; 0.5;0.5; 0;0;0;0
+RoundArch_48.png;74;32;32;24; 0.5;0.5; 0;0;0;0
+RoundArch_49.png;149;42;32;24; 0.5;0.5; 0;0;0;0
+RoundArch_5.png;201;222;32;32; 0.5;0.5; 0;0;0;0
+RoundArch_50.png;208;194;32;24; 0.5;0.5; 0;0;0;0
+RoundArch_51.png;208;163;32;27; 0.5;0.5; 0;0;0;0
+RoundArch_60.png;110;24;16;32; 0.5;0.5; 0;0;0;0
+RoundArch_6.png;208;127;32;32; 0.5;0.5; 0;0;0;0
+RoundArch_55.png;208;91;10;32; 0.5;0.5; 0;0;0;0
+RoundArch_56.png;130;23;32;15; 0.5;0.5; 0;0;0;0
+RoundArch_57.png;185;58;10;32; 0.5;0.5; 0;0;0;0
+RoundArch_59.png;222;91;16;32; 0.5;0.5; 0;0;0;0
+RoundArch_9.png;199;55;7;32; 0.5;0.5; 0;0;0;0
+RoundArch_54.png;44;194;25;24; 0.5;0.5; 0;0;0;0
+RoundArch_53.png;185;27;25;24; 0.5;0.5; 0;0;0;0
+RoundArch_44.png;214;63;25;24; 0.5;0.5; 0;0;0;0
+RoundArch_43.png;214;35;25;24; 0.5;0.5; 0;0;0;0
+RoundArch_42.png;2;2;9;17; 0.5;0.5; 0;0;0;0
+RoundArch_37.png;15;2;9;17; 0.5;0.5; 0;0;0;0
+RoundArch_47.png;28;2;9;17; 0.5;0.5; 0;0;0;0
+RoundArch_21.png;166;22;14;16; 0.5;0.5; 0;0;0;0
+RoundArch_20.png;41;2;7;16; 0.5;0.5; 0;0;0;0
+RoundArch_19.png;52;2;7;16; 0.5;0.5; 0;0;0;0
+RoundArch_18.png;63;3;9;15; 0.5;0.5; 0;0;0;0
+RoundArch_17.png;76;3;9;15; 0.5;0.5; 0;0;0;0
+RoundArch_34.png;149;103;7;7; 0.5;0.5; 0;0;0;0
+RoundArch_36.png;38;28;7;7; 0.5;0.5; 0;0;0;0
+RoundArch_58.png;2;95;7;32; 0.5;0.5; 0;0;0;0
+RoundArch_61.png;13;95;7;32; 0.5;0.5; 0;0;0;0
+RoundArch_66.png;13;95;7;32; 0.5;0.5; 0;0;0;0
+RoundArch_64.png;2;59;32;32; 0.5;0.5; 0;0;0;0
+RoundArch_67.png;159;186;9;32; 0.5;0.5; 0;0;0;0
+RoundArch_68.png;24;95;9;32; 0.5;0.5; 0;0;0;0
+RoundArch_52.png;2;2;9;17; 0.5;0.5; 0;0;0;0
+RoundArch_74.png;38;122;32;32; 0.5;0.5; 0;0;0;0

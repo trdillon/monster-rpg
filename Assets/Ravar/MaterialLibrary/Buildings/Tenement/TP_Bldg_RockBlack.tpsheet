@@ -1,0 +1,49 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://assetstore.unity.com/packages/tools/sprite-management/texturepacker-importer-16641
+#
+# created with Free texture packer v0.6.6
+# http://free-tex-packer.com
+#
+:format=40300
+:texture=SS_Bldg_RockBlack.png
+:size=256x256
+:pivotpoints=enabled
+:borders=disabled
+
+RockBlack_10.png;1;223;32;32; 0.5;0.5; 0;0;0;0
+RockBlack_11.png;35;223;32;32; 0.5;0.5; 0;0;0;0
+RockBlack_16.png;69;223;32;32; 0.5;0.5; 0;0;0;0
+RockBlack_17.png;103;223;32;32; 0.5;0.5; 0;0;0;0
+RockBlack_18.png;137;223;32;32; 0.5;0.5; 0;0;0;0
+RockBlack_19.png;171;223;32;32; 0.5;0.5; 0;0;0;0
+RockBlack_2.png;205;223;32;32; 0.5;0.5; 0;0;0;0
+RockBlack_20.png;1;189;32;32; 0.5;0.5; 0;0;0;0
+RockBlack_21.png;35;189;32;32; 0.5;0.5; 0;0;0;0
+RockBlack_22.png;69;189;32;32; 0.5;0.5; 0;0;0;0
+RockBlack_23.png;103;189;32;32; 0.5;0.5; 0;0;0;0
+RockBlack_24.png;137;189;32;32; 0.5;0.5; 0;0;0;0
+RockBlack_25.png;171;189;32;32; 0.5;0.5; 0;0;0;0
+RockBlack_26.png;205;189;32;32; 0.5;0.5; 0;0;0;0
+RockBlack_27.png;1;155;32;32; 0.5;0.5; 0;0;0;0
+RockBlack_28.png;35;155;32;32; 0.5;0.5; 0;0;0;0
+RockBlack_3.png;69;155;32;32; 0.5;0.5; 0;0;0;0
+RockBlack_5.png;103;155;32;32; 0.5;0.5; 0;0;0;0
+RockBlack_6.png;137;155;32;32; 0.5;0.5; 0;0;0;0
+RockBlack_8.png;171;155;32;32; 0.5;0.5; 0;0;0;0
+RockBlack_9.png;205;155;32;32; 0.5;0.5; 0;0;0;0
+RockBlack_30.png;1;122;32;31; 0.5;0.5; 0;0;0;0
+RockBlack_31.png;35;122;32;31; 0.5;0.5; 0;0;0;0
+RockBlack_32.png;69;122;32;31; 0.5;0.5; 0;0;0;0
+RockBlack_33.png;103;122;32;31; 0.5;0.5; 0;0;0;0
+RockBlack_12.png;137;137;32;16; 0.5;0.5; 0;0;0;0
+RockBlack_13.png;171;137;32;16; 0.5;0.5; 0;0;0;0
+RockBlack_14.png;205;137;32;16; 0.5;0.5; 0;0;0;0
+RockBlack_15.png;137;119;32;16; 0.5;0.5; 0;0;0;0
+RockBlack_29.png;171;120;31;15; 0.5;0.5; 0;0;0;0
+RockBlack_34.png;204;120;31;15; 0.5;0.5; 0;0;0;0
+RockBlack_1.png;171;86;30;32; 0.5;0.5; 0;0;0;0
+RockBlack_4.png;203;86;30;32; 0.5;0.5; 0;0;0;0
+RockBlack_7.png;1;88;30;32; 0.5;0.5; 0;0;0;0

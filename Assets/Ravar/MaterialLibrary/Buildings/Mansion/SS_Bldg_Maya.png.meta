@@ -1,0 +1,2640 @@
+fileFormatVersion: 2
+guid: 21e66cc6c1c9d7640a746686105f190b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2995762731140638628
+    second: Maya_1.png
+  - first:
+      213: 1181597626672776792
+    second: Maya_10.png
+  - first:
+      213: 6761505294727581011
+    second: Maya_100.png
+  - first:
+      213: 9040120885255673887
+    second: Maya_11.png
+  - first:
+      213: 470571276364971387
+    second: Maya_13.png
+  - first:
+      213: -8270559487570141807
+    second: Maya_15.png
+  - first:
+      213: 6838437071237371792
+    second: Maya_16.png
+  - first:
+      213: -6908112419393229422
+    second: Maya_66.png
+  - first:
+      213: 2527277144188284911
+    second: Maya_69.png
+  - first:
+      213: 5310270429354086038
+    second: Maya_60.png
+  - first:
+      213: -7616386675305357711
+    second: Maya_61.png
+  - first:
+      213: 6092007801241063856
+    second: Maya_17.png
+  - first:
+      213: -7046295203885393271
+    second: Maya_19.png
+  - first:
+      213: 6223453815792208802
+    second: Maya_2.png
+  - first:
+      213: -6367235495826709379
+    second: Maya_20.png
+  - first:
+      213: 8885367637954483261
+    second: Maya_21.png
+  - first:
+      213: 6600901505749623597
+    second: Maya_22.png
+  - first:
+      213: 2165545691746698589
+    second: Maya_23.png
+  - first:
+      213: 101522560361732976
+    second: Maya_24.png
+  - first:
+      213: -5261660922454804621
+    second: Maya_26.png
+  - first:
+      213: -7085162303419822426
+    second: Maya_27.png
+  - first:
+      213: 1670290851252803189
+    second: Maya_28.png
+  - first:
+      213: 2195144646984212759
+    second: Maya_29.png
+  - first:
+      213: -9047043861234464313
+    second: Maya_3.png
+  - first:
+      213: 6438476564940838199
+    second: Maya_30.png
+  - first:
+      213: 6709647690721144982
+    second: Maya_31.png
+  - first:
+      213: 5630691772032633796
+    second: Maya_33.png
+  - first:
+      213: -6272878489540303869
+    second: Maya_34.png
+  - first:
+      213: 2536970092403792137
+    second: Maya_35.png
+  - first:
+      213: 2041122949352389894
+    second: Maya_36.png
+  - first:
+      213: -4114717226733732184
+    second: Maya_37.png
+  - first:
+      213: 3604205992877716396
+    second: Maya_38.png
+  - first:
+      213: -5692579637276829610
+    second: Maya_4.png
+  - first:
+      213: 8458729251041153126
+    second: Maya_40.png
+  - first:
+      213: 538627960189036092
+    second: Maya_41.png
+  - first:
+      213: 531487784548313395
+    second: Maya_42.png
+  - first:
+      213: 6158559428195272303
+    second: Maya_43.png
+  - first:
+      213: 9095137667367182208
+    second: Maya_44.png
+  - first:
+      213: 5404164103433922664
+    second: Maya_45.png
+  - first:
+      213: 5130001171175549968
+    second: Maya_5.png
+  - first:
+      213: 3496475213751904938
+    second: Maya_50.png
+  - first:
+      213: 6844563957526020500
+    second: Maya_51.png
+  - first:
+      213: 8725600706286875138
+    second: Maya_52.png
+  - first:
+      213: 436623007641702174
+    second: Maya_53.png
+  - first:
+      213: -1407727791595119847
+    second: Maya_54.png
+  - first:
+      213: -7546325779156539809
+    second: Maya_55.png
+  - first:
+      213: -3908966516751207169
+    second: Maya_56.png
+  - first:
+      213: 2866980126822421288
+    second: Maya_6.png
+  - first:
+      213: -5393563051134839921
+    second: Maya_7.png
+  - first:
+      213: -2038101976904884469
+    second: Maya_70.png
+  - first:
+      213: -1603129533145733559
+    second: Maya_71.png
+  - first:
+      213: 1255026528841208377
+    second: Maya_72.png
+  - first:
+      213: -8334374360718927013
+    second: Maya_73.png
+  - first:
+      213: 7628700185983753029
+    second: Maya_74.png
+  - first:
+      213: -6785162181638868872
+    second: Maya_75.png
+  - first:
+      213: -7167810817607832828
+    second: Maya_76.png
+  - first:
+      213: -510233472992312032
+    second: Maya_8.png
+  - first:
+      213: 1944915615864932749
+    second: Maya_81.png
+  - first:
+      213: -7576267855088600483
+    second: Maya_82.png
+  - first:
+      213: -8508676276098065874
+    second: Maya_85.png
+  - first:
+      213: 4907890336705914127
+    second: Maya_88.png
+  - first:
+      213: -7497720686546940363
+    second: Maya_89.png
+  - first:
+      213: 767407848346167027
+    second: Maya_9.png
+  - first:
+      213: 3613923359259465428
+    second: Maya_91.png
+  - first:
+      213: -4095037784986119535
+    second: Maya_93.png
+  - first:
+      213: -8798636443731400890
+    second: Maya_95.png
+  - first:
+      213: 8008614341034431756
+    second: Maya_96.png
+  - first:
+      213: 8367309804799973249
+    second: Maya_98.png
+  - first:
+      213: -7007457632759421611
+    second: Maya_99.png
+  - first:
+      213: 2047957996900716648
+    second: Maya_67.png
+  - first:
+      213: -8175895314872210723
+    second: Maya_68.png
+  - first:
+      213: -5447036835361767682
+    second: Maya_59.png
+  - first:
+      213: 8813553416286850510
+    second: Maya_62.png
+  - first:
+      213: 1987542396093981865
+    second: Maya_57.png
+  - first:
+      213: 8425186275556476067
+    second: Maya_58.png
+  - first:
+      213: -48689455565564164
+    second: Maya_92.png
+  - first:
+      213: -8103366305633059402
+    second: Maya_47.png
+  - first:
+      213: -1911127238013822193
+    second: Maya_48.png
+  - first:
+      213: -4624590348736518451
+    second: Maya_25.png
+  - first:
+      213: 3374095247418668532
+    second: Maya_32.png
+  - first:
+      213: 4461490142272297423
+    second: Maya_39.png
+  - first:
+      213: -6821890753700213901
+    second: Maya_63.png
+  - first:
+      213: -2988229783259445708
+    second: Maya_65.png
+  - first:
+      213: 6001820248168235729
+    second: Maya_80.png
+  - first:
+      213: 177524688813315974
+    second: Maya_83.png
+  - first:
+      213: 5878654147060984643
+    second: Maya_84.png
+  - first:
+      213: -8205968904975204040
+    second: Maya_86.png
+  - first:
+      213: 7845049857342629551
+    second: Maya_87.png
+  - first:
+      213: 269267931128824608
+    second: Maya_90.png
+  - first:
+      213: -57951268139402849
+    second: Maya_94.png
+  - first:
+      213: -334850586278336352
+    second: Maya_97.png
+  - first:
+      213: -6311563133813496408
+    second: Maya_46.png
+  - first:
+      213: 7122697611263214585
+    second: Maya_49.png
+  - first:
+      213: -4260129215940811499
+    second: Maya_18.png
+  - first:
+      213: 3586911247789439142
+    second: Maya_101.png
+  - first:
+      213: -2458757688136694525
+    second: Maya_103.png
+  - first:
+      213: 5218060043393652088
+    second: Maya_102.png
+  - first:
+      213: 6730897368064883842
+    second: Maya_104.png
+  - first:
+      213: 4263985179108001347
+    second: Maya_12.png
+  - first:
+      213: -2645660394799303705
+    second: Maya_14.png
+  - first:
+      213: 5126247097734165095
+    second: Maya_64.png
+  - first:
+      213: 5555395547242142040
+    second: Maya_78.png
+  - first:
+      213: -7693817386405781463
+    second: Maya_77.png
+  - first:
+      213: -1013599081153602552
+    second: Maya_79.png
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Maya_1.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 479
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a7edfce456139920800000000000000
+      internalID: 2995762731140638628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_10.png
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 479
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8568645f7c0e56010800000000000000
+      internalID: 1181597626672776792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_100.png
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 479
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35d0927dd31b5dd50800000000000000
+      internalID: 6761505294727581011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_11.png
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 479
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f18114c6c06f47d70800000000000000
+      internalID: 9040120885255673887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_13.png
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 479
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7d7c39251ec78600800000000000000
+      internalID: 470571276364971387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_15.png
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 479
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19d15a127f1193d80800000000000000
+      internalID: -8270559487570141807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_16.png
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 479
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09757f1e84207ee50800000000000000
+      internalID: 6838437071237371792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_66.png
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 506
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29d2a95fa547120a0800000000000000
+      internalID: -6908112419393229422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_69.png
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 499
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fef6e4c2c21b21320800000000000000
+      internalID: 2527277144188284911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_60.png
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 493
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69e49ea02ded1b940800000000000000
+      internalID: 5310270429354086038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_61.png
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 487
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17ed7621ca82d4690800000000000000
+      internalID: -7616386675305357711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_17.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 445
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b1d1e181d82b8450800000000000000
+      internalID: 6092007801241063856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_19.png
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 445
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98a5fdd48d7863e90800000000000000
+      internalID: -7046295203885393271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_2.png
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 445
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ab085ea5462e5650800000000000000
+      internalID: 6223453815792208802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_20.png
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 445
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d74adf53d0903a7a0800000000000000
+      internalID: -6367235495826709379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_21.png
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 445
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d34570f3aca2f4b70800000000000000
+      internalID: 8885367637954483261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_22.png
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 445
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d232c8742fc1b9b50800000000000000
+      internalID: 6600901505749623597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_23.png
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 445
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d55807545509d0e10800000000000000
+      internalID: 2165545691746698589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_24.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 411
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07b9c031b3ea86100800000000000000
+      internalID: 101522560361732976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_26.png
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 411
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 377f68cb443daf6b0800000000000000
+      internalID: -5261660922454804621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_27.png
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 411
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ae4ca08c627cad90800000000000000
+      internalID: -7085162303419822426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_28.png
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 411
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 576128cfda01e2710800000000000000
+      internalID: 1670290851252803189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_29.png
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 411
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71128121d68b67e10800000000000000
+      internalID: 2195144646984212759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_3.png
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 411
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c9cdbf9a81727280800000000000000
+      internalID: -9047043861234464313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_30.png
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 411
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 735d9f3c2501a5950800000000000000
+      internalID: 6438476564940838199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_31.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 377
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 690347586057d1d50800000000000000
+      internalID: 6709647690721144982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_33.png
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 377
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cb48bf755c342e40800000000000000
+      internalID: 5630691772032633796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_34.png
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 377
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 304e2c7bf3242f8a0800000000000000
+      internalID: -6272878489540303869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_35.png
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 377
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 909948b8bd0253320800000000000000
+      internalID: 2536970092403792137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_36.png
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 377
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60dfb031286835c10800000000000000
+      internalID: 2041122949352389894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_37.png
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 377
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aefa55ab7695e6c0800000000000000
+      internalID: -4114717226733732184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_38.png
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 377
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca37fce2146b40230800000000000000
+      internalID: 3604205992877716396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_4.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 343
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6581e700bf4eff0b0800000000000000
+      internalID: -5692579637276829610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_40.png
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 343
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66093830071736570800000000000000
+      internalID: 8458729251041153126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_41.png
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 343
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c362929a647997700800000000000000
+      internalID: 538627960189036092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_42.png
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 343
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3392678f259306700800000000000000
+      internalID: 531487784548313395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_43.png
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 343
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6646b5ab29977550800000000000000
+      internalID: 6158559428195272303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_44.png
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 343
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08f12b6358b683e70800000000000000
+      internalID: 9095137667367182208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_45.png
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 343
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 868a81d9e927ffa40800000000000000
+      internalID: 5404164103433922664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_5.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 309
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01ca141a2ec613740800000000000000
+      internalID: 5130001171175549968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_50.png
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 309
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaae3a98ea9f58030800000000000000
+      internalID: 3496475213751904938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_51.png
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 309
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 491c7c2c7a6ccfe50800000000000000
+      internalID: 6844563957526020500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_52.png
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 309
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2027026bc9f871970800000000000000
+      internalID: 8725600706286875138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_53.png
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 309
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1f0f37ef423f0600800000000000000
+      internalID: 436623007641702174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_54.png
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 309
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91b1781380fb67ce0800000000000000
+      internalID: -1407727791595119847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_55.png
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 309
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f56600e9fa0164790800000000000000
+      internalID: -7546325779156539809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_56.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 275
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff4f522e9af80c9c0800000000000000
+      internalID: -3908966516751207169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_6.png
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 275
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 823da554c3f89c720800000000000000
+      internalID: 2866980126822421288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_7.png
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 275
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f839f673bf63625b0800000000000000
+      internalID: -5393563051134839921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_70.png
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 275
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0f1092ec0537b3e0800000000000000
+      internalID: -2038101976904884469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_71.png
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 275
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94629efee2a80c9e0800000000000000
+      internalID: -1603129533145733559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_72.png
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 275
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93295438affba6110800000000000000
+      internalID: 1255026528841208377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_73.png
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 275
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5b99342daa565c80800000000000000
+      internalID: -8334374360718927013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_74.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 241
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54b948b86669ed960800000000000000
+      internalID: 7628700185983753029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_75.png
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 241
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8703004f1f246d1a0800000000000000
+      internalID: -6785162181638868872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_76.png
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 241
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40b684fb902d68c90800000000000000
+      internalID: -7167810817607832828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_8.png
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 241
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02587c11c594be8f0800000000000000
+      internalID: -510233472992312032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_81.png
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 241
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d894db1b27abdfa10800000000000000
+      internalID: 1944915615864932749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_82.png
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 241
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5abb3ec680bbd690800000000000000
+      internalID: -7576267855088600483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_85.png
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 241
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2a916ef10c1be980800000000000000
+      internalID: -8508676276098065874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_88.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 207
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f05ade312445c1440800000000000000
+      internalID: 4907890336705914127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_89.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 173
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53e854d92ceb2f790800000000000000
+      internalID: -7497720686546940363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_9.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 139
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f625864f5166aa00800000000000000
+      internalID: 767407848346167027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_91.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 105
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d6952ad52c372230800000000000000
+      internalID: 3613923359259465428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_93.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 192991cb4d08b27c0800000000000000
+      internalID: -4095037784986119535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_95.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 37
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 647659785c6f4e580800000000000000
+      internalID: -8798636443731400890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_96.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c05d47ccf40542f60800000000000000
+      internalID: 8008614341034431756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_98.png
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 207
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 187deb08fe7ae1470800000000000000
+      internalID: 8367309804799973249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_99.png
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 207
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55566ccf86280ce90800000000000000
+      internalID: -7007457632759421611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_67.png
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 218
+        width: 32
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 860103892fecb6c10800000000000000
+      internalID: 2047957996900716648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_68.png
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 218
+        width: 32
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddae2446782698e80800000000000000
+      internalID: -8175895314872210723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_59.png
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 219
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efe3bcd9bdc3864b0800000000000000
+      internalID: -5447036835361767682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_62.png
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 219
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecd45bac228005a70800000000000000
+      internalID: 8813553416286850510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_57.png
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 201
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a4e53f574b259b10800000000000000
+      internalID: 1987542396093981865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_58.png
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 201
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a44a0177464ce470800000000000000
+      internalID: 8425186275556476067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_92.png
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 200
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf615b8b235035ff0800000000000000
+      internalID: -48689455565564164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_47.png
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 185
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bd3fdb474f0b8f80800000000000000
+      internalID: -8103366305633059402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_48.png
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 174
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0bdc9117ef4a75e0800000000000000
+      internalID: -1911127238013822193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_25.png
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 173
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc62cd7749722dfb0800000000000000
+      internalID: -4624590348736518451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_32.png
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 140
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f539b430c133de20800000000000000
+      internalID: 3374095247418668532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_39.png
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 166
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc91c0b75a56aed30800000000000000
+      internalID: 4461490142272297423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_63.png
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 139
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37b4d21e086c351a0800000000000000
+      internalID: -6821890753700213901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_65.png
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 106
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 436049d28dca786d0800000000000000
+      internalID: -2988229783259445708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_80.png
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 167
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d280d977bfba4350800000000000000
+      internalID: 6001820248168235729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_83.png
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 151
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 687549f83c1b67200800000000000000
+      internalID: 177524688813315974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_84.png
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 132
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34b62f0eccc259150800000000000000
+      internalID: 5878654147060984643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_86.png
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 105
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8314d0d02ca8e1e80800000000000000
+      internalID: -8205968904975204040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_87.png
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 72
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa6e228c7473fdc60800000000000000
+      internalID: 7845049857342629551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_90.png
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 167
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0238658b1c1acb300800000000000000
+      internalID: 269267931128824608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_94.png
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 38
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f997440f0ad123ff0800000000000000
+      internalID: -57951268139402849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_97.png
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 4
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a86c087a2f5a5bf0800000000000000
+      internalID: -334850586278336352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_46.png
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 134
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a5689715c2d868a0800000000000000
+      internalID: -6311563133813496408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_49.png
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 118
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f30ed16db7e8d260800000000000000
+      internalID: 7122697611263214585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_18.png
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 100
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 515a59a9c0bf0e4c0800000000000000
+      internalID: -4260129215940811499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_101.png
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 88
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a8b75d86c447c130800000000000000
+      internalID: 3586911247789439142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_103.png
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 150
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3050ad1e8ecb0edd0800000000000000
+      internalID: -2458757688136694525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_102.png
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 88
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 875532786f54a6840800000000000000
+      internalID: 5218060043393652088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_104.png
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 150
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28c7e139e73f86d50800000000000000
+      internalID: 6730897368064883842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_12.png
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 479
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3464348cde7bc2b30800000000000000
+      internalID: 4263985179108001347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_14.png
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 479
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e3faa363e9b84bd0800000000000000
+      internalID: -2645660394799303705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_64.png
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 445
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 762725b4396142740800000000000000
+      internalID: 5126247097734165095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_78.png
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 445
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 859972401dab81d40800000000000000
+      internalID: 5555395547242142040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_77.png
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 139
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9202f84c9d11a3590800000000000000
+      internalID: -7693817386405781463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_79.png
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 106
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80c5d278109fee1f0800000000000000
+      internalID: -1013599081153602552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

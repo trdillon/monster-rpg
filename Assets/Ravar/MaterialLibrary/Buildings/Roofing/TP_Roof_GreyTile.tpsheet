@@ -1,0 +1,73 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://assetstore.unity.com/packages/tools/sprite-management/texturepacker-importer-16641
+#
+# created with Free texture packer v0.6.6
+# http://free-tex-packer.com
+#
+:format=40300
+:texture=SS_Roof_GreyTile.png
+:size=256x256
+:pivotpoints=enabled
+:borders=disabled
+
+Roof_GreyTile_45.png;2;253;3;1; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_46.png;9;253;3;1; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_25.png;16;245;15;9; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_26.png;35;245;15;9; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_35.png;54;241;13;13; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_36.png;71;241;13;13; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_19.png;88;240;27;14; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_21.png;119;240;27;14; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_10.png;150;235;26;19; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_11.png;180;235;32;19; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_12.png;216;235;26;19; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_27.png;2;222;32;19; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_29.png;38;218;32;19; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_47.png;74;217;29;19; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_48.png;107;217;29;19; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_53.png;140;212;32;19; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_58.png;176;212;32;19; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_20.png;212;208;32;23; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_4.png;2;194;32;24; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_5.png;38;190;32;24; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_6.png;74;189;32;24; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_7.png;110;188;26;25; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_8.png;140;183;32;25; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_9.png;176;183;26;25; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_1.png;206;178;32;26; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_2.png;2;164;32;26; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_3.png;38;160;32;26; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_30.png;74;159;29;26; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_31.png;107;158;29;26; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_28.png;140;151;32;28; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_13.png;176;148;18;31; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_15.png;198;143;18;31; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_14.png;220;142;32;32; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_16.png;2;128;32;32; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_17.png;38;124;32;32; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_22.png;74;123;27;32; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_24.png;105;122;27;32; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_18.png;136;115;32;32; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_23.png;172;107;32;32; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_32.png;208;106;32;32; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_33.png;2;92;32;32; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_34.png;38;88;32;32; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_39.png;74;87;25;32; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_40.png;103;86;25;32; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_41.png;132;79;25;32; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_42.png;161;71;25;32; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_43.png;190;70;25;32; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_44.png;219;70;25;32; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_49.png;2;56;32;32; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_50.png;38;52;32;32; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_51.png;74;50;29;32; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_52.png;107;43;31;32; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_54.png;142;35;26;32; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_55.png;172;34;31;32; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_56.png;207;34;32;32; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_57.png;2;20;32;32; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_37.png;54;241;13;13; 0.5;0.5; 0;0;0;0
+Roof_GreyTile_38.png;71;241;13;13; 0.5;0.5; 0;0;0;0

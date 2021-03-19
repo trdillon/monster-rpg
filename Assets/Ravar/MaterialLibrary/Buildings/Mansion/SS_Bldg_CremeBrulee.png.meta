@@ -1,0 +1,6648 @@
+fileFormatVersion: 2
+guid: 045b50eba8edc054bb4fbddc69710c40
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2408012414255136525
+    second: CremeBrulee_1.png
+  - first:
+      213: 4684314475183360312
+    second: CremeBrulee_100.png
+  - first:
+      213: 3732036691502802224
+    second: CremeBrulee_101.png
+  - first:
+      213: 2096621386034262912
+    second: CremeBrulee_102.png
+  - first:
+      213: -2824941756676847467
+    second: CremeBrulee_107.png
+  - first:
+      213: 5157808859553030563
+    second: CremeBrulee_108.png
+  - first:
+      213: -3508344400586191684
+    second: CremeBrulee_11.png
+  - first:
+      213: 1747526564213306701
+    second: CremeBrulee_12.png
+  - first:
+      213: 1233441427752968976
+    second: CremeBrulee_123.png
+  - first:
+      213: -2349753681839509349
+    second: CremeBrulee_124.png
+  - first:
+      213: 2701522319376238709
+    second: CremeBrulee_125.png
+  - first:
+      213: 2677161849462501872
+    second: CremeBrulee_126.png
+  - first:
+      213: 7891987496540397004
+    second: CremeBrulee_127.png
+  - first:
+      213: 1367118993715188765
+    second: CremeBrulee_128.png
+  - first:
+      213: -8771015340632477377
+    second: CremeBrulee_129.png
+  - first:
+      213: 128020176998421426
+    second: CremeBrulee_13.png
+  - first:
+      213: -4051088401981518262
+    second: CremeBrulee_130.png
+  - first:
+      213: -5301242210885779742
+    second: CremeBrulee_132.png
+  - first:
+      213: -724141388802086590
+    second: CremeBrulee_143.png
+  - first:
+      213: 5083926673573415154
+    second: CremeBrulee_144.png
+  - first:
+      213: 6310694785881414747
+    second: CremeBrulee_147.png
+  - first:
+      213: 3610068563641576543
+    second: CremeBrulee_148.png
+  - first:
+      213: -714006087435663512
+    second: CremeBrulee_149.png
+  - first:
+      213: -4498842950388469125
+    second: CremeBrulee_151.png
+  - first:
+      213: -1471917585114151616
+    second: CremeBrulee_152.png
+  - first:
+      213: 1604682851458373360
+    second: CremeBrulee_153.png
+  - first:
+      213: -2036830399575423984
+    second: CremeBrulee_154.png
+  - first:
+      213: -2532610658271636783
+    second: CremeBrulee_155.png
+  - first:
+      213: 3474632701940932170
+    second: CremeBrulee_156.png
+  - first:
+      213: 7456826686563655702
+    second: CremeBrulee_160.png
+  - first:
+      213: -4027258206396522214
+    second: CremeBrulee_162.png
+  - first:
+      213: 2153961534806274990
+    second: CremeBrulee_163.png
+  - first:
+      213: 944195716743729636
+    second: CremeBrulee_164.png
+  - first:
+      213: 3263753728536417803
+    second: CremeBrulee_165.png
+  - first:
+      213: -3119519737409662845
+    second: CremeBrulee_167.png
+  - first:
+      213: -5805852785125397286
+    second: CremeBrulee_172.png
+  - first:
+      213: 7907420266140792393
+    second: CremeBrulee_173.png
+  - first:
+      213: -5161725452158206403
+    second: CremeBrulee_174.png
+  - first:
+      213: -8943685213064402012
+    second: CremeBrulee_176.png
+  - first:
+      213: 5621524919338092131
+    second: CremeBrulee_177.png
+  - first:
+      213: 6199993081948219892
+    second: CremeBrulee_178.png
+  - first:
+      213: 2704329670011555356
+    second: CremeBrulee_179.png
+  - first:
+      213: -5814662164100546568
+    second: CremeBrulee_18.png
+  - first:
+      213: -8252761062707349548
+    second: CremeBrulee_180.png
+  - first:
+      213: -5417129110531524360
+    second: CremeBrulee_182.png
+  - first:
+      213: 3059587200059355038
+    second: CremeBrulee_183.png
+  - first:
+      213: 8828522922428721479
+    second: CremeBrulee_185.png
+  - first:
+      213: 2122514276079282315
+    second: CremeBrulee_188.png
+  - first:
+      213: 6491841733580169165
+    second: CremeBrulee_190.png
+  - first:
+      213: 357024099026568894
+    second: CremeBrulee_192.png
+  - first:
+      213: -2700487518084116650
+    second: CremeBrulee_198.png
+  - first:
+      213: -5258107751888987439
+    second: CremeBrulee_2.png
+  - first:
+      213: -8510135828067627174
+    second: CremeBrulee_20.png
+  - first:
+      213: -6449744767801604693
+    second: CremeBrulee_201.png
+  - first:
+      213: 7604505341004862197
+    second: CremeBrulee_202.png
+  - first:
+      213: 5285813594781708585
+    second: CremeBrulee_203.png
+  - first:
+      213: -2354737236734390541
+    second: CremeBrulee_204.png
+  - first:
+      213: 5428373144012969962
+    second: CremeBrulee_206.png
+  - first:
+      213: -2036418671016927868
+    second: CremeBrulee_207.png
+  - first:
+      213: 1873498756084935924
+    second: CremeBrulee_208.png
+  - first:
+      213: 3249638683878880845
+    second: CremeBrulee_209.png
+  - first:
+      213: 8948847352516083184
+    second: CremeBrulee_210.png
+  - first:
+      213: 4962017321346854335
+    second: CremeBrulee_212.png
+  - first:
+      213: -2176804918292417839
+    second: CremeBrulee_22.png
+  - first:
+      213: 3141815493556879234
+    second: CremeBrulee_224.png
+  - first:
+      213: -8444137287477391389
+    second: CremeBrulee_226.png
+  - first:
+      213: -4142444002753758314
+    second: CremeBrulee_227.png
+  - first:
+      213: 5626566561914887141
+    second: CremeBrulee_228.png
+  - first:
+      213: -2161944939087612291
+    second: CremeBrulee_229.png
+  - first:
+      213: -5810972986804640055
+    second: CremeBrulee_23.png
+  - first:
+      213: -1653312873152759395
+    second: CremeBrulee_230.png
+  - first:
+      213: -4578147369581652305
+    second: CremeBrulee_231.png
+  - first:
+      213: -9171161446861547548
+    second: CremeBrulee_232.png
+  - first:
+      213: -2848249891713088724
+    second: CremeBrulee_233.png
+  - first:
+      213: 8031493487024604767
+    second: CremeBrulee_236.png
+  - first:
+      213: 1478307294225275824
+    second: CremeBrulee_239.png
+  - first:
+      213: -544920424124645396
+    second: CremeBrulee_241.png
+  - first:
+      213: -6433978640565527463
+    second: CremeBrulee_247.png
+  - first:
+      213: 5998882608089904312
+    second: CremeBrulee_248.png
+  - first:
+      213: 7612844990141598501
+    second: CremeBrulee_249.png
+  - first:
+      213: 7377372294125444513
+    second: CremeBrulee_25.png
+  - first:
+      213: 2311724802468525828
+    second: CremeBrulee_251.png
+  - first:
+      213: -2765619365061318302
+    second: CremeBrulee_252.png
+  - first:
+      213: -3191787266157230452
+    second: CremeBrulee_255.png
+  - first:
+      213: 3183635482833334828
+    second: CremeBrulee_258.png
+  - first:
+      213: 4010228640719273271
+    second: CremeBrulee_259.png
+  - first:
+      213: 1648610567097737502
+    second: CremeBrulee_26.png
+  - first:
+      213: -7098098905608954945
+    second: CremeBrulee_264.png
+  - first:
+      213: -4527088212205541636
+    second: CremeBrulee_265.png
+  - first:
+      213: -6862062048745716077
+    second: CremeBrulee_266.png
+  - first:
+      213: 2746657893775665659
+    second: CremeBrulee_267.png
+  - first:
+      213: 2968391534830196542
+    second: CremeBrulee_27.png
+  - first:
+      213: 2986554791638592595
+    second: CremeBrulee_29.png
+  - first:
+      213: 2555860127025790806
+    second: CremeBrulee_3.png
+  - first:
+      213: 8854314297993119713
+    second: CremeBrulee_31.png
+  - first:
+      213: -6361642474021386733
+    second: CremeBrulee_34.png
+  - first:
+      213: -2985493640351857821
+    second: CremeBrulee_35.png
+  - first:
+      213: -8832287460069512652
+    second: CremeBrulee_36.png
+  - first:
+      213: 9205178861580601127
+    second: CremeBrulee_37.png
+  - first:
+      213: 4002850800836386779
+    second: CremeBrulee_38.png
+  - first:
+      213: 8342807651266348855
+    second: CremeBrulee_39.png
+  - first:
+      213: 5536962397186982747
+    second: CremeBrulee_4.png
+  - first:
+      213: 3863460598205024454
+    second: CremeBrulee_41.png
+  - first:
+      213: 4853086545947710055
+    second: CremeBrulee_42.png
+  - first:
+      213: 458554011902369001
+    second: CremeBrulee_43.png
+  - first:
+      213: -4908731656760222625
+    second: CremeBrulee_44.png
+  - first:
+      213: 6150572413481976131
+    second: CremeBrulee_45.png
+  - first:
+      213: 5324121516967089105
+    second: CremeBrulee_46.png
+  - first:
+      213: -5408177931607287747
+    second: CremeBrulee_5.png
+  - first:
+      213: -7547325864803707123
+    second: CremeBrulee_51.png
+  - first:
+      213: 3164283347063831310
+    second: CremeBrulee_52.png
+  - first:
+      213: -546969073504962245
+    second: CremeBrulee_54.png
+  - first:
+      213: -5899570702156698200
+    second: CremeBrulee_56.png
+  - first:
+      213: -3388801658262646991
+    second: CremeBrulee_57.png
+  - first:
+      213: 6270941209623310777
+    second: CremeBrulee_58.png
+  - first:
+      213: 7532725246005863648
+    second: CremeBrulee_59.png
+  - first:
+      213: -3589676831289065010
+    second: CremeBrulee_6.png
+  - first:
+      213: 3643825195922197112
+    second: CremeBrulee_60.png
+  - first:
+      213: -2873892436558788578
+    second: CremeBrulee_61.png
+  - first:
+      213: -6482890436324033927
+    second: CremeBrulee_62.png
+  - first:
+      213: -7102706743645987511
+    second: CremeBrulee_63.png
+  - first:
+      213: 6400997081531999692
+    second: CremeBrulee_64.png
+  - first:
+      213: 6885366988198006105
+    second: CremeBrulee_65.png
+  - first:
+      213: -5076647481821206217
+    second: CremeBrulee_66.png
+  - first:
+      213: -145087236159810124
+    second: CremeBrulee_67.png
+  - first:
+      213: 4370065503579527661
+    second: CremeBrulee_69.png
+  - first:
+      213: 5201688200812394972
+    second: CremeBrulee_70.png
+  - first:
+      213: 468433096306217403
+    second: CremeBrulee_71.png
+  - first:
+      213: 8558876059601166456
+    second: CremeBrulee_73.png
+  - first:
+      213: -774444951681041856
+    second: CremeBrulee_74.png
+  - first:
+      213: -1040660976323964521
+    second: CremeBrulee_75.png
+  - first:
+      213: 4617619365431224770
+    second: CremeBrulee_78.png
+  - first:
+      213: -5322942809301116142
+    second: CremeBrulee_80.png
+  - first:
+      213: -7612702512614255245
+    second: CremeBrulee_81.png
+  - first:
+      213: -7259086734377148919
+    second: CremeBrulee_82.png
+  - first:
+      213: -410201375348059719
+    second: CremeBrulee_83.png
+  - first:
+      213: 2864511875611851779
+    second: CremeBrulee_84.png
+  - first:
+      213: 5160885119402740403
+    second: CremeBrulee_85.png
+  - first:
+      213: -4208161575538575165
+    second: CremeBrulee_86.png
+  - first:
+      213: 171845697294925909
+    second: CremeBrulee_87.png
+  - first:
+      213: -6176124896963477173
+    second: CremeBrulee_88.png
+  - first:
+      213: 3848689997722469661
+    second: CremeBrulee_89.png
+  - first:
+      213: -8089641271102102179
+    second: CremeBrulee_90.png
+  - first:
+      213: 1852275307474008714
+    second: CremeBrulee_91.png
+  - first:
+      213: 7675527682168451768
+    second: CremeBrulee_92.png
+  - first:
+      213: -4372969066409838527
+    second: CremeBrulee_93.png
+  - first:
+      213: 7172150746000936170
+    second: CremeBrulee_94.png
+  - first:
+      213: -7124390217098345844
+    second: CremeBrulee_95.png
+  - first:
+      213: -1405866293007910782
+    second: CremeBrulee_96.png
+  - first:
+      213: -5016700861020682497
+    second: CremeBrulee_98.png
+  - first:
+      213: -1503812408182389112
+    second: CremeBrulee_99.png
+  - first:
+      213: -5272200792030274149
+    second: CremeBrulee_110.png
+  - first:
+      213: -7478693215864519727
+    second: CremeBrulee_112.png
+  - first:
+      213: -3082750615150009981
+    second: CremeBrulee_119.png
+  - first:
+      213: 3507899032047165703
+    second: CremeBrulee_121.png
+  - first:
+      213: 3084905901788139513
+    second: CremeBrulee_214.png
+  - first:
+      213: 8224820507576161206
+    second: CremeBrulee_218.png
+  - first:
+      213: -8979283338149304580
+    second: CremeBrulee_250.png
+  - first:
+      213: 3849322817045159690
+    second: CremeBrulee_253.png
+  - first:
+      213: 2003429296072081194
+    second: CremeBrulee_262.png
+  - first:
+      213: 2276756523735127187
+    second: CremeBrulee_244.png
+  - first:
+      213: -2228124743336340641
+    second: CremeBrulee_245.png
+  - first:
+      213: 3128642628281513946
+    second: CremeBrulee_140.png
+  - first:
+      213: 559897712340223599
+    second: CremeBrulee_150.png
+  - first:
+      213: -2343812395810850642
+    second: CremeBrulee_157.png
+  - first:
+      213: 6656993790130030963
+    second: CremeBrulee_170.png
+  - first:
+      213: -6878163614218283472
+    second: CremeBrulee_19.png
+  - first:
+      213: -6149509293561033717
+    second: CremeBrulee_21.png
+  - first:
+      213: -3072180657507202618
+    second: CremeBrulee_221.png
+  - first:
+      213: 8986875598250687287
+    second: CremeBrulee_234.png
+  - first:
+      213: -1029098404483388788
+    second: CremeBrulee_235.png
+  - first:
+      213: -4432207667854497589
+    second: CremeBrulee_28.png
+  - first:
+      213: -4576784590412663435
+    second: CremeBrulee_30.png
+  - first:
+      213: -1180766879080502136
+    second: CremeBrulee_7.png
+  - first:
+      213: 7855582120290107638
+    second: CremeBrulee_8.png
+  - first:
+      213: 7799309228155419885
+    second: CremeBrulee_268.png
+  - first:
+      213: -5935617294127242184
+    second: CremeBrulee_271.png
+  - first:
+      213: -68407812158332788
+    second: CremeBrulee_10.png
+  - first:
+      213: 1835821162649030658
+    second: CremeBrulee_175.png
+  - first:
+      213: 6733788481229262869
+    second: CremeBrulee_79.png
+  - first:
+      213: -8536122964620116305
+    second: CremeBrulee_9.png
+  - first:
+      213: 6575191237418045856
+    second: CremeBrulee_113.png
+  - first:
+      213: 3905263520420335807
+    second: CremeBrulee_114.png
+  - first:
+      213: -2719513139722597584
+    second: CremeBrulee_115.png
+  - first:
+      213: -4336631344356904405
+    second: CremeBrulee_116.png
+  - first:
+      213: 4129862464039383274
+    second: CremeBrulee_117.png
+  - first:
+      213: 6346357597065171865
+    second: CremeBrulee_118.png
+  - first:
+      213: -1649594418946082601
+    second: CremeBrulee_141.png
+  - first:
+      213: 7910329141124839727
+    second: CremeBrulee_142.png
+  - first:
+      213: -1593054779256117661
+    second: CremeBrulee_145.png
+  - first:
+      213: -8813920596266737631
+    second: CremeBrulee_146.png
+  - first:
+      213: 6382518269828846383
+    second: CremeBrulee_158.png
+  - first:
+      213: 4055880686952219098
+    second: CremeBrulee_159.png
+  - first:
+      213: -6379070682513572093
+    second: CremeBrulee_161.png
+  - first:
+      213: -1128190348759598288
+    second: CremeBrulee_181.png
+  - first:
+      213: -3382218157705922191
+    second: CremeBrulee_184.png
+  - first:
+      213: -4596045186802288008
+    second: CremeBrulee_186.png
+  - first:
+      213: -8607114886370918921
+    second: CremeBrulee_187.png
+  - first:
+      213: 7870374402722789028
+    second: CremeBrulee_189.png
+  - first:
+      213: -5393232515589490782
+    second: CremeBrulee_200.png
+  - first:
+      213: -5390193173121659304
+    second: CremeBrulee_205.png
+  - first:
+      213: 5663195459840734468
+    second: CremeBrulee_211.png
+  - first:
+      213: -6761794948924211220
+    second: CremeBrulee_32.png
+  - first:
+      213: 6631376836480967890
+    second: CremeBrulee_40.png
+  - first:
+      213: -1175837088202868097
+    second: CremeBrulee_50.png
+  - first:
+      213: -6772437439553333922
+    second: CremeBrulee_53.png
+  - first:
+      213: 8492903546070801197
+    second: CremeBrulee_55.png
+  - first:
+      213: -2902140433936415306
+    second: CremeBrulee_68.png
+  - first:
+      213: 6115028972344516139
+    second: CremeBrulee_97.png
+  - first:
+      213: -2520896543111655982
+    second: CremeBrulee_213.png
+  - first:
+      213: 1886346760613435026
+    second: CremeBrulee_14.png
+  - first:
+      213: 2161068131508176768
+    second: CremeBrulee_15.png
+  - first:
+      213: -4311041632143333295
+    second: CremeBrulee_24.png
+  - first:
+      213: 6837557015142968312
+    second: CremeBrulee_216.png
+  - first:
+      213: -3844823886482590658
+    second: CremeBrulee_215.png
+  - first:
+      213: 563201992683135843
+    second: CremeBrulee_243.png
+  - first:
+      213: 2061862494144054287
+    second: CremeBrulee_109.png
+  - first:
+      213: -7127081955279191221
+    second: CremeBrulee_120.png
+  - first:
+      213: -9128952024258102866
+    second: CremeBrulee_269.png
+  - first:
+      213: -7763147836751554797
+    second: CremeBrulee_270.png
+  - first:
+      213: -8815543043664168666
+    second: CremeBrulee_257.png
+  - first:
+      213: -820162245670217603
+    second: CremeBrulee_260.png
+  - first:
+      213: -2926668574742089519
+    second: CremeBrulee_76.png
+  - first:
+      213: -4026025281337195035
+    second: CremeBrulee_246.png
+  - first:
+      213: -4639635448596951234
+    second: CremeBrulee_237.png
+  - first:
+      213: 2083991394845895590
+    second: CremeBrulee_261.png
+  - first:
+      213: 1288654617700351846
+    second: CremeBrulee_263.png
+  - first:
+      213: -7378361714533587445
+    second: CremeBrulee_131.png
+  - first:
+      213: 3182905932403339995
+    second: CremeBrulee_238.png
+  - first:
+      213: 1226917960904848762
+    second: CremeBrulee_133.png
+  - first:
+      213: 7307824514027332533
+    second: CremeBrulee_103.png
+  - first:
+      213: -452110017813164310
+    second: CremeBrulee_104.png
+  - first:
+      213: -2622183586137949238
+    second: CremeBrulee_194.png
+  - first:
+      213: -1603706122263216502
+    second: CremeBrulee_106.png
+  - first:
+      213: 4836850347366229854
+    second: CremeBrulee_134.png
+  - first:
+      213: -6302375000958516946
+    second: CremeBrulee_135.png
+  - first:
+      213: -8590940987663273805
+    second: CremeBrulee_137.png
+  - first:
+      213: -2463578121818974427
+    second: CremeBrulee_77.png
+  - first:
+      213: 4569682158628644962
+    second: CremeBrulee_166.png
+  - first:
+      213: 8725830334026559454
+    second: CremeBrulee_139.png
+  - first:
+      213: -1930807039400807447
+    second: CremeBrulee_17.png
+  - first:
+      213: 6141253263134103803
+    second: CremeBrulee_105.png
+  - first:
+      213: 679335678323061756
+    second: CremeBrulee_240.png
+  - first:
+      213: -4896638108496472448
+    second: CremeBrulee_242.png
+  - first:
+      213: -3531713272411453441
+    second: CremeBrulee_254.png
+  - first:
+      213: 1062787139463455762
+    second: CremeBrulee_256.png
+  - first:
+      213: -7774038521623540548
+    second: CremeBrulee_16.png
+  - first:
+      213: 6985803355341237687
+    second: CremeBrulee_48.png
+  - first:
+      213: -1120262434989474388
+    second: CremeBrulee_138.png
+  - first:
+      213: 4628887134507757943
+    second: CremeBrulee_136.png
+  - first:
+      213: 226964773998002425
+    second: CremeBrulee_191.png
+  - first:
+      213: -4435276904497751833
+    second: CremeBrulee_193.png
+  - first:
+      213: -2041502025928504223
+    second: CremeBrulee_217.png
+  - first:
+      213: -4307697210327708398
+    second: CremeBrulee_219.png
+  - first:
+      213: -1591202148816336727
+    second: CremeBrulee_47.png
+  - first:
+      213: -5040417482473205855
+    second: CremeBrulee_168.png
+  - first:
+      213: 2715482941074019789
+    second: CremeBrulee_169.png
+  - first:
+      213: -8584990787453176147
+    second: CremeBrulee_171.png
+  - first:
+      213: 6143269675824147162
+    second: CremeBrulee_196.png
+  - first:
+      213: 1320809143686800315
+    second: CremeBrulee_197.png
+  - first:
+      213: -7475510414171004120
+    second: CremeBrulee_199.png
+  - first:
+      213: 7674511656590769660
+    second: CremeBrulee_223.png
+  - first:
+      213: 6973243312587869539
+    second: CremeBrulee_225.png
+  - first:
+      213: 2296586016030995058
+    second: CremeBrulee_220.png
+  - first:
+      213: -2469904618409393372
+    second: CremeBrulee_222.png
+  - first:
+      213: 1729762969723397273
+    second: CremeBrulee_195.png
+  - first:
+      213: 7368356937721613397
+    second: CremeBrulee_33.png
+  - first:
+      213: -4575779787661158472
+    second: CremeBrulee_72.png
+  - first:
+      213: 7437423844714666231
+    second: CremeBrulee_111.png
+  - first:
+      213: -5543004632141489066
+    second: CremeBrulee_122.png
+  - first:
+      213: -8887257649890740661
+    second: CremeBrulee_49.png
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CremeBrulee_1.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 991
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f08799a775059ed0800000000000000
+      internalID: -2408012414255136525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_100.png
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 991
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83946855237020140800000000000000
+      internalID: 4684314475183360312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_101.png
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 991
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 035afb5099bdac330800000000000000
+      internalID: 3732036691502802224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_102.png
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 991
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0833f0fca02b81d10800000000000000
+      internalID: 2096621386034262912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_107.png
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 991
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 598cb12807acbc8d0800000000000000
+      internalID: -2824941756676847467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_108.png
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 991
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a1650d94d7349740800000000000000
+      internalID: 5157808859553030563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_11.png
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 991
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbc445d0b5bdf4fc0800000000000000
+      internalID: -3508344400586191684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_12.png
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 991
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d453e7fb626704810800000000000000
+      internalID: 1747526564213306701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_123.png
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 991
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 013677881701e1110800000000000000
+      internalID: 1233441427752968976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_124.png
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 991
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b903a44d97ff36fd0800000000000000
+      internalID: -2349753681839509349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_125.png
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 991
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 578c5377c3cbd7520800000000000000
+      internalID: 2701522319376238709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_126.png
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 991
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f1b0739480372520800000000000000
+      internalID: 2677161849462501872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_127.png
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 991
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccd5d1780d8f58d60800000000000000
+      internalID: 7891987496540397004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_128.png
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 991
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1455124b7bf8f210800000000000000
+      internalID: 1367118993715188765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_129.png
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 991
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f31791eb408174680800000000000000
+      internalID: -8771015340632477377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_13.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 957
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b3d2163ca1d6c100800000000000000
+      internalID: 128020176998421426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_130.png
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 957
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4ecf2edf84a7c7c0800000000000000
+      internalID: -4051088401981518262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_132.png
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 957
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eeb8dfdb443e66b0800000000000000
+      internalID: -5301242210885779742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_143.png
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 957
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2492b495e3553f5f0800000000000000
+      internalID: -724141388802086590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_144.png
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 957
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f80a72bf5cbd8640800000000000000
+      internalID: 5083926673573415154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_147.png
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 957
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5c1f56e877149750800000000000000
+      internalID: 6310694785881414747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_148.png
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 957
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5c29ae4b3a891230800000000000000
+      internalID: 3610068563641576543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_149.png
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 957
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8674ee61f375716f0800000000000000
+      internalID: -714006087435663512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_151.png
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 957
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7233d92c26e091c0800000000000000
+      internalID: -4498842950388469125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_152.png
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 957
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 045ce9041c2b29be0800000000000000
+      internalID: -1471917585114151616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_153.png
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 957
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f6565a2d8af44610800000000000000
+      internalID: 1604682851458373360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_154.png
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 957
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 014079d0b89bbb3e0800000000000000
+      internalID: -2036830399575423984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_155.png
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 957
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d2d95f460c5adcd0800000000000000
+      internalID: -2532610658271636783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_156.png
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 957
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4e15247800683030800000000000000
+      internalID: 3474632701940932170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_160.png
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 957
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 610a74c0d58fb7760800000000000000
+      internalID: 7456826686563655702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_162.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 923
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1165f4affd4c18c0800000000000000
+      internalID: -4027258206396522214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_163.png
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 923
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea3bbfd8a9864ed10800000000000000
+      internalID: 2153961534806274990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_164.png
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 923
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e194f670057a1d00800000000000000
+      internalID: 944195716743729636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_165.png
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 923
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0615c759be2b4d20800000000000000
+      internalID: 3263753728536417803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_167.png
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 923
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38090e5a35d35b4d0800000000000000
+      internalID: -3119519737409662845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_172.png
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 923
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adc636417a77d6fa0800000000000000
+      internalID: -5805852785125397286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_173.png
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 923
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 946fb0536dcccbd60800000000000000
+      internalID: 7907420266140792393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_174.png
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 923
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3e740c9c0edd58b0800000000000000
+      internalID: -5161725452158206403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_176.png
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 923
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4abe1643fa5a1e380800000000000000
+      internalID: -8943685213064402012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_177.png
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 923
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3664729412ba30e40800000000000000
+      internalID: 5621524919338092131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_178.png
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 923
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f9276bebdcca0650800000000000000
+      internalID: 6199993081948219892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_179.png
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 923
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1e8698b185b78520800000000000000
+      internalID: 2704329670011555356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_18.png
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 923
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fff1e3b19b2e4fa0800000000000000
+      internalID: -5814662164100546568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_180.png
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 923
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d73729d98d487d80800000000000000
+      internalID: -8252761062707349548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_182.png
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 923
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f8375076cd72d4b0800000000000000
+      internalID: -5417129110531524360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_183.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 889
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9faeda1956d57a20800000000000000
+      internalID: 3059587200059355038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_185.png
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 889
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 749e1ca82d6358a70800000000000000
+      internalID: 8828522922428721479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_188.png
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 889
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b88a6601d7fa47d10800000000000000
+      internalID: 2122514276079282315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_190.png
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 889
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcf1a1459a7a71a50800000000000000
+      internalID: 6491841733580169165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_192.png
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 889
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb68bb6c68764f400800000000000000
+      internalID: 357024099026568894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_198.png
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 889
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65f483cf8e0f58ad0800000000000000
+      internalID: -2700487518084116650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_2.png
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 889
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dadde9bbd27707b0800000000000000
+      internalID: -5258107751888987439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_20.png
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 889
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5f44b19d8ce5e980800000000000000
+      internalID: -8510135828067627174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_201.png
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 889
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba5404f4e47ed76a0800000000000000
+      internalID: -6449744767801604693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_202.png
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 889
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f2d7273151a88960800000000000000
+      internalID: 7604505341004862197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_203.png
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 889
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 921f4e1857bfa5940800000000000000
+      internalID: 5285813594781708585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_204.png
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 889
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fecf0985fa425fd0800000000000000
+      internalID: -2354737236734390541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_206.png
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 889
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae7d92d1d94755b40800000000000000
+      internalID: 5428373144012969962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_207.png
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 889
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48d101412003db3e0800000000000000
+      internalID: -2036418671016927868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_208.png
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 889
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fc24934131000a10800000000000000
+      internalID: 1873498756084935924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_209.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 855
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d46f7f86a29091d20800000000000000
+      internalID: 3249638683878880845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_210.png
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 855
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fd7aeb0141b03c70800000000000000
+      internalID: 8948847352516083184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_212.png
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 855
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbde630c670acd440800000000000000
+      internalID: 4962017321346854335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_22.png
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 855
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d27bd3c57f6ac1e0800000000000000
+      internalID: -2176804918292417839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_224.png
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 855
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28fb64b9b88f99b20800000000000000
+      internalID: 3141815493556879234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_226.png
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 855
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ef874140e560da80800000000000000
+      internalID: -8444137287477391389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_227.png
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 855
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69b3ae980251386c0800000000000000
+      internalID: -4142444002753758314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_228.png
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 855
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eb170c2a74951e40800000000000000
+      internalID: 5626566561914887141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_229.png
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 855
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d76bab9488a3ff1e0800000000000000
+      internalID: -2161944939087612291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_23.png
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 855
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c66e1a3bd64b5fa0800000000000000
+      internalID: -5810972986804640055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_230.png
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 855
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d99362593b04e09e0800000000000000
+      internalID: -1653312873152759395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_231.png
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 855
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa652b239372770c0800000000000000
+      internalID: -4578147369581652305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_232.png
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 855
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e75f06414d79b080800000000000000
+      internalID: -9171161446861547548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_233.png
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 855
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2385ec60dbf878d0800000000000000
+      internalID: -2848249891713088724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_236.png
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 855
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5607f516c8957f60800000000000000
+      internalID: 8031493487024604767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_239.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 821
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bb9a25d6a0048410800000000000000
+      internalID: 1478307294225275824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_241.png
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 821
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceff139e2cd0078f0800000000000000
+      internalID: -544920424124645396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_247.png
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 821
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95c14acd38ae5b6a0800000000000000
+      internalID: -6433978640565527463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_248.png
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 821
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b4b778d2ff404350800000000000000
+      internalID: 5998882608089904312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_249.png
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 821
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52b80871f2246a960800000000000000
+      internalID: 7612844990141598501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_25.png
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 821
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1add727b301b16660800000000000000
+      internalID: 7377372294125444513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_251.png
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 821
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 407b895b575e41020800000000000000
+      internalID: 2311724802468525828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_252.png
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 821
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 269249127db8e99d0800000000000000
+      internalID: -2765619365061318302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_255.png
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 821
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c86451a646e74b3d0800000000000000
+      internalID: -3191787266157230452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_258.png
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 821
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c223c90aa9b8e2c20800000000000000
+      internalID: 3183635482833334828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_259.png
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 821
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73d7b2e93b137a730800000000000000
+      internalID: 4010228640719273271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_26.png
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 821
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e11e0d8739a01e610800000000000000
+      internalID: 1648610567097737502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_264.png
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 821
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbbd69617ac7e7d90800000000000000
+      internalID: -7098098905608954945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_265.png
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 821
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf661aca14d8c21c0800000000000000
+      internalID: -4527088212205541636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_266.png
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 821
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39682d56cee05c0a0800000000000000
+      internalID: -6862062048745716077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_267.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 787
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf9650e4dc61e1620800000000000000
+      internalID: 2746657893775665659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_27.png
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 787
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3794dbaf58d13920800000000000000
+      internalID: 2968391534830196542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_29.png
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 787
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35cebd172cf527920800000000000000
+      internalID: 2986554791638592595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_3.png
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 787
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65ff4f67e3d387320800000000000000
+      internalID: 2555860127025790806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_31.png
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 787
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e7ca8d11f7d0ea70800000000000000
+      internalID: 8854314297993119713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_34.png
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 787
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3160be310e7e6b7a0800000000000000
+      internalID: -6361642474021386733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_35.png
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 787
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 363c3a71a556196d0800000000000000
+      internalID: -2985493640351857821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_36.png
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 787
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43a6b6cb9596d6580800000000000000
+      internalID: -8832287460069512652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_37.png
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 787
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 727427a476d5fbf70800000000000000
+      internalID: 9205178861580601127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_38.png
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 787
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdf9db8689bfc8730800000000000000
+      internalID: 4002850800836386779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_39.png
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 787
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73744235b5b97c370800000000000000
+      internalID: 8342807651266348855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_4.png
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 787
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b538603d6fd37dc40800000000000000
+      internalID: 5536962397186982747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_41.png
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 787
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c88abfc1f4cd9530800000000000000
+      internalID: 3863460598205024454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_42.png
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 787
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 762d0733080a95340800000000000000
+      internalID: 4853086545947710055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_43.png
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 787
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ec55cdb17c1d5600800000000000000
+      internalID: 458554011902369001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_44.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 753
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5c9715d09ea0ebb0800000000000000
+      internalID: -4908731656760222625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_45.png
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 753
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34109eed5093b5550800000000000000
+      internalID: 6150572413481976131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_46.png
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 753
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d356dfaf4413e940800000000000000
+      internalID: 5324121516967089105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_5.png
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 753
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d38d07033da42f4b0800000000000000
+      internalID: -5408177931607287747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_51.png
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 753
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d07d1480d13824790800000000000000
+      internalID: -7547325864803707123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_52.png
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 753
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0b7c6660fac9eb20800000000000000
+      internalID: 3164283347063831310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_54.png
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 753
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b39bc9e8686c868f0800000000000000
+      internalID: -546969073504962245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_56.png
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 753
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ade5a224b3802ea0800000000000000
+      internalID: -5899570702156698200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_57.png
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 753
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13f0001b8de88f0d0800000000000000
+      internalID: -3388801658262646991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_58.png
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 753
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b1b4f62ecbd60750800000000000000
+      internalID: 6270941209623310777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_59.png
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 753
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e4ebce73bd998860800000000000000
+      internalID: 7532725246005863648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_6.png
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 753
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec1c09cd0f7ee2ec0800000000000000
+      internalID: -3589676831289065010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_60.png
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 753
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87a8f8ab5b7719230800000000000000
+      internalID: 3643825195922197112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_61.png
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 753
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e184b343e02ed18d0800000000000000
+      internalID: -2873892436558788578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_62.png
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 753
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97af029fe752806a0800000000000000
+      internalID: -6482890436324033927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_63.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 719
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94d953139dd1e6d90800000000000000
+      internalID: -7102706743645987511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_64.png
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 719
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc5e6058ee8e4d850800000000000000
+      internalID: 6400997081531999692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_65.png
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 719
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95d4eb7abccbd8f50800000000000000
+      internalID: 6885366988198006105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_66.png
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 719
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7396a2433002c89b0800000000000000
+      internalID: -5076647481821206217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_67.png
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 719
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b5504b6deb8cfdf0800000000000000
+      internalID: -145087236159810124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_69.png
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 719
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de9db020c6795ac30800000000000000
+      internalID: 4370065503579527661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_70.png
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 719
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd973c1ebdb103840800000000000000
+      internalID: 5201688200812394972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_71.png
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 719
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb15e525b65308600800000000000000
+      internalID: 468433096306217403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_73.png
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 719
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8706f19ed6c37c670800000000000000
+      internalID: 8558876059601166456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_74.png
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 719
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04af4fc6b6e9045f0800000000000000
+      internalID: -774444951681041856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_75.png
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 719
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 791599e0b54de81f0800000000000000
+      internalID: -1040660976323964521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_78.png
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 719
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c92e700954151040800000000000000
+      internalID: 4617619365431224770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_80.png
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 719
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21b13e397bb1126b0800000000000000
+      internalID: -5322942809301116142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_81.png
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 719
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37557ea066f3a5690800000000000000
+      internalID: -7612702512614255245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_82.png
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 719
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90e13bb431b824b90800000000000000
+      internalID: -7259086734377148919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_83.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 685
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b19000c50cae4af0800000000000000
+      internalID: -410201375348059719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_84.png
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 685
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30c7bb0cf5ac0c720800000000000000
+      internalID: 2864511875611851779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_85.png
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 685
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ba899c2ca52f9740800000000000000
+      internalID: 5160885119402740403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_86.png
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 685
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c83394c75b9995c0800000000000000
+      internalID: -4208161575538575165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_87.png
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 685
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 550817f40c4826200800000000000000
+      internalID: 171845697294925909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_88.png
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 685
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b41cb04f02ff94aa0800000000000000
+      internalID: -6176124896963477173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_89.png
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 685
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d15c8d4692b496530800000000000000
+      internalID: 3848689997722469661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_90.png
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 685
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d55ae9bef12dbbf80800000000000000
+      internalID: -8089641271102102179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_91.png
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 685
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8a3730149a94b910800000000000000
+      internalID: 1852275307474008714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_92.png
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 685
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b2f35f92c3f48a60800000000000000
+      internalID: 7675527682168451768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_93.png
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 685
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 148bed69dc71053c0800000000000000
+      internalID: -4372969066409838527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_94.png
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 685
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aec40f29a19988360800000000000000
+      internalID: 7172150746000936170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_95.png
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 685
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c82c59c18d4112d90800000000000000
+      internalID: -7124390217098345844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_96.png
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 685
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 288719b1e0c5d7ce0800000000000000
+      internalID: -1405866293007910782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_98.png
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 685
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff647728529116ab0800000000000000
+      internalID: -5016700861020682497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_99.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 651
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 886c6711592612be0800000000000000
+      internalID: -1503812408182389112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_110.png
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 652
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9d908e105165d6b0800000000000000
+      internalID: -5272200792030274149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_112.png
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 652
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d3854cd428563890800000000000000
+      internalID: -7478693215864519727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_119.png
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 652
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 381eddc06aed735d0800000000000000
+      internalID: -3082750615150009981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_121.png
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 652
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 701ab11859f8ea030800000000000000
+      internalID: 3507899032047165703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_214.png
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 653
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ff8699b299cfca20800000000000000
+      internalID: 3084905901788139513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_218.png
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 653
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b3dc67bcae642270800000000000000
+      internalID: 8224820507576161206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_250.png
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 656
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf6e604d06d236380800000000000000
+      internalID: -8979283338149304580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_253.png
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 656
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0f58cf15ba8b6530800000000000000
+      internalID: 3849322817045159690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_262.png
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 659
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2fbcf4845c9dcb10800000000000000
+      internalID: 2003429296072081194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_244.png
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 662
+        width: 32
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 394194ddef9a89f10800000000000000
+      internalID: 2276756523735127187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_245.png
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 662
+        width: 32
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f53dd2ed95c1411e0800000000000000
+      internalID: -2228124743336340641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_140.png
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 664
+        width: 32
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad73dd7e4eb2b6b20800000000000000
+      internalID: 3128642628281513946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_150.png
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 667
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f66c79eb00825c700800000000000000
+      internalID: 559897712340223599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_157.png
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 667
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea879874b0b197fd0800000000000000
+      internalID: -2343812395810850642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_170.png
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 649
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3798ea4f494626c50800000000000000
+      internalID: 6656993790130030963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_19.png
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 646
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 036908b82aadb80a0800000000000000
+      internalID: -6878163614218283472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_21.png
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 649
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0cc45601ed88aaa0800000000000000
+      internalID: -6149509293561033717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_221.png
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 644
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c9057718fb6d55d0800000000000000
+      internalID: -3072180657507202618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_234.png
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 641
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73bbb5afdbbc7bc70800000000000000
+      internalID: 8986875598250687287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_235.png
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 644
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8aa8d91478e7b1f0800000000000000
+      internalID: -1029098404483388788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_28.png
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 638
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc825c2eb92ad72c0800000000000000
+      internalID: -4432207667854497589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_30.png
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 638
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 575b8f2f9aefb70c0800000000000000
+      internalID: -4576784590412663435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_7.png
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 635
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88c2cd987c21d9fe0800000000000000
+      internalID: -1180766879080502136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_8.png
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 635
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f04dc75152a40d60800000000000000
+      internalID: 7855582120290107638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_268.png
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 632
+        width: 32
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dec31a5ab66bc3c60800000000000000
+      internalID: 7799309228155419885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_271.png
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 629
+        width: 32
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83461ece48370ada0800000000000000
+      internalID: -5935617294127242184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_10.png
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 643
+        width: 32
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c80e0701577fc0ff0800000000000000
+      internalID: -68407812158332788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_175.png
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 609
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20017deee952a7910800000000000000
+      internalID: 1835821162649030658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_79.png
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 598
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 510994052f8337d50800000000000000
+      internalID: 6733788481229262869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_9.png
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 575
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fae73c6d369998980800000000000000
+      internalID: -8536122964620116305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_113.png
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 611
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a15094f795cf3b50800000000000000
+      internalID: 6575191237418045856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_114.png
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 608
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb012f81b78423630800000000000000
+      internalID: 3905263520420335807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_115.png
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 611
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03bc3d04539524ad0800000000000000
+      internalID: -2719513139722597584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_116.png
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 596
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2238cdc4c031d3c0800000000000000
+      internalID: -4336631344356904405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_117.png
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 563
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae07944b708305930800000000000000
+      internalID: 4129862464039383274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_118.png
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 530
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 993dbae2c9ac21850800000000000000
+      internalID: 6346357597065171865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_141.png
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 564
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d8704bad967b19e0800000000000000
+      internalID: -1649594418946082601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_142.png
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 530
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f29ba21717227cd60800000000000000
+      internalID: 7910329141124839727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_145.png
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 541
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36663be5e1554e9e0800000000000000
+      internalID: -1593054779256117661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_146.png
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 507
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 120a5057ae9aea580800000000000000
+      internalID: -8813920596266737631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_158.png
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 577
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f23d695ec82439850800000000000000
+      internalID: 6382518269828846383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_159.png
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 577
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad1872deef1694830800000000000000
+      internalID: 4055880686952219098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_161.png
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 543
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30f7ba3130df877a0800000000000000
+      internalID: -6379070682513572093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_181.png
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 604
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03bf82feadcd750f0800000000000000
+      internalID: -1128190348759598288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_184.png
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 604
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 179ff0d5182ff01d0800000000000000
+      internalID: -3382218157705922191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_186.png
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 574
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87a7105e0419730c0800000000000000
+      internalID: -4596045186802288008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_187.png
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 540
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fd72e00d926d8880800000000000000
+      internalID: -8607114886370918921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_189.png
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 506
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a67e9bf1df293d60800000000000000
+      internalID: 7870374402722789028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_200.png
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 472
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a7b3350a936725b0800000000000000
+      internalID: -5393232515589490782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_205.png
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 543
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85e09551edf2235b0800000000000000
+      internalID: -5390193173121659304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_211.png
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 509
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 405796d0446b79e40800000000000000
+      internalID: 5663195459840734468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_32.png
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 509
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cef7759c1574922a0800000000000000
+      internalID: -6761794948924211220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_40.png
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 475
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d4a3362912670c50800000000000000
+      internalID: 6631376836480967890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_50.png
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 475
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7a30fbe5669eafe0800000000000000
+      internalID: -1175837088202868097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_53.png
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 496
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e551ed7d7087302a0800000000000000
+      internalID: -6772437439553333922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_55.png
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 496
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2b943f17cadcd570800000000000000
+      internalID: 8492903546070801197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_68.png
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 473
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b50ceac6a689b7d0800000000000000
+      internalID: -2902140433936415306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_97.png
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 462
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2e11d79372fcd450800000000000000
+      internalID: 6115028972344516139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_213.png
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 464
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ddc15843f9f30dd0800000000000000
+      internalID: -2520896543111655982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_14.png
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 489
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 296929d6266ad2a10800000000000000
+      internalID: 1886346760613435026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_15.png
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 471
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08746f90408adfd10800000000000000
+      internalID: 2161068131508176768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_24.png
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 441
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1582d28f97a1c24c0800000000000000
+      internalID: -4311041632143333295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_216.png
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 458
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fba31bd0e1e3ee50800000000000000
+      internalID: 6837557015142968312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_215.png
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 445
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e34b446cb0174aac0800000000000000
+      internalID: -3844823886482590658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_243.png
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 438
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 363aba67a35e0d700800000000000000
+      internalID: 563201992683135843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_109.png
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 458
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f044823a3053d9c10800000000000000
+      internalID: 2061862494144054287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_120.png
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 458
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b43cc7af8b4871d90800000000000000
+      internalID: -7127081955279191221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_269.png
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 447
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea9338e40827f4180800000000000000
+      internalID: -9128952024258102866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_270.png
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 445
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 317d4936c22c34490800000000000000
+      internalID: -7763147836751554797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_257.png
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 618
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6293b3cfe46e8a580800000000000000
+      internalID: -8815543043664168666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_260.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 601
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d78d3a078c23e94f0800000000000000
+      internalID: -820162245670217603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_76.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 639
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d0f23bff626267d0800000000000000
+      internalID: -2926668574742089519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_246.png
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 644
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e58721665fa028c0800000000000000
+      internalID: -4026025281337195035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_237.png
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 638
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3f811f2424bc9fb0800000000000000
+      internalID: -4639635448596951234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_261.png
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 618
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aba2c4d123dbec10800000000000000
+      internalID: 2083991394845895590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_263.png
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 618
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66f32361c8832e110800000000000000
+      internalID: 1288654617700351846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_131.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 621
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0622e4ec1bca9990800000000000000
+      internalID: -7378361714533587445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_238.png
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 646
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd2726ee414fb2c20800000000000000
+      internalID: 3182905932403339995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_133.png
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 604
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a75b74c8263e60110800000000000000
+      internalID: 1226917960904848762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_103.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 587
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b3ad7f4dab9a6560800000000000000
+      internalID: 7307824514027332533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_104.png
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 601
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeec9dc8558c9b9f0800000000000000
+      internalID: -452110017813164310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_194.png
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 601
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acb336cdbe12c9bd0800000000000000
+      internalID: -2622183586137949238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_106.png
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 570
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8eb16257cd7eb9e0800000000000000
+      internalID: -1603706122263216502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_134.png
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 570
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e572d72a3c1ff1340800000000000000
+      internalID: 4836850347366229854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_135.png
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 570
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e21c09af3577988a0800000000000000
+      internalID: -6302375000958516946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_137.png
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 567
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b0bcff30b8d6c880800000000000000
+      internalID: -8590940987663273805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_77.png
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 589
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5275e8430cc9fcdd0800000000000000
+      internalID: -2463578121818974427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_166.png
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 555
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 268208946b5ca6f30800000000000000
+      internalID: 4569682158628644962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_139.png
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 536
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edf2bf51570681970800000000000000
+      internalID: 8725830334026559454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_17.png
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 537
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e3f0be3a356435e0800000000000000
+      internalID: -1930807039400807447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_105.png
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 503
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf811d81e4d1a3550800000000000000
+      internalID: 6141253263134103803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_240.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 584
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf3f1bd333c7d6900800000000000000
+      internalID: 679335678323061756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_242.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 553
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0865d657595ab0cb0800000000000000
+      internalID: -4896638108496472448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_254.png
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 584
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff702659d75dcfec0800000000000000
+      internalID: -3531713272411453441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_256.png
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 584
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 214a29fb547cfbe00800000000000000
+      internalID: 1062787139463455762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_16.png
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 554
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbc0d6837211d1490800000000000000
+      internalID: -7774038521623540548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_48.png
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 520
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bda8d9a32f82f060800000000000000
+      internalID: 6985803355341237687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_138.png
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 536
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cadfc3330470470f0800000000000000
+      internalID: -1120262434989474388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_136.png
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 533
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 771f5bde25c1d3040800000000000000
+      internalID: 4628887134507757943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_191.png
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 502
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f08daa6247562300800000000000000
+      internalID: 226964773998002425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_193.png
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 521
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e8daea872bb272c0800000000000000
+      internalID: -4435276904497751833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_217.png
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 499
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16c8a4849b02ba3e0800000000000000
+      internalID: -2041502025928504223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_219.png
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 502
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21dc97ad53cf734c0800000000000000
+      internalID: -4307697210327708398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_47.png
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 487
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a8c6f1831aeae9e0800000000000000
+      internalID: -1591202148816336727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_168.png
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 469
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1af04854107dc0ab0800000000000000
+      internalID: -5040417482473205855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_169.png
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 484
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc5995009555fa520800000000000000
+      internalID: 2715482941074019789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_171.png
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 466
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da63ad13d5cfbd880800000000000000
+      internalID: -8584990787453176147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_196.png
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 432
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ada6de2c837414550800000000000000
+      internalID: 6143269675824147162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_197.png
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 469
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb32a811be4745210800000000000000
+      internalID: 1320809143686800315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_199.png
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 438
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 823aa90a2e6a14890800000000000000
+      internalID: -7475510414171004120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_223.png
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 436
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfdffabb0b7518a60800000000000000
+      internalID: 7674511656590769660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_225.png
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 436
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36d0b23d8dfe5c060800000000000000
+      internalID: 6973243312587869539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_220.png
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 452
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27238a150dc1fdf10800000000000000
+      internalID: 2296586016030995058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_222.png
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 435
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4238c9ee5d229bdd0800000000000000
+      internalID: -2469904618409393372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_195.png
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 991
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 994ecfb914a510810800000000000000
+      internalID: 1729762969723397273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_33.png
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 991
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55c8e2b7899a14660800000000000000
+      internalID: 7368356937721613397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_72.png
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 991
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b75b02d6809f70c0800000000000000
+      internalID: -4575779787661158472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_111.png
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 458
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f8dc34e499073760800000000000000
+      internalID: 7437423844714666231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_122.png
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 458
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65c9cd8b7aa4313b0800000000000000
+      internalID: -5543004632141489066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CremeBrulee_49.png
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 564
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b46b3ee014e1aa480800000000000000
+      internalID: -8887257649890740661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
