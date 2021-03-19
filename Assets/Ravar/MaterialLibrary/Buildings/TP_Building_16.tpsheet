@@ -1,0 +1,64 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://assetstore.unity.com/packages/tools/sprite-management/texturepacker-importer-16641
+#
+# created with Free texture packer v0.6.6
+# http://free-tex-packer.com
+#
+:format=40300
+:texture=SS_Building_16.png
+:size=256x256
+:pivotpoints=enabled
+:borders=disabled
+
+Building_16_1.png;0;224;32;32; 0.5;0.5; 0;0;0;0
+Building_16_10.png;0;192;32;32; 0.5;0.5; 0;0;0;0
+Building_16_11.png;0;160;32;32; 0.5;0.5; 0;0;0;0
+Building_16_12.png;0;128;32;32; 0.5;0.5; 0;0;0;0
+Building_16_13.png;0;96;32;32; 0.5;0.5; 0;0;0;0
+Building_16_14.png;0;64;32;32; 0.5;0.5; 0;0;0;0
+Building_16_16.png;0;32;32;32; 0.5;0.5; 0;0;0;0
+Building_16_17.png;0;0;32;32; 0.5;0.5; 0;0;0;0
+Building_16_18.png;32;224;32;32; 0.5;0.5; 0;0;0;0
+Building_16_19.png;64;224;32;32; 0.5;0.5; 0;0;0;0
+Building_16_2.png;96;224;32;32; 0.5;0.5; 0;0;0;0
+Building_16_21.png;128;224;32;32; 0.5;0.5; 0;0;0;0
+Building_16_23.png;160;224;32;32; 0.5;0.5; 0;0;0;0
+Building_16_26.png;192;224;32;32; 0.5;0.5; 0;0;0;0
+Building_16_27.png;224;224;32;32; 0.5;0.5; 0;0;0;0
+Building_16_28.png;32;192;32;32; 0.5;0.5; 0;0;0;0
+Building_16_29.png;32;160;32;32; 0.5;0.5; 0;0;0;0
+Building_16_3.png;32;128;32;32; 0.5;0.5; 0;0;0;0
+Building_16_32.png;32;96;32;32; 0.5;0.5; 0;0;0;0
+Building_16_33.png;32;64;32;32; 0.5;0.5; 0;0;0;0
+Building_16_35.png;32;32;32;32; 0.5;0.5; 0;0;0;0
+Building_16_36.png;32;0;32;32; 0.5;0.5; 0;0;0;0
+Building_16_37.png;64;192;32;32; 0.5;0.5; 0;0;0;0
+Building_16_38.png;96;192;32;32; 0.5;0.5; 0;0;0;0
+Building_16_39.png;128;192;32;32; 0.5;0.5; 0;0;0;0
+Building_16_4.png;160;192;32;32; 0.5;0.5; 0;0;0;0
+Building_16_40.png;192;192;32;32; 0.5;0.5; 0;0;0;0
+Building_16_41.png;224;192;32;32; 0.5;0.5; 0;0;0;0
+Building_16_42.png;64;160;32;32; 0.5;0.5; 0;0;0;0
+Building_16_43.png;64;128;32;32; 0.5;0.5; 0;0;0;0
+Building_16_44.png;64;96;32;32; 0.5;0.5; 0;0;0;0
+Building_16_45.png;64;64;32;32; 0.5;0.5; 0;0;0;0
+Building_16_47.png;64;32;32;32; 0.5;0.5; 0;0;0;0
+Building_16_48.png;64;0;32;32; 0.5;0.5; 0;0;0;0
+Building_16_49.png;96;160;32;32; 0.5;0.5; 0;0;0;0
+Building_16_5.png;128;160;32;32; 0.5;0.5; 0;0;0;0
+Building_16_6.png;160;160;32;32; 0.5;0.5; 0;0;0;0
+Building_16_7.png;192;160;32;32; 0.5;0.5; 0;0;0;0
+Building_16_8.png;224;160;32;32; 0.5;0.5; 0;0;0;0
+Building_16_9.png;96;128;32;32; 0.5;0.5; 0;0;0;0
+Building_16_15.png;96;96;30;32; 0.5;0.5; 0;0;0;0
+Building_16_20.png;96;64;30;32; 0.5;0.5; 0;0;0;0
+Building_16_22.png;96;32;30;32; 0.5;0.5; 0;0;0;0
+Building_16_24.png;96;0;30;32; 0.5;0.5; 0;0;0;0
+Building_16_25.png;126;96;30;32; 0.5;0.5; 0;0;0;0
+Building_16_30.png;128;128;30;32; 0.5;0.5; 0;0;0;0
+Building_16_31.png;158;128;30;32; 0.5;0.5; 0;0;0;0
+Building_16_46.png;188;130;32;30; 0.5;0.5; 0;0;0;0
+Building_16_34.png;220;128;30;32; 0.5;0.5; 0;0;0;0

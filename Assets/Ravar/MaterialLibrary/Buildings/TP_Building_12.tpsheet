@@ -1,0 +1,52 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://assetstore.unity.com/packages/tools/sprite-management/texturepacker-importer-16641
+#
+# created with Free texture packer v0.6.6
+# http://free-tex-packer.com
+#
+:format=40300
+:texture=SS_Building_12.png
+:size=256x256
+:pivotpoints=enabled
+:borders=disabled
+
+Building_12_10.png;0;224;32;32; 0.5;0.5; 0;0;0;0
+Building_12_11.png;0;192;32;32; 0.5;0.5; 0;0;0;0
+Building_12_12.png;0;160;32;32; 0.5;0.5; 0;0;0;0
+Building_12_13.png;0;128;32;32; 0.5;0.5; 0;0;0;0
+Building_12_14.png;0;96;32;32; 0.5;0.5; 0;0;0;0
+Building_12_15.png;0;64;32;32; 0.5;0.5; 0;0;0;0
+Building_12_16.png;0;32;32;32; 0.5;0.5; 0;0;0;0
+Building_12_17.png;0;0;32;32; 0.5;0.5; 0;0;0;0
+Building_12_18.png;32;224;32;32; 0.5;0.5; 0;0;0;0
+Building_12_19.png;64;224;32;32; 0.5;0.5; 0;0;0;0
+Building_12_2.png;96;224;32;32; 0.5;0.5; 0;0;0;0
+Building_12_20.png;128;224;32;32; 0.5;0.5; 0;0;0;0
+Building_12_21.png;160;224;32;32; 0.5;0.5; 0;0;0;0
+Building_12_22.png;192;224;32;32; 0.5;0.5; 0;0;0;0
+Building_12_23.png;224;224;32;32; 0.5;0.5; 0;0;0;0
+Building_12_24.png;32;192;32;32; 0.5;0.5; 0;0;0;0
+Building_12_25.png;32;160;32;32; 0.5;0.5; 0;0;0;0
+Building_12_26.png;32;128;32;32; 0.5;0.5; 0;0;0;0
+Building_12_27.png;32;96;32;32; 0.5;0.5; 0;0;0;0
+Building_12_29.png;32;64;32;32; 0.5;0.5; 0;0;0;0
+Building_12_3.png;32;32;32;32; 0.5;0.5; 0;0;0;0
+Building_12_30.png;32;0;32;32; 0.5;0.5; 0;0;0;0
+Building_12_33.png;64;192;32;32; 0.5;0.5; 0;0;0;0
+Building_12_36.png;96;192;32;32; 0.5;0.5; 0;0;0;0
+Building_12_4.png;128;192;32;32; 0.5;0.5; 0;0;0;0
+Building_12_5.png;160;192;32;32; 0.5;0.5; 0;0;0;0
+Building_12_6.png;192;192;32;32; 0.5;0.5; 0;0;0;0
+Building_12_7.png;224;192;32;32; 0.5;0.5; 0;0;0;0
+Building_12_8.png;64;160;32;32; 0.5;0.5; 0;0;0;0
+Building_12_9.png;64;128;32;32; 0.5;0.5; 0;0;0;0
+Building_12_28.png;64;96;30;32; 0.5;0.5; 0;0;0;0
+Building_12_31.png;64;64;30;32; 0.5;0.5; 0;0;0;0
+Building_12_32.png;64;32;30;32; 0.5;0.5; 0;0;0;0
+Building_12_34.png;64;0;30;32; 0.5;0.5; 0;0;0;0
+Building_12_35.png;94;97;30;31; 0.5;0.5; 0;0;0;0
+Building_12_37.png;96;161;30;31; 0.5;0.5; 0;0;0;0
+Building_12_1.png;96;145;32;16; 0.5;0.5; 0;0;0;0

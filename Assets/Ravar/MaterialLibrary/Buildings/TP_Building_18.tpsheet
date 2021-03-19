@@ -1,0 +1,55 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://assetstore.unity.com/packages/tools/sprite-management/texturepacker-importer-16641
+#
+# created with Free texture packer v0.6.6
+# http://free-tex-packer.com
+#
+:format=40300
+:texture=SS_Building_18.png
+:size=256x256
+:pivotpoints=enabled
+:borders=disabled
+
+Building_18_1.png;0;224;32;32; 0.5;0.5; 0;0;0;0
+Building_18_10.png;0;192;32;32; 0.5;0.5; 0;0;0;0
+Building_18_11.png;0;160;32;32; 0.5;0.5; 0;0;0;0
+Building_18_12.png;0;128;32;32; 0.5;0.5; 0;0;0;0
+Building_18_13.png;0;96;32;32; 0.5;0.5; 0;0;0;0
+Building_18_14.png;0;64;32;32; 0.5;0.5; 0;0;0;0
+Building_18_16.png;0;32;32;32; 0.5;0.5; 0;0;0;0
+Building_18_17.png;0;0;32;32; 0.5;0.5; 0;0;0;0
+Building_18_18.png;32;224;32;32; 0.5;0.5; 0;0;0;0
+Building_18_2.png;64;224;32;32; 0.5;0.5; 0;0;0;0
+Building_18_20.png;96;224;32;32; 0.5;0.5; 0;0;0;0
+Building_18_21.png;128;224;32;32; 0.5;0.5; 0;0;0;0
+Building_18_24.png;160;224;32;32; 0.5;0.5; 0;0;0;0
+Building_18_25.png;192;224;32;32; 0.5;0.5; 0;0;0;0
+Building_18_27.png;224;224;32;32; 0.5;0.5; 0;0;0;0
+Building_18_29.png;32;192;32;32; 0.5;0.5; 0;0;0;0
+Building_18_3.png;32;160;32;32; 0.5;0.5; 0;0;0;0
+Building_18_30.png;32;128;32;32; 0.5;0.5; 0;0;0;0
+Building_18_31.png;32;96;32;32; 0.5;0.5; 0;0;0;0
+Building_18_32.png;32;64;32;32; 0.5;0.5; 0;0;0;0
+Building_18_33.png;32;32;32;32; 0.5;0.5; 0;0;0;0
+Building_18_34.png;32;0;32;32; 0.5;0.5; 0;0;0;0
+Building_18_35.png;64;192;32;32; 0.5;0.5; 0;0;0;0
+Building_18_36.png;96;192;32;32; 0.5;0.5; 0;0;0;0
+Building_18_37.png;128;192;32;32; 0.5;0.5; 0;0;0;0
+Building_18_38.png;160;192;32;32; 0.5;0.5; 0;0;0;0
+Building_18_39.png;192;192;32;32; 0.5;0.5; 0;0;0;0
+Building_18_4.png;224;192;32;32; 0.5;0.5; 0;0;0;0
+Building_18_40.png;64;160;32;32; 0.5;0.5; 0;0;0;0
+Building_18_5.png;64;128;32;32; 0.5;0.5; 0;0;0;0
+Building_18_6.png;64;96;32;32; 0.5;0.5; 0;0;0;0
+Building_18_7.png;64;64;32;32; 0.5;0.5; 0;0;0;0
+Building_18_8.png;64;32;32;32; 0.5;0.5; 0;0;0;0
+Building_18_9.png;64;0;32;32; 0.5;0.5; 0;0;0;0
+Building_18_15.png;96;160;30;32; 0.5;0.5; 0;0;0;0
+Building_18_19.png;126;160;30;32; 0.5;0.5; 0;0;0;0
+Building_18_22.png;156;160;30;32; 0.5;0.5; 0;0;0;0
+Building_18_23.png;186;160;30;32; 0.5;0.5; 0;0;0;0
+Building_18_26.png;216;160;30;32; 0.5;0.5; 0;0;0;0
+Building_18_28.png;96;128;30;32; 0.5;0.5; 0;0;0;0
