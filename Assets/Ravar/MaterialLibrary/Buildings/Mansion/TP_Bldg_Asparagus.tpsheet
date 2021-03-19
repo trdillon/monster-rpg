@@ -1,0 +1,70 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://assetstore.unity.com/packages/tools/sprite-management/texturepacker-importer-16641
+#
+# created with Free texture packer v0.6.6
+# http://free-tex-packer.com
+#
+:format=40300
+:texture=SS_Bldg_Asparagus.png
+:size=256x512
+:pivotpoints=enabled
+:borders=disabled
+
+Asparagus_1.png;1;479;32;32; 0.5;0.5; 0;0;0;0
+Asparagus_10.png;35;479;32;32; 0.5;0.5; 0;0;0;0
+Asparagus_11.png;69;479;32;32; 0.5;0.5; 0;0;0;0
+Asparagus_13.png;103;479;32;32; 0.5;0.5; 0;0;0;0
+Asparagus_15.png;137;479;32;32; 0.5;0.5; 0;0;0;0
+Asparagus_16.png;171;479;32;32; 0.5;0.5; 0;0;0;0
+Asparagus_17.png;205;479;32;32; 0.5;0.5; 0;0;0;0
+Asparagus_19.png;1;445;32;32; 0.5;0.5; 0;0;0;0
+Asparagus_2.png;35;445;32;32; 0.5;0.5; 0;0;0;0
+Asparagus_20.png;69;445;32;32; 0.5;0.5; 0;0;0;0
+Asparagus_22.png;103;445;32;32; 0.5;0.5; 0;0;0;0
+Asparagus_23.png;137;445;32;32; 0.5;0.5; 0;0;0;0
+Asparagus_24.png;171;445;32;32; 0.5;0.5; 0;0;0;0
+Asparagus_26.png;205;445;32;32; 0.5;0.5; 0;0;0;0
+Asparagus_27.png;1;411;32;32; 0.5;0.5; 0;0;0;0
+Asparagus_29.png;35;411;32;32; 0.5;0.5; 0;0;0;0
+Asparagus_3.png;69;411;32;32; 0.5;0.5; 0;0;0;0
+Asparagus_30.png;103;411;32;32; 0.5;0.5; 0;0;0;0
+Asparagus_31.png;137;411;32;32; 0.5;0.5; 0;0;0;0
+Asparagus_33.png;171;411;32;32; 0.5;0.5; 0;0;0;0
+Asparagus_34.png;205;411;32;32; 0.5;0.5; 0;0;0;0
+Asparagus_36.png;1;377;32;32; 0.5;0.5; 0;0;0;0
+Asparagus_37.png;35;377;32;32; 0.5;0.5; 0;0;0;0
+Asparagus_38.png;69;377;32;32; 0.5;0.5; 0;0;0;0
+Asparagus_4.png;103;377;32;32; 0.5;0.5; 0;0;0;0
+Asparagus_40.png;137;377;32;32; 0.5;0.5; 0;0;0;0
+Asparagus_41.png;171;377;32;32; 0.5;0.5; 0;0;0;0
+Asparagus_43.png;205;377;32;32; 0.5;0.5; 0;0;0;0
+Asparagus_44.png;1;343;32;32; 0.5;0.5; 0;0;0;0
+Asparagus_45.png;35;343;32;32; 0.5;0.5; 0;0;0;0
+Asparagus_5.png;69;343;32;32; 0.5;0.5; 0;0;0;0
+Asparagus_50.png;103;343;32;32; 0.5;0.5; 0;0;0;0
+Asparagus_51.png;137;343;32;32; 0.5;0.5; 0;0;0;0
+Asparagus_52.png;171;343;32;32; 0.5;0.5; 0;0;0;0
+Asparagus_53.png;205;343;32;32; 0.5;0.5; 0;0;0;0
+Asparagus_54.png;1;309;32;32; 0.5;0.5; 0;0;0;0
+Asparagus_55.png;35;309;32;32; 0.5;0.5; 0;0;0;0
+Asparagus_6.png;69;309;32;32; 0.5;0.5; 0;0;0;0
+Asparagus_7.png;103;309;32;32; 0.5;0.5; 0;0;0;0
+Asparagus_8.png;137;309;32;32; 0.5;0.5; 0;0;0;0
+Asparagus_9.png;171;309;32;32; 0.5;0.5; 0;0;0;0
+Asparagus_47.png;205;310;31;31; 0.5;0.5; 0;0;0;0
+Asparagus_48.png;205;277;31;31; 0.5;0.5; 0;0;0;0
+Asparagus_25.png;1;275;30;32; 0.5;0.5; 0;0;0;0
+Asparagus_28.png;33;275;30;32; 0.5;0.5; 0;0;0;0
+Asparagus_32.png;65;275;30;32; 0.5;0.5; 0;0;0;0
+Asparagus_35.png;97;275;30;32; 0.5;0.5; 0;0;0;0
+Asparagus_39.png;129;275;30;32; 0.5;0.5; 0;0;0;0
+Asparagus_42.png;161;275;30;32; 0.5;0.5; 0;0;0;0
+Asparagus_46.png;193;244;30;31; 0.5;0.5; 0;0;0;0
+Asparagus_49.png;225;244;30;31; 0.5;0.5; 0;0;0;0
+Asparagus_18.png;225;212;30;30; 0.5;0.5; 0;0;0;0
+Asparagus_21.png;1;243;30;30; 0.5;0.5; 0;0;0;0
+Asparagus_12.png;69;479;32;32; 0.5;0.5; 0;0;0;0
+Asparagus_14.png;103;479;32;32; 0.5;0.5; 0;0;0;0

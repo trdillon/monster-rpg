@@ -1,0 +1,55 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://assetstore.unity.com/packages/tools/sprite-management/texturepacker-importer-16641
+#
+# created with Free texture packer v0.6.6
+# http://free-tex-packer.com
+#
+:format=40300
+:texture=SS_Bldg_Copper.png
+:size=256x256
+:pivotpoints=enabled
+:borders=disabled
+
+Copper_10.png;1;223;32;32; 0.5;0.5; 0;0;0;0
+Copper_11.png;1;189;32;32; 0.5;0.5; 0;0;0;0
+Copper_14.png;1;155;32;32; 0.5;0.5; 0;0;0;0
+Copper_17.png;1;121;32;32; 0.5;0.5; 0;0;0;0
+Copper_18.png;1;87;32;32; 0.5;0.5; 0;0;0;0
+Copper_21.png;1;53;32;32; 0.5;0.5; 0;0;0;0
+Copper_24.png;1;19;32;32; 0.5;0.5; 0;0;0;0
+Copper_1.png;1;1;32;16; 0.5;0.5; 0;0;0;0
+Copper_25.png;35;223;32;32; 0.5;0.5; 0;0;0;0
+Copper_27.png;69;223;32;32; 0.5;0.5; 0;0;0;0
+Copper_29.png;103;223;32;32; 0.5;0.5; 0;0;0;0
+Copper_31.png;137;223;32;32; 0.5;0.5; 0;0;0;0
+Copper_32.png;171;223;32;32; 0.5;0.5; 0;0;0;0
+Copper_34.png;205;223;32;32; 0.5;0.5; 0;0;0;0
+Copper_35.png;35;189;32;32; 0.5;0.5; 0;0;0;0
+Copper_36.png;35;155;32;32; 0.5;0.5; 0;0;0;0
+Copper_6.png;35;121;32;32; 0.5;0.5; 0;0;0;0
+Copper_7.png;35;87;32;32; 0.5;0.5; 0;0;0;0
+Copper_8.png;35;53;32;32; 0.5;0.5; 0;0;0;0
+Copper_13.png;35;19;31;32; 0.5;0.5; 0;0;0;0
+Copper_2.png;35;1;32;16; 0.5;0.5; 0;0;0;0
+Copper_15.png;68;19;31;32; 0.5;0.5; 0;0;0;0
+Copper_28.png;69;1;32;16; 0.5;0.5; 0;0;0;0
+Copper_12.png;103;190;32;31; 0.5;0.5; 0;0;0;0
+Copper_9.png;69;190;32;31; 0.5;0.5; 0;0;0;0
+Copper_16.png;137;189;31;32; 0.5;0.5; 0;0;0;0
+Copper_19.png;103;156;31;32; 0.5;0.5; 0;0;0;0
+Copper_20.png;69;156;31;32; 0.5;0.5; 0;0;0;0
+Copper_22.png;101;122;31;32; 0.5;0.5; 0;0;0;0
+Copper_37.png;69;139;30;15; 0.5;0.5; 0;0;0;0
+Copper_39.png;69;122;30;15; 0.5;0.5; 0;0;0;0
+Copper_23.png;69;88;31;32; 0.5;0.5; 0;0;0;0
+Copper_26.png;69;54;31;32; 0.5;0.5; 0;0;0;0
+Copper_3.png;101;20;31;32; 0.5;0.5; 0;0;0;0
+Copper_40.png;103;3;30;15; 0.5;0.5; 0;0;0;0
+Copper_30.png;102;88;31;32; 0.5;0.5; 0;0;0;0
+Copper_33.png;134;122;31;32; 0.5;0.5; 0;0;0;0
+Copper_5.png;167;122;31;32; 0.5;0.5; 0;0;0;0
+Copper_4.png;1;155;32;32; 0.5;0.5; 0;0;0;0
+Copper_38.png;69;139;30;15; 0.5;0.5; 0;0;0;0
