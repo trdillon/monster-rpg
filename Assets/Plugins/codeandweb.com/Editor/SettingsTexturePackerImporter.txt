@@ -5,6 +5,7 @@ tpsheetFileNames:
 - Assets/Ravar/Characters/Gus/TP_Gus.tpsheet
 - Assets/Ravar/Characters/Karen/TP_Karen.tpsheet
 - Assets/Ravar/Characters/Thug/TP_Thug.tpsheet
+- Assets/Ravar/MaterialLibrary/Buildings/Doors/SS_Doors.tpsheet
 - Assets/Ravar/MaterialLibrary/Buildings/Mansion/TP_Bldg_Asparagus.tpsheet
 - Assets/Ravar/MaterialLibrary/Buildings/Mansion/TP_Bldg_BlueBell.tpsheet
 - Assets/Ravar/MaterialLibrary/Buildings/Mansion/TP_Bldg_Copper.tpsheet
@@ -75,6 +76,7 @@ textureFileNames:
 - Assets/Ravar/Characters/Gus/SS_Gus.png
 - Assets/Ravar/Characters/Karen/SS_Karen.png
 - Assets/Ravar/Characters/Thug/SS_Thug.png
+- Assets/Ravar/MaterialLibrary/Buildings/Doors/SS_Doors.png
 - Assets/Ravar/MaterialLibrary/Buildings/Mansion/SS_Bldg_Asparagus.png
 - Assets/Ravar/MaterialLibrary/Buildings/Mansion/SS_Bldg_BlueBell.png
 - Assets/Ravar/MaterialLibrary/Buildings/Mansion/SS_Bldg_Copper.png
@@ -141,6 +143,7 @@ textureFileNames:
 - Assets/Ravar/MaterialLibrary/Terrain/TS_Sand_Tan.png
 - Assets/Ravar/MaterialLibrary/Terrain/TS_Sand_Yellow.png
 normalmapFileNames:
+- 
 - 
 - 
 - 
