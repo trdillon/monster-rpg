@@ -3,8 +3,31 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
-## [1.0.6] - 2021-03-12
+## [1.0.7] - 2021-03-21
+### Added
+- Logo and splash screen
 
+### Changed
+
+### Fixed
+
+
+## [1.0.6] - 2021-03-12
+### Added
+- NPC and Battler prefabs
+- New Input System
+- Materials for map creation
+- Moveable class
+
+### Changed
+- Refactor UI
+- In game references to monster replaced with Battokuri
+- Battokuri art folders now ordered by index number
+- Refactor Player/NPC/Battlers
+- Remove Character class
+
+### Fixed
+- Status effect damage during monster switch
 
 ## [1.0.5] - 2021-03-09
 ### Added
