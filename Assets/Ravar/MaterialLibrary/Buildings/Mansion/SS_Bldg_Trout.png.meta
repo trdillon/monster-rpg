@@ -24,6 +24,9 @@ TextureImporter:
       213: 2666942186784780480
     second: Trout_17.png
   - first:
+      213: -1134627793099036250
+    second: Trout_18.png
+  - first:
       213: -8624987607532866566
     second: Trout_19.png
   - first:
@@ -32,6 +35,9 @@ TextureImporter:
   - first:
       213: 5414403918823018185
     second: Trout_20.png
+  - first:
+      213: 2074931458052248252
+    second: Trout_21.png
   - first:
       213: -7308472512323428480
     second: Trout_22.png
@@ -42,11 +48,17 @@ TextureImporter:
       213: 3158528202832735083
     second: Trout_24.png
   - first:
+      213: -4900392095909979076
+    second: Trout_25.png
+  - first:
       213: -4496417253476298922
     second: Trout_26.png
   - first:
       213: -1166781213553842177
     second: Trout_27.png
+  - first:
+      213: -779393014249240355
+    second: Trout_28.png
   - first:
       213: -8051609759515447746
     second: Trout_29.png
@@ -60,11 +72,17 @@ TextureImporter:
       213: -8789253841328789322
     second: Trout_31.png
   - first:
+      213: -3239155662186153197
+    second: Trout_32.png
+  - first:
       213: -6822881089329690301
     second: Trout_33.png
   - first:
       213: -3088224045546884781
     second: Trout_34.png
+  - first:
+      213: 4924493792054870016
+    second: Trout_35.png
   - first:
       213: -2308122946578794998
     second: Trout_36.png
@@ -75,6 +93,9 @@ TextureImporter:
       213: 3129090898322377411
     second: Trout_38.png
   - first:
+      213: -9023602585035605626
+    second: Trout_39.png
+  - first:
       213: 8909938798232167113
     second: Trout_4.png
   - first:
@@ -84,6 +105,9 @@ TextureImporter:
       213: 8099395216418677825
     second: Trout_41.png
   - first:
+      213: -7826104317863449469
+    second: Trout_42.png
+  - first:
       213: 3901178224714196755
     second: Trout_43.png
   - first:
@@ -92,6 +116,18 @@ TextureImporter:
   - first:
       213: 714034049289525149
     second: Trout_45.png
+  - first:
+      213: -3427372825609179704
+    second: Trout_46.png
+  - first:
+      213: 5361444994840991229
+    second: Trout_47.png
+  - first:
+      213: 215782157614814454
+    second: Trout_48.png
+  - first:
+      213: -2385172845713554837
+    second: Trout_49.png
   - first:
       213: -1269429902598959931
     second: Trout_5.png
@@ -125,42 +161,6 @@ TextureImporter:
   - first:
       213: -4297348321636403898
     second: Trout_9.png
-  - first:
-      213: 5361444994840991229
-    second: Trout_47.png
-  - first:
-      213: 215782157614814454
-    second: Trout_48.png
-  - first:
-      213: -4900392095909979076
-    second: Trout_25.png
-  - first:
-      213: -779393014249240355
-    second: Trout_28.png
-  - first:
-      213: -3239155662186153197
-    second: Trout_32.png
-  - first:
-      213: 4924493792054870016
-    second: Trout_35.png
-  - first:
-      213: -9023602585035605626
-    second: Trout_39.png
-  - first:
-      213: -7826104317863449469
-    second: Trout_42.png
-  - first:
-      213: -3427372825609179704
-    second: Trout_46.png
-  - first:
-      213: -2385172845713554837
-    second: Trout_49.png
-  - first:
-      213: -1134627793099036250
-    second: Trout_18.png
-  - first:
-      213: 2074931458052248252
-    second: Trout_21.png
   - first:
       213: -5843605460926132087
     second: Trout_12.png
@@ -295,8 +295,8 @@ TextureImporter:
       name: Trout_1.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 479
+        x: 0
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -316,8 +316,8 @@ TextureImporter:
       name: Trout_10.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 479
+        x: 0
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -337,8 +337,8 @@ TextureImporter:
       name: Trout_11.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 479
+        x: 0
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -358,8 +358,8 @@ TextureImporter:
       name: Trout_13.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 479
+        x: 0
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -379,8 +379,8 @@ TextureImporter:
       name: Trout_15.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 479
+        x: 0
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -400,8 +400,8 @@ TextureImporter:
       name: Trout_16.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 479
+        x: 0
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -421,8 +421,8 @@ TextureImporter:
       name: Trout_17.png
       rect:
         serializedVersion: 2
-        x: 205
-        y: 479
+        x: 0
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -439,11 +439,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Trout_18.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a9eb00a80ef040f0800000000000000
+      internalID: -1134627793099036250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Trout_19.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 445
+        x: 32
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -463,8 +484,8 @@ TextureImporter:
       name: Trout_2.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 445
+        x: 64
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -484,8 +505,8 @@ TextureImporter:
       name: Trout_20.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 445
+        x: 96
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -502,11 +523,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Trout_21.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb2dc7aea23abcc10800000000000000
+      internalID: 2074931458052248252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Trout_22.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 445
+        x: 160
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -526,8 +568,8 @@ TextureImporter:
       name: Trout_23.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 445
+        x: 192
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -547,8 +589,8 @@ TextureImporter:
       name: Trout_24.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 445
+        x: 224
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -565,11 +607,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Trout_25.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3c57272a5f4efbb0800000000000000
+      internalID: -4900392095909979076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Trout_26.png
       rect:
         serializedVersion: 2
-        x: 205
-        y: 445
+        x: 32
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -589,8 +652,8 @@ TextureImporter:
       name: Trout_27.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 411
+        x: 32
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -607,11 +670,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Trout_28.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd8c045de2a0f25f0800000000000000
+      internalID: -779393014249240355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Trout_29.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 411
+        x: 32
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -631,8 +715,8 @@ TextureImporter:
       name: Trout_3.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 411
+        x: 32
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -652,8 +736,8 @@ TextureImporter:
       name: Trout_30.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 411
+        x: 32
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -673,8 +757,8 @@ TextureImporter:
       name: Trout_31.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 411
+        x: 64
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -691,11 +775,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Trout_32.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31bf23746153c03d0800000000000000
+      internalID: -3239155662186153197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Trout_33.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 411
+        x: 128
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -715,8 +820,8 @@ TextureImporter:
       name: Trout_34.png
       rect:
         serializedVersion: 2
-        x: 205
-        y: 411
+        x: 160
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -733,11 +838,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Trout_35.png
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0000c064301575440800000000000000
+      internalID: 4924493792054870016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Trout_36.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 377
+        x: 224
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -757,8 +883,8 @@ TextureImporter:
       name: Trout_37.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 377
+        x: 64
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -778,8 +904,8 @@ TextureImporter:
       name: Trout_38.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 377
+        x: 64
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -796,11 +922,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Trout_39.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 689f7ac0249b5c280800000000000000
+      internalID: -9023602585035605626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Trout_4.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 377
+        x: 64
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -820,8 +967,8 @@ TextureImporter:
       name: Trout_40.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 377
+        x: 64
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -841,8 +988,8 @@ TextureImporter:
       name: Trout_41.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 377
+        x: 64
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -859,11 +1006,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Trout_42.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38c299e5697146390800000000000000
+      internalID: -7826104317863449469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Trout_43.png
       rect:
         serializedVersion: 2
-        x: 205
-        y: 377
+        x: 128
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -883,8 +1051,8 @@ TextureImporter:
       name: Trout_44.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 343
+        x: 160
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -904,8 +1072,8 @@ TextureImporter:
       name: Trout_45.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 343
+        x: 192
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -922,11 +1090,95 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Trout_46.png
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cdecb8f2968f60d0800000000000000
+      internalID: -3427372825609179704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trout_47.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df51b4011dda76a40800000000000000
+      internalID: 5361444994840991229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trout_48.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f49f75aabc9ef200800000000000000
+      internalID: 215782157614814454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trout_49.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b62065b1fe926eed0800000000000000
+      internalID: -2385172845713554837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Trout_5.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 343
+        x: 96
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -946,8 +1198,8 @@ TextureImporter:
       name: Trout_50.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 343
+        x: 96
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -967,8 +1219,8 @@ TextureImporter:
       name: Trout_51.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 343
+        x: 128
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -988,8 +1240,8 @@ TextureImporter:
       name: Trout_52.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 343
+        x: 160
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -1009,8 +1261,8 @@ TextureImporter:
       name: Trout_53.png
       rect:
         serializedVersion: 2
-        x: 205
-        y: 343
+        x: 192
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -1030,8 +1282,8 @@ TextureImporter:
       name: Trout_54.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 309
+        x: 224
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -1051,8 +1303,8 @@ TextureImporter:
       name: Trout_55.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 309
+        x: 128
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -1072,8 +1324,8 @@ TextureImporter:
       name: Trout_6.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 309
+        x: 128
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -1093,8 +1345,8 @@ TextureImporter:
       name: Trout_7.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 309
+        x: 128
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -1114,8 +1366,8 @@ TextureImporter:
       name: Trout_8.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 309
+        x: 128
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -1135,8 +1387,8 @@ TextureImporter:
       name: Trout_9.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 309
+        x: 160
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -1153,263 +1405,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Trout_47.png
-      rect:
-        serializedVersion: 2
-        x: 205
-        y: 310
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: df51b4011dda76a40800000000000000
-      internalID: 5361444994840991229
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trout_48.png
-      rect:
-        serializedVersion: 2
-        x: 205
-        y: 277
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6f49f75aabc9ef200800000000000000
-      internalID: 215782157614814454
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trout_25.png
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 275
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c3c57272a5f4efbb0800000000000000
-      internalID: -4900392095909979076
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trout_28.png
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 275
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dd8c045de2a0f25f0800000000000000
-      internalID: -779393014249240355
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trout_32.png
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 275
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 31bf23746153c03d0800000000000000
-      internalID: -3239155662186153197
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trout_35.png
-      rect:
-        serializedVersion: 2
-        x: 97
-        y: 275
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0000c064301575440800000000000000
-      internalID: 4924493792054870016
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trout_39.png
-      rect:
-        serializedVersion: 2
-        x: 129
-        y: 275
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 689f7ac0249b5c280800000000000000
-      internalID: -9023602585035605626
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trout_42.png
-      rect:
-        serializedVersion: 2
-        x: 161
-        y: 275
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 38c299e5697146390800000000000000
-      internalID: -7826104317863449469
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trout_46.png
-      rect:
-        serializedVersion: 2
-        x: 193
-        y: 244
-        width: 30
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8cdecb8f2968f60d0800000000000000
-      internalID: -3427372825609179704
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trout_49.png
-      rect:
-        serializedVersion: 2
-        x: 225
-        y: 244
-        width: 30
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b62065b1fe926eed0800000000000000
-      internalID: -2385172845713554837
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trout_18.png
-      rect:
-        serializedVersion: 2
-        x: 225
-        y: 212
-        width: 30
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6a9eb00a80ef040f0800000000000000
-      internalID: -1134627793099036250
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trout_21.png
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 243
-        width: 30
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cb2dc7aea23abcc10800000000000000
-      internalID: 2074931458052248252
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Trout_12.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 479
+        x: 0
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -1429,8 +1429,8 @@ TextureImporter:
       name: Trout_14.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 479
+        x: 0
+        y: 128
         width: 32
         height: 32
       alignment: 0

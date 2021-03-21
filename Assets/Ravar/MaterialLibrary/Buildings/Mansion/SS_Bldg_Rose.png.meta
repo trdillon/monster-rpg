@@ -3,6 +3,21 @@ guid: 8ec0ca4b44ffbf844aeaf3ea78a054f4
 TextureImporter:
   internalIDToNameTable:
   - first:
+      213: 5103683015606139425
+    second: Rose_1.png
+  - first:
+      213: -1027176373598858127
+    second: Rose_10.png
+  - first:
+      213: -7043764455715070096
+    second: Rose_11.png
+  - first:
+      213: -1311118737036900082
+    second: Rose_12.png
+  - first:
+      213: -5094518830646740834
+    second: Rose_13.png
+  - first:
       213: -4005542971135643819
     second: Rose_14.png
   - first:
@@ -12,35 +27,56 @@ TextureImporter:
       213: 9199507808983958326
     second: Rose_16.png
   - first:
+      213: 999651155308412532
+    second: Rose_17.png
+  - first:
       213: -266726151766116191
     second: Rose_18.png
   - first:
       213: 4367519334003035210
     second: Rose_19.png
   - first:
+      213: -270132005208037690
+    second: Rose_2.png
+  - first:
+      213: 3565788171465524701
+    second: Rose_20.png
+  - first:
+      213: -3927958391482602353
+    second: Rose_21.png
+  - first:
       213: -4759370760629666829
     second: Rose_22.png
+  - first:
+      213: 4665324318900875041
+    second: Rose_23.png
+  - first:
+      213: 6194537861821725013
+    second: Rose_24.png
   - first:
       213: -1804706998784757259
     second: Rose_25.png
   - first:
-      213: -1027176373598858127
-    second: Rose_10.png
-  - first:
-      213: -5094518830646740834
-    second: Rose_13.png
-  - first:
-      213: -8044457136873495542
-    second: Rose_4.png
-  - first:
-      213: 8197034769100865708
-    second: Rose_5.png
-  - first:
       213: 7036180096827305806
     second: Rose_26.png
   - first:
+      213: 8248203075534211989
+    second: Rose_27.png
+  - first:
+      213: -2481111500943735816
+    second: Rose_28.png
+  - first:
       213: 7850866966926426660
     second: Rose_29.png
+  - first:
+      213: 1137494228219144433
+    second: Rose_3.png
+  - first:
+      213: -8162378486965699585
+    second: Rose_30.png
+  - first:
+      213: 4234410806397938637
+    second: Rose_31.png
   - first:
       213: 8970881882720857991
     second: Rose_32.png
@@ -48,17 +84,32 @@ TextureImporter:
       213: -319390027163701548
     second: Rose_33.png
   - first:
+      213: -4448156074326010537
+    second: Rose_34.png
+  - first:
       213: -7327472237110326801
     second: Rose_35.png
+  - first:
+      213: -5296977435009700777
+    second: Rose_36.png
   - first:
       213: -6488936043594403687
     second: Rose_37.png
   - first:
+      213: 8219604910659514376
+    second: Rose_38.png
+  - first:
       213: 3370601282120276359
     second: Rose_39.png
   - first:
+      213: -8044457136873495542
+    second: Rose_4.png
+  - first:
       213: 4463851601787043095
     second: Rose_40.png
+  - first:
+      213: 8294945912942917233
+    second: Rose_41.png
   - first:
       213: -691363515006357122
     second: Rose_42.png
@@ -68,63 +119,6 @@ TextureImporter:
   - first:
       213: -209255074189540293
     second: Rose_44.png
-  - first:
-      213: 999651155308412532
-    second: Rose_17.png
-  - first:
-      213: 3565788171465524701
-    second: Rose_20.png
-  - first:
-      213: -7043764455715070096
-    second: Rose_11.png
-  - first:
-      213: -1311118737036900082
-    second: Rose_12.png
-  - first:
-      213: 1137494228219144433
-    second: Rose_3.png
-  - first:
-      213: -1842804700743111086
-    second: Rose_6.png
-  - first:
-      213: 5103683015606139425
-    second: Rose_1.png
-  - first:
-      213: -270132005208037690
-    second: Rose_2.png
-  - first:
-      213: -5296977435009700777
-    second: Rose_36.png
-  - first:
-      213: -3927958391482602353
-    second: Rose_21.png
-  - first:
-      213: 4665324318900875041
-    second: Rose_23.png
-  - first:
-      213: 6194537861821725013
-    second: Rose_24.png
-  - first:
-      213: 8248203075534211989
-    second: Rose_27.png
-  - first:
-      213: -2481111500943735816
-    second: Rose_28.png
-  - first:
-      213: -8162378486965699585
-    second: Rose_30.png
-  - first:
-      213: 4234410806397938637
-    second: Rose_31.png
-  - first:
-      213: -4448156074326010537
-    second: Rose_34.png
-  - first:
-      213: 8219604910659514376
-    second: Rose_38.png
-  - first:
-      213: 8294945912942917233
-    second: Rose_41.png
   - first:
       213: -8457863112805589056
     second: Rose_45.png
@@ -137,6 +131,12 @@ TextureImporter:
   - first:
       213: 3306522138977338003
     second: Rose_48.png
+  - first:
+      213: 8197034769100865708
+    second: Rose_5.png
+  - first:
+      213: -1842804700743111086
+    second: Rose_6.png
   - first:
       213: -2087144103567496543
     second: Rose_7.png
@@ -271,11 +271,116 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+      name: Rose_1.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12af56789ace3d640800000000000000
+      internalID: 5103683015606139425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rose_10.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17457f9c78cbeb1f0800000000000000
+      internalID: -1027176373598858127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rose_11.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07f94970c858f3e90800000000000000
+      internalID: -7043764455715070096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rose_12.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e098e8c8478fdcde0800000000000000
+      internalID: -1311118737036900082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rose_13.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9833cd8d12ac49b0800000000000000
+      internalID: -5094518830646740834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Rose_14.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 223
+        x: 0
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -295,8 +400,8 @@ TextureImporter:
       name: Rose_15.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 223
+        x: 0
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -316,8 +421,8 @@ TextureImporter:
       name: Rose_16.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 223
+        x: 0
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -334,11 +439,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Rose_17.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47e777bed697fdd00800000000000000
+      internalID: 999651155308412532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Rose_18.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 223
+        x: 64
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -358,8 +484,8 @@ TextureImporter:
       name: Rose_19.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 223
+        x: 96
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -376,11 +502,74 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Rose_2.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c66c1b5f5c404cf0800000000000000
+      internalID: -270132005208037690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rose_20.png
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd50e7813793c7130800000000000000
+      internalID: 3565788171465524701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rose_21.png
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8c2a2777a61d79c0800000000000000
+      internalID: -3927958391482602353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Rose_22.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 223
+        x: 224
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -397,11 +586,53 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Rose_23.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12fe31600cf8eb040800000000000000
+      internalID: 4665324318900875041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rose_24.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55977918d5b67f550800000000000000
+      internalID: 6194537861821725013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Rose_25.png
       rect:
         serializedVersion: 2
-        x: 205
-        y: 223
+        x: 32
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -418,95 +649,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rose_10.png
-      rect:
-        serializedVersion: 2
-        x: 239
-        y: 250
-        width: 10
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 17457f9c78cbeb1f0800000000000000
-      internalID: -1027176373598858127
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rose_13.png
-      rect:
-        serializedVersion: 2
-        x: 239
-        y: 243
-        width: 10
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e9833cd8d12ac49b0800000000000000
-      internalID: -5094518830646740834
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rose_4.png
-      rect:
-        serializedVersion: 2
-        x: 239
-        y: 237
-        width: 8
-        height: 4
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a04acc9fad85c5090800000000000000
-      internalID: -8044457136873495542
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rose_5.png
-      rect:
-        serializedVersion: 2
-        x: 239
-        y: 231
-        width: 8
-        height: 4
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ca088c751b7b1c170800000000000000
-      internalID: 8197034769100865708
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Rose_26.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 189
+        x: 32
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -523,11 +670,53 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Rose_27.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59b40801ff0877270800000000000000
+      internalID: 8248203075534211989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rose_28.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f3cc124c32519dd0800000000000000
+      internalID: -2481111500943735816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Rose_29.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 189
+        x: 32
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -544,11 +733,74 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Rose_3.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f82f0f49f039cf00800000000000000
+      internalID: 1137494228219144433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rose_30.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffb7e12230869be80800000000000000
+      internalID: -8162378486965699585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rose_31.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcbac6c8136a3ca30800000000000000
+      internalID: 4234410806397938637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Rose_32.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 189
+        x: 160
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -568,8 +820,8 @@ TextureImporter:
       name: Rose_33.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 189
+        x: 192
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -586,11 +838,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Rose_34.png
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7555d442e99f442c0800000000000000
+      internalID: -4448156074326010537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Rose_35.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 189
+        x: 64
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -607,11 +880,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Rose_36.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75cacf2661b5d76b0800000000000000
+      internalID: -5296977435009700777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Rose_37.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 189
+        x: 64
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -628,11 +922,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Rose_38.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 800baeded17e11270800000000000000
+      internalID: 8219604910659514376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Rose_39.png
       rect:
         serializedVersion: 2
-        x: 205
-        y: 189
+        x: 64
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -649,11 +964,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Rose_4.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a04acc9fad85c5090800000000000000
+      internalID: -8044457136873495542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Rose_40.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 155
+        x: 96
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -670,11 +1006,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Rose_41.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1767a0cfb519d1370800000000000000
+      internalID: 8294945912942917233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Rose_42.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 155
+        x: 160
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -694,8 +1051,8 @@ TextureImporter:
       name: Rose_43.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 155
+        x: 192
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -715,8 +1072,8 @@ TextureImporter:
       name: Rose_44.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 155
+        x: 224
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -733,412 +1090,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rose_17.png
-      rect:
-        serializedVersion: 2
-        x: 137
-        y: 156
-        width: 32
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 47e777bed697fdd00800000000000000
-      internalID: 999651155308412532
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rose_20.png
-      rect:
-        serializedVersion: 2
-        x: 171
-        y: 156
-        width: 32
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dd50e7813793c7130800000000000000
-      internalID: 3565788171465524701
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rose_11.png
-      rect:
-        serializedVersion: 2
-        x: 205
-        y: 166
-        width: 32
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 07f94970c858f3e90800000000000000
-      internalID: -7043764455715070096
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rose_12.png
-      rect:
-        serializedVersion: 2
-        x: 205
-        y: 143
-        width: 32
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e098e8c8478fdcde0800000000000000
-      internalID: -1311118737036900082
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rose_3.png
-      rect:
-        serializedVersion: 2
-        x: 137
-        y: 134
-        width: 32
-        height: 20
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1f82f0f49f039cf00800000000000000
-      internalID: 1137494228219144433
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rose_6.png
-      rect:
-        serializedVersion: 2
-        x: 171
-        y: 134
-        width: 32
-        height: 20
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 25e69c563ea0d66e0800000000000000
-      internalID: -1842804700743111086
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rose_1.png
-      rect:
-        serializedVersion: 2
-        x: 205
-        y: 125
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 12af56789ace3d640800000000000000
-      internalID: 5103683015606139425
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rose_2.png
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 137
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6c66c1b5f5c404cf0800000000000000
-      internalID: -270132005208037690
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rose_36.png
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 137
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 75cacf2661b5d76b0800000000000000
-      internalID: -5296977435009700777
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rose_21.png
-      rect:
-        serializedVersion: 2
-        x: 69
-        y: 121
-        width: 31
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f8c2a2777a61d79c0800000000000000
-      internalID: -3927958391482602353
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rose_23.png
-      rect:
-        serializedVersion: 2
-        x: 102
-        y: 121
-        width: 31
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 12fe31600cf8eb040800000000000000
-      internalID: 4665324318900875041
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rose_24.png
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 103
-        width: 31
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 55977918d5b67f550800000000000000
-      internalID: 6194537861821725013
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rose_27.png
-      rect:
-        serializedVersion: 2
-        x: 34
-        y: 103
-        width: 31
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 59b40801ff0877270800000000000000
-      internalID: 8248203075534211989
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rose_28.png
-      rect:
-        serializedVersion: 2
-        x: 135
-        y: 100
-        width: 31
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8f3cc124c32519dd0800000000000000
-      internalID: -2481111500943735816
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rose_30.png
-      rect:
-        serializedVersion: 2
-        x: 168
-        y: 100
-        width: 31
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ffb7e12230869be80800000000000000
-      internalID: -8162378486965699585
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rose_31.png
-      rect:
-        serializedVersion: 2
-        x: 201
-        y: 91
-        width: 31
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dcbac6c8136a3ca30800000000000000
-      internalID: 4234410806397938637
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rose_34.png
-      rect:
-        serializedVersion: 2
-        x: 67
-        y: 87
-        width: 31
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7555d442e99f442c0800000000000000
-      internalID: -4448156074326010537
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rose_38.png
-      rect:
-        serializedVersion: 2
-        x: 100
-        y: 87
-        width: 31
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 800baeded17e11270800000000000000
-      internalID: 8219604910659514376
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rose_41.png
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 69
-        width: 31
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1767a0cfb519d1370800000000000000
-      internalID: 8294945912942917233
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Rose_45.png
       rect:
         serializedVersion: 2
-        x: 34
-        y: 86
-        width: 30
-        height: 15
+        x: 96
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1156,10 +1114,10 @@ TextureImporter:
       name: Rose_46.png
       rect:
         serializedVersion: 2
-        x: 133
-        y: 83
-        width: 30
-        height: 15
+        x: 96
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1177,10 +1135,10 @@ TextureImporter:
       name: Rose_47.png
       rect:
         serializedVersion: 2
-        x: 165
-        y: 83
-        width: 30
-        height: 15
+        x: 96
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1198,10 +1156,10 @@ TextureImporter:
       name: Rose_48.png
       rect:
         serializedVersion: 2
-        x: 197
-        y: 74
-        width: 30
-        height: 15
+        x: 96
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1216,12 +1174,54 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Rose_5.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca088c751b7b1c170800000000000000
+      internalID: 8197034769100865708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rose_6.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25e69c563ea0d66e0800000000000000
+      internalID: -1842804700743111086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Rose_7.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 121
-        width: 31
+        x: 192
+        y: 224
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1240,8 +1240,8 @@ TextureImporter:
       name: Rose_8.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 223
+        x: 224
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -1261,9 +1261,9 @@ TextureImporter:
       name: Rose_9.png
       rect:
         serializedVersion: 2
-        x: 102
-        y: 121
-        width: 31
+        x: 32
+        y: 192
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}

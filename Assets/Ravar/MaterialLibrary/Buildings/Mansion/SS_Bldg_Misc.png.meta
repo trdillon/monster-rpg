@@ -1,127 +1,94 @@
 fileFormatVersion: 2
-guid: 3660493a50fc3714c83c877920480886
+guid: de3aa0e39913cd84b940b77e9f361d9f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3333686372656319034
-    second: Copper_1.png
+      213: -479629473286017990
+    second: Misc_1.png
   - first:
-      213: -2405723098559623863
-    second: Copper_10.png
+      213: 84532566064370103
+    second: Misc_10.png
   - first:
-      213: -2869652558229012926
-    second: Copper_11.png
+      213: -4351791458640334481
+    second: Misc_11.png
   - first:
-      213: 6485301475738761648
-    second: Copper_12.png
+      213: -6165899794648374734
+    second: Misc_12.png
   - first:
-      213: 8434852858662228137
-    second: Copper_13.png
+      213: 6003035884800459298
+    second: Misc_13.png
   - first:
-      213: 8041387837098043630
-    second: Copper_14.png
+      213: 1643833921907052301
+    second: Misc_14.png
   - first:
-      213: 7095337603357266612
-    second: Copper_15.png
+      213: -8856207295049729533
+    second: Misc_15.png
   - first:
-      213: -7673411926267050857
-    second: Copper_16.png
+      213: -5767799477802516310
+    second: Misc_16.png
   - first:
-      213: -1866277903630852409
-    second: Copper_17.png
+      213: 8269821407219301253
+    second: Misc_17.png
   - first:
-      213: -1259138730095979013
-    second: Copper_18.png
+      213: -8428134239946694675
+    second: Misc_18.png
   - first:
-      213: -3287936597220631156
-    second: Copper_19.png
+      213: -8958384222100593999
+    second: Misc_19.png
   - first:
-      213: -7718985815407033245
-    second: Copper_2.png
+      213: 1942115728512804432
+    second: Misc_2.png
   - first:
-      213: -2905832232985526889
-    second: Copper_20.png
+      213: 1485645865252111494
+    second: Misc_20.png
   - first:
-      213: 2565749379327708421
-    second: Copper_21.png
+      213: -8412219297119960498
+    second: Misc_21.png
   - first:
-      213: 6858530279379581726
-    second: Copper_22.png
+      213: 974630816750225513
+    second: Misc_22.png
   - first:
-      213: -8307617211876608374
-    second: Copper_23.png
+      213: -8802707280465631309
+    second: Misc_23.png
   - first:
-      213: -1964347555987133901
-    second: Copper_24.png
+      213: 4295009284741734299
+    second: Misc_24.png
   - first:
-      213: -2185058161253973804
-    second: Copper_25.png
+      213: -8850196721420208585
+    second: Misc_25.png
   - first:
-      213: 7908321817037876111
-    second: Copper_26.png
+      213: 1189081523546061967
+    second: Misc_27.png
   - first:
-      213: -4866074977193660195
-    second: Copper_27.png
+      213: -3691079491579416743
+    second: Misc_28.png
   - first:
-      213: -3607874732716474837
-    second: Copper_28.png
+      213: 6453639424298821815
+    second: Misc_5.png
   - first:
-      213: 2363714970642968694
-    second: Copper_29.png
+      213: 4130515899012378959
+    second: Misc_6.png
   - first:
-      213: -5061205311649693555
-    second: Copper_3.png
+      213: 8341387169933574465
+    second: Misc_7.png
   - first:
-      213: 6475186311861050723
-    second: Copper_30.png
+      213: 9118892982504024637
+    second: Misc_8.png
   - first:
-      213: -1879109624717321235
-    second: Copper_31.png
+      213: 8203903318899153374
+    second: Misc_9.png
   - first:
-      213: 4622356681044705671
-    second: Copper_32.png
+      213: 5131580612610053674
+    second: Misc_3.png
   - first:
-      213: 701862869703537329
-    second: Copper_33.png
+      213: 4961481648873422787
+    second: Misc_4.png
   - first:
-      213: -4630839289474566585
-    second: Copper_34.png
+      213: 3332670069005712871
+    second: Misc_29.png
   - first:
-      213: 7326424429101366284
-    second: Copper_35.png
-  - first:
-      213: -5298297215964994406
-    second: Copper_36.png
-  - first:
-      213: -4366202306412236766
-    second: Copper_37.png
-  - first:
-      213: 4035204402028733679
-    second: Copper_39.png
-  - first:
-      213: 2747174205763367427
-    second: Copper_40.png
-  - first:
-      213: 3429463576860492952
-    second: Copper_5.png
-  - first:
-      213: -9093811119320300943
-    second: Copper_6.png
-  - first:
-      213: -6680443282495138968
-    second: Copper_7.png
-  - first:
-      213: -807485279152348340
-    second: Copper_8.png
-  - first:
-      213: 5191882473173528965
-    second: Copper_9.png
-  - first:
-      213: -3304129853381295215
-    second: Copper_4.png
-  - first:
-      213: 135293569331328634
-    second: Copper_38.png
+      213: -4080801744476929645
+    second: Misc_26.png
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -247,7 +214,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Copper_1.png
+      name: Misc_1.png
       rect:
         serializedVersion: 2
         x: 0
@@ -261,14 +228,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a3a8db2e712a34e20800000000000000
-      internalID: 3333686372656319034
+      spriteID: a3caaf409830859f0800000000000000
+      internalID: -479629473286017990
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Copper_10.png
+      name: Misc_10.png
       rect:
         serializedVersion: 2
         x: 0
@@ -282,14 +249,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 94dc66286972d9ed0800000000000000
-      internalID: -2405723098559623863
+      spriteID: 7b11834cbe15c2100800000000000000
+      internalID: 84532566064370103
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Copper_11.png
+      name: Misc_11.png
       rect:
         serializedVersion: 2
         x: 0
@@ -303,14 +270,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 24ef7fdc332fc28d0800000000000000
-      internalID: -2869652558229012926
+      spriteID: f61f923a9b45b93c0800000000000000
+      internalID: -4351791458640334481
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Copper_12.png
+      name: Misc_12.png
       rect:
         serializedVersion: 2
         x: 0
@@ -324,14 +291,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0b9b9b2e45b600a50800000000000000
-      internalID: 6485301475738761648
+      spriteID: 232645b1ec25e6aa0800000000000000
+      internalID: -6165899794648374734
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Copper_13.png
+      name: Misc_13.png
       rect:
         serializedVersion: 2
         x: 0
@@ -345,14 +312,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9a010453cfd9e0570800000000000000
-      internalID: 8434852858662228137
+      spriteID: 222447fe4511f4350800000000000000
+      internalID: 6003035884800459298
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Copper_14.png
+      name: Misc_14.png
       rect:
         serializedVersion: 2
         x: 0
@@ -366,14 +333,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ee8206bf1afb89f60800000000000000
-      internalID: 8041387837098043630
+      spriteID: d0fc1091e3210d610800000000000000
+      internalID: 1643833921907052301
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Copper_15.png
+      name: Misc_15.png
       rect:
         serializedVersion: 2
         x: 0
@@ -387,14 +354,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4b2d49125f3b77260800000000000000
-      internalID: 7095337603357266612
+      spriteID: 30a7659236e681580800000000000000
+      internalID: -8856207295049729533
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Copper_16.png
+      name: Misc_16.png
       rect:
         serializedVersion: 2
         x: 0
@@ -408,14 +375,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7944b9f2280928590800000000000000
-      internalID: -7673411926267050857
+      spriteID: aa0c5ed1fe8a4ffa0800000000000000
+      internalID: -5767799477802516310
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Copper_17.png
+      name: Misc_17.png
       rect:
         serializedVersion: 2
         x: 32
@@ -429,140 +396,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7ce1ce57226a916e0800000000000000
-      internalID: -1866277903630852409
+      spriteID: 58b3a3521ce44c270800000000000000
+      internalID: 8269821407219301253
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Copper_18.png
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bf551b50ff3a68ee0800000000000000
-      internalID: -1259138730095979013
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Copper_19.png
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c8d58a6c517ee52d0800000000000000
-      internalID: -3287936597220631156
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Copper_2.png
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 364826e3c47a0e490800000000000000
-      internalID: -7718985815407033245
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Copper_20.png
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 79d7408daf86ca7d0800000000000000
-      internalID: -2905832232985526889
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Copper_21.png
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 50dc181777f5b9320800000000000000
-      internalID: 2565749379327708421
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Copper_22.png
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e1b3ea773f46e2f50800000000000000
-      internalID: 6858530279379581726
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Copper_23.png
+      name: Misc_18.png
       rect:
         serializedVersion: 2
         x: 32
@@ -576,14 +417,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a867c24592a65bc80800000000000000
-      internalID: -8307617211876608374
+      spriteID: def9bac1090490b80800000000000000
+      internalID: -8428134239946694675
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Copper_24.png
+      name: Misc_19.png
       rect:
         serializedVersion: 2
         x: 32
@@ -597,14 +438,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 33aeafd2e4c3db4e0800000000000000
-      internalID: -1964347555987133901
+      spriteID: 1b2ea38730d6da380800000000000000
+      internalID: -8958384222100593999
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Copper_25.png
+      name: Misc_2.png
       rect:
         serializedVersion: 2
         x: 32
@@ -618,14 +459,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4d083e4ed2d1da1e0800000000000000
-      internalID: -2185058161253973804
+      spriteID: 05664be17f7c3fa10800000000000000
+      internalID: 1942115728512804432
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Copper_26.png
+      name: Misc_20.png
       rect:
         serializedVersion: 2
         x: 32
@@ -639,14 +480,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f8ba302eac000cd60800000000000000
-      internalID: 7908321817037876111
+      spriteID: 684416c0b031e9410800000000000000
+      internalID: 1485645865252111494
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Copper_27.png
+      name: Misc_21.png
       rect:
         serializedVersion: 2
         x: 32
@@ -660,14 +501,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dd074fdf69a387cb0800000000000000
-      internalID: -4866074977193660195
+      spriteID: e428a7e7e1bc14b80800000000000000
+      internalID: -8412219297119960498
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Copper_28.png
+      name: Misc_22.png
       rect:
         serializedVersion: 2
         x: 32
@@ -681,14 +522,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b2eb352cb014eedc0800000000000000
-      internalID: -3607874732716474837
+      spriteID: 968cb836095968d00800000000000000
+      internalID: 974630816750225513
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Copper_29.png
+      name: Misc_23.png
       rect:
         serializedVersion: 2
         x: 32
@@ -702,14 +543,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 67072770e3a9dc020800000000000000
-      internalID: 2363714970642968694
+      spriteID: 3b7e91efd5086d580800000000000000
+      internalID: -8802707280465631309
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Copper_3.png
+      name: Misc_24.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9f19044030fa9b30800000000000000
+      internalID: 4295009284741734299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Misc_25.png
       rect:
         serializedVersion: 2
         x: 64
@@ -723,119 +585,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d80cccf959cf2c9b0800000000000000
-      internalID: -5061205311649693555
+      spriteID: 736fb63e8f8cd2580800000000000000
+      internalID: -8850196721420208585
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Copper_30.png
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 192
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 36d13f4c4ab7cd950800000000000000
-      internalID: 6475186311861050723
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Copper_31.png
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 192
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: debd4b490cf0ce5e0800000000000000
-      internalID: -1879109624717321235
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Copper_32.png
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 192
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 781c2de39e8e52040800000000000000
-      internalID: 4622356681044705671
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Copper_33.png
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 192
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1b237b5bf848db900800000000000000
-      internalID: 701862869703537329
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Copper_34.png
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 192
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 74632f29334fbbfb0800000000000000
-      internalID: -4630839289474566585
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Copper_35.png
+      name: Misc_27.png
       rect:
         serializedVersion: 2
         x: 64
@@ -849,14 +606,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c0cb4528330bca560800000000000000
-      internalID: 7326424429101366284
+      spriteID: f8c71fb7857708010800000000000000
+      internalID: 1189081523546061967
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Copper_36.png
+      name: Misc_28.png
       rect:
         serializedVersion: 2
         x: 64
@@ -870,14 +627,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a9427ffe0caa876b0800000000000000
-      internalID: -5298297215964994406
+      spriteID: 95feda232c6a6ccc0800000000000000
+      internalID: -3691079491579416743
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Copper_37.png
+      name: Misc_5.png
       rect:
         serializedVersion: 2
         x: 64
@@ -891,14 +648,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 220becca2222863c0800000000000000
-      internalID: -4366202306412236766
+      spriteID: 7b8a9c11ddeef8950800000000000000
+      internalID: 6453639424298821815
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Copper_39.png
+      name: Misc_6.png
       rect:
         serializedVersion: 2
         x: 64
@@ -912,14 +669,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fe4e303360deff730800000000000000
-      internalID: 4035204402028733679
+      spriteID: f417cb3635a825930800000000000000
+      internalID: 4130515899012378959
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Copper_40.png
+      name: Misc_7.png
       rect:
         serializedVersion: 2
         x: 64
@@ -933,14 +690,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 30234ae826cef1620800000000000000
-      internalID: 2747174205763367427
+      spriteID: 14144edbf6f82c370800000000000000
+      internalID: 8341387169933574465
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Copper_5.png
+      name: Misc_8.png
       rect:
         serializedVersion: 2
         x: 64
@@ -954,18 +711,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 89409ecf3f6e79f20800000000000000
-      internalID: 3429463576860492952
+      spriteID: d3a64f68ad0dc8e70800000000000000
+      internalID: 9118892982504024637
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Copper_6.png
+      name: Misc_9.png
       rect:
         serializedVersion: 2
         x: 96
-        y: 160
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -975,81 +732,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1728a62d7fa4cc180800000000000000
-      internalID: -9093811119320300943
+      spriteID: ed9d1a63a9e1ad170800000000000000
+      internalID: 8203903318899153374
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Copper_7.png
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 160
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8639bb4aa3c4a43a0800000000000000
-      internalID: -6680443282495138968
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Copper_8.png
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 160
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c4364c6ba6c3bc4f0800000000000000
-      internalID: -807485279152348340
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Copper_9.png
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 160
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 581b5110a954d0840800000000000000
-      internalID: 5191882473173528965
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Copper_4.png
+      name: Misc_3.png
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -1059,18 +753,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 193c175876f5522d0800000000000000
-      internalID: -3304129853381295215
+      spriteID: a2657eef069073740800000000000000
+      internalID: 5131580612610053674
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Copper_38.png
+      name: Misc_4.png
       rect:
         serializedVersion: 2
-        x: 64
-        y: 96
+        x: 0
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -1080,8 +774,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a767364d8c8a0e100800000000000000
-      internalID: 135293569331328634
+      spriteID: 3cf38b8c549bad440800000000000000
+      internalID: 4961481648873422787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Misc_29.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ed79a045c5004e20800000000000000
+      internalID: 3332670069005712871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Misc_26.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39188a53f641e57c0800000000000000
+      internalID: -4080801744476929645
       vertices: []
       indices: 
       edges: []
