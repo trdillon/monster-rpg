@@ -9,6 +9,9 @@ TextureImporter:
       213: -2203173218457769881
     second: Mojo_10.png
   - first:
+      213: 3166978695167175407
+    second: Mojo_11.png
+  - first:
       213: -5482643739297449594
     second: Mojo_12.png
   - first:
@@ -20,6 +23,18 @@ TextureImporter:
   - first:
       213: -4713860627221172048
     second: Mojo_15.png
+  - first:
+      213: 1454142262661326789
+    second: Mojo_16.png
+  - first:
+      213: 3129870878868420233
+    second: Mojo_17.png
+  - first:
+      213: -2739989707042769966
+    second: Mojo_18.png
+  - first:
+      213: -794024867661819144
+    second: Mojo_19.png
   - first:
       213: -8599833823340924433
     second: Mojo_2.png
@@ -54,6 +69,9 @@ TextureImporter:
       213: -2661170104624106553
     second: Mojo_29.png
   - first:
+      213: -6481756685536899231
+    second: Mojo_3.png
+  - first:
       213: 6217663084055756188
     second: Mojo_30.png
   - first:
@@ -63,14 +81,8 @@ TextureImporter:
       213: 5450407754585621442
     second: Mojo_32.png
   - first:
-      213: 4217167066094330411
-    second: Mojo_6.png
-  - first:
-      213: 5332345380271239902
-    second: Mojo_7.png
-  - first:
-      213: 2594312951032560319
-    second: Mojo_9.png
+      213: 9109819056948326084
+    second: Mojo_33.png
   - first:
       213: -3501377482915370148
     second: Mojo_34.png
@@ -84,38 +96,26 @@ TextureImporter:
       213: -6455488630478557236
     second: Mojo_37.png
   - first:
-      213: 1454142262661326789
-    second: Mojo_16.png
-  - first:
-      213: 3129870878868420233
-    second: Mojo_17.png
-  - first:
-      213: -2739989707042769966
-    second: Mojo_18.png
-  - first:
-      213: -794024867661819144
-    second: Mojo_19.png
-  - first:
-      213: 9109819056948326084
-    second: Mojo_33.png
-  - first:
       213: 3582086470570463806
     second: Mojo_38.png
-  - first:
-      213: 3166978695167175407
-    second: Mojo_11.png
-  - first:
-      213: -28865330427317333
-    second: Mojo_5.png
-  - first:
-      213: -7673191031359265254
-    second: Mojo_8.png
   - first:
       213: -2499964635004394313
     second: Mojo_4.png
   - first:
-      213: -6481756685536899231
-    second: Mojo_3.png
+      213: -28865330427317333
+    second: Mojo_5.png
+  - first:
+      213: 4217167066094330411
+    second: Mojo_6.png
+  - first:
+      213: 5332345380271239902
+    second: Mojo_7.png
+  - first:
+      213: -7673191031359265254
+    second: Mojo_8.png
+  - first:
+      213: 2594312951032560319
+    second: Mojo_9.png
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -244,8 +244,8 @@ TextureImporter:
       name: Mojo_1.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 223
+        x: 0
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -265,8 +265,8 @@ TextureImporter:
       name: Mojo_10.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 223
+        x: 0
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -283,11 +283,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Mojo_11.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fea6ba8085e53fb20800000000000000
+      internalID: 3166978695167175407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Mojo_12.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 223
+        x: 0
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -307,8 +328,8 @@ TextureImporter:
       name: Mojo_13.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 223
+        x: 0
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -328,8 +349,8 @@ TextureImporter:
       name: Mojo_14.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 223
+        x: 0
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -349,8 +370,8 @@ TextureImporter:
       name: Mojo_15.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 223
+        x: 0
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -367,11 +388,95 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Mojo_16.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c7afcafea62e2410800000000000000
+      internalID: 1454142262661326789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mojo_17.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 986bac74bf88f6b20800000000000000
+      internalID: 3129870878868420233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mojo_18.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d33d77e0e999f9d0800000000000000
+      internalID: -2739989707042769966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mojo_19.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f2d03cf69e0bf4f0800000000000000
+      internalID: -794024867661819144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Mojo_2.png
       rect:
         serializedVersion: 2
-        x: 205
-        y: 223
+        x: 128
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -391,8 +496,8 @@ TextureImporter:
       name: Mojo_20.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 189
+        x: 160
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -412,8 +517,8 @@ TextureImporter:
       name: Mojo_21.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 189
+        x: 192
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -433,8 +538,8 @@ TextureImporter:
       name: Mojo_22.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 189
+        x: 224
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -454,8 +559,8 @@ TextureImporter:
       name: Mojo_23.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 189
+        x: 32
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -475,8 +580,8 @@ TextureImporter:
       name: Mojo_24.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 189
+        x: 32
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -496,8 +601,8 @@ TextureImporter:
       name: Mojo_25.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 189
+        x: 32
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -517,8 +622,8 @@ TextureImporter:
       name: Mojo_26.png
       rect:
         serializedVersion: 2
-        x: 205
-        y: 189
+        x: 32
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -538,8 +643,8 @@ TextureImporter:
       name: Mojo_27.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 155
+        x: 32
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -559,8 +664,8 @@ TextureImporter:
       name: Mojo_28.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 155
+        x: 32
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -580,8 +685,8 @@ TextureImporter:
       name: Mojo_29.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 155
+        x: 32
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -598,11 +703,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Mojo_3.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16f4f06e2ac2c06a0800000000000000
+      internalID: -6481756685536899231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Mojo_30.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 155
+        x: 96
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -622,8 +748,8 @@ TextureImporter:
       name: Mojo_31.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 155
+        x: 128
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -643,8 +769,8 @@ TextureImporter:
       name: Mojo_32.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 155
+        x: 160
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -661,11 +787,179 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Mojo_33.png
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ce2d799a249c6e70800000000000000
+      internalID: 9109819056948326084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mojo_34.png
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5b274afabb986fc0800000000000000
+      internalID: -3501377482915370148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mojo_35.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d04b659f43ac52900800000000000000
+      internalID: 659155249349964813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mojo_36.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3bf71d7867acc790800000000000000
+      internalID: -7508442411516298434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mojo_37.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccfa0c01b4f7966a0800000000000000
+      internalID: -6455488630478557236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mojo_38.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e32d5119aa026b130800000000000000
+      internalID: 3582086470570463806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mojo_4.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b4268be8675e4dd0800000000000000
+      internalID: -2499964635004394313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mojo_5.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba33e898223799ff0800000000000000
+      internalID: -28865330427317333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Mojo_6.png
       rect:
         serializedVersion: 2
-        x: 205
-        y: 155
+        x: 96
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -685,8 +979,8 @@ TextureImporter:
       name: Mojo_7.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 121
+        x: 128
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -703,285 +997,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mojo_9.png
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 121
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fbabd7a32e9d00420800000000000000
-      internalID: 2594312951032560319
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mojo_34.png
-      rect:
-        serializedVersion: 2
-        x: 69
-        y: 122
-        width: 32
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c5b274afabb986fc0800000000000000
-      internalID: -3501377482915370148
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mojo_35.png
-      rect:
-        serializedVersion: 2
-        x: 103
-        y: 122
-        width: 32
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d04b659f43ac52900800000000000000
-      internalID: 659155249349964813
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mojo_36.png
-      rect:
-        serializedVersion: 2
-        x: 137
-        y: 122
-        width: 32
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e3bf71d7867acc790800000000000000
-      internalID: -7508442411516298434
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mojo_37.png
-      rect:
-        serializedVersion: 2
-        x: 171
-        y: 122
-        width: 32
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ccfa0c01b4f7966a0800000000000000
-      internalID: -6455488630478557236
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mojo_16.png
-      rect:
-        serializedVersion: 2
-        x: 205
-        y: 137
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5c7afcafea62e2410800000000000000
-      internalID: 1454142262661326789
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mojo_17.png
-      rect:
-        serializedVersion: 2
-        x: 205
-        y: 119
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 986bac74bf88f6b20800000000000000
-      internalID: 3129870878868420233
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mojo_18.png
-      rect:
-        serializedVersion: 2
-        x: 69
-        y: 104
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2d33d77e0e999f9d0800000000000000
-      internalID: -2739989707042769966
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mojo_19.png
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 103
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8f2d03cf69e0bf4f0800000000000000
-      internalID: -794024867661819144
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mojo_33.png
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 104
-        width: 31
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4ce2d799a249c6e70800000000000000
-      internalID: 9109819056948326084
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mojo_38.png
-      rect:
-        serializedVersion: 2
-        x: 103
-        y: 105
-        width: 31
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e32d5119aa026b130800000000000000
-      internalID: 3582086470570463806
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mojo_11.png
-      rect:
-        serializedVersion: 2
-        x: 136
-        y: 88
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fea6ba8085e53fb20800000000000000
-      internalID: 3166978695167175407
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mojo_5.png
-      rect:
-        serializedVersion: 2
-        x: 103
-        y: 71
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ba33e898223799ff0800000000000000
-      internalID: -28865330427317333
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Mojo_8.png
       rect:
         serializedVersion: 2
-        x: 168
-        y: 88
-        width: 30
+        x: 160
+        y: 160
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -997,12 +1018,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mojo_4.png
+      name: Mojo_9.png
       rect:
         serializedVersion: 2
-        x: 200
-        y: 85
-        width: 29
+        x: 192
+        y: 160
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1011,29 +1032,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7b4268be8675e4dd0800000000000000
-      internalID: -2499964635004394313
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mojo_3.png
-      rect:
-        serializedVersion: 2
-        x: 135
-        y: 54
-        width: 25
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 16f4f06e2ac2c06a0800000000000000
-      internalID: -6481756685536899231
+      spriteID: fbabd7a32e9d00420800000000000000
+      internalID: 2594312951032560319
       vertices: []
       indices: 
       edges: []

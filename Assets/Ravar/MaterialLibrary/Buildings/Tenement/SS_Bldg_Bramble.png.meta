@@ -3,8 +3,14 @@ guid: 84eafd7ac7efddc46ba1b15f70d3e77d
 TextureImporter:
   internalIDToNameTable:
   - first:
+      213: 4420043449924553757
+    second: Bramble_1.png
+  - first:
       213: 6951522584593115298
     second: Bramble_10.png
+  - first:
+      213: 8775163033030678746
+    second: Bramble_11.png
   - first:
       213: -6797494038562976572
     second: Bramble_12.png
@@ -15,8 +21,23 @@ TextureImporter:
       213: 7161626911901137171
     second: Bramble_14.png
   - first:
+      213: 8937565426803101063
+    second: Bramble_15.png
+  - first:
+      213: 2490143937628910959
+    second: Bramble_16.png
+  - first:
+      213: -5258025515431417560
+    second: Bramble_17.png
+  - first:
+      213: 2982854624060459696
+    second: Bramble_18.png
+  - first:
       213: 8529203235886632572
     second: Bramble_19.png
+  - first:
+      213: 8715461499873596684
+    second: Bramble_2.png
   - first:
       213: -8754639028508296167
     second: Bramble_20.png
@@ -48,20 +69,17 @@ TextureImporter:
       213: -1342411964058748983
     second: Bramble_29.png
   - first:
+      213: 6167112843501684253
+    second: Bramble_3.png
+  - first:
       213: 3610307890267704331
     second: Bramble_30.png
   - first:
       213: -2386757490339644118
     second: Bramble_31.png
   - first:
-      213: 4248874584817923795
-    second: Bramble_6.png
-  - first:
-      213: 2160489637756376134
-    second: Bramble_7.png
-  - first:
-      213: -3205417745451017912
-    second: Bramble_9.png
+      213: 3770803619619773629
+    second: Bramble_32.png
   - first:
       213: 2372583220927993932
     second: Bramble_33.png
@@ -75,44 +93,26 @@ TextureImporter:
       213: 3227944004354349482
     second: Bramble_36.png
   - first:
-      213: 8937565426803101063
-    second: Bramble_15.png
-  - first:
-      213: 2490143937628910959
-    second: Bramble_16.png
-  - first:
-      213: -5258025515431417560
-    second: Bramble_17.png
-  - first:
-      213: 2982854624060459696
-    second: Bramble_18.png
-  - first:
-      213: 3770803619619773629
-    second: Bramble_32.png
-  - first:
       213: -3474002933920961039
     second: Bramble_37.png
   - first:
-      213: 8775163033030678746
-    second: Bramble_11.png
+      213: 6322189067435732367
+    second: Bramble_4.png
   - first:
       213: -4143980023877401893
     second: Bramble_5.png
   - first:
+      213: 4248874584817923795
+    second: Bramble_6.png
+  - first:
+      213: 2160489637756376134
+    second: Bramble_7.png
+  - first:
       213: -668877080359616821
     second: Bramble_8.png
   - first:
-      213: 4420043449924553757
-    second: Bramble_1.png
-  - first:
-      213: 8715461499873596684
-    second: Bramble_2.png
-  - first:
-      213: 6167112843501684253
-    second: Bramble_3.png
-  - first:
-      213: 6322189067435732367
-    second: Bramble_4.png
+      213: -3205417745451017912
+    second: Bramble_9.png
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -238,11 +238,32 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+      name: Bramble_1.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1c8b8c6916275d30800000000000000
+      internalID: 4420043449924553757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Bramble_10.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 223
+        x: 0
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -259,11 +280,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Bramble_11.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad8dee52944a7c970800000000000000
+      internalID: 8775163033030678746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Bramble_12.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 223
+        x: 0
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -283,8 +325,8 @@ TextureImporter:
       name: Bramble_13.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 223
+        x: 0
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -304,8 +346,8 @@ TextureImporter:
       name: Bramble_14.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 223
+        x: 0
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -322,11 +364,95 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Bramble_15.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78d4965076c980c70800000000000000
+      internalID: 8937565426803101063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bramble_16.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f65b6f9c7b4ce8220800000000000000
+      internalID: 2490143937628910959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bramble_17.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82925c4e6adb707b0800000000000000
+      internalID: -5258025515431417560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bramble_18.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ba41cb0a7a356920800000000000000
+      internalID: 2982854624060459696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Bramble_19.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 223
+        x: 96
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -343,11 +469,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Bramble_2.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c051f81ce0a83f870800000000000000
+      internalID: 8715461499873596684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Bramble_20.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 223
+        x: 160
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -367,8 +514,8 @@ TextureImporter:
       name: Bramble_21.png
       rect:
         serializedVersion: 2
-        x: 205
-        y: 223
+        x: 192
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -388,8 +535,8 @@ TextureImporter:
       name: Bramble_22.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 189
+        x: 224
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -409,8 +556,8 @@ TextureImporter:
       name: Bramble_23.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 189
+        x: 32
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -430,8 +577,8 @@ TextureImporter:
       name: Bramble_24.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 189
+        x: 32
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -451,8 +598,8 @@ TextureImporter:
       name: Bramble_25.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 189
+        x: 32
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -472,8 +619,8 @@ TextureImporter:
       name: Bramble_26.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 189
+        x: 32
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -493,8 +640,8 @@ TextureImporter:
       name: Bramble_27.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 189
+        x: 32
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -514,8 +661,8 @@ TextureImporter:
       name: Bramble_28.png
       rect:
         serializedVersion: 2
-        x: 205
-        y: 189
+        x: 32
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -535,8 +682,8 @@ TextureImporter:
       name: Bramble_29.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 155
+        x: 32
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -553,11 +700,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Bramble_3.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d16caa6d47cf59550800000000000000
+      internalID: 6167112843501684253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Bramble_30.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 155
+        x: 96
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -577,8 +745,8 @@ TextureImporter:
       name: Bramble_31.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 155
+        x: 128
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -595,11 +763,179 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Bramble_32.png
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbc9139d9e5945430800000000000000
+      internalID: 3770803619619773629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bramble_33.png
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4817737edb1de020800000000000000
+      internalID: 2372583220927993932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bramble_34.png
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3fb9cd46c3eecbc0800000000000000
+      internalID: -3760818197959688388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bramble_35.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1c757b80dcf83ac0800000000000000
+      internalID: -3875069506729182182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bramble_36.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa9946638f5fbcc20800000000000000
+      internalID: 3227944004354349482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bramble_37.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fde9f6dcbcd9cfc0800000000000000
+      internalID: -3474002933920961039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bramble_4.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8d6d5fd57decb750800000000000000
+      internalID: 6322189067435732367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bramble_5.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd20970cf10ad76c0800000000000000
+      internalID: -4143980023877401893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Bramble_6.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 155
+        x: 64
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -619,8 +955,8 @@ TextureImporter:
       name: Bramble_7.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 155
+        x: 96
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -637,285 +973,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bramble_9.png
-      rect:
-        serializedVersion: 2
-        x: 171
-        y: 155
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 84998a52b811483d0800000000000000
-      internalID: -3205417745451017912
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bramble_33.png
-      rect:
-        serializedVersion: 2
-        x: 205
-        y: 156
-        width: 32
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c4817737edb1de020800000000000000
-      internalID: 2372583220927993932
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bramble_34.png
-      rect:
-        serializedVersion: 2
-        x: 205
-        y: 123
-        width: 32
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c3fb9cd46c3eecbc0800000000000000
-      internalID: -3760818197959688388
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bramble_35.png
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 122
-        width: 32
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a1c757b80dcf83ac0800000000000000
-      internalID: -3875069506729182182
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bramble_36.png
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 122
-        width: 32
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: aa9946638f5fbcc20800000000000000
-      internalID: 3227944004354349482
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bramble_15.png
-      rect:
-        serializedVersion: 2
-        x: 69
-        y: 137
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 78d4965076c980c70800000000000000
-      internalID: 8937565426803101063
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bramble_16.png
-      rect:
-        serializedVersion: 2
-        x: 103
-        y: 137
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f65b6f9c7b4ce8220800000000000000
-      internalID: 2490143937628910959
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bramble_17.png
-      rect:
-        serializedVersion: 2
-        x: 137
-        y: 137
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 82925c4e6adb707b0800000000000000
-      internalID: -5258025515431417560
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bramble_18.png
-      rect:
-        serializedVersion: 2
-        x: 171
-        y: 137
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0ba41cb0a7a356920800000000000000
-      internalID: 2982854624060459696
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bramble_32.png
-      rect:
-        serializedVersion: 2
-        x: 69
-        y: 120
-        width: 31
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dbc9139d9e5945430800000000000000
-      internalID: 3770803619619773629
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bramble_37.png
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 105
-        width: 31
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1fde9f6dcbcd9cfc0800000000000000
-      internalID: -3474002933920961039
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bramble_11.png
-      rect:
-        serializedVersion: 2
-        x: 34
-        y: 88
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ad8dee52944a7c970800000000000000
-      internalID: 8775163033030678746
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bramble_5.png
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 71
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bd20970cf10ad76c0800000000000000
-      internalID: -4143980023877401893
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Bramble_8.png
       rect:
         serializedVersion: 2
-        x: 102
-        y: 103
-        width: 30
+        x: 128
+        y: 160
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -931,12 +994,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bramble_1.png
+      name: Bramble_9.png
       rect:
         serializedVersion: 2
-        x: 66
-        y: 86
-        width: 24
+        x: 160
+        y: 160
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -945,71 +1008,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d1c8b8c6916275d30800000000000000
-      internalID: 4420043449924553757
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bramble_2.png
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 54
-        width: 24
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c051f81ce0a83f870800000000000000
-      internalID: 8715461499873596684
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bramble_3.png
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 37
-        width: 24
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d16caa6d47cf59550800000000000000
-      internalID: 6167112843501684253
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bramble_4.png
-      rect:
-        serializedVersion: 2
-        x: 134
-        y: 103
-        width: 24
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f8d6d5fd57decb750800000000000000
-      internalID: 6322189067435732367
+      spriteID: 84998a52b811483d0800000000000000
+      internalID: -3205417745451017912
       vertices: []
       indices: 
       edges: []

@@ -3,11 +3,26 @@ guid: d3580d7bdca2b234fa052e0e112b2e28
 TextureImporter:
   internalIDToNameTable:
   - first:
+      213: 981752482799248727
+    second: RockBlack_1.png
+  - first:
       213: -1325803154552908361
     second: RockBlack_10.png
   - first:
       213: -58611220863473000
     second: RockBlack_11.png
+  - first:
+      213: -6267354231999363649
+    second: RockBlack_12.png
+  - first:
+      213: 2898883393926794987
+    second: RockBlack_13.png
+  - first:
+      213: 1540987783813411945
+    second: RockBlack_14.png
+  - first:
+      213: -5630901230354814444
+    second: RockBlack_15.png
   - first:
       213: 1141461505099102521
     second: RockBlack_16.png
@@ -51,20 +66,11 @@ TextureImporter:
       213: -8488781578413862678
     second: RockBlack_28.png
   - first:
+      213: -3290256257882642255
+    second: RockBlack_29.png
+  - first:
       213: 2435084091165659800
     second: RockBlack_3.png
-  - first:
-      213: 3549394442475558831
-    second: RockBlack_5.png
-  - first:
-      213: -3966404242414448957
-    second: RockBlack_6.png
-  - first:
-      213: -5719447118552760459
-    second: RockBlack_8.png
-  - first:
-      213: 5487485381383901731
-    second: RockBlack_9.png
   - first:
       213: -6409668143274366718
     second: RockBlack_30.png
@@ -78,32 +84,26 @@ TextureImporter:
       213: -6148721170679506270
     second: RockBlack_33.png
   - first:
-      213: -6267354231999363649
-    second: RockBlack_12.png
-  - first:
-      213: 2898883393926794987
-    second: RockBlack_13.png
-  - first:
-      213: 1540987783813411945
-    second: RockBlack_14.png
-  - first:
-      213: -5630901230354814444
-    second: RockBlack_15.png
-  - first:
-      213: -3290256257882642255
-    second: RockBlack_29.png
-  - first:
       213: 9099877886182728889
     second: RockBlack_34.png
-  - first:
-      213: 981752482799248727
-    second: RockBlack_1.png
   - first:
       213: 8616673316997032460
     second: RockBlack_4.png
   - first:
+      213: 3549394442475558831
+    second: RockBlack_5.png
+  - first:
+      213: -3966404242414448957
+    second: RockBlack_6.png
+  - first:
       213: -1681096716546513885
     second: RockBlack_7.png
+  - first:
+      213: -5719447118552760459
+    second: RockBlack_8.png
+  - first:
+      213: 5487485381383901731
+    second: RockBlack_9.png
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -229,11 +229,32 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+      name: RockBlack_1.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7556b9a7ea2ef9d00800000000000000
+      internalID: 981752482799248727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: RockBlack_10.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 223
+        x: 0
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -253,8 +274,8 @@ TextureImporter:
       name: RockBlack_11.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 223
+        x: 0
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -271,11 +292,95 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: RockBlack_12.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb503282882e509a0800000000000000
+      internalID: -6267354231999363649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockBlack_13.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bee094c7617ea3820800000000000000
+      internalID: 2898883393926794987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockBlack_14.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9643a619930b26510800000000000000
+      internalID: 1540987783813411945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockBlack_15.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41a246f2a250bd1b0800000000000000
+      internalID: -5630901230354814444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: RockBlack_16.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 223
+        x: 0
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -295,8 +400,8 @@ TextureImporter:
       name: RockBlack_17.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 223
+        x: 32
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -316,8 +421,8 @@ TextureImporter:
       name: RockBlack_18.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 223
+        x: 64
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -337,8 +442,8 @@ TextureImporter:
       name: RockBlack_19.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 223
+        x: 96
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -358,8 +463,8 @@ TextureImporter:
       name: RockBlack_2.png
       rect:
         serializedVersion: 2
-        x: 205
-        y: 223
+        x: 128
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -379,8 +484,8 @@ TextureImporter:
       name: RockBlack_20.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 189
+        x: 160
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -400,8 +505,8 @@ TextureImporter:
       name: RockBlack_21.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 189
+        x: 192
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -421,8 +526,8 @@ TextureImporter:
       name: RockBlack_22.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 189
+        x: 224
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -442,8 +547,8 @@ TextureImporter:
       name: RockBlack_23.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 189
+        x: 32
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -463,8 +568,8 @@ TextureImporter:
       name: RockBlack_24.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 189
+        x: 32
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -484,8 +589,8 @@ TextureImporter:
       name: RockBlack_25.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 189
+        x: 32
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -505,8 +610,8 @@ TextureImporter:
       name: RockBlack_26.png
       rect:
         serializedVersion: 2
-        x: 205
-        y: 189
+        x: 32
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -526,8 +631,8 @@ TextureImporter:
       name: RockBlack_27.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 155
+        x: 32
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -547,8 +652,8 @@ TextureImporter:
       name: RockBlack_28.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 155
+        x: 32
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -565,11 +670,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: RockBlack_29.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b826e0bd59a652d0800000000000000
+      internalID: -3290256257882642255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: RockBlack_3.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 155
+        x: 64
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -586,11 +712,137 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: RockBlack_30.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2096ef798c84c07a0800000000000000
+      internalID: -6409668143274366718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockBlack_31.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fc31aac9d9c69e50800000000000000
+      internalID: 6815857023316475126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockBlack_32.png
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a181aa7427eb06410800000000000000
+      internalID: 1468382876560660506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockBlack_33.png
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2aa59be2caa5baaa0800000000000000
+      internalID: -6148721170679506270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockBlack_34.png
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b4aa5969b2494e70800000000000000
+      internalID: 9099877886182728889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockBlack_4.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0ae13d8ab2949770800000000000000
+      internalID: 8616673316997032460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: RockBlack_5.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 155
+        x: 64
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -610,8 +862,8 @@ TextureImporter:
       name: RockBlack_6.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 155
+        x: 64
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -628,11 +880,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: RockBlack_7.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3246b21717b8ba8e0800000000000000
+      internalID: -1681096716546513885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: RockBlack_8.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 155
+        x: 64
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -652,8 +925,8 @@ TextureImporter:
       name: RockBlack_9.png
       rect:
         serializedVersion: 2
-        x: 205
-        y: 155
+        x: 64
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -665,279 +938,6 @@ TextureImporter:
       bones: []
       spriteID: 322598361e6772c40800000000000000
       internalID: 5487485381383901731
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RockBlack_30.png
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 122
-        width: 32
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2096ef798c84c07a0800000000000000
-      internalID: -6409668143274366718
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RockBlack_31.png
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 122
-        width: 32
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6fc31aac9d9c69e50800000000000000
-      internalID: 6815857023316475126
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RockBlack_32.png
-      rect:
-        serializedVersion: 2
-        x: 69
-        y: 122
-        width: 32
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a181aa7427eb06410800000000000000
-      internalID: 1468382876560660506
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RockBlack_33.png
-      rect:
-        serializedVersion: 2
-        x: 103
-        y: 122
-        width: 32
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2aa59be2caa5baaa0800000000000000
-      internalID: -6148721170679506270
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RockBlack_12.png
-      rect:
-        serializedVersion: 2
-        x: 137
-        y: 137
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fb503282882e509a0800000000000000
-      internalID: -6267354231999363649
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RockBlack_13.png
-      rect:
-        serializedVersion: 2
-        x: 171
-        y: 137
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bee094c7617ea3820800000000000000
-      internalID: 2898883393926794987
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RockBlack_14.png
-      rect:
-        serializedVersion: 2
-        x: 205
-        y: 137
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9643a619930b26510800000000000000
-      internalID: 1540987783813411945
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RockBlack_15.png
-      rect:
-        serializedVersion: 2
-        x: 137
-        y: 119
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 41a246f2a250bd1b0800000000000000
-      internalID: -5630901230354814444
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RockBlack_29.png
-      rect:
-        serializedVersion: 2
-        x: 171
-        y: 120
-        width: 31
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1b826e0bd59a652d0800000000000000
-      internalID: -3290256257882642255
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RockBlack_34.png
-      rect:
-        serializedVersion: 2
-        x: 204
-        y: 120
-        width: 31
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9b4aa5969b2494e70800000000000000
-      internalID: 9099877886182728889
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RockBlack_1.png
-      rect:
-        serializedVersion: 2
-        x: 171
-        y: 86
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7556b9a7ea2ef9d00800000000000000
-      internalID: 981752482799248727
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RockBlack_4.png
-      rect:
-        serializedVersion: 2
-        x: 203
-        y: 86
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c0ae13d8ab2949770800000000000000
-      internalID: 8616673316997032460
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RockBlack_7.png
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 88
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3246b21717b8ba8e0800000000000000
-      internalID: -1681096716546513885
       vertices: []
       indices: 
       edges: []
