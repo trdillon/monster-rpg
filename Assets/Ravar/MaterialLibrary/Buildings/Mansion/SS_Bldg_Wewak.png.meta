@@ -3,6 +3,21 @@ guid: 60e7a31a810bc9848bb86b392e7d73d6
 TextureImporter:
   internalIDToNameTable:
   - first:
+      213: -5119568637601972012
+    second: Wewak_1.png
+  - first:
+      213: -4361568651230589706
+    second: Wewak_10.png
+  - first:
+      213: -5447918747952413702
+    second: Wewak_11.png
+  - first:
+      213: 6580716463425076984
+    second: Wewak_12.png
+  - first:
+      213: 7021649342987494543
+    second: Wewak_13.png
+  - first:
       213: -6109813831103842304
     second: Wewak_14.png
   - first:
@@ -21,23 +36,23 @@ TextureImporter:
       213: -8254531888298994367
     second: Wewak_19.png
   - first:
+      213: 5790049324184020627
+    second: Wewak_2.png
+  - first:
       213: -7428275948288033414
     second: Wewak_20.png
   - first:
-      213: -4361568651230589706
-    second: Wewak_10.png
-  - first:
-      213: 7021649342987494543
-    second: Wewak_13.png
-  - first:
-      213: -2367961605022572041
-    second: Wewak_4.png
-  - first:
-      213: 3258377119754559371
-    second: Wewak_5.png
+      213: -2975209856359409657
+    second: Wewak_21.png
   - first:
       213: -718519002801228654
     second: Wewak_22.png
+  - first:
+      213: -4451936404168711672
+    second: Wewak_23.png
+  - first:
+      213: -7650963888390529621
+    second: Wewak_24.png
   - first:
       213: 1445211633303128935
     second: Wewak_25.png
@@ -45,17 +60,32 @@ TextureImporter:
       213: 6399812233793057787
     second: Wewak_26.png
   - first:
+      213: 3595254486165817956
+    second: Wewak_27.png
+  - first:
+      213: 1850847414459894479
+    second: Wewak_28.png
+  - first:
       213: -7729982597800097554
     second: Wewak_29.png
   - first:
       213: -6923790964545566883
     second: Wewak_3.png
   - first:
+      213: 6588847878575924652
+    second: Wewak_30.png
+  - first:
+      213: -9020722877129143339
+    second: Wewak_31.png
+  - first:
       213: 268333766019741154
     second: Wewak_32.png
   - first:
       213: -7473611231061647297
     second: Wewak_33.png
+  - first:
+      213: -5477625322918317173
+    second: Wewak_34.png
   - first:
       213: 7278974887051640101
     second: Wewak_36.png
@@ -69,53 +99,11 @@ TextureImporter:
       213: -6557279647093336595
     second: Wewak_39.png
   - first:
-      213: -3370722327356190761
-    second: Wewak_6.png
-  - first:
-      213: 5584360937093043393
-    second: Wewak_8.png
-  - first:
-      213: -5447918747952413702
-    second: Wewak_11.png
-  - first:
-      213: 6580716463425076984
-    second: Wewak_12.png
-  - first:
-      213: -5119568637601972012
-    second: Wewak_1.png
-  - first:
-      213: 5790049324184020627
-    second: Wewak_2.png
+      213: -2367961605022572041
+    second: Wewak_4.png
   - first:
       213: -6891561226552276946
     second: Wewak_41.png
-  - first:
-      213: 1925361923615949578
-    second: Wewak_44.png
-  - first:
-      213: 1850847414459894479
-    second: Wewak_28.png
-  - first:
-      213: 6588847878575924652
-    second: Wewak_30.png
-  - first:
-      213: -2975209856359409657
-    second: Wewak_21.png
-  - first:
-      213: -4451936404168711672
-    second: Wewak_23.png
-  - first:
-      213: -7650963888390529621
-    second: Wewak_24.png
-  - first:
-      213: 3595254486165817956
-    second: Wewak_27.png
-  - first:
-      213: -9020722877129143339
-    second: Wewak_31.png
-  - first:
-      213: -5477625322918317173
-    second: Wewak_34.png
   - first:
       213: -5771258399784559972
     second: Wewak_42.png
@@ -123,11 +111,23 @@ TextureImporter:
       213: -4757242829150193559
     second: Wewak_43.png
   - first:
-      213: 8111521779708110538
-    second: Wewak_9.png
+      213: 1925361923615949578
+    second: Wewak_44.png
+  - first:
+      213: 3258377119754559371
+    second: Wewak_5.png
+  - first:
+      213: -3370722327356190761
+    second: Wewak_6.png
   - first:
       213: 8049183748229511453
     second: Wewak_7.png
+  - first:
+      213: 5584360937093043393
+    second: Wewak_8.png
+  - first:
+      213: 8111521779708110538
+    second: Wewak_9.png
   - first:
       213: -8805559637316113417
     second: Wewak_35.png
@@ -259,11 +259,116 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+      name: Wewak_1.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d00180e273a3f8b0800000000000000
+      internalID: -5119568637601972012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wewak_10.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fccbe79b689873c0800000000000000
+      internalID: -4361568651230589706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wewak_11.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af30b1753ca1564b0800000000000000
+      internalID: -5447918747952413702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wewak_12.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fe3402e1c6635b50800000000000000
+      internalID: 6580716463425076984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wewak_13.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f84ef1a00e8e17160800000000000000
+      internalID: 7021649342987494543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Wewak_14.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 223
+        x: 0
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -283,8 +388,8 @@ TextureImporter:
       name: Wewak_15.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 223
+        x: 0
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -304,8 +409,8 @@ TextureImporter:
       name: Wewak_16.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 223
+        x: 0
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -325,8 +430,8 @@ TextureImporter:
       name: Wewak_17.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 223
+        x: 32
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -346,8 +451,8 @@ TextureImporter:
       name: Wewak_18.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 223
+        x: 64
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -367,8 +472,8 @@ TextureImporter:
       name: Wewak_19.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 223
+        x: 96
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -385,11 +490,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Wewak_2.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 396aaffee236a5050800000000000000
+      internalID: 5790049324184020627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Wewak_20.png
       rect:
         serializedVersion: 2
-        x: 205
-        y: 223
+        x: 160
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -406,13 +532,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wewak_10.png
+      name: Wewak_21.png
       rect:
         serializedVersion: 2
-        x: 239
-        y: 250
-        width: 10
-        height: 5
+        x: 192
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -420,71 +546,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6fccbe79b689873c0800000000000000
-      internalID: -4361568651230589706
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Wewak_13.png
-      rect:
-        serializedVersion: 2
-        x: 239
-        y: 243
-        width: 10
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f84ef1a00e8e17160800000000000000
-      internalID: 7021649342987494543
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Wewak_4.png
-      rect:
-        serializedVersion: 2
-        x: 239
-        y: 237
-        width: 8
-        height: 4
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7f1adda577f432fd0800000000000000
-      internalID: -2367961605022572041
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Wewak_5.png
-      rect:
-        serializedVersion: 2
-        x: 239
-        y: 231
-        width: 8
-        height: 4
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b8f1b3f0ab4183d20800000000000000
-      internalID: 3258377119754559371
+      spriteID: 708d473266ee5b6d0800000000000000
+      internalID: -2975209856359409657
       vertices: []
       indices: 
       edges: []
@@ -493,8 +556,8 @@ TextureImporter:
       name: Wewak_22.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 189
+        x: 224
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -511,11 +574,53 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Wewak_23.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 802e4e28d6b8732c0800000000000000
+      internalID: -4451936404168711672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wewak_24.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bad142b41e052d590800000000000000
+      internalID: -7650963888390529621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Wewak_25.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 189
+        x: 32
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -535,8 +640,8 @@ TextureImporter:
       name: Wewak_26.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 189
+        x: 32
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -553,11 +658,53 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Wewak_27.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46a0b0d18e8e4e130800000000000000
+      internalID: 3595254486165817956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wewak_28.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fca0550dae78fa910800000000000000
+      internalID: 1850847414459894479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Wewak_29.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 189
+        x: 32
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -577,8 +724,8 @@ TextureImporter:
       name: Wewak_3.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 189
+        x: 64
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -595,11 +742,53 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Wewak_30.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca5aa918c3a407b50800000000000000
+      internalID: 6588847878575924652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wewak_31.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5db4a7b4654ffc280800000000000000
+      internalID: -9020722877129143339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Wewak_32.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 189
+        x: 160
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -619,8 +808,8 @@ TextureImporter:
       name: Wewak_33.png
       rect:
         serializedVersion: 2
-        x: 205
-        y: 189
+        x: 192
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -637,11 +826,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Wewak_34.png
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b83f4ce5ac09bf3b0800000000000000
+      internalID: -5477625322918317173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Wewak_36.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 155
+        x: 64
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -661,8 +871,8 @@ TextureImporter:
       name: Wewak_37.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 155
+        x: 64
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -682,8 +892,8 @@ TextureImporter:
       name: Wewak_38.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 155
+        x: 64
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -703,8 +913,8 @@ TextureImporter:
       name: Wewak_39.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 155
+        x: 64
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -721,11 +931,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wewak_6.png
+      name: Wewak_4.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 155
+        x: 64
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -735,113 +945,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7dfc471f6e9c831d0800000000000000
-      internalID: -3370722327356190761
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Wewak_8.png
-      rect:
-        serializedVersion: 2
-        x: 171
-        y: 155
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1c49ff06fa2af7d40800000000000000
-      internalID: 5584360937093043393
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Wewak_11.png
-      rect:
-        serializedVersion: 2
-        x: 205
-        y: 166
-        width: 32
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: af30b1753ca1564b0800000000000000
-      internalID: -5447918747952413702
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Wewak_12.png
-      rect:
-        serializedVersion: 2
-        x: 205
-        y: 143
-        width: 32
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8fe3402e1c6635b50800000000000000
-      internalID: 6580716463425076984
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Wewak_1.png
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 137
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4d00180e273a3f8b0800000000000000
-      internalID: -5119568637601972012
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Wewak_2.png
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 137
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 396aaffee236a5050800000000000000
-      internalID: 5790049324184020627
+      spriteID: 7f1adda577f432fd0800000000000000
+      internalID: -2367961605022572041
       vertices: []
       indices: 
       edges: []
@@ -850,10 +955,10 @@ TextureImporter:
       name: Wewak_41.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 138
+        x: 64
+        y: 0
         width: 32
-        height: 15
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -868,202 +973,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wewak_44.png
-      rect:
-        serializedVersion: 2
-        x: 103
-        y: 138
-        width: 32
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a030131f77248ba10800000000000000
-      internalID: 1925361923615949578
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Wewak_28.png
-      rect:
-        serializedVersion: 2
-        x: 137
-        y: 121
-        width: 31
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fca0550dae78fa910800000000000000
-      internalID: 1850847414459894479
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Wewak_30.png
-      rect:
-        serializedVersion: 2
-        x: 170
-        y: 121
-        width: 31
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ca5aa918c3a407b50800000000000000
-      internalID: 6588847878575924652
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Wewak_21.png
-      rect:
-        serializedVersion: 2
-        x: 203
-        y: 109
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 708d473266ee5b6d0800000000000000
-      internalID: -2975209856359409657
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Wewak_23.png
-      rect:
-        serializedVersion: 2
-        x: 69
-        y: 104
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 802e4e28d6b8732c0800000000000000
-      internalID: -4451936404168711672
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Wewak_24.png
-      rect:
-        serializedVersion: 2
-        x: 101
-        y: 104
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bad142b41e052d590800000000000000
-      internalID: -7650963888390529621
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Wewak_27.png
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 103
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 46a0b0d18e8e4e130800000000000000
-      internalID: 3595254486165817956
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Wewak_31.png
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 103
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5db4a7b4654ffc280800000000000000
-      internalID: -9020722877129143339
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Wewak_34.png
-      rect:
-        serializedVersion: 2
-        x: 133
-        y: 87
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b83f4ce5ac09bf3b0800000000000000
-      internalID: -5477625322918317173
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Wewak_42.png
       rect:
         serializedVersion: 2
-        x: 165
-        y: 104
-        width: 30
-        height: 15
+        x: 96
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1081,10 +997,10 @@ TextureImporter:
       name: Wewak_43.png
       rect:
         serializedVersion: 2
-        x: 197
-        y: 92
-        width: 30
-        height: 15
+        x: 128
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1099,12 +1015,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wewak_9.png
+      name: Wewak_44.png
       rect:
         serializedVersion: 2
-        x: 165
-        y: 70
-        width: 29
+        x: 160
+        y: 160
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1113,8 +1029,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ac6a85bf41ae19070800000000000000
-      internalID: 8111521779708110538
+      spriteID: a030131f77248ba10800000000000000
+      internalID: 1925361923615949578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wewak_5.png
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8f1b3f0ab4183d20800000000000000
+      internalID: 3258377119754559371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wewak_6.png
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dfc471f6e9c831d0800000000000000
+      internalID: -3370722327356190761
       vertices: []
       indices: 
       edges: []
@@ -1123,9 +1081,9 @@ TextureImporter:
       name: Wewak_7.png
       rect:
         serializedVersion: 2
-        x: 196
-        y: 58
-        width: 28
+        x: 96
+        y: 128
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1141,13 +1099,55 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Wewak_8.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c49ff06fa2af7d40800000000000000
+      internalID: 5584360937093043393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wewak_9.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac6a85bf41ae19070800000000000000
+      internalID: 8111521779708110538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Wewak_35.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 137
+        x: 0
+        y: 224
         width: 32
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1165,8 +1165,8 @@ TextureImporter:
       name: Wewak_40.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 189
+        x: 224
+        y: 224
         width: 32
         height: 32
       alignment: 0

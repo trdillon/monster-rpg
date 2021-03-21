@@ -9,25 +9,25 @@
 #
 :format=40300
 :texture=SS_Roof_GreyReflect.png
-:size=256x128
+:size=128x256
 :pivotpoints=enabled
 :borders=disabled
 
-Roof_GreyReflect_14.png;2;94;32;32; 0.5;0.5; 0;0;0;0
-Roof_GreyReflect_16.png;38;94;32;32; 0.5;0.5; 0;0;0;0
-Roof_GreyReflect_17.png;74;94;32;32; 0.5;0.5; 0;0;0;0
-Roof_GreyReflect_18.png;110;94;32;32; 0.5;0.5; 0;0;0;0
-Roof_GreyReflect_1.png;146;100;32;26; 0.5;0.5; 0;0;0;0
-Roof_GreyReflect_2.png;182;100;32;26; 0.5;0.5; 0;0;0;0
-Roof_GreyReflect_3.png;218;100;32;26; 0.5;0.5; 0;0;0;0
-Roof_GreyReflect_8.png;146;71;32;25; 0.5;0.5; 0;0;0;0
-Roof_GreyReflect_4.png;182;72;32;24; 0.5;0.5; 0;0;0;0
-Roof_GreyReflect_5.png;218;72;32;24; 0.5;0.5; 0;0;0;0
-Roof_GreyReflect_6.png;182;44;32;24; 0.5;0.5; 0;0;0;0
-Roof_GreyReflect_11.png;218;49;32;19; 0.5;0.5; 0;0;0;0
-Roof_GreyReflect_7.png;218;20;26;25; 0.5;0.5; 0;0;0;0
-Roof_GreyReflect_9.png;2;65;26;25; 0.5;0.5; 0;0;0;0
-Roof_GreyReflect_10.png;32;71;26;19; 0.5;0.5; 0;0;0;0
-Roof_GreyReflect_12.png;62;71;26;19; 0.5;0.5; 0;0;0;0
-Roof_GreyReflect_13.png;92;59;18;31; 0.5;0.5; 0;0;0;0
-Roof_GreyReflect_15.png;114;59;18;31; 0.5;0.5; 0;0;0;0
+Roof_GreyReflect_1.png;0;224;32;32; 0.5;0.5; 0;0;0;0
+Roof_GreyReflect_10.png;0;192;32;32; 0.5;0.5; 0;0;0;0
+Roof_GreyReflect_11.png;0;160;32;32; 0.5;0.5; 0;0;0;0
+Roof_GreyReflect_12.png;0;128;32;32; 0.5;0.5; 0;0;0;0
+Roof_GreyReflect_13.png;0;96;32;32; 0.5;0.5; 0;0;0;0
+Roof_GreyReflect_14.png;0;64;32;32; 0.5;0.5; 0;0;0;0
+Roof_GreyReflect_15.png;0;32;32;32; 0.5;0.5; 0;0;0;0
+Roof_GreyReflect_16.png;0;0;32;32; 0.5;0.5; 0;0;0;0
+Roof_GreyReflect_17.png;32;224;32;32; 0.5;0.5; 0;0;0;0
+Roof_GreyReflect_18.png;32;192;32;32; 0.5;0.5; 0;0;0;0
+Roof_GreyReflect_2.png;32;160;32;32; 0.5;0.5; 0;0;0;0
+Roof_GreyReflect_3.png;32;128;32;32; 0.5;0.5; 0;0;0;0
+Roof_GreyReflect_4.png;32;96;32;32; 0.5;0.5; 0;0;0;0
+Roof_GreyReflect_5.png;32;64;32;32; 0.5;0.5; 0;0;0;0
+Roof_GreyReflect_6.png;32;32;32;32; 0.5;0.5; 0;0;0;0
+Roof_GreyReflect_7.png;32;0;32;32; 0.5;0.5; 0;0;0;0
+Roof_GreyReflect_8.png;64;224;32;32; 0.5;0.5; 0;0;0;0
+Roof_GreyReflect_9.png;64;192;32;32; 0.5;0.5; 0;0;0;0

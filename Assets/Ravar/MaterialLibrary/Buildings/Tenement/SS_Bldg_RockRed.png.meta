@@ -3,14 +3,41 @@ guid: 0f4db4adb5d4d1f4f8efa7e8c112f6e7
 TextureImporter:
   internalIDToNameTable:
   - first:
+      213: -2891057445199729927
+    second: RockRed_1.png
+  - first:
       213: 4353458320909243489
     second: RockRed_10.png
+  - first:
+      213: -5860156822176809691
+    second: RockRed_11.png
   - first:
       213: 7175025408610246476
     second: RockRed_12.png
   - first:
       213: 6792359289555486131
     second: RockRed_13.png
+  - first:
+      213: -6949121186658197831
+    second: RockRed_14.png
+  - first:
+      213: -6859482169926587409
+    second: RockRed_15.png
+  - first:
+      213: 913952450472994895
+    second: RockRed_16.png
+  - first:
+      213: 524807137874412100
+    second: RockRed_17.png
+  - first:
+      213: 4677900595891256273
+    second: RockRed_18.png
+  - first:
+      213: -6265079294408156784
+    second: RockRed_19.png
+  - first:
+      213: -1331369613068359316
+    second: RockRed_2.png
   - first:
       213: -4327808824270802121
     second: RockRed_20.png
@@ -42,11 +69,17 @@ TextureImporter:
       213: -3285415125817909866
     second: RockRed_29.png
   - first:
+      213: 4183096263886594924
+    second: RockRed_3.png
+  - first:
       213: -5965171411844632994
     second: RockRed_30.png
   - first:
       213: 5014265954084431038
     second: RockRed_31.png
+  - first:
+      213: 4604340543541855740
+    second: RockRed_32.png
   - first:
       213: -3198772609917803323
     second: RockRed_33.png
@@ -60,59 +93,26 @@ TextureImporter:
       213: 8618086753509492783
     second: RockRed_36.png
   - first:
+      213: 3873608924940231585
+    second: RockRed_37.png
+  - first:
+      213: 3035448522084703162
+    second: RockRed_4.png
+  - first:
+      213: -6277218199407789081
+    second: RockRed_5.png
+  - first:
       213: 3429553962683271294
     second: RockRed_6.png
   - first:
       213: 7673064416703380351
     second: RockRed_7.png
   - first:
-      213: 8966900925763870371
-    second: RockRed_9.png
-  - first:
-      213: -6949121186658197831
-    second: RockRed_14.png
-  - first:
-      213: -6265079294408156784
-    second: RockRed_19.png
-  - first:
-      213: 4604340543541855740
-    second: RockRed_32.png
-  - first:
-      213: 3873608924940231585
-    second: RockRed_37.png
-  - first:
-      213: 4677900595891256273
-    second: RockRed_18.png
-  - first:
-      213: -5860156822176809691
-    second: RockRed_11.png
-  - first:
-      213: -6277218199407789081
-    second: RockRed_5.png
-  - first:
       213: 7469643862023232688
     second: RockRed_8.png
   - first:
-      213: -6859482169926587409
-    second: RockRed_15.png
-  - first:
-      213: 913952450472994895
-    second: RockRed_16.png
-  - first:
-      213: 524807137874412100
-    second: RockRed_17.png
-  - first:
-      213: -1331369613068359316
-    second: RockRed_2.png
-  - first:
-      213: -2891057445199729927
-    second: RockRed_1.png
-  - first:
-      213: 3035448522084703162
-    second: RockRed_4.png
-  - first:
-      213: 4183096263886594924
-    second: RockRed_3.png
+      213: 8966900925763870371
+    second: RockRed_9.png
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -238,11 +238,32 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+      name: RockRed_1.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fa2f913296e0e7d0800000000000000
+      internalID: -2891057445199729927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: RockRed_10.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 223
+        x: 0
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -259,11 +280,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: RockRed_11.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52db11e2b6a8caea0800000000000000
+      internalID: -5860156822176809691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: RockRed_12.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 223
+        x: 0
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -283,8 +325,8 @@ TextureImporter:
       name: RockRed_13.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 223
+        x: 0
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -301,11 +343,158 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: RockRed_14.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bed8184913cf8f90800000000000000
+      internalID: -6949121186658197831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockRed_15.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feb666e3f493ec0a0800000000000000
+      internalID: -6859482169926587409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockRed_16.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f486a0059e20fac00800000000000000
+      internalID: 913952450472994895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockRed_17.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4420894bf4d784700800000000000000
+      internalID: 524807137874412100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockRed_18.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dbbfa0becd3be040800000000000000
+      internalID: 4677900595891256273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockRed_19.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09995275397fd09a0800000000000000
+      internalID: -6265079294408156784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockRed_2.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c69af4c0466068de0800000000000000
+      internalID: -1331369613068359316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: RockRed_20.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 223
+        x: 160
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -325,8 +514,8 @@ TextureImporter:
       name: RockRed_21.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 223
+        x: 192
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -346,8 +535,8 @@ TextureImporter:
       name: RockRed_22.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 223
+        x: 224
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -367,8 +556,8 @@ TextureImporter:
       name: RockRed_23.png
       rect:
         serializedVersion: 2
-        x: 205
-        y: 223
+        x: 32
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -388,8 +577,8 @@ TextureImporter:
       name: RockRed_24.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 189
+        x: 32
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -409,8 +598,8 @@ TextureImporter:
       name: RockRed_25.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 189
+        x: 32
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -430,8 +619,8 @@ TextureImporter:
       name: RockRed_26.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 189
+        x: 32
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -451,8 +640,8 @@ TextureImporter:
       name: RockRed_27.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 189
+        x: 32
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -472,8 +661,8 @@ TextureImporter:
       name: RockRed_28.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 189
+        x: 32
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -493,8 +682,8 @@ TextureImporter:
       name: RockRed_29.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 189
+        x: 32
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -511,11 +700,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: RockRed_3.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c63693693e75d0a30800000000000000
+      internalID: 4183096263886594924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: RockRed_30.png
       rect:
         serializedVersion: 2
-        x: 205
-        y: 189
+        x: 96
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -535,8 +745,8 @@ TextureImporter:
       name: RockRed_31.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 155
+        x: 128
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -553,11 +763,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: RockRed_32.png
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf5cdba5457e5ef30800000000000000
+      internalID: 4604340543541855740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: RockRed_33.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 155
+        x: 192
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -577,8 +808,8 @@ TextureImporter:
       name: RockRed_34.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 155
+        x: 224
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -598,8 +829,8 @@ TextureImporter:
       name: RockRed_35.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 155
+        x: 64
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -619,8 +850,8 @@ TextureImporter:
       name: RockRed_36.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 155
+        x: 64
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -637,11 +868,74 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: RockRed_37.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a368d14bc2d1c530800000000000000
+      internalID: 3873608924940231585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockRed_4.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abbd7dc2954102a20800000000000000
+      internalID: 3035448522084703162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockRed_5.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eb7ea64e47d2e8a0800000000000000
+      internalID: -6277218199407789081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: RockRed_6.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 155
+        x: 64
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -661,8 +955,8 @@ TextureImporter:
       name: RockRed_7.png
       rect:
         serializedVersion: 2
-        x: 205
-        y: 155
+        x: 96
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -679,180 +973,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RockRed_9.png
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 121
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3aed64022e4d07c70800000000000000
-      internalID: 8966900925763870371
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RockRed_14.png
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 122
-        width: 32
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9bed8184913cf8f90800000000000000
-      internalID: -6949121186658197831
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RockRed_19.png
-      rect:
-        serializedVersion: 2
-        x: 69
-        y: 122
-        width: 32
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 09995275397fd09a0800000000000000
-      internalID: -6265079294408156784
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RockRed_32.png
-      rect:
-        serializedVersion: 2
-        x: 103
-        y: 137
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cf5cdba5457e5ef30800000000000000
-      internalID: 4604340543541855740
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RockRed_37.png
-      rect:
-        serializedVersion: 2
-        x: 137
-        y: 137
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1a368d14bc2d1c530800000000000000
-      internalID: 3873608924940231585
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RockRed_18.png
-      rect:
-        serializedVersion: 2
-        x: 171
-        y: 138
-        width: 32
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1dbbfa0becd3be040800000000000000
-      internalID: 4677900595891256273
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RockRed_11.png
-      rect:
-        serializedVersion: 2
-        x: 205
-        y: 121
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 52db11e2b6a8caea0800000000000000
-      internalID: -5860156822176809691
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RockRed_5.png
-      rect:
-        serializedVersion: 2
-        x: 171
-        y: 104
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7eb7ea64e47d2e8a0800000000000000
-      internalID: -6277218199407789081
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: RockRed_8.png
       rect:
         serializedVersion: 2
-        x: 203
-        y: 87
-        width: 30
+        x: 128
+        y: 160
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -868,117 +994,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RockRed_15.png
+      name: RockRed_9.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 120
-        width: 30
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: feb666e3f493ec0a0800000000000000
-      internalID: -6859482169926587409
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RockRed_16.png
-      rect:
-        serializedVersion: 2
-        x: 135
-        y: 120
-        width: 30
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f486a0059e20fac00800000000000000
-      internalID: 913952450472994895
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RockRed_17.png
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 105
-        width: 30
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4420894bf4d784700800000000000000
-      internalID: 524807137874412100
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RockRed_2.png
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 88
-        width: 28
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c69af4c0466068de0800000000000000
-      internalID: -1331369613068359316
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RockRed_1.png
-      rect:
-        serializedVersion: 2
-        x: 67
-        y: 89
-        width: 27
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9fa2f913296e0e7d0800000000000000
-      internalID: -2891057445199729927
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RockRed_4.png
-      rect:
-        serializedVersion: 2
-        x: 31
-        y: 71
-        width: 26
+        x: 160
+        y: 160
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -987,29 +1008,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: abbd7dc2954102a20800000000000000
-      internalID: 3035448522084703162
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RockRed_3.png
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 54
-        width: 24
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c63693693e75d0a30800000000000000
-      internalID: 4183096263886594924
+      spriteID: 3aed64022e4d07c70800000000000000
+      internalID: 8966900925763870371
       vertices: []
       indices: 
       edges: []

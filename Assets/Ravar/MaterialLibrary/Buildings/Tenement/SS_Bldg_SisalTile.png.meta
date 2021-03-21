@@ -9,6 +9,9 @@ TextureImporter:
       213: 7204639430008987304
     second: SisalTile_10.png
   - first:
+      213: 1334492609425401304
+    second: SisalTile_11.png
+  - first:
       213: -5371566071398355091
     second: SisalTile_12.png
   - first:
@@ -18,8 +21,26 @@ TextureImporter:
       213: 6663725675264239454
     second: SisalTile_14.png
   - first:
+      213: -637679452348651975
+    second: SisalTile_15.png
+  - first:
+      213: -7391086225766831476
+    second: SisalTile_16.png
+  - first:
+      213: -7192528207303532728
+    second: SisalTile_17.png
+  - first:
+      213: 9048014452271188195
+    second: SisalTile_18.png
+  - first:
+      213: 6387888899399590771
+    second: SisalTile_19.png
+  - first:
       213: -5868627107385841882
     second: SisalTile_2.png
+  - first:
+      213: -358533243226502797
+    second: SisalTile_20.png
   - first:
       213: -3661357117901986214
     second: SisalTile_21.png
@@ -48,6 +69,9 @@ TextureImporter:
       213: 6118816936382463828
     second: SisalTile_29.png
   - first:
+      213: 7727895214028858711
+    second: SisalTile_3.png
+  - first:
       213: 8065650213531231089
     second: SisalTile_30.png
   - first:
@@ -56,6 +80,9 @@ TextureImporter:
   - first:
       213: 7377671524587730694
     second: SisalTile_32.png
+  - first:
+      213: -3214086368177378635
+    second: SisalTile_33.png
   - first:
       213: -4856485114992777590
     second: SisalTile_34.png
@@ -69,53 +96,26 @@ TextureImporter:
       213: -3888322143835496920
     second: SisalTile_37.png
   - first:
+      213: -7475030736691780718
+    second: SisalTile_38.png
+  - first:
+      213: -5416359103397835898
+    second: SisalTile_4.png
+  - first:
+      213: 7304957600603785532
+    second: SisalTile_5.png
+  - first:
       213: 1637407686099464806
     second: SisalTile_6.png
   - first:
       213: 3711753302212200201
     second: SisalTile_7.png
   - first:
-      213: -28492386782221227
-    second: SisalTile_9.png
-  - first:
-      213: -637679452348651975
-    second: SisalTile_15.png
-  - first:
-      213: -358533243226502797
-    second: SisalTile_20.png
-  - first:
-      213: -3214086368177378635
-    second: SisalTile_33.png
-  - first:
-      213: -7475030736691780718
-    second: SisalTile_38.png
-  - first:
-      213: 1334492609425401304
-    second: SisalTile_11.png
-  - first:
-      213: 7304957600603785532
-    second: SisalTile_5.png
-  - first:
       213: 8950908571755972642
     second: SisalTile_8.png
   - first:
-      213: -7391086225766831476
-    second: SisalTile_16.png
-  - first:
-      213: -7192528207303532728
-    second: SisalTile_17.png
-  - first:
-      213: 9048014452271188195
-    second: SisalTile_18.png
-  - first:
-      213: 6387888899399590771
-    second: SisalTile_19.png
-  - first:
-      213: 7727895214028858711
-    second: SisalTile_3.png
-  - first:
-      213: -5416359103397835898
-    second: SisalTile_4.png
+      213: -28492386782221227
+    second: SisalTile_9.png
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -244,8 +244,8 @@ TextureImporter:
       name: SisalTile_1.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 223
+        x: 0
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -265,8 +265,8 @@ TextureImporter:
       name: SisalTile_10.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 223
+        x: 0
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -283,11 +283,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: SisalTile_11.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d56f2435f1158210800000000000000
+      internalID: 1334492609425401304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: SisalTile_12.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 223
+        x: 0
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -307,8 +328,8 @@ TextureImporter:
       name: SisalTile_13.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 223
+        x: 0
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -328,8 +349,8 @@ TextureImporter:
       name: SisalTile_14.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 223
+        x: 0
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -346,11 +367,116 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: SisalTile_15.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 936613aaae18627f0800000000000000
+      internalID: -637679452348651975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SisalTile_16.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8aa2e0cc369d6990800000000000000
+      internalID: -7391086225766831476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SisalTile_17.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84f12bef3b10f2c90800000000000000
+      internalID: -7192528207303532728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SisalTile_18.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e88936b431019d70800000000000000
+      internalID: 9048014452271188195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SisalTile_19.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 373af590c1756a850800000000000000
+      internalID: 6387888899399590771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: SisalTile_2.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 223
+        x: 128
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -367,11 +493,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: SisalTile_20.png
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 379c0553aeb360bf0800000000000000
+      internalID: -358533243226502797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: SisalTile_21.png
       rect:
         serializedVersion: 2
-        x: 205
-        y: 223
+        x: 192
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -391,8 +538,8 @@ TextureImporter:
       name: SisalTile_22.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 189
+        x: 224
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -412,8 +559,8 @@ TextureImporter:
       name: SisalTile_23.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 189
+        x: 32
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -433,8 +580,8 @@ TextureImporter:
       name: SisalTile_24.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 189
+        x: 32
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -454,8 +601,8 @@ TextureImporter:
       name: SisalTile_25.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 189
+        x: 32
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -475,8 +622,8 @@ TextureImporter:
       name: SisalTile_26.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 189
+        x: 32
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -496,8 +643,8 @@ TextureImporter:
       name: SisalTile_27.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 189
+        x: 32
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -517,8 +664,8 @@ TextureImporter:
       name: SisalTile_28.png
       rect:
         serializedVersion: 2
-        x: 205
-        y: 189
+        x: 32
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -538,8 +685,8 @@ TextureImporter:
       name: SisalTile_29.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 155
+        x: 32
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -556,11 +703,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: SisalTile_3.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 755a1a5c0cffe3b60800000000000000
+      internalID: 7727895214028858711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: SisalTile_30.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 155
+        x: 96
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -580,8 +748,8 @@ TextureImporter:
       name: SisalTile_31.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 155
+        x: 128
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -601,8 +769,8 @@ TextureImporter:
       name: SisalTile_32.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 155
+        x: 160
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -619,11 +787,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: SisalTile_33.png
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5baac532a754563d0800000000000000
+      internalID: -3214086368177378635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: SisalTile_34.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 155
+        x: 224
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -643,8 +832,8 @@ TextureImporter:
       name: SisalTile_35.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 155
+        x: 64
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -664,8 +853,8 @@ TextureImporter:
       name: SisalTile_36.png
       rect:
         serializedVersion: 2
-        x: 205
-        y: 155
+        x: 64
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -685,8 +874,8 @@ TextureImporter:
       name: SisalTile_37.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 121
+        x: 64
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -703,11 +892,74 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: SisalTile_38.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2932c5e362b534890800000000000000
+      internalID: -7475030736691780718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SisalTile_4.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68bc402b71a35d4b0800000000000000
+      internalID: -5416359103397835898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SisalTile_5.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3947430c3c606560800000000000000
+      internalID: 7304957600603785532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: SisalTile_6.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 121
+        x: 96
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -727,8 +979,8 @@ TextureImporter:
       name: SisalTile_7.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 121
+        x: 128
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -745,159 +997,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SisalTile_9.png
-      rect:
-        serializedVersion: 2
-        x: 103
-        y: 121
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 55cea0f3356ca9ff0800000000000000
-      internalID: -28492386782221227
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SisalTile_15.png
-      rect:
-        serializedVersion: 2
-        x: 137
-        y: 122
-        width: 32
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 936613aaae18627f0800000000000000
-      internalID: -637679452348651975
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SisalTile_20.png
-      rect:
-        serializedVersion: 2
-        x: 171
-        y: 122
-        width: 32
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 379c0553aeb360bf0800000000000000
-      internalID: -358533243226502797
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SisalTile_33.png
-      rect:
-        serializedVersion: 2
-        x: 205
-        y: 137
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5baac532a754563d0800000000000000
-      internalID: -3214086368177378635
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SisalTile_38.png
-      rect:
-        serializedVersion: 2
-        x: 205
-        y: 119
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2932c5e362b534890800000000000000
-      internalID: -7475030736691780718
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SisalTile_11.png
-      rect:
-        serializedVersion: 2
-        x: 137
-        y: 88
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8d56f2435f1158210800000000000000
-      internalID: 1334492609425401304
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SisalTile_5.png
-      rect:
-        serializedVersion: 2
-        x: 169
-        y: 88
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c3947430c3c606560800000000000000
-      internalID: 7304957600603785532
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: SisalTile_8.png
       rect:
         serializedVersion: 2
-        x: 201
-        y: 85
-        width: 30
+        x: 160
+        y: 160
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -913,96 +1018,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SisalTile_16.png
+      name: SisalTile_9.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 104
-        width: 30
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c8aa2e0cc369d6990800000000000000
-      internalID: -7391086225766831476
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SisalTile_17.png
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 104
-        width: 30
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 84f12bef3b10f2c90800000000000000
-      internalID: -7192528207303532728
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SisalTile_18.png
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 104
-        width: 30
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3e88936b431019d70800000000000000
-      internalID: 9048014452271188195
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SisalTile_19.png
-      rect:
-        serializedVersion: 2
-        x: 97
-        y: 104
-        width: 30
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 373af590c1756a850800000000000000
-      internalID: 6387888899399590771
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SisalTile_3.png
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 70
-        width: 25
+        x: 192
+        y: 160
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1011,29 +1032,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 755a1a5c0cffe3b60800000000000000
-      internalID: 7727895214028858711
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SisalTile_4.png
-      rect:
-        serializedVersion: 2
-        x: 28
-        y: 70
-        width: 25
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 68bc402b71a35d4b0800000000000000
-      internalID: -5416359103397835898
+      spriteID: 55cea0f3356ca9ff0800000000000000
+      internalID: -28492386782221227
       vertices: []
       indices: 
       edges: []

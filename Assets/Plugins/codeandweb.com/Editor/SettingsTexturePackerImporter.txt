@@ -16,6 +16,7 @@ tpsheetFileNames:
 - Assets/Ravar/MaterialLibrary/Buildings/Mansion/TP_Bldg_Leaf.tpsheet
 - Assets/Ravar/MaterialLibrary/Buildings/Mansion/TP_Bldg_Matcha.tpsheet
 - Assets/Ravar/MaterialLibrary/Buildings/Mansion/TP_Bldg_Maya.tpsheet
+- Assets/Ravar/MaterialLibrary/Buildings/Mansion/TP_Bldg_Misc.tpsheet
 - Assets/Ravar/MaterialLibrary/Buildings/Mansion/TP_Bldg_Oslo.tpsheet
 - Assets/Ravar/MaterialLibrary/Buildings/Mansion/TP_Bldg_Rose.tpsheet
 - Assets/Ravar/MaterialLibrary/Buildings/Mansion/TP_Bldg_Trout.tpsheet
@@ -33,7 +34,7 @@ tpsheetFileNames:
 - Assets/Ravar/MaterialLibrary/Buildings/Masonry/TP_Pillars.tpsheet
 - Assets/Ravar/MaterialLibrary/Buildings/Masonry/TP_Pillars_Tnmt.tpsheet
 - Assets/Ravar/MaterialLibrary/Buildings/Masonry/TP_RoundArch.tpsheet
-- Assets/Ravar/MaterialLibrary/Buildings/Misc/TP_Shadows.tpsheet
+- Assets/Ravar/MaterialLibrary/Buildings/Misc/SS_Shadows.tpsheet
 - Assets/Ravar/MaterialLibrary/Buildings/Roofing/TP_Roof_Brown.tpsheet
 - Assets/Ravar/MaterialLibrary/Buildings/Roofing/TP_Roof_DarkBlue.tpsheet
 - Assets/Ravar/MaterialLibrary/Buildings/Roofing/TP_Roof_Deco.tpsheet
@@ -59,8 +60,8 @@ tpsheetFileNames:
 - Assets/Ravar/MaterialLibrary/Buildings/Tenement/TP_Bldg_Troutt.tpsheet
 - Assets/Ravar/MaterialLibrary/Buildings/Tenement/TP_Bldg_Tuscany.tpsheet
 - Assets/Ravar/MaterialLibrary/Buildings/Tenement/TP_Bldg_Umberr.tpsheet
-- Assets/Ravar/MaterialLibrary/Buildings/Windows/SS_Windows_1.tpsheet
-- Assets/Ravar/MaterialLibrary/Buildings/Windows/SS_Windows_2.tpsheet
+- Assets/Ravar/MaterialLibrary/Buildings/Windows/TP_Windows_1.tpsheet
+- Assets/Ravar/MaterialLibrary/Buildings/Windows/TP_Windows_2.tpsheet
 - Assets/Ravar/MaterialLibrary/Objects/TP_Crystals.tpsheet
 - Assets/Ravar/MaterialLibrary/Terrain/TP_Dirt_Dark.tpsheet
 - Assets/Ravar/MaterialLibrary/Terrain/TP_Dirt_Light.tpsheet
@@ -89,6 +90,7 @@ textureFileNames:
 - Assets/Ravar/MaterialLibrary/Buildings/Mansion/SS_Bldg_Leaf.png
 - Assets/Ravar/MaterialLibrary/Buildings/Mansion/SS_Bldg_Matcha.png
 - Assets/Ravar/MaterialLibrary/Buildings/Mansion/SS_Bldg_Maya.png
+- Assets/Ravar/MaterialLibrary/Buildings/Mansion/SS_Bldg_Misc.png
 - Assets/Ravar/MaterialLibrary/Buildings/Mansion/SS_Bldg_Oslo.png
 - Assets/Ravar/MaterialLibrary/Buildings/Mansion/SS_Bldg_Rose.png
 - Assets/Ravar/MaterialLibrary/Buildings/Mansion/SS_Bldg_Trout.png
@@ -147,6 +149,7 @@ textureFileNames:
 - Assets/Ravar/MaterialLibrary/Terrain/TS_Sand_Tan.png
 - Assets/Ravar/MaterialLibrary/Terrain/TS_Sand_Yellow.png
 normalmapFileNames:
+- 
 - 
 - 
 - 

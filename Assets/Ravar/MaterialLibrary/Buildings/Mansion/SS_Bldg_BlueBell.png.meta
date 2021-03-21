@@ -3,6 +3,21 @@ guid: d70f1d4d4a75a6140b109b47383f112c
 TextureImporter:
   internalIDToNameTable:
   - first:
+      213: 5678540898768363218
+    second: BlueBell_1.png
+  - first:
+      213: 697726641022359524
+    second: BlueBell_10.png
+  - first:
+      213: -4392069747919534554
+    second: BlueBell_11.png
+  - first:
+      213: -2485814401042850435
+    second: BlueBell_12.png
+  - first:
+      213: -5772670342012112508
+    second: BlueBell_13.png
+  - first:
       213: -3507323581050077265
     second: BlueBell_14.png
   - first:
@@ -21,23 +36,23 @@ TextureImporter:
       213: 1645285869653798867
     second: BlueBell_19.png
   - first:
+      213: 8416201370867557901
+    second: BlueBell_2.png
+  - first:
       213: 1757165383331153004
     second: BlueBell_20.png
   - first:
-      213: 697726641022359524
-    second: BlueBell_10.png
-  - first:
-      213: -5772670342012112508
-    second: BlueBell_13.png
-  - first:
-      213: -2824923169631398757
-    second: BlueBell_4.png
-  - first:
-      213: -4310621386837957826
-    second: BlueBell_5.png
+      213: -6462626384292970964
+    second: BlueBell_21.png
   - first:
       213: -31160495953854107
     second: BlueBell_22.png
+  - first:
+      213: 8681899432805995980
+    second: BlueBell_23.png
+  - first:
+      213: -6590912013759135530
+    second: BlueBell_24.png
   - first:
       213: -5553529722495659275
     second: BlueBell_25.png
@@ -45,8 +60,23 @@ TextureImporter:
       213: -7754640353779985335
     second: BlueBell_26.png
   - first:
+      213: -5915305675625793686
+    second: BlueBell_27.png
+  - first:
+      213: 7850072933951083764
+    second: BlueBell_28.png
+  - first:
       213: 8707272286329409789
     second: BlueBell_29.png
+  - first:
+      213: 3191612324064280982
+    second: BlueBell_3.png
+  - first:
+      213: -1962353772859223450
+    second: BlueBell_30.png
+  - first:
+      213: 4704975772210995071
+    second: BlueBell_31.png
   - first:
       213: -4709422424509599776
     second: BlueBell_32.png
@@ -54,17 +84,32 @@ TextureImporter:
       213: 2716984786193462716
     second: BlueBell_33.png
   - first:
+      213: -4150738553568822456
+    second: BlueBell_34.png
+  - first:
       213: -2702092655255176602
     second: BlueBell_35.png
+  - first:
+      213: -5354810035215971929
+    second: BlueBell_36.png
   - first:
       213: 4292731993775692949
     second: BlueBell_37.png
   - first:
+      213: 653625576542337885
+    second: BlueBell_38.png
+  - first:
       213: 4837279508146954278
     second: BlueBell_39.png
   - first:
+      213: -2824923169631398757
+    second: BlueBell_4.png
+  - first:
       213: 1460963368733094432
     second: BlueBell_40.png
+  - first:
+      213: -5373037300717067270
+    second: BlueBell_41.png
   - first:
       213: -266302159093507913
     second: BlueBell_42.png
@@ -75,71 +120,26 @@ TextureImporter:
       213: 2499293636406169560
     second: BlueBell_44.png
   - first:
-      213: 2791174117974163649
-    second: BlueBell_8.png
-  - first:
-      213: -4392069747919534554
-    second: BlueBell_11.png
-  - first:
-      213: -2485814401042850435
-    second: BlueBell_12.png
-  - first:
-      213: 3191612324064280982
-    second: BlueBell_3.png
-  - first:
-      213: 6518021020094216777
-    second: BlueBell_6.png
-  - first:
-      213: 5678540898768363218
-    second: BlueBell_1.png
-  - first:
-      213: 8416201370867557901
-    second: BlueBell_2.png
-  - first:
-      213: -5354810035215971929
-    second: BlueBell_36.png
-  - first:
-      213: -6462626384292970964
-    second: BlueBell_21.png
-  - first:
-      213: 8681899432805995980
-    second: BlueBell_23.png
-  - first:
-      213: -6590912013759135530
-    second: BlueBell_24.png
-  - first:
-      213: -5915305675625793686
-    second: BlueBell_27.png
-  - first:
-      213: 7850072933951083764
-    second: BlueBell_28.png
-  - first:
-      213: -1962353772859223450
-    second: BlueBell_30.png
-  - first:
-      213: 4704975772210995071
-    second: BlueBell_31.png
-  - first:
-      213: -4150738553568822456
-    second: BlueBell_34.png
-  - first:
-      213: 653625576542337885
-    second: BlueBell_38.png
-  - first:
-      213: -5373037300717067270
-    second: BlueBell_41.png
-  - first:
-      213: 3565115335046832442
-    second: BlueBell_7.png
-  - first:
-      213: -3525527846858347455
-    second: BlueBell_9.png
-  - first:
       213: -510863086604927056
     second: BlueBell_45.png
   - first:
       213: 4189415343279006515
     second: BlueBell_47.png
+  - first:
+      213: -4310621386837957826
+    second: BlueBell_5.png
+  - first:
+      213: 6518021020094216777
+    second: BlueBell_6.png
+  - first:
+      213: 3565115335046832442
+    second: BlueBell_7.png
+  - first:
+      213: 2791174117974163649
+    second: BlueBell_8.png
+  - first:
+      213: -3525527846858347455
+    second: BlueBell_9.png
   - first:
       213: 1520387147499702346
     second: BlueBell_46.png
@@ -271,11 +271,116 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+      name: BlueBell_1.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2de9d997cda3ece40800000000000000
+      internalID: 5678540898768363218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueBell_10.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e7d67ceea2dea900800000000000000
+      internalID: 697726641022359524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueBell_11.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 626448e95db3c03c0800000000000000
+      internalID: -4392069747919534554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueBell_12.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7d5a4009fc908dd0800000000000000
+      internalID: -2485814401042850435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueBell_13.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4817feaa8ea53efa0800000000000000
+      internalID: -5772670342012112508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: BlueBell_14.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 223
+        x: 0
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -295,8 +400,8 @@ TextureImporter:
       name: BlueBell_15.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 223
+        x: 0
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -316,8 +421,8 @@ TextureImporter:
       name: BlueBell_16.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 223
+        x: 0
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -337,8 +442,8 @@ TextureImporter:
       name: BlueBell_17.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 223
+        x: 32
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -358,8 +463,8 @@ TextureImporter:
       name: BlueBell_18.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 223
+        x: 64
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -379,8 +484,8 @@ TextureImporter:
       name: BlueBell_19.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 223
+        x: 96
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -397,11 +502,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: BlueBell_2.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0667bc4e8a5cc470800000000000000
+      internalID: 8416201370867557901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: BlueBell_20.png
       rect:
         serializedVersion: 2
-        x: 205
-        y: 223
+        x: 160
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -418,13 +544,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlueBell_10.png
+      name: BlueBell_21.png
       rect:
         serializedVersion: 2
-        x: 239
-        y: 250
-        width: 10
-        height: 5
+        x: 192
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -432,71 +558,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4e7d67ceea2dea900800000000000000
-      internalID: 697726641022359524
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BlueBell_13.png
-      rect:
-        serializedVersion: 2
-        x: 239
-        y: 243
-        width: 10
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4817feaa8ea53efa0800000000000000
-      internalID: -5772670342012112508
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BlueBell_4.png
-      rect:
-        serializedVersion: 2
-        x: 239
-        y: 237
-        width: 8
-        height: 4
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b949954285bdbc8d0800000000000000
-      internalID: -2824923169631398757
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BlueBell_5.png
-      rect:
-        serializedVersion: 2
-        x: 239
-        y: 231
-        width: 8
-        height: 4
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e336254ffa89d24c0800000000000000
-      internalID: -4310621386837957826
+      spriteID: c2e76204b832056a0800000000000000
+      internalID: -6462626384292970964
       vertices: []
       indices: 
       edges: []
@@ -505,8 +568,8 @@ TextureImporter:
       name: BlueBell_22.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 189
+        x: 224
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -523,11 +586,53 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: BlueBell_23.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc51114198d4c7870800000000000000
+      internalID: 8681899432805995980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueBell_24.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d0480291706884a0800000000000000
+      internalID: -6590912013759135530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: BlueBell_25.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 189
+        x: 32
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -547,8 +652,8 @@ TextureImporter:
       name: BlueBell_26.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 189
+        x: 32
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -565,11 +670,53 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: BlueBell_27.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a67f87224dc98eda0800000000000000
+      internalID: -5915305675625793686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueBell_28.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f41011fdbf01fc60800000000000000
+      internalID: 7850072933951083764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: BlueBell_29.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 189
+        x: 32
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -586,11 +733,74 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: BlueBell_3.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6914c94bf72ea4c20800000000000000
+      internalID: 3191612324064280982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueBell_30.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 662141df3a154c4e0800000000000000
+      internalID: -1962353772859223450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueBell_31.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7f947b698e6b4140800000000000000
+      internalID: 4704975772210995071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: BlueBell_32.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 189
+        x: 160
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -610,8 +820,8 @@ TextureImporter:
       name: BlueBell_33.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 189
+        x: 192
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -628,11 +838,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: BlueBell_34.png
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84bf20fe64d9566c0800000000000000
+      internalID: -4150738553568822456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: BlueBell_35.png
       rect:
         serializedVersion: 2
-        x: 205
-        y: 189
+        x: 64
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -649,11 +880,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: BlueBell_36.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a9414bd4a4efa5b0800000000000000
+      internalID: -5354810035215971929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: BlueBell_37.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 155
+        x: 64
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -670,11 +922,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: BlueBell_38.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5b7ae1bff4221900800000000000000
+      internalID: 653625576542337885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: BlueBell_39.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 155
+        x: 64
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -691,11 +964,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: BlueBell_4.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b949954285bdbc8d0800000000000000
+      internalID: -2824923169631398757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: BlueBell_40.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 155
+        x: 96
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -712,11 +1006,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: BlueBell_41.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af3e5d5ea032f65b0800000000000000
+      internalID: -5373037300717067270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: BlueBell_42.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 155
+        x: 160
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -736,8 +1051,8 @@ TextureImporter:
       name: BlueBell_43.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 155
+        x: 192
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -757,8 +1072,8 @@ TextureImporter:
       name: BlueBell_44.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 155
+        x: 224
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -775,433 +1090,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlueBell_8.png
-      rect:
-        serializedVersion: 2
-        x: 205
-        y: 155
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1c04d10721e3cb620800000000000000
-      internalID: 2791174117974163649
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BlueBell_11.png
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 132
-        width: 32
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 626448e95db3c03c0800000000000000
-      internalID: -4392069747919534554
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BlueBell_12.png
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 132
-        width: 32
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d7d5a4009fc908dd0800000000000000
-      internalID: -2485814401042850435
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BlueBell_3.png
-      rect:
-        serializedVersion: 2
-        x: 69
-        y: 133
-        width: 32
-        height: 20
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6914c94bf72ea4c20800000000000000
-      internalID: 3191612324064280982
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BlueBell_6.png
-      rect:
-        serializedVersion: 2
-        x: 103
-        y: 133
-        width: 32
-        height: 20
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 94abe357599a47a50800000000000000
-      internalID: 6518021020094216777
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BlueBell_1.png
-      rect:
-        serializedVersion: 2
-        x: 137
-        y: 137
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2de9d997cda3ece40800000000000000
-      internalID: 5678540898768363218
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BlueBell_2.png
-      rect:
-        serializedVersion: 2
-        x: 171
-        y: 137
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d0667bc4e8a5cc470800000000000000
-      internalID: 8416201370867557901
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BlueBell_36.png
-      rect:
-        serializedVersion: 2
-        x: 205
-        y: 137
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7a9414bd4a4efa5b0800000000000000
-      internalID: -5354810035215971929
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BlueBell_21.png
-      rect:
-        serializedVersion: 2
-        x: 137
-        y: 103
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c2e76204b832056a0800000000000000
-      internalID: -6462626384292970964
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BlueBell_23.png
-      rect:
-        serializedVersion: 2
-        x: 69
-        y: 99
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cc51114198d4c7870800000000000000
-      internalID: 8681899432805995980
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BlueBell_24.png
-      rect:
-        serializedVersion: 2
-        x: 101
-        y: 99
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6d0480291706884a0800000000000000
-      internalID: -6590912013759135530
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BlueBell_27.png
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 98
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a67f87224dc98eda0800000000000000
-      internalID: -5915305675625793686
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BlueBell_28.png
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 98
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4f41011fdbf01fc60800000000000000
-      internalID: 7850072933951083764
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BlueBell_30.png
-      rect:
-        serializedVersion: 2
-        x: 169
-        y: 103
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 662141df3a154c4e0800000000000000
-      internalID: -1962353772859223450
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BlueBell_31.png
-      rect:
-        serializedVersion: 2
-        x: 201
-        y: 103
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f7f947b698e6b4140800000000000000
-      internalID: 4704975772210995071
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BlueBell_34.png
-      rect:
-        serializedVersion: 2
-        x: 133
-        y: 69
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 84bf20fe64d9566c0800000000000000
-      internalID: -4150738553568822456
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BlueBell_38.png
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 65
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d5b7ae1bff4221900800000000000000
-      internalID: 653625576542337885
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BlueBell_41.png
-      rect:
-        serializedVersion: 2
-        x: 97
-        y: 65
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: af3e5d5ea032f65b0800000000000000
-      internalID: -5373037300717067270
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BlueBell_7.png
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 64
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a31a3c82285d97130800000000000000
-      internalID: 3565115335046832442
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BlueBell_9.png
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 64
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 14ca2423a1fc21fc0800000000000000
-      internalID: -3525527846858347455
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: BlueBell_45.png
       rect:
         serializedVersion: 2
-        x: 165
-        y: 86
-        width: 30
-        height: 15
+        x: 96
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1219,10 +1114,10 @@ TextureImporter:
       name: BlueBell_47.png
       rect:
         serializedVersion: 2
-        x: 197
-        y: 86
-        width: 30
-        height: 15
+        x: 96
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1237,13 +1132,118 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: BlueBell_5.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e336254ffa89d24c0800000000000000
+      internalID: -4310621386837957826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueBell_6.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94abe357599a47a50800000000000000
+      internalID: 6518021020094216777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueBell_7.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a31a3c82285d97130800000000000000
+      internalID: 3565115335046832442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueBell_8.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c04d10721e3cb620800000000000000
+      internalID: 2791174117974163649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueBell_9.png
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14ca2423a1fc21fc0800000000000000
+      internalID: -3525527846858347455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: BlueBell_46.png
       rect:
         serializedVersion: 2
-        x: 165
-        y: 86
-        width: 30
-        height: 15
+        x: 96
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1261,10 +1261,10 @@ TextureImporter:
       name: BlueBell_48.png
       rect:
         serializedVersion: 2
-        x: 197
-        y: 86
-        width: 30
-        height: 15
+        x: 96
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

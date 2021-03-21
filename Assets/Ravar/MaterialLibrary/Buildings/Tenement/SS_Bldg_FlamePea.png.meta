@@ -3,50 +3,20 @@ guid: abf0d10daed69654d9face366c2664ca
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4165031780036056620
-    second: FlamePea_30.png
+      213: -5063959959846711207
+    second: FlamePea_1.png
   - first:
-      213: 3598737001697286708
-    second: FlamePea_33.png
-  - first:
-      213: -2679334951139813908
-    second: FlamePea_36.png
-  - first:
-      213: 4728887781615698176
-    second: FlamePea_37.png
-  - first:
-      213: -2380381797654363591
-    second: FlamePea_38.png
-  - first:
-      213: 8979377600865984162
-    second: FlamePea_39.png
-  - first:
-      213: 5686809396483921466
-    second: FlamePea_43.png
-  - first:
-      213: 66874980486483383
-    second: FlamePea_44.png
-  - first:
-      213: 2773927258580901677
-    second: FlamePea_47.png
-  - first:
-      213: 9140519493971762295
-    second: FlamePea_50.png
-  - first:
-      213: -3471233661498371834
-    second: FlamePea_31.png
-  - first:
-      213: -7783602101353783195
-    second: FlamePea_32.png
-  - first:
-      213: -7021724662955209686
-    second: FlamePea_42.png
-  - first:
-      213: -3001701501700326455
-    second: FlamePea_45.png
+      213: -3968294375723603209
+    second: FlamePea_10.png
   - first:
       213: -6715750701415372045
     second: FlamePea_11.png
+  - first:
+      213: -8710399039854952143
+    second: FlamePea_12.png
+  - first:
+      213: 4829861448503839026
+    second: FlamePea_13.png
   - first:
       213: -2145911190234280703
     second: FlamePea_14.png
@@ -60,26 +30,20 @@ TextureImporter:
       213: 1390016269361353515
     second: FlamePea_17.png
   - first:
-      213: 4412344279782087743
-    second: FlamePea_8.png
-  - first:
-      213: -8710399039854952143
-    second: FlamePea_12.png
-  - first:
       213: 1158685485449770141
     second: FlamePea_18.png
   - first:
       213: -4338409976936289859
     second: FlamePea_19.png
   - first:
+      213: -1539417384920969967
+    second: FlamePea_2.png
+  - first:
       213: -6755820542303940442
     second: FlamePea_20.png
   - first:
-      213: 8267083538936633276
-    second: FlamePea_34.png
-  - first:
-      213: 4844776984960338679
-    second: FlamePea_35.png
+      213: 1805496624663751454
+    second: FlamePea_21.png
   - first:
       213: -7449235077177618905
     second: FlamePea_22.png
@@ -87,44 +51,11 @@ TextureImporter:
       213: -6078912170817050213
     second: FlamePea_23.png
   - first:
-      213: -3968294375723603209
-    second: FlamePea_10.png
-  - first:
-      213: -7208004721822241319
-    second: FlamePea_9.png
-  - first:
-      213: 1805496624663751454
-    second: FlamePea_21.png
-  - first:
       213: -5677563405395823700
     second: FlamePea_24.png
   - first:
-      213: -5063959959846711207
-    second: FlamePea_1.png
-  - first:
-      213: -1539417384920969967
-    second: FlamePea_2.png
-  - first:
-      213: -122425488545384940
-    second: FlamePea_6.png
-  - first:
-      213: 2396209896951431595
-    second: FlamePea_7.png
-  - first:
-      213: -460123487353081311
-    second: FlamePea_40.png
-  - first:
-      213: 4829861448503839026
-    second: FlamePea_13.png
-  - first:
-      213: -5327909009252347865
-    second: FlamePea_4.png
-  - first:
-      213: 9071089689922274061
-    second: FlamePea_5.png
-  - first:
-      213: 5557840144769804297
-    second: FlamePea_3.png
+      213: -4023600200465668290
+    second: FlamePea_25.png
   - first:
       213: 8194323221105695137
     second: FlamePea_26.png
@@ -132,11 +63,80 @@ TextureImporter:
       213: -7664194210498214569
     second: FlamePea_27.png
   - first:
-      213: -4023600200465668290
-    second: FlamePea_25.png
-  - first:
       213: -3243572701674759872
     second: FlamePea_28.png
+  - first:
+      213: 5557840144769804297
+    second: FlamePea_3.png
+  - first:
+      213: 4165031780036056620
+    second: FlamePea_30.png
+  - first:
+      213: -3471233661498371834
+    second: FlamePea_31.png
+  - first:
+      213: -7783602101353783195
+    second: FlamePea_32.png
+  - first:
+      213: 3598737001697286708
+    second: FlamePea_33.png
+  - first:
+      213: 8267083538936633276
+    second: FlamePea_34.png
+  - first:
+      213: 4844776984960338679
+    second: FlamePea_35.png
+  - first:
+      213: -2679334951139813908
+    second: FlamePea_36.png
+  - first:
+      213: 4728887781615698176
+    second: FlamePea_37.png
+  - first:
+      213: -2380381797654363591
+    second: FlamePea_38.png
+  - first:
+      213: 8979377600865984162
+    second: FlamePea_39.png
+  - first:
+      213: -5327909009252347865
+    second: FlamePea_4.png
+  - first:
+      213: -460123487353081311
+    second: FlamePea_40.png
+  - first:
+      213: -7021724662955209686
+    second: FlamePea_42.png
+  - first:
+      213: 5686809396483921466
+    second: FlamePea_43.png
+  - first:
+      213: 66874980486483383
+    second: FlamePea_44.png
+  - first:
+      213: -3001701501700326455
+    second: FlamePea_45.png
+  - first:
+      213: 2773927258580901677
+    second: FlamePea_47.png
+  - first:
+      213: 9071089689922274061
+    second: FlamePea_5.png
+  - first:
+      213: 9140519493971762295
+    second: FlamePea_50.png
+  - first:
+      213: -122425488545384940
+    second: FlamePea_6.png
+  - first:
+      213: 2396209896951431595
+    second: FlamePea_7.png
+  - first:
+      213: 4412344279782087743
+    second: FlamePea_8.png
+  - first:
+      213: -7208004721822241319
+    second: FlamePea_9.png
   - first:
       213: -1308962282959600083
     second: FlamePea_29.png
@@ -277,11 +277,473 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+      name: FlamePea_1.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 950198c1f3339b9b0800000000000000
+      internalID: -5063959959846711207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePea_10.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fa60da4a49cde8c0800000000000000
+      internalID: -3968294375723603209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePea_11.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fa6e02915cdcc2a0800000000000000
+      internalID: -6715750701415372045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePea_12.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 131ca8119327e1780800000000000000
+      internalID: -8710399039854952143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePea_13.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 239cc60d56d170340800000000000000
+      internalID: 4829861448503839026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePea_14.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10dcc8a54213832e0800000000000000
+      internalID: -2145911190234280703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePea_15.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f75bd0472422b7720800000000000000
+      internalID: 2844905258424841599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePea_16.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6851a8dfb81fe920800000000000000
+      internalID: 3021661087241164906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePea_17.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b231c4fae645a4310800000000000000
+      internalID: 1390016269361353515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePea_18.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9472ae5f4a741010800000000000000
+      internalID: 1158685485449770141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePea_19.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db9a3b2ac1fdac3c0800000000000000
+      internalID: -4338409976936289859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePea_2.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11d89ba6b04e2aae0800000000000000
+      internalID: -1539417384920969967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePea_20.png
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a0dfa9b2018e32a0800000000000000
+      internalID: -6755820542303940442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePea_21.png
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1bef3c3d996e0910800000000000000
+      internalID: 1805496624663751454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePea_22.png
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72ec2704a200f9890800000000000000
+      internalID: -7449235077177618905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePea_23.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b99a6ad869d53aba0800000000000000
+      internalID: -6078912170817050213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePea_24.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca3ff9fe92e3531b0800000000000000
+      internalID: -5677563405395823700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePea_25.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e37ad058fec4928c0800000000000000
+      internalID: -4023600200465668290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePea_26.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a95db0ed8518b170800000000000000
+      internalID: 8194323221105695137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePea_27.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75506a1e8ff43a590800000000000000
+      internalID: -7664194210498214569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePea_28.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 049958120d38cf2d0800000000000000
+      internalID: -3243572701674759872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePea_3.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 908e86b3a2a612d40800000000000000
+      internalID: 5557840144769804297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: FlamePea_30.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 479
+        x: 64
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -298,11 +760,53 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: FlamePea_31.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 601d2025063b3dfc0800000000000000
+      internalID: -3471233661498371834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePea_32.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 560e2dbc0271bf390800000000000000
+      internalID: -7783602101353783195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: FlamePea_33.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 445
+        x: 160
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -319,11 +823,53 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: FlamePea_34.png
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb71cc28da49ab270800000000000000
+      internalID: 8267083538936633276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePea_35.png
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fa8c84cffa1c3340800000000000000
+      internalID: 4844776984960338679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: FlamePea_36.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 411
+        x: 64
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -343,8 +889,8 @@ TextureImporter:
       name: FlamePea_37.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 377
+        x: 64
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -364,8 +910,8 @@ TextureImporter:
       name: FlamePea_38.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 343
+        x: 64
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -385,8 +931,8 @@ TextureImporter:
       name: FlamePea_39.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 309
+        x: 64
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -403,11 +949,74 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: FlamePea_4.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72019eb0cf67f06b0800000000000000
+      internalID: -5327909009252347865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePea_40.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 122718740205d99f0800000000000000
+      internalID: -460123487353081311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePea_42.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2c84f92f92dd8e90800000000000000
+      internalID: -7021724662955209686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: FlamePea_43.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 275
+        x: 128
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -427,8 +1036,8 @@ TextureImporter:
       name: FlamePea_44.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 241
+        x: 160
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -445,11 +1054,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: FlamePea_45.png
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cb356d4360d756d0800000000000000
+      internalID: -3001701501700326455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: FlamePea_47.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 207
+        x: 224
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -466,11 +1096,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: FlamePea_5.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d038685230cf2ed70800000000000000
+      internalID: 9071089689922274061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: FlamePea_50.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 173
+        x: 96
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -487,517 +1138,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FlamePea_31.png
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 155
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 601d2025063b3dfc0800000000000000
-      internalID: -3471233661498371834
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FlamePea_32.png
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 137
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 560e2dbc0271bf390800000000000000
-      internalID: -7783602101353783195
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FlamePea_42.png
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 120
-        width: 32
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a2c84f92f92dd8e90800000000000000
-      internalID: -7021724662955209686
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FlamePea_45.png
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 103
-        width: 32
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9cb356d4360d756d0800000000000000
-      internalID: -3001701501700326455
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FlamePea_11.png
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 69
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3fa6e02915cdcc2a0800000000000000
-      internalID: -6715750701415372045
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FlamePea_14.png
-      rect:
-        serializedVersion: 2
-        x: 19
-        y: 69
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 10dcc8a54213832e0800000000000000
-      internalID: -2145911190234280703
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FlamePea_15.png
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 35
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f75bd0472422b7720800000000000000
-      internalID: 2844905258424841599
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FlamePea_16.png
-      rect:
-        serializedVersion: 2
-        x: 19
-        y: 35
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a6851a8dfb81fe920800000000000000
-      internalID: 3021661087241164906
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FlamePea_17.png
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 1
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b231c4fae645a4310800000000000000
-      internalID: 1390016269361353515
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FlamePea_8.png
-      rect:
-        serializedVersion: 2
-        x: 19
-        y: 1
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f3c532faebbcb3d30800000000000000
-      internalID: 4412344279782087743
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FlamePea_12.png
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 479
-        width: 8
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 131ca8119327e1780800000000000000
-      internalID: -8710399039854952143
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FlamePea_18.png
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 445
-        width: 8
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d9472ae5f4a741010800000000000000
-      internalID: 1158685485449770141
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FlamePea_19.png
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 411
-        width: 8
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: db9a3b2ac1fdac3c0800000000000000
-      internalID: -4338409976936289859
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FlamePea_20.png
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 377
-        width: 8
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6a0dfa9b2018e32a0800000000000000
-      internalID: -6755820542303940442
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FlamePea_34.png
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 343
-        width: 8
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cb71cc28da49ab270800000000000000
-      internalID: 8267083538936633276
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FlamePea_35.png
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 309
-        width: 8
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7fa8c84cffa1c3340800000000000000
-      internalID: 4844776984960338679
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FlamePea_22.png
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 285
-        width: 16
-        height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 72ec2704a200f9890800000000000000
-      internalID: -7449235077177618905
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FlamePea_23.png
-      rect:
-        serializedVersion: 2
-        x: 45
-        y: 489
-        width: 16
-        height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b99a6ad869d53aba0800000000000000
-      internalID: -6078912170817050213
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FlamePea_10.png
-      rect:
-        serializedVersion: 2
-        x: 45
-        y: 468
-        width: 16
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7fa60da4a49cde8c0800000000000000
-      internalID: -3968294375723603209
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FlamePea_9.png
-      rect:
-        serializedVersion: 2
-        x: 45
-        y: 447
-        width: 16
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9dd627825e508fb90800000000000000
-      internalID: -7208004721822241319
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FlamePea_21.png
-      rect:
-        serializedVersion: 2
-        x: 45
-        y: 439
-        width: 16
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e1bef3c3d996e0910800000000000000
-      internalID: 1805496624663751454
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FlamePea_24.png
-      rect:
-        serializedVersion: 2
-        x: 45
-        y: 431
-        width: 16
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ca3ff9fe92e3531b0800000000000000
-      internalID: -5677563405395823700
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FlamePea_1.png
-      rect:
-        serializedVersion: 2
-        x: 45
-        y: 426
-        width: 10
-        height: 3
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 950198c1f3339b9b0800000000000000
-      internalID: -5063959959846711207
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FlamePea_2.png
-      rect:
-        serializedVersion: 2
-        x: 45
-        y: 421
-        width: 10
-        height: 3
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 11d89ba6b04e2aae0800000000000000
-      internalID: -1539417384920969967
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: FlamePea_6.png
       rect:
         serializedVersion: 2
-        x: 45
-        y: 416
-        width: 10
-        height: 3
+        x: 96
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1015,10 +1162,10 @@ TextureImporter:
       name: FlamePea_7.png
       rect:
         serializedVersion: 2
-        x: 45
-        y: 411
-        width: 10
-        height: 3
+        x: 96
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1033,12 +1180,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FlamePea_40.png
+      name: FlamePea_8.png
       rect:
         serializedVersion: 2
-        x: 45
-        y: 377
-        width: 8
+        x: 96
+        y: 0
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1047,20 +1194,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 122718740205d99f0800000000000000
-      internalID: -460123487353081311
+      spriteID: f3c532faebbcb3d30800000000000000
+      internalID: 4412344279782087743
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FlamePea_13.png
+      name: FlamePea_9.png
       rect:
         serializedVersion: 2
-        x: 45
-        y: 344
-        width: 8
-        height: 31
+        x: 128
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1068,155 +1215,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 239cc60d56d170340800000000000000
-      internalID: 4829861448503839026
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FlamePea_4.png
-      rect:
-        serializedVersion: 2
-        x: 45
-        y: 316
-        width: 8
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 72019eb0cf67f06b0800000000000000
-      internalID: -5327909009252347865
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FlamePea_5.png
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 257
-        width: 8
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d038685230cf2ed70800000000000000
-      internalID: 9071089689922274061
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FlamePea_3.png
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 230
-        width: 8
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 908e86b3a2a612d40800000000000000
-      internalID: 5557840144769804297
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FlamePea_26.png
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 219
-        width: 8
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1a95db0ed8518b170800000000000000
-      internalID: 8194323221105695137
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FlamePea_27.png
-      rect:
-        serializedVersion: 2
-        x: 37
-        y: 208
-        width: 8
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 75506a1e8ff43a590800000000000000
-      internalID: -7664194210498214569
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FlamePea_25.png
-      rect:
-        serializedVersion: 2
-        x: 45
-        y: 275
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e37ad058fec4928c0800000000000000
-      internalID: -4023600200465668290
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FlamePea_28.png
-      rect:
-        serializedVersion: 2
-        x: 53
-        y: 306
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 049958120d38cf2d0800000000000000
-      internalID: -3243572701674759872
+      spriteID: 9dd627825e508fb90800000000000000
+      internalID: -7208004721822241319
       vertices: []
       indices: 
       edges: []
@@ -1225,9 +1225,9 @@ TextureImporter:
       name: FlamePea_29.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 479
-        width: 8
+        x: 0
+        y: 128
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1246,10 +1246,10 @@ TextureImporter:
       name: FlamePea_48.png
       rect:
         serializedVersion: 2
-        x: 45
-        y: 439
-        width: 16
-        height: 6
+        x: 192
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1267,10 +1267,10 @@ TextureImporter:
       name: FlamePea_49.png
       rect:
         serializedVersion: 2
-        x: 45
-        y: 431
-        width: 16
-        height: 6
+        x: 32
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1288,10 +1288,10 @@ TextureImporter:
       name: FlamePea_41.png
       rect:
         serializedVersion: 2
-        x: 45
-        y: 275
-        width: 8
-        height: 8
+        x: 32
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1309,10 +1309,10 @@ TextureImporter:
       name: FlamePea_46.png
       rect:
         serializedVersion: 2
-        x: 53
-        y: 306
-        width: 8
-        height: 8
+        x: 32
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

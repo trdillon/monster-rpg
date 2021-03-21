@@ -3,29 +3,8 @@ guid: 1cb4e54261399bf439e41a29682c37ed
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2428838504513056321
-    second: Roof_GreyTile_45.png
-  - first:
-      213: -4085459860762313377
-    second: Roof_GreyTile_46.png
-  - first:
-      213: 2372732005087559739
-    second: Roof_GreyTile_25.png
-  - first:
-      213: -6008324180729905232
-    second: Roof_GreyTile_26.png
-  - first:
-      213: -6127777670135553727
-    second: Roof_GreyTile_35.png
-  - first:
-      213: 7748612374612502441
-    second: Roof_GreyTile_36.png
-  - first:
-      213: 4779466619931736047
-    second: Roof_GreyTile_19.png
-  - first:
-      213: -4998572052693342643
-    second: Roof_GreyTile_21.png
+      213: -8850638687454778479
+    second: Roof_GreyTile_1.png
   - first:
       213: -6696833799146826933
     second: Roof_GreyTile_10.png
@@ -36,50 +15,59 @@ TextureImporter:
       213: -6671794442548984874
     second: Roof_GreyTile_12.png
   - first:
-      213: 6485772366686888119
-    second: Roof_GreyTile_27.png
+      213: 4992557576800278360
+    second: Roof_GreyTile_13.png
   - first:
-      213: 9192440903447666972
-    second: Roof_GreyTile_29.png
+      213: -4016076367425263650
+    second: Roof_GreyTile_14.png
   - first:
-      213: -3366462202207445579
-    second: Roof_GreyTile_47.png
+      213: 4292331019278849147
+    second: Roof_GreyTile_15.png
   - first:
-      213: 5445141847630490494
-    second: Roof_GreyTile_48.png
+      213: 4584914999879464864
+    second: Roof_GreyTile_16.png
   - first:
-      213: 253822491252419315
-    second: Roof_GreyTile_53.png
+      213: 6773197058756916728
+    second: Roof_GreyTile_17.png
   - first:
-      213: -2131473398968775138
-    second: Roof_GreyTile_58.png
+      213: 5590215157708186745
+    second: Roof_GreyTile_18.png
+  - first:
+      213: 4779466619931736047
+    second: Roof_GreyTile_19.png
+  - first:
+      213: -7660936071402576871
+    second: Roof_GreyTile_2.png
   - first:
       213: 1876991704263871641
     second: Roof_GreyTile_20.png
   - first:
-      213: -8902594251078723234
-    second: Roof_GreyTile_4.png
+      213: -4998572052693342643
+    second: Roof_GreyTile_21.png
   - first:
-      213: 4740024973474730222
-    second: Roof_GreyTile_5.png
+      213: 4076877722307789106
+    second: Roof_GreyTile_22.png
   - first:
-      213: -5956598138551743065
-    second: Roof_GreyTile_6.png
+      213: -5897981262621068767
+    second: Roof_GreyTile_23.png
   - first:
-      213: 5510765067651261166
-    second: Roof_GreyTile_7.png
+      213: 7917449550063486597
+    second: Roof_GreyTile_24.png
   - first:
-      213: -3752153026868162821
-    second: Roof_GreyTile_8.png
+      213: 2372732005087559739
+    second: Roof_GreyTile_25.png
   - first:
-      213: -3283586277285462126
-    second: Roof_GreyTile_9.png
+      213: -6008324180729905232
+    second: Roof_GreyTile_26.png
   - first:
-      213: -8850638687454778479
-    second: Roof_GreyTile_1.png
+      213: 6485772366686888119
+    second: Roof_GreyTile_27.png
   - first:
-      213: -7660936071402576871
-    second: Roof_GreyTile_2.png
+      213: 5345248285650667564
+    second: Roof_GreyTile_28.png
+  - first:
+      213: 9192440903447666972
+    second: Roof_GreyTile_29.png
   - first:
       213: -538962388348807213
     second: Roof_GreyTile_3.png
@@ -90,36 +78,6 @@ TextureImporter:
       213: 5831510217028261224
     second: Roof_GreyTile_31.png
   - first:
-      213: 5345248285650667564
-    second: Roof_GreyTile_28.png
-  - first:
-      213: 4992557576800278360
-    second: Roof_GreyTile_13.png
-  - first:
-      213: 4292331019278849147
-    second: Roof_GreyTile_15.png
-  - first:
-      213: -4016076367425263650
-    second: Roof_GreyTile_14.png
-  - first:
-      213: 4584914999879464864
-    second: Roof_GreyTile_16.png
-  - first:
-      213: 6773197058756916728
-    second: Roof_GreyTile_17.png
-  - first:
-      213: 4076877722307789106
-    second: Roof_GreyTile_22.png
-  - first:
-      213: 7917449550063486597
-    second: Roof_GreyTile_24.png
-  - first:
-      213: 5590215157708186745
-    second: Roof_GreyTile_18.png
-  - first:
-      213: -5897981262621068767
-    second: Roof_GreyTile_23.png
-  - first:
       213: -7966321656631944480
     second: Roof_GreyTile_32.png
   - first:
@@ -129,8 +87,17 @@ TextureImporter:
       213: -6611258904037706101
     second: Roof_GreyTile_34.png
   - first:
+      213: -6127777670135553727
+    second: Roof_GreyTile_35.png
+  - first:
+      213: 7748612374612502441
+    second: Roof_GreyTile_36.png
+  - first:
       213: 4672575753349918018
     second: Roof_GreyTile_39.png
+  - first:
+      213: -8902594251078723234
+    second: Roof_GreyTile_4.png
   - first:
       213: 4823358520349788203
     second: Roof_GreyTile_40.png
@@ -147,8 +114,23 @@ TextureImporter:
       213: 8995960322082591141
     second: Roof_GreyTile_44.png
   - first:
+      213: -2428838504513056321
+    second: Roof_GreyTile_45.png
+  - first:
+      213: -4085459860762313377
+    second: Roof_GreyTile_46.png
+  - first:
+      213: -3366462202207445579
+    second: Roof_GreyTile_47.png
+  - first:
+      213: 5445141847630490494
+    second: Roof_GreyTile_48.png
+  - first:
       213: -1848887723187050006
     second: Roof_GreyTile_49.png
+  - first:
+      213: 4740024973474730222
+    second: Roof_GreyTile_5.png
   - first:
       213: 6972401800820905874
     second: Roof_GreyTile_50.png
@@ -158,6 +140,9 @@ TextureImporter:
   - first:
       213: 4694011501538013961
     second: Roof_GreyTile_52.png
+  - first:
+      213: 253822491252419315
+    second: Roof_GreyTile_53.png
   - first:
       213: 4500430898171316790
     second: Roof_GreyTile_54.png
@@ -170,6 +155,21 @@ TextureImporter:
   - first:
       213: -5646614816608806716
     second: Roof_GreyTile_57.png
+  - first:
+      213: -2131473398968775138
+    second: Roof_GreyTile_58.png
+  - first:
+      213: -5956598138551743065
+    second: Roof_GreyTile_6.png
+  - first:
+      213: 5510765067651261166
+    second: Roof_GreyTile_7.png
+  - first:
+      213: -3752153026868162821
+    second: Roof_GreyTile_8.png
+  - first:
+      213: -3283586277285462126
+    second: Roof_GreyTile_9.png
   - first:
       213: -6788383422629895589
     second: Roof_GreyTile_37.png
@@ -301,13 +301,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Roof_GreyTile_45.png
+      name: Roof_GreyTile_1.png
       rect:
         serializedVersion: 2
-        x: 2
-        y: 253
-        width: 3
-        height: 1
+        x: 0
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -315,155 +315,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fb155b9af380b4ed0800000000000000
-      internalID: -2428838504513056321
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Roof_GreyTile_46.png
-      rect:
-        serializedVersion: 2
-        x: 9
-        y: 253
-        width: 3
-        height: 1
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f5d352ff6e78d47c0800000000000000
-      internalID: -4085459860762313377
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Roof_GreyTile_25.png
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 245
-        width: 15
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b30c176ff23ade020800000000000000
-      internalID: 2372732005087559739
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Roof_GreyTile_26.png
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 245
-        width: 15
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0bf3438bdf42e9ca0800000000000000
-      internalID: -6008324180729905232
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Roof_GreyTile_35.png
-      rect:
-        serializedVersion: 2
-        x: 54
-        y: 241
-        width: 13
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 141eff4eca2c5faa0800000000000000
-      internalID: -6127777670135553727
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Roof_GreyTile_36.png
-      rect:
-        serializedVersion: 2
-        x: 71
-        y: 241
-        width: 13
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9a769fa96e9988b60800000000000000
-      internalID: 7748612374612502441
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Roof_GreyTile_19.png
-      rect:
-        serializedVersion: 2
-        x: 88
-        y: 240
-        width: 27
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fe73ed07193145240800000000000000
-      internalID: 4779466619931736047
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Roof_GreyTile_21.png
-      rect:
-        serializedVersion: 2
-        x: 119
-        y: 240
-        width: 27
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d46a40f933181aab0800000000000000
-      internalID: -4998572052693342643
+      spriteID: 19bade6a1073c2580800000000000000
+      internalID: -8850638687454778479
       vertices: []
       indices: 
       edges: []
@@ -472,10 +325,10 @@ TextureImporter:
       name: Roof_GreyTile_10.png
       rect:
         serializedVersion: 2
-        x: 150
-        y: 235
-        width: 26
-        height: 19
+        x: 0
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -493,10 +346,10 @@ TextureImporter:
       name: Roof_GreyTile_11.png
       rect:
         serializedVersion: 2
-        x: 180
-        y: 235
+        x: 0
+        y: 160
         width: 32
-        height: 19
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -514,10 +367,10 @@ TextureImporter:
       name: Roof_GreyTile_12.png
       rect:
         serializedVersion: 2
-        x: 216
-        y: 235
-        width: 26
-        height: 19
+        x: 0
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -532,412 +385,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roof_GreyTile_27.png
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 222
-        width: 32
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7b0aa6aba97120a50800000000000000
-      internalID: 6485772366686888119
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Roof_GreyTile_29.png
-      rect:
-        serializedVersion: 2
-        x: 38
-        y: 218
-        width: 32
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c11e4cc4c4c129f70800000000000000
-      internalID: 9192440903447666972
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Roof_GreyTile_47.png
-      rect:
-        serializedVersion: 2
-        x: 74
-        y: 217
-        width: 29
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5bd55af967ce741d0800000000000000
-      internalID: -3366462202207445579
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Roof_GreyTile_48.png
-      rect:
-        serializedVersion: 2
-        x: 107
-        y: 217
-        width: 29
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e7b21ab29a7019b40800000000000000
-      internalID: 5445141847630490494
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Roof_GreyTile_53.png
-      rect:
-        serializedVersion: 2
-        x: 140
-        y: 212
-        width: 32
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3faea130632c58300800000000000000
-      internalID: 253822491252419315
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Roof_GreyTile_58.png
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 212
-        width: 32
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e1e85469c3c7b62e0800000000000000
-      internalID: -2131473398968775138
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Roof_GreyTile_20.png
-      rect:
-        serializedVersion: 2
-        x: 212
-        y: 208
-        width: 32
-        height: 23
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 99cc003a20a6c0a10800000000000000
-      internalID: 1876991704263871641
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Roof_GreyTile_4.png
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 194
-        width: 32
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e59940552b1a37480800000000000000
-      internalID: -8902594251078723234
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Roof_GreyTile_5.png
-      rect:
-        serializedVersion: 2
-        x: 38
-        y: 190
-        width: 32
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ee011728993f7c140800000000000000
-      internalID: 4740024973474730222
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Roof_GreyTile_6.png
-      rect:
-        serializedVersion: 2
-        x: 74
-        y: 189
-        width: 32
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7adced96d89e55da0800000000000000
-      internalID: -5956598138551743065
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Roof_GreyTile_7.png
-      rect:
-        serializedVersion: 2
-        x: 110
-        y: 188
-        width: 26
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ee22cf9b1ab2a7c40800000000000000
-      internalID: 5510765067651261166
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Roof_GreyTile_8.png
-      rect:
-        serializedVersion: 2
-        x: 140
-        y: 183
-        width: 32
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bfecd9aa3bcadebc0800000000000000
-      internalID: -3752153026868162821
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Roof_GreyTile_9.png
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 183
-        width: 26
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 29f7d019dab5e62d0800000000000000
-      internalID: -3283586277285462126
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Roof_GreyTile_1.png
-      rect:
-        serializedVersion: 2
-        x: 206
-        y: 178
-        width: 32
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 19bade6a1073c2580800000000000000
-      internalID: -8850638687454778479
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Roof_GreyTile_2.png
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 164
-        width: 32
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 914a2118b33eea590800000000000000
-      internalID: -7660936071402576871
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Roof_GreyTile_3.png
-      rect:
-        serializedVersion: 2
-        x: 38
-        y: 160
-        width: 32
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3d75c2730983588f0800000000000000
-      internalID: -538962388348807213
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Roof_GreyTile_30.png
-      rect:
-        serializedVersion: 2
-        x: 74
-        y: 159
-        width: 29
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: df225d74252818ec0800000000000000
-      internalID: -3566426139996642563
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Roof_GreyTile_31.png
-      rect:
-        serializedVersion: 2
-        x: 107
-        y: 158
-        width: 29
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 865d70e45afade050800000000000000
-      internalID: 5831510217028261224
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Roof_GreyTile_28.png
-      rect:
-        serializedVersion: 2
-        x: 140
-        y: 151
-        width: 32
-        height: 28
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c284976def22e2a40800000000000000
-      internalID: 5345248285650667564
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Roof_GreyTile_13.png
       rect:
         serializedVersion: 2
-        x: 176
-        y: 148
-        width: 18
-        height: 31
+        x: 0
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -952,32 +406,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roof_GreyTile_15.png
-      rect:
-        serializedVersion: 2
-        x: 198
-        y: 143
-        width: 18
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b74918ef15c619b30800000000000000
-      internalID: 4292331019278849147
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Roof_GreyTile_14.png
       rect:
         serializedVersion: 2
-        x: 220
-        y: 142
+        x: 0
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -994,11 +427,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Roof_GreyTile_15.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b74918ef15c619b30800000000000000
+      internalID: 4292331019278849147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Roof_GreyTile_16.png
       rect:
         serializedVersion: 2
-        x: 2
-        y: 128
+        x: 0
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -1018,8 +472,8 @@ TextureImporter:
       name: Roof_GreyTile_17.png
       rect:
         serializedVersion: 2
-        x: 38
-        y: 124
+        x: 32
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -1036,53 +490,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roof_GreyTile_22.png
-      rect:
-        serializedVersion: 2
-        x: 74
-        y: 123
-        width: 27
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2310cde20baf39830800000000000000
-      internalID: 4076877722307789106
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Roof_GreyTile_24.png
-      rect:
-        serializedVersion: 2
-        x: 105
-        y: 122
-        width: 27
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5864c96da6e60ed60800000000000000
-      internalID: 7917449550063486597
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Roof_GreyTile_18.png
       rect:
         serializedVersion: 2
-        x: 136
-        y: 115
+        x: 64
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -1099,11 +511,116 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Roof_GreyTile_19.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe73ed07193145240800000000000000
+      internalID: 4779466619931736047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roof_GreyTile_2.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 914a2118b33eea590800000000000000
+      internalID: -7660936071402576871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roof_GreyTile_20.png
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99cc003a20a6c0a10800000000000000
+      internalID: 1876991704263871641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roof_GreyTile_21.png
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d46a40f933181aab0800000000000000
+      internalID: -4998572052693342643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roof_GreyTile_22.png
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2310cde20baf39830800000000000000
+      internalID: 4076877722307789106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Roof_GreyTile_23.png
       rect:
         serializedVersion: 2
-        x: 172
-        y: 107
+        x: 32
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -1120,11 +637,200 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Roof_GreyTile_24.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5864c96da6e60ed60800000000000000
+      internalID: 7917449550063486597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roof_GreyTile_25.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b30c176ff23ade020800000000000000
+      internalID: 2372732005087559739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roof_GreyTile_26.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bf3438bdf42e9ca0800000000000000
+      internalID: -6008324180729905232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roof_GreyTile_27.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b0aa6aba97120a50800000000000000
+      internalID: 6485772366686888119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roof_GreyTile_28.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c284976def22e2a40800000000000000
+      internalID: 5345248285650667564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roof_GreyTile_29.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c11e4cc4c4c129f70800000000000000
+      internalID: 9192440903447666972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roof_GreyTile_3.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d75c2730983588f0800000000000000
+      internalID: -538962388348807213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roof_GreyTile_30.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df225d74252818ec0800000000000000
+      internalID: -3566426139996642563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roof_GreyTile_31.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 865d70e45afade050800000000000000
+      internalID: 5831510217028261224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Roof_GreyTile_32.png
       rect:
         serializedVersion: 2
-        x: 208
-        y: 106
+        x: 160
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -1144,8 +850,8 @@ TextureImporter:
       name: Roof_GreyTile_33.png
       rect:
         serializedVersion: 2
-        x: 2
-        y: 92
+        x: 192
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -1165,8 +871,8 @@ TextureImporter:
       name: Roof_GreyTile_34.png
       rect:
         serializedVersion: 2
-        x: 38
-        y: 88
+        x: 224
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -1183,12 +889,54 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Roof_GreyTile_35.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 141eff4eca2c5faa0800000000000000
+      internalID: -6127777670135553727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roof_GreyTile_36.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a769fa96e9988b60800000000000000
+      internalID: 7748612374612502441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Roof_GreyTile_39.png
       rect:
         serializedVersion: 2
-        x: 74
-        y: 87
-        width: 25
+        x: 64
+        y: 96
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1204,12 +952,33 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Roof_GreyTile_4.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e59940552b1a37480800000000000000
+      internalID: -8902594251078723234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Roof_GreyTile_40.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 86
-        width: 25
+        x: 64
+        y: 32
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1228,9 +997,9 @@ TextureImporter:
       name: Roof_GreyTile_41.png
       rect:
         serializedVersion: 2
-        x: 132
-        y: 79
-        width: 25
+        x: 64
+        y: 0
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1249,9 +1018,9 @@ TextureImporter:
       name: Roof_GreyTile_42.png
       rect:
         serializedVersion: 2
-        x: 161
-        y: 71
-        width: 25
+        x: 96
+        y: 160
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1270,9 +1039,9 @@ TextureImporter:
       name: Roof_GreyTile_43.png
       rect:
         serializedVersion: 2
-        x: 190
-        y: 70
-        width: 25
+        x: 128
+        y: 160
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1291,9 +1060,9 @@ TextureImporter:
       name: Roof_GreyTile_44.png
       rect:
         serializedVersion: 2
-        x: 219
-        y: 70
-        width: 25
+        x: 160
+        y: 160
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1309,11 +1078,95 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Roof_GreyTile_45.png
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb155b9af380b4ed0800000000000000
+      internalID: -2428838504513056321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roof_GreyTile_46.png
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5d352ff6e78d47c0800000000000000
+      internalID: -4085459860762313377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roof_GreyTile_47.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bd55af967ce741d0800000000000000
+      internalID: -3366462202207445579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roof_GreyTile_48.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7b21ab29a7019b40800000000000000
+      internalID: 5445141847630490494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Roof_GreyTile_49.png
       rect:
         serializedVersion: 2
-        x: 2
-        y: 56
+        x: 96
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -1330,11 +1183,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Roof_GreyTile_5.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee011728993f7c140800000000000000
+      internalID: 4740024973474730222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Roof_GreyTile_50.png
       rect:
         serializedVersion: 2
-        x: 38
-        y: 52
+        x: 96
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -1354,9 +1228,9 @@ TextureImporter:
       name: Roof_GreyTile_51.png
       rect:
         serializedVersion: 2
-        x: 74
-        y: 50
-        width: 29
+        x: 128
+        y: 128
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1375,9 +1249,9 @@ TextureImporter:
       name: Roof_GreyTile_52.png
       rect:
         serializedVersion: 2
-        x: 107
-        y: 43
-        width: 31
+        x: 160
+        y: 128
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1393,12 +1267,33 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Roof_GreyTile_53.png
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3faea130632c58300800000000000000
+      internalID: 253822491252419315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Roof_GreyTile_54.png
       rect:
         serializedVersion: 2
-        x: 142
-        y: 35
-        width: 26
+        x: 224
+        y: 128
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1417,9 +1312,9 @@ TextureImporter:
       name: Roof_GreyTile_55.png
       rect:
         serializedVersion: 2
-        x: 172
-        y: 34
-        width: 31
+        x: 128
+        y: 96
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1438,8 +1333,8 @@ TextureImporter:
       name: Roof_GreyTile_56.png
       rect:
         serializedVersion: 2
-        x: 207
-        y: 34
+        x: 128
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -1459,8 +1354,8 @@ TextureImporter:
       name: Roof_GreyTile_57.png
       rect:
         serializedVersion: 2
-        x: 2
-        y: 20
+        x: 128
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -1477,13 +1372,118 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Roof_GreyTile_58.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1e85469c3c7b62e0800000000000000
+      internalID: -2131473398968775138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roof_GreyTile_6.png
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7adced96d89e55da0800000000000000
+      internalID: -5956598138551743065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roof_GreyTile_7.png
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee22cf9b1ab2a7c40800000000000000
+      internalID: 5510765067651261166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roof_GreyTile_8.png
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfecd9aa3bcadebc0800000000000000
+      internalID: -3752153026868162821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roof_GreyTile_9.png
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29f7d019dab5e62d0800000000000000
+      internalID: -3283586277285462126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Roof_GreyTile_37.png
       rect:
         serializedVersion: 2
-        x: 54
-        y: 241
-        width: 13
-        height: 13
+        x: 64
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1501,10 +1501,10 @@ TextureImporter:
       name: Roof_GreyTile_38.png
       rect:
         serializedVersion: 2
-        x: 71
-        y: 241
-        width: 13
-        height: 13
+        x: 64
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

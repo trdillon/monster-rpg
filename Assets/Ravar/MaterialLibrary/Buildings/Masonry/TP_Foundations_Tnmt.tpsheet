@@ -9,19 +9,19 @@
 #
 :format=40300
 :texture=SS_Foundations_Tnmt.png
-:size=256x128
+:size=64x256
 :pivotpoints=enabled
 :borders=disabled
 
-Foundations_1.png;1;95;32;32; 0.5;0.5; 0;0;0;0
-Foundations_10.png;35;95;32;32; 0.5;0.5; 0;0;0;0
-Foundations_11.png;69;95;32;32; 0.5;0.5; 0;0;0;0
-Foundations_12.png;103;95;32;32; 0.5;0.5; 0;0;0;0
-Foundations_2.png;137;95;32;32; 0.5;0.5; 0;0;0;0
-Foundations_3.png;171;95;32;32; 0.5;0.5; 0;0;0;0
-Foundations_4.png;205;95;32;32; 0.5;0.5; 0;0;0;0
-Foundations_5.png;1;61;32;32; 0.5;0.5; 0;0;0;0
-Foundations_6.png;35;61;32;32; 0.5;0.5; 0;0;0;0
-Foundations_7.png;69;61;32;32; 0.5;0.5; 0;0;0;0
-Foundations_8.png;103;61;32;32; 0.5;0.5; 0;0;0;0
-Foundations_9.png;137;61;32;32; 0.5;0.5; 0;0;0;0
+Foundations_1.png;0;224;32;32; 0.5;0.5; 0;0;0;0
+Foundations_10.png;0;192;32;32; 0.5;0.5; 0;0;0;0
+Foundations_11.png;0;160;32;32; 0.5;0.5; 0;0;0;0
+Foundations_12.png;0;128;32;32; 0.5;0.5; 0;0;0;0
+Foundations_2.png;0;96;32;32; 0.5;0.5; 0;0;0;0
+Foundations_3.png;0;64;32;32; 0.5;0.5; 0;0;0;0
+Foundations_4.png;0;32;32;32; 0.5;0.5; 0;0;0;0
+Foundations_5.png;0;0;32;32; 0.5;0.5; 0;0;0;0
+Foundations_6.png;32;224;32;32; 0.5;0.5; 0;0;0;0
+Foundations_7.png;32;192;32;32; 0.5;0.5; 0;0;0;0
+Foundations_8.png;32;160;32;32; 0.5;0.5; 0;0;0;0
+Foundations_9.png;32;128;32;32; 0.5;0.5; 0;0;0;0

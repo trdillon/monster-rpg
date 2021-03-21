@@ -3,8 +3,14 @@ guid: 6bec631dc3ecd8f43b8f3b44dcd96035
 TextureImporter:
   internalIDToNameTable:
   - first:
+      213: 4757202942649167431
+    second: Cigar_1.png
+  - first:
       213: -4070766160309606849
     second: Cigar_10.png
+  - first:
+      213: -5912977235379892702
+    second: Cigar_11.png
   - first:
       213: 3533344112763126589
     second: Cigar_12.png
@@ -14,6 +20,27 @@ TextureImporter:
   - first:
       213: 4451054745854115832
     second: Cigar_14.png
+  - first:
+      213: 118399862668776736
+    second: Cigar_15.png
+  - first:
+      213: -4395451973197052415
+    second: Cigar_16.png
+  - first:
+      213: 5021781773556009578
+    second: Cigar_17.png
+  - first:
+      213: 7743044217927098929
+    second: Cigar_18.png
+  - first:
+      213: 310578273774023549
+    second: Cigar_19.png
+  - first:
+      213: 3111108112271244736
+    second: Cigar_2.png
+  - first:
+      213: -3530268291081035205
+    second: Cigar_20.png
   - first:
       213: -1400013774471681989
     second: Cigar_21.png
@@ -42,6 +69,9 @@ TextureImporter:
       213: 8090251890603181545
     second: Cigar_29.png
   - first:
+      213: -5952357059698333184
+    second: Cigar_3.png
+  - first:
       213: -3751833858139917119
     second: Cigar_30.png
   - first:
@@ -51,26 +81,11 @@ TextureImporter:
       213: 2190144599117765230
     second: Cigar_32.png
   - first:
+      213: 4160959277904192212
+    second: Cigar_33.png
+  - first:
       213: -1691986068616478790
     second: Cigar_34.png
-  - first:
-      213: -5348011660609597128
-    second: Cigar_37.png
-  - first:
-      213: 3730382095484839975
-    second: Cigar_6.png
-  - first:
-      213: -3594293775583380573
-    second: Cigar_7.png
-  - first:
-      213: -9090321493698967653
-    second: Cigar_9.png
-  - first:
-      213: 118399862668776736
-    second: Cigar_15.png
-  - first:
-      213: -3530268291081035205
-    second: Cigar_20.png
   - first:
       213: 5870178804837136622
     second: Cigar_35.png
@@ -78,44 +93,29 @@ TextureImporter:
       213: -3487558452807278500
     second: Cigar_36.png
   - first:
-      213: 5021781773556009578
-    second: Cigar_17.png
-  - first:
-      213: 7743044217927098929
-    second: Cigar_18.png
-  - first:
-      213: 4160959277904192212
-    second: Cigar_33.png
+      213: -5348011660609597128
+    second: Cigar_37.png
   - first:
       213: -8366023178975489395
     second: Cigar_38.png
   - first:
-      213: -4395451973197052415
-    second: Cigar_16.png
-  - first:
-      213: 310578273774023549
-    second: Cigar_19.png
-  - first:
-      213: -5912977235379892702
-    second: Cigar_11.png
+      213: -6540247935925362157
+    second: Cigar_4.png
   - first:
       213: -2187978584950531504
     second: Cigar_5.png
   - first:
+      213: 3730382095484839975
+    second: Cigar_6.png
+  - first:
+      213: -3594293775583380573
+    second: Cigar_7.png
+  - first:
       213: 9052327966409103181
     second: Cigar_8.png
   - first:
-      213: 4757202942649167431
-    second: Cigar_1.png
-  - first:
-      213: 3111108112271244736
-    second: Cigar_2.png
-  - first:
-      213: -5952357059698333184
-    second: Cigar_3.png
-  - first:
-      213: -6540247935925362157
-    second: Cigar_4.png
+      213: -9090321493698967653
+    second: Cigar_9.png
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -241,11 +241,32 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+      name: Cigar_1.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74eeb012fdaf40240800000000000000
+      internalID: 4757202942649167431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Cigar_10.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 223
+        x: 0
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -262,11 +283,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Cigar_11.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22ec5306882e0fda0800000000000000
+      internalID: -5912977235379892702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Cigar_12.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 223
+        x: 0
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -286,8 +328,8 @@ TextureImporter:
       name: Cigar_13.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 223
+        x: 0
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -307,8 +349,8 @@ TextureImporter:
       name: Cigar_14.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 223
+        x: 0
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -325,11 +367,158 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Cigar_15.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 025d3db3c04a4a100800000000000000
+      internalID: 118399862668776736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigar_16.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 106cc4ee7b73003c0800000000000000
+      internalID: -4395451973197052415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigar_17.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6a4650aae3f0b540800000000000000
+      internalID: 5021781773556009578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigar_18.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 132efa911b1d47b60800000000000000
+      internalID: 7743044217927098929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigar_19.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7331436b456f4400800000000000000
+      internalID: 310578273774023549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigar_2.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cd73c14850ec2b20800000000000000
+      internalID: 3111108112271244736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigar_20.png
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b322a4481b7f10fc0800000000000000
+      internalID: -3530268291081035205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Cigar_21.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 223
+        x: 192
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -349,8 +538,8 @@ TextureImporter:
       name: Cigar_22.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 223
+        x: 224
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -370,8 +559,8 @@ TextureImporter:
       name: Cigar_23.png
       rect:
         serializedVersion: 2
-        x: 205
-        y: 223
+        x: 32
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -391,8 +580,8 @@ TextureImporter:
       name: Cigar_24.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 189
+        x: 32
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -412,8 +601,8 @@ TextureImporter:
       name: Cigar_25.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 189
+        x: 32
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -433,8 +622,8 @@ TextureImporter:
       name: Cigar_26.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 189
+        x: 32
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -454,8 +643,8 @@ TextureImporter:
       name: Cigar_27.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 189
+        x: 32
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -475,8 +664,8 @@ TextureImporter:
       name: Cigar_28.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 189
+        x: 32
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -496,8 +685,8 @@ TextureImporter:
       name: Cigar_29.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 189
+        x: 32
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -514,11 +703,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Cigar_3.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00a64688acaf46da0800000000000000
+      internalID: -5952357059698333184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Cigar_30.png
       rect:
         serializedVersion: 2
-        x: 205
-        y: 189
+        x: 96
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -538,8 +748,8 @@ TextureImporter:
       name: Cigar_31.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 155
+        x: 128
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -559,8 +769,8 @@ TextureImporter:
       name: Cigar_32.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 155
+        x: 160
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -577,11 +787,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Cigar_33.png
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d26854ea62beb930800000000000000
+      internalID: 4160959277904192212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Cigar_34.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 155
+        x: 224
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -598,11 +829,53 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Cigar_35.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee8385e7580177150800000000000000
+      internalID: 5870178804837136622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigar_36.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c50e207a014b99fc0800000000000000
+      internalID: -3487558452807278500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Cigar_37.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 155
+        x: 64
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -619,11 +892,74 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Cigar_38.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d825b7a6e3ae5eb80800000000000000
+      internalID: -8366023178975489395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigar_4.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 312ef2c672f5c35a0800000000000000
+      internalID: -6540247935925362157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigar_5.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05a9cd3c11db2a1e0800000000000000
+      internalID: -2187978584950531504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Cigar_6.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 155
+        x: 96
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -643,8 +979,8 @@ TextureImporter:
       name: Cigar_7.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 155
+        x: 128
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -661,285 +997,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cigar_9.png
-      rect:
-        serializedVersion: 2
-        x: 205
-        y: 155
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b9789f993c0b8d180800000000000000
-      internalID: -9090321493698967653
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cigar_15.png
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 122
-        width: 32
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 025d3db3c04a4a100800000000000000
-      internalID: 118399862668776736
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cigar_20.png
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 122
-        width: 32
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b322a4481b7f10fc0800000000000000
-      internalID: -3530268291081035205
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cigar_35.png
-      rect:
-        serializedVersion: 2
-        x: 69
-        y: 123
-        width: 32
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ee8385e7580177150800000000000000
-      internalID: 5870178804837136622
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cigar_36.png
-      rect:
-        serializedVersion: 2
-        x: 103
-        y: 123
-        width: 32
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c50e207a014b99fc0800000000000000
-      internalID: -3487558452807278500
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cigar_17.png
-      rect:
-        serializedVersion: 2
-        x: 137
-        y: 136
-        width: 32
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a6a4650aae3f0b540800000000000000
-      internalID: 5021781773556009578
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cigar_18.png
-      rect:
-        serializedVersion: 2
-        x: 171
-        y: 136
-        width: 32
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 132efa911b1d47b60800000000000000
-      internalID: 7743044217927098929
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cigar_33.png
-      rect:
-        serializedVersion: 2
-        x: 205
-        y: 137
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4d26854ea62beb930800000000000000
-      internalID: 4160959277904192212
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cigar_38.png
-      rect:
-        serializedVersion: 2
-        x: 205
-        y: 119
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d825b7a6e3ae5eb80800000000000000
-      internalID: -8366023178975489395
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cigar_16.png
-      rect:
-        serializedVersion: 2
-        x: 137
-        y: 119
-        width: 31
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 106cc4ee7b73003c0800000000000000
-      internalID: -4395451973197052415
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cigar_19.png
-      rect:
-        serializedVersion: 2
-        x: 170
-        y: 119
-        width: 31
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d7331436b456f4400800000000000000
-      internalID: 310578273774023549
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cigar_11.png
-      rect:
-        serializedVersion: 2
-        x: 69
-        y: 89
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 22ec5306882e0fda0800000000000000
-      internalID: -5912977235379892702
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cigar_5.png
-      rect:
-        serializedVersion: 2
-        x: 101
-        y: 89
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 05a9cd3c11db2a1e0800000000000000
-      internalID: -2187978584950531504
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Cigar_8.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 88
-        width: 30
+        x: 160
+        y: 160
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -955,12 +1018,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cigar_1.png
+      name: Cigar_9.png
       rect:
         serializedVersion: 2
-        x: 33
-        y: 88
-        width: 24
+        x: 192
+        y: 160
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -969,71 +1032,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 74eeb012fdaf40240800000000000000
-      internalID: 4757202942649167431
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cigar_2.png
-      rect:
-        serializedVersion: 2
-        x: 133
-        y: 85
-        width: 24
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0cd73c14850ec2b20800000000000000
-      internalID: 3111108112271244736
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cigar_3.png
-      rect:
-        serializedVersion: 2
-        x: 59
-        y: 55
-        width: 24
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 00a64688acaf46da0800000000000000
-      internalID: -5952357059698333184
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cigar_4.png
-      rect:
-        serializedVersion: 2
-        x: 85
-        y: 55
-        width: 24
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 312ef2c672f5c35a0800000000000000
-      internalID: -6540247935925362157
+      spriteID: b9789f993c0b8d180800000000000000
+      internalID: -9090321493698967653
       vertices: []
       indices: 
       edges: []

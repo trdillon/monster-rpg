@@ -328,8 +328,8 @@ TextureImporter:
       name: Pillars_1.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 479
+        x: 0
+        y: 480
         width: 32
         height: 32
       alignment: 0
@@ -349,8 +349,8 @@ TextureImporter:
       name: Pillars_10.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 479
+        x: 0
+        y: 448
         width: 32
         height: 32
       alignment: 0
@@ -370,8 +370,8 @@ TextureImporter:
       name: Pillars_11.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 479
+        x: 0
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -391,8 +391,8 @@ TextureImporter:
       name: Pillars_12.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 479
+        x: 0
+        y: 384
         width: 32
         height: 32
       alignment: 0
@@ -412,8 +412,8 @@ TextureImporter:
       name: Pillars_13.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 479
+        x: 0
+        y: 352
         width: 32
         height: 32
       alignment: 0
@@ -433,8 +433,8 @@ TextureImporter:
       name: Pillars_14.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 479
+        x: 0
+        y: 320
         width: 32
         height: 32
       alignment: 0
@@ -454,8 +454,8 @@ TextureImporter:
       name: Pillars_15.png
       rect:
         serializedVersion: 2
-        x: 205
-        y: 479
+        x: 0
+        y: 288
         width: 32
         height: 32
       alignment: 0
@@ -475,8 +475,8 @@ TextureImporter:
       name: Pillars_16.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 445
+        x: 0
+        y: 256
         width: 32
         height: 32
       alignment: 0
@@ -496,8 +496,8 @@ TextureImporter:
       name: Pillars_17.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 445
+        x: 0
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -517,8 +517,8 @@ TextureImporter:
       name: Pillars_18.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 445
+        x: 0
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -538,8 +538,8 @@ TextureImporter:
       name: Pillars_19.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 445
+        x: 0
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -559,8 +559,8 @@ TextureImporter:
       name: Pillars_2.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 445
+        x: 0
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -580,8 +580,8 @@ TextureImporter:
       name: Pillars_21.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 445
+        x: 0
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -601,8 +601,8 @@ TextureImporter:
       name: Pillars_22.png
       rect:
         serializedVersion: 2
-        x: 205
-        y: 445
+        x: 0
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -622,8 +622,8 @@ TextureImporter:
       name: Pillars_23.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 411
+        x: 0
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -643,8 +643,8 @@ TextureImporter:
       name: Pillars_24.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 411
+        x: 0
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -664,8 +664,8 @@ TextureImporter:
       name: Pillars_25.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 411
+        x: 32
+        y: 480
         width: 32
         height: 32
       alignment: 0
@@ -685,8 +685,8 @@ TextureImporter:
       name: Pillars_26.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 411
+        x: 32
+        y: 448
         width: 32
         height: 32
       alignment: 0
@@ -706,8 +706,8 @@ TextureImporter:
       name: Pillars_27.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 411
+        x: 32
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -727,8 +727,8 @@ TextureImporter:
       name: Pillars_28.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 411
+        x: 32
+        y: 384
         width: 32
         height: 32
       alignment: 0
@@ -748,8 +748,8 @@ TextureImporter:
       name: Pillars_29.png
       rect:
         serializedVersion: 2
-        x: 205
-        y: 411
+        x: 32
+        y: 352
         width: 32
         height: 32
       alignment: 0
@@ -769,8 +769,8 @@ TextureImporter:
       name: Pillars_3.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 377
+        x: 32
+        y: 320
         width: 32
         height: 32
       alignment: 0
@@ -790,8 +790,8 @@ TextureImporter:
       name: Pillars_30.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 377
+        x: 32
+        y: 288
         width: 32
         height: 32
       alignment: 0
@@ -811,8 +811,8 @@ TextureImporter:
       name: Pillars_31.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 377
+        x: 32
+        y: 256
         width: 32
         height: 32
       alignment: 0
@@ -832,8 +832,8 @@ TextureImporter:
       name: Pillars_32.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 377
+        x: 32
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -853,8 +853,8 @@ TextureImporter:
       name: Pillars_33.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 377
+        x: 32
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -874,8 +874,8 @@ TextureImporter:
       name: Pillars_34.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 377
+        x: 32
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -895,8 +895,8 @@ TextureImporter:
       name: Pillars_35.png
       rect:
         serializedVersion: 2
-        x: 205
-        y: 377
+        x: 32
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -916,8 +916,8 @@ TextureImporter:
       name: Pillars_36.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 343
+        x: 32
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -937,8 +937,8 @@ TextureImporter:
       name: Pillars_37.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 343
+        x: 32
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -958,8 +958,8 @@ TextureImporter:
       name: Pillars_38.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 343
+        x: 32
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -979,8 +979,8 @@ TextureImporter:
       name: Pillars_39.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 343
+        x: 32
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -1000,8 +1000,8 @@ TextureImporter:
       name: Pillars_4.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 343
+        x: 64
+        y: 480
         width: 32
         height: 32
       alignment: 0
@@ -1021,8 +1021,8 @@ TextureImporter:
       name: Pillars_40.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 343
+        x: 64
+        y: 448
         width: 32
         height: 32
       alignment: 0
@@ -1042,8 +1042,8 @@ TextureImporter:
       name: Pillars_41.png
       rect:
         serializedVersion: 2
-        x: 205
-        y: 343
+        x: 64
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -1063,8 +1063,8 @@ TextureImporter:
       name: Pillars_42.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 309
+        x: 64
+        y: 384
         width: 32
         height: 32
       alignment: 0
@@ -1084,8 +1084,8 @@ TextureImporter:
       name: Pillars_43.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 309
+        x: 64
+        y: 352
         width: 32
         height: 32
       alignment: 0
@@ -1105,8 +1105,8 @@ TextureImporter:
       name: Pillars_44.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 309
+        x: 64
+        y: 320
         width: 32
         height: 32
       alignment: 0
@@ -1126,8 +1126,8 @@ TextureImporter:
       name: Pillars_45.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 309
+        x: 64
+        y: 288
         width: 32
         height: 32
       alignment: 0
@@ -1147,8 +1147,8 @@ TextureImporter:
       name: Pillars_46.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 309
+        x: 64
+        y: 256
         width: 32
         height: 32
       alignment: 0
@@ -1168,8 +1168,8 @@ TextureImporter:
       name: Pillars_47.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 309
+        x: 64
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -1189,8 +1189,8 @@ TextureImporter:
       name: Pillars_48.png
       rect:
         serializedVersion: 2
-        x: 205
-        y: 309
+        x: 64
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -1210,8 +1210,8 @@ TextureImporter:
       name: Pillars_49.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 275
+        x: 64
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -1231,8 +1231,8 @@ TextureImporter:
       name: Pillars_5.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 275
+        x: 64
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -1252,8 +1252,8 @@ TextureImporter:
       name: Pillars_50.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 275
+        x: 64
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -1273,8 +1273,8 @@ TextureImporter:
       name: Pillars_51.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 275
+        x: 64
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -1294,8 +1294,8 @@ TextureImporter:
       name: Pillars_52.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 275
+        x: 64
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -1315,8 +1315,8 @@ TextureImporter:
       name: Pillars_53.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 275
+        x: 64
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -1336,8 +1336,8 @@ TextureImporter:
       name: Pillars_54.png
       rect:
         serializedVersion: 2
-        x: 205
-        y: 275
+        x: 96
+        y: 480
         width: 32
         height: 32
       alignment: 0
@@ -1357,8 +1357,8 @@ TextureImporter:
       name: Pillars_55.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 241
+        x: 96
+        y: 448
         width: 32
         height: 32
       alignment: 0
@@ -1378,8 +1378,8 @@ TextureImporter:
       name: Pillars_56.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 241
+        x: 96
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -1399,8 +1399,8 @@ TextureImporter:
       name: Pillars_57.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 241
+        x: 96
+        y: 384
         width: 32
         height: 32
       alignment: 0
@@ -1420,8 +1420,8 @@ TextureImporter:
       name: Pillars_58.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 241
+        x: 96
+        y: 352
         width: 32
         height: 32
       alignment: 0
@@ -1441,8 +1441,8 @@ TextureImporter:
       name: Pillars_59.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 241
+        x: 96
+        y: 320
         width: 32
         height: 32
       alignment: 0
@@ -1462,8 +1462,8 @@ TextureImporter:
       name: Pillars_6.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 241
+        x: 96
+        y: 288
         width: 32
         height: 32
       alignment: 0
@@ -1483,8 +1483,8 @@ TextureImporter:
       name: Pillars_60.png
       rect:
         serializedVersion: 2
-        x: 205
-        y: 241
+        x: 96
+        y: 256
         width: 32
         height: 32
       alignment: 0
@@ -1504,8 +1504,8 @@ TextureImporter:
       name: Pillars_61.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 207
+        x: 96
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -1525,8 +1525,8 @@ TextureImporter:
       name: Pillars_62.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 173
+        x: 96
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -1546,8 +1546,8 @@ TextureImporter:
       name: Pillars_64.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 139
+        x: 96
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -1567,8 +1567,8 @@ TextureImporter:
       name: Pillars_65.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 105
+        x: 96
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -1588,8 +1588,8 @@ TextureImporter:
       name: Pillars_66.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 71
+        x: 96
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -1609,8 +1609,8 @@ TextureImporter:
       name: Pillars_7.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 37
+        x: 96
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -1630,8 +1630,8 @@ TextureImporter:
       name: Pillars_8.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 3
+        x: 96
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -1651,8 +1651,8 @@ TextureImporter:
       name: Pillars_9.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 207
+        x: 96
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -1672,8 +1672,8 @@ TextureImporter:
       name: Pillars_20.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 445
+        x: 0
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -1693,8 +1693,8 @@ TextureImporter:
       name: Pillars_63.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 173
+        x: 96
+        y: 192
         width: 32
         height: 32
       alignment: 0

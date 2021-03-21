@@ -3,8 +3,26 @@ guid: a5474da6acd859f4cb2316c0f5f50c8a
 TextureImporter:
   internalIDToNameTable:
   - first:
+      213: -5927430323973866903
+    second: Roof_GreyReflect_1.png
+  - first:
+      213: -4451864818179986317
+    second: Roof_GreyReflect_10.png
+  - first:
+      213: -7567780145370562159
+    second: Roof_GreyReflect_11.png
+  - first:
+      213: -7683687371308407823
+    second: Roof_GreyReflect_12.png
+  - first:
+      213: -1583480250287437730
+    second: Roof_GreyReflect_13.png
+  - first:
       213: -4588128542664476001
     second: Roof_GreyReflect_14.png
+  - first:
+      213: -923056167467099305
+    second: Roof_GreyReflect_15.png
   - first:
       213: 5397222869798370084
     second: Roof_GreyReflect_16.png
@@ -15,17 +33,11 @@ TextureImporter:
       213: -7204738559594791780
     second: Roof_GreyReflect_18.png
   - first:
-      213: -5927430323973866903
-    second: Roof_GreyReflect_1.png
-  - first:
       213: -3991371958656887880
     second: Roof_GreyReflect_2.png
   - first:
       213: 8549331184838640366
     second: Roof_GreyReflect_3.png
-  - first:
-      213: -666740642586672290
-    second: Roof_GreyReflect_8.png
   - first:
       213: -718427456615613551
     second: Roof_GreyReflect_4.png
@@ -36,26 +48,14 @@ TextureImporter:
       213: 6147177787792312230
     second: Roof_GreyReflect_6.png
   - first:
-      213: -7567780145370562159
-    second: Roof_GreyReflect_11.png
-  - first:
       213: -5995937258116349996
     second: Roof_GreyReflect_7.png
   - first:
+      213: -666740642586672290
+    second: Roof_GreyReflect_8.png
+  - first:
       213: 800882868219837900
     second: Roof_GreyReflect_9.png
-  - first:
-      213: -4451864818179986317
-    second: Roof_GreyReflect_10.png
-  - first:
-      213: -7683687371308407823
-    second: Roof_GreyReflect_12.png
-  - first:
-      213: -1583480250287437730
-    second: Roof_GreyReflect_13.png
-  - first:
-      213: -923056167467099305
-    second: Roof_GreyReflect_15.png
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -181,11 +181,116 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+      name: Roof_GreyReflect_1.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96ab8a476898dbda0800000000000000
+      internalID: -5927430323973866903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roof_GreyReflect_10.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37ca25ce88cc732c0800000000000000
+      internalID: -4451864818179986317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roof_GreyReflect_11.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1910fe8bd08d9f690800000000000000
+      internalID: -7567780145370562159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roof_GreyReflect_12.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f3e104bb0f0e5590800000000000000
+      internalID: -7683687371308407823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roof_GreyReflect_13.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5845cc1a19560ae0800000000000000
+      internalID: -1583480250287437730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Roof_GreyReflect_14.png
       rect:
         serializedVersion: 2
-        x: 2
-        y: 94
+        x: 0
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -202,11 +307,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Roof_GreyReflect_15.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75bd3666e45a033f0800000000000000
+      internalID: -923056167467099305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Roof_GreyReflect_16.png
       rect:
         serializedVersion: 2
-        x: 38
-        y: 94
+        x: 0
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -226,8 +352,8 @@ TextureImporter:
       name: Roof_GreyReflect_17.png
       rect:
         serializedVersion: 2
-        x: 74
-        y: 94
+        x: 32
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -247,8 +373,8 @@ TextureImporter:
       name: Roof_GreyReflect_18.png
       rect:
         serializedVersion: 2
-        x: 110
-        y: 94
+        x: 32
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -265,34 +391,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roof_GreyReflect_1.png
-      rect:
-        serializedVersion: 2
-        x: 146
-        y: 100
-        width: 32
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 96ab8a476898dbda0800000000000000
-      internalID: -5927430323973866903
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Roof_GreyReflect_2.png
       rect:
         serializedVersion: 2
-        x: 182
-        y: 100
+        x: 32
+        y: 160
         width: 32
-        height: 26
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,10 +415,10 @@ TextureImporter:
       name: Roof_GreyReflect_3.png
       rect:
         serializedVersion: 2
-        x: 218
-        y: 100
+        x: 32
+        y: 128
         width: 32
-        height: 26
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -328,34 +433,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roof_GreyReflect_8.png
-      rect:
-        serializedVersion: 2
-        x: 146
-        y: 71
-        width: 32
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e534e490be24fb6f0800000000000000
-      internalID: -666740642586672290
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Roof_GreyReflect_4.png
       rect:
         serializedVersion: 2
-        x: 182
-        y: 72
+        x: 32
+        y: 96
         width: 32
-        height: 24
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -373,10 +457,10 @@ TextureImporter:
       name: Roof_GreyReflect_5.png
       rect:
         serializedVersion: 2
-        x: 218
-        y: 72
+        x: 32
+        y: 64
         width: 32
-        height: 24
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -394,10 +478,10 @@ TextureImporter:
       name: Roof_GreyReflect_6.png
       rect:
         serializedVersion: 2
-        x: 182
-        y: 44
+        x: 32
+        y: 32
         width: 32
-        height: 24
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -412,34 +496,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roof_GreyReflect_11.png
-      rect:
-        serializedVersion: 2
-        x: 218
-        y: 49
-        width: 32
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1910fe8bd08d9f690800000000000000
-      internalID: -7567780145370562159
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Roof_GreyReflect_7.png
       rect:
         serializedVersion: 2
-        x: 218
-        y: 20
-        width: 26
-        height: 25
+        x: 32
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -454,13 +517,34 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Roof_GreyReflect_8.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e534e490be24fb6f0800000000000000
+      internalID: -666740642586672290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Roof_GreyReflect_9.png
       rect:
         serializedVersion: 2
-        x: 2
-        y: 65
-        width: 26
-        height: 25
+        x: 64
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -470,90 +554,6 @@ TextureImporter:
       bones: []
       spriteID: ccd70f2b9be4d1b00800000000000000
       internalID: 800882868219837900
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Roof_GreyReflect_10.png
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 71
-        width: 26
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 37ca25ce88cc732c0800000000000000
-      internalID: -4451864818179986317
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Roof_GreyReflect_12.png
-      rect:
-        serializedVersion: 2
-        x: 62
-        y: 71
-        width: 26
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1f3e104bb0f0e5590800000000000000
-      internalID: -7683687371308407823
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Roof_GreyReflect_13.png
-      rect:
-        serializedVersion: 2
-        x: 92
-        y: 59
-        width: 18
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e5845cc1a19560ae0800000000000000
-      internalID: -1583480250287437730
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Roof_GreyReflect_15.png
-      rect:
-        serializedVersion: 2
-        x: 114
-        y: 59
-        width: 18
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 75bd3666e45a033f0800000000000000
-      internalID: -923056167467099305
       vertices: []
       indices: 
       edges: []

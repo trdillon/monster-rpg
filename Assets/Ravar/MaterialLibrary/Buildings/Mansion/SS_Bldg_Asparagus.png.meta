@@ -24,6 +24,9 @@ TextureImporter:
       213: -2943327602017489565
     second: Asparagus_17.png
   - first:
+      213: 2022851271122539661
+    second: Asparagus_18.png
+  - first:
       213: 347562995540374580
     second: Asparagus_19.png
   - first:
@@ -32,6 +35,9 @@ TextureImporter:
   - first:
       213: 363306374060792169
     second: Asparagus_20.png
+  - first:
+      213: -8839822872597923469
+    second: Asparagus_21.png
   - first:
       213: -6593873091878029589
     second: Asparagus_22.png
@@ -42,11 +48,17 @@ TextureImporter:
       213: 4424482930726601464
     second: Asparagus_24.png
   - first:
+      213: -1178116881413682425
+    second: Asparagus_25.png
+  - first:
       213: -3792223805696583056
     second: Asparagus_26.png
   - first:
       213: -2678784492524964189
     second: Asparagus_27.png
+  - first:
+      213: 3203642521617152252
+    second: Asparagus_28.png
   - first:
       213: 4868558760621614402
     second: Asparagus_29.png
@@ -60,11 +72,17 @@ TextureImporter:
       213: 6994678769253135304
     second: Asparagus_31.png
   - first:
+      213: 2283882591145475826
+    second: Asparagus_32.png
+  - first:
       213: -8514592085776713231
     second: Asparagus_33.png
   - first:
       213: 3536528581375746525
     second: Asparagus_34.png
+  - first:
+      213: 5667322325914495290
+    second: Asparagus_35.png
   - first:
       213: -7427560190887206337
     second: Asparagus_36.png
@@ -75,6 +93,9 @@ TextureImporter:
       213: -358094069627746358
     second: Asparagus_38.png
   - first:
+      213: 8839663491082781857
+    second: Asparagus_39.png
+  - first:
       213: -6864908936912350969
     second: Asparagus_4.png
   - first:
@@ -84,6 +105,9 @@ TextureImporter:
       213: 5115060387145889
     second: Asparagus_41.png
   - first:
+      213: 7612561778532315142
+    second: Asparagus_42.png
+  - first:
       213: 1768487550756802864
     second: Asparagus_43.png
   - first:
@@ -92,6 +116,18 @@ TextureImporter:
   - first:
       213: -3910202728192986549
     second: Asparagus_45.png
+  - first:
+      213: -4728394751660974180
+    second: Asparagus_46.png
+  - first:
+      213: -4942184008276975570
+    second: Asparagus_47.png
+  - first:
+      213: 6126834499690694799
+    second: Asparagus_48.png
+  - first:
+      213: 4780294330990093622
+    second: Asparagus_49.png
   - first:
       213: 9198677518211933089
     second: Asparagus_5.png
@@ -125,42 +161,6 @@ TextureImporter:
   - first:
       213: 3684800904048601328
     second: Asparagus_9.png
-  - first:
-      213: -4942184008276975570
-    second: Asparagus_47.png
-  - first:
-      213: 6126834499690694799
-    second: Asparagus_48.png
-  - first:
-      213: -1178116881413682425
-    second: Asparagus_25.png
-  - first:
-      213: 3203642521617152252
-    second: Asparagus_28.png
-  - first:
-      213: 2283882591145475826
-    second: Asparagus_32.png
-  - first:
-      213: 5667322325914495290
-    second: Asparagus_35.png
-  - first:
-      213: 8839663491082781857
-    second: Asparagus_39.png
-  - first:
-      213: 7612561778532315142
-    second: Asparagus_42.png
-  - first:
-      213: -4728394751660974180
-    second: Asparagus_46.png
-  - first:
-      213: 4780294330990093622
-    second: Asparagus_49.png
-  - first:
-      213: 2022851271122539661
-    second: Asparagus_18.png
-  - first:
-      213: -8839822872597923469
-    second: Asparagus_21.png
   - first:
       213: 5792238832431312024
     second: Asparagus_12.png
@@ -295,8 +295,8 @@ TextureImporter:
       name: Asparagus_1.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 479
+        x: 0
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -316,8 +316,8 @@ TextureImporter:
       name: Asparagus_10.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 479
+        x: 0
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -337,8 +337,8 @@ TextureImporter:
       name: Asparagus_11.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 479
+        x: 0
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -358,8 +358,8 @@ TextureImporter:
       name: Asparagus_13.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 479
+        x: 0
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -379,8 +379,8 @@ TextureImporter:
       name: Asparagus_15.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 479
+        x: 0
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -400,8 +400,8 @@ TextureImporter:
       name: Asparagus_16.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 479
+        x: 0
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -421,8 +421,8 @@ TextureImporter:
       name: Asparagus_17.png
       rect:
         serializedVersion: 2
-        x: 205
-        y: 479
+        x: 0
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -439,11 +439,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Asparagus_18.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d84d4b8738c921c10800000000000000
+      internalID: 2022851271122539661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Asparagus_19.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 445
+        x: 32
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -463,8 +484,8 @@ TextureImporter:
       name: Asparagus_2.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 445
+        x: 64
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -484,8 +505,8 @@ TextureImporter:
       name: Asparagus_20.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 445
+        x: 96
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -502,11 +523,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Asparagus_21.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3797d69cee3a25580800000000000000
+      internalID: -8839822872597923469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Asparagus_22.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 445
+        x: 160
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -526,8 +568,8 @@ TextureImporter:
       name: Asparagus_23.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 445
+        x: 192
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -547,8 +589,8 @@ TextureImporter:
       name: Asparagus_24.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 445
+        x: 224
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -565,11 +607,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Asparagus_25.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70b427330fc76afe0800000000000000
+      internalID: -1178116881413682425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Asparagus_26.png
       rect:
         serializedVersion: 2
-        x: 205
-        y: 445
+        x: 32
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -589,8 +652,8 @@ TextureImporter:
       name: Asparagus_27.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 411
+        x: 32
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -607,11 +670,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Asparagus_28.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf8b35856ef957c20800000000000000
+      internalID: 3203642521617152252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Asparagus_29.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 411
+        x: 32
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -631,8 +715,8 @@ TextureImporter:
       name: Asparagus_3.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 411
+        x: 32
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -652,8 +736,8 @@ TextureImporter:
       name: Asparagus_30.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 411
+        x: 32
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -673,8 +757,8 @@ TextureImporter:
       name: Asparagus_31.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 411
+        x: 64
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -691,11 +775,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Asparagus_32.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2febce9bd1bf1bf10800000000000000
+      internalID: 2283882591145475826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Asparagus_33.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 411
+        x: 128
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -715,8 +820,8 @@ TextureImporter:
       name: Asparagus_34.png
       rect:
         serializedVersion: 2
-        x: 205
-        y: 411
+        x: 160
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -733,11 +838,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Asparagus_35.png
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3926cfe0af56ae40800000000000000
+      internalID: 5667322325914495290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Asparagus_36.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 377
+        x: 224
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -757,8 +883,8 @@ TextureImporter:
       name: Asparagus_37.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 377
+        x: 64
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -778,8 +904,8 @@ TextureImporter:
       name: Asparagus_38.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 377
+        x: 64
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -796,11 +922,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Asparagus_39.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a48aff4c1bccaa70800000000000000
+      internalID: 8839663491082781857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Asparagus_4.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 377
+        x: 64
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -820,8 +967,8 @@ TextureImporter:
       name: Asparagus_40.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 377
+        x: 64
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -841,8 +988,8 @@ TextureImporter:
       name: Asparagus_41.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 377
+        x: 64
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -859,11 +1006,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Asparagus_42.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6007220ca9045a960800000000000000
+      internalID: 7612561778532315142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Asparagus_43.png
       rect:
         serializedVersion: 2
-        x: 205
-        y: 377
+        x: 128
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -883,8 +1051,8 @@ TextureImporter:
       name: Asparagus_44.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 343
+        x: 160
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -904,8 +1072,8 @@ TextureImporter:
       name: Asparagus_45.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 343
+        x: 192
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -922,11 +1090,95 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Asparagus_46.png
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9f1d65860e516eb0800000000000000
+      internalID: -4728394751660974180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asparagus_47.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e20e80c44d5d96bb0800000000000000
+      internalID: -4942184008276975570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asparagus_48.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f880caf1483e60550800000000000000
+      internalID: 6126834499690694799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asparagus_49.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6356a70fd54075240800000000000000
+      internalID: 4780294330990093622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Asparagus_5.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 343
+        x: 96
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -946,8 +1198,8 @@ TextureImporter:
       name: Asparagus_50.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 343
+        x: 96
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -967,8 +1219,8 @@ TextureImporter:
       name: Asparagus_51.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 343
+        x: 128
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -988,8 +1240,8 @@ TextureImporter:
       name: Asparagus_52.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 343
+        x: 160
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -1009,8 +1261,8 @@ TextureImporter:
       name: Asparagus_53.png
       rect:
         serializedVersion: 2
-        x: 205
-        y: 343
+        x: 192
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -1030,8 +1282,8 @@ TextureImporter:
       name: Asparagus_54.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 309
+        x: 224
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -1051,8 +1303,8 @@ TextureImporter:
       name: Asparagus_55.png
       rect:
         serializedVersion: 2
-        x: 35
-        y: 309
+        x: 128
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -1072,8 +1324,8 @@ TextureImporter:
       name: Asparagus_6.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 309
+        x: 128
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -1093,8 +1345,8 @@ TextureImporter:
       name: Asparagus_7.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 309
+        x: 128
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -1114,8 +1366,8 @@ TextureImporter:
       name: Asparagus_8.png
       rect:
         serializedVersion: 2
-        x: 137
-        y: 309
+        x: 128
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -1135,8 +1387,8 @@ TextureImporter:
       name: Asparagus_9.png
       rect:
         serializedVersion: 2
-        x: 171
-        y: 309
+        x: 160
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -1153,263 +1405,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Asparagus_47.png
-      rect:
-        serializedVersion: 2
-        x: 205
-        y: 310
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e20e80c44d5d96bb0800000000000000
-      internalID: -4942184008276975570
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asparagus_48.png
-      rect:
-        serializedVersion: 2
-        x: 205
-        y: 277
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f880caf1483e60550800000000000000
-      internalID: 6126834499690694799
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asparagus_25.png
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 275
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 70b427330fc76afe0800000000000000
-      internalID: -1178116881413682425
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asparagus_28.png
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 275
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cf8b35856ef957c20800000000000000
-      internalID: 3203642521617152252
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asparagus_32.png
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 275
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2febce9bd1bf1bf10800000000000000
-      internalID: 2283882591145475826
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asparagus_35.png
-      rect:
-        serializedVersion: 2
-        x: 97
-        y: 275
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a3926cfe0af56ae40800000000000000
-      internalID: 5667322325914495290
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asparagus_39.png
-      rect:
-        serializedVersion: 2
-        x: 129
-        y: 275
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1a48aff4c1bccaa70800000000000000
-      internalID: 8839663491082781857
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asparagus_42.png
-      rect:
-        serializedVersion: 2
-        x: 161
-        y: 275
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6007220ca9045a960800000000000000
-      internalID: 7612561778532315142
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asparagus_46.png
-      rect:
-        serializedVersion: 2
-        x: 193
-        y: 244
-        width: 30
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c9f1d65860e516eb0800000000000000
-      internalID: -4728394751660974180
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asparagus_49.png
-      rect:
-        serializedVersion: 2
-        x: 225
-        y: 244
-        width: 30
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6356a70fd54075240800000000000000
-      internalID: 4780294330990093622
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asparagus_18.png
-      rect:
-        serializedVersion: 2
-        x: 225
-        y: 212
-        width: 30
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d84d4b8738c921c10800000000000000
-      internalID: 2022851271122539661
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asparagus_21.png
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 243
-        width: 30
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3797d69cee3a25580800000000000000
-      internalID: -8839822872597923469
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Asparagus_12.png
       rect:
         serializedVersion: 2
-        x: 69
-        y: 479
+        x: 0
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -1429,8 +1429,8 @@ TextureImporter:
       name: Asparagus_14.png
       rect:
         serializedVersion: 2
-        x: 103
-        y: 479
+        x: 0
+        y: 128
         width: 32
         height: 32
       alignment: 0

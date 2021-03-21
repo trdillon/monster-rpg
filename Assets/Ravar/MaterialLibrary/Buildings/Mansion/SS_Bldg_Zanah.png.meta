@@ -3,146 +3,11 @@ guid: 4b72f5008a7534548b886f2702d145d8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8940824392659343007
-    second: Zanah_10.png
-  - first:
-      213: 5253713770006272133
-    second: Zanah_8.png
-  - first:
-      213: 4255634038981353375
-    second: Zanah_74.png
-  - first:
-      213: -4736815410461327335
-    second: Zanah_75.png
-  - first:
-      213: 2871882627676359272
-    second: Zanah_210.png
-  - first:
-      213: 3780076792464325576
-    second: Zanah_211.png
-  - first:
-      213: 8493694341380596394
-    second: Zanah_107.png
-  - first:
-      213: 8771578971772427680
-    second: Zanah_118.png
-  - first:
-      213: -8357330571676190947
-    second: Zanah_215.png
-  - first:
-      213: 1801780598585364915
-    second: Zanah_217.png
-  - first:
-      213: 1101209114709188894
-    second: Zanah_14.png
-  - first:
-      213: -3955248070117684462
-    second: Zanah_148.png
-  - first:
-      213: 5356388782468016866
-    second: Zanah_15.png
-  - first:
-      213: -6122291860813764975
-    second: Zanah_155.png
-  - first:
-      213: 2306501896727495293
-    second: Zanah_167.png
-  - first:
-      213: 9145012771282104901
-    second: Zanah_168.png
-  - first:
-      213: -3496152401467538836
-    second: Zanah_169.png
-  - first:
-      213: 3862829402107733069
-    second: Zanah_19.png
-  - first:
-      213: 2711164206132145819
-    second: Zanah_21.png
-  - first:
-      213: 3775680823350021842
-    second: Zanah_216.png
-  - first:
-      213: 2767305964874567317
-    second: Zanah_28.png
-  - first:
-      213: 3728230258331860272
-    second: Zanah_30.png
-  - first:
-      213: 3178629319917585044
-    second: Zanah_37.png
-  - first:
-      213: 6019849190631927815
-    second: Zanah_218.png
-  - first:
-      213: -1649812084070602529
-    second: Zanah_7.png
-  - first:
-      213: -8951783327890933382
-    second: Zanah_138.png
-  - first:
-      213: 157952750670270892
-    second: Zanah_129.png
-  - first:
-      213: 8422225625319095426
-    second: Zanah_131.png
-  - first:
-      213: -1425166651621152933
-    second: Zanah_208.png
-  - first:
-      213: -4381521374172976257
-    second: Zanah_209.png
-  - first:
-      213: 3000808231095180011
-    second: Zanah_213.png
-  - first:
-      213: -4102577025099863803
-    second: Zanah_24.png
-  - first:
-      213: -3896891792254848916
-    second: Zanah_25.png
-  - first:
-      213: -7955601434247568991
-    second: Zanah_108.png
-  - first:
-      213: 1383634328933345729
-    second: Zanah_110.png
-  - first:
-      213: 7436949119921366908
-    second: Zanah_16.png
-  - first:
-      213: 2971712535886277345
-    second: Zanah_111.png
-  - first:
-      213: -8367561380947223260
-    second: Zanah_112.png
-  - first:
-      213: 6181270760172541137
-    second: Zanah_113.png
-  - first:
-      213: 5001726803227385878
-    second: Zanah_220.png
-  - first:
-      213: 7525887919369782970
-    second: Zanah_114.png
-  - first:
-      213: 7373628502492079353
-    second: Zanah_115.png
-  - first:
-      213: -5600614231268092340
-    second: Zanah_116.png
-  - first:
-      213: 9089842149459421184
-    second: Zanah_117.png
-  - first:
-      213: 8599517017664679065
-    second: Zanah_119.png
-  - first:
-      213: 4830132957416054412
-    second: Zanah_17.png
-  - first:
       213: -4946178085657763607
     second: Zanah_1.png
+  - first:
+      213: -8940824392659343007
+    second: Zanah_10.png
   - first:
       213: 859452437501763561
     second: Zanah_100.png
@@ -159,26 +24,53 @@ TextureImporter:
       213: -3090474501272745304
     second: Zanah_104.png
   - first:
-      213: -7072790224106205720
-    second: Zanah_11.png
-  - first:
-      213: 8309789545651599636
-    second: Zanah_132.png
-  - first:
       213: 6241557959435228274
     second: Zanah_105.png
-  - first:
-      213: 9032082602752334193
-    second: Zanah_133.png
   - first:
       213: 6276931721018166447
     second: Zanah_106.png
   - first:
+      213: 8493694341380596394
+    second: Zanah_107.png
+  - first:
+      213: -7955601434247568991
+    second: Zanah_108.png
+  - first:
+      213: -7072790224106205720
+    second: Zanah_11.png
+  - first:
+      213: 1383634328933345729
+    second: Zanah_110.png
+  - first:
+      213: 2971712535886277345
+    second: Zanah_111.png
+  - first:
+      213: -8367561380947223260
+    second: Zanah_112.png
+  - first:
+      213: 6181270760172541137
+    second: Zanah_113.png
+  - first:
+      213: 7525887919369782970
+    second: Zanah_114.png
+  - first:
+      213: 7373628502492079353
+    second: Zanah_115.png
+  - first:
+      213: -5600614231268092340
+    second: Zanah_116.png
+  - first:
+      213: 9089842149459421184
+    second: Zanah_117.png
+  - first:
+      213: 8771578971772427680
+    second: Zanah_118.png
+  - first:
+      213: 8599517017664679065
+    second: Zanah_119.png
+  - first:
       213: 8738354819021425859
     second: Zanah_12.png
-  - first:
-      213: -2124057499875796009
-    second: Zanah_134.png
   - first:
       213: -8823005858628925440
     second: Zanah_121.png
@@ -195,23 +87,17 @@ TextureImporter:
       213: 1392382236603167853
     second: Zanah_125.png
   - first:
-      213: -5479045348549773696
-    second: Zanah_135.png
-  - first:
       213: -1045022195516005610
     second: Zanah_126.png
   - first:
       213: -209385054764940583
     second: Zanah_127.png
   - first:
-      213: -5991222737401673045
-    second: Zanah_164.png
-  - first:
-      213: -8448637059631439280
-    second: Zanah_136.png
-  - first:
       213: -1294415649990689108
     second: Zanah_128.png
+  - first:
+      213: 157952750670270892
+    second: Zanah_129.png
   - first:
       213: -6080551288414505086
     second: Zanah_13.png
@@ -219,11 +105,35 @@ TextureImporter:
       213: 6153964896029250693
     second: Zanah_130.png
   - first:
+      213: 8422225625319095426
+    second: Zanah_131.png
+  - first:
+      213: 8309789545651599636
+    second: Zanah_132.png
+  - first:
+      213: 9032082602752334193
+    second: Zanah_133.png
+  - first:
+      213: -2124057499875796009
+    second: Zanah_134.png
+  - first:
+      213: -5479045348549773696
+    second: Zanah_135.png
+  - first:
+      213: -8448637059631439280
+    second: Zanah_136.png
+  - first:
       213: 5433907968324048228
     second: Zanah_137.png
   - first:
+      213: -8951783327890933382
+    second: Zanah_138.png
+  - first:
       213: -2055839020748085064
     second: Zanah_139.png
+  - first:
+      213: 1101209114709188894
+    second: Zanah_14.png
   - first:
       213: -6466434948461462796
     second: Zanah_140.png
@@ -249,14 +159,14 @@ TextureImporter:
       213: -9212431446069832201
     second: Zanah_147.png
   - first:
+      213: -3955248070117684462
+    second: Zanah_148.png
+  - first:
       213: 4977467416899636612
     second: Zanah_149.png
   - first:
-      213: -5544473570542129831
-    second: Zanah_166.png
-  - first:
-      213: -1491808620289168311
-    second: Zanah_186.png
+      213: 5356388782468016866
+    second: Zanah_15.png
   - first:
       213: -2022300774283915260
     second: Zanah_150.png
@@ -267,17 +177,17 @@ TextureImporter:
       213: 9179786423441329008
     second: Zanah_152.png
   - first:
-      213: -5627587109105616469
-    second: Zanah_188.png
-  - first:
       213: 1636783695751232760
     second: Zanah_153.png
   - first:
-      213: -4243335848183527001
-    second: Zanah_156.png
-  - first:
       213: 2518735147650764556
     second: Zanah_154.png
+  - first:
+      213: -6122291860813764975
+    second: Zanah_155.png
+  - first:
+      213: -4243335848183527001
+    second: Zanah_156.png
   - first:
       213: 6595344701173562147
     second: Zanah_157.png
@@ -287,6 +197,9 @@ TextureImporter:
   - first:
       213: -772026734609781364
     second: Zanah_159.png
+  - first:
+      213: 7436949119921366908
+    second: Zanah_16.png
   - first:
       213: 8796329743082650347
     second: Zanah_160.png
@@ -300,14 +213,26 @@ TextureImporter:
       213: 4847672349087377449
     second: Zanah_163.png
   - first:
-      213: -4281789675520263777
-    second: Zanah_189.png
-  - first:
-      213: 2759756641131965512
-    second: Zanah_191.png
+      213: -5991222737401673045
+    second: Zanah_164.png
   - first:
       213: 7928568748045334251
     second: Zanah_165.png
+  - first:
+      213: -5544473570542129831
+    second: Zanah_166.png
+  - first:
+      213: 2306501896727495293
+    second: Zanah_167.png
+  - first:
+      213: 9145012771282104901
+    second: Zanah_168.png
+  - first:
+      213: -3496152401467538836
+    second: Zanah_169.png
+  - first:
+      213: 4830132957416054412
+    second: Zanah_17.png
   - first:
       213: 3015660959714460680
     second: Zanah_170.png
@@ -315,14 +240,8 @@ TextureImporter:
       213: 3404405060864580028
     second: Zanah_171.png
   - first:
-      213: 5255552820803584478
-    second: Zanah_176.png
-  - first:
       213: 4780755554702013800
     second: Zanah_172.png
-  - first:
-      213: 7553612611236964131
-    second: Zanah_178.png
   - first:
       213: -3618973037213189184
     second: Zanah_173.png
@@ -330,14 +249,17 @@ TextureImporter:
       213: 2060928014165196894
     second: Zanah_174.png
   - first:
-      213: -540364501260822070
-    second: Zanah_192.png
-  - first:
       213: -6890945458274965341
     second: Zanah_175.png
   - first:
+      213: 5255552820803584478
+    second: Zanah_176.png
+  - first:
       213: -7923413076709497406
     second: Zanah_177.png
+  - first:
+      213: 7553612611236964131
+    second: Zanah_178.png
   - first:
       213: 6745644997334196146
     second: Zanah_179.png
@@ -347,9 +269,6 @@ TextureImporter:
   - first:
       213: 8351951953456650689
     second: Zanah_180.png
-  - first:
-      213: -128590352742745153
-    second: Zanah_194.png
   - first:
       213: -2981047043539131922
     second: Zanah_181.png
@@ -366,20 +285,38 @@ TextureImporter:
       213: 200577291912216942
     second: Zanah_185.png
   - first:
-      213: -5551035470170104268
-    second: Zanah_45.png
-  - first:
-      213: 8966770985650880354
-    second: Zanah_195.png
+      213: -1491808620289168311
+    second: Zanah_186.png
   - first:
       213: 1287938863954182788
     second: Zanah_187.png
   - first:
+      213: -5627587109105616469
+    second: Zanah_188.png
+  - first:
+      213: -4281789675520263777
+    second: Zanah_189.png
+  - first:
+      213: 3862829402107733069
+    second: Zanah_19.png
+  - first:
       213: -6830517185650060827
     second: Zanah_190.png
   - first:
+      213: 2759756641131965512
+    second: Zanah_191.png
+  - first:
+      213: -540364501260822070
+    second: Zanah_192.png
+  - first:
       213: -7246487817551198085
     second: Zanah_193.png
+  - first:
+      213: -128590352742745153
+    second: Zanah_194.png
+  - first:
+      213: 8966770985650880354
+    second: Zanah_195.png
   - first:
       213: 2390483326613501299
     second: Zanah_196.png
@@ -396,20 +333,17 @@ TextureImporter:
       213: 2975744936276202686
     second: Zanah_2.png
   - first:
-      213: 5557177135771345423
-    second: Zanah_200.png
-  - first:
-      213: 9137809244333718544
-    second: Zanah_202.png
-  - first:
       213: -1296952325801510231
     second: Zanah_20.png
   - first:
-      213: -3992264937539871592
-    second: Zanah_206.png
+      213: 5557177135771345423
+    second: Zanah_200.png
   - first:
       213: 9038210809192756780
     second: Zanah_201.png
+  - first:
+      213: 9137809244333718544
+    second: Zanah_202.png
   - first:
       213: 2603713357736651189
     second: Zanah_203.png
@@ -420,14 +354,47 @@ TextureImporter:
       213: 913944157282357928
     second: Zanah_205.png
   - first:
+      213: -3992264937539871592
+    second: Zanah_206.png
+  - first:
       213: -2716600976469786032
     second: Zanah_207.png
+  - first:
+      213: -1425166651621152933
+    second: Zanah_208.png
+  - first:
+      213: -4381521374172976257
+    second: Zanah_209.png
+  - first:
+      213: 2711164206132145819
+    second: Zanah_21.png
+  - first:
+      213: 2871882627676359272
+    second: Zanah_210.png
+  - first:
+      213: 3780076792464325576
+    second: Zanah_211.png
   - first:
       213: 1927876020016800299
     second: Zanah_212.png
   - first:
+      213: 3000808231095180011
+    second: Zanah_213.png
+  - first:
       213: -138510840965142661
     second: Zanah_214.png
+  - first:
+      213: -8357330571676190947
+    second: Zanah_215.png
+  - first:
+      213: 3775680823350021842
+    second: Zanah_216.png
+  - first:
+      213: 1801780598585364915
+    second: Zanah_217.png
+  - first:
+      213: 6019849190631927815
+    second: Zanah_218.png
   - first:
       213: 3918423736845465176
     second: Zanah_219.png
@@ -435,23 +402,17 @@ TextureImporter:
       213: -4871340173479467162
     second: Zanah_22.png
   - first:
+      213: 5001726803227385878
+    second: Zanah_220.png
+  - first:
       213: -4081351258981214501
     second: Zanah_221.png
   - first:
       213: 1667626792409700183
     second: Zanah_222.png
   - first:
-      213: -1858269119303783465
-    second: Zanah_32.png
-  - first:
-      213: -5340640623334030347
-    second: Zanah_34.png
-  - first:
       213: 6636658400114237640
     second: Zanah_223.png
-  - first:
-      213: 1338366967737089844
-    second: Zanah_38.png
   - first:
       213: 4210970170996167586
     second: Zanah_224.png
@@ -471,11 +432,20 @@ TextureImporter:
       213: -1377011643920388018
     second: Zanah_23.png
   - first:
+      213: -4102577025099863803
+    second: Zanah_24.png
+  - first:
+      213: -3896891792254848916
+    second: Zanah_25.png
+  - first:
       213: -8764861528784434173
     second: Zanah_26.png
   - first:
       213: -6742423711136012609
     second: Zanah_27.png
+  - first:
+      213: 2767305964874567317
+    second: Zanah_28.png
   - first:
       213: 5385012172575301454
     second: Zanah_29.png
@@ -483,14 +453,17 @@ TextureImporter:
       213: 2744991768502529822
     second: Zanah_3.png
   - first:
-      213: 3693643718191258733
-    second: Zanah_40.png
-  - first:
-      213: -2408664171816486497
-    second: Zanah_46.png
+      213: 3728230258331860272
+    second: Zanah_30.png
   - first:
       213: 441591856520321347
     second: Zanah_31.png
+  - first:
+      213: -1858269119303783465
+    second: Zanah_32.png
+  - first:
+      213: -5340640623334030347
+    second: Zanah_34.png
   - first:
       213: -6782694416182672532
     second: Zanah_35.png
@@ -498,11 +471,20 @@ TextureImporter:
       213: 470242596984353520
     second: Zanah_36.png
   - first:
+      213: 3178629319917585044
+    second: Zanah_37.png
+  - first:
+      213: 1338366967737089844
+    second: Zanah_38.png
+  - first:
       213: -5277088458729108170
     second: Zanah_39.png
   - first:
       213: -8466997269569751025
     second: Zanah_4.png
+  - first:
+      213: 3693643718191258733
+    second: Zanah_40.png
   - first:
       213: -8180366359589352922
     second: Zanah_41.png
@@ -515,6 +497,12 @@ TextureImporter:
   - first:
       213: 3067711368293755225
     second: Zanah_44.png
+  - first:
+      213: -5551035470170104268
+    second: Zanah_45.png
+  - first:
+      213: -2408664171816486497
+    second: Zanah_46.png
   - first:
       213: 8323049709069728086
     second: Zanah_48.png
@@ -546,14 +534,14 @@ TextureImporter:
       213: 4554324678440232809
     second: Zanah_56.png
   - first:
-      213: 3886380851829622198
-    second: Zanah_59.png
-  - first:
       213: 7984331190256445131
     second: Zanah_57.png
   - first:
       213: -5540307087590208157
     second: Zanah_58.png
+  - first:
+      213: 3886380851829622198
+    second: Zanah_59.png
   - first:
       213: 1217441912292247885
     second: Zanah_6.png
@@ -573,11 +561,11 @@ TextureImporter:
       213: -1704668277659088437
     second: Zanah_64.png
   - first:
-      213: -5098298844896264056
-    second: Zanah_66.png
-  - first:
       213: -4907799522689003365
     second: Zanah_65.png
+  - first:
+      213: -5098298844896264056
+    second: Zanah_66.png
   - first:
       213: 7899111008551217227
     second: Zanah_67.png
@@ -588,6 +576,9 @@ TextureImporter:
       213: 7984975583237080997
     second: Zanah_69.png
   - first:
+      213: -1649812084070602529
+    second: Zanah_7.png
+  - first:
       213: -4279431990497936619
     second: Zanah_71.png
   - first:
@@ -596,6 +587,12 @@ TextureImporter:
   - first:
       213: 3005481967790014270
     second: Zanah_73.png
+  - first:
+      213: 4255634038981353375
+    second: Zanah_74.png
+  - first:
+      213: -4736815410461327335
+    second: Zanah_75.png
   - first:
       213: 4125309931683627973
     second: Zanah_76.png
@@ -609,14 +606,14 @@ TextureImporter:
       213: -3973634231301792732
     second: Zanah_79.png
   - first:
+      213: 5253713770006272133
+    second: Zanah_8.png
+  - first:
       213: 4619466447625428251
     second: Zanah_80.png
   - first:
       213: 2961309975119932502
     second: Zanah_81.png
-  - first:
-      213: 597812072195700168
-    second: Zanah_95.png
   - first:
       213: 2782012281446536232
     second: Zanah_82.png
@@ -626,9 +623,6 @@ TextureImporter:
   - first:
       213: 4207160318723196722
     second: Zanah_84.png
-  - first:
-      213: -8651561400086744836
-    second: Zanah_97.png
   - first:
       213: 2678838486289625883
     second: Zanah_85.png
@@ -663,8 +657,14 @@ TextureImporter:
       213: 613133615264497760
     second: Zanah_94.png
   - first:
+      213: 597812072195700168
+    second: Zanah_95.png
+  - first:
       213: 2444404455497690662
     second: Zanah_96.png
+  - first:
+      213: -8651561400086744836
+    second: Zanah_97.png
   - first:
       213: -3009713184849584215
     second: Zanah_98.png
@@ -811,977 +811,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Zanah_10.png
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 507
-        width: 32
-        height: 4
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 169646cd59fcbe380800000000000000
-      internalID: -8940824392659343007
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_8.png
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 506
-        width: 5
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5885dc4a6d0f8e840800000000000000
-      internalID: 5253713770006272133
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_74.png
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 501
-        width: 19
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f9f5b837c9c0f0b30800000000000000
-      internalID: 4255634038981353375
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_75.png
-      rect:
-        serializedVersion: 2
-        x: 63
-        y: 501
-        width: 19
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9104bdc1b73734eb0800000000000000
-      internalID: -4736815410461327335
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_210.png
-      rect:
-        serializedVersion: 2
-        x: 84
-        y: 500
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 86ac343b80afad720800000000000000
-      internalID: 2871882627676359272
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_211.png
-      rect:
-        serializedVersion: 2
-        x: 97
-        y: 500
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8cbb886a0d7857430800000000000000
-      internalID: 3780076792464325576
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_107.png
-      rect:
-        serializedVersion: 2
-        x: 110
-        y: 496
-        width: 30
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: aa26cb0800aafd570800000000000000
-      internalID: 8493694341380596394
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_118.png
-      rect:
-        serializedVersion: 2
-        x: 142
-        y: 496
-        width: 30
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0ad18cbd998eab970800000000000000
-      internalID: 8771578971772427680
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_215.png
-      rect:
-        serializedVersion: 2
-        x: 174
-        y: 496
-        width: 17
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d177ab4cf1cc40c80800000000000000
-      internalID: -8357330571676190947
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_217.png
-      rect:
-        serializedVersion: 2
-        x: 193
-        y: 496
-        width: 17
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3b11fdd78e5310910800000000000000
-      internalID: 1801780598585364915
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_14.png
-      rect:
-        serializedVersion: 2
-        x: 212
-        y: 495
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e11e9a9fad7484f00800000000000000
-      internalID: 1101209114709188894
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_148.png
-      rect:
-        serializedVersion: 2
-        x: 230
-        y: 495
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 21b061606d22c19c0800000000000000
-      internalID: -3955248070117684462
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_15.png
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 495
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2eaa4e1e737b55a40800000000000000
-      internalID: 5356388782468016866
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_155.png
-      rect:
-        serializedVersion: 2
-        x: 282
-        y: 495
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1962ee86dff390ba0800000000000000
-      internalID: -6122291860813764975
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_167.png
-      rect:
-        serializedVersion: 2
-        x: 316
-        y: 495
-        width: 18
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d7205343147520020800000000000000
-      internalID: 2306501896727495293
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_168.png
-      rect:
-        serializedVersion: 2
-        x: 336
-        y: 495
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5423ea2c9ac99ee70800000000000000
-      internalID: 9145012771282104901
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_169.png
-      rect:
-        serializedVersion: 2
-        x: 370
-        y: 495
-        width: 18
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c6206ed0aeb2b7fc0800000000000000
-      internalID: -3496152401467538836
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_19.png
-      rect:
-        serializedVersion: 2
-        x: 390
-        y: 495
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d44e09400e68b9530800000000000000
-      internalID: 3862829402107733069
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_21.png
-      rect:
-        serializedVersion: 2
-        x: 424
-        y: 495
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b9ea24a2b7dff9520800000000000000
-      internalID: 2711164206132145819
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_216.png
-      rect:
-        serializedVersion: 2
-        x: 458
-        y: 495
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2de480554b9e56430800000000000000
-      internalID: 3775680823350021842
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_28.png
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 489
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 59e0b2dfc12776620800000000000000
-      internalID: 2767305964874567317
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_30.png
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 483
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 03dbbbcbaa55db330800000000000000
-      internalID: 3728230258331860272
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_37.png
-      rect:
-        serializedVersion: 2
-        x: 69
-        y: 482
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 492445e7682cc1c20800000000000000
-      internalID: 3178629319917585044
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_218.png
-      rect:
-        serializedVersion: 2
-        x: 492
-        y: 480
-        width: 17
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 700f901c1fcca8350800000000000000
-      internalID: 6019849190631927815
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_7.png
-      rect:
-        serializedVersion: 2
-        x: 103
-        y: 478
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fd823de86a0ba19e0800000000000000
-      internalID: -1649812084070602529
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_138.png
-      rect:
-        serializedVersion: 2
-        x: 137
-        y: 475
-        width: 32
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a79fbcaed70e4c380800000000000000
-      internalID: -8951783327890933382
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_129.png
-      rect:
-        serializedVersion: 2
-        x: 171
-        y: 465
-        width: 29
-        height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ca15ffa9039213200800000000000000
-      internalID: 157952750670270892
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_131.png
-      rect:
-        serializedVersion: 2
-        x: 202
-        y: 464
-        width: 29
-        height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 28c36575591c1e470800000000000000
-      internalID: 8422225625319095426
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_208.png
-      rect:
-        serializedVersion: 2
-        x: 233
-        y: 463
-        width: 30
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b5763603b7ac83ce0800000000000000
-      internalID: -1425166651621152933
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_209.png
-      rect:
-        serializedVersion: 2
-        x: 265
-        y: 463
-        width: 30
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f7b63a44685b133c0800000000000000
-      internalID: -4381521374172976257
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_213.png
-      rect:
-        serializedVersion: 2
-        x: 297
-        y: 463
-        width: 32
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bea1f7def2305a920800000000000000
-      internalID: 3000808231095180011
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_24.png
-      rect:
-        serializedVersion: 2
-        x: 331
-        y: 463
-        width: 30
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5096e3b9ee7b017c0800000000000000
-      internalID: -4102577025099863803
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_25.png
-      rect:
-        serializedVersion: 2
-        x: 363
-        y: 463
-        width: 30
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c60b382cf857be9c0800000000000000
-      internalID: -3896891792254848916
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_108.png
-      rect:
-        serializedVersion: 2
-        x: 395
-        y: 462
-        width: 32
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1a1e51965a6089190800000000000000
-      internalID: -7955601434247568991
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_110.png
-      rect:
-        serializedVersion: 2
-        x: 429
-        y: 462
-        width: 32
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1c9ab136718a33310800000000000000
-      internalID: 1383634328933345729
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_16.png
-      rect:
-        serializedVersion: 2
-        x: 463
-        y: 462
-        width: 27
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c77219962d9553760800000000000000
-      internalID: 7436949119921366908
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_111.png
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 456
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1eaa31c7ec4ad3920800000000000000
-      internalID: 2971712535886277345
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_112.png
-      rect:
-        serializedVersion: 2
-        x: 34
-        y: 450
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 42d1d5cd14370eb80800000000000000
-      internalID: -8367561380947223260
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_113.png
-      rect:
-        serializedVersion: 2
-        x: 67
-        y: 449
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1d4d790b10948c550800000000000000
-      internalID: 6181270760172541137
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_220.png
-      rect:
-        serializedVersion: 2
-        x: 492
-        y: 447
-        width: 17
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6102be9f604b96540800000000000000
-      internalID: 5001726803227385878
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_114.png
-      rect:
-        serializedVersion: 2
-        x: 100
-        y: 445
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ab680755033517860800000000000000
-      internalID: 7525887919369782970
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_115.png
-      rect:
-        serializedVersion: 2
-        x: 133
-        y: 442
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9f46cbc4e04645660800000000000000
-      internalID: 7373628502492079353
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_116.png
-      rect:
-        serializedVersion: 2
-        x: 166
-        y: 432
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c46944da70f9642b0800000000000000
-      internalID: -5600614231268092340
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_117.png
-      rect:
-        serializedVersion: 2
-        x: 199
-        y: 431
-        width: 32
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 008e6ee564b952e70800000000000000
-      internalID: 9089842149459421184
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_119.png
-      rect:
-        serializedVersion: 2
-        x: 233
-        y: 430
-        width: 32
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 99c64d55a2f975770800000000000000
-      internalID: 8599517017664679065
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_17.png
-      rect:
-        serializedVersion: 2
-        x: 267
-        y: 430
-        width: 28
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c8ed0b86554180340800000000000000
-      internalID: 4830132957416054412
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Zanah_1.png
       rect:
         serializedVersion: 2
-        x: 297
-        y: 429
+        x: 0
+        y: 992
         width: 32
         height: 32
       alignment: 0
@@ -1798,11 +832,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Zanah_10.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 960
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 169646cd59fcbe380800000000000000
+      internalID: -8940824392659343007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Zanah_100.png
       rect:
         serializedVersion: 2
-        x: 331
-        y: 429
+        x: 0
+        y: 928
         width: 32
         height: 32
       alignment: 0
@@ -1822,9 +877,9 @@ TextureImporter:
       name: Zanah_101.png
       rect:
         serializedVersion: 2
-        x: 365
-        y: 429
-        width: 28
+        x: 0
+        y: 896
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1843,9 +898,9 @@ TextureImporter:
       name: Zanah_102.png
       rect:
         serializedVersion: 2
-        x: 395
-        y: 428
-        width: 28
+        x: 0
+        y: 864
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1864,9 +919,9 @@ TextureImporter:
       name: Zanah_103.png
       rect:
         serializedVersion: 2
-        x: 425
-        y: 428
-        width: 27
+        x: 0
+        y: 832
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1885,9 +940,9 @@ TextureImporter:
       name: Zanah_104.png
       rect:
         serializedVersion: 2
-        x: 454
-        y: 428
-        width: 27
+        x: 0
+        y: 800
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1903,53 +958,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zanah_11.png
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 422
-        width: 31
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8ed4b41b3c668dd90800000000000000
-      internalID: -7072790224106205720
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_132.png
-      rect:
-        serializedVersion: 2
-        x: 34
-        y: 416
-        width: 28
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 41971da809d425370800000000000000
-      internalID: 8309789545651599636
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Zanah_105.png
       rect:
         serializedVersion: 2
-        x: 64
-        y: 415
+        x: 0
+        y: 768
         width: 32
         height: 32
       alignment: 0
@@ -1966,32 +979,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zanah_133.png
-      rect:
-        serializedVersion: 2
-        x: 483
-        y: 413
-        width: 28
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 179d90fe547685d70800000000000000
-      internalID: 9032082602752334193
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Zanah_106.png
       rect:
         serializedVersion: 2
-        x: 98
-        y: 411
+        x: 0
+        y: 736
         width: 32
         height: 32
       alignment: 0
@@ -2008,11 +1000,284 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Zanah_107.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 704
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa26cb0800aafd570800000000000000
+      internalID: 8493694341380596394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zanah_108.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 672
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a1e51965a6089190800000000000000
+      internalID: -7955601434247568991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zanah_11.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ed4b41b3c668dd90800000000000000
+      internalID: -7072790224106205720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zanah_110.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 608
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c9ab136718a33310800000000000000
+      internalID: 1383634328933345729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zanah_111.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1eaa31c7ec4ad3920800000000000000
+      internalID: 2971712535886277345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zanah_112.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 544
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42d1d5cd14370eb80800000000000000
+      internalID: -8367561380947223260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zanah_113.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d4d790b10948c550800000000000000
+      internalID: 6181270760172541137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zanah_114.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab680755033517860800000000000000
+      internalID: 7525887919369782970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zanah_115.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f46cbc4e04645660800000000000000
+      internalID: 7373628502492079353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zanah_116.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c46944da70f9642b0800000000000000
+      internalID: -5600614231268092340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zanah_117.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 008e6ee564b952e70800000000000000
+      internalID: 9089842149459421184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zanah_118.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ad18cbd998eab970800000000000000
+      internalID: 8771578971772427680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zanah_119.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99c64d55a2f975770800000000000000
+      internalID: 8599517017664679065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Zanah_12.png
       rect:
         serializedVersion: 2
-        x: 132
-        y: 408
+        x: 0
+        y: 288
         width: 32
         height: 32
       alignment: 0
@@ -2029,32 +1294,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zanah_134.png
-      rect:
-        serializedVersion: 2
-        x: 166
-        y: 398
-        width: 24
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7db166525f4d582e0800000000000000
-      internalID: -2124057499875796009
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Zanah_121.png
       rect:
         serializedVersion: 2
-        x: 192
-        y: 397
+        x: 0
+        y: 256
         width: 32
         height: 32
       alignment: 0
@@ -2074,8 +1318,8 @@ TextureImporter:
       name: Zanah_122.png
       rect:
         serializedVersion: 2
-        x: 226
-        y: 396
+        x: 0
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -2095,8 +1339,8 @@ TextureImporter:
       name: Zanah_123.png
       rect:
         serializedVersion: 2
-        x: 260
-        y: 396
+        x: 0
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -2116,8 +1360,8 @@ TextureImporter:
       name: Zanah_124.png
       rect:
         serializedVersion: 2
-        x: 294
-        y: 395
+        x: 0
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -2137,8 +1381,8 @@ TextureImporter:
       name: Zanah_125.png
       rect:
         serializedVersion: 2
-        x: 328
-        y: 395
+        x: 0
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -2155,32 +1399,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zanah_135.png
-      rect:
-        serializedVersion: 2
-        x: 362
-        y: 395
-        width: 25
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0863f63e84586f3b0800000000000000
-      internalID: -5479045348549773696
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Zanah_126.png
       rect:
         serializedVersion: 2
-        x: 389
-        y: 394
+        x: 0
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -2200,8 +1423,8 @@ TextureImporter:
       name: Zanah_127.png
       rect:
         serializedVersion: 2
-        x: 423
-        y: 394
+        x: 0
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -2218,53 +1441,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zanah_164.png
-      rect:
-        serializedVersion: 2
-        x: 457
-        y: 394
-        width: 18
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: baa0ee6c9a6eadca0800000000000000
-      internalID: -5991222737401673045
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_136.png
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 388
-        width: 25
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 052a7786b5960ca80800000000000000
-      internalID: -8448637059631439280
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Zanah_128.png
       rect:
         serializedVersion: 2
-        x: 28
-        y: 382
+        x: 0
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -2281,11 +1462,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Zanah_129.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca15ffa9039213200800000000000000
+      internalID: 157952750670270892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Zanah_13.png
       rect:
         serializedVersion: 2
-        x: 62
-        y: 381
+        x: 32
+        y: 992
         width: 32
         height: 32
       alignment: 0
@@ -2305,8 +1507,8 @@ TextureImporter:
       name: Zanah_130.png
       rect:
         serializedVersion: 2
-        x: 477
-        y: 379
+        x: 32
+        y: 960
         width: 32
         height: 32
       alignment: 0
@@ -2323,12 +1525,138 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Zanah_131.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 928
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28c36575591c1e470800000000000000
+      internalID: 8422225625319095426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zanah_132.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 896
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41971da809d425370800000000000000
+      internalID: 8309789545651599636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zanah_133.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 864
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 179d90fe547685d70800000000000000
+      internalID: 9032082602752334193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zanah_134.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 832
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7db166525f4d582e0800000000000000
+      internalID: -2124057499875796009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zanah_135.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 800
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0863f63e84586f3b0800000000000000
+      internalID: -5479045348549773696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zanah_136.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 768
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 052a7786b5960ca80800000000000000
+      internalID: -8448637059631439280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Zanah_137.png
       rect:
         serializedVersion: 2
-        x: 96
-        y: 377
-        width: 25
+        x: 32
+        y: 736
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2344,12 +1672,33 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Zanah_138.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 704
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a79fbcaed70e4c380800000000000000
+      internalID: -8951783327890933382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Zanah_139.png
       rect:
         serializedVersion: 2
-        x: 123
-        y: 374
-        width: 30
+        x: 32
+        y: 672
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2365,12 +1714,33 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Zanah_14.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 640
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e11e9a9fad7484f00800000000000000
+      internalID: 1101209114709188894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Zanah_140.png
       rect:
         serializedVersion: 2
-        x: 155
-        y: 364
-        width: 30
+        x: 32
+        y: 608
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2389,8 +1759,8 @@ TextureImporter:
       name: Zanah_141.png
       rect:
         serializedVersion: 2
-        x: 187
-        y: 363
+        x: 32
+        y: 576
         width: 32
         height: 32
       alignment: 0
@@ -2410,8 +1780,8 @@ TextureImporter:
       name: Zanah_142.png
       rect:
         serializedVersion: 2
-        x: 221
-        y: 362
+        x: 32
+        y: 544
         width: 32
         height: 32
       alignment: 0
@@ -2431,9 +1801,9 @@ TextureImporter:
       name: Zanah_143.png
       rect:
         serializedVersion: 2
-        x: 255
-        y: 362
-        width: 30
+        x: 32
+        y: 512
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2452,9 +1822,9 @@ TextureImporter:
       name: Zanah_144.png
       rect:
         serializedVersion: 2
-        x: 287
-        y: 361
-        width: 30
+        x: 32
+        y: 480
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2473,8 +1843,8 @@ TextureImporter:
       name: Zanah_145.png
       rect:
         serializedVersion: 2
-        x: 319
-        y: 361
+        x: 32
+        y: 448
         width: 32
         height: 32
       alignment: 0
@@ -2494,8 +1864,8 @@ TextureImporter:
       name: Zanah_146.png
       rect:
         serializedVersion: 2
-        x: 353
-        y: 361
+        x: 32
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -2515,8 +1885,8 @@ TextureImporter:
       name: Zanah_147.png
       rect:
         serializedVersion: 2
-        x: 387
-        y: 360
+        x: 32
+        y: 384
         width: 32
         height: 32
       alignment: 0
@@ -2533,11 +1903,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Zanah_148.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21b061606d22c19c0800000000000000
+      internalID: -3955248070117684462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Zanah_149.png
       rect:
         serializedVersion: 2
-        x: 421
-        y: 360
+        x: 32
+        y: 320
         width: 32
         height: 32
       alignment: 0
@@ -2554,12 +1945,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zanah_166.png
+      name: Zanah_15.png
       rect:
         serializedVersion: 2
-        x: 455
-        y: 360
-        width: 18
+        x: 32
+        y: 288
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2568,29 +1959,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 95d6b49d9a21e03b0800000000000000
-      internalID: -5544473570542129831
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_186.png
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 354
-        width: 24
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 94c6ccab6f70c4be0800000000000000
-      internalID: -1491808620289168311
+      spriteID: 2eaa4e1e737b55a40800000000000000
+      internalID: 5356388782468016866
       vertices: []
       indices: 
       edges: []
@@ -2599,8 +1969,8 @@ TextureImporter:
       name: Zanah_150.png
       rect:
         serializedVersion: 2
-        x: 27
-        y: 348
+        x: 32
+        y: 256
         width: 32
         height: 32
       alignment: 0
@@ -2620,8 +1990,8 @@ TextureImporter:
       name: Zanah_151.png
       rect:
         serializedVersion: 2
-        x: 61
-        y: 347
+        x: 32
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -2641,8 +2011,8 @@ TextureImporter:
       name: Zanah_152.png
       rect:
         serializedVersion: 2
-        x: 475
-        y: 345
+        x: 32
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -2659,32 +2029,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zanah_188.png
-      rect:
-        serializedVersion: 2
-        x: 95
-        y: 343
-        width: 24
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ba9313b275bc6e1b0800000000000000
-      internalID: -5627587109105616469
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Zanah_153.png
       rect:
         serializedVersion: 2
-        x: 121
-        y: 340
+        x: 32
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -2701,32 +2050,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zanah_156.png
-      rect:
-        serializedVersion: 2
-        x: 155
-        y: 330
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7a9075a3784ac15c0800000000000000
-      internalID: -4243335848183527001
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Zanah_154.png
       rect:
         serializedVersion: 2
-        x: 187
-        y: 329
+        x: 32
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -2743,12 +2071,54 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Zanah_155.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1962ee86dff390ba0800000000000000
+      internalID: -6122291860813764975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zanah_156.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a9075a3784ac15c0800000000000000
+      internalID: -4243335848183527001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Zanah_157.png
       rect:
         serializedVersion: 2
-        x: 221
-        y: 328
-        width: 30
+        x: 32
+        y: 32
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2767,9 +2137,9 @@ TextureImporter:
       name: Zanah_158.png
       rect:
         serializedVersion: 2
-        x: 253
-        y: 328
-        width: 30
+        x: 32
+        y: 0
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2788,9 +2158,9 @@ TextureImporter:
       name: Zanah_159.png
       rect:
         serializedVersion: 2
-        x: 285
-        y: 327
-        width: 30
+        x: 64
+        y: 992
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2806,12 +2176,33 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Zanah_16.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 960
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c77219962d9553760800000000000000
+      internalID: 7436949119921366908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Zanah_160.png
       rect:
         serializedVersion: 2
-        x: 317
-        y: 327
-        width: 30
+        x: 64
+        y: 928
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2830,8 +2221,8 @@ TextureImporter:
       name: Zanah_161.png
       rect:
         serializedVersion: 2
-        x: 349
-        y: 327
+        x: 64
+        y: 896
         width: 32
         height: 32
       alignment: 0
@@ -2851,8 +2242,8 @@ TextureImporter:
       name: Zanah_162.png
       rect:
         serializedVersion: 2
-        x: 383
-        y: 326
+        x: 64
+        y: 864
         width: 32
         height: 32
       alignment: 0
@@ -2872,8 +2263,8 @@ TextureImporter:
       name: Zanah_163.png
       rect:
         serializedVersion: 2
-        x: 417
-        y: 326
+        x: 64
+        y: 832
         width: 32
         height: 32
       alignment: 0
@@ -2890,12 +2281,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zanah_189.png
+      name: Zanah_164.png
       rect:
         serializedVersion: 2
-        x: 451
-        y: 326
-        width: 17
+        x: 64
+        y: 800
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2904,29 +2295,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f99fdabd9f60494c0800000000000000
-      internalID: -4281789675520263777
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_191.png
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 320
-        width: 17
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 84c22351b00ac4620800000000000000
-      internalID: 2759756641131965512
+      spriteID: baa0ee6c9a6eadca0800000000000000
+      internalID: -5991222737401673045
       vertices: []
       indices: 
       edges: []
@@ -2935,8 +2305,8 @@ TextureImporter:
       name: Zanah_165.png
       rect:
         serializedVersion: 2
-        x: 20
-        y: 314
+        x: 64
+        y: 768
         width: 32
         height: 32
       alignment: 0
@@ -2953,11 +2323,116 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Zanah_166.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 736
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95d6b49d9a21e03b0800000000000000
+      internalID: -5544473570542129831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zanah_167.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 704
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7205343147520020800000000000000
+      internalID: 2306501896727495293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zanah_168.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 672
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5423ea2c9ac99ee70800000000000000
+      internalID: 9145012771282104901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zanah_169.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 640
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6206ed0aeb2b7fc0800000000000000
+      internalID: -3496152401467538836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zanah_17.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 608
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8ed0b86554180340800000000000000
+      internalID: 4830132957416054412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Zanah_170.png
       rect:
         serializedVersion: 2
-        x: 54
-        y: 313
+        x: 64
+        y: 576
         width: 32
         height: 32
       alignment: 0
@@ -2977,8 +2452,8 @@ TextureImporter:
       name: Zanah_171.png
       rect:
         serializedVersion: 2
-        x: 470
-        y: 311
+        x: 64
+        y: 544
         width: 32
         height: 32
       alignment: 0
@@ -2995,32 +2470,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zanah_176.png
-      rect:
-        serializedVersion: 2
-        x: 88
-        y: 309
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ed1cc4602797fe840800000000000000
-      internalID: 5255552820803584478
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Zanah_172.png
       rect:
         serializedVersion: 2
-        x: 120
-        y: 306
+        x: 64
+        y: 512
         width: 32
         height: 32
       alignment: 0
@@ -3037,32 +2491,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zanah_178.png
-      rect:
-        serializedVersion: 2
-        x: 154
-        y: 296
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 327a0bf26a2d3d860800000000000000
-      internalID: 7553612611236964131
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Zanah_173.png
       rect:
         serializedVersion: 2
-        x: 186
-        y: 295
+        x: 64
+        y: 480
         width: 32
         height: 32
       alignment: 0
@@ -3082,8 +2515,8 @@ TextureImporter:
       name: Zanah_174.png
       rect:
         serializedVersion: 2
-        x: 220
-        y: 294
+        x: 64
+        y: 448
         width: 32
         height: 32
       alignment: 0
@@ -3100,32 +2533,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zanah_192.png
-      rect:
-        serializedVersion: 2
-        x: 254
-        y: 294
-        width: 17
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ac91e1d595d3088f0800000000000000
-      internalID: -540364501260822070
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Zanah_175.png
       rect:
         serializedVersion: 2
-        x: 273
-        y: 293
+        x: 64
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -3142,11 +2554,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Zanah_176.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed1cc4602797fe840800000000000000
+      internalID: 5255552820803584478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Zanah_177.png
       rect:
         serializedVersion: 2
-        x: 307
-        y: 293
+        x: 64
+        y: 352
         width: 32
         height: 32
       alignment: 0
@@ -3163,12 +2596,33 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Zanah_178.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 327a0bf26a2d3d860800000000000000
+      internalID: 7553612611236964131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Zanah_179.png
       rect:
         serializedVersion: 2
-        x: 341
-        y: 293
-        width: 30
+        x: 64
+        y: 288
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -3187,8 +2641,8 @@ TextureImporter:
       name: Zanah_18.png
       rect:
         serializedVersion: 2
-        x: 373
-        y: 292
+        x: 64
+        y: 256
         width: 32
         height: 32
       alignment: 0
@@ -3208,8 +2662,8 @@ TextureImporter:
       name: Zanah_180.png
       rect:
         serializedVersion: 2
-        x: 407
-        y: 292
+        x: 64
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -3226,33 +2680,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zanah_194.png
-      rect:
-        serializedVersion: 2
-        x: 441
-        y: 292
-        width: 17
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fbbf93761c7273ef0800000000000000
-      internalID: -128590352742745153
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Zanah_181.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 280
-        width: 30
+        x: 64
+        y: 192
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -3271,9 +2704,9 @@ TextureImporter:
       name: Zanah_182.png
       rect:
         serializedVersion: 2
-        x: 33
-        y: 279
-        width: 30
+        x: 64
+        y: 160
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -3292,9 +2725,9 @@ TextureImporter:
       name: Zanah_183.png
       rect:
         serializedVersion: 2
-        x: 460
-        y: 277
-        width: 30
+        x: 64
+        y: 128
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -3313,9 +2746,9 @@ TextureImporter:
       name: Zanah_184.png
       rect:
         serializedVersion: 2
-        x: 65
-        y: 275
-        width: 30
+        x: 64
+        y: 96
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -3334,9 +2767,9 @@ TextureImporter:
       name: Zanah_185.png
       rect:
         serializedVersion: 2
-        x: 97
-        y: 272
-        width: 30
+        x: 64
+        y: 64
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -3352,12 +2785,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zanah_45.png
+      name: Zanah_186.png
       rect:
         serializedVersion: 2
-        x: 129
-        y: 272
-        width: 23
+        x: 64
+        y: 32
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -3366,29 +2799,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 43edae886a2c6f2b0800000000000000
-      internalID: -5551035470170104268
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_195.png
-      rect:
-        serializedVersion: 2
-        x: 154
-        y: 262
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 26ffff514be507c70800000000000000
-      internalID: 8966770985650880354
+      spriteID: 94c6ccab6f70c4be0800000000000000
+      internalID: -1491808620289168311
       vertices: []
       indices: 
       edges: []
@@ -3397,8 +2809,8 @@ TextureImporter:
       name: Zanah_187.png
       rect:
         serializedVersion: 2
-        x: 186
-        y: 261
+        x: 64
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -3415,11 +2827,74 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Zanah_188.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 992
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba9313b275bc6e1b0800000000000000
+      internalID: -5627587109105616469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zanah_189.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 960
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f99fdabd9f60494c0800000000000000
+      internalID: -4281789675520263777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zanah_19.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 928
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d44e09400e68b9530800000000000000
+      internalID: 3862829402107733069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Zanah_190.png
       rect:
         serializedVersion: 2
-        x: 220
-        y: 260
+        x: 96
+        y: 896
         width: 32
         height: 32
       alignment: 0
@@ -3436,11 +2911,53 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Zanah_191.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 864
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84c22351b00ac4620800000000000000
+      internalID: 2759756641131965512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zanah_192.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 832
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac91e1d595d3088f0800000000000000
+      internalID: -540364501260822070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Zanah_193.png
       rect:
         serializedVersion: 2
-        x: 254
-        y: 259
+        x: 96
+        y: 800
         width: 32
         height: 32
       alignment: 0
@@ -3457,11 +2974,53 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Zanah_194.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 768
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbbf93761c7273ef0800000000000000
+      internalID: -128590352742745153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zanah_195.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 736
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26ffff514be507c70800000000000000
+      internalID: 8966770985650880354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Zanah_196.png
       rect:
         serializedVersion: 2
-        x: 288
-        y: 259
+        x: 96
+        y: 704
         width: 32
         height: 32
       alignment: 0
@@ -3481,9 +3040,9 @@ TextureImporter:
       name: Zanah_197.png
       rect:
         serializedVersion: 2
-        x: 322
-        y: 259
-        width: 30
+        x: 96
+        y: 672
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -3502,8 +3061,8 @@ TextureImporter:
       name: Zanah_198.png
       rect:
         serializedVersion: 2
-        x: 354
-        y: 258
+        x: 96
+        y: 640
         width: 32
         height: 32
       alignment: 0
@@ -3523,8 +3082,8 @@ TextureImporter:
       name: Zanah_199.png
       rect:
         serializedVersion: 2
-        x: 388
-        y: 258
+        x: 96
+        y: 608
         width: 32
         height: 32
       alignment: 0
@@ -3544,8 +3103,8 @@ TextureImporter:
       name: Zanah_2.png
       rect:
         serializedVersion: 2
-        x: 422
-        y: 258
+        x: 96
+        y: 576
         width: 32
         height: 32
       alignment: 0
@@ -3562,53 +3121,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zanah_200.png
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 246
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f02e29b692f0f1d40800000000000000
-      internalID: 5557177135771345423
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_202.png
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 245
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 01cbac1f71500de70800000000000000
-      internalID: 9137809244333718544
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Zanah_20.png
       rect:
         serializedVersion: 2
-        x: 456
-        y: 243
+        x: 96
+        y: 544
         width: 32
         height: 32
       alignment: 0
@@ -3625,12 +3142,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zanah_206.png
+      name: Zanah_200.png
       rect:
         serializedVersion: 2
-        x: 65
-        y: 241
-        width: 30
+        x: 96
+        y: 512
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -3639,8 +3156,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 89c50b4f030a898c0800000000000000
-      internalID: -3992264937539871592
+      spriteID: f02e29b692f0f1d40800000000000000
+      internalID: 5557177135771345423
       vertices: []
       indices: 
       edges: []
@@ -3649,8 +3166,8 @@ TextureImporter:
       name: Zanah_201.png
       rect:
         serializedVersion: 2
-        x: 97
-        y: 238
+        x: 96
+        y: 480
         width: 32
         height: 32
       alignment: 0
@@ -3667,11 +3184,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Zanah_202.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01cbac1f71500de70800000000000000
+      internalID: 9137809244333718544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Zanah_203.png
       rect:
         serializedVersion: 2
-        x: 131
-        y: 228
+        x: 96
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -3691,8 +3229,8 @@ TextureImporter:
       name: Zanah_204.png
       rect:
         serializedVersion: 2
-        x: 165
-        y: 227
+        x: 96
+        y: 384
         width: 32
         height: 32
       alignment: 0
@@ -3712,8 +3250,8 @@ TextureImporter:
       name: Zanah_205.png
       rect:
         serializedVersion: 2
-        x: 199
-        y: 226
+        x: 96
+        y: 352
         width: 32
         height: 32
       alignment: 0
@@ -3730,11 +3268,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Zanah_206.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89c50b4f030a898c0800000000000000
+      internalID: -3992264937539871592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Zanah_207.png
       rect:
         serializedVersion: 2
-        x: 233
-        y: 225
+        x: 96
+        y: 288
         width: 32
         height: 32
       alignment: 0
@@ -3751,12 +3310,117 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Zanah_208.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5763603b7ac83ce0800000000000000
+      internalID: -1425166651621152933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zanah_209.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7b63a44685b133c0800000000000000
+      internalID: -4381521374172976257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zanah_21.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9ea24a2b7dff9520800000000000000
+      internalID: 2711164206132145819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zanah_210.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86ac343b80afad720800000000000000
+      internalID: 2871882627676359272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zanah_211.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cbb886a0d7857430800000000000000
+      internalID: 3780076792464325576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Zanah_212.png
       rect:
         serializedVersion: 2
-        x: 267
-        y: 225
-        width: 24
+        x: 96
+        y: 96
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -3772,12 +3436,33 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Zanah_213.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bea1f7def2305a920800000000000000
+      internalID: 3000808231095180011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Zanah_214.png
       rect:
         serializedVersion: 2
-        x: 293
-        y: 225
-        width: 24
+        x: 96
+        y: 32
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -3793,11 +3478,95 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Zanah_215.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d177ab4cf1cc40c80800000000000000
+      internalID: -8357330571676190947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zanah_216.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 992
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2de480554b9e56430800000000000000
+      internalID: 3775680823350021842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zanah_217.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 960
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b11fdd78e5310910800000000000000
+      internalID: 1801780598585364915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zanah_218.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 928
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 700f901c1fcca8350800000000000000
+      internalID: 6019849190631927815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Zanah_219.png
       rect:
         serializedVersion: 2
-        x: 319
-        y: 225
+        x: 128
+        y: 896
         width: 32
         height: 32
       alignment: 0
@@ -3817,8 +3586,8 @@ TextureImporter:
       name: Zanah_22.png
       rect:
         serializedVersion: 2
-        x: 353
-        y: 224
+        x: 128
+        y: 864
         width: 32
         height: 32
       alignment: 0
@@ -3835,11 +3604,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Zanah_220.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 832
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6102be9f604b96540800000000000000
+      internalID: 5001726803227385878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Zanah_221.png
       rect:
         serializedVersion: 2
-        x: 387
-        y: 224
+        x: 128
+        y: 800
         width: 32
         height: 32
       alignment: 0
@@ -3859,8 +3649,8 @@ TextureImporter:
       name: Zanah_222.png
       rect:
         serializedVersion: 2
-        x: 421
-        y: 224
+        x: 128
+        y: 768
         width: 32
         height: 32
       alignment: 0
@@ -3877,53 +3667,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zanah_32.png
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 212
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7dbe1ded41a1636e0800000000000000
-      internalID: -1858269119303783465
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_34.png
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 211
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5f3872526ab32e5b0800000000000000
-      internalID: -5340640623334030347
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Zanah_223.png
       rect:
         serializedVersion: 2
-        x: 455
-        y: 209
+        x: 128
+        y: 736
         width: 32
         height: 32
       alignment: 0
@@ -3940,32 +3688,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zanah_38.png
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 207
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 43ff51b8aa5d29210800000000000000
-      internalID: 1338366967737089844
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Zanah_224.png
       rect:
         serializedVersion: 2
-        x: 97
-        y: 204
+        x: 128
+        y: 704
         width: 32
         height: 32
       alignment: 0
@@ -3985,8 +3712,8 @@ TextureImporter:
       name: Zanah_225.png
       rect:
         serializedVersion: 2
-        x: 131
-        y: 194
+        x: 128
+        y: 672
         width: 32
         height: 32
       alignment: 0
@@ -4006,8 +3733,8 @@ TextureImporter:
       name: Zanah_226.png
       rect:
         serializedVersion: 2
-        x: 165
-        y: 193
+        x: 128
+        y: 640
         width: 32
         height: 32
       alignment: 0
@@ -4027,8 +3754,8 @@ TextureImporter:
       name: Zanah_227.png
       rect:
         serializedVersion: 2
-        x: 199
-        y: 192
+        x: 128
+        y: 608
         width: 32
         height: 32
       alignment: 0
@@ -4048,8 +3775,8 @@ TextureImporter:
       name: Zanah_228.png
       rect:
         serializedVersion: 2
-        x: 233
-        y: 191
+        x: 128
+        y: 576
         width: 32
         height: 32
       alignment: 0
@@ -4069,8 +3796,8 @@ TextureImporter:
       name: Zanah_23.png
       rect:
         serializedVersion: 2
-        x: 267
-        y: 191
+        x: 128
+        y: 544
         width: 32
         height: 32
       alignment: 0
@@ -4087,11 +3814,53 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Zanah_24.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5096e3b9ee7b017c0800000000000000
+      internalID: -4102577025099863803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zanah_25.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c60b382cf857be9c0800000000000000
+      internalID: -3896891792254848916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Zanah_26.png
       rect:
         serializedVersion: 2
-        x: 301
-        y: 191
+        x: 128
+        y: 448
         width: 32
         height: 32
       alignment: 0
@@ -4111,8 +3880,8 @@ TextureImporter:
       name: Zanah_27.png
       rect:
         serializedVersion: 2
-        x: 335
-        y: 190
+        x: 128
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -4129,11 +3898,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Zanah_28.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59e0b2dfc12776620800000000000000
+      internalID: 2767305964874567317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Zanah_29.png
       rect:
         serializedVersion: 2
-        x: 369
-        y: 190
+        x: 128
+        y: 352
         width: 32
         height: 32
       alignment: 0
@@ -4153,8 +3943,8 @@ TextureImporter:
       name: Zanah_3.png
       rect:
         serializedVersion: 2
-        x: 403
-        y: 190
+        x: 128
+        y: 320
         width: 32
         height: 32
       alignment: 0
@@ -4171,12 +3961,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zanah_40.png
+      name: Zanah_30.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 178
-        width: 30
+        x: 128
+        y: 288
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -4185,29 +3975,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d6c94a55465724330800000000000000
-      internalID: 3693643718191258733
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanah_46.png
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 177
-        width: 26
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f99faa782b4b29ed0800000000000000
-      internalID: -2408664171816486497
+      spriteID: 03dbbbcbaa55db330800000000000000
+      internalID: 3728230258331860272
       vertices: []
       indices: 
       edges: []
@@ -4216,8 +3985,8 @@ TextureImporter:
       name: Zanah_31.png
       rect:
         serializedVersion: 2
-        x: 437
-        y: 175
+        x: 128
+        y: 256
         width: 32
         height: 32
       alignment: 0
@@ -4234,11 +4003,53 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Zanah_32.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dbe1ded41a1636e0800000000000000
+      internalID: -1858269119303783465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zanah_34.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f3872526ab32e5b0800000000000000
+      internalID: -5340640623334030347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Zanah_35.png
       rect:
         serializedVersion: 2
-        x: 471
-        y: 175
+        x: 128
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -4258,8 +4069,8 @@ TextureImporter:
       name: Zanah_36.png
       rect:
         serializedVersion: 2
-        x: 61
-        y: 173
+        x: 128
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -4276,11 +4087,53 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Zanah_37.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 492445e7682cc1c20800000000000000
+      internalID: 3178629319917585044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zanah_38.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43ff51b8aa5d29210800000000000000
+      internalID: 1338366967737089844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Zanah_39.png
       rect:
         serializedVersion: 2
-        x: 95
-        y: 170
+        x: 128
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -4300,8 +4153,8 @@ TextureImporter:
       name: Zanah_4.png
       rect:
         serializedVersion: 2
-        x: 129
-        y: 160
+        x: 128
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -4318,11 +4171,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Zanah_40.png
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 992
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6c94a55465724330800000000000000
+      internalID: 3693643718191258733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Zanah_41.png
       rect:
         serializedVersion: 2
-        x: 163
-        y: 159
+        x: 160
+        y: 960
         width: 32
         height: 32
       alignment: 0
@@ -4342,8 +4216,8 @@ TextureImporter:
       name: Zanah_42.png
       rect:
         serializedVersion: 2
-        x: 197
-        y: 158
+        x: 160
+        y: 928
         width: 32
         height: 32
       alignment: 0
@@ -4363,8 +4237,8 @@ TextureImporter:
       name: Zanah_43.png
       rect:
         serializedVersion: 2
-        x: 231
-        y: 157
+        x: 160
+        y: 896
         width: 32
         height: 32
       alignment: 0
@@ -4384,8 +4258,8 @@ TextureImporter:
       name: Zanah_44.png
       rect:
         serializedVersion: 2
-        x: 265
-        y: 157
+        x: 160
+        y: 864
         width: 32
         height: 32
       alignment: 0
@@ -4402,12 +4276,54 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Zanah_45.png
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 832
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43edae886a2c6f2b0800000000000000
+      internalID: -5551035470170104268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zanah_46.png
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 800
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f99faa782b4b29ed0800000000000000
+      internalID: -2408664171816486497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Zanah_48.png
       rect:
         serializedVersion: 2
-        x: 299
-        y: 157
-        width: 30
+        x: 160
+        y: 768
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -4426,8 +4342,8 @@ TextureImporter:
       name: Zanah_49.png
       rect:
         serializedVersion: 2
-        x: 331
-        y: 156
+        x: 160
+        y: 736
         width: 32
         height: 32
       alignment: 0
@@ -4447,8 +4363,8 @@ TextureImporter:
       name: Zanah_5.png
       rect:
         serializedVersion: 2
-        x: 365
-        y: 156
+        x: 160
+        y: 704
         width: 32
         height: 32
       alignment: 0
@@ -4468,8 +4384,8 @@ TextureImporter:
       name: Zanah_50.png
       rect:
         serializedVersion: 2
-        x: 399
-        y: 156
+        x: 160
+        y: 672
         width: 32
         height: 32
       alignment: 0
@@ -4489,9 +4405,9 @@ TextureImporter:
       name: Zanah_51.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 144
-        width: 30
+        x: 160
+        y: 640
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -4510,8 +4426,8 @@ TextureImporter:
       name: Zanah_52.png
       rect:
         serializedVersion: 2
-        x: 433
-        y: 141
+        x: 160
+        y: 608
         width: 32
         height: 32
       alignment: 0
@@ -4531,9 +4447,9 @@ TextureImporter:
       name: Zanah_53.png
       rect:
         serializedVersion: 2
-        x: 467
-        y: 141
-        width: 30
+        x: 160
+        y: 576
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -4552,9 +4468,9 @@ TextureImporter:
       name: Zanah_54.png
       rect:
         serializedVersion: 2
-        x: 33
-        y: 139
-        width: 30
+        x: 160
+        y: 544
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -4573,8 +4489,8 @@ TextureImporter:
       name: Zanah_55.png
       rect:
         serializedVersion: 2
-        x: 65
-        y: 136
+        x: 160
+        y: 512
         width: 32
         height: 32
       alignment: 0
@@ -4594,9 +4510,9 @@ TextureImporter:
       name: Zanah_56.png
       rect:
         serializedVersion: 2
-        x: 99
-        y: 126
-        width: 30
+        x: 160
+        y: 480
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -4612,32 +4528,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zanah_59.png
-      rect:
-        serializedVersion: 2
-        x: 131
-        y: 126
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6b54f273bc23fe530800000000000000
-      internalID: 3886380851829622198
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Zanah_57.png
       rect:
         serializedVersion: 2
-        x: 163
-        y: 125
+        x: 160
+        y: 448
         width: 32
         height: 32
       alignment: 0
@@ -4657,8 +4552,8 @@ TextureImporter:
       name: Zanah_58.png
       rect:
         serializedVersion: 2
-        x: 197
-        y: 124
+        x: 160
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -4675,11 +4570,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Zanah_59.png
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b54f273bc23fe530800000000000000
+      internalID: 3886380851829622198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Zanah_6.png
       rect:
         serializedVersion: 2
-        x: 231
-        y: 123
+        x: 160
+        y: 352
         width: 32
         height: 32
       alignment: 0
@@ -4699,9 +4615,9 @@ TextureImporter:
       name: Zanah_60.png
       rect:
         serializedVersion: 2
-        x: 265
-        y: 123
-        width: 30
+        x: 160
+        y: 320
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -4720,8 +4636,8 @@ TextureImporter:
       name: Zanah_61.png
       rect:
         serializedVersion: 2
-        x: 297
-        y: 123
+        x: 160
+        y: 288
         width: 32
         height: 32
       alignment: 0
@@ -4741,8 +4657,8 @@ TextureImporter:
       name: Zanah_62.png
       rect:
         serializedVersion: 2
-        x: 331
-        y: 122
+        x: 160
+        y: 256
         width: 32
         height: 32
       alignment: 0
@@ -4762,8 +4678,8 @@ TextureImporter:
       name: Zanah_63.png
       rect:
         serializedVersion: 2
-        x: 365
-        y: 122
+        x: 160
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -4783,8 +4699,8 @@ TextureImporter:
       name: Zanah_64.png
       rect:
         serializedVersion: 2
-        x: 399
-        y: 122
+        x: 160
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -4801,32 +4717,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zanah_66.png
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 110
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8808c2766343f39b0800000000000000
-      internalID: -5098298844896264056
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Zanah_65.png
       rect:
         serializedVersion: 2
-        x: 433
-        y: 107
+        x: 160
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -4843,11 +4738,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Zanah_66.png
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8808c2766343f39b0800000000000000
+      internalID: -5098298844896264056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Zanah_67.png
       rect:
         serializedVersion: 2
-        x: 467
-        y: 107
+        x: 160
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -4867,9 +4783,9 @@ TextureImporter:
       name: Zanah_68.png
       rect:
         serializedVersion: 2
-        x: 33
-        y: 105
-        width: 30
+        x: 160
+        y: 64
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -4888,8 +4804,8 @@ TextureImporter:
       name: Zanah_69.png
       rect:
         serializedVersion: 2
-        x: 65
-        y: 102
+        x: 160
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -4906,11 +4822,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Zanah_7.png
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd823de86a0ba19e0800000000000000
+      internalID: -1649812084070602529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Zanah_71.png
       rect:
         serializedVersion: 2
-        x: 99
-        y: 92
+        x: 192
+        y: 992
         width: 32
         height: 32
       alignment: 0
@@ -4930,8 +4867,8 @@ TextureImporter:
       name: Zanah_72.png
       rect:
         serializedVersion: 2
-        x: 133
-        y: 91
+        x: 192
+        y: 960
         width: 32
         height: 32
       alignment: 0
@@ -4951,8 +4888,8 @@ TextureImporter:
       name: Zanah_73.png
       rect:
         serializedVersion: 2
-        x: 167
-        y: 90
+        x: 192
+        y: 928
         width: 32
         height: 32
       alignment: 0
@@ -4969,11 +4906,53 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Zanah_74.png
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 896
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9f5b837c9c0f0b30800000000000000
+      internalID: 4255634038981353375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zanah_75.png
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 864
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9104bdc1b73734eb0800000000000000
+      internalID: -4736815410461327335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Zanah_76.png
       rect:
         serializedVersion: 2
-        x: 201
-        y: 89
+        x: 192
+        y: 832
         width: 32
         height: 32
       alignment: 0
@@ -4993,9 +4972,9 @@ TextureImporter:
       name: Zanah_77.png
       rect:
         serializedVersion: 2
-        x: 235
-        y: 89
-        width: 31
+        x: 192
+        y: 800
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -5014,8 +4993,8 @@ TextureImporter:
       name: Zanah_78.png
       rect:
         serializedVersion: 2
-        x: 268
-        y: 89
+        x: 192
+        y: 768
         width: 32
         height: 32
       alignment: 0
@@ -5035,8 +5014,8 @@ TextureImporter:
       name: Zanah_79.png
       rect:
         serializedVersion: 2
-        x: 302
-        y: 88
+        x: 192
+        y: 736
         width: 32
         height: 32
       alignment: 0
@@ -5053,11 +5032,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Zanah_8.png
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 704
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5885dc4a6d0f8e840800000000000000
+      internalID: 5253713770006272133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Zanah_80.png
       rect:
         serializedVersion: 2
-        x: 336
-        y: 88
+        x: 192
+        y: 672
         width: 32
         height: 32
       alignment: 0
@@ -5077,8 +5077,8 @@ TextureImporter:
       name: Zanah_81.png
       rect:
         serializedVersion: 2
-        x: 370
-        y: 88
+        x: 192
+        y: 640
         width: 32
         height: 32
       alignment: 0
@@ -5095,32 +5095,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zanah_95.png
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 76
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8c53aad89eadb4800800000000000000
-      internalID: 597812072195700168
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Zanah_82.png
       rect:
         serializedVersion: 2
-        x: 404
-        y: 73
+        x: 192
+        y: 608
         width: 32
         height: 32
       alignment: 0
@@ -5140,8 +5119,8 @@ TextureImporter:
       name: Zanah_83.png
       rect:
         serializedVersion: 2
-        x: 438
-        y: 73
+        x: 192
+        y: 576
         width: 32
         height: 32
       alignment: 0
@@ -5161,8 +5140,8 @@ TextureImporter:
       name: Zanah_84.png
       rect:
         serializedVersion: 2
-        x: 472
-        y: 73
+        x: 192
+        y: 544
         width: 32
         height: 32
       alignment: 0
@@ -5179,32 +5158,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zanah_97.png
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 71
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cf0395b9eba7fe780800000000000000
-      internalID: -8651561400086744836
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Zanah_85.png
       rect:
         serializedVersion: 2
-        x: 65
-        y: 68
+        x: 192
+        y: 512
         width: 32
         height: 32
       alignment: 0
@@ -5224,8 +5182,8 @@ TextureImporter:
       name: Zanah_86.png
       rect:
         serializedVersion: 2
-        x: 99
-        y: 58
+        x: 192
+        y: 480
         width: 32
         height: 32
       alignment: 0
@@ -5245,8 +5203,8 @@ TextureImporter:
       name: Zanah_87.png
       rect:
         serializedVersion: 2
-        x: 133
-        y: 57
+        x: 192
+        y: 448
         width: 32
         height: 32
       alignment: 0
@@ -5266,9 +5224,9 @@ TextureImporter:
       name: Zanah_88.png
       rect:
         serializedVersion: 2
-        x: 167
-        y: 56
-        width: 31
+        x: 192
+        y: 416
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -5287,8 +5245,8 @@ TextureImporter:
       name: Zanah_89.png
       rect:
         serializedVersion: 2
-        x: 200
-        y: 55
+        x: 192
+        y: 384
         width: 32
         height: 32
       alignment: 0
@@ -5308,9 +5266,9 @@ TextureImporter:
       name: Zanah_9.png
       rect:
         serializedVersion: 2
-        x: 234
-        y: 55
-        width: 31
+        x: 192
+        y: 352
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -5329,8 +5287,8 @@ TextureImporter:
       name: Zanah_90.png
       rect:
         serializedVersion: 2
-        x: 267
-        y: 55
+        x: 192
+        y: 320
         width: 32
         height: 32
       alignment: 0
@@ -5350,8 +5308,8 @@ TextureImporter:
       name: Zanah_91.png
       rect:
         serializedVersion: 2
-        x: 301
-        y: 54
+        x: 192
+        y: 288
         width: 32
         height: 32
       alignment: 0
@@ -5371,8 +5329,8 @@ TextureImporter:
       name: Zanah_92.png
       rect:
         serializedVersion: 2
-        x: 335
-        y: 54
+        x: 192
+        y: 256
         width: 32
         height: 32
       alignment: 0
@@ -5392,8 +5350,8 @@ TextureImporter:
       name: Zanah_93.png
       rect:
         serializedVersion: 2
-        x: 369
-        y: 54
+        x: 192
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -5413,8 +5371,8 @@ TextureImporter:
       name: Zanah_94.png
       rect:
         serializedVersion: 2
-        x: 403
-        y: 39
+        x: 192
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -5431,11 +5389,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Zanah_95.png
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c53aad89eadb4800800000000000000
+      internalID: 597812072195700168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Zanah_96.png
       rect:
         serializedVersion: 2
-        x: 437
-        y: 39
+        x: 192
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -5452,11 +5431,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Zanah_97.png
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf0395b9eba7fe780800000000000000
+      internalID: -8651561400086744836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Zanah_98.png
       rect:
         serializedVersion: 2
-        x: 471
-        y: 39
+        x: 192
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -5476,10 +5476,10 @@ TextureImporter:
       name: Zanah_109.png
       rect:
         serializedVersion: 2
-        x: 110
-        y: 496
-        width: 30
-        height: 15
+        x: 0
+        y: 704
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5497,10 +5497,10 @@ TextureImporter:
       name: Zanah_120.png
       rect:
         serializedVersion: 2
-        x: 142
-        y: 496
-        width: 30
-        height: 15
+        x: 0
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5518,9 +5518,9 @@ TextureImporter:
       name: Zanah_47.png
       rect:
         serializedVersion: 2
-        x: 123
-        y: 374
-        width: 30
+        x: 32
+        y: 672
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -5539,8 +5539,8 @@ TextureImporter:
       name: Zanah_33.png
       rect:
         serializedVersion: 2
-        x: 220
-        y: 260
+        x: 96
+        y: 896
         width: 32
         height: 32
       alignment: 0
@@ -5560,8 +5560,8 @@ TextureImporter:
       name: Zanah_70.png
       rect:
         serializedVersion: 2
-        x: 220
-        y: 260
+        x: 96
+        y: 896
         width: 32
         height: 32
       alignment: 0
@@ -5581,8 +5581,8 @@ TextureImporter:
       name: Zanah_99.png
       rect:
         serializedVersion: 2
-        x: 220
-        y: 260
+        x: 96
+        y: 896
         width: 32
         height: 32
       alignment: 0
