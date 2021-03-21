@@ -3,50 +3,14 @@ guid: d71afaeabad106b4697c8194436d9e82
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6014151954622077035
-    second: CurlyArch_114.png
-  - first:
-      213: 2312359024921527484
-    second: CurlyArch_117.png
-  - first:
-      213: -2877927298046186087
-    second: CurlyArch_111.png
-  - first:
-      213: -8350336241826213419
-    second: CurlyArch_12.png
-  - first:
-      213: 3529930689758463985
-    second: CurlyArch_15.png
-  - first:
-      213: 2628276219585363526
-    second: CurlyArch_18.png
-  - first:
-      213: -8593915288285793346
-    second: CurlyArch_159.png
-  - first:
-      213: -4960744948504123466
-    second: CurlyArch_162.png
-  - first:
-      213: -6145635954008591461
-    second: CurlyArch_165.png
-  - first:
-      213: -1633543689172046881
-    second: CurlyArch_150.png
-  - first:
-      213: -1717486201375398547
-    second: CurlyArch_153.png
-  - first:
-      213: 4424940500152566022
-    second: CurlyArch_156.png
-  - first:
       213: -185692482283561266
     second: CurlyArch_11.png
   - first:
       213: -5746821643918723947
     second: CurlyArch_110.png
   - first:
-      213: -5143369764499269564
-    second: CurlyArch_128.png
+      213: -2877927298046186087
+    second: CurlyArch_111.png
   - first:
       213: 3346892819793221
     second: CurlyArch_112.png
@@ -54,17 +18,26 @@ TextureImporter:
       213: -2583713300935551817
     second: CurlyArch_113.png
   - first:
+      213: -6014151954622077035
+    second: CurlyArch_114.png
+  - first:
       213: 2629231565681192600
     second: CurlyArch_115.png
   - first:
       213: 960720354816012801
     second: CurlyArch_116.png
   - first:
+      213: 2312359024921527484
+    second: CurlyArch_117.png
+  - first:
       213: 926896445817891142
     second: CurlyArch_118.png
   - first:
       213: -1171210760911163550
     second: CurlyArch_119.png
+  - first:
+      213: -8350336241826213419
+    second: CurlyArch_12.png
   - first:
       213: -243526030005609244
     second: CurlyArch_120.png
@@ -90,14 +63,8 @@ TextureImporter:
       213: 3504361936663044189
     second: CurlyArch_127.png
   - first:
-      213: -2716759268378000767
-    second: CurlyArch_130.png
-  - first:
-      213: -1735646772961445121
-    second: CurlyArch_131.png
-  - first:
-      213: -7810994119402168406
-    second: CurlyArch_133.png
+      213: -5143369764499269564
+    second: CurlyArch_128.png
   - first:
       213: 7487639136317641090
     second: CurlyArch_129.png
@@ -105,8 +72,17 @@ TextureImporter:
       213: 1840792584946144897
     second: CurlyArch_13.png
   - first:
+      213: -2716759268378000767
+    second: CurlyArch_130.png
+  - first:
+      213: -1735646772961445121
+    second: CurlyArch_131.png
+  - first:
       213: 90464749617419145
     second: CurlyArch_132.png
+  - first:
+      213: -7810994119402168406
+    second: CurlyArch_133.png
   - first:
       213: 2099808992873853671
     second: CurlyArch_134.png
@@ -126,11 +102,11 @@ TextureImporter:
       213: -1599466345377629928
     second: CurlyArch_139.png
   - first:
-      213: -5041244185478703177
-    second: CurlyArch_140.png
-  - first:
       213: 5734437056411565882
     second: CurlyArch_14.png
+  - first:
+      213: -5041244185478703177
+    second: CurlyArch_140.png
   - first:
       213: -5198395423939623161
     second: CurlyArch_141.png
@@ -138,14 +114,11 @@ TextureImporter:
       213: -5143937786833964132
     second: CurlyArch_142.png
   - first:
-      213: 4481822730272585613
-    second: CurlyArch_144.png
-  - first:
       213: -2947048943782466858
     second: CurlyArch_143.png
   - first:
-      213: -6492527446915184797
-    second: CurlyArch_147.png
+      213: 4481822730272585613
+    second: CurlyArch_144.png
   - first:
       213: 2794898002269966190
     second: CurlyArch_145.png
@@ -153,11 +126,20 @@ TextureImporter:
       213: 6250922560035315551
     second: CurlyArch_146.png
   - first:
+      213: -6492527446915184797
+    second: CurlyArch_147.png
+  - first:
       213: -6408816409072372506
     second: CurlyArch_148.png
   - first:
       213: -6463518655422976691
     second: CurlyArch_149.png
+  - first:
+      213: 3529930689758463985
+    second: CurlyArch_15.png
+  - first:
+      213: -1633543689172046881
+    second: CurlyArch_150.png
   - first:
       213: 4735464269779838580
     second: CurlyArch_151.png
@@ -165,17 +147,26 @@ TextureImporter:
       213: 4078098149798876581
     second: CurlyArch_152.png
   - first:
+      213: -1717486201375398547
+    second: CurlyArch_153.png
+  - first:
       213: 2874628360400485435
     second: CurlyArch_154.png
   - first:
       213: 2532577913019022573
     second: CurlyArch_155.png
   - first:
+      213: 4424940500152566022
+    second: CurlyArch_156.png
+  - first:
       213: 921434297169452942
     second: CurlyArch_157.png
   - first:
       213: -8977341891614271224
     second: CurlyArch_158.png
+  - first:
+      213: -8593915288285793346
+    second: CurlyArch_159.png
   - first:
       213: 7215848286811380819
     second: CurlyArch_16.png
@@ -186,17 +177,26 @@ TextureImporter:
       213: -8781756837149179074
     second: CurlyArch_161.png
   - first:
+      213: -4960744948504123466
+    second: CurlyArch_162.png
+  - first:
       213: 5770967913379637589
     second: CurlyArch_163.png
   - first:
       213: -9045554939876318499
     second: CurlyArch_164.png
   - first:
+      213: -6145635954008591461
+    second: CurlyArch_165.png
+  - first:
       213: 3790222708934441428
     second: CurlyArch_166.png
   - first:
       213: -2734401176682924
     second: CurlyArch_17.png
+  - first:
+      213: 2628276219585363526
+    second: CurlyArch_18.png
   - first:
       213: -5953138969132971921
     second: CurlyArch_19.png
@@ -325,263 +325,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CurlyArch_114.png
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 122
-        width: 32
-        height: 4
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 597a78f59a0798ca0800000000000000
-      internalID: -6014151954622077035
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CurlyArch_117.png
-      rect:
-        serializedVersion: 2
-        x: 38
-        y: 121
-        width: 32
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cb4cd912846271020800000000000000
-      internalID: 2312359024921527484
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CurlyArch_111.png
-      rect:
-        serializedVersion: 2
-        x: 74
-        y: 118
-        width: 32
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 99dae8ece5c8f08d0800000000000000
-      internalID: -2877927298046186087
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CurlyArch_12.png
-      rect:
-        serializedVersion: 2
-        x: 110
-        y: 117
-        width: 32
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5d1d0e61e65ad1c80800000000000000
-      internalID: -8350336241826213419
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CurlyArch_15.png
-      rect:
-        serializedVersion: 2
-        x: 146
-        y: 117
-        width: 32
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1f78dcc8245dcf030800000000000000
-      internalID: 3529930689758463985
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CurlyArch_18.png
-      rect:
-        serializedVersion: 2
-        x: 182
-        y: 117
-        width: 32
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 64efdf7eb43897420800000000000000
-      internalID: 2628276219585363526
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CurlyArch_159.png
-      rect:
-        serializedVersion: 2
-        x: 218
-        y: 113
-        width: 32
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: eb33debe3974cb880800000000000000
-      internalID: -8593915288285793346
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CurlyArch_162.png
-      rect:
-        serializedVersion: 2
-        x: 254
-        y: 112
-        width: 32
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6b72913a0c4e72bb0800000000000000
-      internalID: -4960744948504123466
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CurlyArch_165.png
-      rect:
-        serializedVersion: 2
-        x: 290
-        y: 112
-        width: 32
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b93f27a29a056baa0800000000000000
-      internalID: -6145635954008591461
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CurlyArch_150.png
-      rect:
-        serializedVersion: 2
-        x: 326
-        y: 106
-        width: 32
-        height: 20
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fdba1d96bac7459e0800000000000000
-      internalID: -1633543689172046881
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CurlyArch_153.png
-      rect:
-        serializedVersion: 2
-        x: 362
-        y: 106
-        width: 32
-        height: 20
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d65626446634a28e0800000000000000
-      internalID: -1717486201375398547
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CurlyArch_156.png
-      rect:
-        serializedVersion: 2
-        x: 398
-        y: 106
-        width: 32
-        height: 20
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 60145d7c0fb886d30800000000000000
-      internalID: 4424940500152566022
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: CurlyArch_11.png
       rect:
         serializedVersion: 2
-        x: 434
-        y: 94
+        x: 0
+        y: 480
         width: 32
         height: 32
       alignment: 0
@@ -601,8 +349,8 @@ TextureImporter:
       name: CurlyArch_110.png
       rect:
         serializedVersion: 2
-        x: 470
-        y: 94
+        x: 0
+        y: 448
         width: 32
         height: 32
       alignment: 0
@@ -619,12 +367,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CurlyArch_128.png
+      name: CurlyArch_111.png
       rect:
         serializedVersion: 2
-        x: 506
-        y: 94
-        width: 4
+        x: 0
+        y: 416
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -633,8 +381,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 448598e23741f98b0800000000000000
-      internalID: -5143369764499269564
+      spriteID: 99dae8ece5c8f08d0800000000000000
+      internalID: -2877927298046186087
       vertices: []
       indices: 
       edges: []
@@ -643,8 +391,8 @@ TextureImporter:
       name: CurlyArch_112.png
       rect:
         serializedVersion: 2
-        x: 2
-        y: 86
+        x: 0
+        y: 384
         width: 32
         height: 32
       alignment: 0
@@ -664,8 +412,8 @@ TextureImporter:
       name: CurlyArch_113.png
       rect:
         serializedVersion: 2
-        x: 38
-        y: 85
+        x: 0
+        y: 352
         width: 32
         height: 32
       alignment: 0
@@ -682,11 +430,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: CurlyArch_114.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 597a78f59a0798ca0800000000000000
+      internalID: -6014151954622077035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: CurlyArch_115.png
       rect:
         serializedVersion: 2
-        x: 74
-        y: 82
+        x: 0
+        y: 288
         width: 32
         height: 32
       alignment: 0
@@ -706,8 +475,8 @@ TextureImporter:
       name: CurlyArch_116.png
       rect:
         serializedVersion: 2
-        x: 110
-        y: 81
+        x: 0
+        y: 256
         width: 32
         height: 32
       alignment: 0
@@ -724,11 +493,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: CurlyArch_117.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb4cd912846271020800000000000000
+      internalID: 2312359024921527484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: CurlyArch_118.png
       rect:
         serializedVersion: 2
-        x: 146
-        y: 81
+        x: 0
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -748,9 +538,9 @@ TextureImporter:
       name: CurlyArch_119.png
       rect:
         serializedVersion: 2
-        x: 182
-        y: 81
-        width: 6
+        x: 0
+        y: 160
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -766,12 +556,33 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: CurlyArch_12.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d1d0e61e65ad1c80800000000000000
+      internalID: -8350336241826213419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: CurlyArch_120.png
       rect:
         serializedVersion: 2
-        x: 192
-        y: 81
-        width: 6
+        x: 0
+        y: 96
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -790,9 +601,9 @@ TextureImporter:
       name: CurlyArch_121.png
       rect:
         serializedVersion: 2
-        x: 202
-        y: 81
-        width: 6
+        x: 0
+        y: 64
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -811,9 +622,9 @@ TextureImporter:
       name: CurlyArch_122.png
       rect:
         serializedVersion: 2
-        x: 212
-        y: 77
-        width: 6
+        x: 0
+        y: 32
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -832,9 +643,9 @@ TextureImporter:
       name: CurlyArch_123.png
       rect:
         serializedVersion: 2
-        x: 222
-        y: 77
-        width: 6
+        x: 0
+        y: 0
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -853,9 +664,9 @@ TextureImporter:
       name: CurlyArch_124.png
       rect:
         serializedVersion: 2
-        x: 232
-        y: 77
-        width: 6
+        x: 32
+        y: 480
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -874,9 +685,9 @@ TextureImporter:
       name: CurlyArch_125.png
       rect:
         serializedVersion: 2
-        x: 242
-        y: 77
-        width: 6
+        x: 32
+        y: 448
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -895,8 +706,8 @@ TextureImporter:
       name: CurlyArch_126.png
       rect:
         serializedVersion: 2
-        x: 252
-        y: 76
+        x: 32
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -916,9 +727,9 @@ TextureImporter:
       name: CurlyArch_127.png
       rect:
         serializedVersion: 2
-        x: 288
-        y: 76
-        width: 6
+        x: 32
+        y: 384
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -934,12 +745,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CurlyArch_130.png
+      name: CurlyArch_128.png
       rect:
         serializedVersion: 2
-        x: 298
-        y: 76
-        width: 4
+        x: 32
+        y: 352
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -948,50 +759,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1824414e6d12c4ad0800000000000000
-      internalID: -2716759268378000767
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CurlyArch_131.png
-      rect:
-        serializedVersion: 2
-        x: 306
-        y: 76
-        width: 4
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ffa7412b47eb9e7e0800000000000000
-      internalID: -1735646772961445121
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CurlyArch_133.png
-      rect:
-        serializedVersion: 2
-        x: 314
-        y: 76
-        width: 4
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: aaf5e5a9b36c99390800000000000000
-      internalID: -7810994119402168406
+      spriteID: 448598e23741f98b0800000000000000
+      internalID: -5143369764499269564
       vertices: []
       indices: 
       edges: []
@@ -1000,8 +769,8 @@ TextureImporter:
       name: CurlyArch_129.png
       rect:
         serializedVersion: 2
-        x: 322
-        y: 70
+        x: 32
+        y: 320
         width: 32
         height: 32
       alignment: 0
@@ -1021,8 +790,8 @@ TextureImporter:
       name: CurlyArch_13.png
       rect:
         serializedVersion: 2
-        x: 358
-        y: 70
+        x: 32
+        y: 288
         width: 32
         height: 32
       alignment: 0
@@ -1039,11 +808,53 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: CurlyArch_130.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1824414e6d12c4ad0800000000000000
+      internalID: -2716759268378000767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CurlyArch_131.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffa7412b47eb9e7e0800000000000000
+      internalID: -1735646772961445121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: CurlyArch_132.png
       rect:
         serializedVersion: 2
-        x: 394
-        y: 70
+        x: 32
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -1060,12 +871,33 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: CurlyArch_133.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaf5e5a9b36c99390800000000000000
+      internalID: -7810994119402168406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: CurlyArch_134.png
       rect:
         serializedVersion: 2
-        x: 430
-        y: 58
-        width: 6
+        x: 32
+        y: 128
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1084,9 +916,9 @@ TextureImporter:
       name: CurlyArch_135.png
       rect:
         serializedVersion: 2
-        x: 440
-        y: 58
-        width: 6
+        x: 32
+        y: 96
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1105,9 +937,9 @@ TextureImporter:
       name: CurlyArch_136.png
       rect:
         serializedVersion: 2
-        x: 450
-        y: 58
-        width: 8
+        x: 32
+        y: 64
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1126,9 +958,9 @@ TextureImporter:
       name: CurlyArch_137.png
       rect:
         serializedVersion: 2
-        x: 462
-        y: 58
-        width: 8
+        x: 32
+        y: 32
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1147,9 +979,9 @@ TextureImporter:
       name: CurlyArch_138.png
       rect:
         serializedVersion: 2
-        x: 474
-        y: 58
-        width: 8
+        x: 32
+        y: 0
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1168,9 +1000,9 @@ TextureImporter:
       name: CurlyArch_139.png
       rect:
         serializedVersion: 2
-        x: 486
-        y: 58
-        width: 8
+        x: 64
+        y: 480
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1186,32 +1018,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CurlyArch_140.png
-      rect:
-        serializedVersion: 2
-        x: 498
-        y: 58
-        width: 8
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7b7d98a7f17e90ab0800000000000000
-      internalID: -5041244185478703177
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: CurlyArch_14.png
       rect:
         serializedVersion: 2
-        x: 2
-        y: 50
+        x: 64
+        y: 448
         width: 32
         height: 32
       alignment: 0
@@ -1228,12 +1039,33 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: CurlyArch_140.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b7d98a7f17e90ab0800000000000000
+      internalID: -5041244185478703177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: CurlyArch_141.png
       rect:
         serializedVersion: 2
-        x: 38
-        y: 49
-        width: 6
+        x: 64
+        y: 384
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1252,9 +1084,9 @@ TextureImporter:
       name: CurlyArch_142.png
       rect:
         serializedVersion: 2
-        x: 48
-        y: 49
-        width: 8
+        x: 64
+        y: 352
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1270,33 +1102,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CurlyArch_144.png
-      rect:
-        serializedVersion: 2
-        x: 60
-        y: 49
-        width: 4
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d873b280702a23e30800000000000000
-      internalID: 4481822730272585613
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: CurlyArch_143.png
       rect:
         serializedVersion: 2
-        x: 68
-        y: 46
-        width: 29
+        x: 64
+        y: 320
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1312,12 +1123,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CurlyArch_147.png
+      name: CurlyArch_144.png
       rect:
         serializedVersion: 2
-        x: 101
-        y: 46
-        width: 4
+        x: 64
+        y: 288
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1326,8 +1137,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 36785289fa8e5e5a0800000000000000
-      internalID: -6492527446915184797
+      spriteID: d873b280702a23e30800000000000000
+      internalID: 4481822730272585613
       vertices: []
       indices: 
       edges: []
@@ -1336,9 +1147,9 @@ TextureImporter:
       name: CurlyArch_145.png
       rect:
         serializedVersion: 2
-        x: 109
-        y: 45
-        width: 29
+        x: 64
+        y: 256
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1357,9 +1168,9 @@ TextureImporter:
       name: CurlyArch_146.png
       rect:
         serializedVersion: 2
-        x: 142
-        y: 45
-        width: 29
+        x: 64
+        y: 224
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1375,12 +1186,33 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: CurlyArch_147.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36785289fa8e5e5a0800000000000000
+      internalID: -6492527446915184797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: CurlyArch_148.png
       rect:
         serializedVersion: 2
-        x: 175
-        y: 45
-        width: 29
+        x: 64
+        y: 160
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1399,8 +1231,8 @@ TextureImporter:
       name: CurlyArch_149.png
       rect:
         serializedVersion: 2
-        x: 208
-        y: 41
+        x: 64
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -1417,11 +1249,53 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: CurlyArch_15.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f78dcc8245dcf030800000000000000
+      internalID: 3529930689758463985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CurlyArch_150.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdba1d96bac7459e0800000000000000
+      internalID: -1633543689172046881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: CurlyArch_151.png
       rect:
         serializedVersion: 2
-        x: 244
-        y: 40
+        x: 64
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -1441,8 +1315,8 @@ TextureImporter:
       name: CurlyArch_152.png
       rect:
         serializedVersion: 2
-        x: 280
-        y: 40
+        x: 64
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -1459,11 +1333,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: CurlyArch_153.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d65626446634a28e0800000000000000
+      internalID: -1717486201375398547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: CurlyArch_154.png
       rect:
         serializedVersion: 2
-        x: 316
-        y: 34
+        x: 96
+        y: 448
         width: 32
         height: 32
       alignment: 0
@@ -1483,8 +1378,8 @@ TextureImporter:
       name: CurlyArch_155.png
       rect:
         serializedVersion: 2
-        x: 352
-        y: 34
+        x: 96
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -1501,11 +1396,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: CurlyArch_156.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60145d7c0fb886d30800000000000000
+      internalID: 4424940500152566022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: CurlyArch_157.png
       rect:
         serializedVersion: 2
-        x: 388
-        y: 34
+        x: 96
+        y: 352
         width: 32
         height: 32
       alignment: 0
@@ -1525,8 +1441,8 @@ TextureImporter:
       name: CurlyArch_158.png
       rect:
         serializedVersion: 2
-        x: 424
-        y: 22
+        x: 96
+        y: 320
         width: 32
         height: 32
       alignment: 0
@@ -1543,11 +1459,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: CurlyArch_159.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb33debe3974cb880800000000000000
+      internalID: -8593915288285793346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: CurlyArch_16.png
       rect:
         serializedVersion: 2
-        x: 460
-        y: 22
+        x: 96
+        y: 256
         width: 32
         height: 32
       alignment: 0
@@ -1567,8 +1504,8 @@ TextureImporter:
       name: CurlyArch_160.png
       rect:
         serializedVersion: 2
-        x: 2
-        y: 14
+        x: 96
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -1588,8 +1525,8 @@ TextureImporter:
       name: CurlyArch_161.png
       rect:
         serializedVersion: 2
-        x: 38
-        y: 10
+        x: 96
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -1606,11 +1543,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: CurlyArch_162.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b72913a0c4e72bb0800000000000000
+      internalID: -4960744948504123466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: CurlyArch_163.png
       rect:
         serializedVersion: 2
-        x: 74
-        y: 9
+        x: 96
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -1630,8 +1588,8 @@ TextureImporter:
       name: CurlyArch_164.png
       rect:
         serializedVersion: 2
-        x: 110
-        y: 9
+        x: 96
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -1648,11 +1606,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: CurlyArch_165.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b93f27a29a056baa0800000000000000
+      internalID: -6145635954008591461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: CurlyArch_166.png
       rect:
         serializedVersion: 2
-        x: 146
-        y: 9
+        x: 96
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -1672,8 +1651,8 @@ TextureImporter:
       name: CurlyArch_17.png
       rect:
         serializedVersion: 2
-        x: 182
-        y: 5
+        x: 96
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -1690,11 +1669,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: CurlyArch_18.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64efdf7eb43897420800000000000000
+      internalID: 2628276219585363526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: CurlyArch_19.png
       rect:
         serializedVersion: 2
-        x: 218
-        y: 4
+        x: 128
+        y: 448
         width: 32
         height: 32
       alignment: 0

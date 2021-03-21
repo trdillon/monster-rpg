@@ -12668,6 +12668,6 @@ MonoBehaviour:
   m_Script: {fileID: 12395, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: Palette Settings
   m_EditorClassIdentifier: 
-  cellSizing: 100
+  cellSizing: 0
   m_TransparencySortMode: 0
   m_TransparencySortAxis: {x: 1, y: 1, z: 1}
