@@ -1074,7 +1074,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 939942729436302635, guid: 47cd7455646d355439d805c64a2ac9ab, type: 3}
       propertyPath: m_Size.x
-      value: 0.28
+      value: 0.875
+      objectReference: {fileID: 0}
+    - target: {fileID: 939942729436302635, guid: 47cd7455646d355439d805c64a2ac9ab, type: 3}
+      propertyPath: m_Size.y
+      value: 1.5625
       objectReference: {fileID: 0}
     - target: {fileID: 939942729436302635, guid: 47cd7455646d355439d805c64a2ac9ab, type: 3}
       propertyPath: m_Sprite
@@ -1281,6 +1285,14 @@ PrefabInstance:
       value: Luke
       objectReference: {fileID: 0}
     - target: {fileID: 939942729436302635, guid: 47cd7455646d355439d805c64a2ac9ab, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9375
+      objectReference: {fileID: 0}
+    - target: {fileID: 939942729436302635, guid: 47cd7455646d355439d805c64a2ac9ab, type: 3}
+      propertyPath: m_Size.y
+      value: 1.46875
+      objectReference: {fileID: 0}
+    - target: {fileID: 939942729436302635, guid: 47cd7455646d355439d805c64a2ac9ab, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -8598150131921705685, guid: 11a745cd777945040afe3195bcb46a14, type: 3}
@@ -1465,6 +1477,14 @@ PrefabInstance:
     - target: {fileID: 939942729436302634, guid: 47cd7455646d355439d805c64a2ac9ab, type: 3}
       propertyPath: m_Name
       value: Brad
+      objectReference: {fileID: 0}
+    - target: {fileID: 939942729436302635, guid: 47cd7455646d355439d805c64a2ac9ab, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9375
+      objectReference: {fileID: 0}
+    - target: {fileID: 939942729436302635, guid: 47cd7455646d355439d805c64a2ac9ab, type: 3}
+      propertyPath: m_Size.y
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 939942729436302635, guid: 47cd7455646d355439d805c64a2ac9ab, type: 3}
       propertyPath: m_Sprite
