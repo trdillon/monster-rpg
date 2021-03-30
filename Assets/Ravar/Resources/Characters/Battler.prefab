@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4234512493961276576}
   - component: {fileID: 4234512493961276579}
+  - component: {fileID: 940423651347000571}
   m_Layer: 11
   m_Name: LoS
   m_TagString: Untagged
@@ -57,6 +58,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 4}
   m_EdgeRadius: 0
+--- !u!114 &940423651347000571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4234512493961276577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4de6e11f1ccc1924bab35f4ba39660df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4234512493976123532
 GameObject:
   m_ObjectHideFlags: 0
@@ -154,6 +167,7 @@ GameObject:
   - component: {fileID: 4234512495102130386}
   - component: {fileID: 4234512495102130384}
   - component: {fileID: 4234512495102130393}
+  - component: {fileID: 2390461265131322683}
   m_Layer: 8
   m_Name: Battler
   m_TagString: Untagged
@@ -289,6 +303,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Error Battler
   sprite: {fileID: 21300000, guid: 78bcc0d5a552b4642908b5f74d751d30, type: 3}
+  state: 0
   introDialog:
     strings:
     - If you're seeing this something went wrong.
@@ -347,3 +362,15 @@ MonoBehaviour:
   monsters:
   - _base: {fileID: 11400000, guid: db47c7d4430271e48826759bc32b9285, type: 2}
     level: 1
+--- !u!114 &2390461265131322683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4234512495102130385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4de6e11f1ccc1924bab35f4ba39660df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

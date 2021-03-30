@@ -31,8 +31,6 @@ namespace Itsdits.Ravar
 
         private void Start()
         {
-            playerController.OnEncounter += StartWildBattle;
-            playerController.OnLoS += StartCharEncounter;
             battleSystem.OnBattleOver += EndBattle;
             DialogController.Instance.OnShowDialog += StartDialog;
             DialogController.Instance.OnCloseDialog += EndDialog;
@@ -54,7 +52,10 @@ namespace Itsdits.Ravar
             }
         }
 
-        private void StartWildBattle()
+        /// <summary>
+        /// Starts a battle with a wild monster after Encounter collider is triggered.
+        /// </summary>
+        public void StartWildBattle()
         {
             state = GameState.Battle;
 
@@ -78,19 +79,15 @@ namespace Itsdits.Ravar
             battleSystem.StartWildBattle(playerParty, enemyMonster);
         }
 
-        private void StartCharEncounter(Collider2D battlerCollider)
+        /// <summary>
+        /// Starts an encounter with a character after LoS collider is triggered.
+        /// </summary>
+        /// <param name="battlerCollider">Character to battle</param>
+        public void StartCharEncounter(BattlerController battler)
         {
-            var battler = battlerCollider.GetComponentInParent<BattlerController>();
-            if (battler == null)
-            {
-                Debug.LogError($"GC003: battlerCollider encountered, but failed to get BattlerController from it. Escaping battle sequence to attempt recovery.");
-            }
-            else
-            {
                 state = GameState.Cutscene;
 
                 StartCoroutine(battler.TriggerBattle(playerController));
-            }
         }
 
         /// <summary>

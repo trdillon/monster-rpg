@@ -21,9 +21,6 @@ namespace Itsdits.Ravar.Character.Player
         public string Name => _name;
         public Sprite BattleSprite => battleSprite;
 
-        public event Action OnEncounter;
-        public event Action<Collider2D> OnLoS;
-
         /// <summary>
         /// Handles Update lifecycle when GameState.World.
         /// </summary>
@@ -57,28 +54,16 @@ namespace Itsdits.Ravar.Character.Player
 
         private void CheckAfterMove()
         {
-            CheckForEncounters();
-            CheckForBattlers();
-        }
+            var colliders = Physics2D.OverlapCircleAll(transform.position - new Vector3(0, 0.3f), 0.2f, MapLayers.Instance.ActionLayers);
 
-        private void CheckForBattlers()
-        {
-            var collider = Physics2D.OverlapCircle(transform.position - new Vector3(0, 0.3f), 0.2f, MapLayers.Instance.LosLayer);
-            if (collider != null)
+            foreach (var collider in colliders)
             {
-                animator.IsMoving = false;
-                OnLoS?.Invoke(collider);
-            }
-        }
-
-        private void CheckForEncounters()
-        {
-            if (Physics2D.OverlapCircle(transform.position - new Vector3(0, 0.3f), 0.2f, MapLayers.Instance.EncountersLayer) != null)
-            {
-                if (UnityEngine.Random.Range(1, 101) <= 7)
+                var trigger = collider.GetComponent<ITriggerable>();
+                if (trigger != null)
                 {
                     animator.IsMoving = false;
-                    OnEncounter();
+                    trigger.OnTriggered(this);
+                    break;
                 }
             }
         }
