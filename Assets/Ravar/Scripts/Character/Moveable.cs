@@ -19,6 +19,7 @@ namespace Itsdits.Ravar.Character
         private void Awake()
         {
             animator = GetComponent<CharacterAnimator>();
+            SetOffsetOnTile(transform.position);
         }
 
         /// <summary>
@@ -68,6 +69,17 @@ namespace Itsdits.Ravar.Character
                 animator.MoveX = Mathf.Clamp(xdiff, -1f, 1f);
                 animator.MoveY = Mathf.Clamp(ydiff, -1f, 1f);
             }
+        }
+
+        /// <summary>
+        /// Ensures that characters have consistent positioning relative to the tile grid.
+        /// </summary>
+        /// <param name="position">Position of the Moveable character to re-position.</param>
+        public void SetOffsetOnTile(Vector2 position)
+        {
+            position.x = Mathf.Floor(position.x) + 0.5f;
+            position.y = Mathf.Floor(position.y) + 0.4f;
+            transform.position = position;
         }
 
         private bool IsPathWalkable(Vector3 targetPath)
