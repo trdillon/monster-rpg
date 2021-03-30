@@ -11,6 +11,7 @@ namespace Itsdits.Ravar.Levels
     /// </summary>
     public class Portal : MonoBehaviour, ITriggerable
     {
+        [SerializeField] PortalID portalId;
         [SerializeField] int sceneToLoad = -1;
         [SerializeField] Transform spawnPoint;
 
@@ -34,7 +35,7 @@ namespace Itsdits.Ravar.Levels
             GameController.Instance.PauseGame(true);
 
             yield return SceneManager.LoadSceneAsync(sceneToLoad);
-            var destination = FindObjectsOfType<Portal>().First(x => x != this);
+            var destination = FindObjectsOfType<Portal>().First(x => x != this && x.portalId == this.portalId);
             player.SetOffsetOnTile(destination.SpawnPoint.position);
 
             GameController.Instance.PauseGame(false);
