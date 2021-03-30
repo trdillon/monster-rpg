@@ -1,0 +1,31 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://assetstore.unity.com/packages/tools/sprite-management/texturepacker-importer-16641
+#
+# created with Free texture packer v0.6.6
+# http://free-tex-packer.com
+#
+:format=40300
+:texture=SS_Luke.png
+:size=512x64
+:pivotpoints=enabled
+:borders=disabled
+
+Luke_WalkDown_1.png;0;17;30;47; 0.5;0.5; 0;0;0;0
+Luke_WalkDown_3.png;30;17;30;47; 0.5;0.5; 0;0;0;0
+Luke_WalkDown_2.png;60;17;29;47; 0.5;0.5; 0;0;0;0
+Luke_WalkDown_4.png;89;17;29;47; 0.5;0.5; 0;0;0;0
+Luke_WalkUp_2.png;118;17;29;47; 0.5;0.5; 0;0;0;0
+Luke_WalkUp_4.png;147;17;29;47; 0.5;0.5; 0;0;0;0
+Luke_WalkLeft_3.png;176;17;22;47; 0.5;0.5; 0;0;0;0
+Luke_WalkRight_3.png;198;17;22;47; 0.5;0.5; 0;0;0;0
+Luke_WalkLeft_1.png;220;17;20;47; 0.5;0.5; 0;0;0;0
+Luke_WalkRight_1.png;240;17;20;47; 0.5;0.5; 0;0;0;0
+Luke_WalkUp_1.png;260;18;30;46; 0.5;0.5; 0;0;0;0
+Luke_WalkUp_3.png;290;18;30;46; 0.5;0.5; 0;0;0;0
+Luke_WalkLeft_4.png;320;18;28;46; 0.5;0.5; 0;0;0;0
+Luke_WalkRight_4.png;348;18;28;46; 0.5;0.5; 0;0;0;0
+Luke_WalkLeft_2.png;376;18;25;46; 0.5;0.5; 0;0;0;0
+Luke_WalkRight_2.png;401;18;22;46; 0.5;0.5; 0;0;0;0

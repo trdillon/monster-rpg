@@ -1,18 +1,27 @@
 version: 2
 importPivots: 1
 tpsheetFileNames:
+- Assets/Ravar/Characters/Bro/TP_Bro.tpsheet
 - Assets/Ravar/Characters/ErrorChar/TP_ErrorChar.tpsheet
 - Assets/Ravar/Characters/Gus/TP_Gus.tpsheet
 - Assets/Ravar/Characters/Karen/TP_Karen.tpsheet
+- Assets/Ravar/Characters/Kelly/TP_Kelly.tpsheet
+- Assets/Ravar/Characters/Luke/TP_Luke.tpsheet
 - Assets/Ravar/Characters/Thug/TP_Thug.tpsheet
 - Assets/Ravar/MaterialLibrary/Objects/TP_Crystals.tpsheet
 textureFileNames:
+- Assets/Ravar/Characters/Bro/SS_Bro.png
 - Assets/Ravar/Characters/ErrorChar/SS_ErrorChar.png
 - Assets/Ravar/Characters/Gus/SS_Gus.png
 - Assets/Ravar/Characters/Karen/SS_Karen.png
+- Assets/Ravar/Characters/Kelly/SS_Kelly.png
+- Assets/Ravar/Characters/Luke/SS_Luke.png
 - Assets/Ravar/Characters/Thug/SS_Thug.png
 - Assets/Ravar/MaterialLibrary/Objects/SS_Crystals.png
 normalmapFileNames:
+- 
+- 
+- 
 - 
 - 
 - 
