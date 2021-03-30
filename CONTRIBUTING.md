@@ -1,16 +1,16 @@
-# Contributing to 2D Monster RPG
+# Contributing to RavaR
 
-Thanks for your interest in 2DMRPG. Our goal is to bring a fresh new look and feel to a very familiar old game.
+Thanks for your interest in RavaR. Our goal is to bring a fresh new look and feel to a very familiar old game style.
 
 ## Getting Started
 
-2DMRPG's [open issues are here](https://github.com/trdillon/monster-rpg/issues). In time, we'll tag issues that would make a good first pull request for new contributors. An easy way to get started helping the project is to *file an issue*. You can do that on the 2DMRPG issues page by clicking on the green button at the right. Issues can include bugs to fix, features to add, or documentation that looks outdated. 
+RavaR's [open issues are here](https://github.com/trdillon/ravar/issues). In time, we'll tag issues that would make a good first pull request for new contributors. An easy way to get started helping the project is to *file an issue*. You can do that on the RavaR issues page by clicking on the green button at the right. Issues can include bugs to fix, features to add, or documentation that looks outdated. 
 
 ## Contributions
 
-2DMRPG welcomes contributions from everyone.
+RavaR welcomes contributions from everyone.
 
-Contributions to 2DMRPG should be made in the form of GitHub pull requests. Each pull request will
+Contributions to RavaR should be made in the form of GitHub pull requests. Each pull request will
 be reviewed by a core contributor (someone with permission to land patches) and either landed in the
 main tree or given feedback for changes that would be required.
 
