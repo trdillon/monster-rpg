@@ -1,0 +1,31 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://assetstore.unity.com/packages/tools/sprite-management/texturepacker-importer-16641
+#
+# created with Free texture packer v0.6.6
+# http://free-tex-packer.com
+#
+:format=40300
+:texture=SS_Bro.png
+:size=512x64
+:pivotpoints=enabled
+:borders=disabled
+
+Bro_WalkDown_2.png;0;15;29;49; 0.5;0.5; 0;0;0;0
+Bro_WalkDown_4.png;29;15;29;49; 0.5;0.5; 0;0;0;0
+Bro_WalkUp_2.png;58;15;29;49; 0.5;0.5; 0;0;0;0
+Bro_WalkUp_4.png;87;15;29;49; 0.5;0.5; 0;0;0;0
+Bro_WalkRight_4.png;116;15;28;49; 0.5;0.5; 0;0;0;0
+Bro_WalkLeft_3.png;144;15;23;49; 0.5;0.5; 0;0;0;0
+Bro_WalkRight_3.png;167;15;23;49; 0.5;0.5; 0;0;0;0
+Bro_WalkLeft_1.png;190;15;21;49; 0.5;0.5; 0;0;0;0
+Bro_WalkRight_1.png;211;15;21;49; 0.5;0.5; 0;0;0;0
+Bro_WalkDown_1.png;232;16;30;48; 0.5;0.5; 0;0;0;0
+Bro_WalkDown_3.png;262;16;30;48; 0.5;0.5; 0;0;0;0
+Bro_WalkUp_1.png;292;16;30;48; 0.5;0.5; 0;0;0;0
+Bro_WalkUp_3.png;322;16;30;48; 0.5;0.5; 0;0;0;0
+Bro_WalkLeft_4.png;352;16;28;48; 0.5;0.5; 0;0;0;0
+Bro_WalkLeft_2.png;380;16;25;48; 0.5;0.5; 0;0;0;0
+Bro_WalkRight_2.png;405;16;22;48; 0.5;0.5; 0;0;0;0
