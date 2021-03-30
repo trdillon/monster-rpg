@@ -1,8 +1,11 @@
-using Itsdits.Ravar.Monster.Condition;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Itsdits.Ravar.Monster.Move { 
+namespace Itsdits.Ravar.Monster
+{
+    /// <summary>
+    /// Handles status conditions and stat change effects from <see cref="MoveObj"/>.
+    /// </summary>
     [System.Serializable]
     public class MoveEffects
     {

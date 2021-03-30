@@ -1,11 +1,11 @@
-using Itsdits.Ravar.Character.Player;
+using Itsdits.Ravar.Character;
 using Itsdits.Ravar.Levels;
 using UnityEngine;
 
 namespace Itsdits.Ravar
 {
     /// <summary>
-    /// This class handles logic for triggers on the Encounter layer
+    /// This class handles logic for triggers on the Encounter layer.
     /// </summary>
     public class Encounter : MonoBehaviour, ITriggerable
     {

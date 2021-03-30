@@ -1,4 +1,8 @@
-namespace Itsdits.Ravar.Monster.Move {
+namespace Itsdits.Ravar.Monster
+{
+    /// <summary>
+    /// Instance class of <see cref="MoveBase"/>.
+    /// </summary>
     public class MoveObj
     {
         public MoveBase Base { get; set; }

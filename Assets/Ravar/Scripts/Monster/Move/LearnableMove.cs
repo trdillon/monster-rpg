@@ -1,7 +1,11 @@
 using UnityEngine;
 
-namespace Itsdits.Ravar.Monster.Move { 
-[System.Serializable]
+namespace Itsdits.Ravar.Monster
+{
+    /// <summary>
+    /// Implementation class for <see cref="MoveBase"/>.
+    /// </summary>
+    [System.Serializable]
     public class LearnableMove
     {
         [SerializeField] MoveBase moveBase;

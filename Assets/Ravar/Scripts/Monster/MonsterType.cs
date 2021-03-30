@@ -1,4 +1,8 @@
-namespace Itsdits.Ravar.Monster { 
+namespace Itsdits.Ravar.Monster 
+{
+    /// <summary>
+    /// Types of <see cref="MonsterBase"/> and <see cref="MoveBase"/>. Used with <see cref="TypeChart"/> to determine strengths and weaknesses.
+    /// </summary>
     public enum MonsterType
     {
         Normal,

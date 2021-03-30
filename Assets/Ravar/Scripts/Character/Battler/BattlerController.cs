@@ -1,9 +1,8 @@
-using Itsdits.Ravar.Character.Player;
 using Itsdits.Ravar.UI;
 using System.Collections;
 using UnityEngine;
 
-namespace Itsdits.Ravar.Character.Battler
+namespace Itsdits.Ravar.Character
 {
     /// <summary>
     /// Controller class for Battler characters. Handles encounter triggers and line of sight.

@@ -1,4 +1,8 @@
-namespace Itsdits.Ravar.Monster.Condition { 
+namespace Itsdits.Ravar.Monster
+{ 
+    /// <summary>
+    /// Possible conditions to inflict.
+    /// </summary>
     public enum ConditionID
     {
        NON,

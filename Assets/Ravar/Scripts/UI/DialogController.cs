@@ -4,9 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
 
-namespace Itsdits.Ravar.UI {
+namespace Itsdits.Ravar.UI 
+{
     /// <summary>
-    /// Controller class for displaying dialog.
+    /// Controller class for displaying <see cref="Dialog"/>.
     /// </summary>
     public class DialogController : MonoBehaviour
     {

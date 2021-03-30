@@ -1,4 +1,4 @@
-using Itsdits.Ravar.Character.Player;
+using Itsdits.Ravar.Character;
 
 namespace Itsdits.Ravar.Levels
 {

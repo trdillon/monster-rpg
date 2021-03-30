@@ -2,7 +2,11 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace Itsdits.Ravar.Monster { 
+namespace Itsdits.Ravar.Monster 
+{
+    /// <summary>
+    /// Class that holds a party of <see cref="MonsterObj"/> for a character.
+    /// </summary>
     public class MonsterParty : MonoBehaviour
     {
         [SerializeField] List<MonsterObj> monsters;

@@ -1,10 +1,14 @@
-using Itsdits.Ravar.Monster.Move;
+using Itsdits.Ravar.Monster;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Itsdits.Ravar.UI.Battle { 
+namespace Itsdits.Ravar.UI
+{
+    /// <summary>
+    /// Class for managing the dialog box displayed during battles.
+    /// </summary>
     public class BattleDialogBox : MonoBehaviour
     {
         [Header("Dialog Box")]

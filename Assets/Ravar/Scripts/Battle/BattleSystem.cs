@@ -1,19 +1,18 @@
 using Itsdits.Ravar.Animation;
-using Itsdits.Ravar.Character.Battler;
-using Itsdits.Ravar.Character.Player;
 using Itsdits.Ravar.Monster;
-using Itsdits.Ravar.Monster.Condition;
-using Itsdits.Ravar.Monster.Move;
-using Itsdits.Ravar.UI.Battle;
-using Itsdits.Ravar.UI.Party;
+using Itsdits.Ravar.UI;
 using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
+using Itsdits.Ravar.Character;
 
 namespace Itsdits.Ravar.Battle
 {
+    /// <summary>
+    /// Battle manager class. Handles turn logic, status and stat changes, monster changes and win/loss cases.
+    /// </summary>
     public class BattleSystem : MonoBehaviour
     {
         [Header("Monsters")]
@@ -122,6 +121,11 @@ namespace Itsdits.Ravar.Battle
             ActionSelection();
         }
 
+        /// <summary>
+        /// Executes a turn for each character in the battle.
+        /// </summary>
+        /// <param name="playerAction">Action the player chose.</param>
+        /// <returns>Results of the turn.</returns>
         public IEnumerator ExecuteTurn(BattleAction playerAction)
         {
             state = BattleState.ExecutingTurn;
@@ -545,7 +549,7 @@ namespace Itsdits.Ravar.Battle
             else
             {
                 float f = (playerSpeed * 128) / enemySpeed + 30 * escapeAttempts;
-                f = f % 256;
+                f %= 256;
                 int rng = UnityEngine.Random.Range(0, 256);
 
                 if (rng < f)

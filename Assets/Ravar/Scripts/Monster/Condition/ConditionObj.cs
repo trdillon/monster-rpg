@@ -1,6 +1,10 @@
 using System;
 
-namespace Itsdits.Ravar.Monster.Condition { 
+namespace Itsdits.Ravar.Monster
+{
+    /// <summary>
+    /// Implementation of <see cref="ConditionID"/> as defined in <see cref="ConditionDB"/>.
+    /// </summary>
     public class ConditionObj
     {
         public ConditionID Id { get; set; }

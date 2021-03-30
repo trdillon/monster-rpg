@@ -1,10 +1,8 @@
 using Itsdits.Ravar.Levels;
-using System;
-using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace Itsdits.Ravar.Character.Player
+namespace Itsdits.Ravar.Character
 {
     /// <summary>
     /// Controller for the Player character. Handles input and encounters.

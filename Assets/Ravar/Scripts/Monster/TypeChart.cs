@@ -1,4 +1,8 @@
-namespace Itsdits.Ravar.Monster { 
+namespace Itsdits.Ravar.Monster 
+{
+    /// <summary>
+    /// Type chart for strength and weakness defitions by <see cref="MonsterType"/>.
+    /// </summary>
     public class TypeChart
     {
         private static float[][] chart =

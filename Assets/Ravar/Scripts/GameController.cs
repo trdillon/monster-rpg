@@ -1,14 +1,15 @@
 using Itsdits.Ravar.Battle;
-using Itsdits.Ravar.Character.Battler;
-using Itsdits.Ravar.Character.Player;
+using Itsdits.Ravar.Character;
 using Itsdits.Ravar.Levels;
 using Itsdits.Ravar.Monster;
-using Itsdits.Ravar.Monster.Condition;
 using Itsdits.Ravar.UI;
 using UnityEngine;
 
 namespace Itsdits.Ravar
 {
+    /// <summary>
+    /// Controller for game state management.
+    /// </summary>
     public class GameController : MonoBehaviour
     {
         public static GameController Instance { get; private set; }
@@ -116,6 +117,7 @@ namespace Itsdits.Ravar
 
         /// <summary>
         /// Sets the GameState to World, used to release player from error conditions, etc.
+        /// This is a debug function that usually indicates a function calling this is buggy or incomplete.
         /// </summary>
         public void ReleasePlayer()
         {

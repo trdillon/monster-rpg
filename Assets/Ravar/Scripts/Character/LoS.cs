@@ -1,12 +1,10 @@
-using Itsdits.Ravar.Character.Battler;
-using Itsdits.Ravar.Character.Player;
 using Itsdits.Ravar.Levels;
 using UnityEngine;
 
 namespace Itsdits.Ravar.Character
 {
     /// <summary>
-    /// This class handles logic for triggers on the LoS layer
+    /// This class handles logic for triggers on the LoS layer.
     /// </summary>
     public class LoS : MonoBehaviour, ITriggerable
     {

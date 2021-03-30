@@ -1,10 +1,13 @@
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
-using Itsdits.Ravar.UI.Battle;
-using Itsdits.Ravar.Animation;
+using Itsdits.Ravar.UI;
 
-namespace Itsdits.Ravar.Monster { 
+namespace Itsdits.Ravar.Monster 
+{ 
+    /// <summary>
+    /// Handles the UI and animation functions of a <see cref="MonsterObj"/> in a battle.
+    /// </summary>
     public class BattleMonster : MonoBehaviour
     {
         [SerializeField] BattleHUD hud;

@@ -1,6 +1,4 @@
-using Itsdits.Ravar.Character.Player;
-using System.Collections;
-using System.Collections.Generic;
+using Itsdits.Ravar.Character;
 using UnityEngine;
 
 namespace Itsdits.Ravar.Levels

@@ -1,13 +1,15 @@
 using DG.Tweening;
 using Itsdits.Ravar.Monster;
-using Itsdits.Ravar.Monster.Condition;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Itsdits.Ravar.UI.Battle
+namespace Itsdits.Ravar.UI
 {
+    /// <summary>
+    /// Displays and manages the <see cref="MonsterObj"/> HUD during battle.
+    /// </summary>
     public class BattleHUD : MonoBehaviour
     {
         [Header("Text Labels")]
@@ -28,6 +30,7 @@ namespace Itsdits.Ravar.UI.Battle
 
         private Dictionary<ConditionID, Color> statusColors;
         private MonsterObj _monster;
+
         /// <summary>
         /// Set the data in the HUD.
         /// </summary>

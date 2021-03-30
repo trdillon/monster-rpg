@@ -1,6 +1,7 @@
 using UnityEngine;
 
-namespace Itsdits.Ravar.Levels {
+namespace Itsdits.Ravar.Levels 
+{
     /// <summary>
     /// Class for holding and providing access to map layers.
     /// </summary>

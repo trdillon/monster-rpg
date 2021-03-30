@@ -1,7 +1,11 @@
 using System.Collections;
 using UnityEngine;
 
-namespace Itsdits.Ravar.UI.Battle { 
+namespace Itsdits.Ravar.UI
+{
+    /// <summary>
+    /// Handles visual changes in the HP bar displayed in the <see cref="BattleHUD"/>.
+    /// </summary>
     public class HPBar : MonoBehaviour
     {
         [SerializeField] GameObject health;

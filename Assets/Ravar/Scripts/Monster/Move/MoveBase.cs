@@ -1,11 +1,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Itsdits.Ravar.Monster.Move {
+namespace Itsdits.Ravar.Monster
+{
+    /// <summary>
+    /// Base class for a monster Move.
+    /// </summary>
     [CreateAssetMenu(fileName = "Move", menuName = "Monster/Create a new move")]
     public class MoveBase : ScriptableObject
     {
-        #region config
         [SerializeField] string _name;
         [TextArea]
         [SerializeField] string description;
@@ -19,8 +22,7 @@ namespace Itsdits.Ravar.Monster.Move {
         [SerializeField] MoveTarget target;
         [SerializeField] MoveEffects effects;
         [SerializeField] List<MoveSecondaryEffects> moveSecondaryEffects;
-        #endregion
-        #region Properties
+
         public string Name => _name;
         public string Description => description;
         public int Power => power;
@@ -33,6 +35,5 @@ namespace Itsdits.Ravar.Monster.Move {
         public MoveTarget Target => target;
         public MoveEffects Effects => effects;
         public List<MoveSecondaryEffects> MoveSecondaryEffects => moveSecondaryEffects;
-        #endregion
     }
 }

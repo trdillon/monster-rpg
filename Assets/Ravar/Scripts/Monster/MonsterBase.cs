@@ -1,8 +1,11 @@
-using Itsdits.Ravar.Monster.Move;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Itsdits.Ravar.Monster {
+namespace Itsdits.Ravar.Monster 
+{
+    /// <summary>
+    /// Base class for Monsters.
+    /// </summary>
     [CreateAssetMenu(fileName = "Monster", menuName = "Monster/Create a new monster")]
     public class MonsterBase : ScriptableObject
     {

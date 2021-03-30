@@ -1,12 +1,13 @@
-using Itsdits.Ravar.Monster.Condition;
-using Itsdits.Ravar.Monster.Move;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace Itsdits.Ravar.Monster { 
-
+namespace Itsdits.Ravar.Monster 
+{ 
+    /// <summary>
+    /// Implementation class for <see cref="MonsterBase"/>.
+    /// </summary>
     [System.Serializable]
     public class MonsterObj
     {

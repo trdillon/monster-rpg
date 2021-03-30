@@ -2,7 +2,11 @@ using Itsdits.Ravar.Monster;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Itsdits.Ravar.Levels { 
+namespace Itsdits.Ravar.Levels 
+{
+    /// <summary>
+    /// Class that holds what wild monsters, quests and objects reside in a map area.
+    /// </summary>
     public class MapArea : MonoBehaviour
     {
         [SerializeField] List<MonsterObj> wildMonsters;

@@ -1,7 +1,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Itsdits.Ravar.Monster.Condition { 
+namespace Itsdits.Ravar.Monster
+{
+    /// <summary>
+    /// Database class for definitions of <see cref="MoveEffects"/> and <see cref="MoveSecondaryEffects"/>.
+    /// </summary>
     public class ConditionDB
     {
         /// <summary>

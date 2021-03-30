@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Itsdits.Ravar.UI.Party
+namespace Itsdits.Ravar.UI
 {
+    /// <summary>
+    /// UI class for managing a <see cref="MonsterParty"/>.
+    /// </summary>
     public class PartyScreen : MonoBehaviour
     {
         [SerializeField] Text messageText;
