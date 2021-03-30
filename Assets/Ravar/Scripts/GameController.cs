@@ -21,8 +21,10 @@ namespace Itsdits.Ravar
 
         private BattlerController battler;
         private GameState state;
+        private GameState prevState;
 
         public GameState State => state;
+        public GameState PrevState => prevState;
 
         private void Awake()
         {
@@ -115,6 +117,23 @@ namespace Itsdits.Ravar
             }
         }
 
+        /// <summary>
+        /// Pause and unpause the game.
+        /// </summary>
+        /// <param name="pause">Pause or unpause.</param>
+        public void PauseGame(bool pause)
+        {
+            if (pause)
+            {
+                prevState = state;
+                state = GameState.Pause;
+            }
+            else
+            {
+                state = prevState;
+            }
+        }
+             
         /// <summary>
         /// Sets the GameState to World, used to release player from error conditions, etc.
         /// This is a debug function that usually indicates a function calling this is buggy or incomplete.
