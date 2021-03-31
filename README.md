@@ -11,6 +11,7 @@ RavaR is a 2D monster catching RPG game made with Unity and C#.
 - [Roadmap](#roadmap)
 - [Maintainers](#maintainers)
 - [Contributing](#contributing)
+- [Acknowledgements](#acknowledgements)
 - [License](#license)
 
 ## About
