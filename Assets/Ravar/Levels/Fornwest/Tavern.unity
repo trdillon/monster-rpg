@@ -1855,7 +1855,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 939942729436302631, guid: 47cd7455646d355439d805c64a2ac9ab, type: 3}
       propertyPath: dialog.strings.Array.data[10]
-      value: Which type would you prefer to start with? Fire, Water or Grass?
+      value: Which type would you prefer to start with?
       objectReference: {fileID: 0}
     - target: {fileID: 939942729436302632, guid: 47cd7455646d355439d805c64a2ac9ab, type: 3}
       propertyPath: m_RootOrder
