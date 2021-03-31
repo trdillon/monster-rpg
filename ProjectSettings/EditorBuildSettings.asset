@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Ravar/Levels/MainMenu.unity
+    guid: 87e770fc0eb69a747a999ef198db437c
+  - enabled: 1
     path: Assets/Ravar/Levels/Fornwest/Fornwest.unity
     guid: ca2c746788944c743bddcd221617b059
   - enabled: 1
