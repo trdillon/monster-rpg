@@ -1,9 +1,8 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Itsdits.Ravar
+namespace Itsdits.Ravar.UI
 {
     /// <summary>
     /// Container class that holds references to the menu objects and screens. Also handles input and selection.
