@@ -16,6 +16,7 @@ namespace Itsdits.Ravar
 
         [SerializeField] PlayerController playerController;
         [SerializeField] DialogController dialogController;
+        [SerializeField] PauseController pauseController;
         [SerializeField] BattleSystem battleSystem;
         [SerializeField] Camera worldCamera;
 
@@ -52,6 +53,10 @@ namespace Itsdits.Ravar
             else if (state == GameState.Dialog)
             {
                 DialogController.Instance.HandleUpdate();
+            }
+            else if (state == GameState.Pause)
+            {
+                pauseController.HandleUpdate();
             }
         }
 
@@ -126,10 +131,12 @@ namespace Itsdits.Ravar
             if (pause)
             {
                 prevState = state;
+                pauseController.EnablePauseBox(true);
                 state = GameState.Pause;
             }
             else
             {
+                pauseController.EnablePauseBox(false);
                 state = prevState;
             }
         }

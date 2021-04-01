@@ -50,6 +50,18 @@ namespace Itsdits.Ravar.Character
             }
         }
 
+        /// <summary>
+        /// Pause the game when the Pause event is triggered.
+        /// </summary>
+        /// <param name="context">Callbacks from the InputAction cycle.</param>
+        public void OnPause(InputAction.CallbackContext context)
+        {
+            if (context.performed)
+            {
+                GameController.Instance.PauseGame(true);
+            }
+        }
+
         private void CheckAfterMove()
         {
             var colliders = Physics2D.OverlapCircleAll(transform.position - new Vector3(0, 0.3f), 0.2f, MapLayers.Instance.ActionLayers);
