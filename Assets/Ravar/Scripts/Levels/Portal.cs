@@ -32,13 +32,13 @@ namespace Itsdits.Ravar.Levels
         private IEnumerator SwitchScene() 
         {
             DontDestroyOnLoad(gameObject);
-            GameController.Instance.PauseGame(true);
+            GameController.Instance.FreezePlayer(true);
 
             yield return SceneManager.LoadSceneAsync(sceneToLoad);
             var destination = FindObjectsOfType<Portal>().First(x => x != this && x.portalId == this.portalId);
             player.SetOffsetOnTile(destination.SpawnPoint.position);
 
-            GameController.Instance.PauseGame(false);
+            GameController.Instance.FreezePlayer(false);
             Destroy(gameObject);
         }
     }
