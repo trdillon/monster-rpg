@@ -140,6 +140,23 @@ namespace Itsdits.Ravar
                 state = prevState;
             }
         }
+
+        /// <summary>
+        /// Stops the character and prevents player input. Used in scene switching and cutscenes.
+        /// </summary>
+        /// <param name="frozen">Is the player frozen or not.</param>
+        public void FreezePlayer(bool frozen)
+        {
+            if (frozen)
+            {
+                prevState = state;
+                state = GameState.Cutscene;
+            }
+            else
+            {
+                state = prevState;
+            }
+        }
              
         /// <summary>
         /// Sets the GameState to World, used to release player from error conditions, etc.
