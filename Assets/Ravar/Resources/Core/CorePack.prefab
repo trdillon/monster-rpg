@@ -296,7 +296,7 @@ GameObject:
   - component: {fileID: 6249827043630627062}
   - component: {fileID: 1141818895532616907}
   - component: {fileID: 1567204535703246892}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Pause
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -342,7 +342,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!114 &6249827043630627062
 MonoBehaviour:
