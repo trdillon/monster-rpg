@@ -5,7 +5,7 @@ using Itsdits.Ravar.Monster;
 using Itsdits.Ravar.UI;
 using UnityEngine;
 
-namespace Itsdits.Ravar
+namespace Itsdits.Ravar.Core
 {
     /// <summary>
     /// Controller for game state management.

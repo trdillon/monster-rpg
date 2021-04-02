@@ -1,4 +1,5 @@
 using Itsdits.Ravar.Character;
+using Itsdits.Ravar.Core;
 using System.Collections;
 using System.Linq;
 using UnityEngine;

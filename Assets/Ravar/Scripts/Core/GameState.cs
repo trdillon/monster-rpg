@@ -1,4 +1,4 @@
-namespace Itsdits.Ravar
+namespace Itsdits.Ravar.Core
 {
     /// <summary>
     /// Represents the current state of the game.
