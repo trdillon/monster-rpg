@@ -1,3 +1,4 @@
+using Lowscope.Saving;
 using UnityEngine;
 
 namespace Itsdits.Ravar.Core
@@ -14,6 +15,7 @@ namespace Itsdits.Ravar.Core
             var existingPacks = FindObjectsOfType<CorePack>();
             if (existingPacks.Length == 0)
             {
+                //SaveMaster.SpawnSavedPrefab(Lowscope.Saving.Enums.InstanceSource.Resources, "Core/CorePack");
                 Instantiate(corePackPrefab, new Vector3(0, 0, 0), Quaternion.identity);
             }
         }

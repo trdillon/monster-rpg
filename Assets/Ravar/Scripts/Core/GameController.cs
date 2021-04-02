@@ -24,7 +24,13 @@ namespace Itsdits.Ravar.Core
         private GameState state;
         private GameState prevState;
 
+        /// <summary>
+        /// The current <see cref="GameState"/>.
+        /// </summary>
         public GameState State => state;
+        /// <summary>
+        /// The previous <see cref="GameState"/>.
+        /// </summary>
         public GameState PrevState => prevState;
 
         private void Awake()
@@ -71,17 +77,7 @@ namespace Itsdits.Ravar.Core
             worldCamera.gameObject.SetActive(false);
 
             var playerParty = playerController.GetComponent<MonsterParty>();
-            if (playerParty == null)
-            {
-                Debug.LogError("GC001: Player party null. Failed to get party from playerController.");
-            }
-
             var wildMonster = FindObjectOfType<MapArea>().GetComponent<MapArea>().GetRandomMonster();
-            if (wildMonster == null)
-            {
-                Debug.LogError("GC002: wildMonster null. Failed to GetRandomMonster from MapArea.");
-            }
-
             var enemyMonster = new MonsterObj(wildMonster.Base, wildMonster.Level);
 
             battleSystem.StartWildBattle(playerParty, enemyMonster);
@@ -90,7 +86,7 @@ namespace Itsdits.Ravar.Core
         /// <summary>
         /// Starts an encounter with a character after LoS collider is triggered.
         /// </summary>
-        /// <param name="battlerCollider">Character to battle</param>
+        /// <param name="battlerCollider">Character that was encountered.</param>
         public void StartCharEncounter(BattlerController battler)
         {
                 state = GameState.Cutscene;
@@ -101,7 +97,7 @@ namespace Itsdits.Ravar.Core
         /// <summary>
         /// Start a battle with enemy character.
         /// </summary>
-        /// <param name="battler">Character to battle</param>
+        /// <param name="battler">Character to do battle with.</param>
         public void StartCharBattle(BattlerController battler)
         {
             state = GameState.Battle;
@@ -112,20 +108,14 @@ namespace Itsdits.Ravar.Core
             this.battler = battler;
             var playerParty = playerController.GetComponent<MonsterParty>();
             var battlerParty = battler.GetComponent<MonsterParty>();
-            if (playerParty == null || battlerParty == null)
-            {
-                Debug.LogError("GC004: MonsterParty null. Failed to get party during StartCharBattle.");
-            }
-            else
-            {
-                battleSystem.StartCharBattle(playerParty, battlerParty);
-            }
+
+            battleSystem.StartCharBattle(playerParty, battlerParty);
         }
 
         /// <summary>
         /// Pause and unpause the game.
         /// </summary>
-        /// <param name="pause">Pause or unpause.</param>
+        /// <param name="pause">True for pause, false for unpause.</param>
         public void PauseGame(bool pause)
         {
             if (pause)
@@ -144,7 +134,7 @@ namespace Itsdits.Ravar.Core
         /// <summary>
         /// Stops the character and prevents player input. Used in scene switching and cutscenes.
         /// </summary>
-        /// <param name="frozen">Is the player frozen or not.</param>
+        /// <param name="frozen">True for freeze, false for unfreeze.</param>
         public void FreezePlayer(bool frozen)
         {
             if (frozen)
@@ -170,11 +160,6 @@ namespace Itsdits.Ravar.Core
         private void EndBattle(BattleResult result, bool isCharBattle)
         {
             state = GameState.World;
-
-            if (isCharBattle && battler == null)
-            {
-                Debug.LogError("GC005: EndBattle called but battler was null.");
-            }
 
             if (battler != null && result == BattleResult.Won)
             {

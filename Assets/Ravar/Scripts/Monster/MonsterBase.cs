@@ -15,6 +15,7 @@ namespace Itsdits.Ravar.Monster
         [SerializeField] string _name;
         [TextArea]
         [SerializeField] string description;
+        [SerializeField] int monsterNumber;
 
         [Header("Base Stats")]
         [SerializeField] int maxHp;
@@ -39,29 +40,81 @@ namespace Itsdits.Ravar.Monster
         [SerializeField] Sprite rightSprite;
 
         // Details
+        /// <summary>
+        /// The monster's name.
+        /// </summary>
         public string Name => _name;
+        /// <summary>
+        /// Description of the monster.
+        /// </summary>
         public string Description => description;
+        /// <summary>
+        /// Number of the monster in the monster index.
+        /// </summary>
+        public int MonsterNumber => monsterNumber;
 
         // Base Stats
+        /// <summary>
+        /// Max HP base.
+        /// </summary>
         public int MaxHp => maxHp;
+        /// <summary>
+        /// Attack stat base.
+        /// </summary>
         public int Attack => attack;
+        /// <summary>
+        /// Defense stat base.
+        /// </summary>
         public int Defense => defense;
+        /// <summary>
+        /// Special Attack stat base.
+        /// </summary>
         public int SpAttack => spAttack;
+        /// <summary>
+        /// Special Defense stat base.
+        /// </summary>
         public int SpDefense => spDefense;
+        /// <summary>
+        /// Speed stat base.
+        /// </summary>
         public int Speed => speed;
 
         // Special Stats
+        /// <summary>
+        /// How much experience this monster gives when defeated.
+        /// </summary>
         public int ExpGiven => expGiven;
+        /// <summary>
+        /// How difficult this monster is to catch. Lower number is a higher difficulty.
+        /// </summary>
         public int CatchRate => catchRate;
+        /// <summary>
+        /// The relative rate at which this monster gains experience.
+        /// </summary>
         public GrowthRate GrowthRate => growthRate;
 
         // Types and Moves
+        /// <summary>
+        /// The primary <see cref="MonsterType"/> of this monster.
+        /// </summary>
         public MonsterType PrimaryType => primaryType;
+        /// <summary>
+        /// The optional secondary <see cref="MonsterType"/> of this monster.
+        /// </summary>
         public MonsterType SecondaryType => secondaryType;
+        /// <summary>
+        /// The moves that this monster is capable of learning.
+        /// </summary>
         public List<LearnableMove> LearnableMoves => learnableMoves;
 
         // Sprites
+        /// <summary>
+        /// The sprite that appears on the left, player side, in a battle.
+        /// </summary>
         public Sprite LeftSprite => leftSprite;
+        /// <summary>
+        /// The sprite that appears on the right, enemy side, in a battle.
+        /// </summary>
         public Sprite RightSprite => rightSprite;
 
         /// <summary>
@@ -91,7 +144,6 @@ namespace Itsdits.Ravar.Monster
                 return GetFluctuating(level);
             }
 
-            Debug.LogError($"MB001: {Name} missing GrowthRate.");
             return -1;
         }
 

@@ -17,7 +17,13 @@ namespace Itsdits.Ravar.Character
         private Vector2 inputVector;
         private Vector2 moveVector;
 
+        /// <summary>
+        /// Gets the player's name.
+        /// </summary>
         public string Name => _name;
+        /// <summary>
+        /// Returns the character sprite to be used in the battle screen.
+        /// </summary>
         public Sprite BattleSprite => battleSprite;
 
         /// <summary>
