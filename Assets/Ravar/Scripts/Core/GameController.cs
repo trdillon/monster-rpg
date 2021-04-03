@@ -1,9 +1,11 @@
 using Itsdits.Ravar.Battle;
 using Itsdits.Ravar.Character;
+using Itsdits.Ravar.Data;
 using Itsdits.Ravar.Levels;
 using Itsdits.Ravar.Monster;
 using Itsdits.Ravar.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Itsdits.Ravar.Core
 {
@@ -23,6 +25,7 @@ namespace Itsdits.Ravar.Core
         private BattlerController battler;
         private GameState state;
         private GameState prevState;
+        private int currentScene;
 
         /// <summary>
         /// The current <see cref="GameState"/>.
@@ -32,6 +35,10 @@ namespace Itsdits.Ravar.Core
         /// The previous <see cref="GameState"/>.
         /// </summary>
         public GameState PrevState => prevState;
+        /// <summary>
+        /// The index of the scene the player is currently in.
+        /// </summary>
+        public int CurrentScene => currentScene;
 
         private void Awake()
         {
@@ -44,6 +51,7 @@ namespace Itsdits.Ravar.Core
             battleSystem.OnBattleOver += EndBattle;
             DialogController.Instance.OnShowDialog += StartDialog;
             DialogController.Instance.OnCloseDialog += EndDialog;
+            UpdateCurrentScene();
         }
 
         private void Update()
@@ -123,6 +131,10 @@ namespace Itsdits.Ravar.Core
                 prevState = state;
                 pauseController.EnablePauseBox(true);
                 state = GameState.Pause;
+                var saveData = playerController.SavePlayerData();
+                GameData.AddPlayerData(saveData);
+                var savedData = JsonUtility.ToJson(saveData);
+                Debug.Log($"{savedData}");
             }
             else
             {
@@ -146,6 +158,14 @@ namespace Itsdits.Ravar.Core
             {
                 state = prevState;
             }
+        }
+
+        /// <summary>
+        /// Updates the currentScene index.
+        /// </summary>
+        public void UpdateCurrentScene()
+        {
+            currentScene = SceneManager.GetActiveScene().buildIndex;
         }
              
         /// <summary>

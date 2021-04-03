@@ -168,7 +168,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4305251763583226757}
   - component: {fileID: 394868712326862571}
-  - component: {fileID: 4018943078037135416}
   m_Layer: 0
   m_Name: CorePack
   m_TagString: Untagged
@@ -205,26 +204,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ae8675b51ee34140bc83fd79881c347, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4018943078037135416
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1136802612858473057}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca6a0d75815a6ec449c648f0cf0fec23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  loadOnce: 0
-  manualSaveLoad: 0
-  externalListeners: []
-  cachedSaveableComponents:
-  - identifier: SavePosition-5526e
-    monoBehaviour: {fileID: 574087058574600718}
-  saveIdentification: 
-  sceneName: 
 --- !u!1 &1718674741943720684
 GameObject:
   m_ObjectHideFlags: 0
@@ -1224,7 +1203,7 @@ MonoBehaviour:
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 8438543527559960825}
 --- !u!1 &5170109535920184644
 GameObject:
   m_ObjectHideFlags: 0
@@ -6341,13 +6320,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1012279493172490901, guid: b8e8185e249472f42998a24162b96d8c, type: 3}
+      propertyPath: id
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8e8185e249472f42998a24162b96d8c, type: 3}
---- !u!4 &8438543527836692937 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1012279493172490890, guid: b8e8185e249472f42998a24162b96d8c, type: 3}
-  m_PrefabInstance: {fileID: 8869817977941640003}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &8438543527836692950 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1012279493172490901, guid: b8e8185e249472f42998a24162b96d8c, type: 3}
@@ -6364,14 +6342,8 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 1012279492845493178, guid: b8e8185e249472f42998a24162b96d8c, type: 3}
   m_PrefabInstance: {fileID: 8869817977941640003}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &574087058574600718 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8998329871220943181, guid: b8e8185e249472f42998a24162b96d8c, type: 3}
+--- !u!4 &8438543527836692937 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1012279493172490890, guid: b8e8185e249472f42998a24162b96d8c, type: 3}
   m_PrefabInstance: {fileID: 8869817977941640003}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d2c7167844c4a445b275f02764b1d0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

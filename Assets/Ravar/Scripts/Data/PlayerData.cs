@@ -1,21 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-namespace Itsdits.Ravar
+namespace Itsdits.Ravar.Data
 {
-    public class PlayerData : MonoBehaviour
+    /// <summary>
+    /// Data class that holds data for the Player such as current scene and position.
+    /// </summary>
+    [System.Serializable]
+    public class PlayerData
     {
-        // Start is called before the first frame update
-        void Start()
-        {
-        
-        }
+        public string id;
+        public int currentScene;
+        public Vector2 currentPosition;
 
-        // Update is called once per frame
-        void Update()
+        public PlayerData(string newId, int scene, Vector2 position)
         {
-        
+            id = newId;
+            currentScene = scene;
+            currentPosition = position;
         }
     }
 }

@@ -98,7 +98,6 @@ GameObject:
   - component: {fileID: 1012279493172490901}
   - component: {fileID: 1012279493172490900}
   - component: {fileID: 1012279493172490903}
-  - component: {fileID: 8998329871220943181}
   m_Layer: 9
   m_Name: Player
   m_TagString: Untagged
@@ -231,6 +230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dbc970c53fe4fb4db64554b34a2489c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 
   _name: Gus
   battleSprite: {fileID: 21300000, guid: a0e8a29eddec6794f9e41d070886352f, type: 3}
 --- !u!114 &1012279493172490900
@@ -287,15 +287,3 @@ MonoBehaviour:
     level: 4
   - _base: {fileID: 11400000, guid: 875c84c591e13614ca6291675fe33305, type: 2}
     level: 2
---- !u!114 &8998329871220943181
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1012279493172490888}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d2c7167844c4a445b275f02764b1d0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

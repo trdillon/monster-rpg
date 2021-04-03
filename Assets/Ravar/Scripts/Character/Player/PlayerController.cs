@@ -1,4 +1,5 @@
 using Itsdits.Ravar.Core;
+using Itsdits.Ravar.Data;
 using Itsdits.Ravar.Levels;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -6,26 +7,38 @@ using UnityEngine.InputSystem;
 namespace Itsdits.Ravar.Character
 {
     /// <summary>
-    /// Controller for the Player character. Handles input and encounters.
+    /// Controller for the Player character that implements <see cref="Moveable"/>. Handles input and interaction.
     /// </summary>
     public class PlayerController : Moveable
     {
         [Header("Details")]
+        [SerializeField] string id;
         [SerializeField] string _name;
         [SerializeField] Sprite battleSprite;
 
+        private PlayerData playerData;
+        private int currentScene;
+        private Vector2 currentPosition;
         private Vector2 inputVector;
         private Vector2 moveVector;
 
         /// <summary>
-        /// Gets the player's name.
+        /// The player's name.
         /// </summary>
         public string Name => _name;
         /// <summary>
-        /// Returns the character sprite to be used in the battle screen.
+        /// The character sprite to be used in the battle screen.
         /// </summary>
         public Sprite BattleSprite => battleSprite;
 
+        private void Start()
+        {
+            currentScene = GameController.Instance.CurrentScene;
+            id = _name + Random.Range(0, 65534);
+            currentPosition = transform.position;
+            playerData = new PlayerData(id, currentScene, currentPosition);
+        }
+        
         /// <summary>
         /// Handles Update lifecycle when GameState.World.
         /// </summary>
@@ -69,6 +82,34 @@ namespace Itsdits.Ravar.Character
             }
         }
 
+        /// <summary>
+        /// Saves the current player's data.
+        /// </summary>
+        /// <returns>PlayerData with current data.</returns>
+        public PlayerData SavePlayerData()
+        {
+            playerData.id = id;
+
+            GameController.Instance.UpdateCurrentScene();
+            currentScene = GameController.Instance.CurrentScene;
+            playerData.currentScene = currentScene;
+            playerData.currentPosition = currentPosition;
+
+            return playerData;
+        }
+
+        /// <summary>
+        /// Loads the player data into the current player.
+        /// </summary>
+        /// <param name="loadData">PlayerData to load into this player.</param>
+        public void LoadPlayerData(PlayerData loadData)
+        {
+            id = loadData.id;
+            currentScene = loadData.currentScene;
+            currentPosition = loadData.currentPosition;
+            SetOffsetOnTile(currentPosition);
+        }
+
         private void CheckAfterMove()
         {
             var colliders = Physics2D.OverlapCircleAll(transform.position - new Vector3(0, 0.3f), 0.2f, MapLayers.Instance.ActionLayers);
@@ -99,6 +140,7 @@ namespace Itsdits.Ravar.Character
                     // Normalize the Vector2 to avoid inputs less than 1f.
                     moveVector = inputVector.normalized;
                     StartCoroutine(Move(moveVector, CheckAfterMove));
+                    currentPosition = transform.position;
                 }
             }
         }

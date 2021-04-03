@@ -36,6 +36,8 @@ namespace Itsdits.Ravar.Levels
             GameController.Instance.FreezePlayer(true);
 
             yield return SceneManager.LoadSceneAsync(sceneToLoad);
+            GameController.Instance.UpdateCurrentScene();
+
             var destination = FindObjectsOfType<Portal>().First(x => x != this && x.portalId == this.portalId);
             player.SetOffsetOnTile(destination.SpawnPoint.position);
 
