@@ -1,6 +1,5 @@
 using Itsdits.Ravar.Battle;
 using Itsdits.Ravar.Character;
-using Itsdits.Ravar.Data;
 using Itsdits.Ravar.Levels;
 using Itsdits.Ravar.Monster;
 using Itsdits.Ravar.UI;
@@ -39,6 +38,7 @@ namespace Itsdits.Ravar.Core
         /// The index of the scene the player is currently in.
         /// </summary>
         public int CurrentScene => currentScene;
+        public PlayerController CurrentPlayer => playerController;
 
         private void Awake()
         {
@@ -131,10 +131,6 @@ namespace Itsdits.Ravar.Core
                 prevState = state;
                 pauseController.EnablePauseBox(true);
                 state = GameState.Pause;
-                var saveData = playerController.SavePlayerData();
-                GameData.AddPlayerData(saveData);
-                var savedData = JsonUtility.ToJson(saveData);
-                Debug.Log($"{savedData}");
             }
             else
             {
@@ -158,6 +154,15 @@ namespace Itsdits.Ravar.Core
             {
                 state = prevState;
             }
+        }
+
+        /// <summary>
+        /// Loads the game into a different scene. Used for changing scenes on game loading.
+        /// </summary>
+        /// <param name="sceneIndex"></param>
+        public void LoadScene(int sceneIndex)
+        {
+            SceneManager.LoadSceneAsync(sceneIndex);
         }
 
         /// <summary>

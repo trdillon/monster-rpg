@@ -1,4 +1,6 @@
+using Itsdits.Ravar.Character;
 using Itsdits.Ravar.Core;
+using Itsdits.Ravar.Data;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -18,8 +20,14 @@ namespace Itsdits.Ravar.UI
 
         private PauseState state;
 
+        /// <summary>
+        /// The current state of the pause menu.
+        /// </summary>
         public PauseState State => state;
 
+        /// <summary>
+        /// Handles Update lifecycle when GameState is Pause.
+        /// </summary>
         public void HandleUpdate()
         {
             if (state == PauseState.Main)
@@ -38,6 +46,28 @@ namespace Itsdits.Ravar.UI
             {
                 HandleSettingsSelection();
             }
+        }
+
+        /// <summary>
+        /// Saves the current game instance.
+        /// </summary>
+        public void SaveGame()
+        {
+            var player = GameController.Instance.CurrentPlayer;
+            var playerData = player.SavePlayerData();
+            GameData.AddPlayerData(playerData);
+            var savedData = JsonUtility.ToJson(playerData);
+            Debug.Log($"{savedData}");
+        }
+
+        /// <summary>
+        /// Loads a saved game into the current game instance.
+        /// </summary>
+        public void LoadGame()
+        {
+            var player = GameController.Instance.CurrentPlayer;
+            var playerData = GameData.LoadPlayerData();
+            player.LoadPlayerData(playerData);
         }
 
         /// <summary>
@@ -148,6 +178,11 @@ namespace Itsdits.Ravar.UI
                     // Back
                     PauseSelection();
                 }
+                else if (currentSave == 1)
+                {
+                    // Save
+                    SaveGame();
+                }
             }
         }
 
@@ -171,6 +206,11 @@ namespace Itsdits.Ravar.UI
                 {
                     // Back
                     PauseSelection();
+                }
+                else if (currentLoad == 1)
+                {
+                    // Load
+                    LoadGame();
                 }
             }
         }

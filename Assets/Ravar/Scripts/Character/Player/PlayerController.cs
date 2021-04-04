@@ -89,7 +89,6 @@ namespace Itsdits.Ravar.Character
         public PlayerData SavePlayerData()
         {
             playerData.id = id;
-
             GameController.Instance.UpdateCurrentScene();
             currentScene = GameController.Instance.CurrentScene;
             playerData.currentScene = currentScene;
@@ -105,6 +104,14 @@ namespace Itsdits.Ravar.Character
         public void LoadPlayerData(PlayerData loadData)
         {
             id = loadData.id;
+            GameController.Instance.UpdateCurrentScene();
+            currentScene = GameController.Instance.CurrentScene;
+
+            if (loadData.currentScene != currentScene)
+            {
+                GameController.Instance.LoadScene(loadData.currentScene);
+            }
+
             currentScene = loadData.currentScene;
             currentPosition = loadData.currentPosition;
             SetOffsetOnTile(currentPosition);
