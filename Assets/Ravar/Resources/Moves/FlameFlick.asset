@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Flame Flick
   description: Flicks the opponent with a flame. Chance to burn.
+  moveNumber: 7
   power: 40
   accuracy: 95
   energy: 25

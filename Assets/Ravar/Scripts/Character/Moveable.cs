@@ -14,6 +14,9 @@ namespace Itsdits.Ravar.Character
         private float moveSpeed = 5f;
         protected CharacterAnimator animator;
 
+        /// <summary>
+        /// If the character is currently moving or not.
+        /// </summary>
         public bool IsMoving { get; private set; }
 
         private void Awake()

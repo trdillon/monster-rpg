@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 namespace Itsdits.Ravar.Core
 {
     /// <summary>
-    /// Controller for game state management.
+    /// Static controller for game state management.
     /// </summary>
     public class GameController : MonoBehaviour
     {
@@ -38,6 +38,9 @@ namespace Itsdits.Ravar.Core
         /// The index of the scene the player is currently in.
         /// </summary>
         public int CurrentScene => currentScene;
+        /// <summary>
+        /// The current player in this game instance.
+        /// </summary>
         public PlayerController CurrentPlayer => playerController;
 
         private void Awake()

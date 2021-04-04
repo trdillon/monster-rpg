@@ -16,9 +16,6 @@ namespace Itsdits.Ravar.Character
         [SerializeField] string _name;
         [SerializeField] Sprite battleSprite;
 
-        private PlayerData playerData;
-        private int currentScene;
-        private Vector2 currentPosition;
         private Vector2 inputVector;
         private Vector2 moveVector;
 
@@ -33,10 +30,7 @@ namespace Itsdits.Ravar.Character
 
         private void Start()
         {
-            currentScene = GameController.Instance.CurrentScene;
             id = _name + Random.Range(0, 65534);
-            currentPosition = transform.position;
-            playerData = new PlayerData(id, currentScene, currentPosition);
         }
         
         /// <summary>
@@ -88,11 +82,13 @@ namespace Itsdits.Ravar.Character
         /// <returns>PlayerData with current data.</returns>
         public PlayerData SavePlayerData()
         {
-            playerData.id = id;
             GameController.Instance.UpdateCurrentScene();
-            currentScene = GameController.Instance.CurrentScene;
-            playerData.currentScene = currentScene;
-            playerData.currentPosition = currentPosition;
+
+            var playerData = new PlayerData(
+                id,
+                GameController.Instance.CurrentScene,
+                transform.position
+                );
 
             return playerData;
         }
@@ -105,16 +101,15 @@ namespace Itsdits.Ravar.Character
         {
             id = loadData.id;
             GameController.Instance.UpdateCurrentScene();
-            currentScene = GameController.Instance.CurrentScene;
+            var currentScene = GameController.Instance.CurrentScene;
 
             if (loadData.currentScene != currentScene)
             {
                 GameController.Instance.LoadScene(loadData.currentScene);
             }
 
-            currentScene = loadData.currentScene;
-            currentPosition = loadData.currentPosition;
-            SetOffsetOnTile(currentPosition);
+            var newPosition = loadData.currentPosition;
+            SetOffsetOnTile(newPosition);
         }
 
         private void CheckAfterMove()
@@ -147,7 +142,6 @@ namespace Itsdits.Ravar.Character
                     // Normalize the Vector2 to avoid inputs less than 1f.
                     moveVector = inputVector.normalized;
                     StartCoroutine(Move(moveVector, CheckAfterMove));
-                    currentPosition = transform.position;
                 }
             }
         }

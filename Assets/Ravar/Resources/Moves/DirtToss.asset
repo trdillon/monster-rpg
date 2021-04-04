@@ -15,6 +15,7 @@ MonoBehaviour:
   _name: Dirt Toss
   description: Toss dirt in the opponent's face, blurring their vision and lowering
     their Accuracy.
+  moveNumber: 9
   power: 0
   accuracy: 80
   energy: 30

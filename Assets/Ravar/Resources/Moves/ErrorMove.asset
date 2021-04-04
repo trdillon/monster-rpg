@@ -15,6 +15,7 @@ MonoBehaviour:
   _name: Error Move
   description: 'This move represents an error condition. If you''re seeing this,
     something went wrong. Please contact the developer. Error code: M002'
+  moveNumber: 999
   power: 1
   accuracy: 1
   energy: 100

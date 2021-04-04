@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Growl
   description: Growls at the opponent, lowering their Attack.
+  moveNumber: 3
   power: 0
   accuracy: 95
   energy: 40

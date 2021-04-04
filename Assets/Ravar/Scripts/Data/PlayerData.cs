@@ -12,6 +12,12 @@ namespace Itsdits.Ravar.Data
         public int currentScene;
         public Vector2 currentPosition;
 
+        /// <summary>
+        /// Constructor for a PlayerData data object.
+        /// </summary>
+        /// <param name="newId">ID of the player in this instance.</param>
+        /// <param name="scene">Current scene the player is in.</param>
+        /// <param name="position">Current position the player is in.</param>
         public PlayerData(string newId, int scene, Vector2 position)
         {
             id = newId;

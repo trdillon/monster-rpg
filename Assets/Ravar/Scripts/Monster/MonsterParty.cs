@@ -1,3 +1,4 @@
+using Itsdits.Ravar.Data;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -48,6 +49,37 @@ namespace Itsdits.Ravar.Monster
             else
             {
                 //TODO - send to storage bank
+            }
+        }
+
+        /// <summary>
+        /// Saves a list of <see cref="MonsterData"/> about the monsters in the party.
+        /// </summary>
+        /// <returns>List of MonsterData about the party.</returns>
+        public List<MonsterData> SaveMonsterParty()
+        {
+            var partyData = new List<MonsterData>();
+
+            foreach (var monster in monsters)
+            {
+                var monsterData = monster.SaveMonsterData();
+                partyData.Add(monsterData);
+            }
+
+            return partyData;
+        }
+
+        /// <summary>
+        /// Loads a list of <see cref="MonsterData"/> into the party as new <see cref="MonsterObj"/>.
+        /// </summary>
+        /// <param name="newMonsters">New monsters to load into the party.</param>
+        public void LoadMonsterParty(List<MonsterData> newMonsters)
+        {
+            monsters.Clear();
+            foreach (var monster in newMonsters)
+            {
+                var monsterData = new MonsterObj(monster);
+                monsters.Add(monsterData);
             }
         }
     }

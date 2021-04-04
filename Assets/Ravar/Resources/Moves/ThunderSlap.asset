@@ -15,6 +15,7 @@ MonoBehaviour:
   _name: Thunder Slap
   description: 'Slaps the opponent with a resounding wave of thunder, leaving it
     partially paralyzed. '
+  moveNumber: 13
   power: 0
   accuracy: 95
   energy: 25

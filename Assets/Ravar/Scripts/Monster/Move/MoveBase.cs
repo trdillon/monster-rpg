@@ -29,6 +29,10 @@ namespace Itsdits.Ravar.Monster
         /// </summary>
         public string Name => _name;
         /// <summary>
+        /// Filename of the move used to find this move on Resources.Load calls.
+        /// </summary>
+        public string MoveName => name;
+        /// <summary>
         /// Description of what the move does.
         /// </summary>
         public string Description => description;

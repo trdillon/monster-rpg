@@ -15,6 +15,7 @@ MonoBehaviour:
   _name: Distracting Dance
   description: Perform a dance that will distract the opponent and send it into a
     confusion.
+  moveNumber: 10
   power: 0
   accuracy: 95
   energy: 25

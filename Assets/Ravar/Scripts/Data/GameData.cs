@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace Itsdits.Ravar.Data
 {
     /// <summary>
@@ -6,6 +8,7 @@ namespace Itsdits.Ravar.Data
     public static class GameData
     {
         public static PlayerData playerData;
+        public static List<MonsterData> partyMonsters = new List<MonsterData>();
 
         /// <summary>
         /// Adds the player data to the data manager.
@@ -28,9 +31,35 @@ namespace Itsdits.Ravar.Data
         /// <summary>
         /// Removes the player data from the data manager.
         /// </summary>
-        public static void RemovePlayerData()
+        public static void ClearPlayerData()
         {
             playerData = null;
+        }
+
+        /// <summary>
+        /// Adds the list of monster data to the data manager.
+        /// </summary>
+        /// <param name="newMonsters">Monsters to add.</param>
+        public static void AddMonsterPartyData(List<MonsterData> newMonsters)
+        {
+            partyMonsters.AddRange(newMonsters);
+        }
+
+        /// <summary>
+        /// Loads the list of monster data to the caller.
+        /// </summary>
+        /// <returns></returns>
+        public static List<MonsterData> LoadMonsterPartyData()
+        {
+            return partyMonsters;
+        }
+
+        /// <summary>
+        /// Removes the monster data from the data manager.
+        /// </summary>
+        public static void ClearMonsterPartyData()
+        {
+            partyMonsters = null;
         }
     }
 }

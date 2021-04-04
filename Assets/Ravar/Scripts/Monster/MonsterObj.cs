@@ -1,3 +1,4 @@
+using Itsdits.Ravar.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +25,33 @@ namespace Itsdits.Ravar.Monster
             _base = mbase;
             level = mlvl;
             Init();
+        }
+
+        /// <summary>
+        /// Constructor used for loading monsters from saved <see cref="MonsterData"/>.
+        /// </summary>
+        /// <param name="monsterData">Saved data of the monster to be loaded.</param>
+        public MonsterObj(MonsterData monsterData)
+        {
+            _base = Resources.Load<MonsterBase>($"Monsters/{monsterData.monsterName}");
+            level = monsterData.currentLevel;
+            Exp = monsterData.currentExp;
+            CurrentHp = monsterData.currentHp;
+            Moves = new List<MoveObj>();
+            foreach (var move in monsterData.currentMoves)
+            {
+                // This is where it's breaking, I believe. The currentMoves list is populated but getting Null Ref trying to call this.
+                Moves.Add(new MoveObj(Resources.Load<MoveBase>($"Moves/{move}")));
+            }
+            for (int i = 0; i < Moves.Count; i++)
+            {
+                Moves[i].Energy = monsterData.currentEnergy[i];
+            }
+            StatusChanges = new Queue<string>();
+            CalculateStats();
+            ResetStatsChanged();
+            RemoveStatus();
+            RemoveVolatileStatus();
         }
 
         // Details
@@ -378,6 +406,59 @@ namespace Itsdits.Ravar.Monster
             }
 
             return false;
+        }
+
+        ////////////// SAVE AND LOAD FUNCTIONS ////////////////
+
+        /// <summary>
+        /// Saves the current monster's data to a new MonsterData object.
+        /// </summary>
+        /// <returns>MonsterData object with the current monster's data.</returns>
+        public MonsterData SaveMonsterData()
+        {
+            var monsterData = new MonsterData(
+                Base.Name,
+                Level,
+                Exp,
+                CurrentHp,
+                GetMoveListOnSave(),
+                GetMoveEnergyOnSave()
+                );
+            return monsterData;
+        }
+
+        public void LoadMonsterData(MonsterData newMonster)
+        {
+            // This function should be called in MonsterParty/MonsterBank. Use the constructor with MonsterData param.
+        }
+
+        private string[] GetMoveListOnSave()
+        {
+            string[] moveList = new string[MonsterBase.MaxNumberOfMoves];
+            int i = 0;
+            foreach (var move in Moves)
+            {
+                moveList[i++] = move.Base.MoveName;
+            }
+
+            return moveList;
+        }
+
+        private int[] GetMoveEnergyOnSave()
+        {
+            int[] energyList = new int[MonsterBase.MaxNumberOfMoves];
+            int i = 0;
+            foreach (var move in Moves)
+            {
+                energyList[i++] = move.Energy;
+            }
+
+            return energyList;
+        }
+
+        private void SetMoveListOnLoad(int[] moves)
+        {
+
         }
 
         private void CalculateStats()

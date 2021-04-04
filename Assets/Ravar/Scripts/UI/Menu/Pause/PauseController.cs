@@ -1,6 +1,7 @@
 using Itsdits.Ravar.Character;
 using Itsdits.Ravar.Core;
 using Itsdits.Ravar.Data;
+using Itsdits.Ravar.Monster;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -49,34 +50,34 @@ namespace Itsdits.Ravar.UI
         }
 
         /// <summary>
-        /// Saves the current game instance.
-        /// </summary>
-        public void SaveGame()
-        {
-            var player = GameController.Instance.CurrentPlayer;
-            var playerData = player.SavePlayerData();
-            GameData.AddPlayerData(playerData);
-            var savedData = JsonUtility.ToJson(playerData);
-            Debug.Log($"{savedData}");
-        }
-
-        /// <summary>
-        /// Loads a saved game into the current game instance.
-        /// </summary>
-        public void LoadGame()
-        {
-            var player = GameController.Instance.CurrentPlayer;
-            var playerData = GameData.LoadPlayerData();
-            player.LoadPlayerData(playerData);
-        }
-
-        /// <summary>
         /// Enables or disables the PauseBox game object to show or hide the pause menu.
         /// </summary>
         public void EnablePauseBox(bool enabled)
         {
             pauseBox.gameObject.SetActive(enabled);
             pauseBox.EnablePauseMenu(enabled);
+        }
+
+        private void SaveGame()
+        {
+            var player = GameController.Instance.CurrentPlayer;
+            var playerData = player.SavePlayerData();
+
+            var partyData = player.GetComponent<MonsterParty>().SaveMonsterParty();
+
+            GameData.AddPlayerData(playerData);
+            GameData.AddMonsterPartyData(partyData);
+        }
+
+        private void LoadGame()
+        {
+            var player = GameController.Instance.CurrentPlayer;
+            var playerData = GameData.LoadPlayerData();
+            player.LoadPlayerData(playerData);
+
+            var partyData = GameData.LoadMonsterPartyData();
+            var playerParty = player.GetComponent<MonsterParty>();
+            playerParty.LoadMonsterParty(partyData);
         }
 
         private void PauseSelection()
