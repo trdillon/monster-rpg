@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using UnityEngine;
 
 namespace Itsdits.Ravar.Data
 {
@@ -37,6 +38,20 @@ namespace Itsdits.Ravar.Data
         }
 
         /// <summary>
+        /// Parses the player data into a JSON string to be saved externally.
+        /// </summary>
+        /// <returns>JSON string to be saved.</returns>
+        public static string PlayerDataToJson()
+        {
+            return JsonUtility.ToJson(playerData);
+        }
+
+        public static void JsonToPlayerData(string data)
+        {
+            Debug.Log($"{data}");
+        }
+
+        /// <summary>
         /// Adds the list of monster data to the data manager.
         /// </summary>
         /// <param name="newMonsters">Monsters to add.</param>
@@ -60,6 +75,15 @@ namespace Itsdits.Ravar.Data
         public static void ClearMonsterPartyData()
         {
             partyMonsters = null;
+        }
+
+        /// <summary>
+        /// Parses the player party monster data into a JSON string to be saved externally.
+        /// </summary>
+        /// <returns>JSON string to be saved.</returns>
+        public static string MonsterPartyDataToJson()
+        {
+            return JsonUtility.ToJson(partyMonsters);
         }
     }
 }
