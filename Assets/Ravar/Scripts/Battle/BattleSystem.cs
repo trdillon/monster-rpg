@@ -16,16 +16,23 @@ namespace Itsdits.Ravar.Battle
     public class BattleSystem : MonoBehaviour
     {
         [Header("Monsters")]
+        [Tooltip("The player's monster in the battle.")]
         [SerializeField] BattleMonster playerMonster;
+        [Tooltip("The enemy's monster in the battle.")]
         [SerializeField] BattleMonster enemyMonster;
 
         [Header("Characters")]
+        [Tooltip("The player's character image.")]
         [SerializeField] Image playerImage;
+        [Tooltip("The enemy's character image.")]
         [SerializeField] Image battlerImage;
 
         [Header("UI")]
+        [Tooltip("The BattleAnimator GameObject.")]
         [SerializeField] BattleAnimator battleAnimator;
+        [Tooltip("The BattleDialogBox GameObject.")]
         [SerializeField] BattleDialogBox dialogBox;
+        [Tooltip("The PartyScreen GameObject.")]
         [SerializeField] PartyScreen partyScreen;
 
         private PlayerController player;
@@ -43,7 +50,13 @@ namespace Itsdits.Ravar.Battle
         private bool isCharBattle = false;
         private bool isMonsterDown = false;
 
+        /// <summary>
+        /// The current state of te battle.
+        /// </summary>
         public BattleState State => state;
+        /// <summary>
+        /// The optional previous state of the battle.
+        /// </summary>
         public BattleState? PrevState { get; set; }
 
         public event Action<BattleResult, bool> OnBattleOver;
@@ -51,8 +64,8 @@ namespace Itsdits.Ravar.Battle
         /// <summary>
         /// Wild Monster encounter battle constructor.
         /// </summary>
-        /// <param name="playerParty">Player's party of Monsters</param>
-        /// <param name="wildMonster">Copy of the wildMonster pulled from the MapLayer</param>
+        /// <param name="playerParty">Player's party of monsters.</param>
+        /// <param name="wildMonster">Copy of the wildMonster generated from the MapLayer.</param>
         public void StartWildBattle(MonsterParty playerParty, MonsterObj wildMonster)
         {
             this.playerParty = playerParty;
@@ -65,8 +78,8 @@ namespace Itsdits.Ravar.Battle
         /// <summary>
         /// Character battle constructor.
         /// </summary>
-        /// <param name="playerParty">Player's party of Monsters</param>
-        /// <param name="battlerParty">Battler's party of Monsters</param>
+        /// <param name="playerParty">Player's party of monsters.</param>
+        /// <param name="battlerParty">Battler's party of monsters.</param>
         public void StartCharBattle(MonsterParty playerParty, MonsterParty battlerParty)
         {
             this.playerParty = playerParty;
@@ -78,9 +91,9 @@ namespace Itsdits.Ravar.Battle
         }
 
         /// <summary>
-        /// Setup the battle.
+        /// Setup the current battle.
         /// </summary>
-        /// <returns>ActionSelection coroutine</returns>
+        /// <returns>The ActionSelection coroutine.</returns>
         public IEnumerator SetupBattle()
         {
             playerMonster.HideHud();
@@ -874,7 +887,6 @@ namespace Itsdits.Ravar.Battle
                 {
                     if (move.Energy == 0)
                     {
-                        Debug.Log($"No Energy for {move}.");
                         return;
                     }
                     else

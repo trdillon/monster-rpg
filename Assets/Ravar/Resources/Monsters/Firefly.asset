@@ -24,8 +24,8 @@ MonoBehaviour:
   spDefense: 50
   speed: 65
   expGiven: 65
-  catchRate: 255
-  growthRate: 0
+  catchRate: 250
+  growthRate: 1
   primaryType: 2
   secondaryType: 0
   learnableMoves:

@@ -8,6 +8,7 @@ namespace Itsdits.Ravar.UI
     /// </summary>
     public class MenuController : MonoBehaviour
     {
+        [Tooltip("GameObject that holds the MenuBox canvas.")]
         [SerializeField] MenuBox menuBox;
 
         private int currentMain;
@@ -17,6 +18,9 @@ namespace Itsdits.Ravar.UI
 
         private MenuState state;
 
+        /// <summary>
+        /// Current state of the main menu.
+        /// </summary>
         public MenuState State => state;
 
         private void Awake()
@@ -24,7 +28,7 @@ namespace Itsdits.Ravar.UI
             MainSelection();
         }
 
-        public void Update()
+        private void Update()
         {
             if (state == MenuState.Main)
             {

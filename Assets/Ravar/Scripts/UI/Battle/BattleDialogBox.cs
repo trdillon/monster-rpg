@@ -12,29 +12,43 @@ namespace Itsdits.Ravar.UI
     public class BattleDialogBox : MonoBehaviour
     {
         [Header("Dialog Box")]
+        [Tooltip("The Text element that displays the current dialog.")]
         [SerializeField] Text dialogText;
 
         [Header("Action Selector")]
+        [Tooltip("List of Text elements that display on the Action Selection screen.")]
         [SerializeField] List<Text> actionTexts;
+        [Tooltip("GameObject that holds the Action Selector.")]
         [SerializeField] GameObject actionSelector;
 
         [Header("Move Selector")]
+        [Tooltip("List of Text elements that display on the Move Selection screen.")]
         [SerializeField] List<Text> moveTexts;
+        [Tooltip("GameObject that holds the Move Selector.")]
         [SerializeField] GameObject moveSelector;
 
         [Header("Move Details")]
+        [Tooltip("GameObject that holds the Move Details.")]
         [SerializeField] GameObject moveDetails;
+        [Tooltip("Text element that displays the move's energy.")]
         [SerializeField] Text energyText;
+        [Tooltip("Text element that displays the move's type.")]
         [SerializeField] Text typeText;
 
         [Header("Choice Selector")]
+        [Tooltip("GameObject that holds the Choice Selector.")]
         [SerializeField] GameObject choiceSelector;
+        [Tooltip("Text element that holds the Yes text.")]
         [SerializeField] Text yesText;
+        [Tooltip("Text element that holds the No text.")]
         [SerializeField] Text noText;
 
         [Header("Variables")]
+        [Tooltip("How fast the dialog is typed on screen, default is 45.")]
         [SerializeField] int lettersPerSecond;
+        [Tooltip("The color to change the text to when highlighted.")]
         [SerializeField] Color highlightColor;
+        [Tooltip("The color to display when the text is not highlighted.")]
         [SerializeField] Color standardColor;
 
 
@@ -48,7 +62,6 @@ namespace Itsdits.Ravar.UI
             if (dialog == null)
             {
                 dialogText.text = "";
-                Debug.LogError("BDB001: TypeDialog was passed a null value.");
             }
             else
             {
@@ -142,7 +155,6 @@ namespace Itsdits.Ravar.UI
             if (dialog == null)
             {
                 dialogText.text = "";
-                Debug.LogError("BDB002: SetDialog was passed a null value.");
             }
             else
             {

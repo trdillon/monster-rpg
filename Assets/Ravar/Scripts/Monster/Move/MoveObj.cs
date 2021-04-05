@@ -3,6 +3,7 @@ namespace Itsdits.Ravar.Monster
     /// <summary>
     /// Implements <see cref="MoveBase"/> and is used as moves during battles.
     /// </summary>
+    [System.Serializable]
     public class MoveObj
     {
         /// <summary>
@@ -22,6 +23,18 @@ namespace Itsdits.Ravar.Monster
         {
             Base = mBase;
             Energy = mBase.Energy;
+        }
+
+        /// <summary>
+        /// Constructor for moves that are added when loading a saved monster. 
+        /// This allows for persisting remaining Energy levels.
+        /// </summary>
+        /// <param name="mBase"></param>
+        /// <param name="mEnergy"></param>
+        public MoveObj(MoveBase mBase, int mEnergy)
+        {
+            Base = mBase;
+            Energy = mEnergy;
         }
     }
 }

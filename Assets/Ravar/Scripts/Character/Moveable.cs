@@ -59,8 +59,9 @@ namespace Itsdits.Ravar.Character
         }
 
         /// <summary>
-        /// Changes the direction the character or object is facing. Used to acknowledge interaction or set default facing directions.
+        /// Changes the direction the character or object is facing.
         /// </summary>
+        /// <remarks>Used to acknowledge interaction or set default facing directions.</remarks>
         /// <param name="targetPos">Location of the tile the character or object should face to.</param>
         public void ChangeDirection(Vector3 targetPos)
         {

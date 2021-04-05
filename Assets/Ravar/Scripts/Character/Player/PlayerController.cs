@@ -12,8 +12,11 @@ namespace Itsdits.Ravar.Character
     public class PlayerController : Moveable
     {
         [Header("Details")]
+        [Tooltip("Unique ID for this player to differentiate between save games. Automatically generated at runtime.")]
         [SerializeField] string id;
+        [Tooltip("The name of this player.")]
         [SerializeField] string _name;
+        [Tooltip("The sprite of the character to be displayed in the battle screen.")]
         [SerializeField] Sprite battleSprite;
 
         private Vector2 inputVector;

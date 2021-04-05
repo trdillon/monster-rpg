@@ -9,12 +9,17 @@ namespace Itsdits.Ravar.Animation
     /// </summary>
     public class CharacterAnimator : MonoBehaviour
     {
+        [Tooltip("The default direction this character will be facing when the game is started.")]
         [SerializeField] Direction defaultDirection = Direction.Down;
 
         [Header("Sprites")]
+        [Tooltip("Sprites to animate this character walking downwards.")]
         [SerializeField] List<Sprite> walkDownSprites;
+        [Tooltip("Sprites to animate this character walking to the left.")]
         [SerializeField] List<Sprite> walkLeftSprites;
+        [Tooltip("Sprites to animate this character walking to the right.")]
         [SerializeField] List<Sprite> walkRightSprites;
+        [Tooltip("Sprites to animate this character walking upwards.")]
         [SerializeField] List<Sprite> walkUpSprites;
 
         private SpriteAnimator walkDownAnimation;
@@ -26,9 +31,24 @@ namespace Itsdits.Ravar.Animation
         private SpriteRenderer spriteRenderer;
         private bool wasMoving;
 
+        /// <summary>
+        /// Input value on the X axis.
+        /// </summary>
+        /// <remarks>Range is -1 to 1.</remarks>
         public float MoveX { get; set; }
+        /// <summary>
+        /// Input value on the Y axis.
+        /// </summary>
+        /// <remarks>Range is -1 to 1.</remarks>
         public float MoveY { get; set; }
+        /// <summary>
+        /// Is the character currently moving or not.
+        /// </summary>
+        /// <remarks>Used to determine whether to animate the character sprite or not.</remarks>
         public bool IsMoving { get; set; }
+        /// <summary>
+        /// Default direction this character will face when the game is started.
+        /// </summary>
         public Direction DefaultDirection => defaultDirection;
 
         private void Start()
@@ -81,8 +101,9 @@ namespace Itsdits.Ravar.Animation
         }
 
         /// <summary>
-        /// Set the character's default facing direction. Mostly used for Battler's LoS.
+        /// Set the character's default facing direction.
         /// </summary>
+        /// <remarks>Mostly used for Battler's LoS.</remarks>
         /// <param name="direction">Down, Up, Left, Right</param>
         public void SetDirection(Direction direction)
         {

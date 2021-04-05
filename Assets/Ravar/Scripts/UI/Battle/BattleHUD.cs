@@ -13,19 +13,29 @@ namespace Itsdits.Ravar.UI
     public class BattleHUD : MonoBehaviour
     {
         [Header("Text Labels")]
+        [Tooltip("Text element that displays the monster's name.")]
         [SerializeField] Text nameText;
+        [Tooltip("Text element that displays the monster's level.")]
         [SerializeField] Text levelText;
+        [Tooltip("Text element that displays the monster's status.")]
         [SerializeField] Text statusText;
 
         [Header("UI Bars")]
+        [Tooltip("The HP bar of the monster.")]
         [SerializeField] HPBar hpBar;
+        [Tooltip("The XP bar of the monster.")]
         [SerializeField] GameObject xpBar;
 
         [Header("Status Colors")]
+        [Tooltip("Color to change the text to when the monster is poisoned.")]
         [SerializeField] Color psnColor;
+        [Tooltip("Color to change the text to when the monster is burned.")]
         [SerializeField] Color brnColor;
+        [Tooltip("Color to change the text to when the monster is asleep.")]
         [SerializeField] Color slpColor;
+        [Tooltip("Color to change the text to when the monster is paralyzed.")]
         [SerializeField] Color parColor;
+        [Tooltip("Color to change the text to when the monster is frozen.")]
         [SerializeField] Color frzColor;
 
         private Dictionary<ConditionID, Color> statusColors;
@@ -34,7 +44,7 @@ namespace Itsdits.Ravar.UI
         /// <summary>
         /// Set the data in the HUD.
         /// </summary>
-        /// <param name="monster">Monster to set data for</param>
+        /// <param name="monster">Monster to set data for.</param>
         public void SetData(MonsterObj monster)
         {
             _monster = monster;
@@ -57,7 +67,7 @@ namespace Itsdits.Ravar.UI
         /// <summary>
         /// Update the monster HP.
         /// </summary>
-        /// <returns>New HP</returns>
+        /// <returns>New HP to display.</returns>
         public IEnumerator UpdateHP()
         {
             if (_monster.IsHpChanged)
@@ -92,8 +102,8 @@ namespace Itsdits.Ravar.UI
         /// <summary>
         /// Slide the XP bar smoothly.
         /// </summary>
-        /// <param name="reset">For when a monster levels up</param>
-        /// <returns></returns>
+        /// <param name="reset">For when a monster levels up.</param>
+        /// <returns>XP bar displaying current XP.</returns>
         public IEnumerator SlideExp(bool reset = false)
         {
             if (xpBar == null)

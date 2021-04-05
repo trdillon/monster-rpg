@@ -13,12 +13,20 @@ namespace Itsdits.Ravar.Core
     /// </summary>
     public class GameController : MonoBehaviour
     {
+        /// <summary>
+        /// Static instance of the game controller.
+        /// </summary>
         public static GameController Instance { get; private set; }
 
+        [Tooltip("GameObject that holds the PlayerController component.")]
         [SerializeField] PlayerController playerController;
+        [Tooltip("GameObject that holds the DialogController component.")]
         [SerializeField] DialogController dialogController;
+        [Tooltip("GameObject that holds the PauseController component.")]
         [SerializeField] PauseController pauseController;
+        [Tooltip("GameObject that holds the BattleSystem component.")]
         [SerializeField] BattleSystem battleSystem;
+        [Tooltip("The world camera that is attached to the Player GameObject.")]
         [SerializeField] Camera worldCamera;
 
         private BattlerController battler;
@@ -143,8 +151,9 @@ namespace Itsdits.Ravar.Core
         }
 
         /// <summary>
-        /// Stops the character and prevents player input. Used in scene switching and cutscenes.
+        /// Stops the character and prevents player input.
         /// </summary>
+        /// <remarks>Used in scene switching and cutscenes.</remarks>
         /// <param name="frozen">True for freeze, false for unfreeze.</param>
         public void FreezePlayer(bool frozen)
         {
@@ -160,8 +169,9 @@ namespace Itsdits.Ravar.Core
         }
 
         /// <summary>
-        /// Loads the game into a different scene. Used for changing scenes on game loading.
+        /// Loads the game into a different scene.
         /// </summary>
+        /// <remarks>Used for changing scenes on game loading.</remarks>
         /// <param name="sceneIndex"></param>
         public void LoadScene(int sceneIndex)
         {
@@ -175,11 +185,12 @@ namespace Itsdits.Ravar.Core
         {
             currentScene = SceneManager.GetActiveScene().buildIndex;
         }
-             
+
         /// <summary>
-        /// Sets the GameState to World, used to release player from error conditions, etc.
-        /// This is a debug function that usually indicates a function calling this is buggy or incomplete.
+        /// Sets the GameState to World.
         /// </summary>
+        /// <remarks>Used to release player from error conditions, etc.
+        /// This is a debug function that usually indicates a function calling this is buggy or incomplete.</remarks>
         public void ReleasePlayer()
         {
             state = GameState.World;

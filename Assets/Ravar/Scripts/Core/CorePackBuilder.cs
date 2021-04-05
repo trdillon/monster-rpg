@@ -1,4 +1,3 @@
-using Lowscope.Saving;
 using UnityEngine;
 
 namespace Itsdits.Ravar.Core
@@ -8,6 +7,7 @@ namespace Itsdits.Ravar.Core
     /// </summary>
     public class CorePackBuilder : MonoBehaviour
     {
+        [Tooltip("The prefab of the CorePack that should be built and maintained during play.")]
         [SerializeField] GameObject corePackPrefab;
 
         private void Awake()
@@ -15,7 +15,6 @@ namespace Itsdits.Ravar.Core
             var existingPacks = FindObjectsOfType<CorePack>();
             if (existingPacks.Length == 0)
             {
-                //SaveMaster.SpawnSavedPrefab(Lowscope.Saving.Enums.InstanceSource.Resources, "Core/CorePack");
                 Instantiate(corePackPrefab, new Vector3(0, 0, 0), Quaternion.identity);
             }
         }

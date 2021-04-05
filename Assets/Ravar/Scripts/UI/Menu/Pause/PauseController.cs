@@ -1,4 +1,3 @@
-using Itsdits.Ravar.Character;
 using Itsdits.Ravar.Core;
 using Itsdits.Ravar.Data;
 using Itsdits.Ravar.Monster;
@@ -12,6 +11,7 @@ namespace Itsdits.Ravar.UI
     /// </summary>
     public class PauseController : MonoBehaviour
     {
+        [Tooltip("The canvas GameObject that holds the PauseBox and related UI elements.")]
         [SerializeField] PauseBox pauseBox;
 
         private int currentPause;

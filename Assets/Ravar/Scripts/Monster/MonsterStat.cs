@@ -3,6 +3,9 @@ namespace Itsdits.Ravar.Monster
     /// <summary>
     /// Stat types for <see cref="MonsterBase"/>.
     /// </summary>
+    /// <remarks>Base stats include Attack, Defense, Special Attack,
+    /// Special Defense and Speed. Accuracy and Evasion are dynamically generated
+    /// to determine hit chance during battle.</remarks>
     public enum MonsterStat
     {
         Attack,
@@ -10,7 +13,6 @@ namespace Itsdits.Ravar.Monster
         SpAttack,
         SpDefense,
         Speed,
-        // Only used for hit calculation
         Accuracy,
         Evasion
     }

@@ -17,11 +17,11 @@ MonoBehaviour:
     something went wrong. Please contact the developer. Error code: M002'
   moveNumber: 999
   power: 1
-  accuracy: 1
-  energy: 100
+  accuracy: 10
+  energy: 10
   priority: 0
   alwaysHits: 0
-  type: 10
+  type: 0
   category: 0
   target: 0
   effects:

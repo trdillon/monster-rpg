@@ -10,31 +10,41 @@ namespace Itsdits.Ravar.Monster
     /// </summary>
     public class BattleMonster : MonoBehaviour
     {
+        [Tooltip("The BattleHUD GameObject for this monster.")]
         [SerializeField] BattleHUD hud;
+        [Tooltip("Is this the player's monster or not.")]
         [SerializeField] bool isPlayerMonster;
 
         private Image image;
         private Vector3 originalPos;
         private Color originalColor;
 
+        /// <summary>
+        /// The monster object that this class is initialized from.
+        /// </summary>
         public MonsterObj Monster { get; set; }
+        /// <summary>
+        /// The BattleHUD for this monster.
+        /// </summary>
         public BattleHUD Hud => hud;
+        /// <summary>
+        /// Is this the player's monster or not.
+        /// </summary>
         public bool IsPlayerMonster => isPlayerMonster;
+        /// <summary>
+        /// The Image component of this monster.
+        /// </summary>
         public Image Image => image;
 
         private void Awake()
         {
             image = GetComponent<Image>();
-            if (image == null)
-            {
-                Debug.LogError($"BM001: {Monster.Base.Name} missing Image.");
-            }
             originalPos = image.transform.localPosition;
             originalColor = image.color;
         }
 
         /// <summary>
-        /// Setup the monster for battle.
+        /// Setup function to prepare the monster in the battle screen.
         /// </summary>
         /// <param name="monster">Monster to setup.</param>
         public void Setup(MonsterObj monster)
@@ -49,11 +59,6 @@ namespace Itsdits.Ravar.Monster
             {
                 image.sprite = Monster.Base.RightSprite;
             }
-            
-            if (image.sprite == null)
-            {
-                Debug.LogError($"BM002: {Monster.Base.Name} missing sprite.");
-            }
 
             hud.gameObject.SetActive(true);
             hud.SetData(monster);
@@ -63,8 +68,9 @@ namespace Itsdits.Ravar.Monster
         }
 
         /// <summary>
-        /// Hide the BattleHud.
+        /// Deactive the BattleHUD GameObject to hide it.
         /// </summary>
+        /// <remarks>Used in the beginning of a battle to clear the screen for battle setup.</remarks>
         public void HideHud()
         {
             Hud.gameObject.SetActive(false);

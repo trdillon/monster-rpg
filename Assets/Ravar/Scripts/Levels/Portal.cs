@@ -8,16 +8,23 @@ using UnityEngine.SceneManagement;
 namespace Itsdits.Ravar.Levels
 {
     /// <summary>
-    /// This class handles logic for portals in the Trigger layer. Used to control scene transition and player quests.
+    /// This class handles logic for portals in the Trigger layer.
     /// </summary>
+    /// <remarks>Used to control scene transition and player quests.</remarks>
     public class Portal : MonoBehaviour, ITriggerable
     {
+        [Tooltip("The ID for this portal. Used to match portals in different scenes to ensure the player is sent to the correct destination.")]
         [SerializeField] PortalID portalId;
+        [Tooltip("Index of the scene to load when the portal is triggered. Number is determined by the build index.")]
         [SerializeField] int sceneToLoad = -1;
+        [Tooltip("The spawn point the player should be placed at when the portal is used.")]
         [SerializeField] Transform spawnPoint;
 
         private PlayerController player;
 
+        /// <summary>
+        /// The spawn point the player should be placed at when the portal is used.
+        /// </summary>
         public Transform SpawnPoint => spawnPoint;
 
         /// <summary>

@@ -24,8 +24,8 @@ namespace Itsdits.Ravar.Monster
         /// <summary>
         /// Get status bonuses for capture algo.
         /// </summary>
-        /// <param name="condition">Condition monster is affected by</param>
-        /// <returns>Boost for capture algo</returns>
+        /// <param name="condition">Condition monster is affected by.</param>
+        /// <returns>Boost value for capture algo.</returns>
         public static float GetStatusBonus(ConditionObj condition)
         {
             if (condition == null)
@@ -47,7 +47,7 @@ namespace Itsdits.Ravar.Monster
         }
 
         /// <summary>
-        /// Dictionary for condition statuses
+        /// Static dictionary that holds the status conditions database.
         /// </summary>
         public static Dictionary<ConditionID, ConditionObj> Conditions { get; set; } = new Dictionary<ConditionID, ConditionObj>()
         {
@@ -87,7 +87,6 @@ namespace Itsdits.Ravar.Monster
                     OnStart = (MonsterObj monster) =>
                     {
                         monster.StatusTimer = Random.Range(1, 4);
-                        Debug.Log($"Sleep for {monster.StatusTimer} turns.");
                     },
                     OnTurnStart = (MonsterObj monster) =>
                     {
@@ -149,7 +148,6 @@ namespace Itsdits.Ravar.Monster
                     OnStart = (MonsterObj monster) =>
                     {
                         monster.VolatileStatusTimer = Random.Range(1, 5);
-                        Debug.Log($"Confused for {monster.VolatileStatusTimer} turns.");
                     },
                     OnTurnStart = (MonsterObj monster) =>
                     {

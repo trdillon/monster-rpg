@@ -9,19 +9,16 @@ namespace Itsdits.Ravar.Levels
     /// </summary>
     public class MapArea : MonoBehaviour
     {
+        [Tooltip("List of possible wild monsters that can appear in this MapArea.")]
         [SerializeField] List<MonsterObj> wildMonsters;
 
         /// <summary>
         /// Get a random monster from the available pool.
         /// </summary>
-        /// <returns>Monster to encounter</returns>
+        /// <returns>Monster to encounter.</returns>
         public MonsterObj GetRandomMonster()
         {
             var wildMonster = wildMonsters[Random.Range(0, wildMonsters.Count)]; //TODO - refactor this for monster rarity
-            if (wildMonster == null)
-            {
-                Debug.LogError("MA001: wildMonster null. Failed to retrieve from List<MonsterObj>.");
-            }
             wildMonster.Init();
             return wildMonster;
         }

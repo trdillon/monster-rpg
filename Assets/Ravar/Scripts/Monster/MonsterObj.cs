@@ -7,12 +7,14 @@ using UnityEngine;
 namespace Itsdits.Ravar.Monster 
 { 
     /// <summary>
-    /// Implements <see cref="MonsterBase"/>. Has level, experience, status conditions and more.
+    /// Implements <see cref="MonsterBase"/>. Holds level, experience, move list, status conditions and stat changes.
     /// </summary>
     [Serializable]
     public class MonsterObj
     {
+        [Tooltip("The base class of this monster.")]
         [SerializeField] MonsterBase _base;
+        [Tooltip("The current level of this monster.")]
         [SerializeField] int level;
 
         /// <summary>
@@ -38,15 +40,15 @@ namespace Itsdits.Ravar.Monster
             Exp = monsterData.currentExp;
             CurrentHp = monsterData.currentHp;
             Moves = new List<MoveObj>();
-            foreach (var move in monsterData.currentMoves)
+
+            for (int i = 0; i < monsterData.currentMoves.Length; i++)
             {
-                // This is where it's breaking, I believe. The currentMoves list is populated but getting Null Ref trying to call this.
-                Moves.Add(new MoveObj(Resources.Load<MoveBase>($"Moves/{move}")));
+                var moveBase = Resources.Load<MoveBase>($"Moves/{monsterData.currentMoves[i]}");
+                var moveEnergy = monsterData.currentEnergy[i];
+                var move = new MoveObj(moveBase, moveEnergy);
+                Moves.Add(move);
             }
-            for (int i = 0; i < Moves.Count; i++)
-            {
-                Moves[i].Energy = monsterData.currentEnergy[i];
-            }
+
             StatusChanges = new Queue<string>();
             CalculateStats();
             ResetStatsChanged();
@@ -54,7 +56,6 @@ namespace Itsdits.Ravar.Monster
             RemoveVolatileStatus();
         }
 
-        // Details
         /// <summary>
         /// <see cref="MonsterBase"/> that the monster is implemented from.
         /// </summary>
@@ -67,8 +68,6 @@ namespace Itsdits.Ravar.Monster
         /// Current experience of the monster.
         /// </summary>
         public int Exp { get; set; }
-
-        // Base Stats
         /// <summary>
         /// Current HP of the monster.
         /// </summary>
@@ -106,21 +105,19 @@ namespace Itsdits.Ravar.Monster
         /// </summary>
         public Dictionary<MonsterStat, int> Stats { get; private set; }
         /// <summary>
-        /// The amount of change to the monster's stats after being affected by a stat changing move. Range is -6 to 6.
+        /// The amount of change to the monster's stats after being affected by a stat changing move.
         /// </summary>
+        /// <remarks>Range is -6 to 6.</remarks>
         public Dictionary<MonsterStat, int> StatsChanged { get; private set; }
-
-        // Moves
         /// <summary>
         /// The move being used on this turn.
         /// </summary>
         public MoveObj CurrentMove { get; set; }
         /// <summary>
-        /// List of move the monster knows. Max is 4.
+        /// List of move the monster knows.
         /// </summary>
+        /// <remarks>Max is 4.</remarks>
         public List<MoveObj> Moves { get; set; }
-
-        // Statuses
         /// <summary>
         /// Status condition the monster is affected by.
         /// </summary>
@@ -246,8 +243,9 @@ namespace Itsdits.Ravar.Monster
         }
 
         /// <summary>
-        /// Apply stat changes to monster. Range is -6 to 6.
+        /// Apply stat changes to monster.
         /// </summary>
+        /// <remarks>Range is -6 to 6.</remarks>
         /// <param name="statChanges">Changes to apply.</param>
         public void ApplyStatChanges(List<StatChange> statChanges)
         {
@@ -376,8 +374,9 @@ namespace Itsdits.Ravar.Monster
         }
 
         /// <summary>
-        /// Select a random move for the monster to execute. Used for enemy monsters.
+        /// Select a random move for the monster to execute.
         /// </summary>
+        /// <remarks>Used for move selection by enemy monsters.</remarks>
         /// <returns>Move to use on this turn.</returns>
         public MoveObj GetRandomMove()
         {
@@ -427,11 +426,6 @@ namespace Itsdits.Ravar.Monster
             return monsterData;
         }
 
-        public void LoadMonsterData(MonsterData newMonster)
-        {
-            // This function should be called in MonsterParty/MonsterBank. Use the constructor with MonsterData param.
-        }
-
         private string[] GetMoveListOnSave()
         {
             string[] moveList = new string[MonsterBase.MaxNumberOfMoves];
@@ -454,11 +448,6 @@ namespace Itsdits.Ravar.Monster
             }
 
             return energyList;
-        }
-
-        private void SetMoveListOnLoad(int[] moves)
-        {
-
         }
 
         private void CalculateStats()

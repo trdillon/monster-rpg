@@ -12,14 +12,21 @@ namespace Itsdits.Ravar.UI
     /// </summary>
     public class DialogController : MonoBehaviour
     {
+        /// <summary>
+        /// Static instance of the DialogController.
+        /// </summary>
         public static DialogController Instance { get; private set; }
 
         [Header("Dialog Box")]
+        [Tooltip("The GameObject holding the DialogBox.")]
         [SerializeField] GameObject dialogBox;
+        [Tooltip("The Text element of the DialogBox.")]
         [SerializeField] Text dialogText;
 
         [Header("Name Plate")]
+        [Tooltip("The nameplate of the character that is displaying dialog.")]
         [SerializeField] GameObject namePlate;
+        [Tooltip("The Text element that displays the name.")]
         [SerializeField] Text nameText;
 
         [Header("Type Speed")]
