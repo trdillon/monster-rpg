@@ -10,7 +10,7 @@ namespace Itsdits.Ravar.Data
     {
         public string id;
         public int currentScene;
-        public Vector2 currentPosition;
+        public int[] currentPosition;
 
         /// <summary>
         /// Constructor for a PlayerData data object.
@@ -18,7 +18,7 @@ namespace Itsdits.Ravar.Data
         /// <param name="newId">ID of the player in this instance.</param>
         /// <param name="scene">Current scene the player is in.</param>
         /// <param name="position">Current position the player is in.</param>
-        public PlayerData(string newId, int scene, Vector2 position)
+        public PlayerData(string newId, int scene, int[] position)
         {
             id = newId;
             currentScene = scene;

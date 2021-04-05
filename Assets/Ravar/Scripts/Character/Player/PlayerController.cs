@@ -90,7 +90,7 @@ namespace Itsdits.Ravar.Character
             var playerData = new PlayerData(
                 id,
                 GameController.Instance.CurrentScene,
-                transform.position
+                GetPositionAsIntArray()
                 );
 
             return playerData;
@@ -111,7 +111,7 @@ namespace Itsdits.Ravar.Character
                 GameController.Instance.LoadScene(loadData.currentScene);
             }
 
-            var newPosition = loadData.currentPosition;
+            var newPosition = new Vector2(loadData.currentPosition[0], loadData.currentPosition[1]);
             SetOffsetOnTile(newPosition);
         }
 
@@ -158,6 +158,15 @@ namespace Itsdits.Ravar.Character
             {
                 collider.GetComponent<IInteractable>()?.InteractWith(transform);
             }
+        }
+
+        private int[] GetPositionAsIntArray()
+        {
+            int[] positionAsArray = new int[2];
+            positionAsArray[0] = Mathf.FloorToInt(transform.position.x);
+            positionAsArray[1] = Mathf.FloorToInt(transform.position.y);
+
+            return positionAsArray;
         }
     }
 }
