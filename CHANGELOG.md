@@ -3,14 +3,30 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
+## [1.0.8] - 2021-04-07
+Work in progress
+
 ## [1.0.7] - 2021-03-21
 ### Added
-- Logo and splash screen
+- Save and load system
+- Logos and splash screen
+- Fornwest starting town map
+- Fornwest Tavern
+- Portals to switch scenes
+- CorePack with Loader and Builder
+- Credits
 
 ### Changed
+- Refactor map layers and how triggers are handled
+- Refactor codebase to include summary in all classes
+- Simplify namespace to reduce excessive imports
+- Upgraded to Unity 2020.3.1f1
 
 ### Fixed
-
+- Tilemap tearing on movement
+- Improve fence collision detection
+- Updated CONTRIBUTING.md
+- Multiple bugs with portals and scene switching
 
 ## [1.0.6] - 2021-03-12
 ### Added
