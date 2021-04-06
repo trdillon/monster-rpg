@@ -33,9 +33,9 @@ MonoBehaviour:
     levelLearned: 1
   - moveBase: {fileID: 11400000, guid: 140ef81265e40c341843621c888b5754, type: 2}
     levelLearned: 4
-  - moveBase: {fileID: 11400000, guid: b34583eea17426940a405184311529d5, type: 2}
-    levelLearned: 4
   - moveBase: {fileID: 11400000, guid: d48926211c4fedc4a9d577586feba815, type: 2}
-    levelLearned: 7
+    levelLearned: 5
+  - moveBase: {fileID: 11400000, guid: b34583eea17426940a405184311529d5, type: 2}
+    levelLearned: 6
   leftSprite: {fileID: 21300000, guid: 68c207a65d38c564399b6dcaf0ca1997, type: 3}
   rightSprite: {fileID: 21300000, guid: 2c80f11eee061744cb77d876367f85fc, type: 3}

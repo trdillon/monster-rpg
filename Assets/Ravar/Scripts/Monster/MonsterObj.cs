@@ -423,31 +423,30 @@ namespace Itsdits.Ravar.Monster
                 GetMoveListOnSave(),
                 GetMoveEnergyOnSave()
                 );
+
             return monsterData;
         }
 
         private string[] GetMoveListOnSave()
         {
-            string[] moveList = new string[MonsterBase.MaxNumberOfMoves];
-            int i = 0;
+            List<string> moveList = new List<string>();
             foreach (var move in Moves)
             {
-                moveList[i++] = move.Base.MoveName;
+                moveList.Add(move.Base.MoveName);
             }
 
-            return moveList;
+            return moveList.ToArray();
         }
 
         private int[] GetMoveEnergyOnSave()
         {
-            int[] energyList = new int[MonsterBase.MaxNumberOfMoves];
-            int i = 0;
+            List<int> moveList = new List<int>();
             foreach (var move in Moves)
             {
-                energyList[i++] = move.Energy;
+                moveList.Add(move.Energy);
             }
-
-            return energyList;
+            
+            return moveList.ToArray();
         }
 
         private void CalculateStats()

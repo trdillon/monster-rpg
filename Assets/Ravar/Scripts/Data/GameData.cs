@@ -12,10 +12,10 @@ namespace Itsdits.Ravar.Data
         public static List<MonsterData> partyMonsters = new List<MonsterData>();
 
         /// <summary>
-        /// Adds the player data to the data manager.
+        /// Saves the player data to the data manager.
         /// </summary>
         /// <param name="newData">New player data to add.</param>
-        public static void AddPlayerData(PlayerData newData)
+        public static void SavePlayerData(PlayerData newData)
         {
             playerData = newData;
         }
@@ -38,26 +38,16 @@ namespace Itsdits.Ravar.Data
         }
 
         /// <summary>
-        /// Parses the player data into a JSON string to be saved externally.
-        /// </summary>
-        /// <returns>JSON string to be saved.</returns>
-        public static string PlayerDataToJson()
-        {
-            return JsonUtility.ToJson(playerData);
-        }
-
-        public static void JsonToPlayerData(string data)
-        {
-            Debug.Log($"{data}");
-        }
-
-        /// <summary>
-        /// Adds the list of monster data to the data manager.
+        /// Saves the list of monster data to the data manager.
         /// </summary>
         /// <param name="newMonsters">Monsters to add.</param>
-        public static void AddMonsterPartyData(List<MonsterData> newMonsters)
+        public static void SaveMonsterPartyData(List<MonsterData> newMonsters)
         {
+            partyMonsters.Clear();
             partyMonsters.AddRange(newMonsters);
+
+            // Put this into the filesave class.
+            //var debugData = JsonHelper.ToJson(partyMonsters.ToArray(), true);
         }
 
         /// <summary>
@@ -67,23 +57,6 @@ namespace Itsdits.Ravar.Data
         public static List<MonsterData> LoadMonsterPartyData()
         {
             return partyMonsters;
-        }
-
-        /// <summary>
-        /// Removes the monster data from the data manager.
-        /// </summary>
-        public static void ClearMonsterPartyData()
-        {
-            partyMonsters = null;
-        }
-
-        /// <summary>
-        /// Parses the player party monster data into a JSON string to be saved externally.
-        /// </summary>
-        /// <returns>JSON string to be saved.</returns>
-        public static string MonsterPartyDataToJson()
-        {
-            return JsonUtility.ToJson(partyMonsters);
         }
     }
 }

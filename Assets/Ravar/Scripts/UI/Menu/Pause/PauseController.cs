@@ -64,9 +64,8 @@ namespace Itsdits.Ravar.UI
             var playerData = player.SavePlayerData();
 
             var partyData = player.GetComponent<MonsterParty>().SaveMonsterParty();
-
-            GameData.AddPlayerData(playerData);
-            GameData.AddMonsterPartyData(partyData);
+            GameData.SavePlayerData(playerData);
+            GameData.SaveMonsterPartyData(partyData);
         }
 
         private void LoadGame()

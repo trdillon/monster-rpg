@@ -53,10 +53,10 @@ namespace Itsdits.Ravar.UI
 
 
         /// <summary>
-        /// Type the dialog character by character
+        /// Display the dialog one character at a time to appear as if it's being typed.
         /// </summary>
-        /// <param name="dialog">Dialog to type</param>
-        /// <returns>Dialog</returns>
+        /// <param name="dialog">Dialog to type.</param>
+        /// <returns>Dialog typed out.</returns>
         public IEnumerator TypeDialog(string dialog)
         {
             if (dialog == null)
@@ -79,7 +79,7 @@ namespace Itsdits.Ravar.UI
         /// <summary>
         /// Handle action selection.
         /// </summary>
-        /// <param name="selectedAction">Index of action selected</param>
+        /// <param name="selectedAction">Index of action selected.</param>
         public void UpdateActionSelection(int selectedAction)
         {
             for (int i = 0; i < actionTexts.Count; ++i)
@@ -98,8 +98,8 @@ namespace Itsdits.Ravar.UI
         /// <summary>
         /// Handle move selection.
         /// </summary>
-        /// <param name="selectedMove">Index of move selected</param>
-        /// <param name="move">Move selected</param>
+        /// <param name="selectedMove">Index of move selected.</param>
+        /// <param name="move">Move selected.</param>
         public void UpdateMoveSelection(int selectedMove, MoveObj move)
         {
             for (int i = 0; i < moveTexts.Count; ++i)
@@ -149,7 +149,7 @@ namespace Itsdits.Ravar.UI
         /// <summary>
         /// Set the dialog to display.
         /// </summary>
-        /// <param name="dialog">Dialog to display</param>
+        /// <param name="dialog">Dialog to display.</param>
         public void SetDialog(string dialog)
         {
             if (dialog == null)
@@ -165,7 +165,7 @@ namespace Itsdits.Ravar.UI
         /// <summary>
         /// Set the move list.
         /// </summary>
-        /// <param name="moves">Available moves</param>
+        /// <param name="moves">Available moves.</param>
         public void SetMoveList(List<MoveObj> moves)
         {
             for (int i = 0; i < moveTexts.Count; ++i)
@@ -184,7 +184,7 @@ namespace Itsdits.Ravar.UI
         /// <summary>
         /// Show the dialog box.
         /// </summary>
-        /// <param name="enabled"></param>
+        /// <param name="enabled">True for enabled, false for disabled.</param>
         public void EnableDialogText(bool enabled)
         {
             dialogText.enabled = enabled;
@@ -193,7 +193,7 @@ namespace Itsdits.Ravar.UI
         /// <summary>
         /// Show the action selector.
         /// </summary>
-        /// <param name="enabled"></param>
+        /// <param name="enabled">True for enabled, false for disabled.</param>
         public void EnableActionSelector(bool enabled)
         {
             actionSelector.SetActive(enabled);
@@ -202,7 +202,7 @@ namespace Itsdits.Ravar.UI
         /// <summary>
         /// Show the move selector.
         /// </summary>
-        /// <param name="enabled"></param>
+        /// <param name="enabled">True for enabled, false for disabled.</param>
         public void EnableMoveSelector(bool enabled)
         {
             moveSelector.SetActive(enabled);
@@ -212,7 +212,7 @@ namespace Itsdits.Ravar.UI
         /// <summary>
         /// Show the choice selector.
         /// </summary>
-        /// <param name="enabled"></param>
+        /// <param name="enabled">True for enabled, false for disabled.</param>
         public void EnableChoiceSelector(bool enabled)
         {
             choiceSelector.SetActive(enabled);

@@ -6330,7 +6330,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1012279493172490903, guid: b8e8185e249472f42998a24162b96d8c, type: 3}
       propertyPath: monsters.Array.data[0].level
-      value: 24
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1012279493172490903, guid: b8e8185e249472f42998a24162b96d8c, type: 3}
       propertyPath: monsters.Array.data[1]._base
@@ -6338,7 +6338,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 875c84c591e13614ca6291675fe33305, type: 2}
     - target: {fileID: 1012279493172490903, guid: b8e8185e249472f42998a24162b96d8c, type: 3}
       propertyPath: monsters.Array.data[1].level
-      value: 22
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1012279493172490903, guid: b8e8185e249472f42998a24162b96d8c, type: 3}
       propertyPath: monsters.Array.data[2].level
