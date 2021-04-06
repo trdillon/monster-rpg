@@ -23,6 +23,10 @@ namespace Itsdits.Ravar.Character
         private Vector2 moveVector;
 
         /// <summary>
+        /// The player's Id.
+        /// </summary>
+        public string Id => id;
+        /// <summary>
         /// The player's name.
         /// </summary>
         public string Name => _name;
@@ -68,14 +72,21 @@ namespace Itsdits.Ravar.Character
         }
 
         /// <summary>
-        /// Pause the game when the Pause event is triggered.
+        /// Pause the game when the Pause event is triggered. Resumes the game if triggered while already paused.
         /// </summary>
         /// <param name="context">Callbacks from the InputAction cycle.</param>
         public void OnPause(InputAction.CallbackContext context)
         {
             if (context.performed)
             {
-                GameController.Instance.PauseGame(true);
+                if (GameController.Instance.State != GameState.Pause)
+                {
+                    GameController.Instance.PauseGame(true);
+                }
+                else
+                {
+                    GameController.Instance.PauseGame(false);
+                }
             }
         }
 
@@ -162,6 +173,9 @@ namespace Itsdits.Ravar.Character
 
         private int[] GetPositionAsIntArray()
         {
+            // We save the player's position as an int array because it's easy to serialize for save data.
+            // After loading the position we create a new Vector2 from the array and call SetOffsetOnTile() on it
+            // to put the player on the correct position of the tile.
             int[] positionAsArray = new int[2];
             positionAsArray[0] = Mathf.FloorToInt(transform.position.x);
             positionAsArray[1] = Mathf.FloorToInt(transform.position.y);

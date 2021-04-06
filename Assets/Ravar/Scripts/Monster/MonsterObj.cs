@@ -266,6 +266,52 @@ namespace Itsdits.Ravar.Monster
             }
         }
 
+        private void CalculateStats()
+        {
+            Stats = new Dictionary<MonsterStat, int>
+            {
+                { MonsterStat.Attack, Mathf.FloorToInt((Base.Attack * Level) / 100f) + 5 },
+                { MonsterStat.Defense, Mathf.FloorToInt((Base.Defense * Level) / 100f) + 5 },
+                { MonsterStat.SpAttack, Mathf.FloorToInt((Base.SpAttack * Level) / 100f) + 5 },
+                { MonsterStat.SpDefense, Mathf.FloorToInt((Base.SpDefense * Level) / 100f) + 5 },
+                { MonsterStat.Speed, Mathf.FloorToInt((Base.Speed * Level) / 100f) + 5 }
+            };
+            MaxHp = Mathf.FloorToInt((Base.MaxHp * Level) / 100f) + 10 + Level;
+        }
+        private void ResetStatsChanged()
+        {
+            StatsChanged = new Dictionary<MonsterStat, int>()
+            {
+                {MonsterStat.Attack, 0},
+                {MonsterStat.Defense, 0},
+                {MonsterStat.SpAttack, 0},
+                {MonsterStat.SpDefense, 0},
+                {MonsterStat.Speed, 0},
+                {MonsterStat.Accuracy, 0},
+                {MonsterStat.Evasion, 0}
+            };
+        }
+
+        private int GetStat(MonsterStat stat)
+        {
+            int statVal = Stats[stat];
+
+            // Stat changes based on original game's formula.
+            int changeVal = StatsChanged[stat];
+            var changeVals = new float[] { 1f, 1.5f, 2f, 2.5f, 3f, 3.5f, 4f };
+
+            if (changeVal >= 0)
+            {
+                statVal = Mathf.FloorToInt(statVal * changeVals[changeVal]);
+            }
+            else
+            {
+                statVal = Mathf.FloorToInt(statVal / changeVals[-changeVal]);
+            }
+
+            return statVal;
+        }
+
         ////////////// STATUS FUNCTIONS ////////////////
 
         /// <summary>
@@ -447,52 +493,6 @@ namespace Itsdits.Ravar.Monster
             }
             
             return moveList.ToArray();
-        }
-
-        private void CalculateStats()
-        {
-            Stats = new Dictionary<MonsterStat, int>
-            {
-                { MonsterStat.Attack, Mathf.FloorToInt((Base.Attack * Level) / 100f) + 5 },
-                { MonsterStat.Defense, Mathf.FloorToInt((Base.Defense * Level) / 100f) + 5 },
-                { MonsterStat.SpAttack, Mathf.FloorToInt((Base.SpAttack * Level) / 100f) + 5 },
-                { MonsterStat.SpDefense, Mathf.FloorToInt((Base.SpDefense * Level) / 100f) + 5 },
-                { MonsterStat.Speed, Mathf.FloorToInt((Base.Speed * Level) / 100f) + 5 }
-            };
-            MaxHp = Mathf.FloorToInt((Base.MaxHp * Level) / 100f) + 10 + Level;
-        }
-        private void ResetStatsChanged()
-        {
-            StatsChanged = new Dictionary<MonsterStat, int>()
-            {
-                {MonsterStat.Attack, 0},
-                {MonsterStat.Defense, 0},
-                {MonsterStat.SpAttack, 0},
-                {MonsterStat.SpDefense, 0},
-                {MonsterStat.Speed, 0},
-                {MonsterStat.Accuracy, 0},
-                {MonsterStat.Evasion, 0}
-            };
-        }
-
-        private int GetStat(MonsterStat stat)
-        {
-            int statVal = Stats[stat];
-
-            // Stat changes based on original game's formula.
-            int changeVal = StatsChanged[stat];
-            var changeVals = new float[] { 1f, 1.5f, 2f, 2.5f, 3f, 3.5f, 4f };
-
-            if (changeVal >= 0)
-            {
-                statVal = Mathf.FloorToInt(statVal * changeVals[changeVal]);
-            }
-            else
-            {
-                statVal = Mathf.FloorToInt(statVal / changeVals[-changeVal]);
-            }
-
-            return statVal;
         }
     }
 }

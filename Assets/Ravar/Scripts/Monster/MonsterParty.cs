@@ -61,7 +61,6 @@ namespace Itsdits.Ravar.Monster
         public List<MonsterData> SaveMonsterParty()
         {
             var partyData = new List<MonsterData>();
-
             foreach (var monster in monsters)
             {
                 var monsterData = monster.SaveMonsterData();

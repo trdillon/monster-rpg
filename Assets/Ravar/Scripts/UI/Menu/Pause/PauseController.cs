@@ -62,21 +62,19 @@ namespace Itsdits.Ravar.UI
         {
             var player = GameController.Instance.CurrentPlayer;
             var playerData = player.SavePlayerData();
-
             var partyData = player.GetComponent<MonsterParty>().SaveMonsterParty();
-            GameData.SavePlayerData(playerData);
-            GameData.SaveMonsterPartyData(partyData);
+
+            GameData.SaveGameData(playerData, partyData);
         }
 
         private void LoadGame()
         {
             var player = GameController.Instance.CurrentPlayer;
-            var playerData = GameData.LoadPlayerData();
-            player.LoadPlayerData(playerData);
-
-            var partyData = GameData.LoadMonsterPartyData();
             var playerParty = player.GetComponent<MonsterParty>();
-            playerParty.LoadMonsterParty(partyData);
+            //TODO - change this to the id of the save game the user selects in the UI
+            var saveData = GameData.LoadGameData(player.Id);  
+            player.LoadPlayerData(saveData.playerData);
+            playerParty.LoadMonsterParty(saveData.partyData);
         }
 
         private void PauseSelection()

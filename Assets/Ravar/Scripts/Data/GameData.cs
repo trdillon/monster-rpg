@@ -1,62 +1,55 @@
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 namespace Itsdits.Ravar.Data
 {
     /// <summary>
-    /// Static data manager class that handles data persistence between scenes.
+    /// Static data manager class that handles data persistence and file system IO.
     /// </summary>
     public static class GameData
     {
+        public static SaveData saveData;
         public static PlayerData playerData;
         public static List<MonsterData> partyMonsters = new List<MonsterData>();
 
         /// <summary>
-        /// Saves the player data to the data manager.
+        /// Saves the current saved data to file. The save file is named after the player Id.
         /// </summary>
-        /// <param name="newData">New player data to add.</param>
-        public static void SavePlayerData(PlayerData newData)
+        /// <param name="player">The current player data to save.</param>
+        /// <param name="party">The player's monster party data to save.</param>
+        public static void SaveGameData(PlayerData player, List<MonsterData> party)
         {
-            playerData = newData;
-        }
-
-        /// <summary>
-        /// Loads the player data from the data manager to the caller.
-        /// </summary>
-        /// <returns>PlayerData that is saved in this instance.</returns>
-        public static PlayerData LoadPlayerData()
-        {
-            return playerData;
-        }
-
-        /// <summary>
-        /// Removes the player data from the data manager.
-        /// </summary>
-        public static void ClearPlayerData()
-        {
-            playerData = null;
-        }
-
-        /// <summary>
-        /// Saves the list of monster data to the data manager.
-        /// </summary>
-        /// <param name="newMonsters">Monsters to add.</param>
-        public static void SaveMonsterPartyData(List<MonsterData> newMonsters)
-        {
+            playerData = player;
             partyMonsters.Clear();
-            partyMonsters.AddRange(newMonsters);
+            partyMonsters.AddRange(party);
+            saveData = new SaveData(player, party);
 
-            // Put this into the filesave class.
-            //var debugData = JsonHelper.ToJson(partyMonsters.ToArray(), true);
+            if (!Directory.Exists(Application.persistentDataPath + "/save/"))
+            {
+                Directory.CreateDirectory(Application.persistentDataPath + "/save/");
+            }
+
+            string SaveDataJson = JsonUtility.ToJson(saveData, true);
+            File.WriteAllText(Application.persistentDataPath + $"/save/{playerData.id}.ravar", SaveDataJson);
+            Debug.Log($"Save game: {playerData.id} saved successfully.");
+            //TODO - Show user feedback about the save.
         }
 
         /// <summary>
-        /// Loads the list of monster data to the caller.
+        /// Loads a saved game from file.
         /// </summary>
-        /// <returns></returns>
-        public static List<MonsterData> LoadMonsterPartyData()
+        /// <param name="playerId">The Id of the save file to load.</param>
+        public static SaveData LoadGameData(string playerId)
         {
-            return partyMonsters;
+            string LoadDataJson = File.ReadAllText(Application.persistentDataPath + $"/save/{playerId}.ravar");
+            JsonUtility.FromJsonOverwrite(LoadDataJson, saveData);
+            playerData = saveData.playerData;
+            partyMonsters.Clear();
+            partyMonsters.AddRange(saveData.partyData);
+            Debug.Log($"Load game: {playerData.id} loaded successfully.");
+            //TODO - Show user feedback about the load.
+            return saveData;
         }
     }
 }
