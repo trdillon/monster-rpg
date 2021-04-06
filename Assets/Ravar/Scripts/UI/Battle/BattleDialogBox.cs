@@ -12,43 +12,56 @@ namespace Itsdits.Ravar.UI
     public class BattleDialogBox : MonoBehaviour
     {
         [Header("Dialog Box")]
+        [Tooltip("The Text element that displays the current dialog.")]
         [SerializeField] Text dialogText;
 
         [Header("Action Selector")]
+        [Tooltip("List of Text elements that display on the Action Selection screen.")]
         [SerializeField] List<Text> actionTexts;
+        [Tooltip("GameObject that holds the Action Selector.")]
         [SerializeField] GameObject actionSelector;
 
         [Header("Move Selector")]
+        [Tooltip("List of Text elements that display on the Move Selection screen.")]
         [SerializeField] List<Text> moveTexts;
+        [Tooltip("GameObject that holds the Move Selector.")]
         [SerializeField] GameObject moveSelector;
 
         [Header("Move Details")]
+        [Tooltip("GameObject that holds the Move Details.")]
         [SerializeField] GameObject moveDetails;
+        [Tooltip("Text element that displays the move's energy.")]
         [SerializeField] Text energyText;
+        [Tooltip("Text element that displays the move's type.")]
         [SerializeField] Text typeText;
 
         [Header("Choice Selector")]
+        [Tooltip("GameObject that holds the Choice Selector.")]
         [SerializeField] GameObject choiceSelector;
+        [Tooltip("Text element that holds the Yes text.")]
         [SerializeField] Text yesText;
+        [Tooltip("Text element that holds the No text.")]
         [SerializeField] Text noText;
 
         [Header("Variables")]
+        [Tooltip("How fast the dialog is typed on screen, default is 45.")]
         [SerializeField] int lettersPerSecond;
+        [Tooltip("The color to change the text to when highlighted.")]
         [SerializeField] Color highlightColor;
+        [Tooltip("The color to display when the text is not highlighted.")]
         [SerializeField] Color standardColor;
 
 
         /// <summary>
-        /// Type the dialog character by character
+        /// Display the dialog one character at a time to appear as if it's being typed.
         /// </summary>
-        /// <param name="dialog">Dialog to type</param>
-        /// <returns>Dialog</returns>
+        /// <param name="dialog">Dialog to type.</param>
+        /// <returns>Dialog typed out.</returns>
         public IEnumerator TypeDialog(string dialog)
         {
             if (dialog == null)
             {
                 dialogText.text = "";
-                Debug.LogError("BDB001: TypeDialog was passed a null value.");
             }
             else
             {
@@ -66,7 +79,7 @@ namespace Itsdits.Ravar.UI
         /// <summary>
         /// Handle action selection.
         /// </summary>
-        /// <param name="selectedAction">Index of action selected</param>
+        /// <param name="selectedAction">Index of action selected.</param>
         public void UpdateActionSelection(int selectedAction)
         {
             for (int i = 0; i < actionTexts.Count; ++i)
@@ -85,8 +98,8 @@ namespace Itsdits.Ravar.UI
         /// <summary>
         /// Handle move selection.
         /// </summary>
-        /// <param name="selectedMove">Index of move selected</param>
-        /// <param name="move">Move selected</param>
+        /// <param name="selectedMove">Index of move selected.</param>
+        /// <param name="move">Move selected.</param>
         public void UpdateMoveSelection(int selectedMove, MoveObj move)
         {
             for (int i = 0; i < moveTexts.Count; ++i)
@@ -136,13 +149,12 @@ namespace Itsdits.Ravar.UI
         /// <summary>
         /// Set the dialog to display.
         /// </summary>
-        /// <param name="dialog">Dialog to display</param>
+        /// <param name="dialog">Dialog to display.</param>
         public void SetDialog(string dialog)
         {
             if (dialog == null)
             {
                 dialogText.text = "";
-                Debug.LogError("BDB002: SetDialog was passed a null value.");
             }
             else
             {
@@ -153,7 +165,7 @@ namespace Itsdits.Ravar.UI
         /// <summary>
         /// Set the move list.
         /// </summary>
-        /// <param name="moves">Available moves</param>
+        /// <param name="moves">Available moves.</param>
         public void SetMoveList(List<MoveObj> moves)
         {
             for (int i = 0; i < moveTexts.Count; ++i)
@@ -172,7 +184,7 @@ namespace Itsdits.Ravar.UI
         /// <summary>
         /// Show the dialog box.
         /// </summary>
-        /// <param name="enabled"></param>
+        /// <param name="enabled">True for enabled, false for disabled.</param>
         public void EnableDialogText(bool enabled)
         {
             dialogText.enabled = enabled;
@@ -181,7 +193,7 @@ namespace Itsdits.Ravar.UI
         /// <summary>
         /// Show the action selector.
         /// </summary>
-        /// <param name="enabled"></param>
+        /// <param name="enabled">True for enabled, false for disabled.</param>
         public void EnableActionSelector(bool enabled)
         {
             actionSelector.SetActive(enabled);
@@ -190,7 +202,7 @@ namespace Itsdits.Ravar.UI
         /// <summary>
         /// Show the move selector.
         /// </summary>
-        /// <param name="enabled"></param>
+        /// <param name="enabled">True for enabled, false for disabled.</param>
         public void EnableMoveSelector(bool enabled)
         {
             moveSelector.SetActive(enabled);
@@ -200,7 +212,7 @@ namespace Itsdits.Ravar.UI
         /// <summary>
         /// Show the choice selector.
         /// </summary>
-        /// <param name="enabled"></param>
+        /// <param name="enabled">True for enabled, false for disabled.</param>
         public void EnableChoiceSelector(bool enabled)
         {
             choiceSelector.SetActive(enabled);

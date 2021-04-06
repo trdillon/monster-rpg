@@ -1,3 +1,5 @@
+using Itsdits.Ravar.Core;
+using Itsdits.Ravar.Data;
 using Itsdits.Ravar.Levels;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -5,20 +7,39 @@ using UnityEngine.InputSystem;
 namespace Itsdits.Ravar.Character
 {
     /// <summary>
-    /// Controller for the Player character. Handles input and encounters.
+    /// Controller for the Player character that implements <see cref="Moveable"/>. Handles input and interaction.
     /// </summary>
     public class PlayerController : Moveable
     {
         [Header("Details")]
+        [Tooltip("Unique ID for this player to differentiate between save games. Automatically generated at runtime.")]
+        [SerializeField] string id;
+        [Tooltip("The name of this player.")]
         [SerializeField] string _name;
+        [Tooltip("The sprite of the character to be displayed in the battle screen.")]
         [SerializeField] Sprite battleSprite;
 
         private Vector2 inputVector;
         private Vector2 moveVector;
 
+        /// <summary>
+        /// The player's Id.
+        /// </summary>
+        public string Id => id;
+        /// <summary>
+        /// The player's name.
+        /// </summary>
         public string Name => _name;
+        /// <summary>
+        /// The character sprite to be used in the battle screen.
+        /// </summary>
         public Sprite BattleSprite => battleSprite;
 
+        private void Start()
+        {
+            id = _name + Random.Range(0, 65534);
+        }
+        
         /// <summary>
         /// Handles Update lifecycle when GameState.World.
         /// </summary>
@@ -51,15 +72,58 @@ namespace Itsdits.Ravar.Character
         }
 
         /// <summary>
-        /// Pause the game when the Pause event is triggered.
+        /// Pause the game when the Pause event is triggered. Resumes the game if triggered while already paused.
         /// </summary>
         /// <param name="context">Callbacks from the InputAction cycle.</param>
         public void OnPause(InputAction.CallbackContext context)
         {
             if (context.performed)
             {
-                GameController.Instance.PauseGame(true);
+                if (GameController.Instance.State != GameState.Pause)
+                {
+                    GameController.Instance.PauseGame(true);
+                }
+                else
+                {
+                    GameController.Instance.PauseGame(false);
+                }
             }
+        }
+
+        /// <summary>
+        /// Saves the current player's data.
+        /// </summary>
+        /// <returns>PlayerData with current data.</returns>
+        public PlayerData SavePlayerData()
+        {
+            GameController.Instance.UpdateCurrentScene();
+
+            var playerData = new PlayerData(
+                id,
+                GameController.Instance.CurrentScene,
+                GetPositionAsIntArray()
+                );
+
+            return playerData;
+        }
+
+        /// <summary>
+        /// Loads the player data into the current player.
+        /// </summary>
+        /// <param name="loadData">PlayerData to load into this player.</param>
+        public void LoadPlayerData(PlayerData loadData)
+        {
+            id = loadData.id;
+            GameController.Instance.UpdateCurrentScene();
+            var currentScene = GameController.Instance.CurrentScene;
+
+            if (loadData.currentScene != currentScene)
+            {
+                GameController.Instance.LoadScene(loadData.currentScene);
+            }
+
+            var newPosition = new Vector2(loadData.currentPosition[0], loadData.currentPosition[1]);
+            SetOffsetOnTile(newPosition);
         }
 
         private void CheckAfterMove()
@@ -105,6 +169,18 @@ namespace Itsdits.Ravar.Character
             {
                 collider.GetComponent<IInteractable>()?.InteractWith(transform);
             }
+        }
+
+        private int[] GetPositionAsIntArray()
+        {
+            // We save the player's position as an int array because it's easy to serialize for save data.
+            // After loading the position we create a new Vector2 from the array and call SetOffsetOnTile() on it
+            // to put the player on the correct position of the tile.
+            int[] positionAsArray = new int[2];
+            positionAsArray[0] = Mathf.FloorToInt(transform.position.x);
+            positionAsArray[1] = Mathf.FloorToInt(transform.position.y);
+
+            return positionAsArray;
         }
     }
 }

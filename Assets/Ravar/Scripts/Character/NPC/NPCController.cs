@@ -11,19 +11,26 @@ namespace Itsdits.Ravar.Character
     public class NPCController : Moveable, IInteractable
     {
         [Header("Details")]
+        [Tooltip("Name of this NPC.")]
         [SerializeField] string _name;
 
         [Header("Dialog")]
+        [Tooltip("Dialog this NPC will display when interacted with.")]
         [SerializeField] Dialog dialog;
 
         [Header("Movement")]
+        [Tooltip("List of movements this character will make to complete their movement pattern.")]
         [SerializeField] List<Vector2> movementPattern;
+        [Tooltip("Delay, in seconds, between each movement in the movement pattern.")]
         [SerializeField] float movementPatternDelay;
 
         private NPCState state;
         private float idleTimer = 0f;
         private int currentMovement = 0;
 
+        /// <summary>
+        /// Name of this NPC.
+        /// </summary>
         public string Name => _name;
 
         private void Update()

@@ -7,6 +7,7 @@ namespace Itsdits.Ravar.Core
     /// </summary>
     public class CorePackBuilder : MonoBehaviour
     {
+        [Tooltip("The prefab of the CorePack that should be built and maintained during play.")]
         [SerializeField] GameObject corePackPrefab;
 
         private void Awake()

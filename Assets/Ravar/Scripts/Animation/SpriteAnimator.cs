@@ -27,6 +27,9 @@ namespace Itsdits.Ravar.Animation
             this.frameRate = frameRate;
         }
 
+        /// <summary>
+        /// List of frames in the animation.
+        /// </summary>
         public List<Sprite> Frames => frames;
 
         /// <summary>
@@ -47,7 +50,7 @@ namespace Itsdits.Ravar.Animation
             timer += Time.deltaTime;
             if (timer > frameRate)
             {
-                // Loop back after the last frame
+                // Loop back after the last frame.
                 currentFrame = (currentFrame + 1) % frames.Count;
                 spriteRenderer.sprite = frames[currentFrame];
                 timer -= frameRate;

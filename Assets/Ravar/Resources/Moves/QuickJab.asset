@@ -15,6 +15,7 @@ MonoBehaviour:
   _name: Quick Jab
   description: Throws a quick jab at the opponent, striking them before they have
     a chance to attack.
+  moveNumber: 5
   power: 40
   accuracy: 95
   energy: 30

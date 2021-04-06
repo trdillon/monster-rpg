@@ -4,28 +4,52 @@ using Itsdits.Ravar.Levels;
 using Itsdits.Ravar.Monster;
 using Itsdits.Ravar.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-namespace Itsdits.Ravar
+namespace Itsdits.Ravar.Core
 {
     /// <summary>
-    /// Controller for game state management.
+    /// Static controller for game state management.
     /// </summary>
     public class GameController : MonoBehaviour
     {
+        /// <summary>
+        /// Static instance of the game controller.
+        /// </summary>
         public static GameController Instance { get; private set; }
 
+        [Tooltip("GameObject that holds the PlayerController component.")]
         [SerializeField] PlayerController playerController;
+        [Tooltip("GameObject that holds the DialogController component.")]
         [SerializeField] DialogController dialogController;
+        [Tooltip("GameObject that holds the PauseController component.")]
         [SerializeField] PauseController pauseController;
+        [Tooltip("GameObject that holds the BattleSystem component.")]
         [SerializeField] BattleSystem battleSystem;
+        [Tooltip("The world camera that is attached to the Player GameObject.")]
         [SerializeField] Camera worldCamera;
 
         private BattlerController battler;
         private GameState state;
         private GameState prevState;
+        private int currentScene;
 
+        /// <summary>
+        /// The current <see cref="GameState"/>.
+        /// </summary>
         public GameState State => state;
+        /// <summary>
+        /// The previous <see cref="GameState"/>.
+        /// </summary>
         public GameState PrevState => prevState;
+        /// <summary>
+        /// The index of the scene the player is currently in.
+        /// </summary>
+        public int CurrentScene => currentScene;
+        /// <summary>
+        /// The current player in this game instance.
+        /// </summary>
+        public PlayerController CurrentPlayer => playerController;
 
         private void Awake()
         {
@@ -38,6 +62,7 @@ namespace Itsdits.Ravar
             battleSystem.OnBattleOver += EndBattle;
             DialogController.Instance.OnShowDialog += StartDialog;
             DialogController.Instance.OnCloseDialog += EndDialog;
+            UpdateCurrentScene();
         }
 
         private void Update()
@@ -71,17 +96,7 @@ namespace Itsdits.Ravar
             worldCamera.gameObject.SetActive(false);
 
             var playerParty = playerController.GetComponent<MonsterParty>();
-            if (playerParty == null)
-            {
-                Debug.LogError("GC001: Player party null. Failed to get party from playerController.");
-            }
-
             var wildMonster = FindObjectOfType<MapArea>().GetComponent<MapArea>().GetRandomMonster();
-            if (wildMonster == null)
-            {
-                Debug.LogError("GC002: wildMonster null. Failed to GetRandomMonster from MapArea.");
-            }
-
             var enemyMonster = new MonsterObj(wildMonster.Base, wildMonster.Level);
 
             battleSystem.StartWildBattle(playerParty, enemyMonster);
@@ -90,7 +105,7 @@ namespace Itsdits.Ravar
         /// <summary>
         /// Starts an encounter with a character after LoS collider is triggered.
         /// </summary>
-        /// <param name="battlerCollider">Character to battle</param>
+        /// <param name="battlerCollider">Character that was encountered.</param>
         public void StartCharEncounter(BattlerController battler)
         {
                 state = GameState.Cutscene;
@@ -101,7 +116,7 @@ namespace Itsdits.Ravar
         /// <summary>
         /// Start a battle with enemy character.
         /// </summary>
-        /// <param name="battler">Character to battle</param>
+        /// <param name="battler">Character to do battle with.</param>
         public void StartCharBattle(BattlerController battler)
         {
             state = GameState.Battle;
@@ -112,20 +127,14 @@ namespace Itsdits.Ravar
             this.battler = battler;
             var playerParty = playerController.GetComponent<MonsterParty>();
             var battlerParty = battler.GetComponent<MonsterParty>();
-            if (playerParty == null || battlerParty == null)
-            {
-                Debug.LogError("GC004: MonsterParty null. Failed to get party during StartCharBattle.");
-            }
-            else
-            {
-                battleSystem.StartCharBattle(playerParty, battlerParty);
-            }
+
+            battleSystem.StartCharBattle(playerParty, battlerParty);
         }
 
         /// <summary>
         /// Pause and unpause the game.
         /// </summary>
-        /// <param name="pause">Pause or unpause.</param>
+        /// <param name="pause">True for pause, false for unpause.</param>
         public void PauseGame(bool pause)
         {
             if (pause)
@@ -142,9 +151,10 @@ namespace Itsdits.Ravar
         }
 
         /// <summary>
-        /// Stops the character and prevents player input. Used in scene switching and cutscenes.
+        /// Stops the character and prevents player input.
         /// </summary>
-        /// <param name="frozen">Is the player frozen or not.</param>
+        /// <remarks>Used in scene switching and cutscenes.</remarks>
+        /// <param name="frozen">True for freeze, false for unfreeze.</param>
         public void FreezePlayer(bool frozen)
         {
             if (frozen)
@@ -157,11 +167,30 @@ namespace Itsdits.Ravar
                 state = prevState;
             }
         }
-             
+
         /// <summary>
-        /// Sets the GameState to World, used to release player from error conditions, etc.
-        /// This is a debug function that usually indicates a function calling this is buggy or incomplete.
+        /// Loads the game into a different scene.
         /// </summary>
+        /// <remarks>Used for changing scenes on game loading.</remarks>
+        /// <param name="sceneIndex"></param>
+        public void LoadScene(int sceneIndex)
+        {
+            SceneManager.LoadSceneAsync(sceneIndex);
+        }
+
+        /// <summary>
+        /// Updates the currentScene index.
+        /// </summary>
+        public void UpdateCurrentScene()
+        {
+            currentScene = SceneManager.GetActiveScene().buildIndex;
+        }
+
+        /// <summary>
+        /// Sets the GameState to World.
+        /// </summary>
+        /// <remarks>Used to release player from error conditions, etc.
+        /// This is a debug function that usually indicates a function calling this is buggy or incomplete.</remarks>
         public void ReleasePlayer()
         {
             state = GameState.World;
@@ -170,11 +199,6 @@ namespace Itsdits.Ravar
         private void EndBattle(BattleResult result, bool isCharBattle)
         {
             state = GameState.World;
-
-            if (isCharBattle && battler == null)
-            {
-                Debug.LogError("GC005: EndBattle called but battler was null.");
-            }
 
             if (battler != null && result == BattleResult.Won)
             {

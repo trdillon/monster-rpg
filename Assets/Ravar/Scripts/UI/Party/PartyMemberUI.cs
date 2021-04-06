@@ -9,10 +9,15 @@ namespace Itsdits.Ravar.UI
     /// </summary>
     public class PartyMemberUI : MonoBehaviour
     {
+        [Tooltip("The Text element that displays the monster's name.")]
         [SerializeField] Text nameText;
+        [Tooltip("The Text element that displays the monster's level.")]
         [SerializeField] Text levelText;
+        [Tooltip("The GameObject that holds the monster's HP bar.")]
         [SerializeField] HPBar hpBar;
+        [Tooltip("The color to change the text to when highlighted.")]
         [SerializeField] Color highlightColor;
+        [Tooltip("The color to display when the text is not highlighted.")]
         [SerializeField] Color standardColor;
 
         /// <summary>

@@ -15,6 +15,7 @@ MonoBehaviour:
   _name: Wabbi
   description: A forest wolf that excels at tracking and hunting. A balanced fighter
     with a good mix of speed and strength, it is a formidable foe for most creatures.
+  monsterNumber: 1
   maxHp: 45
   attack: 49
   defense: 49
@@ -22,12 +23,10 @@ MonoBehaviour:
   spDefense: 65
   speed: 45
   expGiven: 250
-  catchRate: 255
-  leftSprite: {fileID: 21300000, guid: 1244abe4a992a6346a9cda5e98ea24c2, type: 3}
-  rightSprite: {fileID: 21300000, guid: 89a6e783370c2544a824fe67bc066782, type: 3}
+  catchRate: 250
+  growthRate: 1
   primaryType: 3
   secondaryType: 0
-  growthRate: 1
   learnableMoves:
   - moveBase: {fileID: 11400000, guid: c277d99d2796e064f96a87aa08154662, type: 2}
     levelLearned: 1
@@ -35,3 +34,5 @@ MonoBehaviour:
     levelLearned: 4
   - moveBase: {fileID: 11400000, guid: 79a2b519f50a22447a5178433c28e4f7, type: 2}
     levelLearned: 7
+  leftSprite: {fileID: 21300000, guid: 1244abe4a992a6346a9cda5e98ea24c2, type: 3}
+  rightSprite: {fileID: 21300000, guid: 89a6e783370c2544a824fe67bc066782, type: 3}

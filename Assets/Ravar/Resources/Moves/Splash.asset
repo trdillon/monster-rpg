@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Splash
   description: Splashes the opponent with water.
+  moveNumber: 8
   power: 40
   accuracy: 95
   energy: 30

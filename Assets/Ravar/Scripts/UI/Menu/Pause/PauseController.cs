@@ -1,3 +1,6 @@
+using Itsdits.Ravar.Core;
+using Itsdits.Ravar.Data;
+using Itsdits.Ravar.Monster;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,6 +11,7 @@ namespace Itsdits.Ravar.UI
     /// </summary>
     public class PauseController : MonoBehaviour
     {
+        [Tooltip("The canvas GameObject that holds the PauseBox and related UI elements.")]
         [SerializeField] PauseBox pauseBox;
 
         private int currentPause;
@@ -17,8 +21,14 @@ namespace Itsdits.Ravar.UI
 
         private PauseState state;
 
+        /// <summary>
+        /// The current state of the pause menu.
+        /// </summary>
         public PauseState State => state;
 
+        /// <summary>
+        /// Handles Update lifecycle when GameState is Pause.
+        /// </summary>
         public void HandleUpdate()
         {
             if (state == PauseState.Main)
@@ -46,6 +56,25 @@ namespace Itsdits.Ravar.UI
         {
             pauseBox.gameObject.SetActive(enabled);
             pauseBox.EnablePauseMenu(enabled);
+        }
+
+        private void SaveGame()
+        {
+            var player = GameController.Instance.CurrentPlayer;
+            var playerData = player.SavePlayerData();
+            var partyData = player.GetComponent<MonsterParty>().SaveMonsterParty();
+
+            GameData.SaveGameData(playerData, partyData);
+        }
+
+        private void LoadGame()
+        {
+            var player = GameController.Instance.CurrentPlayer;
+            var playerParty = player.GetComponent<MonsterParty>();
+            //TODO - change this to the id of the save game the user selects in the UI
+            var saveData = GameData.LoadGameData(player.Id);  
+            player.LoadPlayerData(saveData.playerData);
+            playerParty.LoadMonsterParty(saveData.partyData);
         }
 
         private void PauseSelection()
@@ -147,6 +176,11 @@ namespace Itsdits.Ravar.UI
                     // Back
                     PauseSelection();
                 }
+                else if (currentSave == 1)
+                {
+                    // Save
+                    SaveGame();
+                }
             }
         }
 
@@ -170,6 +204,11 @@ namespace Itsdits.Ravar.UI
                 {
                     // Back
                     PauseSelection();
+                }
+                else if (currentLoad == 1)
+                {
+                    // Load
+                    LoadGame();
                 }
             }
         }

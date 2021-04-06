@@ -10,6 +10,7 @@ namespace Itsdits.Ravar.UI
     /// </summary>
     public class PartyScreen : MonoBehaviour
     {
+        [Tooltip("The message Text to display in the screen.")]
         [SerializeField] Text messageText;
 
         private PartyMemberUI[] members;
@@ -74,7 +75,6 @@ namespace Itsdits.Ravar.UI
             if (message == null)
             {
                 messageText.text = "";
-                Debug.LogError("PS001: SetMessageText was passed a null value.");
             }
             else
             {

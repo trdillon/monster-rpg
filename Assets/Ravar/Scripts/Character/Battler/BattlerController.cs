@@ -1,3 +1,4 @@
+using Itsdits.Ravar.Core;
 using Itsdits.Ravar.UI;
 using System.Collections;
 using UnityEngine;
@@ -10,20 +11,36 @@ namespace Itsdits.Ravar.Character
     public class BattlerController : Moveable, IInteractable
     {
         [Header("Details")]
+        [Tooltip("Name of this Battler.")]
         [SerializeField] string _name;
+        [Tooltip("Sprite of this Battler.")]
         [SerializeField] Sprite sprite;
+        [Tooltip("State of this battler. Default is Ready. LoS is disabled on Defeated and Locked states.")]
         [SerializeField] BattlerState state = BattlerState.Ready;
 
         [Header("Dialog")]
+        [Tooltip("Dialog this Battler will display when BattlerState is Ready.")]
         [SerializeField] Dialog introDialog;
+        [Tooltip("Dialog this Battler will display when BattlerState is Defeated.")]
         [SerializeField] Dialog outroDialog;
 
         [Header("Line of Sight")]
+        [Tooltip("Alert icon to be displayed above the Battler's head when LoS is triggered.")]
         [SerializeField] GameObject alert;
+        [Tooltip("GameObject representing this Battler's LoS.")]
         [SerializeField] GameObject los;
 
+        /// <summary>
+        /// Name of this Battler.
+        /// </summary>
         public string Name => _name;
+        /// <summary>
+        /// Sprite of this Battler.
+        /// </summary>
         public Sprite Sprite => sprite;
+        /// <summary>
+        /// State of this Battler. Determines whether or not LoS is activated.
+        /// </summary>
         public BattlerState State => state;
 
         private void Start()
@@ -72,9 +89,10 @@ namespace Itsdits.Ravar.Character
         }
 
         /// <summary>
-        /// Rotate the line of sight for the Battler. Used to keep the BoxCollider facing the same direction as the Battler and
-        /// to set a default facing direction for a Battler.
+        /// Rotate the line of sight for the Battler.
         /// </summary>
+        /// <remarks>Used to keep the BoxCollider facing the same direction as the Battler and
+        /// to set a default facing direction for a Battler.</remarks>
         /// <param name="direction">Direction to rotate.</param>
         public void RotateLoS(Direction direction)
         {
