@@ -2,6 +2,7 @@ using Itsdits.Ravar.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEditor;
 using UnityEngine;
 
 namespace Itsdits.Ravar.Monster 
@@ -35,7 +36,10 @@ namespace Itsdits.Ravar.Monster
         /// <param name="monsterData">Saved data of the monster to be loaded.</param>
         public MonsterObj(MonsterData monsterData)
         {
-            _base = Resources.Load<MonsterBase>($"Monsters/{monsterData.monsterName}");
+            _base =
+                AssetDatabase
+                    .LoadAssetAtPath<MonsterBase>($"Assets/Ravar/Prefabs/Monsters/{monsterData.monsterName}.asset");
+            //_base = Resources.Load<MonsterBase>($"Monsters/{monsterData.monsterName}");
             level = monsterData.currentLevel;
             Exp = monsterData.currentExp;
             CurrentHp = monsterData.currentHp;
@@ -43,7 +47,10 @@ namespace Itsdits.Ravar.Monster
 
             for (int i = 0; i < monsterData.currentMoves.Length; i++)
             {
-                var moveBase = Resources.Load<MoveBase>($"Moves/{monsterData.currentMoves[i]}");
+                var moveBase =
+                    AssetDatabase
+                        .LoadAssetAtPath<MoveBase>($"Assets/Ravar/Prefabs/Moves/{monsterData.currentMoves[i]}.asset");
+                //var moveBase = Resources.Load<MoveBase>($"Moves/{monsterData.currentMoves[i]}");
                 var moveEnergy = monsterData.currentEnergy[i];
                 var move = new MoveObj(moveBase, moveEnergy);
                 Moves.Add(move);
