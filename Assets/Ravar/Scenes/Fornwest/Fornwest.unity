@@ -502,10 +502,6 @@ MonoBehaviour:
   _wildMonsters:
   - _base: {fileID: 11400000, guid: 875c84c591e13614ca6291675fe33305, type: 2}
     _level: 3
-  - _base: {fileID: 11400000, guid: 037162b05ccdadf43a507fd23d5b7d64, type: 2}
-    _level: 3
-  - _base: {fileID: 11400000, guid: 08fe71a8bca62d0468ada7da52ccd5a7, type: 2}
-    _level: 3
 --- !u!1 &773437713
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,6 +1,9 @@
 using Itsdits.Ravar.Monster;
+using Itsdits.Ravar.Util;
 using System.Collections;
 using System.Collections.Generic;
+using System.Text;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,7 +16,7 @@ namespace Itsdits.Ravar.UI
     {
         [Header("Dialog Box")]
         [Tooltip("The Text element that displays the current dialog.")]
-        [SerializeField] private Text _dialogText;
+        [SerializeField] private TMP_Text _dialogText;
 
         [Header("Action Selector")]
         [Tooltip("List of Text elements that display on the Action Selection screen.")]
@@ -44,14 +47,13 @@ namespace Itsdits.Ravar.UI
         [SerializeField] private Text _noText;
 
         [Header("Variables")]
-        [Tooltip("How fast the dialog is typed on screen, default is 45.")]
-        [SerializeField] private int _lettersPerSecond;
         [Tooltip("The color to change the text to when highlighted.")]
         [SerializeField] private Color _highlightColor;
         [Tooltip("The color to display when the text is not highlighted.")]
         [SerializeField] private Color _standardColor;
 
-
+        private StringBuilder _dialogBuilder = new StringBuilder();
+        
         /// <summary>
         /// Display the dialog one character at a time to appear as if it's being typed.
         /// </summary>
@@ -66,13 +68,17 @@ namespace Itsdits.Ravar.UI
             else
             {
                 _dialogText.text = "";
+                _dialogBuilder.Clear();
                 foreach (char letter in dialog)
                 {
-                    _dialogText.text += letter;
-                    yield return new WaitForSeconds(1f / _lettersPerSecond);
+                    _dialogBuilder.Append(letter);
+                    //_dialogText.text += letter;
+                    yield return YieldHelper.TypingTime;
                 }
+
+                _dialogText.text = _dialogBuilder.ToString();
                 // Give the player time to read the dialog.
-                yield return new WaitForSeconds(1f);
+                yield return YieldHelper.OneSecond;
             }
         }
 

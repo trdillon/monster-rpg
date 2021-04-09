@@ -1,6 +1,7 @@
 using Itsdits.Ravar.Animation;
 using Itsdits.Ravar.Monster;
 using Itsdits.Ravar.UI;
+using Itsdits.Ravar.Util;
 using System;
 using System.Collections;
 using UnityEngine;
@@ -240,7 +241,7 @@ namespace Itsdits.Ravar.Battle
             if (CheckIfMoveHits(move, attackingMonster.Monster, defendingMonster.Monster))
             {
                 attackingMonster.PlayAttackAnimation();
-                yield return new WaitForSeconds(0.5f);
+                yield return YieldHelper.HalfSecond;
                 defendingMonster.PlayHitAnimation();
 
                 // If status move then don't deal damage, switch to UseMoveEffects coroutine.
@@ -363,7 +364,7 @@ namespace Itsdits.Ravar.Battle
             }
 
             downedMonster.PlayDownedAnimation();
-            yield return new WaitForSeconds(2f);
+            yield return YieldHelper.TwoSeconds;
 
             if (!downedMonster.IsPlayerMonster)
             {
@@ -405,7 +406,7 @@ namespace Itsdits.Ravar.Battle
                     }
                 }
 
-                yield return new WaitForSeconds(1f);
+                yield return YieldHelper.OneSecond;
             }
 
             // Wait until move learning is finished before calling CheckIfBattleIsOver.
@@ -432,7 +433,7 @@ namespace Itsdits.Ravar.Battle
             {
                 yield return _dialogBox.TypeDialog($"{_playerMonster.Monster.Base.Name}, fall back!");
                 _playerMonster.PlayDownedAnimation(); //TODO - create animation for returning to party
-                yield return new WaitForSeconds(2f);
+                yield return YieldHelper.TwoSeconds;
             }
 
             _playerMonster.Setup(newMonster);
@@ -483,7 +484,7 @@ namespace Itsdits.Ravar.Battle
                 _playerParty.AddMonster(_enemyMonster.Monster);
                 yield return _dialogBox.TypeDialog($"{_enemyMonster.Monster.Base.Name} was added to your team!");
                 
-                yield return new WaitForSeconds(2f);
+                yield return YieldHelper.TwoSeconds;
                 _battleAnimator.CleanUp();
                 BattleOver(BattleResult.Won);
             }
@@ -505,7 +506,7 @@ namespace Itsdits.Ravar.Battle
             }
 
             // Wait until the animation finishes to clean up.
-            yield return new WaitForSeconds(2.1f);
+            yield return YieldHelper.TwoAndChangeSeconds;
             _battleAnimator.CleanUp();
         }
 

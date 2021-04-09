@@ -1,7 +1,7 @@
-using System;
 using Itsdits.Ravar.Core;
 using Itsdits.Ravar.UI;
 using System.Collections;
+using Itsdits.Ravar.Util;
 using UnityEngine;
 
 namespace Itsdits.Ravar.Character
@@ -63,7 +63,7 @@ namespace Itsdits.Ravar.Character
         {
             // Show alert over head.
             _alert.gameObject.SetActive(true);
-            yield return new WaitForSeconds(1f);
+            yield return YieldHelper.OneSecond;
             _alert.gameObject.SetActive(false);
 
             // Move to the player, stopping 1 tile before them.

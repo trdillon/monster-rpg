@@ -29,14 +29,11 @@ namespace Itsdits.Ravar.UI
         [Tooltip("The Text element that displays the name.")]
         [SerializeField] private Text _nameText;
 
-        [Header("Type Speed")]
-        [Tooltip("How fast the dialog is typed on screen, default is 45.")]
-        [SerializeField] private int _lettersPerSecond = 45;
-
         private Dialog _dialog;
+        private DialogWriter _writer;
         private int _currentString;
         private bool _isTyping;
-        
+
         private Action _onDialogFinished;
         public event Action OnShowDialog;
         public event Action OnCloseDialog;
@@ -44,6 +41,7 @@ namespace Itsdits.Ravar.UI
         private void Awake()
         {
             Instance = this;
+            _writer = GetComponent<DialogWriter>();
         }
 
         /// <summary>
@@ -64,7 +62,7 @@ namespace Itsdits.Ravar.UI
                 _onDialogFinished = onFinished;
                 _dialogBox.SetActive(true);
                 SetNamePlate(speakerName);
-                StartCoroutine(TypeDialog(dialog.Strings[0]));
+                StartCoroutine(_writer.TypeDialog(dialog.Strings[0]));
             }
             else
             {
@@ -86,7 +84,7 @@ namespace Itsdits.Ravar.UI
             ++_currentString;
             if (_currentString < _dialog.Strings.Count)
             {
-                StartCoroutine(TypeDialog(_dialog.Strings[_currentString]));
+                StartCoroutine(_writer.TypeDialog(_dialog.Strings[_currentString]));
             }
             else
             {
@@ -95,20 +93,6 @@ namespace Itsdits.Ravar.UI
                 _onDialogFinished?.Invoke();
                 OnCloseDialog?.Invoke();
             }
-        }
-
-        private IEnumerator TypeDialog(string dialog)
-        {
-            _isTyping = true;
-            _dialogText.text = "";
-
-            foreach (char letter in dialog)
-            {
-                _dialogText.text += letter;
-                yield return new WaitForSeconds(1f / _lettersPerSecond);
-            }
-
-            _isTyping = false;
         }
 
         private void SetNamePlate(string speakerName)
