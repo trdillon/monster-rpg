@@ -1,3 +1,4 @@
+using System;
 using Itsdits.Ravar.Character;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,31 +6,30 @@ using UnityEngine;
 namespace Itsdits.Ravar.Animation
 {
     /// <summary>
-    /// Animates the character sprites.
+    /// Creates character animations during world scenes.
     /// </summary>
     public class CharacterAnimator : MonoBehaviour
     {
         [Tooltip("The default direction this character will be facing when the game is started.")]
-        [SerializeField] Direction defaultDirection = Direction.Down;
+        [SerializeField] private Direction _defaultDirection = Direction.Down;
 
         [Header("Sprites")]
         [Tooltip("Sprites to animate this character walking downwards.")]
-        [SerializeField] List<Sprite> walkDownSprites;
+        [SerializeField] private List<Sprite> _walkDownSprites;
         [Tooltip("Sprites to animate this character walking to the left.")]
-        [SerializeField] List<Sprite> walkLeftSprites;
+        [SerializeField] private List<Sprite> _walkLeftSprites;
         [Tooltip("Sprites to animate this character walking to the right.")]
-        [SerializeField] List<Sprite> walkRightSprites;
+        [SerializeField] private List<Sprite> _walkRightSprites;
         [Tooltip("Sprites to animate this character walking upwards.")]
-        [SerializeField] List<Sprite> walkUpSprites;
+        [SerializeField] private List<Sprite> _walkUpSprites;
 
-        private SpriteAnimator walkDownAnimation;
-        private SpriteAnimator walkLeftAnimation;
-        private SpriteAnimator walkRightAnimation;
-        private SpriteAnimator walkUpAnimation;
-
-        private SpriteAnimator currentAnimation;
-        private SpriteRenderer spriteRenderer;
-        private bool wasMoving;
+        private SpriteAnimator _walkDownAnimation;
+        private SpriteAnimator _walkLeftAnimation;
+        private SpriteAnimator _walkRightAnimation;
+        private SpriteAnimator _walkUpAnimation;
+        private SpriteAnimator _currentAnimation;
+        private SpriteRenderer _spriteRenderer;
+        private bool _wasMoving;
 
         /// <summary>
         /// Input value on the X axis.
@@ -49,55 +49,55 @@ namespace Itsdits.Ravar.Animation
         /// <summary>
         /// Default direction this character will face when the game is started.
         /// </summary>
-        public Direction DefaultDirection => defaultDirection;
+        public Direction DefaultDirection => _defaultDirection;
 
         private void Start()
         {
-            spriteRenderer = GetComponent<SpriteRenderer>();
-            walkDownAnimation = new SpriteAnimator(walkDownSprites, spriteRenderer);
-            walkLeftAnimation = new SpriteAnimator(walkLeftSprites, spriteRenderer);
-            walkRightAnimation = new SpriteAnimator(walkRightSprites, spriteRenderer);
-            walkUpAnimation = new SpriteAnimator(walkUpSprites, spriteRenderer);
-            SetDirection(defaultDirection);
-            currentAnimation = walkDownAnimation;
+            _spriteRenderer = GetComponent<SpriteRenderer>();
+            _walkDownAnimation = new SpriteAnimator(_walkDownSprites, _spriteRenderer);
+            _walkLeftAnimation = new SpriteAnimator(_walkLeftSprites, _spriteRenderer);
+            _walkRightAnimation = new SpriteAnimator(_walkRightSprites, _spriteRenderer);
+            _walkUpAnimation = new SpriteAnimator(_walkUpSprites, _spriteRenderer);
+            SetDirection(_defaultDirection);
+            _currentAnimation = _walkDownAnimation;
         }
 
         private void Update()
         {
-            var prevAnimation = currentAnimation;
+            SpriteAnimator prevAnimation = _currentAnimation;
 
             if (MoveY == -1)
             {
-                currentAnimation = walkDownAnimation;
+                _currentAnimation = _walkDownAnimation;
             }
             else if (MoveY == 1)
             {
-                currentAnimation = walkUpAnimation;
+                _currentAnimation = _walkUpAnimation;
             }
             else if (MoveX == -1)
             {
-                currentAnimation = walkLeftAnimation;
+                _currentAnimation = _walkLeftAnimation;
             }
             else if (MoveX == 1)
             {
-                currentAnimation = walkRightAnimation;
+                _currentAnimation = _walkRightAnimation;
             }
                 
-            if (currentAnimation != prevAnimation || IsMoving != wasMoving)
+            if (_currentAnimation != prevAnimation || IsMoving != _wasMoving)
             {
-                currentAnimation.Start();
+                _currentAnimation.Reset();
             }
                 
             if (IsMoving)
             {
-                currentAnimation.HandleUpdate();
-            }  
+                _currentAnimation.PlayAnimation();
+            }
             else
             {
-                spriteRenderer.sprite = currentAnimation.Frames[0];
+                _spriteRenderer.sprite = _currentAnimation.Frames[0];
             }
-                
-            wasMoving = IsMoving;
+
+            _wasMoving = IsMoving;
         }
 
         /// <summary>
@@ -107,21 +107,23 @@ namespace Itsdits.Ravar.Animation
         /// <param name="direction">Down, Up, Left, Right</param>
         public void SetDirection(Direction direction)
         {
-            if (direction == Direction.Down)
+            switch (direction)
             {
-                MoveY = -1;
-            }
-            else if (direction == Direction.Up)
-            {
-                MoveY = 1;
-            }
-            else if (direction == Direction.Left)
-            {
-                MoveX = -1;
-            }
-            else if (direction == Direction.Right)
-            {
-                MoveX = 1;
+                case Direction.Down:
+                    MoveY = -1;
+                    break;
+                case Direction.Up:
+                    MoveY = 1;
+                    break;
+                case Direction.Left:
+                    MoveX = -1;
+                    break;
+                case Direction.Right:
+                    MoveX = 1;
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException(nameof(direction), direction,
+                                                          "Direction invalid or null.");
             }
         }
     }

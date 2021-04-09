@@ -6,7 +6,7 @@ namespace Itsdits.Ravar.Monster
     /// <remarks>Self is the monster using the move, Enemy is the enemy monster.</remarks>
     public enum MoveTarget
     {
-        Self,
-        Enemy
+        Enemy,
+        Self
     }
 }

@@ -1,3 +1,4 @@
+// ReSharper disable InconsistentNaming
 using Itsdits.Ravar.Data;
 using System.Collections.Generic;
 

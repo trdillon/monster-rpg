@@ -146,12 +146,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: Error NPC
-  dialog:
-    strings:
-    - If you're seeing this something went wrong.
-    - 'Please contact the developer. Error code: N001'
-  movementPattern: []
-  movementPatternDelay: 0
+  _dialog:
+    _strings:
+    - There is no dialog set for this NPC. Please create some dialog.
+  _movementPattern: []
+  _movementPatternDelay: 0
 --- !u!114 &939942729436302628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,23 +163,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 525ca2a005b69b144bfa53bec249b8a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultDirection: 0
-  walkDownSprites:
+  _defaultDirection: 0
+  _walkDownSprites:
   - {fileID: 2423726751059629900, guid: 1be55108d0433cc4aba764dd1aa6c6d4, type: 3}
   - {fileID: 7258174723207886121, guid: 1be55108d0433cc4aba764dd1aa6c6d4, type: 3}
   - {fileID: 3652049239405026752, guid: 1be55108d0433cc4aba764dd1aa6c6d4, type: 3}
   - {fileID: 5583329630910718434, guid: 1be55108d0433cc4aba764dd1aa6c6d4, type: 3}
-  walkLeftSprites:
+  _walkLeftSprites:
   - {fileID: -1922523377811942926, guid: 1be55108d0433cc4aba764dd1aa6c6d4, type: 3}
   - {fileID: -1580786866365917475, guid: 1be55108d0433cc4aba764dd1aa6c6d4, type: 3}
   - {fileID: -1159846564368092690, guid: 1be55108d0433cc4aba764dd1aa6c6d4, type: 3}
   - {fileID: 8484457348390384610, guid: 1be55108d0433cc4aba764dd1aa6c6d4, type: 3}
-  walkRightSprites:
+  _walkRightSprites:
   - {fileID: 3145042068304504565, guid: 1be55108d0433cc4aba764dd1aa6c6d4, type: 3}
   - {fileID: -1391858947430429793, guid: 1be55108d0433cc4aba764dd1aa6c6d4, type: 3}
   - {fileID: 2631830992386224291, guid: 1be55108d0433cc4aba764dd1aa6c6d4, type: 3}
   - {fileID: 1195268277009449881, guid: 1be55108d0433cc4aba764dd1aa6c6d4, type: 3}
-  walkUpSprites:
+  _walkUpSprites:
   - {fileID: 7825975997861530793, guid: 1be55108d0433cc4aba764dd1aa6c6d4, type: 3}
   - {fileID: 7039857337815168524, guid: 1be55108d0433cc4aba764dd1aa6c6d4, type: 3}
   - {fileID: 9029467800418536703, guid: 1be55108d0433cc4aba764dd1aa6c6d4, type: 3}

@@ -17,169 +17,146 @@ namespace Itsdits.Ravar.Battle
     {
         [Header("Monsters")]
         [Tooltip("The player's monster in the battle.")]
-        [SerializeField] BattleMonster playerMonster;
+        [SerializeField] private BattleMonster _playerMonster;
         [Tooltip("The enemy's monster in the battle.")]
-        [SerializeField] BattleMonster enemyMonster;
+        [SerializeField] private BattleMonster _enemyMonster;
 
         [Header("Characters")]
         [Tooltip("The player's character image.")]
-        [SerializeField] Image playerImage;
+        [SerializeField] private Image _playerImage;
         [Tooltip("The enemy's character image.")]
-        [SerializeField] Image battlerImage;
+        [SerializeField] private Image _battlerImage;
 
         [Header("UI")]
         [Tooltip("The BattleAnimator GameObject.")]
-        [SerializeField] BattleAnimator battleAnimator;
+        [SerializeField] private BattleAnimator _battleAnimator;
         [Tooltip("The BattleDialogBox GameObject.")]
-        [SerializeField] BattleDialogBox dialogBox;
+        [SerializeField] private BattleDialogBox _dialogBox;
         [Tooltip("The PartyScreen GameObject.")]
-        [SerializeField] PartyScreen partyScreen;
+        [SerializeField] private PartyScreen _partyScreen;
 
-        private PlayerController player;
-        private BattlerController battler;
-        private MonsterParty playerParty;
-        private MonsterParty battlerParty;
-        private MonsterObj wildMonster;
-        private BattleState state;
-        private BattleState? prevState;
-        private int currentAction;
-        private int currentMove;
-        private int currentMember;
-        private int escapeAttempts;
-        private bool isChoiceYes = true;
-        private bool isCharBattle = false;
-        private bool isMonsterDown = false;
-
-        /// <summary>
-        /// The current state of te battle.
-        /// </summary>
-        public BattleState State => state;
-        /// <summary>
-        /// The optional previous state of the battle.
-        /// </summary>
-        public BattleState? PrevState { get; set; }
+        private PlayerController _player;
+        private BattlerController _battler;
+        private MonsterParty _playerParty;
+        private MonsterParty _battlerParty;
+        private MonsterObj _wildMonster;
+        private BattleState _state;
+        private BattleState? _prevState;
+        private int _currentAction;
+        private int _currentMove;
+        private int _currentMember;
+        private int _escapeAttempts;
+        private bool _isChoiceYes = true;
+        private bool _isCharBattle;
+        private bool _isMonsterDown;
 
         public event Action<BattleResult, bool> OnBattleOver;
 
         /// <summary>
-        /// Wild Monster encounter battle constructor.
+        /// Starts a battle with a wild monster.
         /// </summary>
         /// <param name="playerParty">Player's party of monsters.</param>
-        /// <param name="wildMonster">Copy of the wildMonster generated from the MapLayer.</param>
+        /// <param name="wildMonster">Copy of the wild monster generated from the MapLayer.</param>
         public void StartWildBattle(MonsterParty playerParty, MonsterObj wildMonster)
         {
-            this.playerParty = playerParty;
-            this.wildMonster = wildMonster;
-            isCharBattle = false;
-            player = playerParty.GetComponent<PlayerController>();
+            _playerParty = playerParty;
+            _wildMonster = wildMonster;
+            _isCharBattle = false;
+            _player = playerParty.GetComponent<PlayerController>();
             StartCoroutine(SetupBattle());
         }
 
         /// <summary>
-        /// Character battle constructor.
+        /// Starts a battle with an enemy character.
         /// </summary>
         /// <param name="playerParty">Player's party of monsters.</param>
         /// <param name="battlerParty">Battler's party of monsters.</param>
         public void StartCharBattle(MonsterParty playerParty, MonsterParty battlerParty)
         {
-            this.playerParty = playerParty;
-            this.battlerParty = battlerParty;
-            isCharBattle = true;
-            player = playerParty.GetComponent<PlayerController>();
-            battler = battlerParty.GetComponent<BattlerController>();
+            _playerParty = playerParty;
+            _battlerParty = battlerParty;
+            _isCharBattle = true;
+            _player = playerParty.GetComponent<PlayerController>();
+            _battler = battlerParty.GetComponent<BattlerController>();
             StartCoroutine(SetupBattle());
         }
-
-        /// <summary>
-        /// Setup the current battle.
-        /// </summary>
-        /// <returns>The ActionSelection coroutine.</returns>
-        public IEnumerator SetupBattle()
+        
+        private IEnumerator SetupBattle()
         {
-            playerMonster.HideHud();
-            enemyMonster.HideHud();
-
-            if (!isCharBattle)
+            //TODO - handle case with no healthy monsters
+            _playerMonster.HideHud();
+            _enemyMonster.HideHud();
+            if (!_isCharBattle)
             {
-                // Wild
-                playerMonster.Setup(playerParty.GetHealthyMonster()); //TODO - handle setup with no healthy monsters
-                enemyMonster.Setup(wildMonster);
-                dialogBox.SetMoveList(playerMonster.Monster.Moves);
-                yield return dialogBox.TypeDialog($"You have encountered an enemy {enemyMonster.Monster.Base.Name}!");
+                _playerMonster.Setup(_playerParty.GetHealthyMonster()); 
+                _enemyMonster.Setup(_wildMonster);
+                _dialogBox.SetMoveList(_playerMonster.Monster.Moves);
+                yield return _dialogBox.TypeDialog($"You have encountered an enemy {_enemyMonster.Monster.Base.Name}!");
             }
             else
             {
-                // Character
                 ShowCharacterSprites();
-                yield return dialogBox.TypeDialog($"{battler.Name} has challenged you to a battle!");
+                yield return _dialogBox.TypeDialog($"{_battler.Name} has challenged you to a battle!");
 
                 // Deploy enemy monster.
-                battlerImage.gameObject.SetActive(false); //TODO - animate this
-                enemyMonster.gameObject.SetActive(true);
-                var enemyLeadMonster = battlerParty.GetHealthyMonster();
-                enemyMonster.Setup(enemyLeadMonster);
-                yield return dialogBox.TypeDialog($"{battler.Name} has deployed {enemyLeadMonster.Base.Name} to the battle!");
+                _battlerImage.gameObject.SetActive(false); //TODO - animate this
+                _enemyMonster.gameObject.SetActive(true);
+                MonsterObj enemyLeadMonster = _battlerParty.GetHealthyMonster();
+                _enemyMonster.Setup(enemyLeadMonster);
+                yield return _dialogBox.TypeDialog($"{_battler.Name} has deployed {enemyLeadMonster.Base.Name} to the battle!");
 
                 // Deploy player monster.
-                playerImage.gameObject.SetActive(false); //TODO - animate this too
-                playerMonster.gameObject.SetActive(true);
-                var playerLeadMonster = playerParty.GetHealthyMonster();
-                playerMonster.Setup(playerLeadMonster);
-                dialogBox.SetMoveList(playerMonster.Monster.Moves);
-                yield return dialogBox.TypeDialog($"You have deployed {playerLeadMonster.Base.Name} to the battle!");
+                _playerImage.gameObject.SetActive(false); //TODO - animate this too
+                _playerMonster.gameObject.SetActive(true);
+                MonsterObj playerLeadMonster = _playerParty.GetHealthyMonster();
+                _playerMonster.Setup(playerLeadMonster);
+                _dialogBox.SetMoveList(_playerMonster.Monster.Moves);
+                yield return _dialogBox.TypeDialog($"You have deployed {playerLeadMonster.Base.Name} to the battle!");
             }
 
-            escapeAttempts = 0;
-            partyScreen.Init();
+            _escapeAttempts = 0;
+            _partyScreen.Init();
             ActionSelection();
         }
-
-        /// <summary>
-        /// Executes a turn for each character in the battle.
-        /// </summary>
-        /// <param name="playerAction">Action the player chose.</param>
-        /// <returns>Results of the turn.</returns>
-        public IEnumerator ExecuteTurn(BattleAction playerAction)
+        
+        private IEnumerator ExecuteTurn(BattleAction playerAction)
         {
-            state = BattleState.ExecutingTurn;
-
+            _state = BattleState.ExecutingTurn;
             if (playerAction == BattleAction.Move)
             {
                 // Get the monster moves.
-                playerMonster.Monster.CurrentMove = playerMonster.Monster.Moves[currentMove];
-                enemyMonster.Monster.CurrentMove = enemyMonster.Monster.GetRandomMove();
-                if (playerMonster.Monster.CurrentMove == null || enemyMonster.Monster.CurrentMove == null)
+                _playerMonster.Monster.CurrentMove = _playerMonster.Monster.Moves[_currentMove];
+                _enemyMonster.Monster.CurrentMove = _enemyMonster.Monster.GetRandomMove();
+                if (_playerMonster.Monster.CurrentMove == null || _enemyMonster.Monster.CurrentMove == null)
                 {
-                    Debug.LogError("BS001: CurrentMove null. Escaping battle to attempt to recover.");
-
                     BattleOver(BattleResult.Error);
+                    yield break;
                 }
 
-                int playerPriority = playerMonster.Monster.CurrentMove.Base.Priority;
-                int enemyPriority = enemyMonster.Monster.CurrentMove.Base.Priority;
+                int playerPriority = _playerMonster.Monster.CurrentMove.Base.Priority;
+                int enemyPriority = _enemyMonster.Monster.CurrentMove.Base.Priority;
 
                 // Check who goes first.
-                bool isPlayerFirst = true;
-
+                var isPlayerFirst = true;
                 if (enemyPriority > playerPriority)
                 {
                     isPlayerFirst = false;
                 }   
                 else if (playerPriority == enemyPriority)
                 {
-                    isPlayerFirst = playerMonster.Monster.Speed >= enemyMonster.Monster.Speed;
+                    isPlayerFirst = _playerMonster.Monster.Speed >= _enemyMonster.Monster.Speed;
                 }
 
-                var firstMonster = (isPlayerFirst) ? playerMonster : enemyMonster;
-                var secondMonster = (isPlayerFirst) ? enemyMonster : playerMonster;
+                BattleMonster firstMonster = (isPlayerFirst) ? _playerMonster : _enemyMonster;
+                BattleMonster secondMonster = (isPlayerFirst) ? _enemyMonster : _playerMonster;
 
-                // Store incase it gets downed and switched out before its move.
-                var lastMonster = secondMonster.Monster;
+                // Store in case it gets downed and switched out before its move.
+                MonsterObj lastMonster = secondMonster.Monster;
 
                 // Execute the first move.
                 yield return UseMove(firstMonster, secondMonster, firstMonster.Monster.CurrentMove);
                 yield return CleanUpTurn(firstMonster);
-                if (state == BattleState.BattleOver)
+                if (_state == BattleState.BattleOver)
                 {
                     yield break;
                 }  
@@ -189,7 +166,7 @@ namespace Itsdits.Ravar.Battle
                 {
                     yield return UseMove(secondMonster, firstMonster, secondMonster.Monster.CurrentMove);
                     yield return CleanUpTurn(secondMonster);
-                    if (state == BattleState.BattleOver)
+                    if (_state == BattleState.BattleOver)
                     {
                         yield break;
                     }   
@@ -198,22 +175,21 @@ namespace Itsdits.Ravar.Battle
             else if (playerAction == BattleAction.SwitchMonster)
             {
                 // Switch the monster.
-                var selectedMember = playerParty.Monsters[currentMember];
-                state = BattleState.Busy;
+                MonsterObj selectedMember = _playerParty.Monsters[_currentMember];
+                _state = BattleState.Busy;
                 yield return SwitchMonster(selectedMember);
 
                 // Now it's the enemy's turn.
-                var enemyMove = enemyMonster.Monster.GetRandomMove();
+                MoveObj enemyMove = _enemyMonster.Monster.GetRandomMove();
                 if (enemyMove == null)
                 {
-                    Debug.LogError("BS002: enemyMove null. Escaping battle to attempt to recover.");
-
                     BattleOver(BattleResult.Error);
+                    yield break;
                 }
 
-                yield return UseMove(enemyMonster, playerMonster, enemyMove);
-                yield return CleanUpTurn(enemyMonster);
-                if (state == BattleState.BattleOver)
+                yield return UseMove(_enemyMonster, _playerMonster, enemyMove);
+                yield return CleanUpTurn(_enemyMonster);
+                if (_state == BattleState.BattleOver)
                 {
                     yield break;
                 }
@@ -222,7 +198,7 @@ namespace Itsdits.Ravar.Battle
             {
                 //TODO - refactor this when item system is implemented.
                 // Use the item.
-                dialogBox.EnableActionSelector(false);
+                _dialogBox.EnableActionSelector(false);
                 yield return ActivateCrystal();
             }
             else if (playerAction == BattleAction.Run)
@@ -232,7 +208,7 @@ namespace Itsdits.Ravar.Battle
             }
 
             // Return to ActionSelection.
-            if (state != BattleState.BattleOver)
+            if (_state != BattleState.BattleOver)
             {
                 ActionSelection();
             }
@@ -242,25 +218,23 @@ namespace Itsdits.Ravar.Battle
         {
             // Check for statuses like paralyze or sleep before trying to attack.
             bool canAttack = attackingMonster.Monster.CheckIfCanAttack();
-
             if (!canAttack)
             {
                 yield return ShowStatusChanges(attackingMonster.Monster);
-                yield return attackingMonster.Hud.UpdateHP();
+                yield return attackingMonster.Hud.UpdateHp();
                 yield break;
             }
 
             // Clear the StatusChanges queue and decrease the move energy.
             yield return ShowStatusChanges(attackingMonster.Monster);
             move.Energy--;
-
             if (attackingMonster.IsPlayerMonster)
             {
-                yield return dialogBox.TypeDialog($"{attackingMonster.Monster.Base.Name} used {move.Base.Name}!");
+                yield return _dialogBox.TypeDialog($"{attackingMonster.Monster.Base.Name} used {move.Base.Name}!");
             } 
             else
             {
-                yield return dialogBox.TypeDialog($"Enemy {attackingMonster.Monster.Base.Name} used {move.Base.Name}!");
+                yield return _dialogBox.TypeDialog($"Enemy {attackingMonster.Monster.Base.Name} used {move.Base.Name}!");
             }
 
             if (CheckIfMoveHits(move, attackingMonster.Monster, defendingMonster.Monster))
@@ -272,12 +246,13 @@ namespace Itsdits.Ravar.Battle
                 // If status move then don't deal damage, switch to UseMoveEffects coroutine.
                 if (move.Base.Category == MoveCategory.Status)
                 {
-                    yield return UseMoveEffects(move.Base.Effects, attackingMonster.Monster, defendingMonster.Monster, move.Base.Target);
+                    yield return UseMoveEffects(move.Base.Effects, attackingMonster.Monster, defendingMonster.Monster, 
+                                                move.Base.Target);
                 }
                 else
                 {
-                    var damageDetails = defendingMonster.Monster.TakeDamage(move, attackingMonster.Monster);
-                    yield return defendingMonster.Hud.UpdateHP();
+                    DamageDetails damageDetails = defendingMonster.Monster.TakeDamage(move, attackingMonster.Monster);
+                    yield return defendingMonster.Hud.UpdateHp();
                     yield return ShowDamageDetails(damageDetails);
                 }
 
@@ -286,12 +261,13 @@ namespace Itsdits.Ravar.Battle
                     move.Base.MoveSecondaryEffects.Count > 0 &&
                     attackingMonster.Monster.CurrentHp > 0)
                 {
-                    foreach (var effect in move.Base.MoveSecondaryEffects)
+                    foreach (MoveSecondaryEffects effect in move.Base.MoveSecondaryEffects)
                     {
-                        var rng = UnityEngine.Random.Range(1, 101);
+                        int rng = UnityEngine.Random.Range(1, 101);
                         if (rng <= effect.Chance)
                         {
-                            yield return UseMoveEffects(effect, attackingMonster.Monster, defendingMonster.Monster, effect.Target);
+                            yield return UseMoveEffects(effect, attackingMonster.Monster, defendingMonster.Monster, 
+                                                        effect.Target);
                         }
                     }
                 }
@@ -307,16 +283,17 @@ namespace Itsdits.Ravar.Battle
                 // Handle a missed attack.
                 if (attackingMonster.IsPlayerMonster)
                 {
-                    yield return dialogBox.TypeDialog($"{attackingMonster.Monster.Base.Name} missed their attack!");
+                    yield return _dialogBox.TypeDialog($"{attackingMonster.Monster.Base.Name} missed their attack!");
                 }  
                 else
                 {
-                    yield return dialogBox.TypeDialog($"Enemy {attackingMonster.Monster.Base.Name} missed their attack!");
+                    yield return _dialogBox.TypeDialog($"Enemy {attackingMonster.Monster.Base.Name} missed their attack!");
                 }
             }
         }
 
-        private IEnumerator UseMoveEffects(MoveEffects effects, MonsterObj attackingMonster, MonsterObj defendingMonster, MoveTarget moveTarget)
+        private IEnumerator UseMoveEffects(MoveEffects effects, MonsterObj attackingMonster, MonsterObj defendingMonster, 
+                                           MoveTarget moveTarget)
         {
             // Handle any stat changes.
             if (effects.StatChanges != null)
@@ -332,13 +309,13 @@ namespace Itsdits.Ravar.Battle
             }
 
             // Handle any status conditions.
-            if (effects.Status != ConditionID.NON)
+            if (effects.Status != ConditionID.None)
             {
                 defendingMonster.SetStatus(effects.Status);
             }
 
             // Handle any volatile status conditions.
-            if (effects.VolatileStatus != ConditionID.NON)
+            if (effects.VolatileStatus != ConditionID.None)
             {
                 defendingMonster.SetVolatileStatus(effects.VolatileStatus);
             }
@@ -351,16 +328,16 @@ namespace Itsdits.Ravar.Battle
         {
             if (damageDetails.Critical > 1f)
             {
-                yield return dialogBox.TypeDialog("That was a critical hit!");
+                yield return _dialogBox.TypeDialog("That was a critical hit!");
             } 
 
             if (damageDetails.TypeEffectiveness > 1f)
             {
-                yield return dialogBox.TypeDialog("That attack type is very strong!");
+                yield return _dialogBox.TypeDialog("That attack type is very strong!");
             } 
             else if (damageDetails.TypeEffectiveness < 1f)
             {
-                yield return dialogBox.TypeDialog("That attack type is not very strong!");
+                yield return _dialogBox.TypeDialog("That attack type is not very strong!");
             }   
         }
 
@@ -368,22 +345,21 @@ namespace Itsdits.Ravar.Battle
         {
             while (monster.StatusChanges.Count > 0)
             {
-                var message = monster.StatusChanges.Dequeue();
-                yield return dialogBox.TypeDialog(message);
+                string message = monster.StatusChanges.Dequeue();
+                yield return _dialogBox.TypeDialog(message);
             }
         }
 
         private IEnumerator HandleDownedMonster(BattleMonster downedMonster)
         {
-            isMonsterDown = true;
-
+            _isMonsterDown = true;
             if (downedMonster.IsPlayerMonster)
             {
-                yield return dialogBox.TypeDialog($"{downedMonster.Monster.Base.Name} has been taken down!");
+                yield return _dialogBox.TypeDialog($"{downedMonster.Monster.Base.Name} has been taken down!");
             }
             else
             {
-                yield return dialogBox.TypeDialog($"Enemy {downedMonster.Monster.Base.Name} has been taken down!");
+                yield return _dialogBox.TypeDialog($"Enemy {downedMonster.Monster.Base.Name} has been taken down!");
             }
 
             downedMonster.PlayDownedAnimation();
@@ -394,122 +370,121 @@ namespace Itsdits.Ravar.Battle
                 // Setup exp gain variables.
                 int expBase = downedMonster.Monster.Base.ExpGiven;
                 int enemyLevel = downedMonster.Monster.Level;
-                float battlerBonus = (isCharBattle) ? 1.5f : 1f;
+                float battlerBonus = _isCharBattle ? 1.5f : 1f;
 
                 // Handle exp gain.
-                int expGain = Mathf.FloorToInt((expBase * enemyLevel * battlerBonus) / 7);
-                playerMonster.Monster.Exp += expGain;
-                yield return dialogBox.TypeDialog($"{playerMonster.Monster.Base.Name} has gained {expGain} experience!");
-                yield return playerMonster.Hud.SlideExp();
+                int expGain = Mathf.FloorToInt(expBase * enemyLevel * battlerBonus / 7);
+                _playerMonster.Monster.Exp += expGain;
+                yield return _dialogBox.TypeDialog($"{_playerMonster.Monster.Base.Name} has gained {expGain.ToString()} experience!");
+                yield return _playerMonster.Hud.SlideExp();
 
-                // While loop incase the monster gains more than 1 level.
-                while (playerMonster.Monster.CheckForLevelUp())
+                // While loop in case the monster gains more than 1 level.
+                while (_playerMonster.Monster.CheckForLevelUp())
                 {
-                    playerMonster.Hud.SetLevel();
-                    yield return dialogBox.TypeDialog($"{playerMonster.Monster.Base.Name} has leveled up, they are now level {playerMonster.Monster.Level}!");
-                    yield return playerMonster.Hud.SlideExp(true);
+                    _playerMonster.Hud.SetLevel();
+                    yield return _dialogBox.TypeDialog($"{_playerMonster.Monster.Base.Name} has leveled up, they are now level {_playerMonster.Monster.Level.ToString()}!");
+                    yield return _playerMonster.Hud.SlideExp(true);
 
                     // Learn a new move.
-                    var newMove = playerMonster.Monster.GetLearnableMove();
-                    if (newMove != null)
+                    LearnableMove newMove = _playerMonster.Monster.GetLearnableMove();
+                    if (newMove == null)
                     {
-                        if (playerMonster.Monster.Moves.Count < MonsterBase.MaxNumberOfMoves)
-                        {
-                            playerMonster.Monster.LearnMove(newMove);
-                            dialogBox.SetMoveList(playerMonster.Monster.Moves);
-                            yield return dialogBox.TypeDialog($"{playerMonster.Monster.Base.Name} has learned {newMove.Base.Name}!");
-                        }
-                        else
-                        {
-                            // Forget an existing move first.
-                            yield return ForgetMoveSelection(playerMonster.Monster, newMove);
-                        }
+                        continue;
+                    }
+
+                    if (_playerMonster.Monster.Moves.Count < MonsterBase.MaxNumberOfMoves)
+                    {
+                        _playerMonster.Monster.LearnMove(newMove);
+                        _dialogBox.SetMoveList(_playerMonster.Monster.Moves);
+                        yield return _dialogBox.TypeDialog($"{_playerMonster.Monster.Base.Name} has learned {newMove.Base.Name}!");
+                    }
+                    else
+                    {
+                        // Forget an existing move first.
+                        yield return ForgetMoveSelection(_playerMonster.Monster, newMove);
                     }
                 }
 
                 yield return new WaitForSeconds(1f);
             }
 
-            // Wait until move learning is finished before CheckIfBattleIsOver.
-            yield return new WaitUntil(() => state == BattleState.ExecutingTurn);
+            // Wait until move learning is finished before calling CheckIfBattleIsOver.
+            yield return new WaitUntil(() => _state == BattleState.ExecutingTurn);
             CheckIfBattleIsOver(downedMonster);
         }
 
         private IEnumerator ForgetMove(MonsterObj monster, MoveObj oldMove)
         {
-            var newMove = playerMonster.Monster.GetLearnableMove();
+            //TODO - fix bug where new move is lost if monster gains more than one level
+            LearnableMove newMove = _playerMonster.Monster.GetLearnableMove();
             monster.ForgetMove(oldMove);
             monster.LearnMove(newMove);
-            dialogBox.SetMoveList(monster.Moves);
-            yield return dialogBox.TypeDialog($"{playerMonster.Monster.Base.Name} has forgotten {oldMove.Base.Name}!");
-            yield return dialogBox.TypeDialog($"{playerMonster.Monster.Base.Name} has learned {newMove.Base.Name}!");
-
-            state = BattleState.ExecutingTurn;
+            _dialogBox.SetMoveList(monster.Moves);
+            
+            yield return _dialogBox.TypeDialog($"{_playerMonster.Monster.Base.Name} has forgotten {oldMove.Base.Name}!");
+            yield return _dialogBox.TypeDialog($"{_playerMonster.Monster.Base.Name} has learned {newMove.Base.Name}!");
+            _state = BattleState.ExecutingTurn;
         }
 
         private IEnumerator SwitchMonster(MonsterObj newMonster)
         {
-            if (playerMonster.Monster.CurrentHp > 0)
+            if (_playerMonster.Monster.CurrentHp > 0)
             {
-                yield return dialogBox.TypeDialog($"{playerMonster.Monster.Base.Name}, fall back!");
-                playerMonster.PlayDownedAnimation(); //TODO - create animation for returning to party
+                yield return _dialogBox.TypeDialog($"{_playerMonster.Monster.Base.Name}, fall back!");
+                _playerMonster.PlayDownedAnimation(); //TODO - create animation for returning to party
                 yield return new WaitForSeconds(2f);
             }
 
-            playerMonster.Setup(newMonster);
-            dialogBox.SetMoveList(newMonster.Moves);
-            yield return dialogBox.TypeDialog($"It's your turn now, {newMonster.Base.Name}!");
+            _playerMonster.Setup(newMonster);
+            _dialogBox.SetMoveList(newMonster.Moves);
+            yield return _dialogBox.TypeDialog($"It's your turn now, {newMonster.Base.Name}!");
 
             // Allow player to switch monsters after enemy replaces a downed monster.
-            if (prevState == null)
+            if (_prevState == null)
             {
-                state = BattleState.ExecutingTurn;
+                _state = BattleState.ExecutingTurn;
             }
-            else if (prevState == BattleState.ChoiceSelection)
+            else if (_prevState == BattleState.ChoiceSelection)
             {
-                prevState = null;
+                _prevState = null;
                 StartCoroutine(SwitchEnemyMonster());
             }
         }
 
         private IEnumerator SwitchEnemyMonster()
         {
-            state = BattleState.Busy;
-
-            var nextMonster = battlerParty.GetHealthyMonster();
-            enemyMonster.Setup(nextMonster);
-            yield return dialogBox.TypeDialog($"{battler.Name} has deployed {nextMonster.Base.Name} to the battle!");
-
-            state = BattleState.ExecutingTurn;
+            _state = BattleState.Busy;
+            MonsterObj nextMonster = _battlerParty.GetHealthyMonster();
+            _enemyMonster.Setup(nextMonster);
+            
+            yield return _dialogBox.TypeDialog($"{_battler.Name} has deployed {nextMonster.Base.Name} to the battle!");
+            _state = BattleState.ExecutingTurn;
         }
 
         private IEnumerator ActivateCrystal()
         {
-            state = BattleState.Busy;
-
-            if (isCharBattle)
+            _state = BattleState.Busy;
+            if (_isCharBattle)
             {
-                state = BattleState.ExecutingTurn;
-
-                yield return dialogBox.TypeDialog($"You can't steal {enemyMonster.Monster.Base.Name} from {battler.Name}!");
+                _state = BattleState.ExecutingTurn;
+                yield return _dialogBox.TypeDialog($"You can't steal {_enemyMonster.Monster.Base.Name} from {_battler.Name}!");
                 yield break;
             }
 
-            yield return dialogBox.TypeDialog($"{player.Name} activated a Capture Crystal!");
-            int beamCount = AttemptCapture(enemyMonster.Monster);
-            Debug.Log($"Beam count: {beamCount}");
-            yield return battleAnimator.PlayCrystalAnimation(playerMonster, enemyMonster, beamCount);
-
+            yield return _dialogBox.TypeDialog($"{_player.Name} activated a Capture Crystal!");
+            int beamCount = AttemptCapture(_enemyMonster.Monster);
+            yield return _battleAnimator.PlayCrystalAnimation(_playerMonster, _enemyMonster, beamCount);
+            
             if (beamCount == 4)
             {
                 // Capture the monster.
                 //TODO - finish capture animation
-                yield return dialogBox.TypeDialog($"{enemyMonster.Monster.Base.Name} was captured!");
-                playerParty.AddMonster(enemyMonster.Monster);
-                yield return dialogBox.TypeDialog($"{enemyMonster.Monster.Base.Name} was added to your team!");
+                yield return _dialogBox.TypeDialog($"{_enemyMonster.Monster.Base.Name} was captured!");
+                _playerParty.AddMonster(_enemyMonster.Monster);
+                yield return _dialogBox.TypeDialog($"{_enemyMonster.Monster.Base.Name} was added to your team!");
+                
                 yield return new WaitForSeconds(2f);
-
-                battleAnimator.CleanUp();
+                _battleAnimator.CleanUp();
                 BattleOver(BattleResult.Won);
             }
             else
@@ -518,63 +493,58 @@ namespace Itsdits.Ravar.Battle
                 //TODO - finish failed animation
                 if (beamCount < 2)
                 {
-                    yield return dialogBox.TypeDialog($"{enemyMonster.Monster.Base.Name} broke away easily!");
+                    yield return _dialogBox.TypeDialog($"{_enemyMonster.Monster.Base.Name} broke away easily!");
                 }  
                 else
                 {
-                    yield return dialogBox.TypeDialog($"{enemyMonster.Monster.Base.Name} was almost captured!");
+                    yield return _dialogBox.TypeDialog($"{_enemyMonster.Monster.Base.Name} was almost captured!");
                 }
 
-                battleAnimator.PlayFailAnimation();
-
-                state = BattleState.ExecutingTurn;
+                _battleAnimator.PlayFailAnimation();
+                _state = BattleState.ExecutingTurn;
             }
 
             // Wait until the animation finishes to clean up.
             yield return new WaitForSeconds(2.1f);
-            battleAnimator.CleanUp();
+            _battleAnimator.CleanUp();
         }
 
         private IEnumerator AttemptRun()
         {
-            state = BattleState.Busy;
-
-            if (isCharBattle)
+            _state = BattleState.Busy;
+            if (_isCharBattle)
             {
-                yield return dialogBox.TypeDialog($"You can't run away from enemy Battlers!");
-
-                state = BattleState.ExecutingTurn;
-
+                yield return _dialogBox.TypeDialog($"You can't run away from enemy Battlers!");
+                _state = BattleState.ExecutingTurn;
                 yield break;
             }
 
-            ++escapeAttempts;
+            ++_escapeAttempts;
 
             // Algo is from g3/4.
-            int playerSpeed = playerMonster.Monster.Speed;
-            int enemySpeed = enemyMonster.Monster.Speed;
+            int playerSpeed = _playerMonster.Monster.Speed;
+            int enemySpeed = _enemyMonster.Monster.Speed;
 
             if (playerSpeed > enemySpeed)
             {
-                yield return dialogBox.TypeDialog($"You ran away from the enemy {enemyMonster.Monster.Base.Name}!");
+                yield return _dialogBox.TypeDialog($"You ran away from the enemy {_enemyMonster.Monster.Base.Name}!");
                 BattleOver(BattleResult.Won);
             }
             else
             {
-                float f = (playerSpeed * 128) / enemySpeed + 30 * escapeAttempts;
+                float f = playerSpeed * 128 / enemySpeed + 30 * _escapeAttempts;
                 f %= 256;
                 int rng = UnityEngine.Random.Range(0, 256);
 
                 if (rng < f)
                 {
-                    yield return dialogBox.TypeDialog($"You ran away from the enemy {enemyMonster.Monster.Base.Name}!");
+                    yield return _dialogBox.TypeDialog($"You ran away from the enemy {_enemyMonster.Monster.Base.Name}!");
                     BattleOver(BattleResult.Won);
                 }
                 else
                 {
-                    yield return dialogBox.TypeDialog($"You couldn't run from the enemy {enemyMonster.Monster.Base.Name}!");
-
-                    state = BattleState.ExecutingTurn;
+                    yield return _dialogBox.TypeDialog($"You couldn't run from the enemy {_enemyMonster.Monster.Base.Name}!");
+                    _state = BattleState.ExecutingTurn;
                 }
             }
         }
@@ -582,37 +552,39 @@ namespace Itsdits.Ravar.Battle
         private IEnumerator CleanUpTurn(BattleMonster attackingMonster)
         {
             // Skip if battle is over.
-            if (state == BattleState.BattleOver)
+            if (_state == BattleState.BattleOver)
             {
                 yield break;
             }
             // Skip if monster is downed.
-            if (isMonsterDown)
+            if (_isMonsterDown)
             {
-                isMonsterDown = false;
-                yield return new WaitUntil(() => state == BattleState.ExecutingTurn);
+                _isMonsterDown = false;
+                yield return new WaitUntil(() => _state == BattleState.ExecutingTurn);
                 yield break;
             }
             // Wait for monster switch, etc.
-            yield return new WaitUntil(() => state == BattleState.ExecutingTurn);
+            yield return new WaitUntil(() => _state == BattleState.ExecutingTurn);
 
             // Check for status changes like poison and update Monster/HUD.
             attackingMonster.Monster.CheckForStatusDamage();
             yield return ShowStatusChanges(attackingMonster.Monster);
-            yield return attackingMonster.Hud.UpdateHP();
-
-            // Attacking monster can be downed from status effects.
-            if (attackingMonster.Monster.CurrentHp <= 0)
+            yield return attackingMonster.Hud.UpdateHp();
+            if (attackingMonster.Monster.CurrentHp > 0)
             {
-                yield return HandleDownedMonster(attackingMonster);
-                yield return new WaitUntil(() => state == BattleState.ExecutingTurn);
+                yield break;
             }
+
+            // Attacking monster was downed from status effects.
+            yield return HandleDownedMonster(attackingMonster);
+            yield return new WaitUntil(() => _state == BattleState.ExecutingTurn);
         }
 
         private int AttemptCapture(MonsterObj monster)
         {
             // Algo is from g3/4.
-            float a = (3 * monster.MaxHp - 2 * monster.CurrentHp) * monster.Base.CatchRate * ConditionDB.GetStatusBonus(monster.Status) / (3 * monster.MaxHp);
+            float a = (3 * monster.MaxHp - 2 * monster.CurrentHp) * monster.Base.CatchRate * 
+                ConditionDB.GetStatusBonus(monster.Status) / (3 * monster.MaxHp);
 
             if (a >= 255)
             {
@@ -621,11 +593,13 @@ namespace Itsdits.Ravar.Battle
                 
             float b = 1048560 / Mathf.Sqrt(Mathf.Sqrt(16711680 / a));
 
-            int beamCount = 0;
+            var beamCount = 0;
             while (beamCount < 4)
             {
                 if (UnityEngine.Random.Range(0, 65535) >= b)
+                {
                     break;
+                }
 
                 ++beamCount;
             }
@@ -644,7 +618,7 @@ namespace Itsdits.Ravar.Battle
             float moveAccuracy = move.Base.Accuracy;
             int accuracy = attackingMonster.StatsChanged[MonsterStat.Accuracy];
             int evasion = defendingMonster.StatsChanged[MonsterStat.Evasion];
-            var changeVals = new float[] { 1f, 4f / 3f, 5f / 3f, 2f, 7f / 3f, 8f / 3f, 3f };
+            float[] changeVals = { 1f, 4f / 3f, 5f / 3f, 2f, 7f / 3f, 8f / 3f, 3f };
 
             if (accuracy > 0)
             {
@@ -672,7 +646,7 @@ namespace Itsdits.Ravar.Battle
         {
             if (downedMonster.IsPlayerMonster)
             {
-                var nextMonster = playerParty.GetHealthyMonster();
+                MonsterObj nextMonster = _playerParty.GetHealthyMonster();
                 if (nextMonster != null)
                 {
                     OpenPartyScreen();
@@ -684,13 +658,13 @@ namespace Itsdits.Ravar.Battle
             }
             else
             {
-                if (!isCharBattle)
+                if (!_isCharBattle)
                 {
                     BattleOver(BattleResult.Won);
                 }
                 else
                 {
-                    var nextEnemyMonster = battlerParty.GetHealthyMonster();
+                    MonsterObj nextEnemyMonster = _battlerParty.GetHealthyMonster();
                     if (nextEnemyMonster != null)
                     {
                         StartCoroutine(ChoiceSelection(nextEnemyMonster));
@@ -705,21 +679,20 @@ namespace Itsdits.Ravar.Battle
 
         private void ShowCharacterSprites()
         {
-            playerMonster.gameObject.SetActive(false);
-            enemyMonster.gameObject.SetActive(false);
-            playerImage.gameObject.SetActive(true);
-            battlerImage.gameObject.SetActive(true);
-            playerImage.sprite = player.BattleSprite;
-            battlerImage.sprite = battler.Sprite;
+            _playerMonster.gameObject.SetActive(false);
+            _enemyMonster.gameObject.SetActive(false);
+            _playerImage.gameObject.SetActive(true);
+            _battlerImage.gameObject.SetActive(true);
+            _playerImage.sprite = _player.BattleSprite;
+            _battlerImage.sprite = _battler.Sprite;
         }
 
         private void BattleOver(BattleResult result)
         {
-            state = BattleState.BattleOver;
-
-            isMonsterDown = false;
-            playerParty.Monsters.ForEach(p => p.CleanUpMonster());
-            OnBattleOver(result, isCharBattle);
+            _state = BattleState.BattleOver;
+            _isMonsterDown = false;
+            _playerParty.Monsters.ForEach(p => p.CleanUpMonster());
+            OnBattleOver?.Invoke(result, _isCharBattle);
         }
 
         /// <summary>
@@ -727,23 +700,23 @@ namespace Itsdits.Ravar.Battle
         /// </summary>
         public void HandleUpdate()
         {
-            if (state == BattleState.ActionSelection)
+            if (_state == BattleState.ActionSelection)
             {
                 HandleActionSelection();
             }
-            else if (state == BattleState.MoveSelection)
+            else if (_state == BattleState.MoveSelection)
             {
                 HandleMoveSelection();
             }
-            else if (state == BattleState.ForgetSelection)
+            else if (_state == BattleState.ForgetSelection)
             {
                 HandleMoveSelection();
             }
-            else if (state == BattleState.ChoiceSelection)
+            else if (_state == BattleState.ChoiceSelection)
             {
                 HandleChoiceSelection();
             }
-            else if (state == BattleState.PartyScreen)
+            else if (_state == BattleState.PartyScreen)
             {
                 HandlePartySelection();
             }
@@ -751,97 +724,88 @@ namespace Itsdits.Ravar.Battle
 
         private void ActionSelection()
         {
-            state = BattleState.ActionSelection;
-
-            dialogBox.SetDialog("Select an action:");
-            dialogBox.EnableActionSelector(true);
+            _state = BattleState.ActionSelection;
+            _dialogBox.SetDialog("Select an action:");
+            _dialogBox.EnableActionSelector(true);
         }
 
         private void MoveSelection()
         {
-            if (state != BattleState.ForgetSelection)
+            if (_state != BattleState.ForgetSelection)
             {
-                state = BattleState.MoveSelection;
+                _state = BattleState.MoveSelection;
             }
 
-            dialogBox.EnableDialogText(false);
-            dialogBox.EnableActionSelector(false);
-            dialogBox.EnableMoveSelector(true);
+            _dialogBox.EnableDialogText(false);
+            _dialogBox.EnableActionSelector(false);
+            _dialogBox.EnableMoveSelector(true);
         }
 
         private IEnumerator ForgetMoveSelection(MonsterObj monster, LearnableMove newMove)
         {
-            prevState = BattleState.ForgetSelection;
-            state = BattleState.Busy;
-
-            yield return dialogBox.TypeDialog($"{monster.Base.Name} can learn {newMove.Base.Name}, but it's move list is full. Forget a move to learn {newMove.Base.Name}?");
-
-            state = BattleState.ChoiceSelection;
-
-            dialogBox.EnableChoiceSelector(true);
+            _prevState = BattleState.ForgetSelection;
+            _state = BattleState.Busy;
+            yield return _dialogBox.TypeDialog($"{monster.Base.Name} can learn {newMove.Base.Name}, but it's move list is full. Forget a move to learn {newMove.Base.Name}?");
+            _state = BattleState.ChoiceSelection;
+            _dialogBox.EnableChoiceSelector(true);
         }
 
         private IEnumerator ChoiceSelection(MonsterObj nextMonster)
         {
-            state = BattleState.Busy;
-
-            yield return dialogBox.TypeDialog($"{battler.Name} is about to deploy {nextMonster.Base.Name}! Do you want to switch your Battokuri too?");
-
-            state = BattleState.ChoiceSelection;
-
-            dialogBox.EnableChoiceSelector(true);
+            _state = BattleState.Busy;
+            yield return _dialogBox.TypeDialog($"{_battler.Name} is about to deploy {nextMonster.Base.Name}! Do you want to switch your Battokuri too?");
+            _state = BattleState.ChoiceSelection;
+            _dialogBox.EnableChoiceSelector(true);
         }
 
         private void OpenPartyScreen()
         {
-            state = BattleState.PartyScreen;
-
-            partyScreen.SetPartyData(playerParty.Monsters);
-            partyScreen.gameObject.SetActive(true);
+            _state = BattleState.PartyScreen;
+            _partyScreen.SetPartyData(_playerParty.Monsters);
+            _partyScreen.gameObject.SetActive(true);
         }
 
         private void HandleActionSelection()
         {
             if (Keyboard.current.rightArrowKey.wasPressedThisFrame)
             {
-                ++currentAction;
+                ++_currentAction;
             }
             else if (Keyboard.current.leftArrowKey.wasPressedThisFrame)
             {
-                --currentAction;
+                --_currentAction;
             }
             else if (Keyboard.current.downArrowKey.wasPressedThisFrame)
             {
-                currentAction += 2;
+                _currentAction += 2;
             }  
             else if (Keyboard.current.upArrowKey.wasPressedThisFrame)
             {
-                currentAction -= 2;
+                _currentAction -= 2;
             }
 
-            currentAction = Mathf.Clamp(currentAction, 0, 3);
-            dialogBox.UpdateActionSelection(currentAction);
+            _currentAction = Mathf.Clamp(_currentAction, 0, 3);
+            _dialogBox.UpdateActionSelection(_currentAction);
 
             if (Keyboard.current.zKey.wasPressedThisFrame)
             {
-                if (currentAction == 0)
+                if (_currentAction == 0)
                 {
                     // Fight
                     MoveSelection();
                 }
-                else if (currentAction == 1)
+                else if (_currentAction == 1)
                 {
                     // Items
                     StartCoroutine(ExecuteTurn(BattleAction.UseItem));
                 }
-                else if (currentAction == 2)
+                else if (_currentAction == 2)
                 {
                     // Monsters
-                    prevState = state;
-
+                    _prevState = _state;
                     OpenPartyScreen();
                 }
-                else if (currentAction == 3)
+                else if (_currentAction == 3)
                 {
                     // Run
                     StartCoroutine(ExecuteTurn(BattleAction.Run));
@@ -853,35 +817,34 @@ namespace Itsdits.Ravar.Battle
         {
             if (Keyboard.current.rightArrowKey.wasPressedThisFrame)
             {
-                ++currentMove;
+                ++_currentMove;
             }
             else if (Keyboard.current.leftArrowKey.wasPressedThisFrame)
             {
-                --currentMove;
+                --_currentMove;
             }
             else if (Keyboard.current.downArrowKey.wasPressedThisFrame)
             {
-                currentMove += 2;
+                _currentMove += 2;
             }
             else if (Keyboard.current.upArrowKey.wasPressedThisFrame)
             {
-                currentMove -= 2;
+                _currentMove -= 2;
             }
 
-            currentMove = Mathf.Clamp(currentMove, 0, playerMonster.Monster.Moves.Count - 1);
-            dialogBox.UpdateMoveSelection(currentMove, playerMonster.Monster.Moves[currentMove]);
+            _currentMove = Mathf.Clamp(_currentMove, 0, _playerMonster.Monster.Moves.Count - 1);
+            _dialogBox.UpdateMoveSelection(_currentMove, _playerMonster.Monster.Moves[_currentMove]);
 
             if (Keyboard.current.zKey.wasPressedThisFrame)
             {
-                var move = playerMonster.Monster.Moves[currentMove];
-                dialogBox.EnableMoveSelector(false);
-                dialogBox.EnableDialogText(true);
+                MoveObj move = _playerMonster.Monster.Moves[_currentMove];
+                _dialogBox.EnableMoveSelector(false);
+                _dialogBox.EnableDialogText(true);
 
-                if (state == BattleState.ForgetSelection)
+                if (_state == BattleState.ForgetSelection)
                 {
-                    prevState = null;
-
-                    StartCoroutine(ForgetMove(playerMonster.Monster, move));
+                    _prevState = null;
+                    StartCoroutine(ForgetMove(_playerMonster.Monster, move));
                 }
                 else
                 {
@@ -889,16 +852,14 @@ namespace Itsdits.Ravar.Battle
                     {
                         return;
                     }
-                    else
-                    {
-                        StartCoroutine(ExecuteTurn(BattleAction.Move));
-                    }
+
+                    StartCoroutine(ExecuteTurn(BattleAction.Move));
                 }
             }
             else if (Keyboard.current.xKey.wasPressedThisFrame)
             {
-                dialogBox.EnableMoveSelector(false);
-                dialogBox.EnableDialogText(true);
+                _dialogBox.EnableMoveSelector(false);
+                _dialogBox.EnableDialogText(true);
                 ActionSelection();
             }
         }
@@ -908,35 +869,32 @@ namespace Itsdits.Ravar.Battle
             //TODO - refactor this function to provide clarity on what the player is choosing.
             if (Keyboard.current.downArrowKey.wasPressedThisFrame || Keyboard.current.upArrowKey.wasPressedThisFrame)
             {
-                isChoiceYes = !isChoiceYes;
+                _isChoiceYes = !_isChoiceYes;
             }
 
-            dialogBox.UpdateChoiceSelection(isChoiceYes);
+            _dialogBox.UpdateChoiceSelection(_isChoiceYes);
             if (Keyboard.current.zKey.wasPressedThisFrame)
             {
-                dialogBox.EnableChoiceSelector(false);
-                if (isChoiceYes)
+                _dialogBox.EnableChoiceSelector(false);
+                if (_isChoiceYes)
                 {
-                    if (prevState == BattleState.ForgetSelection)
+                    if (_prevState == BattleState.ForgetSelection)
                     {
-                        state = BattleState.ForgetSelection;
-
+                        _state = BattleState.ForgetSelection;
                         MoveSelection();
                     }
                     else
                     {
-                        prevState = BattleState.ChoiceSelection;
-
+                        _prevState = BattleState.ChoiceSelection;
                         OpenPartyScreen();
                     }
                 }
                 else
                 {
-                    if (prevState == BattleState.ForgetSelection)
+                    if (_prevState == BattleState.ForgetSelection)
                     {
-                        prevState = null;
-
-                        state = BattleState.ExecutingTurn;
+                        _prevState = null;
+                        _state = BattleState.ExecutingTurn;
                     }
                     else
                     {
@@ -944,14 +902,13 @@ namespace Itsdits.Ravar.Battle
                     }
                 }
             }
-            else if (Keyboard.current.zKey.wasPressedThisFrame)
+            else if (Keyboard.current.xKey.wasPressedThisFrame)
             {
-                dialogBox.EnableChoiceSelector(false);
-                if (prevState == BattleState.ForgetSelection)
+                _dialogBox.EnableChoiceSelector(false);
+                if (_prevState == BattleState.ForgetSelection)
                 {
-                    prevState = null;
-
-                    state = BattleState.ExecutingTurn;
+                    _prevState = null;
+                    _state = BattleState.ExecutingTurn;
                 }
                 else
                 {
@@ -964,69 +921,65 @@ namespace Itsdits.Ravar.Battle
         {
             if (Keyboard.current.rightArrowKey.wasPressedThisFrame)
             {
-                ++currentMember;
+                ++_currentMember;
             }
             else if (Keyboard.current.leftArrowKey.wasPressedThisFrame)
             {
-                --currentMember;
+                --_currentMember;
             }
             else if (Keyboard.current.downArrowKey.wasPressedThisFrame)
             {
-                currentMember += 3;
+                _currentMember += 3;
             }
             else if (Keyboard.current.upArrowKey.wasPressedThisFrame)
             {
-                currentMember -= 3;
+                _currentMember -= 3;
             }
 
-            currentMember = Mathf.Clamp(currentMember, 0, playerParty.Monsters.Count - 1);
-            partyScreen.UpdateMemberSelection(currentMember);
+            _currentMember = Mathf.Clamp(_currentMember, 0, _playerParty.Monsters.Count - 1);
+            _partyScreen.UpdateMemberSelection(_currentMember);
 
             if (Keyboard.current.zKey.wasPressedThisFrame)
             {
-                var selectedMember = playerParty.Monsters[currentMember];
-
+                MonsterObj selectedMember = _playerParty.Monsters[_currentMember];
                 if (selectedMember.CurrentHp <= 0)
                 {
-                    partyScreen.SetMessageText("That Battokuri is downed and cannot be used!");
+                    _partyScreen.SetMessageText("That Battokuri is downed and cannot be used!");
                     return;
                 }
 
-                if (selectedMember == playerMonster.Monster)
+                if (selectedMember == _playerMonster.Monster)
                 {
-                    partyScreen.SetMessageText("That Battokuri is already being used!");
+                    _partyScreen.SetMessageText("That Battokuri is already being used!");
                     return;
                 }
 
-                partyScreen.gameObject.SetActive(false);
+                _partyScreen.gameObject.SetActive(false);
                 // If player switched monster voluntarily it should count as a turn move
                 // If monster was downed and forced switch then it should trigger a new turn
-                if (prevState == BattleState.ActionSelection)
+                if (_prevState == BattleState.ActionSelection)
                 {
-                    prevState = null;
-
+                    _prevState = null;
                     StartCoroutine(ExecuteTurn(BattleAction.SwitchMonster));
                 }
                 else
                 {
-                    state = BattleState.Busy;
-
+                    _state = BattleState.Busy;
                     StartCoroutine(SwitchMonster(selectedMember));
                 }
             }
             else if (Keyboard.current.xKey.wasPressedThisFrame)
             {
-                if (playerMonster.Monster.CurrentHp <= 0)
+                if (_playerMonster.Monster.CurrentHp <= 0)
                 {
-                    partyScreen.SetMessageText("You must select a Battokuri!");
+                    _partyScreen.SetMessageText("You must select a Battokuri!");
                     return;
                 }
 
-                partyScreen.gameObject.SetActive(false);
-                if (prevState == BattleState.ChoiceSelection)
+                _partyScreen.gameObject.SetActive(false);
+                if (_prevState == BattleState.ChoiceSelection)
                 {
-                    prevState = null;
-
+                    _prevState = null;
                     StartCoroutine(SwitchEnemyMonster());
                 }
                 else

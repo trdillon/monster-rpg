@@ -242,7 +242,7 @@ GameObject:
   - component: {fileID: 4952771027540613291}
   - component: {fileID: 4952771027540613285}
   m_Layer: 0
-  m_Name: HUD
+  m_Name: EnemyHUD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -321,16 +321,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff0ad94cf4151ff4cbaa4f7c6a6be669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: {fileID: 4952771028144716909}
-  levelText: {fileID: 4952771027177694931}
-  statusText: {fileID: 6888765029775256715}
-  hpBar: {fileID: 4952771028580328591}
-  xpBar: {fileID: 0}
-  psnColor: {r: 0.7924528, g: 0.16820934, b: 0.63282895, a: 1}
-  brnColor: {r: 1, g: 0.020161292, b: 0, a: 1}
-  slpColor: {r: 0.4339623, g: 0.37459952, b: 0.37459952, a: 1}
-  parColor: {r: 0.9811321, g: 0.86382264, b: 0.0046279924, a: 1}
-  frzColor: {r: 0, g: 0.026605139, b: 0.9811321, a: 1}
+  _nameText: {fileID: 4952771028144716909}
+  _levelText: {fileID: 4952771027177694931}
+  _statusText: {fileID: 6888765029775256715}
+  _hpBar: {fileID: 4952771028580328591}
+  _xpBar: {fileID: 0}
+  _psnColor: {r: 1, g: 0, b: 0.579113, a: 1}
+  _brnColor: {r: 0.9811321, g: 0.013883919, b: 0.013883919, a: 1}
+  _slpColor: {r: 0.035300493, g: 1, b: 0, a: 1}
+  _parColor: {r: 1, g: 0.8970643, b: 0, a: 1}
+  _frzColor: {r: 0, g: 0.01419168, b: 0.9339623, a: 1}
 --- !u!1 &4952771028144716915
 GameObject:
   m_ObjectHideFlags: 0
@@ -500,7 +500,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2837d21fc8a798e4ba53a27e6b1d3c1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: {fileID: 4952771026903391413}
+  _health: {fileID: 4952771026903391413}
 --- !u!1 &7379105973384641351
 GameObject:
   m_ObjectHideFlags: 0

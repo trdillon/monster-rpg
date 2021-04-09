@@ -6,17 +6,17 @@ namespace Itsdits.Ravar.Monster
     /// <summary>
     /// Database class for definitions of <see cref="MoveEffects"/> and <see cref="MoveSecondaryEffects"/>.
     /// </summary>
-    public class ConditionDB
+    public static class ConditionDB
     {
         /// <summary>
         /// Initialize the DB.
         /// </summary>
         public static void Init()
         {
-            foreach (var entry in Conditions)
+            foreach (KeyValuePair<ConditionID, ConditionObj> entry in Conditions)
             {
-                var conditionId = entry.Key;
-                var condition = entry.Value;
+                ConditionID conditionId = entry.Key;
+                ConditionObj condition = entry.Value;
                 condition.Id = conditionId;
             }
         }
@@ -32,63 +32,63 @@ namespace Itsdits.Ravar.Monster
             {
                 return 1f;
             }
-            else if (condition.Id == ConditionID.FRZ || condition.Id == ConditionID.SLP)
+
+            if (condition.Id == ConditionID.Freeze || condition.Id == ConditionID.Sleep)
             {
                 return 2f;
             }
-            else if (condition.Id == ConditionID.BRN || condition.Id == ConditionID.PAR || condition.Id == ConditionID.PSN)
+
+            if (condition.Id == ConditionID.Burn || condition.Id == ConditionID.Paralyze || condition.Id == ConditionID.Poison)
             {
                 return 1.5f;
             }
-            else
-            {
-                return 1f;
-            }
+
+            return 1f;
         }
 
         /// <summary>
         /// Static dictionary that holds the status conditions database.
         /// </summary>
-        public static Dictionary<ConditionID, ConditionObj> Conditions { get; set; } = new Dictionary<ConditionID, ConditionObj>()
+        public static Dictionary<ConditionID, ConditionObj> Conditions { get; } = new Dictionary<ConditionID, ConditionObj>
         {
             // Status conditions
             {
-                ConditionID.PSN,
-                new ConditionObj()
+                ConditionID.Poison,
+                new ConditionObj
                 {
                     Name = "Poison",
                     StartMessage = "has been infected with poison!",
-                    OnTurnEnd = (MonsterObj monster) =>
+                    OnTurnEnd = monster =>
                     {
-                        monster.UpdateHP(monster.MaxHp / 8);
+                        monster.UpdateHp(monster.MaxHp / 8);
                         monster.StatusChanges.Enqueue($"{monster.Base.Name} is suffering from the effects of the poison!");
                     }
                 }
             },
             {
-                ConditionID.BRN,
-                new ConditionObj()
+                ConditionID.Burn,
+                new ConditionObj
                 {
                     Name = "Burn",
                     StartMessage = "has been burned badly!",
-                    OnTurnEnd = (MonsterObj monster) =>
+                    OnTurnEnd = monster =>
                     {
-                        monster.UpdateHP(monster.MaxHp / 16);
+                        monster.UpdateHp(monster.MaxHp / 16);
                         monster.StatusChanges.Enqueue($"{monster.Base.Name} is suffering from the effects of the burn!");
                     }
                 }
             },
             {
-                ConditionID.SLP,
-                new ConditionObj()
+                ConditionID.Sleep,
+                new ConditionObj
                 {
                     Name = "Sleep",
                     StartMessage = "has been put to sleep!",
-                    OnStart = (MonsterObj monster) =>
+                    OnStart = monster =>
                     {
                         monster.StatusTimer = Random.Range(1, 4);
                     },
-                    OnTurnStart = (MonsterObj monster) =>
+                    OnTurnStart = monster =>
                     {
                         if (monster.StatusTimer <= 0)
                         {
@@ -104,52 +104,54 @@ namespace Itsdits.Ravar.Monster
                 }
             },
             {
-                ConditionID.PAR,
-                new ConditionObj()
+                ConditionID.Paralyze,
+                new ConditionObj
                 {
                     Name = "Paralyze",
                     StartMessage = "has been paralyzed by that attack!",
-                    OnTurnStart = (MonsterObj monster) =>
+                    OnTurnStart = monster =>
                     {
-                        if (Random.Range(0, 5) == 1)
+                        if (Random.Range(0, 5) != 1)
                         {
-                            monster.StatusChanges.Enqueue($"{monster.Base.Name} is suffering from the effects of the paralysis! It can't attack!");
-                            return false;
+                            return true;
                         }
-                        return true;
+
+                        monster.StatusChanges.Enqueue($"{monster.Base.Name} is suffering from the effects of the paralysis! It can't attack!");
+                        return false;
                     }
                 }
             },
             {
-                ConditionID.FRZ,
-                new ConditionObj()
+                ConditionID.Freeze,
+                new ConditionObj
                 {
                     Name = "Freeze",
                     StartMessage = "has been frozen by that attack!",
-                    OnTurnStart = (MonsterObj monster) =>
+                    OnTurnStart = monster =>
                     {
-                        if (Random.Range(0, 5) == 1)
+                        if (Random.Range(0, 5) != 1)
                         {
-                            monster.RemoveStatus();
-                            monster.StatusChanges.Enqueue($"{monster.Base.Name} has thawed, it's no longer frozen!");
-                            return true;
+                            return false;
                         }
-                        return false;
+
+                        monster.RemoveStatus();
+                        monster.StatusChanges.Enqueue($"{monster.Base.Name} has thawed, it's no longer frozen!");
+                        return true;
                     }
                 }
             },
             // Volatile status conditions
             {
-                ConditionID.CNF,
-                new ConditionObj()
+                ConditionID.Confusion,
+                new ConditionObj
                 {
                     Name = "Confusion",
                     StartMessage = "has been confused and doesn't know what to do!",
-                    OnStart = (MonsterObj monster) =>
+                    OnStart = monster =>
                     {
                         monster.VolatileStatusTimer = Random.Range(1, 5);
                     },
-                    OnTurnStart = (MonsterObj monster) =>
+                    OnTurnStart = monster =>
                     {
                         if (monster.VolatileStatusTimer <= 0)
                         {
@@ -168,7 +170,7 @@ namespace Itsdits.Ravar.Monster
 
                         // Attack will hurt self
                         monster.StatusChanges.Enqueue($"{monster.Base.Name} is suffering from the effects of the confusion! It attacked itself!");
-                        monster.UpdateHP(monster.MaxHp / 8);
+                        monster.UpdateHp(monster.MaxHp / 8);
                         return false;
                     }
                 }

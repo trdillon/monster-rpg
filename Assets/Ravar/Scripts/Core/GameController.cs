@@ -19,37 +19,37 @@ namespace Itsdits.Ravar.Core
         public static GameController Instance { get; private set; }
 
         [Tooltip("GameObject that holds the PlayerController component.")]
-        [SerializeField] PlayerController playerController;
+        [SerializeField] private PlayerController _playerController;
         [Tooltip("GameObject that holds the DialogController component.")]
-        [SerializeField] DialogController dialogController;
+        [SerializeField] private DialogController _dialogController;
         [Tooltip("GameObject that holds the PauseController component.")]
-        [SerializeField] PauseController pauseController;
+        [SerializeField] private PauseController _pauseController;
         [Tooltip("GameObject that holds the BattleSystem component.")]
-        [SerializeField] BattleSystem battleSystem;
+        [SerializeField] private BattleSystem _battleSystem;
         [Tooltip("The world camera that is attached to the Player GameObject.")]
-        [SerializeField] Camera worldCamera;
+        [SerializeField] private Camera _worldCamera;
 
-        private BattlerController battler;
-        private GameState state;
-        private GameState prevState;
-        private int currentScene;
+        private BattlerController _battler;
+        private GameState _state;
+        private GameState _prevState;
+        private int _currentScene;
 
         /// <summary>
         /// The current <see cref="GameState"/>.
         /// </summary>
-        public GameState State => state;
+        public GameState State => _state;
         /// <summary>
         /// The previous <see cref="GameState"/>.
         /// </summary>
-        public GameState PrevState => prevState;
+        public GameState PrevState => _prevState;
         /// <summary>
         /// The index of the scene the player is currently in.
         /// </summary>
-        public int CurrentScene => currentScene;
+        public int CurrentScene => _currentScene;
         /// <summary>
         /// The current player in this game instance.
         /// </summary>
-        public PlayerController CurrentPlayer => playerController;
+        public PlayerController CurrentPlayer => _playerController;
 
         private void Awake()
         {
@@ -59,7 +59,7 @@ namespace Itsdits.Ravar.Core
 
         private void Start()
         {
-            battleSystem.OnBattleOver += EndBattle;
+            _battleSystem.OnBattleOver += EndBattle;
             DialogController.Instance.OnShowDialog += StartDialog;
             DialogController.Instance.OnCloseDialog += EndDialog;
             UpdateCurrentScene();
@@ -67,21 +67,21 @@ namespace Itsdits.Ravar.Core
 
         private void Update()
         {
-            if (state == GameState.World)
+            if (_state == GameState.World)
             {
-                playerController.HandleUpdate();
+                _playerController.HandleUpdate();
             }
-            else if (state == GameState.Battle)
+            else if (_state == GameState.Battle)
             {
-                battleSystem.HandleUpdate();
+                _battleSystem.HandleUpdate();
             }
-            else if (state == GameState.Dialog)
+            else if (_state == GameState.Dialog)
             {
                 DialogController.Instance.HandleUpdate();
             }
-            else if (state == GameState.Pause)
+            else if (_state == GameState.Pause)
             {
-                pauseController.HandleUpdate();
+                _pauseController.HandleUpdate();
             }
         }
 
@@ -90,27 +90,25 @@ namespace Itsdits.Ravar.Core
         /// </summary>
         public void StartWildBattle()
         {
-            state = GameState.Battle;
+            _state = GameState.Battle;
+            _battleSystem.gameObject.SetActive(true);
+            _worldCamera.gameObject.SetActive(false);
 
-            battleSystem.gameObject.SetActive(true);
-            worldCamera.gameObject.SetActive(false);
-
-            var playerParty = playerController.GetComponent<MonsterParty>();
-            var wildMonster = FindObjectOfType<MapArea>().GetComponent<MapArea>().GetRandomMonster();
+            var playerParty = _playerController.GetComponent<MonsterParty>();
+            MonsterObj wildMonster = FindObjectOfType<MapArea>().GetComponent<MapArea>().GetRandomMonster();
             var enemyMonster = new MonsterObj(wildMonster.Base, wildMonster.Level);
 
-            battleSystem.StartWildBattle(playerParty, enemyMonster);
+            _battleSystem.StartWildBattle(playerParty, enemyMonster);
         }
 
         /// <summary>
         /// Starts an encounter with a character after LoS collider is triggered.
         /// </summary>
-        /// <param name="battlerCollider">Character that was encountered.</param>
+        /// <param name="battler">Character that was encountered.</param>
         public void StartCharEncounter(BattlerController battler)
         {
-                state = GameState.Cutscene;
-
-                StartCoroutine(battler.TriggerBattle(playerController));
+                _state = GameState.Cutscene;
+                StartCoroutine(battler.TriggerBattle(_playerController));
         }
 
         /// <summary>
@@ -119,16 +117,15 @@ namespace Itsdits.Ravar.Core
         /// <param name="battler">Character to do battle with.</param>
         public void StartCharBattle(BattlerController battler)
         {
-            state = GameState.Battle;
+            _state = GameState.Battle;
+            _battleSystem.gameObject.SetActive(true);
+            _worldCamera.gameObject.SetActive(false);
 
-            battleSystem.gameObject.SetActive(true);
-            worldCamera.gameObject.SetActive(false);
-
-            this.battler = battler;
-            var playerParty = playerController.GetComponent<MonsterParty>();
+            _battler = battler;
+            var playerParty = _playerController.GetComponent<MonsterParty>();
             var battlerParty = battler.GetComponent<MonsterParty>();
 
-            battleSystem.StartCharBattle(playerParty, battlerParty);
+            _battleSystem.StartCharBattle(playerParty, battlerParty);
         }
 
         /// <summary>
@@ -139,14 +136,14 @@ namespace Itsdits.Ravar.Core
         {
             if (pause)
             {
-                prevState = state;
-                pauseController.EnablePauseBox(true);
-                state = GameState.Pause;
+                _prevState = _state;
+                _pauseController.EnablePauseBox(true);
+                _state = GameState.Pause;
             }
             else
             {
-                pauseController.EnablePauseBox(false);
-                state = prevState;
+                _pauseController.EnablePauseBox(false);
+                _state = _prevState;
             }
         }
 
@@ -159,12 +156,12 @@ namespace Itsdits.Ravar.Core
         {
             if (frozen)
             {
-                prevState = state;
-                state = GameState.Cutscene;
+                _prevState = _state;
+                _state = GameState.Cutscene;
             }
             else
             {
-                state = prevState;
+                _state = _prevState;
             }
         }
 
@@ -183,7 +180,7 @@ namespace Itsdits.Ravar.Core
         /// </summary>
         public void UpdateCurrentScene()
         {
-            currentScene = SceneManager.GetActiveScene().buildIndex;
+            _currentScene = SceneManager.GetActiveScene().buildIndex;
         }
 
         /// <summary>
@@ -193,19 +190,18 @@ namespace Itsdits.Ravar.Core
         /// This is a debug function that usually indicates a function calling this is buggy or incomplete.</remarks>
         public void ReleasePlayer()
         {
-            state = GameState.World;
+            _state = GameState.World;
         }
 
         private void EndBattle(BattleResult result, bool isCharBattle)
         {
-            state = GameState.World;
-
-            if (battler != null && result == BattleResult.Won)
+            _state = GameState.World;
+            if (_battler != null && result == BattleResult.Won)
             {
-                battler.SetBattlerState(BattlerState.Defeated);
-                battler = null;
+                _battler.SetBattlerState(BattlerState.Defeated);
+                _battler = null;
             }
-            else if (battler != null && result == BattleResult.Lost)
+            else if (_battler != null && result == BattleResult.Lost)
             {
                 //TODO - handle a loss
             }
@@ -214,20 +210,20 @@ namespace Itsdits.Ravar.Core
                 //TODO - handle error
             }
 
-            battleSystem.gameObject.SetActive(false);
-            worldCamera.gameObject.SetActive(true);
+            _battleSystem.gameObject.SetActive(false);
+            _worldCamera.gameObject.SetActive(true);
         }
         
         private void StartDialog()
         {
-            state = GameState.Dialog;
+            _state = GameState.Dialog;
         }
 
         private void EndDialog()
         {
-            if (state == GameState.Dialog)
+            if (_state == GameState.Dialog)
             {
-                state = GameState.World;
+                _state = GameState.World;
             }
         }
     }

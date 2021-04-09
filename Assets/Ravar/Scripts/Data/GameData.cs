@@ -9,9 +9,9 @@ namespace Itsdits.Ravar.Data
     /// </summary>
     public static class GameData
     {
-        public static SaveData saveData;
-        public static PlayerData playerData;
-        public static List<MonsterData> partyMonsters = new List<MonsterData>();
+        private static SaveData _saveData;
+        private static PlayerData _playerData;
+        private static List<MonsterData> _partyMonsters = new List<MonsterData>();
 
         /// <summary>
         /// Saves the current saved data to file. The save file is named after the player Id.
@@ -20,20 +20,20 @@ namespace Itsdits.Ravar.Data
         /// <param name="party">The player's monster party data to save.</param>
         public static void SaveGameData(PlayerData player, List<MonsterData> party)
         {
-            playerData = player;
-            partyMonsters.Clear();
-            partyMonsters.AddRange(party);
-            saveData = new SaveData(player, party);
+            _playerData = player;
+            _partyMonsters.Clear();
+            _partyMonsters.AddRange(party);
+            _saveData = new SaveData(player, party);
 
             if (!Directory.Exists(Application.persistentDataPath + "/save/"))
             {
                 Directory.CreateDirectory(Application.persistentDataPath + "/save/");
             }
 
-            string SaveDataJson = JsonUtility.ToJson(saveData, true);
-            File.WriteAllText(Application.persistentDataPath + $"/save/{playerData.id}.ravar", SaveDataJson);
-            Debug.Log($"Save game: {playerData.id} saved successfully.");
+            string saveDataJson = JsonUtility.ToJson(_saveData, true);
+            File.WriteAllText(Application.persistentDataPath + $"/save/{_playerData.id}.ravar", saveDataJson);
             //TODO - Show user feedback about the save.
+            Debug.Log($"Save game: {_playerData.id} saved successfully.");
         }
 
         /// <summary>
@@ -42,14 +42,14 @@ namespace Itsdits.Ravar.Data
         /// <param name="playerId">The Id of the save file to load.</param>
         public static SaveData LoadGameData(string playerId)
         {
-            string LoadDataJson = File.ReadAllText(Application.persistentDataPath + $"/save/{playerId}.ravar");
-            JsonUtility.FromJsonOverwrite(LoadDataJson, saveData);
-            playerData = saveData.playerData;
-            partyMonsters.Clear();
-            partyMonsters.AddRange(saveData.partyData);
-            Debug.Log($"Load game: {playerData.id} loaded successfully.");
+            string loadDataJson = File.ReadAllText(Application.persistentDataPath + $"/save/{playerId}.ravar");
+            JsonUtility.FromJsonOverwrite(loadDataJson, _saveData);
+            _playerData = _saveData.playerData;
+            _partyMonsters.Clear();
+            _partyMonsters.AddRange(_saveData.partyData);
             //TODO - Show user feedback about the load.
-            return saveData;
+            Debug.Log($"Load game: {_playerData.id} loaded successfully.");
+            return _saveData;
         }
     }
 }

@@ -13,19 +13,19 @@ MonoBehaviour:
   m_Name: ThunderSlap
   m_EditorClassIdentifier: 
   _name: Thunder Slap
-  description: 'Slaps the opponent with a resounding wave of thunder, leaving it
-    partially paralyzed. '
-  moveNumber: 13
-  power: 0
-  accuracy: 95
-  energy: 25
-  priority: 0
-  alwaysHits: 0
-  type: 4
-  category: 2
-  target: 1
-  effects:
-    statChanges: []
-    status: 4
-    volatileStatus: 0
-  moveSecondaryEffects: []
+  _description: Slap the enemy with the deafening sound of thunder, inflicting a
+    temporary paralysis on them.
+  _moveNumber: 9
+  _power: 0
+  _accuracy: 80
+  _energy: 30
+  _priority: 0
+  _alwaysHits: 0
+  _type: 0
+  _category: 2
+  _target: 0
+  _effects:
+    _statChanges: []
+    _status: 4
+    _volatileStatus: 0
+  _moveSecondaryEffects: []

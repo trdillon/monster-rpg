@@ -13,19 +13,19 @@ MonoBehaviour:
   m_Name: PoisonCough
   m_EditorClassIdentifier: 
   _name: Poison Cough
-  description: Coughs at the opponent, releasing a poisonous gas that inflicts damage
-    over time.
-  moveNumber: 12
-  power: 0
-  accuracy: 95
-  energy: 25
-  priority: 0
-  alwaysHits: 0
-  type: 0
-  category: 2
-  target: 1
-  effects:
-    statChanges: []
-    status: 1
-    volatileStatus: 0
-  moveSecondaryEffects: []
+  _description: Cough in the face of the enemy with a pungent gas, inflicting them
+    with Poison.
+  _moveNumber: 10
+  _power: 0
+  _accuracy: 80
+  _energy: 30
+  _priority: 0
+  _alwaysHits: 0
+  _type: 0
+  _category: 2
+  _target: 0
+  _effects:
+    _statChanges: []
+    _status: 1
+    _volatileStatus: 0
+  _moveSecondaryEffects: []

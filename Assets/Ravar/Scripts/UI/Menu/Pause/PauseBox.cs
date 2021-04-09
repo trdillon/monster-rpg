@@ -11,50 +11,50 @@ namespace Itsdits.Ravar.UI
     {
         [Header("Pause Menu")]
         [Tooltip("List of Text elements that display on the Pause Menu screen.")]
-        [SerializeField] List<Text> pauseTexts;
+        [SerializeField] private List<Text> _pauseTexts;
         [Tooltip("GameObject that holds the Pause Menu.")]
-        [SerializeField] GameObject pauseMenu;
+        [SerializeField] private GameObject _pauseMenu;
 
         [Header("Save Menu")]
         [Tooltip("List of Text elements that display on the Save Menu screen.")]
-        [SerializeField] List<Text> saveTexts;
+        [SerializeField] private List<Text> _saveTexts;
         [Tooltip("GameObject that holds the Save Menu.")]
-        [SerializeField] GameObject saveMenu;
+        [SerializeField] private GameObject _saveMenu;
 
         [Header("Loader Menu")]
         [Tooltip("List of Text elements that display on the Load Menu screen.")]
-        [SerializeField] List<Text> loaderTexts;
+        [SerializeField] private List<Text> _loaderTexts;
         [Tooltip("GameObject that holds the Load Menu.")]
-        [SerializeField] GameObject loaderMenu;
+        [SerializeField] private GameObject _loaderMenu;
 
         [Header("Settings Menu")]
         [Tooltip("List of Text elements that display on the Settings Menu screen.")]
-        [SerializeField] List<Text> settingsTexts;
+        [SerializeField] private List<Text> _settingsTexts;
         [Tooltip("GameObject that holds the Settings Menu.")]
-        [SerializeField] GameObject settingsMenu;
+        [SerializeField] private GameObject _settingsMenu;
 
         [Header("Variables")]
         [Tooltip("The color to change the text to when highlighted.")]
-        [SerializeField] Color highlightColor;
+        [SerializeField] private Color _highlightColor;
         [Tooltip("The color to display when the text is not highlighted.")]
-        [SerializeField] Color standardColor;
+        [SerializeField] private Color _standardColor;
 
         /// <summary>
         /// List of Text elements that display on the Pause Menu screen.
         /// </summary>
-        public List<Text> PauseTexts => pauseTexts;
+        public List<Text> PauseTexts => _pauseTexts;
         /// <summary>
         /// List of Text elements that display on the Save Menu screen.
         /// </summary>
-        public List<Text> SaveTexts => saveTexts;
+        public List<Text> SaveTexts => _saveTexts;
         /// <summary>
         /// List of Text elements that display on the Load Menu screen.
         /// </summary>
-        public List<Text> LoaderTexts => loaderTexts;
+        public List<Text> LoaderTexts => _loaderTexts;
         /// <summary>
         /// List of Text elements that display on the Settings Menu screen.
         /// </summary>
-        public List<Text> SettingsTexts => settingsTexts;
+        public List<Text> SettingsTexts => _settingsTexts;
 
         /// <summary>
         /// Handle updates to the pause screen based on player inputs.
@@ -62,16 +62,9 @@ namespace Itsdits.Ravar.UI
         /// <param name="selected">Item that is selected.</param>
         public void UpdatePauseSelector(int selected)
         {
-            for (int i = 0; i < pauseTexts.Count; ++i)
+            for (var i = 0; i < _pauseTexts.Count; ++i)
             {
-                if (i == selected)
-                {
-                    pauseTexts[i].color = highlightColor;
-                }
-                else
-                {
-                    pauseTexts[i].color = standardColor;
-                }
+                _pauseTexts[i].color = i == selected ? _highlightColor : _standardColor;
             }
         }
 
@@ -82,16 +75,9 @@ namespace Itsdits.Ravar.UI
         public void UpdateSaveSelector(int selected)
         {
             //TODO - implement this and the corresponding UI screen
-            for (int i = 0; i < saveTexts.Count; ++i)
+            for (var i = 0; i < _saveTexts.Count; ++i)
             {
-                if (i == selected)
-                {
-                    saveTexts[i].color = highlightColor;
-                }
-                else
-                {
-                    saveTexts[i].color = standardColor;
-                }
+                _saveTexts[i].color = i == selected ? _highlightColor : _standardColor;
             }
         }
 
@@ -102,16 +88,9 @@ namespace Itsdits.Ravar.UI
         public void UpdateLoaderSelector(int selected)
         {
             //TODO - implement this and the corresponding UI screen
-            for (int i = 0; i < loaderTexts.Count; ++i)
+            for (var i = 0; i < _loaderTexts.Count; ++i)
             {
-                if (i == selected)
-                {
-                    loaderTexts[i].color = highlightColor;
-                }
-                else
-                {
-                    loaderTexts[i].color = standardColor;
-                }
+                _loaderTexts[i].color = i == selected ? _highlightColor : _standardColor;
             }
         }
 
@@ -122,53 +101,46 @@ namespace Itsdits.Ravar.UI
         public void UpdateSettingsSelector(int selected)
         {
             //TODO - implement this and the corresponding UI screen
-            for (int i = 0; i < settingsTexts.Count; ++i)
+            for (var i = 0; i < _settingsTexts.Count; ++i)
             {
-                if (i == selected)
-                {
-                    settingsTexts[i].color = highlightColor;
-                }
-                else
-                {
-                    settingsTexts[i].color = standardColor;
-                }
+                _settingsTexts[i].color = i == selected ? _highlightColor : _standardColor;
             }
         }
 
         /// <summary>
         /// Enable or disable the pause menu.
         /// </summary>
-        /// <param name="enabled">True for enabled, false for disabled.</param>
-        public void EnablePauseMenu(bool enabled)
+        /// <param name="isEnabled">True for enabled, false for disabled.</param>
+        public void EnablePauseMenu(bool isEnabled)
         {
-            pauseMenu.SetActive(enabled);
+            _pauseMenu.SetActive(isEnabled);
         }
 
         /// <summary>
         /// Enable or disable the save menu.
         /// </summary>
-        /// <param name="enabled">True for enabled, false for disabled.</param>
-        public void EnableSave(bool enabled)
+        /// <param name="isEnabled">True for enabled, false for disabled.</param>
+        public void EnableSave(bool isEnabled)
         {
-            saveMenu.SetActive(enabled);
+            _saveMenu.SetActive(isEnabled);
         }
 
         /// <summary>
         /// Enable or disable the load menu.
         /// </summary>
-        /// <param name="enabled">True for enabled, false for disabled.</param>
-        public void EnableLoader(bool enabled)
+        /// <param name="isEnabled">True for enabled, false for disabled.</param>
+        public void EnableLoader(bool isEnabled)
         {
-            loaderMenu.SetActive(enabled);
+            _loaderMenu.SetActive(isEnabled);
         }
 
         /// <summary>
         /// Enable or disable the settings menu.
         /// </summary>
-        /// <param name="enabled">True for enabled, false for disabled.</param>
-        public void EnableSettings(bool enabled)
+        /// <param name="isEnabled">True for enabled, false for disabled.</param>
+        public void EnableSettings(bool isEnabled)
         {
-            settingsMenu.SetActive(enabled);
+            _settingsMenu.SetActive(isEnabled);
         }
     }
 }

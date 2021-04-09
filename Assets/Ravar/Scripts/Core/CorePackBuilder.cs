@@ -8,14 +8,14 @@ namespace Itsdits.Ravar.Core
     public class CorePackBuilder : MonoBehaviour
     {
         [Tooltip("The prefab of the CorePack that should be built and maintained during play.")]
-        [SerializeField] GameObject corePackPrefab;
+        [SerializeField] private GameObject _corePackPrefab;
 
         private void Awake()
         {
-            var existingPacks = FindObjectsOfType<CorePack>();
+            CorePack[] existingPacks = FindObjectsOfType<CorePack>();
             if (existingPacks.Length == 0)
             {
-                Instantiate(corePackPrefab, new Vector3(0, 0, 0), Quaternion.identity);
+                Instantiate(_corePackPrefab, new Vector3(0, 0, 0), Quaternion.identity);
             }
         }
     }

@@ -12,16 +12,16 @@ namespace Itsdits.Ravar.Monster
     public class MonsterParty : MonoBehaviour
     {
         [Tooltip("Party of monsters that travel with the player. The maximum size is 6 monsters.")]
-        [SerializeField] List<MonsterObj> monsters;
+        [SerializeField] private List<MonsterObj> _monsters;
 
         /// <summary>
         /// Returns a List of type MonsterObj that are in the party.
         /// </summary>
-        public List<MonsterObj> Monsters => monsters;
+        public List<MonsterObj> Monsters => _monsters;
 
         private void Start()
         {
-            foreach (var monster in monsters)
+            foreach (MonsterObj monster in _monsters)
             {
                 monster.Init();
             }
@@ -33,7 +33,7 @@ namespace Itsdits.Ravar.Monster
         /// <returns>Next monster in the list of monsters.</returns>
         public MonsterObj GetHealthyMonster()
         {
-            var healthyMonster = monsters.Where(x => x.CurrentHp > 0).FirstOrDefault();
+            MonsterObj healthyMonster = _monsters.FirstOrDefault(x => x.CurrentHp > 0);
             return healthyMonster;
         }
 
@@ -44,9 +44,9 @@ namespace Itsdits.Ravar.Monster
         /// <param name="newMonster">Monster to add to the list.</param>
         public void AddMonster(MonsterObj newMonster)
         {
-            if (monsters.Count < 6)
+            if (_monsters.Count < 6)
             {
-                monsters.Add(newMonster);
+                _monsters.Add(newMonster);
             }
             else
             {
@@ -60,14 +60,7 @@ namespace Itsdits.Ravar.Monster
         /// <returns>List of MonsterData about the party.</returns>
         public List<MonsterData> SaveMonsterParty()
         {
-            var partyData = new List<MonsterData>();
-            foreach (var monster in monsters)
-            {
-                var monsterData = monster.SaveMonsterData();
-                partyData.Add(monsterData);
-            }
-
-            return partyData;
+            return _monsters.Select(monster => monster.SaveMonsterData()).ToList();
         }
 
         /// <summary>
@@ -76,11 +69,11 @@ namespace Itsdits.Ravar.Monster
         /// <param name="newMonsters">New monsters to load into the party.</param>
         public void LoadMonsterParty(List<MonsterData> newMonsters)
         {
-            monsters.Clear();
-            foreach (var monster in newMonsters)
+            _monsters.Clear();
+            foreach (MonsterData monster in newMonsters)
             {
                 var monsterData = new MonsterObj(monster);
-                monsters.Add(monsterData);
+                _monsters.Add(monsterData);
             }
         }
     }

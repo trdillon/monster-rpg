@@ -71,8 +71,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e33af8621e0b4404f88ee93dc8c237b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: -1
-  spawnPoint: {fileID: 1292642637738860142}
+  _portalId: 0
+  _sceneToLoad: -1
+  _spawnPoint: {fileID: 1292642637738860142}
 --- !u!1 &8232071751799128674
 GameObject:
   m_ObjectHideFlags: 0

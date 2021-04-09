@@ -245,23 +245,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 525ca2a005b69b144bfa53bec249b8a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultDirection: 0
-  walkDownSprites:
+  _defaultDirection: 0
+  _walkDownSprites:
   - {fileID: 6880106066347363494, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
   - {fileID: 7043424265637019423, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
   - {fileID: -2728185000789194573, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
   - {fileID: -7807768915777069421, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
-  walkLeftSprites:
+  _walkLeftSprites:
   - {fileID: 4077813123382603658, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
   - {fileID: -1144836526775691145, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
   - {fileID: 4458126402215533323, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
   - {fileID: -38661143099410241, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
-  walkRightSprites:
+  _walkRightSprites:
   - {fileID: 602412270622008770, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
   - {fileID: -3498215985219692332, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
   - {fileID: -8298758271269835812, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
   - {fileID: -1215864531162703678, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
-  walkUpSprites:
+  _walkUpSprites:
   - {fileID: 1984274074597376859, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
   - {fileID: -1004087566571085604, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}
   - {fileID: -171401209409012032, guid: 3506cc3f189d48e43857fe5de5377705, type: 3}

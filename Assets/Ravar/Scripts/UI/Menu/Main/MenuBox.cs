@@ -11,50 +11,50 @@ namespace Itsdits.Ravar.UI
     {
         [Header("Main Menu")]
         [Tooltip("List of Text elements that display on the Main Menu screen.")]
-        [SerializeField] List<Text> mainTexts;
+        [SerializeField] private List<Text> _mainTexts;
         [Tooltip("GameObject that holds the Main Menu.")]
-        [SerializeField] GameObject mainMenu;
+        [SerializeField] private GameObject _mainMenu;
 
         [Header("Loader Menu")]
         [Tooltip("List of Text elements that display on the Load Menu screen.")]
-        [SerializeField] List<Text> loaderTexts;
+        [SerializeField] private List<Text> _loaderTexts;
         [Tooltip("GameObject that holds the Load Menu.")]
-        [SerializeField] GameObject loaderMenu;
+        [SerializeField] private GameObject _loaderMenu;
 
         [Header("Settings Menu")]
         [Tooltip("List of Text elements that display on the Settings screen.")]
-        [SerializeField] List<Text> settingsTexts;
+        [SerializeField] private List<Text> _settingsTexts;
         [Tooltip("GameObject that holds the Settings Menu.")]
-        [SerializeField] GameObject settingsMenu;
+        [SerializeField] private GameObject _settingsMenu;
 
         [Header("Info Menu")]
         [Tooltip("List of Text elements that display on the Info screen.")]
-        [SerializeField] List<Text> infoTexts;
+        [SerializeField] private List<Text> _infoTexts;
         [Tooltip("GameObject that holds the Info screen.")]
-        [SerializeField] GameObject infoMenu;
+        [SerializeField] private GameObject _infoMenu;
 
         [Header("Variables")]
         [Tooltip("The color to change the text to when highlighted.")]
-        [SerializeField] Color highlightColor;
+        [SerializeField] private Color _highlightColor;
         [Tooltip("The color to display when the text is not highlighted.")]
-        [SerializeField] Color standardColor;
+        [SerializeField] private Color _standardColor;
 
         /// <summary>
         /// List of Text elements that display on the Main Menu screen.
         /// </summary>
-        public List<Text> MainTexts => mainTexts;
+        public List<Text> MainTexts => _mainTexts;
         /// <summary>
         /// List of Text elements that display on the Load Menu screen.
         /// </summary>
-        public List<Text> LoaderTexts => loaderTexts;
+        public List<Text> LoaderTexts => _loaderTexts;
         /// <summary>
         /// List of Text elements that display on the Settings screen.
         /// </summary>
-        public List<Text> SettingsTexts => settingsTexts;
+        public List<Text> SettingsTexts => _settingsTexts;
         /// <summary>
         /// List of Text elements that display on the Info screen.
         /// </summary>
-        public List<Text> InfoTexts => infoTexts;
+        public List<Text> InfoTexts => _infoTexts;
 
         /// <summary>
         /// Handle updates to the main screen based on player inputs.
@@ -62,16 +62,9 @@ namespace Itsdits.Ravar.UI
         /// <param name="selected">Item that is selected.</param>
         public void UpdateMainSelector(int selected)
         {
-            for (int i = 0; i < mainTexts.Count; ++i)
+            for (var i = 0; i < _mainTexts.Count; ++i)
             {
-                if (i == selected)
-                {
-                    mainTexts[i].color = highlightColor;
-                }
-                else
-                {
-                    mainTexts[i].color = standardColor;
-                }
+                _mainTexts[i].color = i == selected ? _highlightColor : _standardColor;
             }
         }
 
@@ -82,16 +75,9 @@ namespace Itsdits.Ravar.UI
         public void UpdateLoaderSelector(int selected)
         {
             //TODO - implement this and the corresponding UI screen
-            for (int i = 0; i < loaderTexts.Count; ++i)
+            for (var i = 0; i < _loaderTexts.Count; ++i)
             {
-                if (i == selected)
-                {
-                    loaderTexts[i].color = highlightColor;
-                }
-                else
-                {
-                    loaderTexts[i].color = standardColor;
-                }
+                _loaderTexts[i].color = i == selected ? _highlightColor : _standardColor;
             }
         }
 
@@ -102,16 +88,9 @@ namespace Itsdits.Ravar.UI
         public void UpdateSettingsSelector(int selected)
         {
             //TODO - implement this and the corresponding UI screen
-            for (int i = 0; i < settingsTexts.Count; ++i)
+            for (var i = 0; i < _settingsTexts.Count; ++i)
             {
-                if (i == selected)
-                {
-                    settingsTexts[i].color = highlightColor;
-                }
-                else
-                {
-                    settingsTexts[i].color = standardColor;
-                }
+                _settingsTexts[i].color = i == selected ? _highlightColor : _standardColor;
             }
         }
 
@@ -122,53 +101,46 @@ namespace Itsdits.Ravar.UI
         public void UpdateInfoSelector(int selected)
         {
             //TODO - implement this and the corresponding UI screen
-            for (int i = 0; i < infoTexts.Count; ++i)
+            for (var i = 0; i < _infoTexts.Count; ++i)
             {
-                if (i == selected)
-                {
-                    infoTexts[i].color = highlightColor;
-                }
-                else
-                {
-                    infoTexts[i].color = standardColor;
-                }
+                _infoTexts[i].color = i == selected ? _highlightColor : _standardColor;
             }
         }
 
         /// <summary>
         /// Enable or disable the main menu.
         /// </summary>
-        /// <param name="enabled">True for enabled, false for disabled.</param>
-        public void EnableMainMenu(bool enabled)
+        /// <param name="isEnabled">True for enabled, false for disabled.</param>
+        public void EnableMainMenu(bool isEnabled)
         {
-            mainMenu.SetActive(enabled);
+            _mainMenu.SetActive(isEnabled);
         }
 
         /// <summary>
         /// Enable or disable the load menu.
         /// </summary>
-        /// <param name="enabled">True for enabled, false for disabled.</param>
-        public void EnableLoader(bool enabled)
+        /// <param name="isEnabled">True for enabled, false for disabled.</param>
+        public void EnableLoader(bool isEnabled)
         {
-            loaderMenu.SetActive(enabled);
+            _loaderMenu.SetActive(isEnabled);
         }
 
         /// <summary>
         /// Enable or disable the settings menu.
         /// </summary>
-        /// <param name="enabled">True for enabled, false for disabled.</param>
-        public void EnableSettings(bool enabled)
+        /// <param name="isEnabled">True for enabled, false for disabled.</param>
+        public void EnableSettings(bool isEnabled)
         {
-            settingsMenu.SetActive(enabled);
+            _settingsMenu.SetActive(isEnabled);
         }
 
         /// <summary>
         /// Enable or disable the info screen.
         /// </summary>
-        /// <param name="enabled">True for enabled, false for disabled.</param>
-        public void EnableInfo(bool enabled)
+        /// <param name="isEnabled">True for enabled, false for disabled.</param>
+        public void EnableInfo(bool isEnabled)
         {
-            infoMenu.SetActive(enabled);
+            _infoMenu.SetActive(isEnabled);
         }
     }
 }

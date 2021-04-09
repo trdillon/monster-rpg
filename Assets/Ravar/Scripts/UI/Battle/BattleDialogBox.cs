@@ -13,43 +13,43 @@ namespace Itsdits.Ravar.UI
     {
         [Header("Dialog Box")]
         [Tooltip("The Text element that displays the current dialog.")]
-        [SerializeField] Text dialogText;
+        [SerializeField] private Text _dialogText;
 
         [Header("Action Selector")]
         [Tooltip("List of Text elements that display on the Action Selection screen.")]
-        [SerializeField] List<Text> actionTexts;
+        [SerializeField] private List<Text> _actionTexts;
         [Tooltip("GameObject that holds the Action Selector.")]
-        [SerializeField] GameObject actionSelector;
+        [SerializeField] private GameObject _actionSelector;
 
         [Header("Move Selector")]
         [Tooltip("List of Text elements that display on the Move Selection screen.")]
-        [SerializeField] List<Text> moveTexts;
+        [SerializeField] private List<Text> _moveTexts;
         [Tooltip("GameObject that holds the Move Selector.")]
-        [SerializeField] GameObject moveSelector;
+        [SerializeField] private GameObject _moveSelector;
 
         [Header("Move Details")]
         [Tooltip("GameObject that holds the Move Details.")]
-        [SerializeField] GameObject moveDetails;
+        [SerializeField] private GameObject _moveDetails;
         [Tooltip("Text element that displays the move's energy.")]
-        [SerializeField] Text energyText;
+        [SerializeField] private Text _energyText;
         [Tooltip("Text element that displays the move's type.")]
-        [SerializeField] Text typeText;
+        [SerializeField] private Text _typeText;
 
         [Header("Choice Selector")]
         [Tooltip("GameObject that holds the Choice Selector.")]
-        [SerializeField] GameObject choiceSelector;
+        [SerializeField] private GameObject _choiceSelector;
         [Tooltip("Text element that holds the Yes text.")]
-        [SerializeField] Text yesText;
+        [SerializeField] private Text _yesText;
         [Tooltip("Text element that holds the No text.")]
-        [SerializeField] Text noText;
+        [SerializeField] private Text _noText;
 
         [Header("Variables")]
         [Tooltip("How fast the dialog is typed on screen, default is 45.")]
-        [SerializeField] int lettersPerSecond;
+        [SerializeField] private int _lettersPerSecond;
         [Tooltip("The color to change the text to when highlighted.")]
-        [SerializeField] Color highlightColor;
+        [SerializeField] private Color _highlightColor;
         [Tooltip("The color to display when the text is not highlighted.")]
-        [SerializeField] Color standardColor;
+        [SerializeField] private Color _standardColor;
 
 
         /// <summary>
@@ -61,15 +61,15 @@ namespace Itsdits.Ravar.UI
         {
             if (dialog == null)
             {
-                dialogText.text = "";
+                _dialogText.text = "";
             }
             else
             {
-                dialogText.text = "";
-                foreach (var letter in dialog.ToCharArray())
+                _dialogText.text = "";
+                foreach (char letter in dialog)
                 {
-                    dialogText.text += letter;
-                    yield return new WaitForSeconds(1f / lettersPerSecond);
+                    _dialogText.text += letter;
+                    yield return new WaitForSeconds(1f / _lettersPerSecond);
                 }
                 // Give the player time to read the dialog.
                 yield return new WaitForSeconds(1f);
@@ -82,16 +82,9 @@ namespace Itsdits.Ravar.UI
         /// <param name="selectedAction">Index of action selected.</param>
         public void UpdateActionSelection(int selectedAction)
         {
-            for (int i = 0; i < actionTexts.Count; ++i)
+            for (var i = 0; i < _actionTexts.Count; ++i)
             {
-                if (i == selectedAction)
-                {
-                    actionTexts[i].color = highlightColor;
-                }
-                else
-                {
-                    actionTexts[i].color = standardColor;
-                }
+                _actionTexts[i].color = i == selectedAction ? _highlightColor : _standardColor;
             }
         }
 
@@ -102,29 +95,15 @@ namespace Itsdits.Ravar.UI
         /// <param name="move">Move selected.</param>
         public void UpdateMoveSelection(int selectedMove, MoveObj move)
         {
-            for (int i = 0; i < moveTexts.Count; ++i)
+            for (var i = 0; i < _moveTexts.Count; ++i)
             {
-                if (i == selectedMove)
-                {
-                    moveTexts[i].color = highlightColor;
-                } 
-                else
-                {
-                    moveTexts[i].color = standardColor;
-                }
+                _moveTexts[i].color = i == selectedMove ? _highlightColor : _standardColor;
             }
 
-            energyText.text = $"Energy: {move.Energy}/{move.Base.Energy}";
-            typeText.text = "Type: " + move.Base.Type.ToString();
+            _energyText.text = $"Energy: {move.Energy.ToString()}/{move.Base.Energy.ToString()}";
+            _typeText.text = "Type: " + move.Base.Type;
 
-            if (move.Energy == 0)
-            {
-                energyText.color = Color.red;
-            }  
-            else
-            {
-                energyText.color = standardColor;
-            }   
+            _energyText.color = move.Energy == 0 ? Color.red : _standardColor;   
         }
 
         /// <summary>
@@ -135,13 +114,13 @@ namespace Itsdits.Ravar.UI
         {
             if (yes)
             {
-                yesText.color = highlightColor;
-                noText.color = standardColor;
+                _yesText.color = _highlightColor;
+                _noText.color = _standardColor;
             }
             else
             {
-                noText.color = highlightColor;
-                yesText.color = standardColor;
+                _noText.color = _highlightColor;
+                _yesText.color = _standardColor;
             }
             
         }
@@ -152,14 +131,7 @@ namespace Itsdits.Ravar.UI
         /// <param name="dialog">Dialog to display.</param>
         public void SetDialog(string dialog)
         {
-            if (dialog == null)
-            {
-                dialogText.text = "";
-            }
-            else
-            {
-                dialogText.text = dialog;
-            }
+            _dialogText.text = dialog ?? "";
         }
 
         /// <summary>
@@ -168,54 +140,47 @@ namespace Itsdits.Ravar.UI
         /// <param name="moves">Available moves.</param>
         public void SetMoveList(List<MoveObj> moves)
         {
-            for (int i = 0; i < moveTexts.Count; ++i)
+            for (var i = 0; i < _moveTexts.Count; ++i)
             {
-                if (i < moves.Count)
-                {
-                    moveTexts[i].text = moves[i].Base.Name;
-                } 
-                else
-                {
-                    moveTexts[i].text = "-";
-                }    
+                _moveTexts[i].text = i < moves.Count ? moves[i].Base.Name : "-";
             }
         }
 
         /// <summary>
         /// Show the dialog box.
         /// </summary>
-        /// <param name="enabled">True for enabled, false for disabled.</param>
-        public void EnableDialogText(bool enabled)
+        /// <param name="isEnabled">True for enabled, false for disabled.</param>
+        public void EnableDialogText(bool isEnabled)
         {
-            dialogText.enabled = enabled;
+            _dialogText.enabled = isEnabled;
         }
 
         /// <summary>
         /// Show the action selector.
         /// </summary>
-        /// <param name="enabled">True for enabled, false for disabled.</param>
-        public void EnableActionSelector(bool enabled)
+        /// <param name="isEnabled">True for enabled, false for disabled.</param>
+        public void EnableActionSelector(bool isEnabled)
         {
-            actionSelector.SetActive(enabled);
+            _actionSelector.SetActive(isEnabled);
         }
 
         /// <summary>
         /// Show the move selector.
         /// </summary>
-        /// <param name="enabled">True for enabled, false for disabled.</param>
-        public void EnableMoveSelector(bool enabled)
+        /// <param name="isEnabled">True for enabled, false for disabled.</param>
+        public void EnableMoveSelector(bool isEnabled)
         {
-            moveSelector.SetActive(enabled);
-            moveDetails.SetActive(enabled);
+            _moveSelector.SetActive(isEnabled);
+            _moveDetails.SetActive(isEnabled);
         }
 
         /// <summary>
         /// Show the choice selector.
         /// </summary>
-        /// <param name="enabled">True for enabled, false for disabled.</param>
-        public void EnableChoiceSelector(bool enabled)
+        /// <param name="isEnabled">True for enabled, false for disabled.</param>
+        public void EnableChoiceSelector(bool isEnabled)
         {
-            choiceSelector.SetActive(enabled);
+            _choiceSelector.SetActive(isEnabled);
         }
     }
 }

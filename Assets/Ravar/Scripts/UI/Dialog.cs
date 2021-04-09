@@ -10,11 +10,11 @@ namespace Itsdits.Ravar.UI
     public class Dialog
     {
         [Tooltip("List of dialog strings to be displayed.")]
-        [SerializeField] List<string> strings;
+        [SerializeField] private List<string> _strings;
 
         /// <summary>
         /// List of dialog strings to be displayed.
         /// </summary>
-        public List<string> Strings => strings;
+        public List<string> Strings => _strings;
     }
 }

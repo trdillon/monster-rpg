@@ -13,19 +13,19 @@ MonoBehaviour:
   m_Name: QuickJab
   m_EditorClassIdentifier: 
   _name: Quick Jab
-  description: Throws a quick jab at the opponent, striking them before they have
-    a chance to attack.
-  moveNumber: 5
-  power: 40
-  accuracy: 95
-  energy: 30
-  priority: 1
-  alwaysHits: 0
-  type: 0
-  category: 0
-  target: 0
-  effects:
-    statChanges: []
-    status: 0
-    volatileStatus: 0
-  moveSecondaryEffects: []
+  _description: Hit the enemy with a quick jab before they have a chance to react,
+    dealing moderate physical damage.
+  _moveNumber: 13
+  _power: 40
+  _accuracy: 100
+  _energy: 35
+  _priority: 1
+  _alwaysHits: 0
+  _type: 0
+  _category: 0
+  _target: 0
+  _effects:
+    _statChanges: []
+    _status: 0
+    _volatileStatus: 0
+  _moveSecondaryEffects: []

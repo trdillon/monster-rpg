@@ -10,35 +10,35 @@ namespace Itsdits.Ravar.UI
     /// <summary>
     /// Displays and manages the <see cref="MonsterObj"/> HUD during battle.
     /// </summary>
-    public class BattleHUD : MonoBehaviour
+    public class BattleHud : MonoBehaviour
     {
         [Header("Text Labels")]
         [Tooltip("Text element that displays the monster's name.")]
-        [SerializeField] Text nameText;
+        [SerializeField] private Text _nameText;
         [Tooltip("Text element that displays the monster's level.")]
-        [SerializeField] Text levelText;
+        [SerializeField] private Text _levelText;
         [Tooltip("Text element that displays the monster's status.")]
-        [SerializeField] Text statusText;
+        [SerializeField] private Text _statusText;
 
         [Header("UI Bars")]
         [Tooltip("The HP bar of the monster.")]
-        [SerializeField] HPBar hpBar;
+        [SerializeField] private HpBar _hpBar;
         [Tooltip("The XP bar of the monster.")]
-        [SerializeField] GameObject xpBar;
+        [SerializeField] private GameObject _xpBar;
 
         [Header("Status Colors")]
         [Tooltip("Color to change the text to when the monster is poisoned.")]
-        [SerializeField] Color psnColor;
+        [SerializeField] private Color _psnColor;
         [Tooltip("Color to change the text to when the monster is burned.")]
-        [SerializeField] Color brnColor;
+        [SerializeField] private Color _brnColor;
         [Tooltip("Color to change the text to when the monster is asleep.")]
-        [SerializeField] Color slpColor;
+        [SerializeField] private Color _slpColor;
         [Tooltip("Color to change the text to when the monster is paralyzed.")]
-        [SerializeField] Color parColor;
+        [SerializeField] private Color _parColor;
         [Tooltip("Color to change the text to when the monster is frozen.")]
-        [SerializeField] Color frzColor;
+        [SerializeField] private Color _frzColor;
 
-        private Dictionary<ConditionID, Color> statusColors;
+        private Dictionary<ConditionID, Color> _statusColors;
         private MonsterObj _monster;
 
         /// <summary>
@@ -48,17 +48,17 @@ namespace Itsdits.Ravar.UI
         public void SetData(MonsterObj monster)
         {
             _monster = monster;
-            nameText.text = monster.Base.Name;
+            _nameText.text = monster.Base.Name;
             SetLevel();
             SetExp();
-            hpBar.SetHP((float) monster.CurrentHp / monster.MaxHp);
-            statusColors = new Dictionary<ConditionID, Color>()
+            _hpBar.SetHp((float) monster.CurrentHp / monster.MaxHp);
+            _statusColors = new Dictionary<ConditionID, Color>
             {
-                { ConditionID.PSN, psnColor },
-                { ConditionID.BRN, brnColor },
-                { ConditionID.SLP, slpColor },
-                { ConditionID.PAR, parColor },
-                { ConditionID.FRZ, frzColor }
+                { ConditionID.Poison, _psnColor },
+                { ConditionID.Burn, _brnColor },
+                { ConditionID.Sleep, _slpColor },
+                { ConditionID.Paralyze, _parColor },
+                { ConditionID.Freeze, _frzColor }
             };
             SetStatusText();
             _monster.OnStatusChange += SetStatusText;
@@ -68,13 +68,15 @@ namespace Itsdits.Ravar.UI
         /// Update the monster HP.
         /// </summary>
         /// <returns>New HP to display.</returns>
-        public IEnumerator UpdateHP()
+        public IEnumerator UpdateHp()
         {
-            if (_monster.IsHpChanged)
+            if (!_monster.IsHpChanged)
             {
-                yield return hpBar.SlideHP((float)_monster.CurrentHp / _monster.MaxHp);
-                _monster.IsHpChanged = false;
+                yield break;
             }
+
+            yield return _hpBar.SlideHp((float)_monster.CurrentHp / _monster.MaxHp);
+            _monster.IsHpChanged = false;
         }
 
         /// <summary>
@@ -82,23 +84,9 @@ namespace Itsdits.Ravar.UI
         /// </summary>
         public void SetLevel()
         {
-            levelText.text = "Lvl " + _monster.Level;
+            _levelText.text = "Lvl " + _monster.Level;
         }
-
-        /// <summary>
-        /// Sets the XP bar.
-        /// </summary>
-        public void SetExp()
-        {
-            if (xpBar == null)
-            {
-                return;
-            }
-
-            float normalizedExp = GetNormalizedExp();
-            xpBar.transform.localScale = new Vector3(normalizedExp, 1, 1);
-        }
-
+        
         /// <summary>
         /// Slide the XP bar smoothly.
         /// </summary>
@@ -106,18 +94,29 @@ namespace Itsdits.Ravar.UI
         /// <returns>XP bar displaying current XP.</returns>
         public IEnumerator SlideExp(bool reset = false)
         {
-            if (xpBar == null)
+            if (_xpBar == null)
             {
                 yield break;
             }
 
             if (reset)
             {
-                xpBar.transform.localScale = new Vector3(0, 1, 1);
+                _xpBar.transform.localScale = new Vector3(0, 1, 1);
             }
 
             float normalizedExp = GetNormalizedExp();
-            yield return xpBar.transform.DOScaleX(normalizedExp, 1.5f).WaitForCompletion();
+            yield return _xpBar.transform.DOScaleX(normalizedExp, 1.5f).WaitForCompletion();
+        }
+        
+        private void SetExp()
+        {
+            if (_xpBar == null)
+            {
+                return;
+            }
+
+            float normalizedExp = GetNormalizedExp();
+            _xpBar.transform.localScale = new Vector3(normalizedExp, 1, 1);
         }
 
         private float GetNormalizedExp()
@@ -133,12 +132,13 @@ namespace Itsdits.Ravar.UI
         {
             if (_monster.Status == null)
             {
-                statusText.text = "";
+                _statusText.text = "";
             }
             else
             {
-                statusText.text = _monster.Status.Id.ToString().ToUpper();
-                statusText.color = statusColors[_monster.Status.Id];
+                //TODO - add status icons to replace the status text here
+                _statusText.text = _monster.Status.Id.ToString().ToUpper();
+                _statusText.color = _statusColors[_monster.Status.Id];
             }
         }
     }

@@ -1,23 +1,23 @@
 namespace Itsdits.Ravar.Monster 
 {
     /// <summary>
-    /// Type chart for strength and weakness defitions by <see cref="MonsterType"/>.
+    /// Type chart for strength and weakness definitions by <see cref="MonsterType"/>.
     /// </summary>
-    public class TypeChart
+    public static class TypeChart
     {
-        private static readonly float[][] chart =
+        private static readonly float[][] Chart =
         {
             // Normal, Aqua, Ember, Earth, Shock, Air, Spirit, Force, Shadow, Light
-            new float[] { 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f },       // Normal
-            new float[] { 1f, 0.5f, 2f, 0.5f, 1f, 1f, 1f, 1f, 1f, 1f },   // Aqua
-            new float[] { 1f, 0.5f, 0.5f, 2f, 1f, 1f, 1f, 1f, 1f, 1f },   // Ember
-            new float[] { 1f, 2f, 0.5f, 0.5f, 1f, 1f, 1f, 1f, 1f, 1f },   // Earth
-            new float[] { 1f, 2f, 1f, 0.5f, 0.5f, 2f, 1f, 1f, 1f, 1f },   // Shock
-            new float[] { 1f, 1f, 1f, 2f, 0.5f, 0.5f, 1f, 1f, 1f, 1f },   // Air
-            new float[] { 1f, 1f, 1f, 1f, 1f, 1f, 0.5f, 0.5f, 1f, 2f },   // Spirit
-            new float[] { 1f, 1f, 1f, 1f, 1f, 1f, 2f, 0.5f, 0.5f, 1f },   // Force
-            new float[] { 1f, 1f, 1f, 1f, 1f, 1f, 1f, 2f, 0.5f, 0.5f },   // Shadow
-            new float[] { 1f, 1f, 1f, 1f, 1f, 1f, 0.5f, 1f, 2f, 0.5f }    // Light
+            new[] { 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f },       // Normal
+            new[] { 1f, 0.5f, 2f, 0.5f, 1f, 1f, 1f, 1f, 1f, 1f },   // Aqua
+            new[] { 1f, 0.5f, 0.5f, 2f, 1f, 1f, 1f, 1f, 1f, 1f },   // Ember
+            new[] { 1f, 2f, 0.5f, 0.5f, 1f, 1f, 1f, 1f, 1f, 1f },   // Earth
+            new[] { 1f, 2f, 1f, 0.5f, 0.5f, 2f, 1f, 1f, 1f, 1f },   // Shock
+            new[] { 1f, 1f, 1f, 2f, 0.5f, 0.5f, 1f, 1f, 1f, 1f },   // Air
+            new[] { 1f, 1f, 1f, 1f, 1f, 1f, 0.5f, 0.5f, 1f, 2f },   // Spirit
+            new[] { 1f, 1f, 1f, 1f, 1f, 1f, 2f, 0.5f, 0.5f, 1f },   // Force
+            new[] { 1f, 1f, 1f, 1f, 1f, 1f, 1f, 2f, 0.5f, 0.5f },   // Shadow
+            new[] { 1f, 1f, 1f, 1f, 1f, 1f, 0.5f, 1f, 2f, 0.5f }    // Light
         };
 
         /// <summary>
@@ -34,10 +34,9 @@ namespace Itsdits.Ravar.Monster
                 return 1;
             }
 
-            int row = (int)attackType;
-            int col = (int)defenseType;
-
-            return chart[row][col];
+            var row = (int)attackType;
+            var col = (int)defenseType;
+            return Chart[row][col];
         }
     }
 }

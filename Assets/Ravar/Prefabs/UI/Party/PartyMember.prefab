@@ -245,7 +245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2837d21fc8a798e4ba53a27e6b1d3c1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: {fileID: 326657734199550582}
+  _health: {fileID: 326657734199550582}
 --- !u!1 &6332367519382523054
 GameObject:
   m_ObjectHideFlags: 0
@@ -570,8 +570,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6f6a647075b1de4babfa10c134bb4b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: {fileID: 4778377593361921047}
-  levelText: {fileID: 4192293983187268596}
-  hpBar: {fileID: 360092856086222366}
-  highlightColor: {r: 0.004449993, g: 0.10303668, b: 0.9433962, a: 1}
-  standardColor: {r: 0.7607843, g: 0.7607843, b: 0.7607843, a: 1}
+  _nameText: {fileID: 4778377593361921047}
+  _levelText: {fileID: 4192293983187268596}
+  _hpBar: {fileID: 360092856086222366}
+  _highlightColor: {r: 0.19188325, g: 0.24555835, b: 0.8301887, a: 1}
+  _standardColor: {r: 0.7607843, g: 0.7607843, b: 0.7607843, a: 1}
