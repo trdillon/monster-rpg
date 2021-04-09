@@ -2,7 +2,7 @@ using Itsdits.Ravar.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEditor;
+using Itsdits.Ravar.UI;
 using UnityEngine;
 
 namespace Itsdits.Ravar.Monster 
@@ -14,19 +14,19 @@ namespace Itsdits.Ravar.Monster
     public class MonsterObj
     {
         [Tooltip("The base class of this monster.")]
-        [SerializeField] MonsterBase _base;
+        [SerializeField] private MonsterBase _base;
         [Tooltip("The current level of this monster.")]
-        [SerializeField] int level;
+        [SerializeField] private int _level;
 
         /// <summary>
         /// Constructor used for wild encounters.
         /// </summary>
-        /// <param name="mbase">Monster base to construct from.</param>
-        /// <param name="mlvl">Level to construct the monster at.</param>
-        public MonsterObj(MonsterBase mbase, int mlvl)
+        /// <param name="mBase">Monster base to construct from.</param>
+        /// <param name="level">Level to construct the monster at.</param>
+        public MonsterObj(MonsterBase mBase, int level)
         {
-            _base = mbase;
-            level = mlvl;
+            _base = mBase;
+            _level = level;
             Init();
         }
 
@@ -37,15 +37,15 @@ namespace Itsdits.Ravar.Monster
         public MonsterObj(MonsterData monsterData)
         {
             _base = Resources.Load<MonsterBase>($"Monsters/{monsterData.monsterName}");
-            level = monsterData.currentLevel;
+            _level = monsterData.currentLevel;
             Exp = monsterData.currentExp;
             CurrentHp = monsterData.currentHp;
             Moves = new List<MoveObj>();
 
-            for (int i = 0; i < monsterData.currentMoves.Length; i++)
+            for (var i = 0; i < monsterData.currentMoves.Length; i++)
             {
                 var moveBase = Resources.Load<MoveBase>($"Moves/{monsterData.currentMoves[i]}");
-                var moveEnergy = monsterData.currentEnergy[i];
+                int moveEnergy = monsterData.currentEnergy[i];
                 var move = new MoveObj(moveBase, moveEnergy);
                 Moves.Add(move);
             }
@@ -64,7 +64,7 @@ namespace Itsdits.Ravar.Monster
         /// <summary>
         /// Current level of the monster.
         /// </summary>
-        public int Level => level;
+        public int Level => _level;
         /// <summary>
         /// Current experience of the monster.
         /// </summary>
@@ -78,7 +78,7 @@ namespace Itsdits.Ravar.Monster
         /// </summary>
         public int MaxHp { get; private set; }
         /// <summary>
-        /// Checks if HP has changed to update the <see cref="UI.BattleHUD"/>.
+        /// Checks if HP has changed to update the <see cref="BattleHud"/>.
         /// </summary>
         public bool IsHpChanged { get; set; }
         /// <summary>
@@ -148,7 +148,7 @@ namespace Itsdits.Ravar.Monster
         public void Init()
         {
             Moves = new List<MoveObj>();
-            foreach (var move in Base.LearnableMoves)
+            foreach (LearnableMove move in Base.LearnableMoves)
             {
                 if (move.LevelLearned <= Level)
                 {
@@ -181,14 +181,15 @@ namespace Itsdits.Ravar.Monster
         public DamageDetails TakeDamage(MoveObj move, MonsterObj attacker)
         {
             // Critical hit chance is 6.25%.
-            float critical = 1f;
+            var critical = 1f;
             if (UnityEngine.Random.value * 100f <= 6.25f)
             {
                 critical = 2f;
             }
 
             // Type effectiveness defined in TypeChart.
-            float type = TypeChart.GetEffectiveness(move.Base.Type, Base.PrimaryType) * TypeChart.GetEffectiveness(move.Base.Type, Base.SecondaryType);
+            float type = TypeChart.GetEffectiveness(move.Base.Type, Base.PrimaryType) * 
+                         TypeChart.GetEffectiveness(move.Base.Type, Base.SecondaryType);
 
             var damageDetails = new DamageDetails()
             {
@@ -203,10 +204,10 @@ namespace Itsdits.Ravar.Monster
             // Damage calculation based on the original game's formula.
             float modifiers = UnityEngine.Random.Range(0.85f, 1f) * type * critical;
             float a = (2 * attacker.Level + 10) / 250f;
-            float d = a * move.Base.Power * ((float)attack / defense) + 2;
+            float d = a * move.Base.Power * (attack / defense) + 2;
             int damage = Mathf.FloorToInt(d * modifiers);
 
-            UpdateHP(damage);
+            UpdateHp(damage);
             return damageDetails;
         }
 
@@ -216,18 +217,23 @@ namespace Itsdits.Ravar.Monster
         /// <returns>True if monster can attack or false if not.</returns>
         public bool CheckIfCanAttack()
         {
-            bool canAttack = true;
-
+            var canAttack = true;
             if (Status?.OnTurnStart != null)
             {
                 if (!Status.OnTurnStart(this))
+                {
                     canAttack = false;
+                }
             }
 
-            if (VolatileStatus?.OnTurnStart != null)
+            if (VolatileStatus?.OnTurnStart == null)
             {
-                if (!VolatileStatus.OnTurnStart(this))
-                    canAttack = false;
+                return canAttack;
+            }
+
+            if (!VolatileStatus.OnTurnStart(this))
+            {
+                canAttack = false;
             }
 
             return canAttack;
@@ -237,7 +243,7 @@ namespace Itsdits.Ravar.Monster
         /// Update monster HP after taking damage.
         /// </summary>
         /// <param name="damage">How much damage was taken.</param>
-        public void UpdateHP(int damage)
+        public void UpdateHp(int damage)
         {
             CurrentHp = Mathf.Clamp(CurrentHp - damage, 0, MaxHp);
             IsHpChanged = true;
@@ -250,20 +256,15 @@ namespace Itsdits.Ravar.Monster
         /// <param name="statChanges">Changes to apply.</param>
         public void ApplyStatChanges(List<StatChange> statChanges)
         {
-            foreach (var statChange in statChanges)
+            foreach (StatChange statChange in statChanges)
             {
-                var stat = statChange.stat;
-                var changeVal = statChange.changeVal;
+                MonsterStat stat = statChange.stat;
+                int changeVal = statChange.changeVal;
                 StatsChanged[stat] = Mathf.Clamp(StatsChanged[stat] + changeVal, -6, 6);
 
-                if (changeVal > 0)
-                {
-                    StatusChanges.Enqueue($"{Base.Name}'s {stat} increased!");
-                }
-                else
-                {
-                    StatusChanges.Enqueue($"{Base.Name}'s {stat} decreased!");
-                }
+                StatusChanges.Enqueue(changeVal > 0
+                                          ? $"{Base.Name}'s {stat} increased!"
+                                          : $"{Base.Name}'s {stat} decreased!");
             }
         }
 
@@ -271,17 +272,17 @@ namespace Itsdits.Ravar.Monster
         {
             Stats = new Dictionary<MonsterStat, int>
             {
-                { MonsterStat.Attack, Mathf.FloorToInt((Base.Attack * Level) / 100f) + 5 },
-                { MonsterStat.Defense, Mathf.FloorToInt((Base.Defense * Level) / 100f) + 5 },
-                { MonsterStat.SpAttack, Mathf.FloorToInt((Base.SpAttack * Level) / 100f) + 5 },
-                { MonsterStat.SpDefense, Mathf.FloorToInt((Base.SpDefense * Level) / 100f) + 5 },
-                { MonsterStat.Speed, Mathf.FloorToInt((Base.Speed * Level) / 100f) + 5 }
+                { MonsterStat.Attack, Mathf.FloorToInt(Base.Attack * Level / 100f) + 5 },
+                { MonsterStat.Defense, Mathf.FloorToInt(Base.Defense * Level / 100f) + 5 },
+                { MonsterStat.SpAttack, Mathf.FloorToInt(Base.SpAttack * Level / 100f) + 5 },
+                { MonsterStat.SpDefense, Mathf.FloorToInt(Base.SpDefense * Level / 100f) + 5 },
+                { MonsterStat.Speed, Mathf.FloorToInt(Base.Speed * Level / 100f) + 5 }
             };
-            MaxHp = Mathf.FloorToInt((Base.MaxHp * Level) / 100f) + 10 + Level;
+            MaxHp = Mathf.FloorToInt(Base.MaxHp * Level / 100f) + 10 + Level;
         }
         private void ResetStatsChanged()
         {
-            StatsChanged = new Dictionary<MonsterStat, int>()
+            StatsChanged = new Dictionary<MonsterStat, int>
             {
                 {MonsterStat.Attack, 0},
                 {MonsterStat.Defense, 0},
@@ -299,16 +300,10 @@ namespace Itsdits.Ravar.Monster
 
             // Stat changes based on original game's formula.
             int changeVal = StatsChanged[stat];
-            var changeVals = new float[] { 1f, 1.5f, 2f, 2.5f, 3f, 3.5f, 4f };
+            float[] changeVals = { 1f, 1.5f, 2f, 2.5f, 3f, 3.5f, 4f };
 
-            if (changeVal >= 0)
-            {
-                statVal = Mathf.FloorToInt(statVal * changeVals[changeVal]);
-            }
-            else
-            {
-                statVal = Mathf.FloorToInt(statVal / changeVals[-changeVal]);
-            }
+            statVal = changeVal >= 0 ? Mathf.FloorToInt(statVal * changeVals[changeVal]) : 
+                                       Mathf.FloorToInt(statVal / changeVals[-changeVal]);
 
             return statVal;
         }
@@ -330,7 +325,11 @@ namespace Itsdits.Ravar.Monster
 
             Status = ConditionDB.Conditions[conditionID];
             Status?.OnStart?.Invoke(this);
-            StatusChanges.Enqueue($"{Base.Name} {Status.StartMessage}");
+            if (Status != null)
+            {
+                StatusChanges.Enqueue($"{Base.Name} {Status.StartMessage}");
+            }
+
             OnStatusChange?.Invoke();
         }
 
@@ -348,7 +347,10 @@ namespace Itsdits.Ravar.Monster
             
             VolatileStatus = ConditionDB.Conditions[conditionID];
             VolatileStatus?.OnStart?.Invoke(this);
-            StatusChanges.Enqueue($"{Base.Name} {VolatileStatus.StartMessage}");
+            if (VolatileStatus != null)
+            {
+                StatusChanges.Enqueue($"{Base.Name} {VolatileStatus.StartMessage}");
+            }
         }
 
         /// <summary>
@@ -398,7 +400,7 @@ namespace Itsdits.Ravar.Monster
             {
                 return;
             }
-
+            Debug.Log($"Learning {newMove.Base.Name}");
             Moves.Add(new MoveObj(newMove.Base));
         }
 
@@ -408,6 +410,7 @@ namespace Itsdits.Ravar.Monster
         /// <param name="oldMove">Move to forget.</param>
         public void ForgetMove(MoveObj oldMove)
         {
+            Debug.Log($"Forgetting {oldMove.Base.Name}");
             Moves.Remove(oldMove);
         }
 
@@ -417,7 +420,7 @@ namespace Itsdits.Ravar.Monster
         /// <returns>Move that can be learned or null if no new moves at this level.</returns>
         public LearnableMove GetLearnableMove()
         {
-            return Base.LearnableMoves.Where(m => m.LevelLearned == level).FirstOrDefault();
+            return Base.LearnableMoves.FirstOrDefault(m => m.LevelLearned == _level);
         }
 
         /// <summary>
@@ -427,17 +430,15 @@ namespace Itsdits.Ravar.Monster
         /// <returns>Move to use on this turn.</returns>
         public MoveObj GetRandomMove()
         {
-            var usableMoves = Moves.Where(m => m.Energy > 0).ToList();
-            if (usableMoves.Count > 0)
+            List<MoveObj> usableMoves = Moves.Where(m => m.Energy > 0).ToList();
+            if (usableMoves.Count <= 0)
             {
-                int i = UnityEngine.Random.Range(0, usableMoves.Count);
-                return usableMoves[i];
-            }
-            else
-            {
-                Debug.Log($"{Base.Name} has no usable moves.");
+                //TODO - handle this case properly
                 return null;
             }
+
+            int i = UnityEngine.Random.Range(0, usableMoves.Count);
+            return usableMoves[i];
         }
 
         /// <summary>
@@ -446,12 +447,13 @@ namespace Itsdits.Ravar.Monster
         /// <returns>Level increase if true, nothing if false.</returns>
         public bool CheckForLevelUp()
         {
-            if (Exp > Base.GetExpForLevel(level + 1)) {
-                ++level;
-                return true;
+            if (Exp <= Base.GetExpForLevel(_level + 1))
+            {
+                return false;
             }
 
-            return false;
+            ++_level;
+            return true;
         }
 
         ////////////// SAVE AND LOAD FUNCTIONS ////////////////
@@ -476,24 +478,12 @@ namespace Itsdits.Ravar.Monster
 
         private string[] GetMoveListOnSave()
         {
-            List<string> moveList = new List<string>();
-            foreach (var move in Moves)
-            {
-                moveList.Add(move.Base.MoveName);
-            }
-
-            return moveList.ToArray();
+            return Moves.Select(move => move.Base.MoveName).ToArray();
         }
 
         private int[] GetMoveEnergyOnSave()
         {
-            List<int> moveList = new List<int>();
-            foreach (var move in Moves)
-            {
-                moveList.Add(move.Energy);
-            }
-            
-            return moveList.ToArray();
+            return Moves.Select(move => move.Energy).ToArray();
         }
     }
 }

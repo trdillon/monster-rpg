@@ -10,15 +10,15 @@ namespace Itsdits.Ravar.UI
     public class PartyMemberUI : MonoBehaviour
     {
         [Tooltip("The Text element that displays the monster's name.")]
-        [SerializeField] Text nameText;
+        [SerializeField] private Text _nameText;
         [Tooltip("The Text element that displays the monster's level.")]
-        [SerializeField] Text levelText;
+        [SerializeField] private Text _levelText;
         [Tooltip("The GameObject that holds the monster's HP bar.")]
-        [SerializeField] HPBar hpBar;
+        [SerializeField] private HpBar _hpBar;
         [Tooltip("The color to change the text to when highlighted.")]
-        [SerializeField] Color highlightColor;
+        [SerializeField] private Color _highlightColor;
         [Tooltip("The color to display when the text is not highlighted.")]
-        [SerializeField] Color standardColor;
+        [SerializeField] private Color _standardColor;
 
         /// <summary>
         /// Populate the UI with Monster data.
@@ -26,9 +26,9 @@ namespace Itsdits.Ravar.UI
         /// <param name="monster">Monster in party.</param>
         public void SetData(MonsterObj monster)
         {
-            nameText.text = monster.Base.Name;
-            levelText.text = "Lvl " + monster.Level;
-            hpBar.SetHP((float)monster.CurrentHp / monster.MaxHp);
+            _nameText.text = monster.Base.Name;
+            _levelText.text = "Lvl " + monster.Level;
+            _hpBar.SetHp((float)monster.CurrentHp / monster.MaxHp);
         }
 
         /// <summary>
@@ -37,14 +37,7 @@ namespace Itsdits.Ravar.UI
         /// <param name="selected">Is the monster selected or not.</param>
         public void SetSelected(bool selected)
         {
-            if (selected)
-            {
-                nameText.color = highlightColor;
-            }
-            else
-            {
-                nameText.color = standardColor;
-            }
+            _nameText.color = selected ? _highlightColor : _standardColor;
         }
     }
 }

@@ -8,53 +8,55 @@ namespace Itsdits.Ravar.Animation
     /// </summary>
     public class SpriteAnimator
     {
-        private int currentFrame;
-        private float frameRate;
-        private float timer;
-        private List<Sprite> frames;
-        private SpriteRenderer spriteRenderer;
+        private readonly SpriteRenderer _spriteRenderer;
+        private readonly List<Sprite> _frames;
+        private readonly float _frameRate;
+        private int _currentFrame;
+        private float _timer;
         
         /// <summary>
         /// Constructor for a SpriteAnimator.
         /// </summary>
-        /// <param name="frames">List<Sprite> of frames to animate.</param>
-        /// <param name="spriteRenderer">A SpriteRenderer reference.</param>
+        /// <param name="frames">List of Sprite frames to animate.</param>
+        /// <param name="spriteRenderer">The SpriteRenderer to pass to the SpriteAnimator.</param>
         /// <param name="frameRate">Animation frameRate, default is 0.16f.</param>
         public SpriteAnimator(List<Sprite> frames, SpriteRenderer spriteRenderer, float frameRate = 0.16f)
         {
-            this.frames = frames;
-            this.spriteRenderer = spriteRenderer;
-            this.frameRate = frameRate;
+            _frames = frames;
+            _spriteRenderer = spriteRenderer;
+            _frameRate = frameRate;
         }
 
         /// <summary>
         /// List of frames in the animation.
         /// </summary>
-        public List<Sprite> Frames => frames;
+        public List<Sprite> Frames => _frames;
 
         /// <summary>
-        /// Initialize the SpriteAnimator.
+        /// Reset the SpriteAnimator to the initial state.
         /// </summary>
-        public void Start()
+        public void Reset()
         {
-            currentFrame = 0;
-            timer = 0;
-            spriteRenderer.sprite = frames[0];
+            _currentFrame = 0;
+            _timer = 0;
+            _spriteRenderer.sprite = _frames[0];
         }
 
         /// <summary>
-        /// Handle the sprite switching for frames.
+        /// Play the animation.
         /// </summary>
-        public void HandleUpdate()
+        public void PlayAnimation()
         {
-            timer += Time.deltaTime;
-            if (timer > frameRate)
+            _timer += Time.deltaTime;
+            if (!(_timer > _frameRate))
             {
-                // Loop back after the last frame.
-                currentFrame = (currentFrame + 1) % frames.Count;
-                spriteRenderer.sprite = frames[currentFrame];
-                timer -= frameRate;
+                return;
             }
+
+            // Loop back after the last frame.
+            _currentFrame = (_currentFrame + 1) % _frames.Count;
+            _spriteRenderer.sprite = _frames[_currentFrame];
+            _timer -= _frameRate;
         }
     }
 }

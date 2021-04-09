@@ -13,18 +13,19 @@ MonoBehaviour:
   m_Name: BranchSmack
   m_EditorClassIdentifier: 
   _name: Branch Smack
-  description: Smacks the opponent with a tree branch.
-  moveNumber: 6
-  power: 45
-  accuracy: 95
-  energy: 25
-  priority: 0
-  alwaysHits: 0
-  type: 3
-  category: 1
-  target: 0
-  effects:
-    statChanges: []
-    status: 0
-    volatileStatus: 0
-  moveSecondaryEffects: []
+  _description: Smack the enemy with a tree branch, dealing a decent amount of Earth
+    damage.
+  _moveNumber: 8
+  _power: 40
+  _accuracy: 95
+  _energy: 30
+  _priority: 0
+  _alwaysHits: 0
+  _type: 3
+  _category: 1
+  _target: 0
+  _effects:
+    _statChanges: []
+    _status: 0
+    _volatileStatus: 0
+  _moveSecondaryEffects: []

@@ -302,18 +302,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: Error Battler
-  sprite: {fileID: 21300000, guid: 78bcc0d5a552b4642908b5f74d751d30, type: 3}
-  state: 0
-  introDialog:
-    strings:
-    - If you're seeing this something went wrong.
-    - 'Please contact the developer. Error code: N002'
-  outroDialog:
-    strings:
-    - If you're seeing this something went wrong.
-    - 'Please contact the developer. Error code: N003'
-  alert: {fileID: 4234512493976123532}
-  los: {fileID: 4234512493961276577}
+  _sprite: {fileID: 21300000, guid: a0e8a29eddec6794f9e41d070886352f, type: 3}
+  _state: 0
+  _introDialog:
+    _strings:
+    - Intro dialog not set. Please create intro dialog.
+  _outroDialog:
+    _strings:
+    - Outro dialog not set. Please create outro dialog.
+  _alert: {fileID: 4234512493976123532}
+  _los: {fileID: 4234512493961276577}
 --- !u!114 &4234512495102130384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -326,23 +324,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 525ca2a005b69b144bfa53bec249b8a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultDirection: 0
-  walkDownSprites:
+  _defaultDirection: 0
+  _walkDownSprites:
   - {fileID: 2423726751059629900, guid: 1be55108d0433cc4aba764dd1aa6c6d4, type: 3}
   - {fileID: 7258174723207886121, guid: 1be55108d0433cc4aba764dd1aa6c6d4, type: 3}
   - {fileID: 3652049239405026752, guid: 1be55108d0433cc4aba764dd1aa6c6d4, type: 3}
   - {fileID: 5583329630910718434, guid: 1be55108d0433cc4aba764dd1aa6c6d4, type: 3}
-  walkLeftSprites:
+  _walkLeftSprites:
   - {fileID: -1922523377811942926, guid: 1be55108d0433cc4aba764dd1aa6c6d4, type: 3}
   - {fileID: -1580786866365917475, guid: 1be55108d0433cc4aba764dd1aa6c6d4, type: 3}
   - {fileID: -1159846564368092690, guid: 1be55108d0433cc4aba764dd1aa6c6d4, type: 3}
   - {fileID: 8484457348390384610, guid: 1be55108d0433cc4aba764dd1aa6c6d4, type: 3}
-  walkRightSprites:
+  _walkRightSprites:
   - {fileID: 3145042068304504565, guid: 1be55108d0433cc4aba764dd1aa6c6d4, type: 3}
   - {fileID: -1391858947430429793, guid: 1be55108d0433cc4aba764dd1aa6c6d4, type: 3}
   - {fileID: 2631830992386224291, guid: 1be55108d0433cc4aba764dd1aa6c6d4, type: 3}
   - {fileID: 1195268277009449881, guid: 1be55108d0433cc4aba764dd1aa6c6d4, type: 3}
-  walkUpSprites:
+  _walkUpSprites:
   - {fileID: 7825975997861530793, guid: 1be55108d0433cc4aba764dd1aa6c6d4, type: 3}
   - {fileID: 7039857337815168524, guid: 1be55108d0433cc4aba764dd1aa6c6d4, type: 3}
   - {fileID: 9029467800418536703, guid: 1be55108d0433cc4aba764dd1aa6c6d4, type: 3}
@@ -359,9 +357,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abcb05ef3dd8d0e4cae1c3f241d6346d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monsters:
+  _monsters:
   - _base: {fileID: 11400000, guid: db47c7d4430271e48826759bc32b9285, type: 2}
-    level: 1
+    _level: 1
 --- !u!114 &2390461265131322683
 MonoBehaviour:
   m_ObjectHideFlags: 0

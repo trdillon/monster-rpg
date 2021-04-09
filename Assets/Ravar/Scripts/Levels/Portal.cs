@@ -14,18 +14,18 @@ namespace Itsdits.Ravar.Levels
     public class Portal : MonoBehaviour, ITriggerable
     {
         [Tooltip("The ID for this portal. Used to match portals in different scenes to ensure the player is sent to the correct destination.")]
-        [SerializeField] PortalID portalId;
+        [SerializeField] private PortalID _portalId;
         [Tooltip("Index of the scene to load when the portal is triggered. Number is determined by the build index.")]
-        [SerializeField] int sceneToLoad = -1;
+        [SerializeField] private int _sceneToLoad = -1;
         [Tooltip("The spawn point the player should be placed at when the portal is used.")]
-        [SerializeField] Transform spawnPoint;
+        [SerializeField] private Transform _spawnPoint;
 
-        private PlayerController player;
+        private PlayerController _player;
 
         /// <summary>
         /// The spawn point the player should be placed at when the portal is used.
         /// </summary>
-        public Transform SpawnPoint => spawnPoint;
+        public Transform SpawnPoint => _spawnPoint;
 
         /// <summary>
         /// What happens when the portal is triggered.
@@ -33,7 +33,7 @@ namespace Itsdits.Ravar.Levels
         /// <param name="player">The player that triggered the portal.</param>
         public void OnTriggered(PlayerController player)
         {
-            this.player = player;
+            _player = player;
             StartCoroutine(SwitchScene());
         }
 
@@ -42,11 +42,12 @@ namespace Itsdits.Ravar.Levels
             DontDestroyOnLoad(gameObject);
             GameController.Instance.FreezePlayer(true);
 
-            yield return SceneManager.LoadSceneAsync(sceneToLoad);
+            yield return SceneManager.LoadSceneAsync(_sceneToLoad);
             GameController.Instance.UpdateCurrentScene();
 
-            var destination = FindObjectsOfType<Portal>().First(x => x != this && x.portalId == this.portalId);
-            player.SetOffsetOnTile(destination.SpawnPoint.position);
+            //TODO - refactor this to avoid FOOT call
+            Portal destination = FindObjectsOfType<Portal>().First(x => x != this && x._portalId == _portalId);
+            _player.SetOffsetOnTile(destination.SpawnPoint.position);
 
             GameController.Instance.FreezePlayer(false);
             Destroy(gameObject);

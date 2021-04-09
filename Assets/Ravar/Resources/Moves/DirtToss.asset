@@ -13,21 +13,21 @@ MonoBehaviour:
   m_Name: DirtToss
   m_EditorClassIdentifier: 
   _name: Dirt Toss
-  description: Toss dirt in the opponent's face, blurring their vision and lowering
+  _description: Toss dirt in the face of the enemy, obscuring their vision and lowering
     their Accuracy.
-  moveNumber: 9
-  power: 0
-  accuracy: 80
-  energy: 30
-  priority: 0
-  alwaysHits: 0
-  type: 0
-  category: 2
-  target: 1
-  effects:
-    statChanges:
+  _moveNumber: 5
+  _power: 0
+  _accuracy: 95
+  _energy: 40
+  _priority: 0
+  _alwaysHits: 0
+  _type: 0
+  _category: 2
+  _target: 0
+  _effects:
+    _statChanges:
     - stat: 5
       changeVal: -1
-    status: 0
-    volatileStatus: 0
-  moveSecondaryEffects: []
+    _status: 0
+    _volatileStatus: 0
+  _moveSecondaryEffects: []

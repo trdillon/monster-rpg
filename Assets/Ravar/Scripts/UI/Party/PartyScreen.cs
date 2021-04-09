@@ -11,17 +11,17 @@ namespace Itsdits.Ravar.UI
     public class PartyScreen : MonoBehaviour
     {
         [Tooltip("The message Text to display in the screen.")]
-        [SerializeField] Text messageText;
+        [SerializeField] private Text _messageText;
 
-        private PartyMemberUI[] members;
-        private List<MonsterObj> monsters;
+        private PartyMemberUI[] _members;
+        private List<MonsterObj> _monsters;
 
         /// <summary>
         /// Initialize the members array.
         /// </summary>
         public void Init()
         {
-            members = GetComponentsInChildren<PartyMemberUI>(true);
+            _members = GetComponentsInChildren<PartyMemberUI>(true);
         }
 
         /// <summary>
@@ -30,21 +30,20 @@ namespace Itsdits.Ravar.UI
         /// <param name="monsters">Monsters in party</param>
         public void SetPartyData(List<MonsterObj> monsters)
         {
-            this.monsters = monsters;
-
-            for (int i = 0; i < members.Length; i++)
+            _monsters = monsters;
+            for (var i = 0; i < _members.Length; i++)
             {
                 if (i < monsters.Count)
                 {
-                    members[i].gameObject.SetActive(true);
-                    members[i].SetData(monsters[i]);
+                    _members[i].gameObject.SetActive(true);
+                    _members[i].SetData(monsters[i]);
                 } 
                 else
                 {
-                    members[i].gameObject.SetActive(false);
+                    _members[i].gameObject.SetActive(false);
                 }   
             }
-            messageText.text = "Select a Battokuri";
+            _messageText.text = "Select a Battokuri";
         }
 
         /// <summary>
@@ -53,16 +52,9 @@ namespace Itsdits.Ravar.UI
         /// <param name="selectedMember">Index of monster selected</param>
         public void UpdateMemberSelection(int selectedMember)
         {
-            for (int i = 0; i < monsters.Count; i++)
+            for (var i = 0; i < _monsters.Count; i++)
             {
-                if (i == selectedMember)
-                {
-                    members[i].SetSelected(true);
-                } 
-                else
-                {
-                    members[i].SetSelected(false);
-                }
+                _members[i].SetSelected(i == selectedMember);
             }
         }
 
@@ -72,14 +64,7 @@ namespace Itsdits.Ravar.UI
         /// <param name="message">String to display</param>
         public void SetMessageText(string message)
         {
-            if (message == null)
-            {
-                messageText.text = "";
-            }
-            else
-            {
-                messageText.text = message;
-            }
+            _messageText.text = message ?? "";
         }
     }
 }

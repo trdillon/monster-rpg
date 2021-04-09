@@ -10,7 +10,7 @@ namespace Itsdits.Ravar.Character
         /// <summary>
         /// Interact with characters, objects, etc.
         /// </summary>
-        /// <param name="interactor">Who or what to interact with.</param>
-        void InteractWith(Transform interactor);
+        /// <param name="interactingCharacter">Who or what to interact with.</param>
+        void InteractWith(Transform interactingCharacter);
     }
 }

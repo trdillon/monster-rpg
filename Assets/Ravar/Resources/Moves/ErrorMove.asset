@@ -13,19 +13,18 @@ MonoBehaviour:
   m_Name: ErrorMove
   m_EditorClassIdentifier: 
   _name: Error Move
-  description: 'This move represents an error condition. If you''re seeing this,
-    something went wrong. Please contact the developer. Error code: M002'
-  moveNumber: 999
-  power: 1
-  accuracy: 10
-  energy: 10
-  priority: 0
-  alwaysHits: 0
-  type: 0
-  category: 0
-  target: 0
-  effects:
-    statChanges: []
-    status: 0
-    volatileStatus: 0
-  moveSecondaryEffects: []
+  _description: Error move. This is for debugging only.
+  _moveNumber: 999
+  _power: 1
+  _accuracy: 10
+  _energy: 10
+  _priority: 0
+  _alwaysHits: 0
+  _type: 0
+  _category: 0
+  _target: 0
+  _effects:
+    _statChanges: []
+    _status: 0
+    _volatileStatus: 0
+  _moveSecondaryEffects: []

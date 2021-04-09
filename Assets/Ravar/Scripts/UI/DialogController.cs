@@ -19,25 +19,25 @@ namespace Itsdits.Ravar.UI
 
         [Header("Dialog Box")]
         [Tooltip("The GameObject holding the DialogBox.")]
-        [SerializeField] GameObject dialogBox;
+        [SerializeField] private GameObject _dialogBox;
         [Tooltip("The Text element of the DialogBox.")]
-        [SerializeField] Text dialogText;
+        [SerializeField] private Text _dialogText;
 
         [Header("Name Plate")]
         [Tooltip("The nameplate of the character that is displaying dialog.")]
-        [SerializeField] GameObject namePlate;
+        [SerializeField] private GameObject _namePlate;
         [Tooltip("The Text element that displays the name.")]
-        [SerializeField] Text nameText;
+        [SerializeField] private Text _nameText;
 
         [Header("Type Speed")]
         [Tooltip("How fast the dialog is typed on screen, default is 45.")]
-        [SerializeField] int lettersPerSecond = 45;
+        [SerializeField] private int _lettersPerSecond = 45;
 
-        private Dialog dialog;
-        private int currentString = 0;
-        private bool isTyping;
+        private Dialog _dialog;
+        private int _currentString;
+        private bool _isTyping;
         
-        private Action onDialogFinished;
+        private Action _onDialogFinished;
         public event Action OnShowDialog;
         public event Action OnCloseDialog;
 
@@ -50,9 +50,9 @@ namespace Itsdits.Ravar.UI
         /// Show the dialog box on the screen.
         /// </summary>
         /// <param name="dialog">Dialog to show.</param>
-        /// <param name="name">Name of character to display on name plate.</param>
+        /// <param name="speakerName">Name of character to display on name plate.</param>
         /// <param name="onFinished">What to do after showing.</param>
-        public IEnumerator ShowDialog(Dialog dialog, string name, Action onFinished = null)
+        public IEnumerator ShowDialog(Dialog dialog, string speakerName, Action onFinished = null)
         {
             if (dialog.Strings.Count > 0)
             {
@@ -60,17 +60,16 @@ namespace Itsdits.Ravar.UI
                 // otherwise we might skip the first string.
                 yield return new WaitForEndOfFrame();
                 OnShowDialog?.Invoke();
-                this.dialog = dialog;
-                onDialogFinished = onFinished;
-                dialogBox.SetActive(true);
-                SetNamePlate(name);
+                _dialog = dialog;
+                _onDialogFinished = onFinished;
+                _dialogBox.SetActive(true);
+                SetNamePlate(speakerName);
                 StartCoroutine(TypeDialog(dialog.Strings[0]));
             }
             else
             {
-                // Error if dialog was null.
-                Debug.LogError("Null dialog was passed to ShowDialog.");
                 GameController.Instance.ReleasePlayer();
+                throw new ArgumentException("Null dialog passed into ShowDialog method.");
             }
         }
 
@@ -79,48 +78,50 @@ namespace Itsdits.Ravar.UI
         /// </summary>
         public void HandleUpdate()
         {
-            if (Keyboard.current.zKey.wasPressedThisFrame && !isTyping)
+            if (!Keyboard.current.zKey.wasPressedThisFrame || _isTyping)
             {
-                ++currentString;
-                if (currentString < dialog.Strings.Count)
-                {
-                    StartCoroutine(TypeDialog(dialog.Strings[currentString]));
-                }
-                else
-                {
-                    currentString = 0;
-                    dialogBox.SetActive(false);
-                    onDialogFinished?.Invoke();
-                    OnCloseDialog?.Invoke();
-                }
+                return;
+            }
+
+            ++_currentString;
+            if (_currentString < _dialog.Strings.Count)
+            {
+                StartCoroutine(TypeDialog(_dialog.Strings[_currentString]));
+            }
+            else
+            {
+                _currentString = 0;
+                _dialogBox.SetActive(false);
+                _onDialogFinished?.Invoke();
+                OnCloseDialog?.Invoke();
             }
         }
 
         private IEnumerator TypeDialog(string dialog)
         {
-            isTyping = true;
-            dialogText.text = "";
+            _isTyping = true;
+            _dialogText.text = "";
 
-            foreach (var letter in dialog.ToCharArray())
+            foreach (char letter in dialog)
             {
-                dialogText.text += letter;
-                yield return new WaitForSeconds(1f / lettersPerSecond);
+                _dialogText.text += letter;
+                yield return new WaitForSeconds(1f / _lettersPerSecond);
             }
 
-            isTyping = false;
+            _isTyping = false;
         }
 
-        private void SetNamePlate(string name)
+        private void SetNamePlate(string speakerName)
         {
-            if (name != null && name.Length > 1)
+            if (speakerName != null && speakerName.Length > 1)
             {
-                nameText.text = name;
-                namePlate.SetActive(true);
+                _nameText.text = speakerName;
+                _namePlate.SetActive(true);
             }
             else
             {
-                nameText.text = "MISSING";
-                namePlate.SetActive(true);
+                _nameText.text = "MISSING";
+                _namePlate.SetActive(true);
             }
         }
     }

@@ -9,19 +9,19 @@ namespace Itsdits.Ravar.UI
     public class MenuController : MonoBehaviour
     {
         [Tooltip("GameObject that holds the MenuBox canvas.")]
-        [SerializeField] MenuBox menuBox;
+        [SerializeField] private MenuBox _menuBox;
 
-        private int currentMain;
-        private int currentLoad;
-        private int currentSetting;
-        private int currentInfo;
+        private int _currentMain;
+        private int _currentLoad;
+        private int _currentSetting;
+        private int _currentInfo;
 
-        private MenuState state;
+        private MenuState _state;
 
         /// <summary>
         /// Current state of the main menu.
         /// </summary>
-        public MenuState State => state;
+        public MenuState State => _state;
 
         private void Awake()
         {
@@ -30,19 +30,19 @@ namespace Itsdits.Ravar.UI
 
         private void Update()
         {
-            if (state == MenuState.Main)
+            if (_state == MenuState.Main)
             {
                 HandleMainSelection();
             }
-            else if (state == MenuState.Loader)
+            else if (_state == MenuState.Loader)
             {
                 HandleLoaderSelection();
             }
-            else if (state == MenuState.Settings)
+            else if (_state == MenuState.Settings)
             {
                 HandleSettingsSelection();
             }
-            else if (state == MenuState.Info)
+            else if (_state == MenuState.Info)
             {
                 HandleInfoSelection();
             }
@@ -50,74 +50,70 @@ namespace Itsdits.Ravar.UI
 
         private void MainSelection()
         {
-            state = MenuState.Main;
-
-            menuBox.EnableLoader(false);
-            menuBox.EnableSettings(false);
-            menuBox.EnableInfo(false);
-            menuBox.EnableMainMenu(true);
+            _state = MenuState.Main;
+            _menuBox.EnableLoader(false);
+            _menuBox.EnableSettings(false);
+            _menuBox.EnableInfo(false);
+            _menuBox.EnableMainMenu(true);
         }
 
         private void LoaderSelection()
         {
-            state = MenuState.Loader;
-
-            menuBox.EnableMainMenu(false);
-            menuBox.EnableLoader(true);
+            _state = MenuState.Loader;
+            _menuBox.EnableMainMenu(false);
+            _menuBox.EnableLoader(true);
         }
 
         private void SettingsSelection()
         {
-            state = MenuState.Settings;
-
-            menuBox.EnableMainMenu(false);
-            menuBox.EnableSettings(true);
+            _state = MenuState.Settings;
+            _menuBox.EnableMainMenu(false);
+            _menuBox.EnableSettings(true);
         }
 
         private void InfoSelection()
         {
-            state = MenuState.Info;
-
-            menuBox.EnableMainMenu(false);
-            menuBox.EnableInfo(true);
+            _state = MenuState.Info;
+            _menuBox.EnableMainMenu(false);
+            _menuBox.EnableInfo(true);
         }
 
         private void HandleMainSelection()
         {
             if (Keyboard.current.downArrowKey.wasPressedThisFrame)
             {
-                currentMain += 1;
+                _currentMain += 1;
             }
             else if (Keyboard.current.upArrowKey.wasPressedThisFrame)
             {
-                currentMain -= 1;
+                _currentMain -= 1;
             }
             
-            currentMain = Mathf.Clamp(currentMain, 0, menuBox.MainTexts.Count - 1);
-            menuBox.UpdateMainSelector(currentMain);
+            _currentMain = Mathf.Clamp(_currentMain, 0, _menuBox.MainTexts.Count - 1);
+            _menuBox.UpdateMainSelector(_currentMain);
             
             if (Keyboard.current.zKey.wasPressedThisFrame)
             {
-                if (currentMain == 0)
+                if (_currentMain == 0)
                 {
                     // New Game
                 }
-                else if (currentMain == 1)
+                else if (_currentMain == 1)
                 {
                     // Load Game
                     LoaderSelection();
                 }
-                else if (currentMain == 2)
+                else if (_currentMain == 2)
                 {
                     // Settings
                     SettingsSelection();
                 }
-                else if (currentMain == 3)
+                else if (_currentMain == 3)
                 {
                     // Info
                     InfoSelection();
                 }
-                else if (currentMain == 4)
+                else if (_currentMain == 4)
                 {
                     // Exit
                     //TODO - implement an exit handler to clean up before quitting
@@ -130,19 +126,19 @@ namespace Itsdits.Ravar.UI
         {
             if (Keyboard.current.downArrowKey.wasPressedThisFrame)
             {
-                currentLoad += 1;
+                _currentLoad += 1;
             }
             else if (Keyboard.current.upArrowKey.wasPressedThisFrame)
             {
-                currentLoad -= 1;
+                _currentLoad -= 1;
             }
 
-            currentLoad = Mathf.Clamp(currentLoad, 0, menuBox.LoaderTexts.Count - 1);
-            menuBox.UpdateLoaderSelector(currentLoad);
+            _currentLoad = Mathf.Clamp(_currentLoad, 0, _menuBox.LoaderTexts.Count - 1);
+            _menuBox.UpdateLoaderSelector(_currentLoad);
 
             if (Keyboard.current.zKey.wasPressedThisFrame)
             {
-                if (currentLoad == 0)
+                if (_currentLoad == 0)
                 {
                     // Back
                     MainSelection();
@@ -154,24 +150,24 @@ namespace Itsdits.Ravar.UI
         {
             if (Keyboard.current.downArrowKey.wasPressedThisFrame)
             {
-                currentSetting += 1;
+                _currentSetting += 1;
             }
             else if (Keyboard.current.upArrowKey.wasPressedThisFrame)
             {
-                currentSetting -= 1;
+                _currentSetting -= 1;
             }
 
-            currentSetting = Mathf.Clamp(currentSetting, 0, menuBox.SettingsTexts.Count - 1);
-            menuBox.UpdateSettingsSelector(currentSetting);
+            _currentSetting = Mathf.Clamp(_currentSetting, 0, _menuBox.SettingsTexts.Count - 1);
+            _menuBox.UpdateSettingsSelector(_currentSetting);
 
             if (Keyboard.current.zKey.wasPressedThisFrame)
             {
-                if (currentSetting == 0)
+                if (_currentSetting == 0)
                 {
                     // Back
                     MainSelection();
                 }
-                else if (currentSetting == 1)
+                else if (_currentSetting == 1)
                 {
                     // Save
                     //TODO - implement settings save
@@ -184,19 +180,19 @@ namespace Itsdits.Ravar.UI
         {
             if (Keyboard.current.downArrowKey.wasPressedThisFrame)
             {
-                currentInfo += 1;
+                _currentInfo += 1;
             }
             else if (Keyboard.current.upArrowKey.wasPressedThisFrame)
             {
-                currentInfo -= 1;
+                _currentInfo -= 1;
             }
 
-            currentInfo = Mathf.Clamp(currentInfo, 0, menuBox.InfoTexts.Count - 1);
-            menuBox.UpdateInfoSelector(currentInfo);
+            _currentInfo = Mathf.Clamp(_currentInfo, 0, _menuBox.InfoTexts.Count - 1);
+            _menuBox.UpdateInfoSelector(_currentInfo);
 
             if (Keyboard.current.zKey.wasPressedThisFrame)
             {
-                if (currentInfo == 0)
+                if (_currentInfo == 0)
                 {
                     // Back
                     MainSelection();

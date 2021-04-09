@@ -1,3 +1,4 @@
+using System;
 using Itsdits.Ravar.Core;
 using Itsdits.Ravar.UI;
 using System.Collections;
@@ -12,23 +13,23 @@ namespace Itsdits.Ravar.Character
     {
         [Header("Details")]
         [Tooltip("Name of this Battler.")]
-        [SerializeField] string _name;
+        [SerializeField] private string _name;
         [Tooltip("Sprite of this Battler.")]
-        [SerializeField] Sprite sprite;
+        [SerializeField] private Sprite _sprite;
         [Tooltip("State of this battler. Default is Ready. LoS is disabled on Defeated and Locked states.")]
-        [SerializeField] BattlerState state = BattlerState.Ready;
+        [SerializeField] private BattlerState _state = BattlerState.Ready;
 
         [Header("Dialog")]
         [Tooltip("Dialog this Battler will display when BattlerState is Ready.")]
-        [SerializeField] Dialog introDialog;
+        [SerializeField] private Dialog _introDialog;
         [Tooltip("Dialog this Battler will display when BattlerState is Defeated.")]
-        [SerializeField] Dialog outroDialog;
+        [SerializeField] private Dialog _outroDialog;
 
         [Header("Line of Sight")]
         [Tooltip("Alert icon to be displayed above the Battler's head when LoS is triggered.")]
-        [SerializeField] GameObject alert;
+        [SerializeField] private GameObject _alert;
         [Tooltip("GameObject representing this Battler's LoS.")]
-        [SerializeField] GameObject los;
+        [SerializeField] private GameObject _los;
 
         /// <summary>
         /// Name of this Battler.
@@ -37,15 +38,15 @@ namespace Itsdits.Ravar.Character
         /// <summary>
         /// Sprite of this Battler.
         /// </summary>
-        public Sprite Sprite => sprite;
+        public Sprite Sprite => _sprite;
         /// <summary>
         /// State of this Battler. Determines whether or not LoS is activated.
         /// </summary>
-        public BattlerState State => state;
+        public BattlerState State => _state;
 
         private void Start()
         {
-            SetBattlerState(state);
+            SetBattlerState(_state);
             RotateLoS(animator.DefaultDirection);
         }
 
@@ -61,21 +62,21 @@ namespace Itsdits.Ravar.Character
         public IEnumerator TriggerBattle(PlayerController player)
         {
             // Show alert over head.
-            alert.gameObject.SetActive(true);
+            _alert.gameObject.SetActive(true);
             yield return new WaitForSeconds(1f);
-            alert.gameObject.SetActive(false);
+            _alert.gameObject.SetActive(false);
 
             // Move to the player, stopping 1 tile before them.
-            var path = player.transform.position - transform.position;
-            var tile = path - path.normalized;
+            Vector3 path = player.transform.position - transform.position;
+            Vector3 tile = path - path.normalized;
             tile = new Vector2(Mathf.Round(tile.x), Mathf.Round(tile.y));
             yield return Move(tile, null);
 
             // Show dialog for trash talk then start battle.
             player.ChangeDirection(transform.position);
-            if (introDialog.Strings.Count > 0) 
+            if (_introDialog.Strings.Count > 0) 
             {
-                yield return DialogController.Instance.ShowDialog(introDialog, Name, () => 
+                yield return DialogController.Instance.ShowDialog(_introDialog, Name, () => 
                 {
                     GameController.Instance.StartCharBattle(this);
                 });
@@ -114,37 +115,40 @@ namespace Itsdits.Ravar.Character
                 angle = 90f;
             }
 
-            los.transform.eulerAngles = new Vector3(0f, 0f, angle);
+            _los.transform.eulerAngles = new Vector3(0f, 0f, angle);
         }
 
         /// <summary>
         /// Interact with the player.
         /// </summary>
-        /// <param name="interactor">Who or what to interact with.</param>
-        public void InteractWith(Transform interactor)
+        /// <param name="interactingCharacter">Who or what to interact with.</param>
+        public void InteractWith(Transform interactingCharacter)
         {
-            if (GameController.Instance.State == GameState.World) { 
-                ChangeDirection(interactor.position);
-                if (introDialog.Strings.Count > 0 && outroDialog.Strings.Count > 0)
+            if (GameController.Instance.State != GameState.World)
+            {
+                return;
+            }
+
+            ChangeDirection(interactingCharacter.position);
+            if (_introDialog.Strings.Count > 0 && _outroDialog.Strings.Count > 0)
+            {
+                if (_state == BattlerState.Ready)
                 {
-                    if (state == BattlerState.Ready)
+                    StartCoroutine(DialogController.Instance.ShowDialog(_introDialog, Name, () =>
                     {
-                        StartCoroutine(DialogController.Instance.ShowDialog(introDialog, Name, () =>
-                        {
-                            GameController.Instance.StartCharBattle(this);
-                        }));
-                    }
-                    else
-                    {
-                        StartCoroutine(DialogController.Instance.ShowDialog(outroDialog, Name));
-                    }
+                        GameController.Instance.StartCharBattle(this);
+                    }));
                 }
                 else
                 {
-                    // An exception occurs if the Battler is missing dialog, so we call ReleasePlayer()
-                    // to set state = GameState.World. Otherwise the player is stuck on the crashed dialog box.
-                    GameController.Instance.ReleasePlayer();
+                    StartCoroutine(DialogController.Instance.ShowDialog(_outroDialog, Name));
                 }
+            }
+            else
+            {
+                // An exception occurs if the Battler is missing dialog, so we call ReleasePlayer()
+                // to set state = GameState.World. Otherwise the player is stuck on the crashed dialog box.
+                GameController.Instance.ReleasePlayer();
             }
         }
 
@@ -155,20 +159,19 @@ namespace Itsdits.Ravar.Character
         /// Locked = not able to battle yet, possibly need to finish a Quest first.</param>
         public void SetBattlerState(BattlerState newState)
         {
-            state = newState;
-
-            if (state == BattlerState.Ready)
+            _state = newState;
+            if (_state == BattlerState.Ready)
             {
-                los.gameObject.SetActive(true);
+                _los.gameObject.SetActive(true);
             }
-            else if (state == BattlerState.Defeated)
+            else if (_state == BattlerState.Defeated)
             {
-                los.gameObject.SetActive(false);
+                _los.gameObject.SetActive(false);
                 //TODO - have the battler return to its starting position
             }
-            else if (state == BattlerState.Locked)
+            else if (_state == BattlerState.Locked)
             {
-                los.gameObject.SetActive(false);
+                _los.gameObject.SetActive(false);
                 //TODO - implement locked/later quest features
             }
         }

@@ -13,19 +13,19 @@ namespace Itsdits.Ravar.Character
     {
         [Header("Details")]
         [Tooltip("Unique ID for this player to differentiate between save games. Automatically generated at runtime.")]
-        [SerializeField] string id;
+        [SerializeField] private string _id;
         [Tooltip("The name of this player.")]
-        [SerializeField] string _name;
+        [SerializeField] private string _name;
         [Tooltip("The sprite of the character to be displayed in the battle screen.")]
-        [SerializeField] Sprite battleSprite;
+        [SerializeField] private Sprite _battleSprite;
 
-        private Vector2 inputVector;
-        private Vector2 moveVector;
+        private Vector2 _inputVector;
+        private Vector2 _moveVector;
 
         /// <summary>
         /// The player's Id.
         /// </summary>
-        public string Id => id;
+        public string Id => _id;
         /// <summary>
         /// The player's name.
         /// </summary>
@@ -33,11 +33,11 @@ namespace Itsdits.Ravar.Character
         /// <summary>
         /// The character sprite to be used in the battle screen.
         /// </summary>
-        public Sprite BattleSprite => battleSprite;
+        public Sprite BattleSprite => _battleSprite;
 
         private void Start()
         {
-            id = _name + Random.Range(0, 65534);
+            _id = _name + Random.Range(0, 65534);
         }
         
         /// <summary>
@@ -45,7 +45,7 @@ namespace Itsdits.Ravar.Character
         /// </summary>
         public void HandleUpdate()
         {
-            HandleInput(inputVector);
+            HandleInput(_inputVector);
             animator.IsMoving = IsMoving;
         }
 
@@ -55,7 +55,7 @@ namespace Itsdits.Ravar.Character
         /// <param name="context">Callbacks from the InputAction cycle. Contains the Vector2 from the Player Input.</param>
         public void OnMove(InputAction.CallbackContext context)
         {
-            inputVector = context.ReadValue<Vector2>();
+            _inputVector = context.ReadValue<Vector2>();
         }
 
         /// <summary>
@@ -79,14 +79,7 @@ namespace Itsdits.Ravar.Character
         {
             if (context.performed)
             {
-                if (GameController.Instance.State != GameState.Pause)
-                {
-                    GameController.Instance.PauseGame(true);
-                }
-                else
-                {
-                    GameController.Instance.PauseGame(false);
-                }
+                GameController.Instance.PauseGame(GameController.Instance.State != GameState.Pause);
             }
         }
 
@@ -99,7 +92,7 @@ namespace Itsdits.Ravar.Character
             GameController.Instance.UpdateCurrentScene();
 
             var playerData = new PlayerData(
-                id,
+                _id,
                 GameController.Instance.CurrentScene,
                 GetPositionAsIntArray()
                 );
@@ -113,10 +106,9 @@ namespace Itsdits.Ravar.Character
         /// <param name="loadData">PlayerData to load into this player.</param>
         public void LoadPlayerData(PlayerData loadData)
         {
-            id = loadData.id;
+            _id = loadData.id;
             GameController.Instance.UpdateCurrentScene();
-            var currentScene = GameController.Instance.CurrentScene;
-
+            int currentScene = GameController.Instance.CurrentScene;
             if (loadData.currentScene != currentScene)
             {
                 GameController.Instance.LoadScene(loadData.currentScene);
@@ -128,46 +120,54 @@ namespace Itsdits.Ravar.Character
 
         private void CheckAfterMove()
         {
-            var colliders = Physics2D.OverlapCircleAll(transform.position - new Vector3(0, 0.3f), 0.2f, MapLayers.Instance.ActionLayers);
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position - new Vector3(0, 0.3f), 0.2f, MapLayers.Instance.ActionLayers);
 
-            foreach (var collider in colliders)
+            foreach (Collider2D c in colliders)
             {
-                var trigger = collider.GetComponent<ITriggerable>();
-                if (trigger != null)
+                var trigger = c.GetComponent<ITriggerable>();
+                if (trigger == null)
                 {
-                    animator.IsMoving = false;
-                    trigger.OnTriggered(this);
-                    break;
+                    continue;
                 }
+
+                animator.IsMoving = false;
+                trigger.OnTriggered(this);
+                break;
             }
         }
 
         private void HandleInput(Vector2 inputVector)
         {
-            if (inputVector != Vector2.zero)
+            // Return if no input or character is already moving
+            if (inputVector == Vector2.zero)
             {
-                if (!IsMoving)
-                {
-                    if (inputVector.x != 0)
-                    {
-                        inputVector.y = 0;
-                    }
-
-                    // Normalize the Vector2 to avoid inputs less than 1f.
-                    moveVector = inputVector.normalized;
-                    StartCoroutine(Move(moveVector, CheckAfterMove));
-                }
+                return;
             }
+
+            if (IsMoving)
+            {
+                return;
+            }
+
+            // Only x or y should have a non-zero value to prevent diagonal movement
+            if (inputVector.x != 0)
+            {
+                inputVector.y = 0;
+            }
+
+            // Normalize the Vector2 to avoid inputs less than 1f.
+            _moveVector = inputVector.normalized;
+            StartCoroutine(Move(_moveVector, CheckAfterMove));
         }
 
         private void Interact()
         {
             var lookingAt = new Vector3(animator.MoveX, animator.MoveY);
-            var nextTile = transform.position + lookingAt;
-            var collider = Physics2D.OverlapCircle(nextTile, 0.3f, MapLayers.Instance.InteractLayer);
-            if (collider != null)
+            Vector3 nextTile = transform.position + lookingAt;
+            Collider2D overlapCircle = Physics2D.OverlapCircle(nextTile, 0.3f, MapLayers.Instance.InteractLayer);
+            if (overlapCircle != null)
             {
-                collider.GetComponent<IInteractable>()?.InteractWith(transform);
+                overlapCircle.GetComponent<IInteractable>()?.InteractWith(transform);
             }
         }
 
@@ -176,9 +176,10 @@ namespace Itsdits.Ravar.Character
             // We save the player's position as an int array because it's easy to serialize for save data.
             // After loading the position we create a new Vector2 from the array and call SetOffsetOnTile() on it
             // to put the player on the correct position of the tile.
-            int[] positionAsArray = new int[2];
-            positionAsArray[0] = Mathf.FloorToInt(transform.position.x);
-            positionAsArray[1] = Mathf.FloorToInt(transform.position.y);
+            Vector3 position = transform.position;
+            var positionAsArray = new int[2];
+            positionAsArray[0] = Mathf.FloorToInt(position.x);
+            positionAsArray[1] = Mathf.FloorToInt(position.y);
 
             return positionAsArray;
         }

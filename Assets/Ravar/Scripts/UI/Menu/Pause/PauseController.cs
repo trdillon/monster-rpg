@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using Itsdits.Ravar.Character;
 using Itsdits.Ravar.Core;
 using Itsdits.Ravar.Data;
 using Itsdits.Ravar.Monster;
@@ -12,38 +14,38 @@ namespace Itsdits.Ravar.UI
     public class PauseController : MonoBehaviour
     {
         [Tooltip("The canvas GameObject that holds the PauseBox and related UI elements.")]
-        [SerializeField] PauseBox pauseBox;
+        [SerializeField] private PauseBox _pauseBox;
 
-        private int currentPause;
-        private int currentSave;
-        private int currentLoad;
-        private int currentSetting;
+        private int _currentPause;
+        private int _currentSave;
+        private int _currentLoad;
+        private int _currentSetting;
 
-        private PauseState state;
+        private PauseState _state;
 
         /// <summary>
         /// The current state of the pause menu.
         /// </summary>
-        public PauseState State => state;
+        public PauseState State => _state;
 
         /// <summary>
         /// Handles Update lifecycle when GameState is Pause.
         /// </summary>
         public void HandleUpdate()
         {
-            if (state == PauseState.Main)
+            if (_state == PauseState.Main)
             {
                 HandlePauseSelection();
             }
-            else if (state == PauseState.Save)
+            else if (_state == PauseState.Save)
             {
                 HandleSaveSelection();
             }
-            else if (state == PauseState.Load)
+            else if (_state == PauseState.Load)
             {
                 HandleLoadSelection();
             }
-            else if (state == PauseState.Settings)
+            else if (_state == PauseState.Settings)
             {
                 HandleSettingsSelection();
             }
@@ -52,102 +54,98 @@ namespace Itsdits.Ravar.UI
         /// <summary>
         /// Enables or disables the PauseBox game object to show or hide the pause menu.
         /// </summary>
-        public void EnablePauseBox(bool enabled)
+        public void EnablePauseBox(bool isEnabled)
         {
-            pauseBox.gameObject.SetActive(enabled);
-            pauseBox.EnablePauseMenu(enabled);
+            _pauseBox.gameObject.SetActive(isEnabled);
+            _pauseBox.EnablePauseMenu(isEnabled);
         }
 
         private void SaveGame()
         {
-            var player = GameController.Instance.CurrentPlayer;
-            var playerData = player.SavePlayerData();
-            var partyData = player.GetComponent<MonsterParty>().SaveMonsterParty();
+            PlayerController player = GameController.Instance.CurrentPlayer;
+            PlayerData playerData = player.SavePlayerData();
+            List<MonsterData> partyData = player.GetComponent<MonsterParty>().SaveMonsterParty();
 
             GameData.SaveGameData(playerData, partyData);
         }
 
         private void LoadGame()
         {
-            var player = GameController.Instance.CurrentPlayer;
+            PlayerController player = GameController.Instance.CurrentPlayer;
             var playerParty = player.GetComponent<MonsterParty>();
             //TODO - change this to the id of the save game the user selects in the UI
-            var saveData = GameData.LoadGameData(player.Id);  
+            SaveData saveData = GameData.LoadGameData(player.Id);  
             player.LoadPlayerData(saveData.playerData);
             playerParty.LoadMonsterParty(saveData.partyData);
         }
 
         private void PauseSelection()
         {
-            state = PauseState.Main;
-
-            pauseBox.EnableSave(false);
-            pauseBox.EnableLoader(false);
-            pauseBox.EnableSettings(false);
-            pauseBox.EnablePauseMenu(true);
+            _state = PauseState.Main;
+            _pauseBox.EnableSave(false);
+            _pauseBox.EnableLoader(false);
+            _pauseBox.EnableSettings(false);
+            _pauseBox.EnablePauseMenu(true);
         }
 
         private void SaveSelection()
         {
-            state = PauseState.Save;
-
-            pauseBox.EnablePauseMenu(false);
-            pauseBox.EnableSave(true);
+            _state = PauseState.Save;
+            _pauseBox.EnablePauseMenu(false);
+            _pauseBox.EnableSave(true);
         }
 
         private void LoaderSelection()
         {
-            state = PauseState.Load;
-
-            pauseBox.EnablePauseMenu(false);
-            pauseBox.EnableLoader(true);
+            _state = PauseState.Load;
+            _pauseBox.EnablePauseMenu(false);
+            _pauseBox.EnableLoader(true);
         }
 
         private void SettingsSelection()
         {
-            state = PauseState.Settings;
-
-            pauseBox.EnablePauseMenu(false);
-            pauseBox.EnableSettings(true);
+            _state = PauseState.Settings;
+            _pauseBox.EnablePauseMenu(false);
+            _pauseBox.EnableSettings(true);
         }
 
         private void HandlePauseSelection()
         {
             if (Keyboard.current.downArrowKey.wasPressedThisFrame)
             {
-                currentPause += 1;
+                _currentPause += 1;
             }
             else if (Keyboard.current.upArrowKey.wasPressedThisFrame)
             {
-                currentPause -= 1;
+                _currentPause -= 1;
             }
 
-            currentPause = Mathf.Clamp(currentPause, 0, pauseBox.PauseTexts.Count - 1);
-            pauseBox.UpdatePauseSelector(currentPause);
+            _currentPause = Mathf.Clamp(_currentPause, 0, _pauseBox.PauseTexts.Count - 1);
+            _pauseBox.UpdatePauseSelector(_currentPause);
 
             if (Keyboard.current.zKey.wasPressedThisFrame)
             {
-                if (currentPause == 0)
+                if (_currentPause == 0)
                 {
                     // Save Game
                     SaveSelection();
                 }
-                else if (currentPause == 1)
+                else if (_currentPause == 1)
                 {
                     // Load Game
                     LoaderSelection();
                 }
-                else if (currentPause == 2)
+                else if (_currentPause == 2)
                 {
                     // Settings
                     SettingsSelection();
                 }
-                else if (currentPause == 3)
+                else if (_currentPause == 3)
                 {
                     // Exit to Main Menu
                     //TODO - ensure a save check/option is handled here
                 }
-                else if (currentPause == 4)
+                else if (_currentPause == 4)
                 {
                     // Back to game
                     GameController.Instance.PauseGame(false);
@@ -159,24 +157,24 @@ namespace Itsdits.Ravar.UI
         {
             if (Keyboard.current.downArrowKey.wasPressedThisFrame)
             {
-                currentSave += 1;
+                _currentSave += 1;
             }
             else if (Keyboard.current.upArrowKey.wasPressedThisFrame)
             {
-                currentSave -= 1;
+                _currentSave -= 1;
             }
 
-            currentLoad = Mathf.Clamp(currentSave, 0, pauseBox.SaveTexts.Count - 1);
-            pauseBox.UpdateSaveSelector(currentSave);
+            _currentLoad = Mathf.Clamp(_currentSave, 0, _pauseBox.SaveTexts.Count - 1);
+            _pauseBox.UpdateSaveSelector(_currentSave);
 
             if (Keyboard.current.zKey.wasPressedThisFrame)
             {
-                if (currentSave == 0)
+                if (_currentSave == 0)
                 {
                     // Back
                     PauseSelection();
                 }
-                else if (currentSave == 1)
+                else if (_currentSave == 1)
                 {
                     // Save
                     SaveGame();
@@ -188,24 +186,24 @@ namespace Itsdits.Ravar.UI
         {
             if (Keyboard.current.downArrowKey.wasPressedThisFrame)
             {
-                currentLoad += 1;
+                _currentLoad += 1;
             }
             else if (Keyboard.current.upArrowKey.wasPressedThisFrame)
             {
-                currentLoad -= 1;
+                _currentLoad -= 1;
             }
 
-            currentLoad = Mathf.Clamp(currentLoad, 0, pauseBox.LoaderTexts.Count - 1);
-            pauseBox.UpdateLoaderSelector(currentLoad);
+            _currentLoad = Mathf.Clamp(_currentLoad, 0, _pauseBox.LoaderTexts.Count - 1);
+            _pauseBox.UpdateLoaderSelector(_currentLoad);
 
             if (Keyboard.current.zKey.wasPressedThisFrame)
             {
-                if (currentLoad == 0)
+                if (_currentLoad == 0)
                 {
                     // Back
                     PauseSelection();
                 }
-                else if (currentLoad == 1)
+                else if (_currentLoad == 1)
                 {
                     // Load
                     LoadGame();
@@ -217,24 +215,24 @@ namespace Itsdits.Ravar.UI
         {
             if (Keyboard.current.downArrowKey.wasPressedThisFrame)
             {
-                currentSetting += 1;
+                _currentSetting += 1;
             }
             else if (Keyboard.current.upArrowKey.wasPressedThisFrame)
             {
-                currentSetting -= 1;
+                _currentSetting -= 1;
             }
 
-            currentSetting = Mathf.Clamp(currentSetting, 0, pauseBox.SettingsTexts.Count - 1);
-            pauseBox.UpdateSettingsSelector(currentSetting);
+            _currentSetting = Mathf.Clamp(_currentSetting, 0, _pauseBox.SettingsTexts.Count - 1);
+            _pauseBox.UpdateSettingsSelector(_currentSetting);
 
             if (Keyboard.current.zKey.wasPressedThisFrame)
             {
-                if (currentSetting == 0)
+                if (_currentSetting == 0)
                 {
                     // Back
                     PauseSelection();
                 }
-                else if (currentSetting == 1)
+                else if (_currentSetting == 1)
                 {
                     // Save
                     //TODO - implement settings save
