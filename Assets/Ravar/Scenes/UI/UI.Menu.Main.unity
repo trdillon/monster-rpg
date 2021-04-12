@@ -222,7 +222,7 @@ GameObject:
   - component: {fileID: 15734026}
   - component: {fileID: 15734025}
   m_Layer: 5
-  m_Name: BackText
+  m_Name: ' Back Text'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -300,7 +300,7 @@ GameObject:
   - component: {fileID: 24313354}
   - component: {fileID: 24313355}
   m_Layer: 0
-  m_Name: Menu
+  m_Name: Main Menu Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -318,9 +318,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 818985431}
-  - {fileID: 1710007361}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &24313355
 MonoBehaviour:
@@ -334,7 +333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feae72c645a9c3847b91d32f4b0db37e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menuBox: {fileID: 1689900012}
+  _menuBox: {fileID: 1689900012}
 --- !u!1 &89125532
 GameObject:
   m_ObjectHideFlags: 0
@@ -347,7 +346,7 @@ GameObject:
   - component: {fileID: 89125535}
   - component: {fileID: 89125534}
   m_Layer: 5
-  m_Name: Save5Time
+  m_Name: Save 5 Time
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -460,7 +459,7 @@ GameObject:
   m_Component:
   - component: {fileID: 219391762}
   m_Layer: 5
-  m_Name: SettingsMenu
+  m_Name: Settings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -499,7 +498,7 @@ GameObject:
   m_Component:
   - component: {fileID: 239646316}
   m_Layer: 5
-  m_Name: LoaderMenu
+  m_Name: Load
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -754,7 +753,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &550814063
 GameObject:
@@ -768,7 +767,7 @@ GameObject:
   - component: {fileID: 550814066}
   - component: {fileID: 550814065}
   m_Layer: 5
-  m_Name: BackText
+  m_Name: Back Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -923,7 +922,7 @@ GameObject:
   - component: {fileID: 763383667}
   - component: {fileID: 763383666}
   m_Layer: 5
-  m_Name: Save1Time
+  m_Name: Save 1 Time
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1108,7 +1107,7 @@ GameObject:
   m_Component:
   - component: {fileID: 814342632}
   m_Layer: 5
-  m_Name: InfoMenu
+  m_Name: Info
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1146,7 +1145,7 @@ GameObject:
   - component: {fileID: 818985430}
   - component: {fileID: 818985429}
   m_Layer: 0
-  m_Name: MenuCamera
+  m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1229,7 +1228,7 @@ GameObject:
   - component: {fileID: 882144346}
   - component: {fileID: 882144345}
   m_Layer: 5
-  m_Name: LanguageText
+  m_Name: Language Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1383,7 +1382,7 @@ GameObject:
   - component: {fileID: 997642342}
   - component: {fileID: 997642341}
   m_Layer: 5
-  m_Name: LoadGameText
+  m_Name: Load Game Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1462,7 +1461,7 @@ GameObject:
   - component: {fileID: 1027539523}
   - component: {fileID: 1027539522}
   m_Layer: 5
-  m_Name: InfoText
+  m_Name: Info Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1541,7 +1540,7 @@ GameObject:
   - component: {fileID: 1150561275}
   - component: {fileID: 1150561274}
   m_Layer: 5
-  m_Name: Save4Text
+  m_Name: Save 4 Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1620,7 +1619,7 @@ GameObject:
   - component: {fileID: 1156982033}
   - component: {fileID: 1156982032}
   m_Layer: 5
-  m_Name: NewGameText
+  m_Name: New Game Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1774,7 +1773,7 @@ GameObject:
   - component: {fileID: 1253265102}
   - component: {fileID: 1253265101}
   m_Layer: 5
-  m_Name: Save3Text
+  m_Name: Save 3 Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1852,7 +1851,7 @@ GameObject:
   - component: {fileID: 1277464213}
   - component: {fileID: 1277464214}
   m_Layer: 5
-  m_Name: SaveDates
+  m_Name: Save Dates
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1918,7 +1917,7 @@ GameObject:
   - component: {fileID: 1328931300}
   - component: {fileID: 1328931299}
   m_Layer: 5
-  m_Name: SettingsText
+  m_Name: Settings Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2076,7 +2075,7 @@ GameObject:
   - component: {fileID: 1495178778}
   - component: {fileID: 1495178777}
   m_Layer: 5
-  m_Name: Save2Time
+  m_Name: Save 2 Time
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2155,7 +2154,7 @@ GameObject:
   - component: {fileID: 1501641429}
   - component: {fileID: 1501641428}
   m_Layer: 5
-  m_Name: BackText
+  m_Name: Back Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2448,7 +2447,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1578271051}
   m_Layer: 5
-  m_Name: MainMenu
+  m_Name: Main
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2566,7 +2565,7 @@ GameObject:
   - component: {fileID: 1633415501}
   - component: {fileID: 1633415500}
   m_Layer: 5
-  m_Name: LanguageDropDown
+  m_Name: Language DropDown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2707,7 +2706,7 @@ GameObject:
   - component: {fileID: 1635329342}
   - component: {fileID: 1635329341}
   m_Layer: 5
-  m_Name: Save2Text
+  m_Name: Save 2 Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2785,7 +2784,7 @@ GameObject:
   - component: {fileID: 1689900011}
   - component: {fileID: 1689900012}
   m_Layer: 5
-  m_Name: MenuBox
+  m_Name: Menu Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2826,31 +2825,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89050087f95afbd43b87d2ba176573ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainTexts:
-  - {fileID: 1156982032}
-  - {fileID: 997642341}
-  - {fileID: 1328931299}
-  - {fileID: 1027539522}
-  - {fileID: 2129966304}
-  mainMenu: {fileID: 1578271050}
-  loaderTexts:
-  - {fileID: 550814065}
-  - {fileID: 2124582153}
-  - {fileID: 1635329341}
-  - {fileID: 1253265101}
-  - {fileID: 1150561274}
-  - {fileID: 2009395126}
-  - {fileID: 2133017115}
-  loaderMenu: {fileID: 239646315}
-  settingsTexts:
-  - {fileID: 15734025}
-  - {fileID: 2124404814}
-  settingsMenu: {fileID: 219391761}
-  infoTexts:
-  - {fileID: 1501641428}
-  infoMenu: {fileID: 814342631}
-  highlightColor: {r: 0.8941177, g: 0.69803923, b: 0.22352943, a: 1}
-  standardColor: {r: 0.60784316, g: 0.33333334, b: 0.09411766, a: 1}
+  _mainTexts: []
+  _mainMenu: {fileID: 0}
+  _loaderTexts: []
+  _loaderMenu: {fileID: 0}
+  _settingsTexts: []
+  _settingsMenu: {fileID: 0}
+  _infoTexts: []
+  _infoMenu: {fileID: 0}
+  _highlightColor: {r: 0, g: 0, b: 0, a: 0}
+  _standardColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1710007357
 GameObject:
   m_ObjectHideFlags: 0
@@ -2864,7 +2848,7 @@ GameObject:
   - component: {fileID: 1710007359}
   - component: {fileID: 1710007358}
   m_Layer: 5
-  m_Name: MenuUI
+  m_Name: Main Menu Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2944,8 +2928,8 @@ RectTransform:
   m_Children:
   - {fileID: 609439391}
   - {fileID: 1689900011}
-  m_Father: {fileID: 24313354}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2964,7 +2948,7 @@ GameObject:
   - component: {fileID: 1770727996}
   - component: {fileID: 1770727995}
   m_Layer: 5
-  m_Name: Save4Time
+  m_Name: Save 4 Time
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3117,7 +3101,7 @@ GameObject:
   - component: {fileID: 1872970361}
   - component: {fileID: 1872970362}
   m_Layer: 5
-  m_Name: SaveGames
+  m_Name: Save Games
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3219,7 +3203,7 @@ GameObject:
   - component: {fileID: 2009395127}
   - component: {fileID: 2009395126}
   m_Layer: 5
-  m_Name: Save5Text
+  m_Name: Save 5 Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3298,7 +3282,7 @@ GameObject:
   - component: {fileID: 2099485481}
   - component: {fileID: 2099485480}
   m_Layer: 5
-  m_Name: Save3Time
+  m_Name: Save 3 Time
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3377,7 +3361,7 @@ GameObject:
   - component: {fileID: 2124404815}
   - component: {fileID: 2124404814}
   m_Layer: 5
-  m_Name: SaveText
+  m_Name: Save Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3456,7 +3440,7 @@ GameObject:
   - component: {fileID: 2124582154}
   - component: {fileID: 2124582153}
   m_Layer: 5
-  m_Name: Save1Text
+  m_Name: Save 1 Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3535,7 +3519,7 @@ GameObject:
   - component: {fileID: 2129966305}
   - component: {fileID: 2129966304}
   m_Layer: 5
-  m_Name: ExitText
+  m_Name: Exit Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3614,7 +3598,7 @@ GameObject:
   - component: {fileID: 2133017116}
   - component: {fileID: 2133017115}
   m_Layer: 5
-  m_Name: ContinueText
+  m_Name: Continue Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

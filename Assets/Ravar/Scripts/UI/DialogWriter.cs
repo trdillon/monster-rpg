@@ -1,29 +1,39 @@
 using System.Collections;
-using System.Text;
 using Itsdits.Ravar.Util;
+using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace Itsdits.Ravar.UI
 {
     public class DialogWriter : MonoBehaviour
     {
-        [Tooltip("The Text element the dialog will be displayed in.")]
-        [SerializeField] private Text _dialogText;
-        
-        private StringBuilder _dialogBuilder = new StringBuilder(250);
-        
-        public IEnumerator TypeDialog(string dialog)
+        private TextMeshProUGUI _textMeshPro;
+
+        private void Start()
         {
-            _dialogText.text = "";
-            _dialogBuilder.Clear();
-            foreach (char letter in dialog)
+            _textMeshPro = gameObject.GetComponent<TextMeshProUGUI>() ?? gameObject.AddComponent<TextMeshProUGUI>();
+        }
+
+        public IEnumerator TypeDialog(string textToType)
+        {
+            _textMeshPro.SetText(textToType);
+            int totalVisibleCharacters = _textMeshPro.textInfo.characterCount;
+            var counter = 0;
+
+            while (true)
             {
-                _dialogBuilder.Append(letter);
-                _dialogText.text = _dialogBuilder.ToString();
+                int visibleCount = counter % (totalVisibleCharacters + 1);
+                _textMeshPro.maxVisibleCharacters = visibleCount;
+
+                if (visibleCount >= totalVisibleCharacters)
+                {
+                    yield return YieldHelper.TwoSeconds;
+                    yield break;
+                }
+                
+                counter += 1;
                 yield return YieldHelper.TypingTime;
             }
-            
         }
     }
 }

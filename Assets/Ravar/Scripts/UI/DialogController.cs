@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using Itsdits.Ravar.Core;
+using Itsdits.Ravar.Util;
+using TMPro;
 
 namespace Itsdits.Ravar.UI 
 {
@@ -21,7 +23,7 @@ namespace Itsdits.Ravar.UI
         [Tooltip("The GameObject holding the DialogBox.")]
         [SerializeField] private GameObject _dialogBox;
         [Tooltip("The Text element of the DialogBox.")]
-        [SerializeField] private Text _dialogText;
+        [SerializeField] private TextMeshProUGUI _dialogText;
 
         [Header("Name Plate")]
         [Tooltip("The nameplate of the character that is displaying dialog.")]
@@ -30,7 +32,6 @@ namespace Itsdits.Ravar.UI
         [SerializeField] private Text _nameText;
 
         private Dialog _dialog;
-        private DialogWriter _writer;
         private int _currentString;
         private bool _isTyping;
 
@@ -41,7 +42,6 @@ namespace Itsdits.Ravar.UI
         private void Awake()
         {
             Instance = this;
-            _writer = GetComponent<DialogWriter>();
         }
 
         /// <summary>
@@ -56,18 +56,42 @@ namespace Itsdits.Ravar.UI
             {
                 // Wait so the Z key isn't immediately counted as pressed,
                 // otherwise we might skip the first string.
-                yield return new WaitForEndOfFrame();
+                yield return YieldHelper.EndOfFrame;
                 OnShowDialog?.Invoke();
                 _dialog = dialog;
                 _onDialogFinished = onFinished;
                 _dialogBox.SetActive(true);
                 SetNamePlate(speakerName);
-                StartCoroutine(_writer.TypeDialog(dialog.Strings[0]));
+                StartCoroutine(TypeDialog(dialog.Strings[0]));
             }
             else
             {
                 GameController.Instance.ReleasePlayer();
                 throw new ArgumentException("Null dialog passed into ShowDialog method.");
+            }
+        }
+
+        private IEnumerator TypeDialog(string textToType)
+        {
+            _isTyping = true;
+            _dialogText.SetText(textToType);
+            int totalVisibleCharacters = _dialogText.textInfo.characterCount;
+            var counter = 0;
+
+            while (true)
+            {
+                int visibleCount = counter % (totalVisibleCharacters + 1);
+                _dialogText.maxVisibleCharacters = visibleCount;
+
+                if (visibleCount >= totalVisibleCharacters)
+                {
+                    yield return YieldHelper.TwoSeconds;
+                    _isTyping = false;
+                    yield break;
+                }
+                
+                counter += 1;
+                yield return YieldHelper.TypingTime;
             }
         }
 
@@ -84,7 +108,7 @@ namespace Itsdits.Ravar.UI
             ++_currentString;
             if (_currentString < _dialog.Strings.Count)
             {
-                StartCoroutine(_writer.TypeDialog(_dialog.Strings[_currentString]));
+                StartCoroutine(TypeDialog(_dialog.Strings[_currentString]));
             }
             else
             {

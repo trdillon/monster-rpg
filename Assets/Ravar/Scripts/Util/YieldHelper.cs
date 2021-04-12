@@ -12,5 +12,6 @@ namespace Itsdits.Ravar.Util
         public static WaitForSeconds OneSecond = new WaitForSeconds(1f);
         public static WaitForSeconds TwoSeconds = new WaitForSeconds(2f);
         public static WaitForSeconds TwoAndChangeSeconds = new WaitForSeconds(2.1f);
+        public static WaitForEndOfFrame EndOfFrame = new WaitForEndOfFrame();
     }
 }

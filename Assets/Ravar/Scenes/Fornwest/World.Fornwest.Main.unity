@@ -11852,7 +11852,7 @@ GameObject:
   - component: {fileID: 859301999}
   - component: {fileID: 859301998}
   m_Layer: 0
-  m_Name: TerrainDeco
+  m_Name: Terrain Decoration
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41484,7 +41484,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7160391349577344517, guid: dca64f66267f47f42b5582b3d6a13764, type: 3}
       propertyPath: m_Name
-      value: TavernPortal
+      value: Tavern Portal
       objectReference: {fileID: 0}
     - target: {fileID: 7160391349577344518, guid: dca64f66267f47f42b5582b3d6a13764, type: 3}
       propertyPath: sceneToLoad
@@ -41493,6 +41493,10 @@ PrefabInstance:
     - target: {fileID: 7160391349577344518, guid: dca64f66267f47f42b5582b3d6a13764, type: 3}
       propertyPath: _sceneToLoad
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8232071751799128674, guid: dca64f66267f47f42b5582b3d6a13764, type: 3}
+      propertyPath: m_Name
+      value: Spawn Point
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dca64f66267f47f42b5582b3d6a13764, type: 3}
@@ -66240,7 +66244,7 @@ PrefabInstance:
       objectReference: {fileID: 8620350979297695334, guid: fac3a8e0619de344f911ade53c2c7e0d, type: 3}
     - target: {fileID: 4234512495102130385, guid: 9011473ac612dc7459683113ba4d8e02, type: 3}
       propertyPath: m_Name
-      value: ThugGordo
+      value: Thug Gordo
       objectReference: {fileID: 0}
     - target: {fileID: 4234512495102130386, guid: 9011473ac612dc7459683113ba4d8e02, type: 3}
       propertyPath: _los
@@ -66435,7 +66439,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6264295202843584293, guid: b5d80eff786d0a74b9542c2f22f8afb9, type: 3}
       propertyPath: m_Name
-      value: CorePackLoader
+      value: CorePack Loader
       objectReference: {fileID: 0}
     - target: {fileID: 7237141479274119219, guid: b5d80eff786d0a74b9542c2f22f8afb9, type: 3}
       propertyPath: m_RootOrder

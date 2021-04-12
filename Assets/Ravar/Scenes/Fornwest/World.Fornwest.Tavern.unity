@@ -132,7 +132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6264295202843584293, guid: b5d80eff786d0a74b9542c2f22f8afb9, type: 3}
       propertyPath: m_Name
-      value: CorePackLoader
+      value: CorePack Loader
       objectReference: {fileID: 0}
     - target: {fileID: 7237141479274119219, guid: b5d80eff786d0a74b9542c2f22f8afb9, type: 3}
       propertyPath: m_RootOrder
@@ -1771,7 +1771,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 939942729436302634, guid: 47cd7455646d355439d805c64a2ac9ab, type: 3}
       propertyPath: m_Name
-      value: BarmaidKelly
+      value: Barmaid Kelly
       objectReference: {fileID: 0}
     - target: {fileID: 939942729436302635, guid: 47cd7455646d355439d805c64a2ac9ab, type: 3}
       propertyPath: m_Size.x
@@ -11719,7 +11719,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7160391349577344517, guid: dca64f66267f47f42b5582b3d6a13764, type: 3}
       propertyPath: m_Name
-      value: ExitPortal
+      value: Exit Portal
       objectReference: {fileID: 0}
     - target: {fileID: 7160391349577344518, guid: dca64f66267f47f42b5582b3d6a13764, type: 3}
       propertyPath: sceneToLoad
@@ -11728,6 +11728,10 @@ PrefabInstance:
     - target: {fileID: 7160391349577344518, guid: dca64f66267f47f42b5582b3d6a13764, type: 3}
       propertyPath: _sceneToLoad
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8232071751799128674, guid: dca64f66267f47f42b5582b3d6a13764, type: 3}
+      propertyPath: m_Name
+      value: Spawn Point
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dca64f66267f47f42b5582b3d6a13764, type: 3}
