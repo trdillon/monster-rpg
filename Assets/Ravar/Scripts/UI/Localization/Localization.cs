@@ -8,15 +8,15 @@ namespace Itsdits.Ravar.UI
     /// </summary>
     public static class Localization
     {
-        private static Language _language = Language.English;
+        private static Language _language = Language.EN;
         private static Dictionary<string, string> _localizedDictionary;
+        private static CsvHelper _csvHelper = new CsvHelper();
         private static bool _isInit;
 
         private static void Init()
         {
-            var csvHelper = new CsvHelper();
-            csvHelper.LoadLocalization("EN");
-            _localizedDictionary = csvHelper.BuildDictionary();
+            _csvHelper.LoadLocalization(_language.ToString());
+            _localizedDictionary = _csvHelper.BuildDictionary();
             _isInit = true;
         }
 
@@ -43,6 +43,8 @@ namespace Itsdits.Ravar.UI
         public static void ChangeLanguage(Language language)
         {
             _language = language;
+            _csvHelper.LoadLocalization(_language.ToString());
+            _localizedDictionary = _csvHelper.BuildDictionary();
         }
     }
 }

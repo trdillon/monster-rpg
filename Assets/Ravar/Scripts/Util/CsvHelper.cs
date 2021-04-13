@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using UnityEngine;
 
-
 namespace Itsdits.Ravar.Util
 {
     /// <summary>
@@ -14,7 +13,7 @@ namespace Itsdits.Ravar.Util
     public class CsvHelper
     {
         private TextAsset _localizationFile;
-        private const string Filepath = "Localization/Localization_";
+        private const string Filepath = "Localization/Locale_";
         private const char SurroundingChar = '"';
         private readonly string[] LineSeparator = {Environment.NewLine};
 

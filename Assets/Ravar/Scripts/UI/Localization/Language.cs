@@ -6,10 +6,10 @@ namespace Itsdits.Ravar.UI
     /// <remarks>Currently supported are English, Spanish, French, German and Japanese.</remarks>
     public enum Language
     {
-        English,
-        Spanish,
-        French,
-        German,
-        Japanese
+        EN,
+        ES,
+        FR,
+        DE,
+        JP
     }
 }

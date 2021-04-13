@@ -6,7 +6,7 @@ namespace Itsdits.Ravar.UI
     /// <summary>
     /// Controller class for menu input and selection.
     /// </summary>
-    public class MenuController : MonoBehaviour
+    public class MainMenuController : MonoBehaviour
     {
         [Tooltip("GameObject that holds the MenuBox canvas.")]
         [SerializeField] private MenuBox _menuBox;
@@ -22,6 +22,11 @@ namespace Itsdits.Ravar.UI
         /// Current state of the main menu.
         /// </summary>
         public MenuState State => _state;
+
+        public void ChangeLanguageButtonHandle()
+        {
+            Localization.ChangeLanguage(Language.ES);
+        }
 
         private void Awake()
         {
