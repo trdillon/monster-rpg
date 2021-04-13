@@ -1334,6 +1334,14 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: b23ce18c-f65f-4264-b173-13abece253c9
     m_ActionName: Player/Pause[/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 1870e1ed-8271-4611-93e7-bc7af2c3ea4f
+    m_ActionName: UI/Mouse Position[/Mouse/position]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: b9cd6b68-7c9e-434f-b699-e58507f44ede
+    m_ActionName: UI/Mouse Left Click[/Mouse/leftButton]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player

@@ -23,4 +23,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Ravar/Scenes/Fornwest/World.Fornwest.Tavern.unity
     guid: 54700a4b1eb03ae459f5451cc08c00a0
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 445899649abcddf4589b750fb73ad859, type: 2}

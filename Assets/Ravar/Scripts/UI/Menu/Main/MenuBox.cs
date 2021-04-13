@@ -1,6 +1,6 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace Itsdits.Ravar.UI
 {
@@ -11,50 +11,50 @@ namespace Itsdits.Ravar.UI
     {
         [Header("Main Menu")]
         [Tooltip("List of Text elements that display on the Main Menu screen.")]
-        [SerializeField] private List<Text> _mainTexts;
+        [SerializeField] private List<TextMeshProUGUI> _mainTexts;
         [Tooltip("GameObject that holds the Main Menu.")]
         [SerializeField] private GameObject _mainMenu;
 
-        [Header("Loader Menu")]
+        [Header("Load Menu")]
         [Tooltip("List of Text elements that display on the Load Menu screen.")]
-        [SerializeField] private List<Text> _loaderTexts;
+        [SerializeField] private List<TextMeshProUGUI> _loadTexts;
         [Tooltip("GameObject that holds the Load Menu.")]
-        [SerializeField] private GameObject _loaderMenu;
+        [SerializeField] private GameObject _loadMenu;
 
         [Header("Settings Menu")]
         [Tooltip("List of Text elements that display on the Settings screen.")]
-        [SerializeField] private List<Text> _settingsTexts;
+        [SerializeField] private List<TextMeshProUGUI> _settingsTexts;
         [Tooltip("GameObject that holds the Settings Menu.")]
         [SerializeField] private GameObject _settingsMenu;
 
         [Header("Info Menu")]
         [Tooltip("List of Text elements that display on the Info screen.")]
-        [SerializeField] private List<Text> _infoTexts;
+        [SerializeField] private List<TextMeshProUGUI> _infoTexts;
         [Tooltip("GameObject that holds the Info screen.")]
         [SerializeField] private GameObject _infoMenu;
 
         [Header("Variables")]
         [Tooltip("The color to change the text to when highlighted.")]
-        [SerializeField] private Color _highlightColor;
+        [SerializeField] private TMP_ColorGradient _highlightGradient;
         [Tooltip("The color to display when the text is not highlighted.")]
-        [SerializeField] private Color _standardColor;
+        [SerializeField] private TMP_ColorGradient _standardGradient;
 
         /// <summary>
         /// List of Text elements that display on the Main Menu screen.
         /// </summary>
-        public List<Text> MainTexts => _mainTexts;
+        public List<TextMeshProUGUI> MainTexts => _mainTexts;
         /// <summary>
         /// List of Text elements that display on the Load Menu screen.
         /// </summary>
-        public List<Text> LoaderTexts => _loaderTexts;
+        public List<TextMeshProUGUI> LoadTexts => _loadTexts;
         /// <summary>
         /// List of Text elements that display on the Settings screen.
         /// </summary>
-        public List<Text> SettingsTexts => _settingsTexts;
+        public List<TextMeshProUGUI> SettingsTexts => _settingsTexts;
         /// <summary>
         /// List of Text elements that display on the Info screen.
         /// </summary>
-        public List<Text> InfoTexts => _infoTexts;
+        public List<TextMeshProUGUI> InfoTexts => _infoTexts;
 
         /// <summary>
         /// Handle updates to the main screen based on player inputs.
@@ -64,7 +64,7 @@ namespace Itsdits.Ravar.UI
         {
             for (var i = 0; i < _mainTexts.Count; ++i)
             {
-                _mainTexts[i].color = i == selected ? _highlightColor : _standardColor;
+                _mainTexts[i].colorGradientPreset = i == selected ? _highlightGradient : _standardGradient;
             }
         }
 
@@ -72,12 +72,12 @@ namespace Itsdits.Ravar.UI
         /// Handle updates to the load screen based on player inputs.
         /// </summary>
         /// <param name="selected">Item that is selected.</param>
-        public void UpdateLoaderSelector(int selected)
+        public void UpdateLoadSelector(int selected)
         {
             //TODO - implement this and the corresponding UI screen
-            for (var i = 0; i < _loaderTexts.Count; ++i)
+            for (var i = 0; i < _loadTexts.Count; ++i)
             {
-                _loaderTexts[i].color = i == selected ? _highlightColor : _standardColor;
+                _loadTexts[i].colorGradientPreset = i == selected ? _highlightGradient : _standardGradient;
             }
         }
 
@@ -90,7 +90,7 @@ namespace Itsdits.Ravar.UI
             //TODO - implement this and the corresponding UI screen
             for (var i = 0; i < _settingsTexts.Count; ++i)
             {
-                _settingsTexts[i].color = i == selected ? _highlightColor : _standardColor;
+                _settingsTexts[i].colorGradientPreset = i == selected ? _highlightGradient : _standardGradient;
             }
         }
 
@@ -103,7 +103,7 @@ namespace Itsdits.Ravar.UI
             //TODO - implement this and the corresponding UI screen
             for (var i = 0; i < _infoTexts.Count; ++i)
             {
-                _infoTexts[i].color = i == selected ? _highlightColor : _standardColor;
+                _infoTexts[i].colorGradientPreset = i == selected ? _highlightGradient : _standardGradient;
             }
         }
 
@@ -120,9 +120,9 @@ namespace Itsdits.Ravar.UI
         /// Enable or disable the load menu.
         /// </summary>
         /// <param name="isEnabled">True for enabled, false for disabled.</param>
-        public void EnableLoader(bool isEnabled)
+        public void EnableLoad(bool isEnabled)
         {
-            _loaderMenu.SetActive(isEnabled);
+            _loadMenu.SetActive(isEnabled);
         }
 
         /// <summary>

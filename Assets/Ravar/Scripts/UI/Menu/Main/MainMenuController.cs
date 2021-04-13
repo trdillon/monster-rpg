@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 namespace Itsdits.Ravar.UI
 {
     /// <summary>
-    /// Controller class for menu input and selection.
+    /// Controller class for the Main Menu scene. Handles switching between submenus and calling menu functions.
     /// </summary>
     public class MainMenuController : MonoBehaviour
     {
@@ -17,16 +17,6 @@ namespace Itsdits.Ravar.UI
         private int _currentInfo;
 
         private MenuState _state;
-
-        /// <summary>
-        /// Current state of the main menu.
-        /// </summary>
-        public MenuState State => _state;
-
-        public void ChangeLanguageButtonHandle()
-        {
-            Localization.ChangeLanguage(Language.ES);
-        }
 
         private void Awake()
         {
@@ -56,17 +46,17 @@ namespace Itsdits.Ravar.UI
         private void MainSelection()
         {
             _state = MenuState.Main;
-            _menuBox.EnableLoader(false);
+            _menuBox.EnableLoad(false);
             _menuBox.EnableSettings(false);
             _menuBox.EnableInfo(false);
             _menuBox.EnableMainMenu(true);
         }
 
-        private void LoaderSelection()
+        private void LoadSelection()
         {
             _state = MenuState.Loader;
             _menuBox.EnableMainMenu(false);
-            _menuBox.EnableLoader(true);
+            _menuBox.EnableLoad(true);
         }
 
         private void SettingsSelection()
@@ -106,7 +96,7 @@ namespace Itsdits.Ravar.UI
                 else if (_currentMain == 1)
                 {
                     // Load Game
-                    LoaderSelection();
+                    LoadSelection();
                 }
                 else if (_currentMain == 2)
                 {
@@ -138,8 +128,8 @@ namespace Itsdits.Ravar.UI
                 _currentLoad -= 1;
             }
 
-            _currentLoad = Mathf.Clamp(_currentLoad, 0, _menuBox.LoaderTexts.Count - 1);
-            _menuBox.UpdateLoaderSelector(_currentLoad);
+            _currentLoad = Mathf.Clamp(_currentLoad, 0, _menuBox.LoadTexts.Count - 1);
+            _menuBox.UpdateLoadSelector(_currentLoad);
 
             if (Keyboard.current.zKey.wasPressedThisFrame)
             {

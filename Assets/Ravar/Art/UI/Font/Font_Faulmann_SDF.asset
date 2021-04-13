@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
-  m_Name: FaulmannFont_SDF
+  m_Name: Font_Faulmann_SDF
   m_EditorClassIdentifier: 
-  hashCode: -707692113
+  hashCode: -1207316400
   material: {fileID: 9050939488759487715}
-  materialHashCode: 577083695
+  materialHashCode: -1690088848
   m_Version: 1.1.0
   m_SourceFontFileGUID: 2da6693a0700b2246a6c8c0e7d9c6d4c
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: 2da6693a0700b2246a6c8c0e7d9c6d4c, type: 3}
@@ -5319,7 +5319,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: FaulmannFont_SDF Material
   m_Shader: {fileID: 4800000, guid: 68e6db2ebdc24f95958faec2be5558d6, type: 3}
-  m_ShaderKeywords: 
+  m_ShaderKeywords: UNDERLAY_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -5380,7 +5380,7 @@ Material:
     - _Reflectivity: 10
     - _ScaleRatioA: 0.875
     - _ScaleRatioB: 0.7109375
-    - _ScaleRatioC: 0.7109375
+    - _ScaleRatioC: 0.46466506
     - _ScaleX: 1
     - _ScaleY: 1
     - _ShaderFlags: 0
@@ -5394,9 +5394,9 @@ Material:
     - _TextureHeight: 1024
     - _TextureWidth: 1024
     - _UnderlayDilate: 0
-    - _UnderlayOffsetX: 0
-    - _UnderlayOffsetY: 0
-    - _UnderlaySoftness: 0
+    - _UnderlayOffsetX: 1
+    - _UnderlayOffsetY: -1
+    - _UnderlaySoftness: 0.53
     - _VertexOffsetX: 0
     - _VertexOffsetY: 0
     - _WeightBold: 0.75
