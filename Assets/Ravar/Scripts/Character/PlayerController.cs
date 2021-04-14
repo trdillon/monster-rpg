@@ -93,7 +93,7 @@ namespace Itsdits.Ravar.Character
 
             var playerData = new PlayerData(
                 _id,
-                GameController.Instance.CurrentScene,
+                GameController.Instance.CurrentSceneName,
                 GetPositionAsIntArray()
                 );
 
@@ -108,7 +108,7 @@ namespace Itsdits.Ravar.Character
         {
             _id = loadData.id;
             GameController.Instance.UpdateCurrentScene();
-            int currentScene = GameController.Instance.CurrentScene;
+            string currentScene = GameController.Instance.CurrentSceneName;
             if (loadData.currentScene != currentScene)
             {
                 GameController.Instance.LoadScene(loadData.currentScene);
@@ -138,7 +138,7 @@ namespace Itsdits.Ravar.Character
 
         private void HandleInput(Vector2 inputVector)
         {
-            // Return if no input or character is already moving
+            // Return if no input or character is already moving.
             if (inputVector == Vector2.zero)
             {
                 return;
@@ -149,13 +149,13 @@ namespace Itsdits.Ravar.Character
                 return;
             }
 
-            // Only x or y should have a non-zero value to prevent diagonal movement
+            // Only x or y should have a non-zero value to prevent diagonal movement.
             if (inputVector.x != 0)
             {
                 inputVector.y = 0;
             }
 
-            // Normalize the Vector2 to avoid inputs less than 1f.
+            // Normalize the Vector2 because the composite mode on the input bindings can cause != 1f inputs.
             _moveVector = inputVector.normalized;
             StartCoroutine(Move(_moveVector, CheckAfterMove));
         }

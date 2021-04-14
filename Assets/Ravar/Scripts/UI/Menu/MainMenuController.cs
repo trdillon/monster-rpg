@@ -1,8 +1,11 @@
+using System.Collections;
 using System.Collections.Generic;
+using Itsdits.Ravar.Settings;
 using Itsdits.Ravar.UI.Localization;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 namespace Itsdits.Ravar.UI.Menu
 {
@@ -41,10 +44,14 @@ namespace Itsdits.Ravar.UI.Menu
         [Tooltip("The color to display when the text is not highlighted.")]
         [SerializeField] private TMP_ColorGradient _standardGradient;
 
-        private List<string> _mainKeys = new List<string>();
-        private List<string> _loadKeys = new List<string>();
-        private List<string> _settingsKeys = new List<string>();
-        private List<string> _infoKeys = new List<string>();
+        // Each TextMeshProUGUI will have a TextLocalizer component which contains a Localization string key.
+        // We will use this key to determine which menu item the player is selecting instead of an int index.
+        // This way we don't break menu selection if we change the order of the text elements.
+        // We can't use TextMeshProUGUI.text because it will change to localized text on TextLocalizer.Awake.
+        private readonly List<string> _mainKeys = new List<string>();
+        private readonly List<string> _loadKeys = new List<string>();
+        private readonly List<string> _settingsKeys = new List<string>();
+        private readonly List<string> _infoKeys = new List<string>();
         
         private int _mainIndex;
         private int _loadIndex;
@@ -52,11 +59,39 @@ namespace Itsdits.Ravar.UI.Menu
         private int _infoIndex;
 
         private MenuState _state;
+        private PlayerControls _controls;
+        private InputAction _select;
+        private InputAction _back;
+        private InputAction _move;
+        
+        private int _parsedYInput;
+        private int _parsedXInput;
 
         private void Start()
         {
             BuildKeyLists();
             ShowMain();
+        }
+
+        private void OnEnable()
+        {
+            _controls = new PlayerControls();
+            _controls.Enable();
+            _select = _controls.UI.Select;
+            _back = _controls.UI.Back;
+            _move = _controls.UI.Move;
+            _move.performed += OnMove;
+        }
+
+        private void OnDisable()
+        {
+            _move.performed -= OnMove;
+            _controls.Disable();
+        }
+        
+        private void OnMove(InputAction.CallbackContext context)
+        {
+            HandleInput(context.ReadValue<Vector2>());
         }
 
         private void Update()
@@ -101,29 +136,51 @@ namespace Itsdits.Ravar.UI.Menu
                 _infoKeys.Add(t.GetComponent<TextLocalizer>().Key);
             }
         }
+
+        private IEnumerator NewGame()
+        {
+            SceneManager.LoadScene("Game.Core", LoadSceneMode.Additive);
+            yield return SceneManager.LoadSceneAsync("World.Fornwest.Main", LoadSceneMode.Additive);
+            SceneManager.SetActiveScene(SceneManager.GetSceneByName("World.Fornwest.Main"));
+            SceneManager.UnloadSceneAsync("Game.Preload");
+            SceneManager.UnloadSceneAsync("UI.Menu.Main");
+        }
+
+        private void HandleInput(Vector2 inputVector)
+        {
+            // Only x or y should have a non-zero value to prevent diagonal movement.
+            if (inputVector.x != 0)
+            {
+                inputVector.y = 0;
+            }
+            
+            // Normalize the Vector2 because the composite mode on the input bindings can cause != 1f inputs.
+            Vector2 parsedVector = inputVector.normalized; 
+            _parsedYInput = Mathf.FloorToInt(parsedVector.y);
+            _parsedXInput = Mathf.FloorToInt(parsedVector.x);
+        }
         
         private void HandleInputMain()
         {
-            if (Keyboard.current.downArrowKey.wasPressedThisFrame || 
-                Gamepad.current.dpad.down.wasPressedThisFrame)
+            if (_parsedYInput == -1)
             {
                 _mainIndex += 1;
+                _parsedYInput = 0;
             }
-            else if (Keyboard.current.upArrowKey.wasPressedThisFrame ||
-                     Gamepad.current.dpad.up.wasPressedThisFrame)
+            else if (_parsedYInput == 1)
             {
                 _mainIndex -= 1;
+                _parsedYInput = 0;
             }
             
             _mainIndex = Mathf.Clamp(_mainIndex, 0, _mainTexts.Count - 1);
             UpdateMainSelector(_mainIndex);
             
-            if (Keyboard.current.zKey.wasPressedThisFrame ||
-                Gamepad.current.buttonSouth.wasPressedThisFrame)
+            if (_select.triggered)
             {
                 if (_mainKeys[_mainIndex] == "UI_NEW_GAME")
                 {
-                    Debug.Log("It worked boss.");
+                    StartCoroutine(NewGame());
                 }
                 else if (_mainKeys[_mainIndex] == "UI_LOAD_GAME")
                 {
@@ -147,13 +204,16 @@ namespace Itsdits.Ravar.UI.Menu
 
         private void HandleInputLoad()
         {
-            if (Keyboard.current.downArrowKey.wasPressedThisFrame || 
-                Gamepad.current.dpad.down.wasPressedThisFrame)
+            if (_back.triggered)
+            {
+                ShowMain();
+            }
+            
+            if (Keyboard.current.downArrowKey.wasPressedThisFrame)
             {
                 _loadIndex += 1;
             }
-            else if (Keyboard.current.upArrowKey.wasPressedThisFrame ||
-                     Gamepad.current.dpad.up.wasPressedThisFrame)
+            else if (Keyboard.current.upArrowKey.wasPressedThisFrame)
             {
                 _loadIndex -= 1;
             }
@@ -161,8 +221,7 @@ namespace Itsdits.Ravar.UI.Menu
             _loadIndex = Mathf.Clamp(_loadIndex, 0, _loadTexts.Count - 1);
             UpdateLoadSelector(_loadIndex);
 
-            if (Keyboard.current.zKey.wasPressedThisFrame ||
-                Gamepad.current.buttonSouth.wasPressedThisFrame)
+            if (_select.triggered)
             {
                 if (_loadKeys[_loadIndex] == "UI_BACK")
                 {
@@ -173,13 +232,16 @@ namespace Itsdits.Ravar.UI.Menu
 
         private void HandleInputSettings()
         {
-            if (Keyboard.current.downArrowKey.wasPressedThisFrame || 
-                Gamepad.current.dpad.down.wasPressedThisFrame)
+            if (_back.triggered)
+            {
+                ShowMain();
+            }
+            
+            if (Keyboard.current.downArrowKey.wasPressedThisFrame)
             {
                 _settingsIndex += 1;
             }
-            else if (Keyboard.current.upArrowKey.wasPressedThisFrame ||
-                     Gamepad.current.dpad.up.wasPressedThisFrame)
+            else if (Keyboard.current.upArrowKey.wasPressedThisFrame)
             {
                 _settingsIndex -= 1;
             }
@@ -187,8 +249,7 @@ namespace Itsdits.Ravar.UI.Menu
             _settingsIndex = Mathf.Clamp(_settingsIndex, 0, _settingsTexts.Count - 1);
             UpdateSettingsSelector(_settingsIndex);
 
-            if (Keyboard.current.zKey.wasPressedThisFrame ||
-                Gamepad.current.buttonSouth.wasPressedThisFrame)
+            if (_select.triggered)
             {
                 if (_settingsKeys[_settingsIndex] == "UI_BACK")
                 {
@@ -199,13 +260,16 @@ namespace Itsdits.Ravar.UI.Menu
 
         private void HandleInputInfo()
         {
-            if (Keyboard.current.downArrowKey.wasPressedThisFrame || 
-                Gamepad.current.dpad.down.wasPressedThisFrame)
+            if (_back.triggered)
+            {
+                ShowMain();
+            }
+            
+            if (Keyboard.current.downArrowKey.wasPressedThisFrame)
             {
                 _infoIndex += 1;
             }
-            else if (Keyboard.current.upArrowKey.wasPressedThisFrame ||
-                     Gamepad.current.dpad.up.wasPressedThisFrame)
+            else if (Keyboard.current.upArrowKey.wasPressedThisFrame)
             {
                 _infoIndex -= 1;
             }
@@ -213,8 +277,7 @@ namespace Itsdits.Ravar.UI.Menu
             _infoIndex = Mathf.Clamp(_infoIndex, 0, _infoTexts.Count - 1);
             UpdateInfoSelector(_infoIndex);
 
-            if (Keyboard.current.zKey.wasPressedThisFrame ||
-                Gamepad.current.buttonSouth.wasPressedThisFrame)
+            if (_select.triggered)
             {
                 if (_infoKeys[_infoIndex] == "UI_BACK")
                 {

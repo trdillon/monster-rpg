@@ -1145,7 +1145,7 @@ MonoBehaviour:
   m_MoveRepeatDelay: 0.5
   m_MoveRepeatRate: 0.1
   m_ActionsAsset: {fileID: -944628639613478452, guid: d88b9e0c72955d5489a7efcb652a9ae6, type: 3}
-  m_PointAction: {fileID: -284505749215081660, guid: d88b9e0c72955d5489a7efcb652a9ae6, type: 3}
+  m_PointAction: {fileID: -1650338537000041455, guid: d88b9e0c72955d5489a7efcb652a9ae6, type: 3}
   m_MoveAction: {fileID: -284505749215081660, guid: d88b9e0c72955d5489a7efcb652a9ae6, type: 3}
   m_SubmitAction: {fileID: -3480148300741709491, guid: d88b9e0c72955d5489a7efcb652a9ae6, type: 3}
   m_CancelAction: {fileID: 9044693382684980079, guid: d88b9e0c72955d5489a7efcb652a9ae6, type: 3}
@@ -1239,6 +1239,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: d62862cf-a239-4763-891e-9926087e441f
     m_ActionName: UI/Cancel[/Keyboard/x]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 2eb4643b-ba53-447c-b709-62a0e609bb9f
+    m_ActionName: UI/Move Mouse[/Mouse/position]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: UI

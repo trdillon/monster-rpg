@@ -209,17 +209,25 @@
                 },
                 {
                     "name": "Select",
-                    "type": "PassThrough",
+                    "type": "Button",
                     "id": "86988735-9542-4f86-866a-918cfba7e056",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
                 },
                 {
-                    "name": "Cancel",
-                    "type": "PassThrough",
+                    "name": "Back",
+                    "type": "Button",
                     "id": "d62862cf-a239-4763-891e-9926087e441f",
                     "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Move Mouse",
+                    "type": "PassThrough",
+                    "id": "2eb4643b-ba53-447c-b709-62a0e609bb9f",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": ""
                 }
@@ -326,17 +334,6 @@
                 },
                 {
                     "name": "",
-                    "id": "e64fabb1-0a8a-4495-b1ba-c47172d6dc23",
-                    "path": "<Mouse>/position",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard & Mouse",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "2626d5ba-eff1-4c39-95f5-6624c627bfb3",
                     "path": "<Keyboard>/z",
                     "interactions": "",
@@ -375,7 +372,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard & Mouse",
-                    "action": "Cancel",
+                    "action": "Back",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -386,7 +383,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard & Mouse",
-                    "action": "Cancel",
+                    "action": "Back",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -397,7 +394,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard & Mouse",
-                    "action": "Cancel",
+                    "action": "Back",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "055b1373-bdf9-400d-a1fc-654e332452d4",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard & Mouse",
+                    "action": "Move Mouse",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
