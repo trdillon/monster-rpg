@@ -1,4 +1,4 @@
-namespace Itsdits.Ravar.UI
+namespace Itsdits.Ravar.UI.Localization
 {
     /// <summary>
     /// Languages supported for localization.

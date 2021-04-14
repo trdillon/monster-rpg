@@ -1,6 +1,6 @@
 using System;
 
-namespace Itsdits.Ravar.Monster
+namespace Itsdits.Ravar.Monster.Condition
 {
     /// <summary>
     /// Implementation of <see cref="ConditionID"/> as defined in <see cref="ConditionDB"/>.

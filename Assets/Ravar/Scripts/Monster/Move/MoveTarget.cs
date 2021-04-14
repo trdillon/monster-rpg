@@ -1,4 +1,4 @@
-namespace Itsdits.Ravar.Monster
+namespace Itsdits.Ravar.Monster.Move
 {
     /// <summary>
     /// Intended target of a <see cref="MoveObj"/>.

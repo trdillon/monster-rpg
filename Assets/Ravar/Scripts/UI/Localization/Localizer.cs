@@ -1,12 +1,12 @@
 using System.Collections.Generic;
 using Itsdits.Ravar.Util;
 
-namespace Itsdits.Ravar.UI
+namespace Itsdits.Ravar.UI.Localization
 {
     /// <summary>
     /// Localization class that handles language dictionaries and values.
     /// </summary>
-    public static class Localization
+    public static class Localizer
     {
         private static Language _language = Language.EN;
         private static Dictionary<string, string> _localizedDictionary;

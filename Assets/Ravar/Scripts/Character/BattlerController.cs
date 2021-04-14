@@ -1,6 +1,6 @@
 using Itsdits.Ravar.Core;
-using Itsdits.Ravar.UI;
 using System.Collections;
+using Itsdits.Ravar.UI.Dialog;
 using Itsdits.Ravar.Util;
 using UnityEngine;
 
@@ -21,9 +21,9 @@ namespace Itsdits.Ravar.Character
 
         [Header("Dialog")]
         [Tooltip("Dialog this Battler will display when BattlerState is Ready.")]
-        [SerializeField] private Dialog _introDialog;
+        [SerializeField] private DialogObj _introDialog;
         [Tooltip("Dialog this Battler will display when BattlerState is Defeated.")]
-        [SerializeField] private Dialog _outroDialog;
+        [SerializeField] private DialogObj _outroDialog;
 
         [Header("Line of Sight")]
         [Tooltip("Alert icon to be displayed above the Battler's head when LoS is triggered.")]

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine.Assertions;
 
-namespace Itsdits.Ravar.Core
+namespace Itsdits.Ravar.Core.Signal
 {
     /// <summary>
     /// Signals are used to trigger events and pass data across multiple scenes. This allows for decoupling

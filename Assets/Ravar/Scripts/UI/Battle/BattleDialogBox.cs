@@ -1,13 +1,13 @@
-using Itsdits.Ravar.Monster;
 using Itsdits.Ravar.Util;
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
+using Itsdits.Ravar.Monster.Move;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Itsdits.Ravar.UI
+namespace Itsdits.Ravar.UI.Battle
 {
     /// <summary>
     /// Class for managing the dialog box displayed during battles.

@@ -151,11 +151,33 @@
                 },
                 {
                     "name": "",
+                    "id": "aa294144-fb2b-4ec7-a48a-b21a4c7c8fa0",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard & Mouse",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "3adc795b-d5f9-4e2f-944b-dc0a4897396f",
                     "path": "<Keyboard>/x",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard & Mouse",
+                    "action": "Cancel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5d4cd5bc-991a-48f2-8c01-5db72c383de1",
+                    "path": "<Keyboard>/backspace",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
                     "action": "Cancel",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -197,22 +219,6 @@
                     "name": "Cancel",
                     "type": "PassThrough",
                     "id": "d62862cf-a239-4763-891e-9926087e441f",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
-                    "name": "Mouse Position",
-                    "type": "PassThrough",
-                    "id": "1870e1ed-8271-4611-93e7-bc7af2c3ea4f",
-                    "expectedControlType": "Vector2",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
-                    "name": "Mouse Left Click",
-                    "type": "Button",
-                    "id": "b9cd6b68-7c9e-434f-b699-e58507f44ede",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -342,6 +348,17 @@
                 },
                 {
                     "name": "",
+                    "id": "7ad1443c-3f1e-47c8-8ff8-d050e3db33b1",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard & Mouse",
+                    "action": "Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "e449fee6-a2bf-4315-ac2e-8d23339fdf91",
                     "path": "<Mouse>/leftButton",
                     "interactions": "",
@@ -364,23 +381,23 @@
                 },
                 {
                     "name": "",
-                    "id": "ad8a5d07-c62e-40d6-b4b5-77790492ec7b",
-                    "path": "<Mouse>/position",
+                    "id": "54cc8cf4-be94-409e-a044-d462449597fc",
+                    "path": "<Keyboard>/backspace",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard & Mouse",
-                    "action": "Mouse Position",
+                    "action": "Cancel",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "1801edd5-2fd4-4d7c-a2ff-4f794765fb5e",
-                    "path": "<Mouse>/leftButton",
+                    "id": "1e65506a-f11d-4991-b0bd-45609d5d7f87",
+                    "path": "<Mouse>/rightButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard & Mouse",
-                    "action": "Mouse Left Click",
+                    "action": "Cancel",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Itsdits.Ravar.Monster
+namespace Itsdits.Ravar.Monster.Move
 { 
     /// <summary>
     /// Holds secondary effects that have a chance to trigger after a <see cref="MoveObj"/>.

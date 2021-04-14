@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Itsdits.Ravar.UI
+namespace Itsdits.Ravar.UI.Menu
 {
     /// <summary>
     /// Container class that holds references to the pause menu objects and screens.

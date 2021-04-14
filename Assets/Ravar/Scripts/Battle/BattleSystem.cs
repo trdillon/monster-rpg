@@ -1,6 +1,5 @@
 using Itsdits.Ravar.Animation;
 using Itsdits.Ravar.Monster;
-using Itsdits.Ravar.UI;
 using Itsdits.Ravar.Util;
 using System;
 using System.Collections;
@@ -8,6 +7,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using Itsdits.Ravar.Character;
+using Itsdits.Ravar.Monster.Condition;
+using Itsdits.Ravar.Monster.Move;
+using Itsdits.Ravar.UI.Battle;
+using Itsdits.Ravar.UI.Party;
 
 namespace Itsdits.Ravar.Battle
 {

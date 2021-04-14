@@ -1,4 +1,4 @@
-namespace Itsdits.Ravar
+namespace Itsdits.Ravar.Core.Signal
 {
     /// <summary>
     /// Holds a dialog item containing the dialog to be displayed and the speaker's name.

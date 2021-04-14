@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Itsdits.Ravar
+namespace Itsdits.Ravar.Core
 {
     /// <summary>
     /// Controller class for the preload scene that handles game setup and initialization.

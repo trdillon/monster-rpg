@@ -2,10 +2,11 @@ using DG.Tweening;
 using Itsdits.Ravar.Monster;
 using System.Collections;
 using System.Collections.Generic;
+using Itsdits.Ravar.Monster.Condition;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Itsdits.Ravar.UI
+namespace Itsdits.Ravar.UI.Battle
 {
     /// <summary>
     /// Displays and manages the <see cref="MonsterObj"/> HUD during battle.

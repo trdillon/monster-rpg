@@ -1,4 +1,4 @@
-namespace Itsdits.Ravar.UI
+namespace Itsdits.Ravar.UI.Menu
 {
     /// <summary>
     /// The current state of the pause menu.

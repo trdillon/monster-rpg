@@ -7,7 +7,7 @@ using Itsdits.Ravar.Core;
 using Itsdits.Ravar.Util;
 using TMPro;
 
-namespace Itsdits.Ravar.UI 
+namespace Itsdits.Ravar.UI.Dialog
 {
     /// <summary>
     /// Controller class for displaying <see cref="Dialog"/>.
@@ -31,7 +31,7 @@ namespace Itsdits.Ravar.UI
         [Tooltip("The Text element that displays the name.")]
         [SerializeField] private Text _nameText;
 
-        private Dialog _dialog;
+        private DialogObj _dialog;
         private int _currentString;
         private bool _isTyping;
 
@@ -50,7 +50,7 @@ namespace Itsdits.Ravar.UI
         /// <param name="dialog">Dialog to show.</param>
         /// <param name="speakerName">Name of character to display on name plate.</param>
         /// <param name="onFinished">What to do after showing.</param>
-        public IEnumerator ShowDialog(Dialog dialog, string speakerName, Action onFinished = null)
+        public IEnumerator ShowDialog(DialogObj dialog, string speakerName, Action onFinished = null)
         {
             if (dialog.Strings.Count > 0)
             {

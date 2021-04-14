@@ -1,13 +1,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Itsdits.Ravar.UI
+namespace Itsdits.Ravar.UI.Dialog
 {
     /// <summary>
     /// Holds the strings to display in the <see cref="DialogController"/>.
     /// </summary>
     [System.Serializable]
-    public class Dialog
+    public class DialogObj
     {
         [Tooltip("List of dialog strings to be displayed.")]
         [SerializeField] private List<string> _strings;

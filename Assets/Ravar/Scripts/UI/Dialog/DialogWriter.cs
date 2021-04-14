@@ -3,7 +3,7 @@ using Itsdits.Ravar.Util;
 using TMPro;
 using UnityEngine;
 
-namespace Itsdits.Ravar.UI
+namespace Itsdits.Ravar.UI.Dialog
 {
     public class DialogWriter : MonoBehaviour
     {

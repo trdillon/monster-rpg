@@ -1,4 +1,4 @@
-namespace Itsdits.Ravar.Core
+namespace Itsdits.Ravar.Core.Signal
 {
     /// <summary>
     /// Collection of the signals that are used in the game.

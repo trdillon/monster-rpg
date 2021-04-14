@@ -1,4 +1,4 @@
-namespace Itsdits.Ravar.Monster
+namespace Itsdits.Ravar.Monster.Move
 {
     /// <summary>
     /// Implements <see cref="MoveBase"/> and is used as moves during battles.

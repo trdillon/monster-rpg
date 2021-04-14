@@ -2,7 +2,9 @@ using Itsdits.Ravar.Battle;
 using Itsdits.Ravar.Character;
 using Itsdits.Ravar.Levels;
 using Itsdits.Ravar.Monster;
-using Itsdits.Ravar.UI;
+using Itsdits.Ravar.Monster.Condition;
+using Itsdits.Ravar.UI.Dialog;
+using Itsdits.Ravar.UI.Menu;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 

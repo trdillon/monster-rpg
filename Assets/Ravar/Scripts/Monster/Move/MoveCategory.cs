@@ -1,4 +1,4 @@
-namespace Itsdits.Ravar.Monster
+namespace Itsdits.Ravar.Monster.Move
 {
     /// <summary>
     /// Category of a <see cref="MoveBase"/>.

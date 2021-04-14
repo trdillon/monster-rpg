@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Itsdits.Ravar.UI
+namespace Itsdits.Ravar.UI.Menu
 {
     /// <summary>
     /// Handler class for the Exit button.

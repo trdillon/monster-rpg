@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Itsdits.Ravar.UI
+namespace Itsdits.Ravar.UI.Party
 {
     /// <summary>
     /// UI class for managing a <see cref="MonsterParty"/>.

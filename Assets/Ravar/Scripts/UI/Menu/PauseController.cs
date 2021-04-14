@@ -6,7 +6,7 @@ using Itsdits.Ravar.Monster;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace Itsdits.Ravar.UI
+namespace Itsdits.Ravar.UI.Menu
 {
     /// <summary>
     /// Controller class for the in-game pause menu.

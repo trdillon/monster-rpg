@@ -1,6 +1,6 @@
-using Itsdits.Ravar.UI;
 using System.Collections;
 using System.Collections.Generic;
+using Itsdits.Ravar.UI.Dialog;
 using UnityEngine;
 
 namespace Itsdits.Ravar.Character
@@ -16,7 +16,7 @@ namespace Itsdits.Ravar.Character
 
         [Header("Dialog")]
         [Tooltip("Dialog this NPC will display when interacted with.")]
-        [SerializeField] private Dialog _dialog;
+        [SerializeField] private DialogObj _dialog;
 
         [Header("Movement")]
         [Tooltip("List of movements this character will make to complete their movement pattern.")]
