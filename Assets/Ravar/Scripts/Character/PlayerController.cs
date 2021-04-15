@@ -1,6 +1,8 @@
 using Itsdits.Ravar.Core;
+using Itsdits.Ravar.Core.Signal;
 using Itsdits.Ravar.Data;
 using Itsdits.Ravar.Levels;
+using Itsdits.Ravar.Settings;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -18,9 +20,12 @@ namespace Itsdits.Ravar.Character
         [SerializeField] private string _name;
         [Tooltip("The sprite of the character to be displayed in the battle screen.")]
         [SerializeField] private Sprite _battleSprite;
-
+        
+        private PlayerControls _controls;
+        private InputAction _move;
+        private InputAction _interact;
+        private InputAction _pause;
         private Vector2 _inputVector;
-        private Vector2 _moveVector;
 
         /// <summary>
         /// The player's Id.
@@ -37,9 +42,65 @@ namespace Itsdits.Ravar.Character
 
         private void Start()
         {
-            _id = _name + Random.Range(0, 65534);
+            if (_id.Equals(null))
+            {
+                _id = _name + Random.Range(0, 65534);
+            }
+            GameSignals.UNPAUSE_GAME.AddListener(OnResume);
+        }
+
+        private void OnEnable()
+        {
+            _controls = new PlayerControls();
+            _controls.Enable();
+            _move = _controls.Player.Move;
+            _interact = _controls.Player.Interact;
+            _pause = _controls.Player.Pause;
+            _move.performed += OnMove;
+            _interact.performed += OnInteract;
+            _pause.performed += OnPause;
+        }
+
+        private void OnDisable()
+        {
+            _move.performed -= OnMove;
+            _interact.performed -= OnInteract;
+            _pause.performed -= OnPause;
+            _controls.Disable();
         }
         
+        private void OnMove(InputAction.CallbackContext context)
+        {
+            _inputVector = context.ReadValue<Vector2>();
+        }
+
+        private void OnInteract(InputAction.CallbackContext context)
+        {
+            var lookingAt = new Vector3(animator.MoveX, animator.MoveY);
+            Vector3 nextTile = transform.position + lookingAt;
+            Collider2D overlapCircle = Physics2D.OverlapCircle(nextTile, 0.3f, MapLayers.Instance.InteractLayer);
+            if (overlapCircle != null)
+            {
+                overlapCircle.GetComponent<IInteractable>()?.InteractWith(transform);
+            }
+        }
+
+        private void OnPause(InputAction.CallbackContext context)
+        {
+            GetComponent<SpriteRenderer>().enabled = false;
+            GetComponentInChildren<AudioListener>().enabled = false;
+            StartCoroutine(GameController.Instance.PauseGame(true));
+        }
+
+        private void OnResume(bool resume)
+        {
+            if (resume)
+            {
+                GetComponent<SpriteRenderer>().enabled = true;
+                GetComponentInChildren<AudioListener>().enabled = true;
+            }
+        }
+
         /// <summary>
         /// Handles Update lifecycle when GameState.World.
         /// </summary>
@@ -48,41 +109,7 @@ namespace Itsdits.Ravar.Character
             HandleInput(_inputVector);
             animator.IsMoving = IsMoving;
         }
-
-        /// <summary>
-        /// Update inputVector when Move event is triggered.
-        /// </summary>
-        /// <param name="context">Callbacks from the InputAction cycle. Contains the Vector2 from the Player Input.</param>
-        public void OnMove(InputAction.CallbackContext context)
-        {
-            _inputVector = context.ReadValue<Vector2>();
-        }
-
-        /// <summary>
-        /// Call Interact when Interact event is triggered.
-        /// </summary>
-        /// <param name="context">Callbacks from the InputAction cycle.</param>
-        public void OnInteract(InputAction.CallbackContext context)
-        {
-            // Avoid calling during start and canceled callbacks to prevent duplicate calls.
-            if (context.performed)
-            {
-                Interact();
-            }
-        }
-
-        /// <summary>
-        /// Pause the game when the Pause event is triggered. Resumes the game if triggered while already paused.
-        /// </summary>
-        /// <param name="context">Callbacks from the InputAction cycle.</param>
-        public void OnPause(InputAction.CallbackContext context)
-        {
-            if (context.performed)
-            {
-                GameController.Instance.PauseGame(GameController.Instance.State != GameState.Pause);
-            }
-        }
-
+        
         /// <summary>
         /// Saves the current player's data.
         /// </summary>
@@ -156,19 +183,8 @@ namespace Itsdits.Ravar.Character
             }
 
             // Normalize the Vector2 because the composite mode on the input bindings can cause != 1f inputs.
-            _moveVector = inputVector.normalized;
-            StartCoroutine(Move(_moveVector, CheckAfterMove));
-        }
-
-        private void Interact()
-        {
-            var lookingAt = new Vector3(animator.MoveX, animator.MoveY);
-            Vector3 nextTile = transform.position + lookingAt;
-            Collider2D overlapCircle = Physics2D.OverlapCircle(nextTile, 0.3f, MapLayers.Instance.InteractLayer);
-            if (overlapCircle != null)
-            {
-                overlapCircle.GetComponent<IInteractable>()?.InteractWith(transform);
-            }
+            Vector2 moveVector = inputVector.normalized;
+            StartCoroutine(Move(moveVector, CheckAfterMove));
         }
 
         private int[] GetPositionAsIntArray()
