@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Itsdits.Ravar.Monster
+namespace Itsdits.Ravar.Monster.Move
 {
     /// <summary>
     /// Base class for a monster Move. ScriptableObject that is implemented by <see cref="MoveObj"/> to create moves in game.

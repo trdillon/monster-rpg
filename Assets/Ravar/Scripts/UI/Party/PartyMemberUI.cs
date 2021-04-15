@@ -1,8 +1,9 @@
 using Itsdits.Ravar.Monster;
+using Itsdits.Ravar.UI.Battle;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Itsdits.Ravar.UI
+namespace Itsdits.Ravar.UI.Party
 {
     /// <summary>
     /// Visual representation of an individual party member in the <see cref="PartyScreen"/>.

@@ -1,4 +1,4 @@
-namespace Itsdits.Ravar.Monster
+namespace Itsdits.Ravar.Monster.Condition
 { 
     /// <summary>
     /// Possible conditions to inflict.

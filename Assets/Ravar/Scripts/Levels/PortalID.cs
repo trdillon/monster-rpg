@@ -1,4 +1,4 @@
-namespace Itsdits.Ravar
+namespace Itsdits.Ravar.Levels
 {
     /// <summary>
     /// Identifier to connect portals in multi-portal maps.

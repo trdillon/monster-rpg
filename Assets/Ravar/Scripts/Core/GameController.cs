@@ -1,8 +1,11 @@
+using System.Collections;
 using Itsdits.Ravar.Battle;
 using Itsdits.Ravar.Character;
 using Itsdits.Ravar.Levels;
 using Itsdits.Ravar.Monster;
-using Itsdits.Ravar.UI;
+using Itsdits.Ravar.Monster.Condition;
+using Itsdits.Ravar.UI.Dialog;
+using Itsdits.Ravar.UI.Menu;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -32,7 +35,8 @@ namespace Itsdits.Ravar.Core
         private BattlerController _battler;
         private GameState _state;
         private GameState _prevState;
-        private int _currentScene;
+        private string _currentSceneName;
+        private int _currentSceneIndex;
 
         /// <summary>
         /// The current <see cref="GameState"/>.
@@ -43,9 +47,13 @@ namespace Itsdits.Ravar.Core
         /// </summary>
         public GameState PrevState => _prevState;
         /// <summary>
+        /// The name of the scene the player is currently in.
+        /// </summary>
+        public string CurrentSceneName => _currentSceneName;
+        /// <summary>
         /// The index of the scene the player is currently in.
         /// </summary>
-        public int CurrentScene => _currentScene;
+        public int CurrentSceneIndex => _currentSceneIndex;
         /// <summary>
         /// The current player in this game instance.
         /// </summary>
@@ -169,18 +177,28 @@ namespace Itsdits.Ravar.Core
         /// Loads the game into a different scene.
         /// </summary>
         /// <remarks>Used for changing scenes on game loading.</remarks>
-        /// <param name="sceneIndex"></param>
-        public void LoadScene(int sceneIndex)
+        /// <param name="sceneName">Name of the scene to load.</param>
+        public IEnumerator LoadScene(string sceneName)
         {
-            SceneManager.LoadSceneAsync(sceneIndex);
+            enabled = false;
+            if (_currentSceneIndex > 0)
+            {
+                yield return SceneManager.UnloadSceneAsync(_currentSceneIndex);
+            }
+            
+            yield return SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
+            SceneManager.SetActiveScene(SceneManager.GetSceneByName(sceneName));
+            _currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+            enabled = true;
         }
 
         /// <summary>
-        /// Updates the currentScene index.
+        /// Updates the currentSceneName and currentSceneIndex.
         /// </summary>
         public void UpdateCurrentScene()
         {
-            _currentScene = SceneManager.GetActiveScene().buildIndex;
+            _currentSceneName = SceneManager.GetActiveScene().name;
+            _currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         }
 
         /// <summary>

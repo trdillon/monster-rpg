@@ -2,7 +2,9 @@ using Itsdits.Ravar.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Itsdits.Ravar.UI;
+using Itsdits.Ravar.Monster.Condition;
+using Itsdits.Ravar.Monster.Move;
+using Itsdits.Ravar.UI.Battle;
 using UnityEngine;
 
 namespace Itsdits.Ravar.Monster 

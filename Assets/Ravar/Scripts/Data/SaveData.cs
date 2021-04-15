@@ -1,8 +1,7 @@
 // ReSharper disable InconsistentNaming
-using Itsdits.Ravar.Data;
 using System.Collections.Generic;
 
-namespace Itsdits.Ravar
+namespace Itsdits.Ravar.Data
 {
     /// <summary>
     /// Data container that holds the various data objects that need to be saved.

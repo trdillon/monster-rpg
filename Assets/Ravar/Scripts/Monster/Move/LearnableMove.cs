@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Itsdits.Ravar.Monster
+namespace Itsdits.Ravar.Monster.Move
 {
     /// <summary>
     /// Implementation class for <see cref="MoveBase"/>.

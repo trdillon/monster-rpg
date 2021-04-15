@@ -1,5 +1,5 @@
 // ReSharper disable InconsistentNaming
-namespace Itsdits.Ravar.Monster
+namespace Itsdits.Ravar.Monster.Condition
 {
     /// <summary>
     /// Stat changes caused by <see cref="MoveEffects"/>.

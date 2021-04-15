@@ -8,7 +8,7 @@ namespace Itsdits.Ravar.Data
     public class PlayerData
     {
         public string id;
-        public int currentScene;
+        public string currentScene;
         public int[] currentPosition;
 
         /// <summary>
@@ -17,7 +17,7 @@ namespace Itsdits.Ravar.Data
         /// <param name="newId">ID of the player in this instance.</param>
         /// <param name="scene">Current scene the player is in.</param>
         /// <param name="position">Current position the player is in.</param>
-        public PlayerData(string newId, int scene, int[] position)
+        public PlayerData(string newId, string scene, int[] position)
         {
             id = newId;
             currentScene = scene;

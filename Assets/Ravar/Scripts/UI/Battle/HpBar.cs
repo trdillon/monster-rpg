@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-namespace Itsdits.Ravar.UI
+namespace Itsdits.Ravar.UI.Battle
 {
     /// <summary>
     /// Handles visual changes in the HP bar displayed in the <see cref="BattleHud"/>.

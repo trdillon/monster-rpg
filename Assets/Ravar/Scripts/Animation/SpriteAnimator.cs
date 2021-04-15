@@ -8,11 +8,11 @@ namespace Itsdits.Ravar.Animation
     /// </summary>
     public class SpriteAnimator
     {
-        private readonly SpriteRenderer _spriteRenderer;
-        private readonly List<Sprite> _frames;
-        private readonly float _frameRate;
-        private int _currentFrame;
+        private SpriteRenderer _spriteRenderer;
+        private List<Sprite> _frames;
+        private float _frameRate;
         private float _timer;
+        private int _currentFrame;
         
         /// <summary>
         /// Constructor for a SpriteAnimator.

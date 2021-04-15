@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Itsdits.Ravar.Core
 {
@@ -13,10 +14,14 @@ namespace Itsdits.Ravar.Core
         private void Awake()
         {
             CorePack[] existingPacks = FindObjectsOfType<CorePack>();
-            if (existingPacks.Length == 0)
+            if (existingPacks.Length != 0)
             {
-                Instantiate(_corePackPrefab, new Vector3(0, 0, 0), Quaternion.identity);
+                return;
             }
+
+            // Make sure the CorePack is moved into the Game.Core scene or we're in trouble.
+            GameObject corePack = Instantiate(_corePackPrefab, new Vector3(0, 0, 0), Quaternion.identity);
+            SceneManager.MoveGameObjectToScene(corePack, SceneManager.GetSceneByName("Game.Core"));
         }
     }
 }

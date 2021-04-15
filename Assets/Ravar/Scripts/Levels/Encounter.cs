@@ -1,9 +1,8 @@
 using Itsdits.Ravar.Character;
 using Itsdits.Ravar.Core;
-using Itsdits.Ravar.Levels;
 using UnityEngine;
 
-namespace Itsdits.Ravar
+namespace Itsdits.Ravar.Levels
 {
     /// <summary>
     /// This class handles logic for triggers on the Encounter layer.
