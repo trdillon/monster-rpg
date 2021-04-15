@@ -1,12 +1,13 @@
 using System.Collections;
 using Itsdits.Ravar.Battle;
 using Itsdits.Ravar.Character;
+using Itsdits.Ravar.Core.Signal;
 using Itsdits.Ravar.Levels;
 using Itsdits.Ravar.Monster;
 using Itsdits.Ravar.Monster.Condition;
 using Itsdits.Ravar.UI.Dialog;
-using Itsdits.Ravar.UI.Menu;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 namespace Itsdits.Ravar.Core
@@ -23,19 +24,17 @@ namespace Itsdits.Ravar.Core
 
         [Tooltip("GameObject that holds the PlayerController component.")]
         [SerializeField] private PlayerController _playerController;
-        [Tooltip("GameObject that holds the DialogController component.")]
-        [SerializeField] private DialogController _dialogController;
-        [Tooltip("GameObject that holds the PauseController component.")]
-        [SerializeField] private PauseController _pauseController;
         [Tooltip("GameObject that holds the BattleSystem component.")]
         [SerializeField] private BattleSystem _battleSystem;
         [Tooltip("The world camera that is attached to the Player GameObject.")]
         [SerializeField] private Camera _worldCamera;
+        [SerializeField] private EventSystem _eventSystem;
 
         private BattlerController _battler;
         private GameState _state;
         private GameState _prevState;
         private string _currentSceneName;
+        private string _previousSceneName;
         private int _currentSceneIndex;
 
         /// <summary>
@@ -87,10 +86,6 @@ namespace Itsdits.Ravar.Core
             {
                 DialogController.Instance.HandleUpdate();
             }
-            else if (_state == GameState.Pause)
-            {
-                _pauseController.HandleUpdate();
-            }
         }
 
         /// <summary>
@@ -140,18 +135,28 @@ namespace Itsdits.Ravar.Core
         /// Pause and unpause the game.
         /// </summary>
         /// <param name="pause">True for pause, false for unpause.</param>
-        public void PauseGame(bool pause)
+        public IEnumerator PauseGame(bool pause)
         {
+            //TODO - Clean this up, the order of the calls is crucial and the whole thing blows up if you move anything.
             if (pause)
             {
                 _prevState = _state;
-                _pauseController.EnablePauseBox(true);
+                _previousSceneName = SceneManager.GetActiveScene().name;
+                _eventSystem.enabled = false;
+                yield return LoadSceneAsyncWithCheck("UI.Menu.Pause");
+                //yield return SceneManager.UnloadSceneAsync(_previousSceneName);
+                GameSignals.PAUSE_GAME.Dispatch(true);
                 _state = GameState.Pause;
             }
             else
             {
-                _pauseController.EnablePauseBox(false);
+                //yield return LoadSceneAsyncWithCheck(_previousSceneName);
+                SceneManager.SetActiveScene(SceneManager.GetSceneByName(_previousSceneName));
+                GameSignals.UNPAUSE_GAME.Dispatch(true);
                 _state = _prevState;
+                yield return SceneManager.UnloadSceneAsync("UI.Menu.Pause");
+                _eventSystem.enabled = true;
+                _previousSceneName = null;
             }
         }
 
@@ -190,6 +195,29 @@ namespace Itsdits.Ravar.Core
             SceneManager.SetActiveScene(SceneManager.GetSceneByName(sceneName));
             _currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
             enabled = true;
+        }
+
+        public IEnumerator LoadSceneAsyncWithCheck(string sceneName)
+        {
+            if (IsSceneLoadedAlready(sceneName))
+            {
+                yield break;
+            }
+
+            AsyncOperation scene = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
+            while (scene.progress < 0.9f)
+            {
+                // Show loading bar if we want.
+                yield return null;
+            }
+
+            while (!scene.isDone)
+            {
+                // Wait until the scene really is loaded.
+                yield return null;
+            }
+            
+            SceneManager.SetActiveScene(SceneManager.GetSceneByName(sceneName));
         }
 
         /// <summary>
@@ -243,6 +271,11 @@ namespace Itsdits.Ravar.Core
             {
                 _state = GameState.World;
             }
+        }
+        
+        private bool IsSceneLoadedAlready(string sceneName)
+        {
+            return SceneManager.GetSceneByName(sceneName).isLoaded;
         }
     }
 }

@@ -2,6 +2,7 @@ using Itsdits.Ravar.Animation;
 using Itsdits.Ravar.Levels;
 using System;
 using System.Collections;
+using Itsdits.Ravar.Core.Signal;
 using UnityEngine;
 
 namespace Itsdits.Ravar.Character
@@ -11,8 +12,8 @@ namespace Itsdits.Ravar.Character
 	/// </summary>
 	public abstract class Moveable : MonoBehaviour
 	{
-        private float moveSpeed = 5f;
         protected CharacterAnimator animator;
+        private float moveSpeed = 5f;
 
         /// <summary>
         /// If the character is currently moving or not.
@@ -25,12 +26,6 @@ namespace Itsdits.Ravar.Character
             SetOffsetOnTile(transform.position);
         }
 
-        /// <summary>
-        /// Moves the character or object.
-        /// </summary>
-        /// <param name="moveVector">Where to move to. Should be sanitized first if coming from Player Input component.</param>
-        /// <param name="onMoveFinish">What do do after the move is completed. Used to check for encounters or LoS triggers.</param>
-        /// <returns></returns>
         protected IEnumerator Move(Vector2 moveVector, Action onMoveFinish)
         {
             animator.MoveX = Mathf.Clamp(moveVector.x, -1f, 1f);
@@ -39,19 +34,18 @@ namespace Itsdits.Ravar.Character
             Vector3 targetPos = transform.position;
             targetPos.x += moveVector.x;
             targetPos.y += moveVector.y;
-
             if (!IsPathWalkable(targetPos))
             {
                 yield break;
             }
-
+            
             IsMoving = true;
             while ((targetPos - transform.position).sqrMagnitude > Mathf.Epsilon)
             {
                 transform.position = Vector3.MoveTowards(transform.position, targetPos, moveSpeed * Time.deltaTime);
                 yield return null;
             }
-
+            
             transform.position = targetPos;
             IsMoving = false;
             onMoveFinish?.Invoke();
