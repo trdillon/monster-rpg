@@ -111,7 +111,7 @@ namespace Itsdits.Ravar.Character
             string currentScene = GameController.Instance.CurrentSceneName;
             if (loadData.currentScene != currentScene)
             {
-                GameController.Instance.LoadScene(loadData.currentScene);
+                StartCoroutine(GameController.Instance.LoadScene(loadData.currentScene));
             }
 
             var newPosition = new Vector2(loadData.currentPosition[0], loadData.currentPosition[1]);

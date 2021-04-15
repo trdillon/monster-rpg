@@ -91,6 +91,7 @@ namespace Itsdits.Ravar.UI.Menu
         
         private void OnMove(InputAction.CallbackContext context)
         {
+            // Reads the composite binding input from keyboard and d-pad only.
             HandleInput(context.ReadValue<Vector2>());
         }
 
@@ -116,6 +117,8 @@ namespace Itsdits.Ravar.UI.Menu
 
         private void BuildKeyLists()
         {
+            // Calling GetComponent within a bunch of loops isn't very performant, but considering we're only
+            // doing it once on Start() I think we can live with it.
             foreach (TextMeshProUGUI t in _mainTexts)
             {
                 _mainKeys.Add(t.GetComponent<TextLocalizer>().Key);
@@ -175,30 +178,38 @@ namespace Itsdits.Ravar.UI.Menu
             
             _mainIndex = Mathf.Clamp(_mainIndex, 0, _mainTexts.Count - 1);
             UpdateMainSelector(_mainIndex);
-            
-            if (_select.triggered)
+
+            if (!_select.triggered)
             {
-                if (_mainKeys[_mainIndex] == "UI_NEW_GAME")
-                {
-                    StartCoroutine(NewGame());
-                }
-                else if (_mainKeys[_mainIndex] == "UI_LOAD_GAME")
-                {
-                    ShowLoad();
-                }
-                else if (_mainKeys[_mainIndex] == "UI_SETTINGS")
-                {
-                    ShowSettings();
-                }
-                else if (_mainKeys[_mainIndex] == "UI_INFO")
-                {
-                    ShowInfo();
-                }
-                else if (_mainKeys[_mainIndex] == "UI_EXIT")
-                {
-                    //TODO - implement an exit handler to clean up before quitting
-                    Application.Quit();
-                }
+                return;
+            }
+
+            if (_mainKeys[_mainIndex] == "UI_NEW_GAME")
+            {
+                StartCoroutine(NewGame());
+            }
+            else if (_mainKeys[_mainIndex] == "UI_LOAD_GAME")
+            {
+                _state = MenuState.Load;
+                _mainMenu.SetActive(false);
+                _loadMenu.SetActive(true);
+            }
+            else if (_mainKeys[_mainIndex] == "UI_SETTINGS")
+            {
+                _state = MenuState.Settings;
+                _mainMenu.SetActive(false);
+                _settingsMenu.SetActive(true);
+            }
+            else if (_mainKeys[_mainIndex] == "UI_INFO")
+            {
+                _state = MenuState.Info;
+                _mainMenu.SetActive(false);
+                _infoMenu.SetActive(true);
+            }
+            else if (_mainKeys[_mainIndex] == "UI_EXIT")
+            {
+                //TODO - implement an exit handler to clean up before quitting
+                Application.Quit();
             }
         }
 
@@ -221,12 +232,14 @@ namespace Itsdits.Ravar.UI.Menu
             _loadIndex = Mathf.Clamp(_loadIndex, 0, _loadTexts.Count - 1);
             UpdateLoadSelector(_loadIndex);
 
-            if (_select.triggered)
+            if (!_select.triggered)
             {
-                if (_loadKeys[_loadIndex] == "UI_BACK")
-                {
-                    ShowMain();
-                }
+                return;
+            }
+
+            if (_loadKeys[_loadIndex] == "UI_BACK")
+            {
+                ShowMain();
             }
         }
 
@@ -249,12 +262,14 @@ namespace Itsdits.Ravar.UI.Menu
             _settingsIndex = Mathf.Clamp(_settingsIndex, 0, _settingsTexts.Count - 1);
             UpdateSettingsSelector(_settingsIndex);
 
-            if (_select.triggered)
+            if (!_select.triggered)
             {
-                if (_settingsKeys[_settingsIndex] == "UI_BACK")
-                {
-                    ShowMain();
-                }
+                return;
+            }
+
+            if (_settingsKeys[_settingsIndex] == "UI_BACK")
+            {
+                ShowMain();
             }
         }
 
@@ -277,12 +292,14 @@ namespace Itsdits.Ravar.UI.Menu
             _infoIndex = Mathf.Clamp(_infoIndex, 0, _infoTexts.Count - 1);
             UpdateInfoSelector(_infoIndex);
 
-            if (_select.triggered)
+            if (!_select.triggered)
             {
-                if (_infoKeys[_infoIndex] == "UI_BACK")
-                {
-                    ShowMain();
-                }
+                return;
+            }
+
+            if (_infoKeys[_infoIndex] == "UI_BACK")
+            {
+                ShowMain();
             }
         }
         
@@ -328,27 +345,6 @@ namespace Itsdits.Ravar.UI.Menu
             _settingsMenu.SetActive(false);
             _infoMenu.SetActive(false);
             _mainMenu.SetActive(true);
-        }
-
-        private void ShowLoad()
-        {
-            _state = MenuState.Load;
-            _mainMenu.SetActive(false);
-            _loadMenu.SetActive(true);
-        }
-
-        private void ShowSettings()
-        {
-            _state = MenuState.Settings;
-            _mainMenu.SetActive(false);
-            _settingsMenu.SetActive(true);
-        }
-
-        private void ShowInfo()
-        {
-            _state = MenuState.Info;
-            _mainMenu.SetActive(false);
-            _infoMenu.SetActive(true);
         }
     }
 }

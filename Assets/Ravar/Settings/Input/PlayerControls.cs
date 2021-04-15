@@ -224,7 +224,7 @@ namespace Itsdits.Ravar.Settings
                 },
                 {
                     ""name"": ""Select"",
-                    ""type"": ""Button"",
+                    ""type"": ""PassThrough"",
                     ""id"": ""86988735-9542-4f86-866a-918cfba7e056"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
