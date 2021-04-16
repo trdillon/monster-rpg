@@ -152,7 +152,7 @@ namespace Itsdits.Ravar.Core
             {
                 //yield return LoadSceneAsyncWithCheck(_previousSceneName);
                 SceneManager.SetActiveScene(SceneManager.GetSceneByName(_previousSceneName));
-                GameSignals.UNPAUSE_GAME.Dispatch(true);
+                GameSignals.RESUME_GAME.Dispatch(true);
                 _state = _prevState;
                 yield return SceneManager.UnloadSceneAsync("UI.Menu.Pause");
                 _eventSystem.enabled = true;

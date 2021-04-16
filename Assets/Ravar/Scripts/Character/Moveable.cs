@@ -2,7 +2,6 @@ using Itsdits.Ravar.Animation;
 using Itsdits.Ravar.Levels;
 using System;
 using System.Collections;
-using Itsdits.Ravar.Core.Signal;
 using UnityEngine;
 
 namespace Itsdits.Ravar.Character

@@ -46,7 +46,7 @@ namespace Itsdits.Ravar.Character
             {
                 _id = _name + Random.Range(0, 65534);
             }
-            GameSignals.UNPAUSE_GAME.AddListener(OnResume);
+            GameSignals.RESUME_GAME.AddListener(OnResume);
         }
 
         private void OnEnable()

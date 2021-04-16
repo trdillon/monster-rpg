@@ -7,6 +7,7 @@ namespace Itsdits.Ravar.Core.Signal
     {
         public static readonly Signal<DialogItem> DISPLAY_DIALOG = new Signal<DialogItem>();
         public static readonly Signal<bool> PAUSE_GAME = new Signal<bool>();
-        public static readonly Signal<bool> UNPAUSE_GAME = new Signal<bool>();
+        public static readonly Signal<bool> RESUME_GAME = new Signal<bool>();
+        public static readonly Signal<bool> SAVE_GAME = new Signal<bool>();
     }
 }

@@ -19,7 +19,7 @@ namespace Itsdits.Ravar
         private void Awake()
         {
             GameSignals.PAUSE_GAME.AddListener(OnPause);
-            GameSignals.UNPAUSE_GAME.AddListener(OnResume);
+            GameSignals.RESUME_GAME.AddListener(OnResume);
             BuildSpriteRendererList();
         }
         

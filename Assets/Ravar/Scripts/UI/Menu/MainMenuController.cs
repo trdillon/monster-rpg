@@ -1,145 +1,39 @@
 using System.Collections;
-using System.Collections.Generic;
-using Itsdits.Ravar.Settings;
-using Itsdits.Ravar.UI.Localization;
-using TMPro;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 namespace Itsdits.Ravar.UI.Menu
 {
     /// <summary>
-    /// Controller class for the Main Menu scene. Handles switching between submenus and calling menu functions.
+    /// Controller class for the Main Menu scene. Inherits from <see cref="MenuController"/>.
     /// </summary>
-    public class MainMenuController : MonoBehaviour
+    public class MainMenuController : MenuController
     {
-        [Header("Main Menu")]
-        [Tooltip("GameObject that holds the Main Menu Group.")]
-        [SerializeField] private GameObject _mainMenu;
-        [Tooltip("List of Text elements that display on the Main Menu screen.")]
-        [SerializeField] private List<TextMeshProUGUI> _mainTexts;
-        
-        [Header("Load Menu")]
-        [Tooltip("GameObject that holds the Load Menu Group.")]
-        [SerializeField] private GameObject _loadMenu;
-        [Tooltip("List of Text elements that display on the Load Menu screen.")]
-        [SerializeField] private List<TextMeshProUGUI> _loadTexts;
-        
-        [Header("Settings Menu")]
-        [Tooltip("GameObject that holds the Settings Menu Group.")]
-        [SerializeField] private GameObject _settingsMenu;
-        [Tooltip("List of Text elements that display on the Settings screen.")]
-        [SerializeField] private List<TextMeshProUGUI> _settingsTexts;
-        
-        [Header("Info Menu")]
-        [Tooltip("GameObject that holds the Info screen Group.")]
-        [SerializeField] private GameObject _infoMenu;
-        [Tooltip("List of Text elements that display on the Info screen.")]
-        [SerializeField] private List<TextMeshProUGUI> _infoTexts;
-        
-        [Header("Variables")]
-        [Tooltip("The color to change the text to when highlighted.")]
-        [SerializeField] private TMP_ColorGradient _highlightGradient;
-        [Tooltip("The color to display when the text is not highlighted.")]
-        [SerializeField] private TMP_ColorGradient _standardGradient;
-
-        // Each TextMeshProUGUI will have a TextLocalizer component which contains a Localization string key.
-        // We will use this key to determine which menu item the player is selecting instead of an int index.
-        // This way we don't break menu selection if we change the order of the text elements.
-        // We can't use TextMeshProUGUI.text because it will change to localized text on TextLocalizer.Awake.
-        private readonly List<string> _mainKeys = new List<string>();
-        private readonly List<string> _loadKeys = new List<string>();
-        private readonly List<string> _settingsKeys = new List<string>();
-        private readonly List<string> _infoKeys = new List<string>();
-        
-        private int _mainIndex;
-        private int _loadIndex;
-        private int _settingsIndex;
-        private int _infoIndex;
-
-        private MenuState _state;
-        private PlayerControls _controls;
-        private InputAction _select;
-        private InputAction _back;
-        private InputAction _move;
-        
-        private int _parsedYInput;
-        private int _parsedXInput;
-
-        private void Start()
+        protected override void HandleSelection(string selection)
         {
-            BuildKeyLists();
-            ShowMain();
-        }
-
-        private void OnEnable()
-        {
-            _controls = new PlayerControls();
-            _controls.Enable();
-            _select = _controls.UI.Select;
-            _back = _controls.UI.Back;
-            _move = _controls.UI.Move;
-            _move.performed += OnMove;
-        }
-
-        private void OnDisable()
-        {
-            _move.performed -= OnMove;
-            _controls.Disable();
+            if (selection == "UI_NEW_GAME")
+            {
+                StartCoroutine(NewGame());
+            }
+            else if (selection == "UI_LOAD_GAME")
+            {
+                SceneManager.LoadScene("UI.Menu.Load");
+            }
+            else if (selection == "UI_SETTINGS")
+            {
+                // Open settings scene
+            }
+            else if (selection == "UI_INFO")
+            {
+                // Open info scene
+            }
+            else if (selection == "UI_EXIT")
+            {
+                //TODO - implement an exit handler to clean up before quitting
+                Application.Quit();
+            }
         }
         
-        private void OnMove(InputAction.CallbackContext context)
-        {
-            // Reads the composite binding input from keyboard and d-pad only.
-            ParseInput(context.ReadValue<Vector2>());
-        }
-
-        private void Update()
-        {
-            if (_state == MenuState.Main)
-            {
-                HandleInputMain();
-            }
-            else if (_state == MenuState.Load)
-            {
-                HandleInputLoad();
-            }
-            else if (_state == MenuState.Settings)
-            {
-                HandleInputSettings();
-            }
-            else if (_state == MenuState.Info)
-            {
-                HandleInputInfo();
-            }
-        }
-
-        private void BuildKeyLists()
-        {
-            // Calling GetComponent within a bunch of loops isn't very performant, but considering we're only
-            // doing it once on Start() I think we can live with it.
-            foreach (TextMeshProUGUI t in _mainTexts)
-            {
-                _mainKeys.Add(t.GetComponent<TextLocalizer>().Key);
-            }
-
-            foreach (TextMeshProUGUI t in _loadTexts)
-            {
-                _loadKeys.Add(t.GetComponent<TextLocalizer>().Key);
-            }
-            
-            foreach (TextMeshProUGUI t in _settingsTexts)
-            {
-                _settingsKeys.Add(t.GetComponent<TextLocalizer>().Key);
-            }
-            
-            foreach (TextMeshProUGUI t in _infoTexts)
-            {
-                _infoKeys.Add(t.GetComponent<TextLocalizer>().Key);
-            }
-        }
-
         private IEnumerator NewGame()
         {
             SceneManager.LoadScene("Game.Core", LoadSceneMode.Additive);
@@ -147,220 +41,6 @@ namespace Itsdits.Ravar.UI.Menu
             SceneManager.SetActiveScene(SceneManager.GetSceneByName("World.Fornwest.Main"));
             SceneManager.UnloadSceneAsync("Game.Preload");
             SceneManager.UnloadSceneAsync("UI.Menu.Main");
-        }
-
-        private void ParseInput(Vector2 inputVector)
-        {
-            // Only x or y should have a non-zero value to prevent diagonal movement.
-            if (inputVector.x != 0)
-            {
-                inputVector.y = 0;
-            }
-            
-            // Normalize the Vector2 because the composite mode on the input bindings can cause != 1f inputs.
-            Vector2 parsedVector = inputVector.normalized; 
-            _parsedYInput = Mathf.FloorToInt(parsedVector.y);
-            _parsedXInput = Mathf.FloorToInt(parsedVector.x);
-        }
-
-        private void HandleInputMain()
-        {
-            // First we check if there is any Y input to navigate the menu.
-            if (_parsedYInput == -1)
-            {
-                _mainIndex += 1;
-                _parsedYInput = 0;
-            }
-            else if (_parsedYInput == 1)
-            {
-                _mainIndex -= 1;
-                _parsedYInput = 0;
-            }
-            
-            // Clamp to avoid index out of bounds. Then call UpdateIndex to give visual feedback to the player.
-            _mainIndex = Mathf.Clamp(_mainIndex, 0, _mainTexts.Count - 1);
-            UpdateIndex(_mainIndex, "main");
-
-            // Return if the player hasn't triggered a selection.
-            if (!_select.triggered)
-            {
-                return;
-            }
-            
-            // Check what the player has selected and then do something about it.
-            if (_mainKeys[_mainIndex] == "UI_NEW_GAME")
-            {
-                StartCoroutine(NewGame());
-            }
-            else if (_mainKeys[_mainIndex] == "UI_LOAD_GAME")
-            {
-                _state = MenuState.Load;
-                _mainMenu.SetActive(false);
-                _loadMenu.SetActive(true);
-            }
-            else if (_mainKeys[_mainIndex] == "UI_SETTINGS")
-            {
-                _state = MenuState.Settings;
-                _mainMenu.SetActive(false);
-                _settingsMenu.SetActive(true);
-            }
-            else if (_mainKeys[_mainIndex] == "UI_INFO")
-            {
-                _state = MenuState.Info;
-                _mainMenu.SetActive(false);
-                _infoMenu.SetActive(true);
-            }
-            else if (_mainKeys[_mainIndex] == "UI_EXIT")
-            {
-                //TODO - implement an exit handler to clean up before quitting
-                Application.Quit();
-            }
-        }
-
-        private void HandleInputLoad()
-        {
-            if (_parsedYInput == -1)
-            {
-                _loadIndex += 1;
-                _parsedYInput = 0;
-            }
-            else if (_parsedYInput == 1)
-            {
-                _loadIndex -= 1;
-                _parsedYInput = 0;
-            }
-
-            _loadIndex = Mathf.Clamp(_loadIndex, 0, _loadTexts.Count - 1);
-            UpdateIndex(_loadIndex, "load");
-
-            if (_back.triggered)
-            {
-                ShowMain();
-            }
-            
-            if (!_select.triggered)
-            {
-                return;
-            }
-            
-            if (_loadKeys[_loadIndex] == "UI_LOAD")
-            {
-                // Load game
-            }
-            else if (_loadKeys[_loadIndex] == "UI_BACK")
-            {
-                ShowMain();
-            }
-        }
-
-        private void HandleInputSettings()
-        {
-            if (_parsedYInput == -1)
-            {
-                _settingsIndex += 1;
-                _parsedYInput = 0;
-            }
-            else if (_parsedYInput == 1)
-            {
-                _settingsIndex -= 1;
-                _parsedYInput = 0;
-            }
-
-            _settingsIndex = Mathf.Clamp(_settingsIndex, 0, _settingsTexts.Count - 1);
-            UpdateIndex(_settingsIndex, "settings");
-
-            if (_back.triggered)
-            {
-                ShowMain();
-            }
-            
-            if (!_select.triggered)
-            {
-                return;
-            }
-
-            if (_settingsKeys[_settingsIndex] == "UI_SAVE")
-            {
-                // Save settings
-            }
-            else if (_settingsKeys[_settingsIndex] == "UI_BACK")
-            {
-                ShowMain();
-            }
-        }
-
-        private void HandleInputInfo()
-        {
-            if (_parsedYInput == -1)
-            {
-                _infoIndex += 1;
-                _parsedYInput = 0;
-            }
-            else if (_parsedYInput == 1)
-            {
-                _infoIndex -= 1;
-                _parsedYInput = 0;
-            }
-            
-            _infoIndex = Mathf.Clamp(_infoIndex, 0, _infoTexts.Count - 1);
-            UpdateIndex(_infoIndex, "info");
-            
-            if (_back.triggered)
-            {
-                ShowMain();
-            }
-            
-            if (!_select.triggered)
-            {
-                return;
-            }
-            
-            if (_infoKeys[_infoIndex] == "UI_BACK")
-            {
-                ShowMain();
-            }
-        }
-        
-        private void UpdateIndex(int index, string screen)
-        {
-            // There should be a better way to handle this. The previous way was separate functions for each index
-            // but I think because they're so closely related they should be handled in 1.
-            switch (screen)
-            {
-                case "main":
-                    for (var i = 0; i < _mainTexts.Count; ++i)
-                    {
-                        _mainTexts[i].colorGradientPreset = i == index ? _highlightGradient : _standardGradient;
-                    }
-                    break;
-                case "load":
-                    for (var i = 0; i < _loadTexts.Count; ++i)
-                    {
-                        _loadTexts[i].colorGradientPreset = i == index ? _highlightGradient : _standardGradient;
-                    }
-                    break;
-                case "settings":
-                    for (var i = 0; i < _settingsTexts.Count; ++i)
-                    {
-                        _settingsTexts[i].colorGradientPreset = i == index ? _highlightGradient : _standardGradient;
-                    }
-                    break;
-                case "info":
-                    for (var i = 0; i < _infoTexts.Count; ++i)
-                    {
-                        _infoTexts[i].colorGradientPreset = i == index ? _highlightGradient : _standardGradient;
-                    }
-                    break;
-            }
-        }
-
-        private void ShowMain()
-        {
-            _state = MenuState.Main;
-            _loadMenu.SetActive(false);
-            _settingsMenu.SetActive(false);
-            _infoMenu.SetActive(false);
-            _mainMenu.SetActive(true);
         }
     }
 }

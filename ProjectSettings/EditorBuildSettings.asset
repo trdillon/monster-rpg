@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Ravar/Scenes/UI/UI.Menu.Pause.unity
     guid: a0c103c004bc87245afdd95955245107
   - enabled: 1
+    path: Assets/Ravar/Scenes/UI/UI.Menu.Load.unity
+    guid: 2a57427f5380d704c9f425e77f2d7907
+  - enabled: 1
     path: Assets/Ravar/Scenes/Fornwest/World.Fornwest.Main.unity
     guid: ca2c746788944c743bddcd221617b059
   - enabled: 1
