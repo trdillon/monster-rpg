@@ -16,7 +16,7 @@ namespace Itsdits.Ravar.UI.Menu
         [Tooltip("The Content element of the Scroll View used to display the games to load.")]
         [SerializeField] private GameObject _content;
         [Tooltip("The prefab of the TextMeshProUGUI element that will populate the Scroll View.")]
-        [SerializeField] private GameObject _textPrefab;
+        [SerializeField] private GameObject _buttonPrefab;
         
         private const string SAVE_PATH = "/save/";
         private const string FILE_EXT = "*.ravar";
@@ -58,8 +58,8 @@ namespace Itsdits.Ravar.UI.Menu
         {
             foreach (string game in _gameNames)
             {
-                GameObject go = Instantiate(_textPrefab, _content.transform, false);
-                var tmp = go.GetComponent<TextMeshProUGUI>();
+                GameObject go = Instantiate(_buttonPrefab, _content.transform, false);
+                var tmp = go.GetComponentInChildren<TextMeshProUGUI>();
                 tmp.text = game;
             }
         }
