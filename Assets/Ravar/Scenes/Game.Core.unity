@@ -1856,6 +1856,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 2eb4643b-ba53-447c-b709-62a0e609bb9f
     m_ActionName: UI/Move Mouse[/Mouse/position]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ccd1a622-79ec-428f-87e4-dc44d956171f
+    m_ActionName: UI/Mouse Select[/Mouse/leftButton]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player

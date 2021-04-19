@@ -230,6 +230,14 @@
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "Mouse Select",
+                    "type": "Button",
+                    "id": "ccd1a622-79ec-428f-87e4-dc44d956171f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -356,17 +364,6 @@
                 },
                 {
                     "name": "",
-                    "id": "e449fee6-a2bf-4315-ac2e-8d23339fdf91",
-                    "path": "<Mouse>/leftButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard & Mouse",
-                    "action": "Select",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "6e7e5c60-7456-493e-9ea4-3769cc698ce7",
                     "path": "<Keyboard>/x",
                     "interactions": "",
@@ -406,6 +403,17 @@
                     "processors": "",
                     "groups": "Keyboard & Mouse",
                     "action": "Move Mouse",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f5225b21-5ba2-4c76-a7ee-2fe2d296f9f3",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard & Mouse",
+                    "action": "Mouse Select",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

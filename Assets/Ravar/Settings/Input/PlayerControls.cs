@@ -245,6 +245,14 @@ namespace Itsdits.Ravar.Settings
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Mouse Select"",
+                    ""type"": ""Button"",
+                    ""id"": ""ccd1a622-79ec-428f-87e4-dc44d956171f"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -371,17 +379,6 @@ namespace Itsdits.Ravar.Settings
                 },
                 {
                     ""name"": """",
-                    ""id"": ""e449fee6-a2bf-4315-ac2e-8d23339fdf91"",
-                    ""path"": ""<Mouse>/leftButton"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard & Mouse"",
-                    ""action"": ""Select"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""6e7e5c60-7456-493e-9ea4-3769cc698ce7"",
                     ""path"": ""<Keyboard>/x"",
                     ""interactions"": """",
@@ -423,6 +420,17 @@ namespace Itsdits.Ravar.Settings
                     ""action"": ""Move Mouse"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f5225b21-5ba2-4c76-a7ee-2fe2d296f9f3"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard & Mouse"",
+                    ""action"": ""Mouse Select"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -458,6 +466,7 @@ namespace Itsdits.Ravar.Settings
             m_UI_Select = m_UI.FindAction("Select", throwIfNotFound: true);
             m_UI_Back = m_UI.FindAction("Back", throwIfNotFound: true);
             m_UI_MoveMouse = m_UI.FindAction("Move Mouse", throwIfNotFound: true);
+            m_UI_MouseSelect = m_UI.FindAction("Mouse Select", throwIfNotFound: true);
         }
 
         public void Dispose()
@@ -568,6 +577,7 @@ namespace Itsdits.Ravar.Settings
         private readonly InputAction m_UI_Select;
         private readonly InputAction m_UI_Back;
         private readonly InputAction m_UI_MoveMouse;
+        private readonly InputAction m_UI_MouseSelect;
         public struct UIActions
         {
             private @PlayerControls m_Wrapper;
@@ -576,6 +586,7 @@ namespace Itsdits.Ravar.Settings
             public InputAction @Select => m_Wrapper.m_UI_Select;
             public InputAction @Back => m_Wrapper.m_UI_Back;
             public InputAction @MoveMouse => m_Wrapper.m_UI_MoveMouse;
+            public InputAction @MouseSelect => m_Wrapper.m_UI_MouseSelect;
             public InputActionMap Get() { return m_Wrapper.m_UI; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -597,6 +608,9 @@ namespace Itsdits.Ravar.Settings
                     @MoveMouse.started -= m_Wrapper.m_UIActionsCallbackInterface.OnMoveMouse;
                     @MoveMouse.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnMoveMouse;
                     @MoveMouse.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnMoveMouse;
+                    @MouseSelect.started -= m_Wrapper.m_UIActionsCallbackInterface.OnMouseSelect;
+                    @MouseSelect.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnMouseSelect;
+                    @MouseSelect.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnMouseSelect;
                 }
                 m_Wrapper.m_UIActionsCallbackInterface = instance;
                 if (instance != null)
@@ -613,6 +627,9 @@ namespace Itsdits.Ravar.Settings
                     @MoveMouse.started += instance.OnMoveMouse;
                     @MoveMouse.performed += instance.OnMoveMouse;
                     @MoveMouse.canceled += instance.OnMoveMouse;
+                    @MouseSelect.started += instance.OnMouseSelect;
+                    @MouseSelect.performed += instance.OnMouseSelect;
+                    @MouseSelect.canceled += instance.OnMouseSelect;
                 }
             }
         }
@@ -639,6 +656,7 @@ namespace Itsdits.Ravar.Settings
             void OnSelect(InputAction.CallbackContext context);
             void OnBack(InputAction.CallbackContext context);
             void OnMoveMouse(InputAction.CallbackContext context);
+            void OnMouseSelect(InputAction.CallbackContext context);
         }
     }
 }

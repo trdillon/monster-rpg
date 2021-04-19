@@ -1,57 +1,86 @@
-using System.Collections.Generic;
-using Itsdits.Ravar.Character;
-using Itsdits.Ravar.Core;
-using Itsdits.Ravar.Data;
-using Itsdits.Ravar.Monster;
+using Itsdits.Ravar.Core.Signal;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 namespace Itsdits.Ravar.UI.Menu
 {
     /// <summary>
-    /// Controller class for the Pause menu. Inherits from <see cref="MenuController"/>.
+    /// Controller class for the Pause Menu scene.
     /// </summary>
-    public class PauseMenuController : MenuController
+    public class PauseMenuController : MonoBehaviour
     {
-        protected override void HandleSelection(string selection)
+        [Header("UI Buttons")]
+        [Tooltip("Button for saving the current game.")]
+        [SerializeField] private Button _saveGameButton;
+        [Tooltip("Button for loading a saved game.")]
+        [SerializeField] private Button _loadGameButton;
+        [Tooltip("Button for the settings menu.")]
+        [SerializeField] private Button _settingsButton;
+        [Tooltip("Button for quitting to the Main Menu.")]
+        [SerializeField] private Button _mainMenuButton;
+        [Tooltip("Button for returning to the game.")]
+        [SerializeField] private Button _returnButton;
+        [Tooltip("Button for exiting the game.")]
+        [SerializeField] private Button _exitButton;
+
+        private void Start()
         {
-            if (selection == "UI_SAVE_GAME")
-            {
-                // Open save game scene
-            }
-            else if (selection == "UI_LOAD_GAME")
-            {
-                // Open load game scene
-            }
-            else if (selection == "UI_SETTINGS")
-            {
-                // Open settings scene
-            }
-            else if (selection == "UI_MAIN_MENU")
-            {
-                //TODO - ensure a save check/option is handled here
-                // Quit to main menu after save check
-            }
-            else if (selection == "UI_RETURN")
-            {
-                //TODO - find a better way to implement this
-                StartCoroutine(GameController.Instance.PauseGame(false));
-            }
-            else if (selection == "UI_EXIT")
-            {
-                //TODO - implement an exit handler to clean up before quitting
-                Application.Quit();
-            }
+            _saveGameButton.onClick.AddListener(SaveGame);
+            _loadGameButton.onClick.AddListener(LoadGame);
+            _settingsButton.onClick.AddListener(SettingsMenu);
+            _mainMenuButton.onClick.AddListener(MainMenu);
+            _returnButton.onClick.AddListener(ReturnToGame);
+            _exitButton.onClick.AddListener(ExitGame);
         }
-        
+
+        private void OnDestroy()
+        {
+            _saveGameButton.onClick.RemoveListener(SaveGame);
+            _loadGameButton.onClick.RemoveListener(LoadGame);
+            _settingsButton.onClick.RemoveListener(SettingsMenu);
+            _mainMenuButton.onClick.RemoveListener(MainMenu);
+            _returnButton.onClick.RemoveListener(ReturnToGame);
+            _exitButton.onClick.RemoveListener(ExitGame);
+        }
+
         private void SaveGame()
         {
-            PlayerController player = GameController.Instance.CurrentPlayer;
-            PlayerData playerData = player.SavePlayerData();
-            List<MonsterData> partyData = player.GetComponent<MonsterParty>().SaveMonsterParty();
-
-            GameData.SaveGameData(playerData, partyData);
+            SceneManager.LoadScene("UI.Menu.Save");
+        }
+        
+        private void LoadGame()
+        {
+            SceneManager.LoadScene("UI.Menu.Load");
         }
 
+        private void SettingsMenu()
+        {
+            SceneManager.LoadScene("UI.Menu.Settings");
+        }
         
+        private void MainMenu()
+        {
+            //TODO - do a save check here so the player doesn't lose their progress on accident
+            SceneManager.LoadScene("UI.Menu.Main");
+        }
+
+        private void ReturnToGame()
+        {
+            GameSignals.RESUME_GAME.Dispatch(true);
+        }
+        
+        private void ExitGame()
+        {
+            //TODO - handle this nicely
+            Application.Quit();
+        }
+        /*
+           PlayerController player = GameController.Instance.CurrentPlayer;
+           PlayerData playerData = player.SavePlayerData();
+           List<MonsterData> partyData = player.GetComponent<MonsterParty>().SaveMonsterParty();
+
+           GameData.SaveGameData(playerData, partyData);
+           */
     }
 }

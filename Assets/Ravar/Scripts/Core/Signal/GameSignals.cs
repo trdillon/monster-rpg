@@ -5,9 +5,10 @@ namespace Itsdits.Ravar.Core.Signal
     /// </summary>
     public static class GameSignals
     {
-        public static readonly Signal<DialogItem> DISPLAY_DIALOG = new Signal<DialogItem>();
+        // These can easily cause memory leaks. Make sure to remove listeners on disable/destroy.
         public static readonly Signal<bool> PAUSE_GAME = new Signal<bool>();
         public static readonly Signal<bool> RESUME_GAME = new Signal<bool>();
-        public static readonly Signal<bool> SAVE_GAME = new Signal<bool>();
+        public static readonly Signal<string> SAVE_GAME = new Signal<string>();
+        public static readonly Signal<string> LOAD_GAME = new Signal<string>();
     }
 }

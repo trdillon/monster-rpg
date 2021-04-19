@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Itsdits.Ravar
 {
     /// <summary>
-    /// Controller class for Level scenes. Handles GameObjects within that scene and disabling on pause.
+    /// Controller class for Level scenes.
     /// </summary>
     public class SceneController : MonoBehaviour
     {
@@ -16,34 +16,45 @@ namespace Itsdits.Ravar
 
         private List<SpriteRenderer> _characterSprites = new List<SpriteRenderer>();
 
-        private void Awake()
+        private void OnEnable()
         {
             GameSignals.PAUSE_GAME.AddListener(OnPause);
             GameSignals.RESUME_GAME.AddListener(OnResume);
             BuildSpriteRendererList();
         }
-        
+
+        private void OnDisable()
+        {
+            GameSignals.PAUSE_GAME.RemoveListener(OnPause);
+            GameSignals.RESUME_GAME.RemoveListener(OnResume);
+        }
+
         private void OnPause(bool pause)
         {
-            if (pause)
+            if (!pause)
             {
-                _world.SetActive(false);
-                DisableSprites();
+                return;
             }
+            
+            _world.SetActive(false);
+            DisableSprites();
         }
 
         private void OnResume(bool resume)
         {
-            if (resume)
+            if (!resume)
             {
-                _world.SetActive(true);
-                EnableSprites();
+                return;
             }
+
+            _world.SetActive(true);
+            EnableSprites();
         }
 
         // We keep a list of the SpriteRenderers to enable/disable them on pause. If the characters have their
-        // GameObjects disabled while the Move() coroutine is processing it will break them. This approach just
-        // disables the sprites and allows the characters to finish the coroutine.
+        // GameObjects disabled while the Move() coroutine is running it will break them. This approach just
+        // disables the sprites and allows the characters to finish the coroutine. Setting Time.timeScale = 0 will not
+        // stop characters from moving. It also can cause other issues with input and audio so we want to avoid it.
         private void BuildSpriteRendererList()
         {
             foreach (GameObject character in _characters)

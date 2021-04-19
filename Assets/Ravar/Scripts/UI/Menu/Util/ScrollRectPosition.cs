@@ -4,6 +4,9 @@ using UnityEngine.UI;
 
 namespace Itsdits.Ravar.UI.Menu
 {
+    /// <summary>
+    /// Utility component that forces a Scroll View to scroll when a selected child is not visible to the player.
+    /// </summary>
     public class ScrollRectPosition : MonoBehaviour
     {
         private RectTransform _scrollRectTransform;

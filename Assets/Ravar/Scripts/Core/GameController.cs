@@ -66,6 +66,8 @@ namespace Itsdits.Ravar.Core
 
         private void Start()
         {
+            GameSignals.PAUSE_GAME.AddListener(OnPause);
+            GameSignals.RESUME_GAME.AddListener(OnResume);
             _battleSystem.OnBattleOver += EndBattle;
             DialogController.Instance.OnShowDialog += StartDialog;
             DialogController.Instance.OnCloseDialog += EndDialog;
@@ -86,6 +88,25 @@ namespace Itsdits.Ravar.Core
             {
                 DialogController.Instance.HandleUpdate();
             }
+        }
+
+        private void OnDestroy()
+        {
+            GameSignals.PAUSE_GAME.RemoveListener(OnPause);
+            GameSignals.RESUME_GAME.RemoveListener(OnResume);
+            _battleSystem.OnBattleOver -= EndBattle;
+            DialogController.Instance.OnShowDialog -= StartDialog;
+            DialogController.Instance.OnCloseDialog -= EndDialog;
+        }
+
+        private void OnPause(bool pause)
+        {
+            StartCoroutine(PauseGame());
+        }
+        
+        private void OnResume(bool resume)
+        {
+            StartCoroutine(ResumeGame());
         }
 
         /// <summary>
@@ -110,8 +131,8 @@ namespace Itsdits.Ravar.Core
         /// <param name="battler">Character that was encountered.</param>
         public void StartCharEncounter(BattlerController battler)
         {
-                _state = GameState.Cutscene;
-                StartCoroutine(battler.TriggerBattle(_playerController));
+            _state = GameState.Cutscene;
+            StartCoroutine(battler.TriggerBattle(_playerController));
         }
 
         /// <summary>
@@ -130,34 +151,23 @@ namespace Itsdits.Ravar.Core
 
             _battleSystem.StartCharBattle(playerParty, battlerParty);
         }
-
-        /// <summary>
-        /// Pause and unpause the game.
-        /// </summary>
-        /// <param name="pause">True for pause, false for unpause.</param>
-        public IEnumerator PauseGame(bool pause)
+        
+        private IEnumerator PauseGame()
         {
-            //TODO - Clean this up, the order of the calls is crucial and the whole thing blows up if you move anything.
-            if (pause)
-            {
-                _prevState = _state;
-                _previousSceneName = SceneManager.GetActiveScene().name;
-                _eventSystem.enabled = false;
-                yield return LoadSceneAsyncWithCheck("UI.Menu.Pause");
-                //yield return SceneManager.UnloadSceneAsync(_previousSceneName);
-                GameSignals.PAUSE_GAME.Dispatch(true);
-                _state = GameState.Pause;
-            }
-            else
-            {
-                //yield return LoadSceneAsyncWithCheck(_previousSceneName);
-                SceneManager.SetActiveScene(SceneManager.GetSceneByName(_previousSceneName));
-                GameSignals.RESUME_GAME.Dispatch(true);
-                _state = _prevState;
-                yield return SceneManager.UnloadSceneAsync("UI.Menu.Pause");
-                _eventSystem.enabled = true;
-                _previousSceneName = null;
-            }
+            _prevState = _state;
+            _previousSceneName = SceneManager.GetActiveScene().name;
+            _eventSystem.enabled = false;
+            yield return LoadSceneAsyncWithCheck("UI.Menu.Pause");
+            _state = GameState.Pause;
+        }
+
+        private IEnumerator ResumeGame()
+        {
+            SceneManager.SetActiveScene(SceneManager.GetSceneByName(_previousSceneName));
+            _state = _prevState;
+            yield return SceneManager.UnloadSceneAsync("UI.Menu.Pause");
+            _eventSystem.enabled = true;
+            _previousSceneName = null;
         }
 
         /// <summary>
