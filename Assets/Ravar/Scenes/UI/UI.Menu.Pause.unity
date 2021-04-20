@@ -1036,6 +1036,8 @@ MonoBehaviour:
   _mainMenuButton: {fileID: 1068714393}
   _returnButton: {fileID: 2105891295}
   _exitButton: {fileID: 1251219402}
+  _eventSystem: {fileID: 506394503}
+  _camera: {fileID: 770712645}
 --- !u!1001 &1469845722
 PrefabInstance:
   m_ObjectHideFlags: 0

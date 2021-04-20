@@ -1,3 +1,5 @@
+using System.Collections;
+using Itsdits.Ravar.Util;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,22 +12,21 @@ namespace Itsdits.Ravar.Core
     {
         private void Awake()
         {
-            LoadSceneIfNotLoadedAlready("UI.Menu.Main");
-        }
-        
-        private void LoadSceneIfNotLoadedAlready(string sceneName)
-        {
-            if (IsSceneLoadedAlready(sceneName))
-            {
-                return;
-            }
-
-            SceneManager.LoadScene(sceneName, LoadSceneMode.Additive);
+            // Do initial setup
         }
 
-        private bool IsSceneLoadedAlready(string sceneName)
+        private void Start()
         {
-            return SceneManager.GetSceneByName(sceneName).isLoaded;
+            StartCoroutine(BootGame());
+        }
+
+        private IEnumerator BootGame()
+        {
+            SceneManager.LoadScene("Game.Core", LoadSceneMode.Additive);
+            SceneManager.LoadScene("UI.Menu.Main", LoadSceneMode.Additive);
+            yield return YieldHelper.EndOfFrame;
+            SceneManager.SetActiveScene(SceneManager.GetSceneByName("UI.Menu.Main"));
+            SceneManager.UnloadSceneAsync("Game.Preload");
         }
     }
 }

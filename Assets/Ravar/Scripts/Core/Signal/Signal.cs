@@ -12,7 +12,7 @@ namespace Itsdits.Ravar.Core.Signal
     {
         public delegate void SignalListener(T parameter);
 
-        private readonly List<SignalListener> _listeners = new List<SignalListener>(1);
+        private readonly List<SignalListener> _listeners = new List<SignalListener>();
 
         /// <summary>
         /// Add a listener to this signal.

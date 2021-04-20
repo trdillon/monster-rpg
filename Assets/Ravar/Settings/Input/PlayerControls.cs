@@ -215,15 +215,15 @@ namespace Itsdits.Ravar.Settings
             ""id"": ""ff825858-3b2e-4556-a255-2965060db913"",
             ""actions"": [
                 {
-                    ""name"": ""Move"",
-                    ""type"": ""PassThrough"",
+                    ""name"": ""Navigation"",
+                    ""type"": ""Button"",
                     ""id"": ""cd3a8ada-559f-4ef3-93c4-97eba99666e0"",
-                    ""expectedControlType"": ""Vector2"",
+                    ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""Select"",
+                    ""name"": ""Submit"",
                     ""type"": ""Button"",
                     ""id"": ""86988735-9542-4f86-866a-918cfba7e056"",
                     ""expectedControlType"": ""Button"",
@@ -231,7 +231,7 @@ namespace Itsdits.Ravar.Settings
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""Back"",
+                    ""name"": ""Cancel"",
                     ""type"": ""Button"",
                     ""id"": ""d62862cf-a239-4763-891e-9926087e441f"",
                     ""expectedControlType"": ""Button"",
@@ -239,7 +239,7 @@ namespace Itsdits.Ravar.Settings
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""Move Mouse"",
+                    ""name"": ""Mouse Position"",
                     ""type"": ""PassThrough"",
                     ""id"": ""2eb4643b-ba53-447c-b709-62a0e609bb9f"",
                     ""expectedControlType"": ""Vector2"",
@@ -247,10 +247,18 @@ namespace Itsdits.Ravar.Settings
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""Mouse Select"",
+                    ""name"": ""Mouse Click"",
                     ""type"": ""Button"",
                     ""id"": ""ccd1a622-79ec-428f-87e4-dc44d956171f"",
                     ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Scroll Wheel"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""c218af01-fd19-4b76-aac3-f79f509b66cd"",
+                    ""expectedControlType"": ""Axis"",
                     ""processors"": """",
                     ""interactions"": """"
                 }
@@ -263,7 +271,7 @@ namespace Itsdits.Ravar.Settings
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Move"",
+                    ""action"": ""Navigation"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
@@ -274,7 +282,7 @@ namespace Itsdits.Ravar.Settings
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard & Mouse"",
-                    ""action"": ""Move"",
+                    ""action"": ""Navigation"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -285,7 +293,7 @@ namespace Itsdits.Ravar.Settings
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard & Mouse"",
-                    ""action"": ""Move"",
+                    ""action"": ""Navigation"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -296,7 +304,7 @@ namespace Itsdits.Ravar.Settings
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard & Mouse"",
-                    ""action"": ""Move"",
+                    ""action"": ""Navigation"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -307,7 +315,7 @@ namespace Itsdits.Ravar.Settings
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard & Mouse"",
-                    ""action"": ""Move"",
+                    ""action"": ""Navigation"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -318,7 +326,7 @@ namespace Itsdits.Ravar.Settings
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard & Mouse"",
-                    ""action"": ""Move"",
+                    ""action"": ""Navigation"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -329,7 +337,7 @@ namespace Itsdits.Ravar.Settings
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard & Mouse"",
-                    ""action"": ""Move"",
+                    ""action"": ""Navigation"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -340,7 +348,7 @@ namespace Itsdits.Ravar.Settings
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard & Mouse"",
-                    ""action"": ""Move"",
+                    ""action"": ""Navigation"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -351,7 +359,7 @@ namespace Itsdits.Ravar.Settings
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard & Mouse"",
-                    ""action"": ""Move"",
+                    ""action"": ""Navigation"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -362,7 +370,7 @@ namespace Itsdits.Ravar.Settings
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard & Mouse"",
-                    ""action"": ""Select"",
+                    ""action"": ""Submit"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -373,7 +381,7 @@ namespace Itsdits.Ravar.Settings
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard & Mouse"",
-                    ""action"": ""Select"",
+                    ""action"": ""Submit"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -384,7 +392,7 @@ namespace Itsdits.Ravar.Settings
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard & Mouse"",
-                    ""action"": ""Back"",
+                    ""action"": ""Cancel"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -395,7 +403,7 @@ namespace Itsdits.Ravar.Settings
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard & Mouse"",
-                    ""action"": ""Back"",
+                    ""action"": ""Cancel"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -406,7 +414,7 @@ namespace Itsdits.Ravar.Settings
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard & Mouse"",
-                    ""action"": ""Back"",
+                    ""action"": ""Cancel"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -417,7 +425,7 @@ namespace Itsdits.Ravar.Settings
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard & Mouse"",
-                    ""action"": ""Move Mouse"",
+                    ""action"": ""Mouse Position"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -428,7 +436,18 @@ namespace Itsdits.Ravar.Settings
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard & Mouse"",
-                    ""action"": ""Mouse Select"",
+                    ""action"": ""Mouse Click"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5c2b1f56-1db3-4088-915c-a806c16dded7"",
+                    ""path"": ""<Mouse>/scroll"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard & Mouse"",
+                    ""action"": ""Scroll Wheel"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -462,11 +481,12 @@ namespace Itsdits.Ravar.Settings
             m_Player_Pause = m_Player.FindAction("Pause", throwIfNotFound: true);
             // UI
             m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
-            m_UI_Move = m_UI.FindAction("Move", throwIfNotFound: true);
-            m_UI_Select = m_UI.FindAction("Select", throwIfNotFound: true);
-            m_UI_Back = m_UI.FindAction("Back", throwIfNotFound: true);
-            m_UI_MoveMouse = m_UI.FindAction("Move Mouse", throwIfNotFound: true);
-            m_UI_MouseSelect = m_UI.FindAction("Mouse Select", throwIfNotFound: true);
+            m_UI_Navigation = m_UI.FindAction("Navigation", throwIfNotFound: true);
+            m_UI_Submit = m_UI.FindAction("Submit", throwIfNotFound: true);
+            m_UI_Cancel = m_UI.FindAction("Cancel", throwIfNotFound: true);
+            m_UI_MousePosition = m_UI.FindAction("Mouse Position", throwIfNotFound: true);
+            m_UI_MouseClick = m_UI.FindAction("Mouse Click", throwIfNotFound: true);
+            m_UI_ScrollWheel = m_UI.FindAction("Scroll Wheel", throwIfNotFound: true);
         }
 
         public void Dispose()
@@ -573,20 +593,22 @@ namespace Itsdits.Ravar.Settings
         // UI
         private readonly InputActionMap m_UI;
         private IUIActions m_UIActionsCallbackInterface;
-        private readonly InputAction m_UI_Move;
-        private readonly InputAction m_UI_Select;
-        private readonly InputAction m_UI_Back;
-        private readonly InputAction m_UI_MoveMouse;
-        private readonly InputAction m_UI_MouseSelect;
+        private readonly InputAction m_UI_Navigation;
+        private readonly InputAction m_UI_Submit;
+        private readonly InputAction m_UI_Cancel;
+        private readonly InputAction m_UI_MousePosition;
+        private readonly InputAction m_UI_MouseClick;
+        private readonly InputAction m_UI_ScrollWheel;
         public struct UIActions
         {
             private @PlayerControls m_Wrapper;
             public UIActions(@PlayerControls wrapper) { m_Wrapper = wrapper; }
-            public InputAction @Move => m_Wrapper.m_UI_Move;
-            public InputAction @Select => m_Wrapper.m_UI_Select;
-            public InputAction @Back => m_Wrapper.m_UI_Back;
-            public InputAction @MoveMouse => m_Wrapper.m_UI_MoveMouse;
-            public InputAction @MouseSelect => m_Wrapper.m_UI_MouseSelect;
+            public InputAction @Navigation => m_Wrapper.m_UI_Navigation;
+            public InputAction @Submit => m_Wrapper.m_UI_Submit;
+            public InputAction @Cancel => m_Wrapper.m_UI_Cancel;
+            public InputAction @MousePosition => m_Wrapper.m_UI_MousePosition;
+            public InputAction @MouseClick => m_Wrapper.m_UI_MouseClick;
+            public InputAction @ScrollWheel => m_Wrapper.m_UI_ScrollWheel;
             public InputActionMap Get() { return m_Wrapper.m_UI; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -596,40 +618,46 @@ namespace Itsdits.Ravar.Settings
             {
                 if (m_Wrapper.m_UIActionsCallbackInterface != null)
                 {
-                    @Move.started -= m_Wrapper.m_UIActionsCallbackInterface.OnMove;
-                    @Move.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnMove;
-                    @Move.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnMove;
-                    @Select.started -= m_Wrapper.m_UIActionsCallbackInterface.OnSelect;
-                    @Select.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnSelect;
-                    @Select.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnSelect;
-                    @Back.started -= m_Wrapper.m_UIActionsCallbackInterface.OnBack;
-                    @Back.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnBack;
-                    @Back.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnBack;
-                    @MoveMouse.started -= m_Wrapper.m_UIActionsCallbackInterface.OnMoveMouse;
-                    @MoveMouse.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnMoveMouse;
-                    @MoveMouse.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnMoveMouse;
-                    @MouseSelect.started -= m_Wrapper.m_UIActionsCallbackInterface.OnMouseSelect;
-                    @MouseSelect.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnMouseSelect;
-                    @MouseSelect.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnMouseSelect;
+                    @Navigation.started -= m_Wrapper.m_UIActionsCallbackInterface.OnNavigation;
+                    @Navigation.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnNavigation;
+                    @Navigation.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnNavigation;
+                    @Submit.started -= m_Wrapper.m_UIActionsCallbackInterface.OnSubmit;
+                    @Submit.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnSubmit;
+                    @Submit.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnSubmit;
+                    @Cancel.started -= m_Wrapper.m_UIActionsCallbackInterface.OnCancel;
+                    @Cancel.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnCancel;
+                    @Cancel.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnCancel;
+                    @MousePosition.started -= m_Wrapper.m_UIActionsCallbackInterface.OnMousePosition;
+                    @MousePosition.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnMousePosition;
+                    @MousePosition.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnMousePosition;
+                    @MouseClick.started -= m_Wrapper.m_UIActionsCallbackInterface.OnMouseClick;
+                    @MouseClick.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnMouseClick;
+                    @MouseClick.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnMouseClick;
+                    @ScrollWheel.started -= m_Wrapper.m_UIActionsCallbackInterface.OnScrollWheel;
+                    @ScrollWheel.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnScrollWheel;
+                    @ScrollWheel.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnScrollWheel;
                 }
                 m_Wrapper.m_UIActionsCallbackInterface = instance;
                 if (instance != null)
                 {
-                    @Move.started += instance.OnMove;
-                    @Move.performed += instance.OnMove;
-                    @Move.canceled += instance.OnMove;
-                    @Select.started += instance.OnSelect;
-                    @Select.performed += instance.OnSelect;
-                    @Select.canceled += instance.OnSelect;
-                    @Back.started += instance.OnBack;
-                    @Back.performed += instance.OnBack;
-                    @Back.canceled += instance.OnBack;
-                    @MoveMouse.started += instance.OnMoveMouse;
-                    @MoveMouse.performed += instance.OnMoveMouse;
-                    @MoveMouse.canceled += instance.OnMoveMouse;
-                    @MouseSelect.started += instance.OnMouseSelect;
-                    @MouseSelect.performed += instance.OnMouseSelect;
-                    @MouseSelect.canceled += instance.OnMouseSelect;
+                    @Navigation.started += instance.OnNavigation;
+                    @Navigation.performed += instance.OnNavigation;
+                    @Navigation.canceled += instance.OnNavigation;
+                    @Submit.started += instance.OnSubmit;
+                    @Submit.performed += instance.OnSubmit;
+                    @Submit.canceled += instance.OnSubmit;
+                    @Cancel.started += instance.OnCancel;
+                    @Cancel.performed += instance.OnCancel;
+                    @Cancel.canceled += instance.OnCancel;
+                    @MousePosition.started += instance.OnMousePosition;
+                    @MousePosition.performed += instance.OnMousePosition;
+                    @MousePosition.canceled += instance.OnMousePosition;
+                    @MouseClick.started += instance.OnMouseClick;
+                    @MouseClick.performed += instance.OnMouseClick;
+                    @MouseClick.canceled += instance.OnMouseClick;
+                    @ScrollWheel.started += instance.OnScrollWheel;
+                    @ScrollWheel.performed += instance.OnScrollWheel;
+                    @ScrollWheel.canceled += instance.OnScrollWheel;
                 }
             }
         }
@@ -652,11 +680,12 @@ namespace Itsdits.Ravar.Settings
         }
         public interface IUIActions
         {
-            void OnMove(InputAction.CallbackContext context);
-            void OnSelect(InputAction.CallbackContext context);
-            void OnBack(InputAction.CallbackContext context);
-            void OnMoveMouse(InputAction.CallbackContext context);
-            void OnMouseSelect(InputAction.CallbackContext context);
+            void OnNavigation(InputAction.CallbackContext context);
+            void OnSubmit(InputAction.CallbackContext context);
+            void OnCancel(InputAction.CallbackContext context);
+            void OnMousePosition(InputAction.CallbackContext context);
+            void OnMouseClick(InputAction.CallbackContext context);
+            void OnScrollWheel(InputAction.CallbackContext context);
         }
     }
 }

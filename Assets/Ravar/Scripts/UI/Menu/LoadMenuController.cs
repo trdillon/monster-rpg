@@ -1,18 +1,18 @@
 using System.Collections.Generic;
 using System.IO;
-using Itsdits.Ravar.Core.Signal;
+using Itsdits.Ravar.Core;
+using Itsdits.Ravar.Data;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace Itsdits.Ravar.UI.Menu
 {
     /// <summary>
-    /// Controller class for the Load Menu.
+    /// Controller class for the Load Menu. <seealso cref="MenuController"/>
     /// </summary>
-    public class LoadMenuController : MonoBehaviour
+    public class LoadMenuController : MenuController
     {
         [Header("UI Buttons")]
         [Tooltip("Button for returning to the game.")]
@@ -23,44 +23,52 @@ namespace Itsdits.Ravar.UI.Menu
         [Header("Save Games Scroll View")]
         [Tooltip("The Content container of the Scroll View used to display the games to load.")]
         [SerializeField] private GameObject _content;
+        [Tooltip("The ScrollRect that holds the Content.")]
+        [SerializeField] private ScrollRect _scrollRect; 
         [Tooltip("The prefab of the buttons that will populate the Scroll View.")]
         [SerializeField] private GameObject _buttonPrefab;
 
         private const string SAVE_PATH = "/save/";
         private const string FILE_EXT = "*.ravar";
-
-        private List<Button> _contentButtons = new List<Button>();
-        private List<string> _gameNames = new List<string>();
-        private string _selectedGame;
         
-        private void Start()
+        private readonly List<Button> _contentButtons = new List<Button>();
+        private readonly List<string> _gameNames = new List<string>();
+        private string _selectedGame;
+
+        private void OnEnable()
         {
+            EnableSceneManagement();
             ParsePathsToGameNames();
             PopulateContent();
             AddDoubleClickListeners();
+            SetInitialSelections();
             _loadButton.onClick.AddListener(() => LoadGame(_selectedGame));
-            _backButton.onClick.AddListener(PauseMenu);
+            _backButton.onClick.AddListener(ReturnToMenu);
         }
 
-        private void OnDestroy()
+        private void OnDisable()
         {
-            RemoveDoubleClickListeners();
             _loadButton.onClick.RemoveListener(() => LoadGame(_selectedGame));
-            _backButton.onClick.RemoveListener(PauseMenu);
+            _backButton.onClick.RemoveListener(ReturnToMenu);
         }
 
         private void Update()
         {
+            if (!EventSystem.enabled)
+            {
+                return;
+            }
+            
             // Save game files are accessed by button prefabs. As long as this is the only prefab being instantiated
             // in this scene, then searching for "Clone" should return only the save games.
-            if (!EventSystem.current.currentSelectedGameObject.name.Contains("Clone"))
+            if (!EventSystem.currentSelectedGameObject.name.Contains("Clone"))
             {
                 return;
             }
             
             // Calling GetComponent in Update should probably be avoided, but we can live with it here because
             // there shouldn't be much else going on during this part of the game.
-            GameObject currentGo = EventSystem.current.currentSelectedGameObject;
+            GameObject currentGo = EventSystem.currentSelectedGameObject;
             _selectedGame = currentGo.GetComponentInChildren<TextMeshProUGUI>().text;
         }
 
@@ -91,6 +99,19 @@ namespace Itsdits.Ravar.UI.Menu
             }
         }
 
+        private void SetInitialSelections()
+        {
+            if (_contentButtons.Count > 0)
+            {
+                _selectedGame = _contentButtons[0].GetComponentInChildren<TextMeshProUGUI>().text;
+                EventSystem.current.SetSelectedGameObject(_contentButtons[0].gameObject);
+            }
+            else
+            {
+                EventSystem.current.SetSelectedGameObject(_backButton.gameObject);
+            }
+        }
+
         private void AddDoubleClickListeners()
         {
             foreach (Button button in _contentButtons)
@@ -113,14 +134,34 @@ namespace Itsdits.Ravar.UI.Menu
             {
                 return;
             }
-            
-            GameSignals.LOAD_GAME.Dispatch(selectedGame);
-            Debug.Log($"Loading game: {selectedGame}");
+
+            DisableSceneManagement();
+            RemoveDoubleClickListeners();
+            GameData.LoadGameData(selectedGame);
         }
 
-        private void PauseMenu()
+        private void ReturnToMenu()
         {
-            SceneManager.LoadScene("UI.Menu.Pause");
+            DisableSceneManagement();
+            RemoveDoubleClickListeners();
+            string previousScene = PlayerPrefs.GetString("previousMenu");
+
+            StartCoroutine(SceneLoader.Instance.LoadScene(previousScene == "UI.Menu.Pause" ? 
+                                                              "UI.Menu.Pause" : "UI.Menu.Main"));
+        }
+
+        protected override void EnableSceneManagement()
+        {
+            EventSystem.enabled = true;
+            AudioListener = Camera.GetComponent<AudioListener>();
+            AudioListener.enabled = true;
+        }
+        
+        protected override void DisableSceneManagement()
+        {
+            EventSystem.enabled = false;
+            AudioListener.enabled = false;
+            _scrollRect.GetComponent<ScrollRectPosition>().enabled = false;
         }
     }
 }

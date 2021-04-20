@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.IO;
+using Itsdits.Ravar.Core.Signal;
 using UnityEngine;
 
 namespace Itsdits.Ravar.Data
@@ -14,10 +15,20 @@ namespace Itsdits.Ravar.Data
         private static List<MonsterData> _partyMonsters = new List<MonsterData>();
 
         /// <summary>
-        /// Saves the current saved data to file. The save file is named after the player Id.
+        /// Exposes the player data for the current game instance.
         /// </summary>
-        /// <param name="player">The current player data to save.</param>
-        /// <param name="party">The player's monster party data to save.</param>
+        public static PlayerData PlayerData => _playerData;
+
+        /// <summary>
+        /// Exposes the player's monster party data for the current game instance.
+        /// </summary>
+        public static List<MonsterData> MonsterData => _partyMonsters;
+        
+        /// <summary>
+        /// Saves the current game data.
+        /// </summary>
+        /// <param name="player">Current player to save.</param>
+        /// <param name="party">Current player's monster party.</param>
         public static void SaveGameData(PlayerData player, List<MonsterData> party)
         {
             _playerData = player;
@@ -35,21 +46,30 @@ namespace Itsdits.Ravar.Data
             //TODO - Show user feedback about the save.
             Debug.Log($"Save game: {_playerData.id} saved successfully.");
         }
-
+        
         /// <summary>
-        /// Loads a saved game from file.
+        /// Loads the game data from a saved game.
         /// </summary>
-        /// <param name="playerId">The Id of the save file to load.</param>
-        public static SaveData LoadGameData(string playerId)
+        /// <param name="saveGameId">Id of the saved game to load.</param>
+        /// <returns>SaveData of the game being loaded.</returns>
+        public static void LoadGameData(string saveGameId)
         {
-            string loadDataJson = File.ReadAllText(Application.persistentDataPath + $"/save/{playerId}.ravar");
-            JsonUtility.FromJsonOverwrite(loadDataJson, _saveData);
+            string loadDataJson = File.ReadAllText(Application.persistentDataPath + $"/save/{saveGameId}.ravar");
+            if (_saveData == null)
+            {
+                _saveData = JsonUtility.FromJson<SaveData>(loadDataJson);
+            }
+            else
+            {
+                JsonUtility.FromJsonOverwrite(loadDataJson, _saveData);
+            }
+            
             _playerData = _saveData.playerData;
             _partyMonsters.Clear();
             _partyMonsters.AddRange(_saveData.partyData);
+            GameSignals.LOAD_GAME.Dispatch(saveGameId);
             //TODO - Show user feedback about the load.
             Debug.Log($"Load game: {_playerData.id} loaded successfully.");
-            return _saveData;
         }
     }
 }

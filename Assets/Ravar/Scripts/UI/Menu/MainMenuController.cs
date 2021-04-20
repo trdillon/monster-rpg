@@ -1,14 +1,13 @@
-using System.Collections;
+using Itsdits.Ravar.Core;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace Itsdits.Ravar.UI.Menu
 {
     /// <summary>
-    /// Controller class for the Main Menu scene.
+    /// Controller class for the Main Menu scene. <seealso cref="MenuController"/>
     /// </summary>
-    public class MainMenuController : MonoBehaviour
+    public class MainMenuController : MenuController
     {
         [Header("UI Buttons")]
         [Tooltip("Button for starting a new game.")]
@@ -22,46 +21,49 @@ namespace Itsdits.Ravar.UI.Menu
         [Tooltip("Button for exiting the game.")]
         [SerializeField] private Button _exitButton;
 
-        private void Start()
+        private void OnEnable()
         {
-            _newGameButton.onClick.AddListener(() => StartCoroutine(NewGame()));
+            EnableSceneManagement();
+            _newGameButton.onClick.AddListener(NewGame);
             _loadGameButton.onClick.AddListener(LoadGame);
             _settingsButton.onClick.AddListener(SettingsMenu);
             _infoButton.onClick.AddListener(InfoMenu);
             _exitButton.onClick.AddListener(ExitGame);
         }
 
-        private void OnDestroy()
+        private void OnDisable()
         {
-            _newGameButton.onClick.RemoveListener(()=> StartCoroutine(NewGame()));
+            _newGameButton.onClick.RemoveListener(NewGame);
             _loadGameButton.onClick.RemoveListener(LoadGame);
             _settingsButton.onClick.RemoveListener(SettingsMenu);
             _infoButton.onClick.RemoveListener(InfoMenu);
             _exitButton.onClick.RemoveListener(ExitGame);
         }
         
-        private IEnumerator NewGame()
+        private void NewGame()
         {
-            SceneManager.LoadScene("Game.Core", LoadSceneMode.Additive);
-            yield return SceneManager.LoadSceneAsync("World.Fornwest.Main", LoadSceneMode.Additive);
-            SceneManager.SetActiveScene(SceneManager.GetSceneByName("World.Fornwest.Main"));
-            SceneManager.UnloadSceneAsync("Game.Preload");
-            SceneManager.UnloadSceneAsync("UI.Menu.Main");
+            DisableSceneManagement();
+            StartCoroutine(SceneLoader.Instance.LoadScene("UI.Menu.NewGame"));
         }
 
         private void LoadGame()
         {
-            SceneManager.LoadScene("UI.Menu.Load");
+            DisableSceneManagement();
+            PlayerPrefs.SetString("previousMenu", "UI.Menu.Main");
+            StartCoroutine(SceneLoader.Instance.LoadScene("UI.Menu.Load"));
         }
 
         private void SettingsMenu()
         {
-            SceneManager.LoadScene("UI.Menu.Settings");
+            DisableSceneManagement();
+            PlayerPrefs.SetString("previousMenu", "UI.Menu.Main");
+            StartCoroutine(SceneLoader.Instance.LoadScene("UI.Menu.Settings"));
         }
 
         private void InfoMenu()
         {
-            SceneManager.LoadScene("UI.Menu.Info");
+            DisableSceneManagement();
+            StartCoroutine(SceneLoader.Instance.LoadScene("UI.Menu.Info"));
         }
 
         private void ExitGame()

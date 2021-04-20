@@ -1,14 +1,14 @@
+using Itsdits.Ravar.Core;
 using Itsdits.Ravar.Core.Signal;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace Itsdits.Ravar.UI.Menu
 {
     /// <summary>
-    /// Controller class for the Pause Menu scene.
+    /// Controller class for the Pause Menu scene. <seealso cref="MenuController"/>
     /// </summary>
-    public class PauseMenuController : MonoBehaviour
+    public class PauseMenuController : MenuController
     {
         [Header("UI Buttons")]
         [Tooltip("Button for saving the current game.")]
@@ -24,8 +24,9 @@ namespace Itsdits.Ravar.UI.Menu
         [Tooltip("Button for exiting the game.")]
         [SerializeField] private Button _exitButton;
 
-        private void Start()
+        private void OnEnable()
         {
+            EnableSceneManagement();
             _saveGameButton.onClick.AddListener(SaveGame);
             _loadGameButton.onClick.AddListener(LoadGame);
             _settingsButton.onClick.AddListener(SettingsMenu);
@@ -34,7 +35,7 @@ namespace Itsdits.Ravar.UI.Menu
             _exitButton.onClick.AddListener(ExitGame);
         }
 
-        private void OnDestroy()
+        private void OnDisable()
         {
             _saveGameButton.onClick.RemoveListener(SaveGame);
             _loadGameButton.onClick.RemoveListener(LoadGame);
@@ -46,27 +47,34 @@ namespace Itsdits.Ravar.UI.Menu
 
         private void SaveGame()
         {
-            SceneManager.LoadScene("UI.Menu.Save");
+            DisableSceneManagement();
+            StartCoroutine(SceneLoader.Instance.LoadScene("UI.Menu.Save"));
         }
         
         private void LoadGame()
         {
-            SceneManager.LoadScene("UI.Menu.Load");
+            DisableSceneManagement();
+            PlayerPrefs.SetString("previousMenu", "UI.Menu.Pause");
+            StartCoroutine(SceneLoader.Instance.LoadScene("UI.Menu.Load"));
         }
 
         private void SettingsMenu()
         {
-            SceneManager.LoadScene("UI.Menu.Settings");
+            DisableSceneManagement();
+            PlayerPrefs.SetString("previousMenu", "UI.Menu.Pause");
+            StartCoroutine(SceneLoader.Instance.LoadScene("UI.Menu.Settings"));
         }
         
         private void MainMenu()
         {
+            DisableSceneManagement();
             //TODO - do a save check here so the player doesn't lose their progress on accident
-            SceneManager.LoadScene("UI.Menu.Main");
+            StartCoroutine(SceneLoader.Instance.LoadScene("UI.Menu.Main"));
         }
 
         private void ReturnToGame()
         {
+            DisableSceneManagement();
             GameSignals.RESUME_GAME.Dispatch(true);
         }
         

@@ -28,6 +28,7 @@ namespace Itsdits.Ravar.Core
         [SerializeField] private BattleSystem _battleSystem;
         [Tooltip("The world camera that is attached to the Player GameObject.")]
         [SerializeField] private Camera _worldCamera;
+        [Tooltip("The event system for this scene.")]
         [SerializeField] private EventSystem _eventSystem;
 
         private BattlerController _battler;
@@ -49,14 +50,6 @@ namespace Itsdits.Ravar.Core
         /// The name of the scene the player is currently in.
         /// </summary>
         public string CurrentSceneName => _currentSceneName;
-        /// <summary>
-        /// The index of the scene the player is currently in.
-        /// </summary>
-        public int CurrentSceneIndex => _currentSceneIndex;
-        /// <summary>
-        /// The current player in this game instance.
-        /// </summary>
-        public PlayerController CurrentPlayer => _playerController;
 
         private void Awake()
         {
@@ -69,8 +62,8 @@ namespace Itsdits.Ravar.Core
             GameSignals.PAUSE_GAME.AddListener(OnPause);
             GameSignals.RESUME_GAME.AddListener(OnResume);
             _battleSystem.OnBattleOver += EndBattle;
-            DialogController.Instance.OnShowDialog += StartDialog;
-            DialogController.Instance.OnCloseDialog += EndDialog;
+            //DialogController.Instance.OnShowDialog += StartDialog;
+            //DialogController.Instance.OnCloseDialog += EndDialog;
             UpdateCurrentScene();
         }
 
@@ -86,7 +79,7 @@ namespace Itsdits.Ravar.Core
             }
             else if (_state == GameState.Dialog)
             {
-                DialogController.Instance.HandleUpdate();
+                //DialogController.Instance.HandleUpdate();
             }
         }
 
@@ -95,20 +88,10 @@ namespace Itsdits.Ravar.Core
             GameSignals.PAUSE_GAME.RemoveListener(OnPause);
             GameSignals.RESUME_GAME.RemoveListener(OnResume);
             _battleSystem.OnBattleOver -= EndBattle;
-            DialogController.Instance.OnShowDialog -= StartDialog;
-            DialogController.Instance.OnCloseDialog -= EndDialog;
-        }
-
-        private void OnPause(bool pause)
-        {
-            StartCoroutine(PauseGame());
+            //DialogController.Instance.OnShowDialog -= StartDialog;
+            //DialogController.Instance.OnCloseDialog -= EndDialog;
         }
         
-        private void OnResume(bool resume)
-        {
-            StartCoroutine(ResumeGame());
-        }
-
         /// <summary>
         /// Starts a battle with a wild monster after Encounter collider is triggered.
         /// </summary>
@@ -152,22 +135,23 @@ namespace Itsdits.Ravar.Core
             _battleSystem.StartCharBattle(playerParty, battlerParty);
         }
         
-        private IEnumerator PauseGame()
+        /// <summary>
+        /// Updates the currentSceneName and currentSceneIndex.
+        /// </summary>
+        public void UpdateCurrentScene()
         {
-            _prevState = _state;
-            _previousSceneName = SceneManager.GetActiveScene().name;
-            _eventSystem.enabled = false;
-            yield return LoadSceneAsyncWithCheck("UI.Menu.Pause");
-            _state = GameState.Pause;
+            _currentSceneName = SceneManager.GetActiveScene().name;
+            _currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         }
 
-        private IEnumerator ResumeGame()
+        /// <summary>
+        /// Sets the GameState to World.
+        /// </summary>
+        /// <remarks>Used to release player from error conditions, etc.
+        /// This is a debug function that usually indicates a function calling this is buggy or incomplete.</remarks>
+        public void ReleasePlayer()
         {
-            SceneManager.SetActiveScene(SceneManager.GetSceneByName(_previousSceneName));
-            _state = _prevState;
-            yield return SceneManager.UnloadSceneAsync("UI.Menu.Pause");
-            _eventSystem.enabled = true;
-            _previousSceneName = null;
+            _state = GameState.World;
         }
 
         /// <summary>
@@ -206,8 +190,36 @@ namespace Itsdits.Ravar.Core
             _currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
             enabled = true;
         }
+        
+        private void OnPause(bool pause)
+        {
+            StartCoroutine(PauseGame());
+        }
+        
+        private void OnResume(bool resume)
+        {
+            StartCoroutine(ResumeGame());
+        }
+        
+        private IEnumerator PauseGame()
+        {
+            _prevState = _state;
+            _previousSceneName = SceneManager.GetActiveScene().name;
+            _eventSystem.enabled = false;
+            yield return LoadSceneAsyncWithCheck("UI.Menu.Pause");
+            _state = GameState.Pause;
+        }
 
-        public IEnumerator LoadSceneAsyncWithCheck(string sceneName)
+        private IEnumerator ResumeGame()
+        {
+            SceneManager.SetActiveScene(SceneManager.GetSceneByName(_previousSceneName));
+            _state = _prevState;
+            yield return SceneManager.UnloadSceneAsync("UI.Menu.Pause");
+            _eventSystem.enabled = true;
+            _previousSceneName = null;
+        }
+
+        private IEnumerator LoadSceneAsyncWithCheck(string sceneName)
         {
             if (IsSceneLoadedAlready(sceneName))
             {
@@ -228,25 +240,6 @@ namespace Itsdits.Ravar.Core
             }
             
             SceneManager.SetActiveScene(SceneManager.GetSceneByName(sceneName));
-        }
-
-        /// <summary>
-        /// Updates the currentSceneName and currentSceneIndex.
-        /// </summary>
-        public void UpdateCurrentScene()
-        {
-            _currentSceneName = SceneManager.GetActiveScene().name;
-            _currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        }
-
-        /// <summary>
-        /// Sets the GameState to World.
-        /// </summary>
-        /// <remarks>Used to release player from error conditions, etc.
-        /// This is a debug function that usually indicates a function calling this is buggy or incomplete.</remarks>
-        public void ReleasePlayer()
-        {
-            _state = GameState.World;
         }
 
         private void EndBattle(BattleResult result, bool isCharBattle)
