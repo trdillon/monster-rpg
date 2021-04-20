@@ -1,4 +1,7 @@
 using System.Collections;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using Itsdits.Ravar.Util;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -15,6 +18,7 @@ namespace Itsdits.Ravar.Core
         /// </summary>
         public static SceneLoader Instance { get; private set; }
 
+        private string[] _scenes;
         private string _currentScene;
 
         private void Awake() 
@@ -27,6 +31,8 @@ namespace Itsdits.Ravar.Core
             {
                 Instance = this;
             }
+
+            BuildSceneList();
         }
 
         /// <summary>
@@ -42,7 +48,6 @@ namespace Itsdits.Ravar.Core
             }
             
             _currentScene = SceneManager.GetActiveScene().name;
-            Debug.Log($"{_currentScene}");
             yield return SceneManager.LoadSceneAsync(nextScene, LoadSceneMode.Additive);
             yield return YieldHelper.EndOfFrame;
             SceneManager.SetActiveScene(SceneManager.GetSceneByName(nextScene));
@@ -67,37 +72,49 @@ namespace Itsdits.Ravar.Core
             SceneManager.SetActiveScene(SceneManager.GetSceneByName(tempScene));
         }
 
-        public IEnumerator DumpScene(string oldScene)
+        /// <summary>
+        /// Unloads a scene that is no longer needed.
+        /// </summary>
+        /// <param name="oldScene">Scene to unload.</param>
+        /// <returns></returns>
+        public IEnumerator UnloadScene(string oldScene)
         {
             yield return SceneManager.UnloadSceneAsync(oldScene);
             yield return YieldHelper.EndOfFrame;
         }
 
-        private IEnumerator LoadNextScene(string nextSceneName)
+        /// <summary>
+        /// Finds and unloads the current World scenes in the game.
+        /// </summary>
+        /// <returns></returns>
+        public IEnumerator UnloadWorldScenes()
         {
-            var _async = new AsyncOperation();
-            _async = SceneManager.LoadSceneAsync(nextSceneName, LoadSceneMode.Additive);
-            _async.allowSceneActivation = false;
-            
-            // Wait for animation or something.
-            
-            _async.allowSceneActivation = true;
-     
-            while (!_async.isDone) 
-            {
-                yield return null;
-            }
-     
-            Scene nextScene = SceneManager.GetSceneByName(nextSceneName);
-            if (!nextScene.IsValid())
-            {
-                yield break;
-            }
+            var activeScenes = new List<string>(_scenes.Length);
+            activeScenes.AddRange(_scenes.Where(scene => SceneManager.GetSceneByName(scene).isLoaded));
 
-            SceneManager.SetActiveScene(nextScene);
-            SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().name);
+            var activeWorldScenes = new List<string>(activeScenes.Count);
+            activeWorldScenes.AddRange(activeScenes.Where(scene => scene.Contains("World")));
+
+            foreach (string scene in activeWorldScenes)
+            {
+                yield return Instance.UnloadScene(scene);
+            }
         }
-        
+
+        private void BuildSceneList()
+        {
+            int sceneCount = SceneManager.sceneCountInBuildSettings;
+            _scenes = new string[sceneCount];
+            for (var i = 0; i < sceneCount; i++)
+            {
+                // For some reason using SceneManager.GetSceneByBuildIndex().name was returning null strings for scenes
+                // that had not been loaded yet. So we use this work around to get all the scene names.
+                string pathToScene = SceneUtility.GetScenePathByBuildIndex(i);
+                string sceneName = Path.GetFileNameWithoutExtension(pathToScene);
+                _scenes[i] = sceneName;
+            }
+        }
+
         private bool IsSceneAlreadyLoaded(string sceneName)
         {
             return SceneManager.GetSceneByName(sceneName).isLoaded;

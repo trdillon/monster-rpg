@@ -76,12 +76,8 @@ namespace Itsdits.Ravar.UI.Menu
             string[] gamePaths = Directory.GetFiles(Application.persistentDataPath + SAVE_PATH, FILE_EXT);
             foreach (string path in gamePaths)
             {
-                string fileName = Path.GetFileName(path);
-                
-                // As long as the player doesn't add a period to their character's name this should work fine.
-                //TODO - add string validation when player name entry is added
-                string[] nameWithoutExtension = fileName.Split('.');
-                _gameNames.Add(nameWithoutExtension[0]);
+                string gameName = Path.GetFileNameWithoutExtension(path);
+                _gameNames.Add(gameName);
             }
         }
         

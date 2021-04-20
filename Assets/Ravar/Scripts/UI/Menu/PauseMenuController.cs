@@ -68,6 +68,7 @@ namespace Itsdits.Ravar.UI.Menu
         private void MainMenu()
         {
             DisableSceneManagement();
+            StartCoroutine(SceneLoader.Instance.UnloadWorldScenes());
             //TODO - do a save check here so the player doesn't lose their progress on accident
             StartCoroutine(SceneLoader.Instance.LoadScene("UI.Menu.Main"));
         }
@@ -75,7 +76,7 @@ namespace Itsdits.Ravar.UI.Menu
         private void ReturnToGame()
         {
             DisableSceneManagement();
-            StartCoroutine(SceneLoader.Instance.DumpScene("UI.Menu.Pause"));
+            StartCoroutine(SceneLoader.Instance.UnloadScene("UI.Menu.Pause"));
             GameSignals.RESUME_GAME.Dispatch(true);
         }
         

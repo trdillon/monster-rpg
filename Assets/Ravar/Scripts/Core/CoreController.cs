@@ -42,7 +42,7 @@ namespace Itsdits.Ravar.Core
             }
             else
             {
-                StartCoroutine(SceneLoader.Instance.DumpScene("UI.Menu.Load"));
+                StartCoroutine(SceneLoader.Instance.UnloadScene("UI.Menu.Load"));
                 GameSignals.RESUME_GAME.Dispatch(true);
             }
         }
