@@ -42,6 +42,7 @@ namespace Itsdits.Ravar.Core
             }
             
             _currentScene = SceneManager.GetActiveScene().name;
+            Debug.Log($"{_currentScene}");
             yield return SceneManager.LoadSceneAsync(nextScene, LoadSceneMode.Additive);
             yield return YieldHelper.EndOfFrame;
             SceneManager.SetActiveScene(SceneManager.GetSceneByName(nextScene));
@@ -64,6 +65,12 @@ namespace Itsdits.Ravar.Core
             yield return SceneManager.LoadSceneAsync(tempScene, LoadSceneMode.Additive);
             yield return YieldHelper.EndOfFrame;
             SceneManager.SetActiveScene(SceneManager.GetSceneByName(tempScene));
+        }
+
+        public IEnumerator DumpScene(string oldScene)
+        {
+            yield return SceneManager.UnloadSceneAsync(oldScene);
+            yield return YieldHelper.EndOfFrame;
         }
 
         private IEnumerator LoadNextScene(string nextSceneName)

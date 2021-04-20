@@ -11,6 +11,5 @@ namespace Itsdits.Ravar.Core.Signal
         public static readonly Signal<bool> RESUME_GAME = new Signal<bool>();
         public static readonly Signal<string> SAVE_GAME = new Signal<string>();
         public static readonly Signal<string> LOAD_GAME = new Signal<string>();
-        public static readonly Signal<string> MENU_CHANGE = new Signal<string>();
     }
 }

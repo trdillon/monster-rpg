@@ -3,7 +3,6 @@ using Itsdits.Ravar.Core;
 using System.Collections;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 namespace Itsdits.Ravar.Levels
 {
@@ -42,7 +41,7 @@ namespace Itsdits.Ravar.Levels
             DontDestroyOnLoad(gameObject);
             GameController.Instance.FreezePlayer(true);
 
-            yield return GameController.Instance.LoadScene(_sceneToLoad);
+            yield return SceneLoader.Instance.LoadScene(_sceneToLoad);
 
             //TODO - refactor this to avoid FOOT call
             Portal destination = FindObjectsOfType<Portal>().First(x => x != this && x._portalId == _portalId);

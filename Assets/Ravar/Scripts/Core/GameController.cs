@@ -43,10 +43,6 @@ namespace Itsdits.Ravar.Core
         /// </summary>
         public GameState State => _state;
         /// <summary>
-        /// The previous <see cref="GameState"/>.
-        /// </summary>
-        public GameState PrevState => _prevState;
-        /// <summary>
         /// The name of the scene the player is currently in.
         /// </summary>
         public string CurrentSceneName => _currentSceneName;
@@ -172,74 +168,20 @@ namespace Itsdits.Ravar.Core
             }
         }
 
-        /// <summary>
-        /// Loads the game into a different scene.
-        /// </summary>
-        /// <remarks>Used for changing scenes on game loading.</remarks>
-        /// <param name="sceneName">Name of the scene to load.</param>
-        public IEnumerator LoadScene(string sceneName)
-        {
-            enabled = false;
-            if (_currentSceneIndex > 0)
-            {
-                yield return SceneManager.UnloadSceneAsync(_currentSceneIndex);
-            }
-            
-            yield return SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
-            SceneManager.SetActiveScene(SceneManager.GetSceneByName(sceneName));
-            _currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-            enabled = true;
-        }
-        
         private void OnPause(bool pause)
-        {
-            StartCoroutine(PauseGame());
-        }
-        
-        private void OnResume(bool resume)
-        {
-            StartCoroutine(ResumeGame());
-        }
-        
-        private IEnumerator PauseGame()
         {
             _prevState = _state;
             _previousSceneName = SceneManager.GetActiveScene().name;
             _eventSystem.enabled = false;
-            yield return LoadSceneAsyncWithCheck("UI.Menu.Pause");
+            StartCoroutine(SceneLoader.Instance.LoadSceneNoUnload("UI.Menu.Pause"));
             _state = GameState.Pause;
         }
-
-        private IEnumerator ResumeGame()
+        
+        private void OnResume(bool resume)
         {
             SceneManager.SetActiveScene(SceneManager.GetSceneByName(_previousSceneName));
             _state = _prevState;
-            yield return SceneManager.UnloadSceneAsync("UI.Menu.Pause");
-            _eventSystem.enabled = true;
             _previousSceneName = null;
-        }
-
-        private IEnumerator LoadSceneAsyncWithCheck(string sceneName)
-        {
-            if (IsSceneLoadedAlready(sceneName))
-            {
-                yield break;
-            }
-
-            AsyncOperation scene = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
-            while (scene.progress < 0.9f)
-            {
-                // Show loading bar if we want.
-                yield return null;
-            }
-
-            while (!scene.isDone)
-            {
-                // Wait until the scene really is loaded.
-                yield return null;
-            }
-            
-            SceneManager.SetActiveScene(SceneManager.GetSceneByName(sceneName));
         }
 
         private void EndBattle(BattleResult result, bool isCharBattle)

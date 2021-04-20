@@ -4,7 +4,6 @@ using Itsdits.Ravar.Core;
 using Itsdits.Ravar.Data;
 using TMPro;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 namespace Itsdits.Ravar.UI.Menu
@@ -104,11 +103,11 @@ namespace Itsdits.Ravar.UI.Menu
             if (_contentButtons.Count > 0)
             {
                 _selectedGame = _contentButtons[0].GetComponentInChildren<TextMeshProUGUI>().text;
-                EventSystem.current.SetSelectedGameObject(_contentButtons[0].gameObject);
+                EventSystem.SetSelectedGameObject(_contentButtons[0].gameObject);
             }
             else
             {
-                EventSystem.current.SetSelectedGameObject(_backButton.gameObject);
+                EventSystem.SetSelectedGameObject(_backButton.gameObject);
             }
         }
 

@@ -127,16 +127,10 @@ namespace Itsdits.Ravar.Character
             return playerData;
         }
 
-        private void LoadPlayerData(string playerId)
+        private void LoadPlayerData(string gameId)
         {
             PlayerData loadData = GameData.PlayerData;
-            GameController.Instance.UpdateCurrentScene();
-            string currentScene = GameController.Instance.CurrentSceneName;
-            if (loadData.currentScene != currentScene)
-            {
-                StartCoroutine(GameController.Instance.LoadScene(loadData.currentScene));
-            }
-
+            _id = loadData.id;
             var newPosition = new Vector2(loadData.currentPosition[0], loadData.currentPosition[1]);
             SetOffsetOnTile(newPosition);
         }
