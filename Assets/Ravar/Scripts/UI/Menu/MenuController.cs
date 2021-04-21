@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace Itsdits.Ravar
+namespace Itsdits.Ravar.UI.Menu
 {
     /// <summary>
     /// Abstract Menu Controller class that provides access to local scene management functions.

@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Itsdits.Ravar
+namespace Itsdits.Ravar.UI.Menu
 {
     /// <summary>
     /// Controller class for the New Game scene. <seealso cref="MenuController"/>
