@@ -46,6 +46,8 @@ namespace Itsdits.Ravar.Core
             GameSignals.PAUSE_GAME.AddListener(OnPause);
             GameSignals.RESUME_GAME.AddListener(OnResume);
             GameSignals.QUIT_GAME.AddListener(OnQuit);
+            GameSignals.PORTAL_ENTER.AddListener(OnPortalEnter);
+            GameSignals.PORTAL_EXIT.AddListener(OnPortalExit);
             _battleSystem.OnBattleOver += EndBattle;
             //DialogController.Instance.OnShowDialog += StartDialog;
             //DialogController.Instance.OnCloseDialog += EndDialog;
@@ -72,6 +74,8 @@ namespace Itsdits.Ravar.Core
             GameSignals.PAUSE_GAME.RemoveListener(OnPause);
             GameSignals.RESUME_GAME.RemoveListener(OnResume);
             GameSignals.QUIT_GAME.RemoveListener(OnQuit);
+            GameSignals.PORTAL_ENTER.RemoveListener(OnPortalEnter);
+            GameSignals.PORTAL_EXIT.RemoveListener(OnPortalExit);
             _battleSystem.OnBattleOver -= EndBattle;
             //DialogController.Instance.OnShowDialog -= StartDialog;
             //DialogController.Instance.OnCloseDialog -= EndDialog;
@@ -130,24 +134,6 @@ namespace Itsdits.Ravar.Core
             _state = GameState.World;
         }
 
-        /// <summary>
-        /// Stops the character and prevents player input.
-        /// </summary>
-        /// <remarks>Used in scene switching and cutscenes.</remarks>
-        /// <param name="frozen">True for freeze, false for unfreeze.</param>
-        public void FreezePlayer(bool frozen)
-        {
-            if (frozen)
-            {
-                _prevState = _state;
-                _state = GameState.Cutscene;
-            }
-            else
-            {
-                _state = _prevState;
-            }
-        }
-
         private void OnPause(bool pause)
         {
             _prevState = _state;
@@ -168,6 +154,17 @@ namespace Itsdits.Ravar.Core
         {
             _state = _prevState;
             _previousSceneName = null;
+        }
+
+        private void OnPortalEnter(bool entered)
+        {
+            _prevState = _state;
+            _state = GameState.Cutscene;
+        }
+
+        private void OnPortalExit(bool exited)
+        {
+            _state = _prevState;
         }
 
         private void EndBattle(BattleResult result, bool isCharBattle)
