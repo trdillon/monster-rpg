@@ -34,9 +34,11 @@ namespace Itsdits.Ravar.UI.Menu
 
         private void SaveSettings()
         {
-            // Save shit
+            // Save settings
             DisableSceneManagement();
-            StartCoroutine(SceneLoader.Instance.LoadScene("UI.Menu.Main"));
+            string previousScene = PlayerPrefs.GetString("previousMenu");
+            StartCoroutine(SceneLoader.Instance.LoadScene(previousScene == "UI.Menu.Pause" ? 
+                                                              "UI.Menu.Pause" : "UI.Menu.Main"));
         }
 
         private void ReturnToMenu()
