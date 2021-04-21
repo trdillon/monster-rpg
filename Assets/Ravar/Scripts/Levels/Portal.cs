@@ -2,14 +2,14 @@ using Itsdits.Ravar.Character;
 using Itsdits.Ravar.Core;
 using System.Collections;
 using System.Linq;
+using Itsdits.Ravar.Core.Signal;
 using UnityEngine;
 
 namespace Itsdits.Ravar.Levels
 {
     /// <summary>
-    /// This class handles logic for portals in the Trigger layer.
+    /// Portals are triggerable colliders that control scene transitions and player quests.
     /// </summary>
-    /// <remarks>Used to control scene transition and player quests.</remarks>
     public class Portal : MonoBehaviour, ITriggerable
     {
         [Tooltip("The ID for this portal. Used to match portals in different scenes to ensure the player is sent to the correct destination.")]
@@ -20,11 +20,6 @@ namespace Itsdits.Ravar.Levels
         [SerializeField] private Transform _spawnPoint;
 
         private PlayerController _player;
-
-        /// <summary>
-        /// The spawn point the player should be placed at when the portal is used.
-        /// </summary>
-        public Transform SpawnPoint => _spawnPoint;
 
         /// <summary>
         /// What happens when the portal is triggered.
@@ -38,17 +33,14 @@ namespace Itsdits.Ravar.Levels
 
         private IEnumerator SwitchScene()
         {
-            DontDestroyOnLoad(gameObject);
-            GameController.Instance.FreezePlayer(true);
-
+            GameSignals.PORTAL_ENTER.Dispatch(true);
             yield return SceneLoader.Instance.LoadScene(_sceneToLoad);
 
             //TODO - refactor this to avoid FOOT call
             Portal destination = FindObjectsOfType<Portal>().First(x => x != this && x._portalId == _portalId);
-            _player.SetOffsetOnTile(destination.SpawnPoint.position);
+            _player.SetOffsetOnTile(destination._spawnPoint.position);
 
-            GameController.Instance.FreezePlayer(false);
-            Destroy(gameObject);
+            GameSignals.PORTAL_EXIT.Dispatch(true);
         }
     }
 }

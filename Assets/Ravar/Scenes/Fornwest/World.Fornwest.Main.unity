@@ -27791,6 +27791,7 @@ MonoBehaviour:
   _characters:
   - {fileID: 4234512495854693206}
   - {fileID: 939942729593739407}
+  thisScene: Main
 --- !u!4 &1036887377
 Transform:
   m_ObjectHideFlags: 0
