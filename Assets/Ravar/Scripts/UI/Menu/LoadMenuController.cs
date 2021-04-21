@@ -140,7 +140,6 @@ namespace Itsdits.Ravar.UI.Menu
             DisableSceneManagement();
             RemoveDoubleClickListeners();
             string previousScene = PlayerPrefs.GetString("previousMenu");
-
             StartCoroutine(SceneLoader.Instance.LoadScene(previousScene == "UI.Menu.Pause" ? 
                                                               "UI.Menu.Pause" : "UI.Menu.Main"));
         }

@@ -405,6 +405,7 @@ GameObject:
   - component: {fileID: 506394504}
   - component: {fileID: 506394503}
   - component: {fileID: 506394502}
+  - component: {fileID: 506394505}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -468,6 +469,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &506394505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 506394501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e51dcc28e081944b8aef4caac7ea9f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &567102508
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1030,14 +1043,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a7380679cc26334b8a8ebdbd3a1da51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _eventSystem: {fileID: 506394503}
+  _camera: {fileID: 770712645}
   _saveGameButton: {fileID: 2138952029}
   _loadGameButton: {fileID: 50346658}
   _settingsButton: {fileID: 1694175324}
   _mainMenuButton: {fileID: 1068714393}
   _returnButton: {fileID: 2105891295}
   _exitButton: {fileID: 1251219402}
-  _eventSystem: {fileID: 506394503}
-  _camera: {fileID: 770712645}
 --- !u!1001 &1469845722
 PrefabInstance:
   m_ObjectHideFlags: 0
