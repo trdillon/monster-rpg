@@ -9,7 +9,7 @@ using UnityEngine.InputSystem;
 namespace Itsdits.Ravar.Character
 {
     /// <summary>
-    /// Controller for the Player character that implements <see cref="Moveable"/>. Handles input and interaction.
+    /// Controller for the Player character that inherits from <see cref="Moveable"/>.
     /// </summary>
     public class PlayerController : Moveable
     {
@@ -26,11 +26,7 @@ namespace Itsdits.Ravar.Character
         private InputAction _interact;
         private InputAction _pause;
         private Vector2 _inputVector;
-
-        /// <summary>
-        /// The player's Id.
-        /// </summary>
-        public string Id => _id;
+        
         /// <summary>
         /// The player's name.
         /// </summary>
@@ -46,11 +42,12 @@ namespace Itsdits.Ravar.Character
             {
                 _id = _name + Random.Range(0, 65534);
             }
-            GameSignals.UNPAUSE_GAME.AddListener(OnResume);
         }
 
         private void OnEnable()
         {
+            GameSignals.RESUME_GAME.AddListener(OnResume);
+            GameSignals.LOAD_GAME.AddListener(LoadPlayerData);
             _controls = new PlayerControls();
             _controls.Enable();
             _move = _controls.Player.Move;
@@ -63,10 +60,21 @@ namespace Itsdits.Ravar.Character
 
         private void OnDisable()
         {
+            GameSignals.RESUME_GAME.RemoveListener(OnResume);
+            GameSignals.LOAD_GAME.RemoveListener(LoadPlayerData);
             _move.performed -= OnMove;
             _interact.performed -= OnInteract;
             _pause.performed -= OnPause;
             _controls.Disable();
+        }
+        
+        /// <summary>
+        /// Handles Update lifecycle when GameState == World. Checks for input and moves the character if there is any.
+        /// </summary>
+        public void HandleUpdate()
+        {
+            HandleInput(_inputVector);
+            animator.IsMoving = IsMoving;
         }
         
         private void OnMove(InputAction.CallbackContext context)
@@ -76,8 +84,11 @@ namespace Itsdits.Ravar.Character
 
         private void OnInteract(InputAction.CallbackContext context)
         {
+            // Check the direction the character is facing and get the next tile over.
             var lookingAt = new Vector3(animator.MoveX, animator.MoveY);
             Vector3 nextTile = transform.position + lookingAt;
+            
+            // Check for colliders in the next tile. If found and they implement IInteractable then interact.
             Collider2D overlapCircle = Physics2D.OverlapCircle(nextTile, 0.3f, MapLayers.Instance.InteractLayer);
             if (overlapCircle != null)
             {
@@ -89,32 +100,21 @@ namespace Itsdits.Ravar.Character
         {
             GetComponent<SpriteRenderer>().enabled = false;
             GetComponentInChildren<AudioListener>().enabled = false;
-            StartCoroutine(GameController.Instance.PauseGame(true));
+            GameSignals.PAUSE_GAME.Dispatch(true);
         }
 
         private void OnResume(bool resume)
         {
-            if (resume)
+            if (!resume)
             {
-                GetComponent<SpriteRenderer>().enabled = true;
-                GetComponentInChildren<AudioListener>().enabled = true;
+                return;
             }
-        }
 
-        /// <summary>
-        /// Handles Update lifecycle when GameState.World.
-        /// </summary>
-        public void HandleUpdate()
-        {
-            HandleInput(_inputVector);
-            animator.IsMoving = IsMoving;
+            GetComponent<SpriteRenderer>().enabled = true;
+            GetComponentInChildren<AudioListener>().enabled = true;
         }
         
-        /// <summary>
-        /// Saves the current player's data.
-        /// </summary>
-        /// <returns>PlayerData with current data.</returns>
-        public PlayerData SavePlayerData()
+        private PlayerData SavePlayerData()
         {
             GameController.Instance.UpdateCurrentScene();
 
@@ -127,20 +127,10 @@ namespace Itsdits.Ravar.Character
             return playerData;
         }
 
-        /// <summary>
-        /// Loads the player data into the current player.
-        /// </summary>
-        /// <param name="loadData">PlayerData to load into this player.</param>
-        public void LoadPlayerData(PlayerData loadData)
+        private void LoadPlayerData(string gameId)
         {
+            PlayerData loadData = GameData.PlayerData;
             _id = loadData.id;
-            GameController.Instance.UpdateCurrentScene();
-            string currentScene = GameController.Instance.CurrentSceneName;
-            if (loadData.currentScene != currentScene)
-            {
-                StartCoroutine(GameController.Instance.LoadScene(loadData.currentScene));
-            }
-
             var newPosition = new Vector2(loadData.currentPosition[0], loadData.currentPosition[1]);
             SetOffsetOnTile(newPosition);
         }

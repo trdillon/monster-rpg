@@ -2,7 +2,6 @@ using Itsdits.Ravar.Animation;
 using Itsdits.Ravar.Levels;
 using System;
 using System.Collections;
-using Itsdits.Ravar.Core.Signal;
 using UnityEngine;
 
 namespace Itsdits.Ravar.Character
@@ -14,10 +13,7 @@ namespace Itsdits.Ravar.Character
 	{
         protected CharacterAnimator animator;
         private float moveSpeed = 5f;
-
-        /// <summary>
-        /// If the character is currently moving or not.
-        /// </summary>
+        
         protected bool IsMoving { get; private set; }
 
         private void Awake()
@@ -25,32 +21,7 @@ namespace Itsdits.Ravar.Character
             animator = GetComponent<CharacterAnimator>();
             SetOffsetOnTile(transform.position);
         }
-
-        protected IEnumerator Move(Vector2 moveVector, Action onMoveFinish)
-        {
-            animator.MoveX = Mathf.Clamp(moveVector.x, -1f, 1f);
-            animator.MoveY = Mathf.Clamp(moveVector.y, -1f, 1f);
-
-            Vector3 targetPos = transform.position;
-            targetPos.x += moveVector.x;
-            targetPos.y += moveVector.y;
-            if (!IsPathWalkable(targetPos))
-            {
-                yield break;
-            }
-            
-            IsMoving = true;
-            while ((targetPos - transform.position).sqrMagnitude > Mathf.Epsilon)
-            {
-                transform.position = Vector3.MoveTowards(transform.position, targetPos, moveSpeed * Time.deltaTime);
-                yield return null;
-            }
-            
-            transform.position = targetPos;
-            IsMoving = false;
-            onMoveFinish?.Invoke();
-        }
-
+        
         /// <summary>
         /// Changes the direction the character or object is facing.
         /// </summary>
@@ -82,6 +53,31 @@ namespace Itsdits.Ravar.Character
             transform.position = position;
         }
 
+        protected IEnumerator Move(Vector2 moveVector, Action onMoveFinish)
+        {
+            animator.MoveX = Mathf.Clamp(moveVector.x, -1f, 1f);
+            animator.MoveY = Mathf.Clamp(moveVector.y, -1f, 1f);
+
+            Vector3 targetPos = transform.position;
+            targetPos.x += moveVector.x;
+            targetPos.y += moveVector.y;
+            if (!IsPathWalkable(targetPos))
+            {
+                yield break;
+            }
+            
+            IsMoving = true;
+            while ((targetPos - transform.position).sqrMagnitude > Mathf.Epsilon)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, targetPos, moveSpeed * Time.deltaTime);
+                yield return null;
+            }
+            
+            transform.position = targetPos;
+            IsMoving = false;
+            onMoveFinish?.Invoke();
+        }
+        
         private bool IsPathWalkable(Vector3 targetPath)
         {
             Vector3 position = transform.position;

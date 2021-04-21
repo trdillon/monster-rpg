@@ -28,6 +28,7 @@ namespace Itsdits.Ravar.Core
         [SerializeField] private BattleSystem _battleSystem;
         [Tooltip("The world camera that is attached to the Player GameObject.")]
         [SerializeField] private Camera _worldCamera;
+        [Tooltip("The event system for this scene.")]
         [SerializeField] private EventSystem _eventSystem;
 
         private BattlerController _battler;
@@ -42,21 +43,9 @@ namespace Itsdits.Ravar.Core
         /// </summary>
         public GameState State => _state;
         /// <summary>
-        /// The previous <see cref="GameState"/>.
-        /// </summary>
-        public GameState PrevState => _prevState;
-        /// <summary>
         /// The name of the scene the player is currently in.
         /// </summary>
         public string CurrentSceneName => _currentSceneName;
-        /// <summary>
-        /// The index of the scene the player is currently in.
-        /// </summary>
-        public int CurrentSceneIndex => _currentSceneIndex;
-        /// <summary>
-        /// The current player in this game instance.
-        /// </summary>
-        public PlayerController CurrentPlayer => _playerController;
 
         private void Awake()
         {
@@ -66,9 +55,11 @@ namespace Itsdits.Ravar.Core
 
         private void Start()
         {
+            GameSignals.PAUSE_GAME.AddListener(OnPause);
+            GameSignals.RESUME_GAME.AddListener(OnResume);
             _battleSystem.OnBattleOver += EndBattle;
-            DialogController.Instance.OnShowDialog += StartDialog;
-            DialogController.Instance.OnCloseDialog += EndDialog;
+            //DialogController.Instance.OnShowDialog += StartDialog;
+            //DialogController.Instance.OnCloseDialog += EndDialog;
             UpdateCurrentScene();
         }
 
@@ -84,10 +75,19 @@ namespace Itsdits.Ravar.Core
             }
             else if (_state == GameState.Dialog)
             {
-                DialogController.Instance.HandleUpdate();
+                //DialogController.Instance.HandleUpdate();
             }
         }
 
+        private void OnDestroy()
+        {
+            GameSignals.PAUSE_GAME.RemoveListener(OnPause);
+            GameSignals.RESUME_GAME.RemoveListener(OnResume);
+            _battleSystem.OnBattleOver -= EndBattle;
+            //DialogController.Instance.OnShowDialog -= StartDialog;
+            //DialogController.Instance.OnCloseDialog -= EndDialog;
+        }
+        
         /// <summary>
         /// Starts a battle with a wild monster after Encounter collider is triggered.
         /// </summary>
@@ -110,8 +110,8 @@ namespace Itsdits.Ravar.Core
         /// <param name="battler">Character that was encountered.</param>
         public void StartCharEncounter(BattlerController battler)
         {
-                _state = GameState.Cutscene;
-                StartCoroutine(battler.TriggerBattle(_playerController));
+            _state = GameState.Cutscene;
+            StartCoroutine(battler.TriggerBattle(_playerController));
         }
 
         /// <summary>
@@ -130,34 +130,24 @@ namespace Itsdits.Ravar.Core
 
             _battleSystem.StartCharBattle(playerParty, battlerParty);
         }
+        
+        /// <summary>
+        /// Updates the currentSceneName and currentSceneIndex.
+        /// </summary>
+        public void UpdateCurrentScene()
+        {
+            _currentSceneName = SceneManager.GetActiveScene().name;
+            _currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        }
 
         /// <summary>
-        /// Pause and unpause the game.
+        /// Sets the GameState to World.
         /// </summary>
-        /// <param name="pause">True for pause, false for unpause.</param>
-        public IEnumerator PauseGame(bool pause)
+        /// <remarks>Used to release player from error conditions, etc.
+        /// This is a debug function that usually indicates a function calling this is buggy or incomplete.</remarks>
+        public void ReleasePlayer()
         {
-            //TODO - Clean this up, the order of the calls is crucial and the whole thing blows up if you move anything.
-            if (pause)
-            {
-                _prevState = _state;
-                _previousSceneName = SceneManager.GetActiveScene().name;
-                _eventSystem.enabled = false;
-                yield return LoadSceneAsyncWithCheck("UI.Menu.Pause");
-                //yield return SceneManager.UnloadSceneAsync(_previousSceneName);
-                GameSignals.PAUSE_GAME.Dispatch(true);
-                _state = GameState.Pause;
-            }
-            else
-            {
-                //yield return LoadSceneAsyncWithCheck(_previousSceneName);
-                SceneManager.SetActiveScene(SceneManager.GetSceneByName(_previousSceneName));
-                GameSignals.UNPAUSE_GAME.Dispatch(true);
-                _state = _prevState;
-                yield return SceneManager.UnloadSceneAsync("UI.Menu.Pause");
-                _eventSystem.enabled = true;
-                _previousSceneName = null;
-            }
+            _state = GameState.World;
         }
 
         /// <summary>
@@ -178,65 +168,20 @@ namespace Itsdits.Ravar.Core
             }
         }
 
-        /// <summary>
-        /// Loads the game into a different scene.
-        /// </summary>
-        /// <remarks>Used for changing scenes on game loading.</remarks>
-        /// <param name="sceneName">Name of the scene to load.</param>
-        public IEnumerator LoadScene(string sceneName)
+        private void OnPause(bool pause)
         {
-            enabled = false;
-            if (_currentSceneIndex > 0)
-            {
-                yield return SceneManager.UnloadSceneAsync(_currentSceneIndex);
-            }
-            
-            yield return SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
-            SceneManager.SetActiveScene(SceneManager.GetSceneByName(sceneName));
-            _currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-            enabled = true;
+            _prevState = _state;
+            _previousSceneName = SceneManager.GetActiveScene().name;
+            _eventSystem.enabled = false;
+            StartCoroutine(SceneLoader.Instance.LoadSceneNoUnload("UI.Menu.Pause"));
+            _state = GameState.Pause;
         }
-
-        public IEnumerator LoadSceneAsyncWithCheck(string sceneName)
+        
+        private void OnResume(bool resume)
         {
-            if (IsSceneLoadedAlready(sceneName))
-            {
-                yield break;
-            }
-
-            AsyncOperation scene = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
-            while (scene.progress < 0.9f)
-            {
-                // Show loading bar if we want.
-                yield return null;
-            }
-
-            while (!scene.isDone)
-            {
-                // Wait until the scene really is loaded.
-                yield return null;
-            }
-            
-            SceneManager.SetActiveScene(SceneManager.GetSceneByName(sceneName));
-        }
-
-        /// <summary>
-        /// Updates the currentSceneName and currentSceneIndex.
-        /// </summary>
-        public void UpdateCurrentScene()
-        {
-            _currentSceneName = SceneManager.GetActiveScene().name;
-            _currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        }
-
-        /// <summary>
-        /// Sets the GameState to World.
-        /// </summary>
-        /// <remarks>Used to release player from error conditions, etc.
-        /// This is a debug function that usually indicates a function calling this is buggy or incomplete.</remarks>
-        public void ReleasePlayer()
-        {
-            _state = GameState.World;
+            SceneManager.SetActiveScene(SceneManager.GetSceneByName(_previousSceneName));
+            _state = _prevState;
+            _previousSceneName = null;
         }
 
         private void EndBattle(BattleResult result, bool isCharBattle)

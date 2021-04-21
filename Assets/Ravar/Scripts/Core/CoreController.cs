@@ -1,36 +1,64 @@
+using Itsdits.Ravar.Character;
 using Itsdits.Ravar.Core.Signal;
+using Itsdits.Ravar.Data;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace Itsdits.Ravar.Core
 {
     /// <summary>
-    /// Controller class for the Game.Core scene. Handles the CorePack and objects within it.
+    /// Controller class for the core game scene. Controls player, camera and event functions.
     /// </summary>
     public class CoreController : MonoBehaviour
     {
-        [Tooltip("GameObject that serves as the parent to the CorePack and CorePackBuilder.")]
-        [SerializeField] private GameObject _corePack;
-        
+        [Header("Player")]
+        [Tooltip("Controller object for the player.")]
+        [SerializeField] private PlayerController _playerController;
+        [Tooltip("Camera attached to the player prefab.")]
+        [SerializeField] private Camera _playerCamera;
+
+        [Header("Event System")]
+        [Tooltip("Event System for the core scene.")]
+        [SerializeField] private EventSystem _eventSystem;
+
         private void Awake()
         {
-            GameSignals.PAUSE_GAME.AddListener(OnPause);
-            GameSignals.UNPAUSE_GAME.AddListener(OnResume);
+            DisablePlayer();
+            GameSignals.LOAD_GAME.AddListener(LoadGame);
         }
 
-        private void OnPause(bool pause)
+        private void OnDestroy()
         {
-            if (pause)
+            GameSignals.LOAD_GAME.RemoveListener(LoadGame);
+        }
+
+        private void LoadGame(string sceneName)
+        {
+            EnablePlayer();
+            string sceneToLoad = GameData.PlayerData.currentScene;
+            if (GameController.Instance.State != GameState.Pause)
             {
-                _corePack.SetActive(false);
+                StartCoroutine(SceneLoader.Instance.LoadScene(sceneToLoad));
+            }
+            else
+            {
+                StartCoroutine(SceneLoader.Instance.UnloadScene("UI.Menu.Load"));
+                GameSignals.RESUME_GAME.Dispatch(true);
             }
         }
 
-        private void OnResume(bool resume)
+        private void EnablePlayer()
         {
-            if (resume)
-            {
-                _corePack.SetActive(true);
-            }
+            _eventSystem.enabled = true;
+            _playerCamera.enabled = true;
+            _playerController.GetComponent<SpriteRenderer>().enabled = true;
+        }
+
+        private void DisablePlayer()
+        {
+            _eventSystem.enabled = false;
+            _playerCamera.enabled = false;
+            _playerController.GetComponent<SpriteRenderer>().enabled = false;
         }
     }
 }

@@ -5,7 +5,7 @@ namespace Itsdits.Ravar.Core.Signal
     /// </summary>
     public readonly struct DialogItem
     {
-        private readonly string _dialog;
+        private readonly string[] _dialog;
         private readonly string _speaker;
 
         /// <summary>
@@ -13,7 +13,7 @@ namespace Itsdits.Ravar.Core.Signal
         /// </summary>
         /// <param name="dialog">Dialog to be displayed.</param>
         /// <param name="speaker">Speaker of the dialog.</param>
-        public DialogItem(string dialog, string speaker)
+        public DialogItem(string[] dialog, string speaker)
         {
             _dialog = dialog;
             _speaker = speaker;
