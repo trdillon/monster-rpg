@@ -20,6 +20,9 @@ namespace Itsdits.Ravar.Core
 
         private string[] _scenes;
         private string _currentScene;
+        private string _currentWorldScene;
+
+        public string CurrentWorldScene => _currentWorldScene;
 
         private void Awake() 
         {
@@ -48,6 +51,7 @@ namespace Itsdits.Ravar.Core
             }
             
             _currentScene = SceneManager.GetActiveScene().name;
+            UpdateCurrentWorldScene();
             yield return SceneManager.LoadSceneAsync(nextScene, LoadSceneMode.Additive);
             yield return YieldHelper.EndOfFrame;
             SceneManager.SetActiveScene(SceneManager.GetSceneByName(nextScene));
@@ -67,6 +71,7 @@ namespace Itsdits.Ravar.Core
                 yield break;
             }
             
+            UpdateCurrentWorldScene();
             yield return SceneManager.LoadSceneAsync(tempScene, LoadSceneMode.Additive);
             yield return YieldHelper.EndOfFrame;
             SceneManager.SetActiveScene(SceneManager.GetSceneByName(tempScene));
@@ -113,6 +118,17 @@ namespace Itsdits.Ravar.Core
                 string sceneName = Path.GetFileNameWithoutExtension(pathToScene);
                 _scenes[i] = sceneName;
             }
+        }
+
+        private void UpdateCurrentWorldScene()
+        {
+            string scene = SceneManager.GetActiveScene().name;
+            if (!scene.Contains("World"))
+            {
+                return;
+            }
+
+            _currentWorldScene = scene;
         }
 
         private bool IsSceneAlreadyLoaded(string sceneName)

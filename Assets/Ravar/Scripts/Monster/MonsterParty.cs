@@ -11,7 +11,7 @@ namespace Itsdits.Ravar.Monster
     /// <remarks>Max size of the party is 6.</remarks>
     public class MonsterParty : MonoBehaviour
     {
-        [Tooltip("Party of monsters that travel with the player. The maximum size is 6 monsters.")]
+        [Tooltip("Party of monsters that travel with the character. The maximum size is 6 monsters.")]
         [SerializeField] private List<MonsterObj> _monsters;
 
         /// <summary>
@@ -67,12 +67,11 @@ namespace Itsdits.Ravar.Monster
         /// Loads a list of <see cref="MonsterData"/> into the party as new <see cref="MonsterObj"/>.
         /// </summary>
         /// <param name="newMonsters">New monsters to load into the party.</param>
-        public void LoadMonsterParty(List<MonsterData> newMonsters)
+        public void LoadMonsterParty(IEnumerable<MonsterData> newMonsters)
         {
             _monsters.Clear();
-            foreach (MonsterData monster in newMonsters)
+            foreach (MonsterObj monsterData in newMonsters.Select(monster => new MonsterObj(monster)))
             {
-                var monsterData = new MonsterObj(monster);
                 _monsters.Add(monsterData);
             }
         }

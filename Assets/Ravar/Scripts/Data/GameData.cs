@@ -22,7 +22,7 @@ namespace Itsdits.Ravar.Data
         /// <summary>
         /// Exposes the player's monster party data for the current game instance.
         /// </summary>
-        public static List<MonsterData> MonsterData => _partyMonsters;
+        public static IEnumerable<MonsterData> MonsterData => _partyMonsters;
         
         /// <summary>
         /// Saves the current game data.
@@ -43,7 +43,6 @@ namespace Itsdits.Ravar.Data
 
             string saveDataJson = JsonUtility.ToJson(_saveData, true);
             File.WriteAllText(Application.persistentDataPath + $"/save/{_playerData.id}.ravar", saveDataJson);
-            //TODO - Show user feedback about the save.
             Debug.Log($"Save game: {_playerData.id} saved successfully.");
         }
         
@@ -68,7 +67,6 @@ namespace Itsdits.Ravar.Data
             _partyMonsters.Clear();
             _partyMonsters.AddRange(_saveData.partyData);
             GameSignals.LOAD_GAME.Dispatch(saveGameId);
-            //TODO - Show user feedback about the load.
             Debug.Log($"Load game: {_playerData.id} loaded successfully.");
         }
     }

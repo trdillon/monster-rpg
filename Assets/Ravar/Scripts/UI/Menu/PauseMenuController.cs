@@ -1,5 +1,7 @@
 using Itsdits.Ravar.Core;
 using Itsdits.Ravar.Core.Signal;
+using Itsdits.Ravar.Data;
+using Itsdits.Ravar.UI.Localization;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -24,6 +26,22 @@ namespace Itsdits.Ravar.UI.Menu
         [Tooltip("Button for exiting the game.")]
         [SerializeField] private Button _exitButton;
 
+        [Header("UI Elements")]
+        [Tooltip("Canvas used to hold the other UI elements.")]
+        [SerializeField] private Canvas _canvas;
+        [Tooltip("Prefab for the save question notification pop-up.")]
+        [SerializeField] private GameObject _saveAskPrefab;
+        [Tooltip("Prefab for the save success notification pop-up.")]
+        [SerializeField] private GameObject _saveSuccessPrefab;
+        [Tooltip("Anchor for save success notification pop-up. There is where it will be displayed.")]
+        [SerializeField] private GameObject _savePopupAnchor;
+
+        private GameObject _savePopup;
+        private Button _saveAskYesButton;
+        private Button _saveAskNoButton;
+        private Button _saveSuccessCloseButton;
+        private bool _isLeavingMenu;
+        
         private void OnEnable()
         {
             EnableSceneManagement();
@@ -47,8 +65,9 @@ namespace Itsdits.Ravar.UI.Menu
 
         private void SaveGame()
         {
-            DisableSceneManagement();
-            StartCoroutine(SceneLoader.Instance.LoadScene("UI.Menu.Save"));
+            string saveId = GameData.PlayerData.id;
+            GameSignals.SAVE_GAME.Dispatch(saveId);
+            OpenSaveSuccessPopup();
         }
         
         private void LoadGame()
@@ -67,10 +86,9 @@ namespace Itsdits.Ravar.UI.Menu
         
         private void MainMenu()
         {
-            DisableSceneManagement();
+            _isLeavingMenu = true;
             StartCoroutine(SceneLoader.Instance.UnloadWorldScenes());
-            //TODO - do a save check here so the player doesn't lose their progress on accident
-            StartCoroutine(SceneLoader.Instance.LoadScene("UI.Menu.Main"));
+            OpenSaveAskPopup();
         }
 
         private void ReturnToGame()
@@ -85,12 +103,79 @@ namespace Itsdits.Ravar.UI.Menu
             //TODO - handle this nicely
             Application.Quit();
         }
-        /*
-           PlayerController player = GameController.Instance.CurrentPlayer;
-           PlayerData playerData = player.SavePlayerData();
-           List<MonsterData> partyData = player.GetComponent<MonsterParty>().SaveMonsterParty();
 
-           GameData.SaveGameData(playerData, partyData);
-           */
+        private void OpenSaveSuccessPopup()
+        {
+            _canvas.GetComponent<CanvasGroup>().interactable = false;
+            _savePopup = Instantiate(_saveSuccessPrefab, _savePopupAnchor.transform);
+            _saveSuccessCloseButton = _savePopup.GetComponentInChildren<Button>();
+            _saveSuccessCloseButton.onClick.AddListener(CloseSaveSuccessPopup);
+        }
+
+        private void CloseSaveSuccessPopup()
+        {
+            _saveSuccessCloseButton.onClick.RemoveListener(CloseSaveSuccessPopup);
+            _saveSuccessCloseButton = null;
+            Destroy(_savePopup);
+
+            if (_isLeavingMenu)
+            {
+                DisableSceneManagement();
+                StartCoroutine(SceneLoader.Instance.LoadScene("UI.Menu.Main"));
+            }
+            else
+            {
+                _canvas.GetComponent<CanvasGroup>().interactable = true;
+            }
+        }
+
+        private void OpenSaveAskPopup()
+        {
+            _canvas.GetComponent<CanvasGroup>().interactable = false;
+            _savePopup = Instantiate(_saveAskPrefab, _savePopupAnchor.transform);
+            AssignListenersOnSaveAskPopup();
+        }
+
+        private void CloseSaveAskPopup()
+        {
+            _saveAskYesButton.onClick.RemoveListener(HandleYes);;
+            _saveAskNoButton.onClick.RemoveListener(HandleNo);
+            _saveAskYesButton = null;
+            _saveAskNoButton = null;
+            Destroy(_savePopup);
+        }
+
+        private void AssignListenersOnSaveAskPopup()
+        {
+            Button[] buttons = _savePopup.GetComponentsInChildren<Button>();
+            for (var i = 0; i < buttons.Length; i++)
+            {
+                string text = buttons[i].GetComponentInChildren<TextLocalizer>().Key;
+                if (text == "UI_YES")
+                {
+                    _saveAskYesButton = buttons[i];
+                }
+                else if (text == "UI_NO")
+                {
+                    _saveAskNoButton = buttons[i];
+                }
+            }
+            
+            _saveAskYesButton.onClick.AddListener(HandleYes);
+            _saveAskNoButton.onClick.AddListener(HandleNo);
+        }
+
+        private void HandleYes()
+        {
+            CloseSaveAskPopup();
+            SaveGame();
+        }
+
+        private void HandleNo()
+        {
+            CloseSaveAskPopup();
+            DisableSceneManagement();
+            StartCoroutine(SceneLoader.Instance.LoadScene("UI.Menu.Main"));
+        }
     }
 }

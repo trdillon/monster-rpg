@@ -1,4 +1,3 @@
-using System.Collections;
 using Itsdits.Ravar.Battle;
 using Itsdits.Ravar.Character;
 using Itsdits.Ravar.Core.Signal;
@@ -34,18 +33,12 @@ namespace Itsdits.Ravar.Core
         private BattlerController _battler;
         private GameState _state;
         private GameState _prevState;
-        private string _currentSceneName;
         private string _previousSceneName;
-        private int _currentSceneIndex;
 
         /// <summary>
         /// The current <see cref="GameState"/>.
         /// </summary>
         public GameState State => _state;
-        /// <summary>
-        /// The name of the scene the player is currently in.
-        /// </summary>
-        public string CurrentSceneName => _currentSceneName;
 
         private void Awake()
         {
@@ -60,7 +53,6 @@ namespace Itsdits.Ravar.Core
             _battleSystem.OnBattleOver += EndBattle;
             //DialogController.Instance.OnShowDialog += StartDialog;
             //DialogController.Instance.OnCloseDialog += EndDialog;
-            UpdateCurrentScene();
         }
 
         private void Update()
@@ -129,15 +121,6 @@ namespace Itsdits.Ravar.Core
             var battlerParty = battler.GetComponent<MonsterParty>();
 
             _battleSystem.StartCharBattle(playerParty, battlerParty);
-        }
-        
-        /// <summary>
-        /// Updates the currentSceneName and currentSceneIndex.
-        /// </summary>
-        public void UpdateCurrentScene()
-        {
-            _currentSceneName = SceneManager.GetActiveScene().name;
-            _currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         }
 
         /// <summary>
@@ -216,11 +199,6 @@ namespace Itsdits.Ravar.Core
             {
                 _state = GameState.World;
             }
-        }
-        
-        private bool IsSceneLoadedAlready(string sceneName)
-        {
-            return SceneManager.GetSceneByName(sceneName).isLoaded;
         }
     }
 }
