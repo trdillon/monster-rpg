@@ -36,11 +36,12 @@ namespace Itsdits.Ravar.Core
         {
             EnablePlayer();
             string sceneToLoad = GameData.PlayerData.currentScene;
-            if (GameController.Instance.State != GameState.Pause)
+            string previousScene = PlayerPrefs.GetString("previousMenu");
+            if (previousScene == "UI.Menu.Main")
             {
                 StartCoroutine(SceneLoader.Instance.LoadScene(sceneToLoad));
             }
-            else
+            else if (previousScene == "UI.Menu.Pause")
             {
                 StartCoroutine(SceneLoader.Instance.UnloadScene("UI.Menu.Load"));
                 GameSignals.RESUME_GAME.Dispatch(true);

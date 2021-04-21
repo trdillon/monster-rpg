@@ -51,6 +51,7 @@ namespace Itsdits.Ravar.UI.Menu
             _mainMenuButton.onClick.AddListener(MainMenu);
             _returnButton.onClick.AddListener(ReturnToGame);
             _exitButton.onClick.AddListener(ExitGame);
+            PlayerPrefs.SetString("previousMenu", "UI.Menu.Pause");
         }
 
         private void OnDisable()
@@ -73,20 +74,19 @@ namespace Itsdits.Ravar.UI.Menu
         private void LoadGame()
         {
             DisableSceneManagement();
-            PlayerPrefs.SetString("previousMenu", "UI.Menu.Pause");
             StartCoroutine(SceneLoader.Instance.LoadScene("UI.Menu.Load"));
         }
 
         private void SettingsMenu()
         {
             DisableSceneManagement();
-            PlayerPrefs.SetString("previousMenu", "UI.Menu.Pause");
             StartCoroutine(SceneLoader.Instance.LoadScene("UI.Menu.Settings"));
         }
         
         private void MainMenu()
         {
             _isLeavingMenu = true;
+            GameSignals.QUIT_GAME.Dispatch(true);
             StartCoroutine(SceneLoader.Instance.UnloadWorldScenes());
             OpenSaveAskPopup();
         }

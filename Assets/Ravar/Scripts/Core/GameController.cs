@@ -35,11 +35,6 @@ namespace Itsdits.Ravar.Core
         private GameState _prevState;
         private string _previousSceneName;
 
-        /// <summary>
-        /// The current <see cref="GameState"/>.
-        /// </summary>
-        public GameState State => _state;
-
         private void Awake()
         {
             Instance = this;
@@ -50,6 +45,7 @@ namespace Itsdits.Ravar.Core
         {
             GameSignals.PAUSE_GAME.AddListener(OnPause);
             GameSignals.RESUME_GAME.AddListener(OnResume);
+            GameSignals.QUIT_GAME.AddListener(OnQuit);
             _battleSystem.OnBattleOver += EndBattle;
             //DialogController.Instance.OnShowDialog += StartDialog;
             //DialogController.Instance.OnCloseDialog += EndDialog;
@@ -75,6 +71,7 @@ namespace Itsdits.Ravar.Core
         {
             GameSignals.PAUSE_GAME.RemoveListener(OnPause);
             GameSignals.RESUME_GAME.RemoveListener(OnResume);
+            GameSignals.QUIT_GAME.RemoveListener(OnQuit);
             _battleSystem.OnBattleOver -= EndBattle;
             //DialogController.Instance.OnShowDialog -= StartDialog;
             //DialogController.Instance.OnCloseDialog -= EndDialog;
@@ -163,6 +160,12 @@ namespace Itsdits.Ravar.Core
         private void OnResume(bool resume)
         {
             SceneManager.SetActiveScene(SceneManager.GetSceneByName(_previousSceneName));
+            _state = _prevState;
+            _previousSceneName = null;
+        }
+
+        private void OnQuit(bool quit)
+        {
             _state = _prevState;
             _previousSceneName = null;
         }

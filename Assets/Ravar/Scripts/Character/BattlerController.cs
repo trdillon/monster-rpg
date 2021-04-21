@@ -124,11 +124,6 @@ namespace Itsdits.Ravar.Character
         /// <param name="interactingCharacter">Who or what to interact with.</param>
         public void InteractWith(Transform interactingCharacter)
         {
-            if (GameController.Instance.State != GameState.World)
-            {
-                return;
-            }
-
             ChangeDirection(interactingCharacter.position);
             if (_introDialog.Strings.Count > 0 && _outroDialog.Strings.Count > 0)
             {
