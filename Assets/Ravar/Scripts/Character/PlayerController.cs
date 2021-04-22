@@ -52,9 +52,10 @@ namespace Itsdits.Ravar.Character
 
         private void OnEnable()
         {
-            GameSignals.RESUME_GAME.AddListener(OnResume);
+            GameSignals.NEW_GAME.AddListener(LoadPlayerData);
             GameSignals.SAVE_GAME.AddListener(SavePlayerData);
             GameSignals.LOAD_GAME.AddListener(LoadPlayerData);
+            GameSignals.RESUME_GAME.AddListener(OnResume);
             _controls = new PlayerControls();
             _controls.Enable();
             _move = _controls.Player.Move;
@@ -67,9 +68,10 @@ namespace Itsdits.Ravar.Character
 
         private void OnDisable()
         {
-            GameSignals.RESUME_GAME.RemoveListener(OnResume);
+            GameSignals.NEW_GAME.RemoveListener(LoadPlayerData);
             GameSignals.SAVE_GAME.RemoveListener(SavePlayerData);
             GameSignals.LOAD_GAME.RemoveListener(LoadPlayerData);
+            GameSignals.RESUME_GAME.RemoveListener(OnResume);
             _move.performed -= OnMove;
             _interact.performed -= OnInteract;
             _pause.performed -= OnPause;
@@ -125,9 +127,7 @@ namespace Itsdits.Ravar.Character
         private void SavePlayerData(string gameId)
         {
             var playerData = new PlayerData(_id, SceneLoader.Instance.CurrentWorldScene, GetPositionAsIntArray());
-
             List<MonsterData> partyData = _party.SaveMonsterParty();
-
             GameData.SaveGameData(playerData, partyData);
         }
 
@@ -137,12 +137,12 @@ namespace Itsdits.Ravar.Character
             _id = loadData.id;
             var newPosition = new Vector2(loadData.currentPosition[0], loadData.currentPosition[1]);
             SetOffsetOnTile(newPosition);
-            
             _party.LoadMonsterParty(GameData.MonsterData);
         }
 
         private void CheckAfterMove()
         {
+            //TODO - use non-allocating method here
             Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position - new Vector3(0, 0.3f), 0.2f, MapLayers.Instance.ActionLayers);
 
             foreach (Collider2D c in colliders)

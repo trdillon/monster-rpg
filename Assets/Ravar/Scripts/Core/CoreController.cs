@@ -24,11 +24,13 @@ namespace Itsdits.Ravar.Core
         private void Awake()
         {
             DisablePlayer();
+            GameSignals.NEW_GAME.AddListener(LoadGame);
             GameSignals.LOAD_GAME.AddListener(LoadGame);
         }
 
         private void OnDestroy()
         {
+            GameSignals.NEW_GAME.RemoveListener(LoadGame);
             GameSignals.LOAD_GAME.RemoveListener(LoadGame);
         }
 
