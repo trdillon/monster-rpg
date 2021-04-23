@@ -7,13 +7,23 @@ namespace Itsdits.Ravar.Core.Signal
     public static class GameSignals
     {
         // WARNING: These can easily cause memory leaks. Make sure to remove listeners on disable/destroy.
-        public static readonly Signal<string> NEW_GAME = new Signal<string>();
-        public static readonly Signal<bool> PAUSE_GAME = new Signal<bool>();
-        public static readonly Signal<bool> RESUME_GAME = new Signal<bool>();
-        public static readonly Signal<string> SAVE_GAME = new Signal<string>();
-        public static readonly Signal<string> LOAD_GAME = new Signal<string>();
-        public static readonly Signal<bool> QUIT_GAME = new Signal<bool>();
+        
+        // Game flow management
+        public static readonly Signal<string> GAME_NEW = new Signal<string>();
+        public static readonly Signal<string> GAME_SAVE = new Signal<string>();
+        public static readonly Signal<string> GAME_LOAD = new Signal<string>();
+        public static readonly Signal<bool> GAME_QUIT = new Signal<bool>();
+        public static readonly Signal<bool> GAME_PAUSE = new Signal<bool>();
+        public static readonly Signal<bool> GAME_RESUME = new Signal<bool>();
+        
+        // Level changing and quest triggers
         public static readonly Signal<bool> PORTAL_ENTER = new Signal<bool>();
         public static readonly Signal<bool> PORTAL_EXIT = new Signal<bool>();
+        
+        // Dialog
+        public static readonly Signal<bool> DIALOG_OPEN = new Signal<bool>();
+        public static readonly Signal<bool> DIALOG_CLOSE = new Signal<bool>();
+        public static readonly Signal<DialogItem> DIALOG_SHOW = new Signal<DialogItem>();
+        public static readonly Signal<string> DIALOG_FINISH = new Signal<string>();
     }
 }

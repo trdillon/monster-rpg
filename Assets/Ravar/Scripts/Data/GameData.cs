@@ -42,7 +42,7 @@ namespace Itsdits.Ravar.Data
             _partyMonsters.Add(starterMonster.SaveMonsterData());
             
             // Data is ready so now we signal the new game.
-            GameSignals.NEW_GAME.Dispatch(_playerData.id);
+            GameSignals.GAME_NEW.Dispatch(_playerData.id);
             Debug.Log($"New game: {_playerData.id} created.");
         }
         
@@ -98,7 +98,7 @@ namespace Itsdits.Ravar.Data
             _partyMonsters.AddRange(_saveData.partyData);
             
             // Data is ready so now we signal the load.
-            GameSignals.LOAD_GAME.Dispatch(saveGameId);
+            GameSignals.GAME_LOAD.Dispatch(saveGameId);
         }
     }
 }

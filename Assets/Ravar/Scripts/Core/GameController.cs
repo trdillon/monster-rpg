@@ -23,6 +23,8 @@ namespace Itsdits.Ravar.Core
 
         [Tooltip("GameObject that holds the PlayerController component.")]
         [SerializeField] private PlayerController _playerController;
+        [Tooltip("GameObject that holds the DialogController component.")]
+        [SerializeField] private DialogController _dialogController;
         [Tooltip("GameObject that holds the BattleSystem component.")]
         [SerializeField] private BattleSystem _battleSystem;
         [Tooltip("The world camera that is attached to the Player GameObject.")]
@@ -43,14 +45,26 @@ namespace Itsdits.Ravar.Core
 
         private void Start()
         {
-            GameSignals.PAUSE_GAME.AddListener(OnPause);
-            GameSignals.RESUME_GAME.AddListener(OnResume);
-            GameSignals.QUIT_GAME.AddListener(OnQuit);
+            GameSignals.GAME_PAUSE.AddListener(OnPause);
+            GameSignals.GAME_RESUME.AddListener(OnResume);
+            GameSignals.GAME_QUIT.AddListener(OnQuit);
             GameSignals.PORTAL_ENTER.AddListener(OnPortalEnter);
             GameSignals.PORTAL_EXIT.AddListener(OnPortalExit);
+            GameSignals.DIALOG_OPEN.AddListener(OnDialogOpen);
+            GameSignals.DIALOG_CLOSE.AddListener(OnDialogClose);
             _battleSystem.OnBattleOver += EndBattle;
-            //DialogController.Instance.OnShowDialog += StartDialog;
-            //DialogController.Instance.OnCloseDialog += EndDialog;
+        }
+        
+        private void OnDestroy()
+        {
+            GameSignals.GAME_PAUSE.RemoveListener(OnPause);
+            GameSignals.GAME_RESUME.RemoveListener(OnResume);
+            GameSignals.GAME_QUIT.RemoveListener(OnQuit);
+            GameSignals.PORTAL_ENTER.RemoveListener(OnPortalEnter);
+            GameSignals.PORTAL_EXIT.RemoveListener(OnPortalExit);
+            GameSignals.DIALOG_OPEN.RemoveListener(OnDialogOpen);
+            GameSignals.DIALOG_CLOSE.RemoveListener(OnDialogClose);
+            _battleSystem.OnBattleOver -= EndBattle;
         }
 
         private void Update()
@@ -63,24 +77,8 @@ namespace Itsdits.Ravar.Core
             {
                 _battleSystem.HandleUpdate();
             }
-            else if (_state == GameState.Dialog)
-            {
-                //DialogController.Instance.HandleUpdate();
-            }
         }
 
-        private void OnDestroy()
-        {
-            GameSignals.PAUSE_GAME.RemoveListener(OnPause);
-            GameSignals.RESUME_GAME.RemoveListener(OnResume);
-            GameSignals.QUIT_GAME.RemoveListener(OnQuit);
-            GameSignals.PORTAL_ENTER.RemoveListener(OnPortalEnter);
-            GameSignals.PORTAL_EXIT.RemoveListener(OnPortalExit);
-            _battleSystem.OnBattleOver -= EndBattle;
-            //DialogController.Instance.OnShowDialog -= StartDialog;
-            //DialogController.Instance.OnCloseDialog -= EndDialog;
-        }
-        
         /// <summary>
         /// Starts a battle with a wild monster after Encounter collider is triggered.
         /// </summary>
@@ -124,22 +122,12 @@ namespace Itsdits.Ravar.Core
             _battleSystem.StartCharBattle(playerParty, battlerParty);
         }
 
-        /// <summary>
-        /// Sets the GameState to World.
-        /// </summary>
-        /// <remarks>Used to release player from error conditions, etc.
-        /// This is a debug function that usually indicates a function calling this is buggy or incomplete.</remarks>
-        public void ReleasePlayer()
-        {
-            _state = GameState.World;
-        }
-
         private void OnPause(bool pause)
         {
             _prevState = _state;
             _previousSceneName = SceneManager.GetActiveScene().name;
             _eventSystem.enabled = false;
-            StartCoroutine(SceneLoader.Instance.LoadSceneNoUnload("UI.Menu.Pause"));
+            StartCoroutine(SceneLoader.Instance.LoadSceneNoUnload("UI.Menu.Pause", true));
             _state = GameState.Pause;
         }
         
@@ -166,6 +154,19 @@ namespace Itsdits.Ravar.Core
         {
             _state = _prevState;
         }
+        
+        private void OnDialogOpen(bool opened)
+        {
+            _state = GameState.Dialog;
+        }
+
+        private void OnDialogClose(bool closed)
+        {
+            if (_state == GameState.Dialog)
+            {
+                _state = GameState.World;
+            }
+        }
 
         private void EndBattle(BattleResult result, bool isCharBattle)
         {
@@ -186,19 +187,6 @@ namespace Itsdits.Ravar.Core
 
             _battleSystem.gameObject.SetActive(false);
             _worldCamera.gameObject.SetActive(true);
-        }
-        
-        private void StartDialog()
-        {
-            _state = GameState.Dialog;
-        }
-
-        private void EndDialog()
-        {
-            if (_state == GameState.Dialog)
-            {
-                _state = GameState.World;
-            }
         }
     }
 }

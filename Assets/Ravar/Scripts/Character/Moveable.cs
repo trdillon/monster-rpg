@@ -55,17 +55,23 @@ namespace Itsdits.Ravar.Character
 
         protected IEnumerator Move(Vector2 moveVector, Action onMoveFinish)
         {
+            // Tell the animator which animation to play based on direction.
             animator.MoveX = Mathf.Clamp(moveVector.x, -1f, 1f);
             animator.MoveY = Mathf.Clamp(moveVector.y, -1f, 1f);
 
+            // Set the target position.
             Vector3 targetPos = transform.position;
             targetPos.x += moveVector.x;
             targetPos.y += moveVector.y;
+            
+            // Check for obstacles in the path. This is used more for NPC walking patterns where they need to check
+            // multiple tiles ahead before moving.
             if (!IsPathWalkable(targetPos))
             {
                 yield break;
             }
             
+            // Do the movement.
             IsMoving = true;
             while ((targetPos - transform.position).sqrMagnitude > Mathf.Epsilon)
             {
@@ -73,6 +79,7 @@ namespace Itsdits.Ravar.Character
                 yield return null;
             }
             
+            // Finish the move and invoke any actions after like checking for colliders.
             transform.position = targetPos;
             IsMoving = false;
             onMoveFinish?.Invoke();

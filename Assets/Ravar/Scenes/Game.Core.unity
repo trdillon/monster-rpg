@@ -627,6 +627,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerController: {fileID: 277360800994137942}
+  _dialogController: {fileID: 0}
   _battleSystem: {fileID: 612973395}
   _worldCamera: {fileID: 277360800994137941}
   _eventSystem: {fileID: 4571546569231960410}

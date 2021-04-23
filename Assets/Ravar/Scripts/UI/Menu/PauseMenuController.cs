@@ -67,7 +67,7 @@ namespace Itsdits.Ravar.UI.Menu
         private void SaveGame()
         {
             string saveId = GameData.PlayerData.id;
-            GameSignals.SAVE_GAME.Dispatch(saveId);
+            GameSignals.GAME_SAVE.Dispatch(saveId);
             OpenSaveSuccessPopup();
         }
         
@@ -86,7 +86,7 @@ namespace Itsdits.Ravar.UI.Menu
         private void MainMenu()
         {
             _isLeavingMenu = true;
-            GameSignals.QUIT_GAME.Dispatch(true);
+            GameSignals.GAME_QUIT.Dispatch(true);
             StartCoroutine(SceneLoader.Instance.UnloadWorldScenes());
             OpenSaveAskPopup();
         }
@@ -95,7 +95,7 @@ namespace Itsdits.Ravar.UI.Menu
         {
             DisableSceneManagement();
             StartCoroutine(SceneLoader.Instance.UnloadScene("UI.Menu.Pause"));
-            GameSignals.RESUME_GAME.Dispatch(true);
+            GameSignals.GAME_RESUME.Dispatch(true);
         }
         
         private void ExitGame()

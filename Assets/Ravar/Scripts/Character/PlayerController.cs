@@ -52,10 +52,10 @@ namespace Itsdits.Ravar.Character
 
         private void OnEnable()
         {
-            GameSignals.NEW_GAME.AddListener(LoadPlayerData);
-            GameSignals.SAVE_GAME.AddListener(SavePlayerData);
-            GameSignals.LOAD_GAME.AddListener(LoadPlayerData);
-            GameSignals.RESUME_GAME.AddListener(OnResume);
+            GameSignals.GAME_NEW.AddListener(LoadPlayerData);
+            GameSignals.GAME_SAVE.AddListener(SavePlayerData);
+            GameSignals.GAME_LOAD.AddListener(LoadPlayerData);
+            GameSignals.GAME_RESUME.AddListener(OnResume);
             _controls = new PlayerControls();
             _controls.Enable();
             _move = _controls.Player.Move;
@@ -68,10 +68,10 @@ namespace Itsdits.Ravar.Character
 
         private void OnDisable()
         {
-            GameSignals.NEW_GAME.RemoveListener(LoadPlayerData);
-            GameSignals.SAVE_GAME.RemoveListener(SavePlayerData);
-            GameSignals.LOAD_GAME.RemoveListener(LoadPlayerData);
-            GameSignals.RESUME_GAME.RemoveListener(OnResume);
+            GameSignals.GAME_NEW.RemoveListener(LoadPlayerData);
+            GameSignals.GAME_SAVE.RemoveListener(SavePlayerData);
+            GameSignals.GAME_LOAD.RemoveListener(LoadPlayerData);
+            GameSignals.GAME_RESUME.RemoveListener(OnResume);
             _move.performed -= OnMove;
             _interact.performed -= OnInteract;
             _pause.performed -= OnPause;
@@ -110,7 +110,7 @@ namespace Itsdits.Ravar.Character
         {
             GetComponent<SpriteRenderer>().enabled = false;
             GetComponentInChildren<AudioListener>().enabled = false;
-            GameSignals.PAUSE_GAME.Dispatch(true);
+            GameSignals.GAME_PAUSE.Dispatch(true);
         }
 
         private void OnResume(bool resume)

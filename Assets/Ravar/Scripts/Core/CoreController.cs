@@ -24,14 +24,18 @@ namespace Itsdits.Ravar.Core
         private void Awake()
         {
             DisablePlayer();
-            GameSignals.NEW_GAME.AddListener(LoadGame);
-            GameSignals.LOAD_GAME.AddListener(LoadGame);
+            GameSignals.GAME_NEW.AddListener(LoadGame);
+            GameSignals.GAME_LOAD.AddListener(LoadGame);
+            GameSignals.DIALOG_OPEN.AddListener(OnDialogOpen);
+            GameSignals.DIALOG_CLOSE.AddListener(OnDialogClose);
         }
 
         private void OnDestroy()
         {
-            GameSignals.NEW_GAME.RemoveListener(LoadGame);
-            GameSignals.LOAD_GAME.RemoveListener(LoadGame);
+            GameSignals.GAME_NEW.RemoveListener(LoadGame);
+            GameSignals.GAME_LOAD.RemoveListener(LoadGame);
+            GameSignals.DIALOG_OPEN.RemoveListener(OnDialogOpen);
+            GameSignals.DIALOG_CLOSE.RemoveListener(OnDialogClose);
         }
 
         private void LoadGame(string sceneName)
@@ -46,8 +50,18 @@ namespace Itsdits.Ravar.Core
             else if (previousScene == "UI.Menu.Pause")
             {
                 StartCoroutine(SceneLoader.Instance.UnloadScene("UI.Menu.Load"));
-                GameSignals.RESUME_GAME.Dispatch(true);
+                GameSignals.GAME_RESUME.Dispatch(true);
             }
+        }
+
+        private void OnDialogOpen(bool opened)
+        {
+            _eventSystem.enabled = false;
+        }
+
+        private void OnDialogClose(bool closed)
+        {
+            _eventSystem.enabled = true;
         }
 
         private void EnablePlayer()

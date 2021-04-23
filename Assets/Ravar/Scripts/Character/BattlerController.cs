@@ -1,5 +1,6 @@
 using Itsdits.Ravar.Core;
 using System.Collections;
+using System.Collections.Generic;
 using Itsdits.Ravar.UI.Dialog;
 using Itsdits.Ravar.Util;
 using UnityEngine;
@@ -21,9 +22,9 @@ namespace Itsdits.Ravar.Character
 
         [Header("Dialog")]
         [Tooltip("Dialog this Battler will display when BattlerState is Ready.")]
-        [SerializeField] private DialogObj _introDialog;
+        [SerializeField] private List<string> _introDialog;
         [Tooltip("Dialog this Battler will display when BattlerState is Defeated.")]
-        [SerializeField] private DialogObj _outroDialog;
+        [SerializeField] private List<string> _outroDialog;
 
         [Header("Line of Sight")]
         [Tooltip("Alert icon to be displayed above the Battler's head when LoS is triggered.")]
@@ -74,18 +75,19 @@ namespace Itsdits.Ravar.Character
 
             // Show dialog for trash talk then start battle.
             player.ChangeDirection(transform.position);
-            if (_introDialog.Strings.Count > 0) 
+            if (_introDialog.Count > 0) 
             {
+                /*
                 yield return DialogController.Instance.ShowDialog(_introDialog, Name, () => 
                 {
                     GameController.Instance.StartCharBattle(this);
                 });
+                */
             }
             else
             {
                 // An exception occurs if the Battler is missing dialog, so we call ReleasePlayer()
                 // to set state = GameState.World. Otherwise the player is stuck on the crashed dialog box.
-                GameController.Instance.ReleasePlayer();
             }
         }
 
@@ -125,25 +127,26 @@ namespace Itsdits.Ravar.Character
         public void InteractWith(Transform interactingCharacter)
         {
             ChangeDirection(interactingCharacter.position);
-            if (_introDialog.Strings.Count > 0 && _outroDialog.Strings.Count > 0)
+            if (_introDialog.Count > 0 && _outroDialog.Count > 0)
             {
                 if (_state == BattlerState.Ready)
                 {
+                    /*
                     StartCoroutine(DialogController.Instance.ShowDialog(_introDialog, Name, () =>
                     {
                         GameController.Instance.StartCharBattle(this);
                     }));
+                    */
                 }
                 else
                 {
-                    StartCoroutine(DialogController.Instance.ShowDialog(_outroDialog, Name));
+                    //StartCoroutine(DialogController.Instance.ShowDialog(_outroDialog, Name));
                 }
             }
             else
             {
                 // An exception occurs if the Battler is missing dialog, so we call ReleasePlayer()
                 // to set state = GameState.World. Otherwise the player is stuck on the crashed dialog box.
-                GameController.Instance.ReleasePlayer();
             }
         }
 

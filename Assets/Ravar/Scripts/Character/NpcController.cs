@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
-using Itsdits.Ravar.UI.Dialog;
+using System.Linq;
+using Itsdits.Ravar.Core.Signal;
 using UnityEngine;
 
 namespace Itsdits.Ravar.Character
@@ -16,7 +18,9 @@ namespace Itsdits.Ravar.Character
 
         [Header("Dialog")]
         [Tooltip("Dialog this NPC will display when interacted with.")]
-        [SerializeField] private DialogObj _dialog;
+        [SerializeField] private List<string> _dialog;
+        [Tooltip("Dialog this NPC will display relating to Quests it is involved with.")]
+        [SerializeField] private List<string> _questDialog;
 
         [Header("Movement")]
         [Tooltip("List of movements this character will make to complete their movement pattern.")]
@@ -28,23 +32,43 @@ namespace Itsdits.Ravar.Character
         private float _idleTimer;
         private int _currentMovement;
 
+        // NPC should have a (Dictionary<Quest, int>)? to track which Quests they are involved in and the current stage
+        // of the Quest the player is on.
+
         /// <summary>
         /// Name of this NPC.
         /// </summary>
         public string Name => _name;
 
+        private void OnEnable()
+        {
+            GameSignals.DIALOG_FINISH.AddListener(OnDialogFinish);
+        }
+
+        private void OnDisable()
+        {
+            GameSignals.DIALOG_FINISH.RemoveListener(OnDialogFinish);
+        }
+
         private void Update()
         {
+            // We don't need to track idle time if there's no movement pattern. If the pattern is only 1 move then we
+            // don't track it either, because that NPC doesn't have an actual pattern, just a linear path until it
+            // collides with something.
+            if (_movementPattern.Count < 2)
+            {
+                return;
+            }
+            
+            // Start the idle counter.
             if (_state == NpcState.Idle)
             {
                 _idleTimer += Time.deltaTime;
+                // Pattern delay time is reached. Time to move.
                 if (_idleTimer > _movementPatternDelay)
                 {
                     _idleTimer = 0f;
-                    if (_movementPattern.Count > 0)
-                    {
-                        StartCoroutine(WalkPattern());
-                    }  
+                    StartCoroutine(WalkPattern());
                 }
             }
 
@@ -64,13 +88,11 @@ namespace Itsdits.Ravar.Character
 
             _state = NpcState.Interacting;
             ChangeDirection(interactingCharacter.position);
-            if (_dialog.Strings.Count > 0)
+            if (_dialog.Count > 0)
             {
-                StartCoroutine(DialogController.Instance.ShowDialog(_dialog, Name, () =>
-                {
-                    _idleTimer = 0f;
-                    _state = NpcState.Idle;
-                }));
+                var dialog = new DialogItem(_dialog.ToArray(), _name);
+                GameSignals.DIALOG_OPEN.Dispatch(true);
+                GameSignals.DIALOG_SHOW.Dispatch(dialog);
             }
             else
             {
@@ -80,6 +102,17 @@ namespace Itsdits.Ravar.Character
             }
         }
 
+        private void OnDialogFinish(string npcName)
+        {
+            if (npcName != _name)
+            {
+                return;
+            }
+
+            _idleTimer = 0f;
+            _state = NpcState.Idle;
+        }
+
         private IEnumerator WalkPattern()
         {
             _state = NpcState.Walking;
@@ -87,7 +120,7 @@ namespace Itsdits.Ravar.Character
             yield return Move(_movementPattern[_currentMovement], null);
             if (transform.position != oldPos)
             {
-                // Loop back after the last move
+                // Loop back after the last move.
                 _currentMovement = (_currentMovement + 1) % _movementPattern.Count;
             }
 

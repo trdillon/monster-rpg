@@ -18,15 +18,15 @@ namespace Itsdits.Ravar
 
         private void OnEnable()
         {
-            GameSignals.PAUSE_GAME.AddListener(OnPause);
-            GameSignals.RESUME_GAME.AddListener(OnResume);
+            GameSignals.GAME_PAUSE.AddListener(OnPause);
+            GameSignals.GAME_RESUME.AddListener(OnResume);
             BuildSpriteRendererList();
         }
 
         private void OnDisable()
         {
-            GameSignals.PAUSE_GAME.RemoveListener(OnPause);
-            GameSignals.RESUME_GAME.RemoveListener(OnResume);
+            GameSignals.GAME_PAUSE.RemoveListener(OnPause);
+            GameSignals.GAME_RESUME.RemoveListener(OnResume);
         }
 
         private void OnPause(bool pause)

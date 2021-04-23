@@ -5,8 +5,8 @@ namespace Itsdits.Ravar.Core.Signal
     /// </summary>
     public readonly struct DialogItem
     {
-        private readonly string[] _dialog;
-        private readonly string _speaker;
+        public readonly string[] Dialog;
+        public readonly string Speaker;
 
         /// <summary>
         /// Constructor for a dialog item.
@@ -15,8 +15,8 @@ namespace Itsdits.Ravar.Core.Signal
         /// <param name="speaker">Speaker of the dialog.</param>
         public DialogItem(string[] dialog, string speaker)
         {
-            _dialog = dialog;
-            _speaker = speaker;
+            Dialog = dialog;
+            Speaker = speaker;
         }
     }
 }

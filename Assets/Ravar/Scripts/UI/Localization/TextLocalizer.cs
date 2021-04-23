@@ -23,7 +23,7 @@ namespace Itsdits.Ravar.UI.Localization
         {
             _textField = GetComponent<TextMeshProUGUI>();
             string value = Localizer.GetLocalizedValue(_key);
-            _textField.text = value;
+            _textField.SetText(value);
         }
 
         /// <summary>
@@ -34,7 +34,7 @@ namespace Itsdits.Ravar.UI.Localization
         {
             _key = newKey;
             string value = Localizer.GetLocalizedValue(_key);
-            _textField.text = value;
+            _textField.SetText(value);
         }
     }
 }
