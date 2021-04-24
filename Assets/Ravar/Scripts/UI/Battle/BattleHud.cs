@@ -3,8 +3,8 @@ using Itsdits.Ravar.Monster;
 using System.Collections;
 using System.Collections.Generic;
 using Itsdits.Ravar.Monster.Condition;
+using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace Itsdits.Ravar.UI.Battle
 {
@@ -15,11 +15,11 @@ namespace Itsdits.Ravar.UI.Battle
     {
         [Header("Text Labels")]
         [Tooltip("Text element that displays the monster's name.")]
-        [SerializeField] private Text _nameText;
+        [SerializeField] private TextMeshProUGUI _nameText;
         [Tooltip("Text element that displays the monster's level.")]
-        [SerializeField] private Text _levelText;
+        [SerializeField] private TextMeshProUGUI _levelText;
         [Tooltip("Text element that displays the monster's status.")]
-        [SerializeField] private Text _statusText;
+        [SerializeField] private TextMeshProUGUI _statusText;
 
         [Header("UI Bars")]
         [Tooltip("The HP bar of the monster.")]

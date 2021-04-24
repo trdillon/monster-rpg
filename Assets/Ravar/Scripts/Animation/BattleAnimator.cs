@@ -1,8 +1,10 @@
 using System.Collections;
 using UnityEngine;
 using DG.Tweening;
+using Itsdits.Ravar.Character;
 using Itsdits.Ravar.Monster;
 using Itsdits.Ravar.Util;
+using UnityEngine.UI;
 
 namespace Itsdits.Ravar.Animation
 {
@@ -11,15 +13,44 @@ namespace Itsdits.Ravar.Animation
     /// </summary>
     public class BattleAnimator : MonoBehaviour
     {
+        [Header("Characters")]
+        [Tooltip("Sprite of the player.")]
+        [SerializeField] private Image _playerImage;
+        [Tooltip("Sprite of the Battler.")]
+        [SerializeField] private Image _battlerImage;
+        
+        [Header("Monsters")]
+        [Tooltip("Sprite of the player monster. Left-sided sprite.")]
+        [SerializeField] private BattleMonster _playerMonster;
+        [Tooltip("Sprite of the enemy monster. Right-sided sprite.")]
+        [SerializeField] private BattleMonster _enemyMonster;
+        
+        //TODO - Pool these or something, but they shouldn't stay this way.
         [SerializeField] private GameObject _beamSprite;
         [SerializeField] private GameObject _burstSprite;
         [SerializeField] private GameObject _crystalSprite;
-
         private GameObject _beamObj1;
         private GameObject _beamObj2;
         private GameObject _beamObj3;
         private GameObject _burstObj;
         private GameObject _crystalObj;
+        
+        /// <summary>
+        /// Player's Battle scene character image.
+        /// </summary>
+        public Image PlayerImage => _playerImage;
+        /// <summary>
+        /// Enemy's Battle scene character image.
+        /// </summary>
+        public Image BattlerImage => _battlerImage;
+        /// <summary>
+        /// Player's BattleMonster in this Battle scene.
+        /// </summary>
+        public BattleMonster PlayerMonster => _playerMonster;
+        /// <summary>
+        /// Enemy's BattleMonster in this Battle scene.
+        /// </summary>
+        public BattleMonster EnemyMonster => _enemyMonster;
 
         /// <summary>
         /// Play the Capture Crystal animation.
@@ -120,6 +151,18 @@ namespace Itsdits.Ravar.Animation
             Destroy(_beamObj3, 0f);
             Destroy(_burstObj, 0f);
         }
+        
+        /// <summary>
+        /// Plays the battle start animation for the provided monster.
+        /// </summary>
+        /// <param name="monster">Monster to animate.</param>
+        public void PlayBattleStartAnimation(BattleMonster monster)
+        {
+            monster.Image.transform.localPosition = monster == _playerMonster ? 
+                new Vector3(-500f, monster.OriginalPos.y) : new Vector3(500f, monster.OriginalPos.y);
+
+            monster.Image.transform.DOLocalMoveX(monster.OriginalPos.x, 1f);
+        }
 
         /// <summary>
         /// Play the failed capture animation after breaking out of PlayCaptureAnimation.
@@ -130,6 +173,21 @@ namespace Itsdits.Ravar.Animation
             _burstObj.transform.DOScale(0.1f, 1f);
             _crystalObj.transform.DOPunchRotation(new Vector3(0, 0, 90), 2f);
             _crystalObj.transform.DOScale(0.1f, 1f);
+        }
+        
+        /// <summary>
+        /// Shows the character sprites in the Battle scene.
+        /// </summary>
+        /// <param name="player">The Player.</param>
+        /// <param name="battler">The Battler.</param>
+        public void ShowCharacterSprites(PlayerController player, BattlerController battler)
+        {
+            _playerMonster.gameObject.SetActive(false);
+            _enemyMonster.gameObject.SetActive(false);
+            _playerImage.gameObject.SetActive(true);
+            _battlerImage.gameObject.SetActive(true);
+            _playerImage.sprite = player.BattleSprite;
+            _battlerImage.sprite = battler.Sprite;
         }
     }
 }

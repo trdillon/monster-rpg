@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
-using Itsdits.Ravar.UI;
 using Itsdits.Ravar.UI.Battle;
 
 namespace Itsdits.Ravar.Monster 
@@ -36,6 +35,14 @@ namespace Itsdits.Ravar.Monster
         /// The Image component of this monster.
         /// </summary>
         public Image Image => _image;
+        /// <summary>
+        /// The original position of the BattleMonster on the scene.
+        /// </summary>
+        public Vector3 OriginalPos => _originalPos;
+        /// <summary>
+        /// The original color of the BattleMonster.
+        /// </summary>
+        public Color OriginalColor => _originalColor;
 
         private void Awake()
         {

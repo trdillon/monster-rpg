@@ -39,6 +39,10 @@ namespace Itsdits.Ravar.Character
         /// The character sprite to be used in the battle screen.
         /// </summary>
         public Sprite BattleSprite => _battleSprite;
+        /// <summary>
+        /// Exposes the player's monster party.
+        /// </summary>
+        public MonsterParty Party => _party;
 
         private void Start()
         {
@@ -55,7 +59,6 @@ namespace Itsdits.Ravar.Character
             GameSignals.GAME_NEW.AddListener(LoadPlayerData);
             GameSignals.GAME_SAVE.AddListener(SavePlayerData);
             GameSignals.GAME_LOAD.AddListener(LoadPlayerData);
-            GameSignals.GAME_RESUME.AddListener(OnResume);
             _controls = new PlayerControls();
             _controls.Enable();
             _move = _controls.Player.Move;
@@ -64,6 +67,7 @@ namespace Itsdits.Ravar.Character
             _move.performed += OnMove;
             _interact.performed += OnInteract;
             _pause.performed += OnPause;
+            _party = GetComponent<MonsterParty>();
         }
 
         private void OnDisable()
@@ -71,7 +75,6 @@ namespace Itsdits.Ravar.Character
             GameSignals.GAME_NEW.RemoveListener(LoadPlayerData);
             GameSignals.GAME_SAVE.RemoveListener(SavePlayerData);
             GameSignals.GAME_LOAD.RemoveListener(LoadPlayerData);
-            GameSignals.GAME_RESUME.RemoveListener(OnResume);
             _move.performed -= OnMove;
             _interact.performed -= OnInteract;
             _pause.performed -= OnPause;
@@ -108,22 +111,9 @@ namespace Itsdits.Ravar.Character
 
         private void OnPause(InputAction.CallbackContext context)
         {
-            GetComponent<SpriteRenderer>().enabled = false;
-            GetComponentInChildren<AudioListener>().enabled = false;
             GameSignals.GAME_PAUSE.Dispatch(true);
         }
 
-        private void OnResume(bool resume)
-        {
-            if (!resume)
-            {
-                return;
-            }
-
-            GetComponent<SpriteRenderer>().enabled = true;
-            GetComponentInChildren<AudioListener>().enabled = true;
-        }
-        
         private void SavePlayerData(string gameId)
         {
             var playerData = new PlayerData(_id, SceneLoader.Instance.CurrentWorldScene, GetPositionAsIntArray());

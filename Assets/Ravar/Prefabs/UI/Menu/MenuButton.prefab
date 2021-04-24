@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f8d1b6d622eade4c99a6e551e5dc5e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _key: KEY_FOR_STRING
+  _key: UI_NO_KEY
 --- !u!114 &6908434975701285069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79,7 +79,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: KEY_FOR_STRING
+  m_text: UI_NO_KEY
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e1aee14bb60271f4c9f91f9613d0a024, type: 2}
   m_sharedMaterial: {fileID: 9050939488759487715, guid: e1aee14bb60271f4c9f91f9613d0a024, type: 2}

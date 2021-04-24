@@ -1,4 +1,4 @@
-using Itsdits.Ravar.Core;
+using Itsdits.Ravar.Core.Signal;
 using Itsdits.Ravar.Levels;
 using UnityEngine;
 
@@ -9,13 +9,21 @@ namespace Itsdits.Ravar.Character
     /// </summary>
     public class LoS : MonoBehaviour, ITriggerable
     {
+        private BattlerController _battler;
+
+        private void Awake()
+        {
+            _battler = GetComponentInParent<BattlerController>();
+        }
+
         /// <summary>
         /// What happens when the LoS is triggered.
         /// </summary>
         /// <param name="player">The player that triggered the encounter.</param>
         public void OnTriggered(PlayerController player)
         {
-            GameController.Instance.StartCharEncounter(GetComponentInParent<BattlerController>());
+            var encounterItem = new BattlerEncounter(_battler);
+            GameSignals.BATTLE_LOS.Dispatch(encounterItem);
         }
     }
 }

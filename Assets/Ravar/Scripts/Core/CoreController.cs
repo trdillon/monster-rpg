@@ -23,24 +23,30 @@ namespace Itsdits.Ravar.Core
 
         private void Awake()
         {
-            DisablePlayer();
+            DisablePlayer(true);
             GameSignals.GAME_NEW.AddListener(LoadGame);
             GameSignals.GAME_LOAD.AddListener(LoadGame);
+            GameSignals.GAME_PAUSE.AddListener(DisablePlayer);
+            GameSignals.GAME_RESUME.AddListener(EnablePlayer);
             GameSignals.DIALOG_OPEN.AddListener(OnDialogOpen);
             GameSignals.DIALOG_CLOSE.AddListener(OnDialogClose);
+            GameSignals.BATTLE_START.AddListener(OnBattleStart);
         }
 
         private void OnDestroy()
         {
             GameSignals.GAME_NEW.RemoveListener(LoadGame);
             GameSignals.GAME_LOAD.RemoveListener(LoadGame);
+            GameSignals.GAME_PAUSE.RemoveListener(DisablePlayer);
+            GameSignals.GAME_RESUME.RemoveListener(EnablePlayer);
             GameSignals.DIALOG_OPEN.RemoveListener(OnDialogOpen);
             GameSignals.DIALOG_CLOSE.RemoveListener(OnDialogClose);
+            GameSignals.BATTLE_START.RemoveListener(OnBattleStart);
         }
 
         private void LoadGame(string sceneName)
         {
-            EnablePlayer();
+            EnablePlayer(true);
             string sceneToLoad = GameData.PlayerData.currentScene;
             string previousScene = PlayerPrefs.GetString("previousMenu");
             if (previousScene == "UI.Menu.Main")
@@ -53,6 +59,20 @@ namespace Itsdits.Ravar.Core
                 GameSignals.GAME_RESUME.Dispatch(true);
             }
         }
+        
+        private void EnablePlayer(bool enable)
+        {
+            _eventSystem.enabled = true;
+            _playerCamera.enabled = true;
+            _playerController.GetComponent<SpriteRenderer>().enabled = true;
+        }
+
+        private void DisablePlayer(bool disable)
+        {
+            _eventSystem.enabled = false;
+            _playerCamera.enabled = false;
+            _playerController.GetComponent<SpriteRenderer>().enabled = false;
+        }
 
         private void OnDialogOpen(bool opened)
         {
@@ -64,18 +84,14 @@ namespace Itsdits.Ravar.Core
             _eventSystem.enabled = true;
         }
 
-        private void EnablePlayer()
+        private void OnBattleStart(BattlerEncounter battler)
         {
-            _eventSystem.enabled = true;
-            _playerCamera.enabled = true;
-            _playerController.GetComponent<SpriteRenderer>().enabled = true;
+            DisablePlayer(true);
         }
-
-        private void DisablePlayer()
+        
+        private void OnBattleFinish()
         {
-            _eventSystem.enabled = false;
-            _playerCamera.enabled = false;
-            _playerController.GetComponent<SpriteRenderer>().enabled = false;
+            EnablePlayer(true);
         }
     }
 }

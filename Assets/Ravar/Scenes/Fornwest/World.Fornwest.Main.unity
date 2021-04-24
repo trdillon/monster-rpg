@@ -66389,6 +66389,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: fa03519e345914b4db59e26a01626567, type: 3}
     - target: {fileID: 4234512495102130386, guid: 9011473ac612dc7459683113ba4d8e02, type: 3}
+      propertyPath: _startingPos.x
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4234512495102130386, guid: 9011473ac612dc7459683113ba4d8e02, type: 3}
+      propertyPath: _startingPos.y
+      value: 9.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4234512495102130386, guid: 9011473ac612dc7459683113ba4d8e02, type: 3}
       propertyPath: introDialog.strings.Array.size
       value: 2
       objectReference: {fileID: 0}

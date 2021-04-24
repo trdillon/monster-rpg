@@ -17,6 +17,9 @@ namespace Itsdits.Ravar.Battle
     /// <summary>
     /// Battle manager class. Handles turn logic, status and stat changes, monster changes and win/loss cases.
     /// </summary>
+    /// <remarks>This class was large and clunky so it's been broken down into separate functionalities since 1.0.8.</remarks>
+    /// <seealso cref="BattleController"/><seealso cref="BattleUIController"/><seealso cref="BattleAnimator"/>
+    [Obsolete]
     public class BattleSystem : MonoBehaviour
     {
         [Header("Monsters")]

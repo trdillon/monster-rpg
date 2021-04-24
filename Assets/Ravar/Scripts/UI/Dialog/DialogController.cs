@@ -9,7 +9,6 @@ using Itsdits.Ravar.UI.Localization;
 using Itsdits.Ravar.Util;
 using TMPro;
 using UnityEngine.EventSystems;
-using UnityEngine.UI;
 
 namespace Itsdits.Ravar.UI.Dialog
 {
@@ -29,8 +28,6 @@ namespace Itsdits.Ravar.UI.Dialog
         [SerializeField] private TextMeshProUGUI _dialogText;
         [Tooltip("The Text element that displays the name.")]
         [SerializeField] private TextMeshProUGUI _nameText;
-        [Tooltip("ScrollRect element that contains the Dialog content.")]
-        [SerializeField] private ScrollRect _scrollRect;
 
         private TextLocalizer _textLocalizer;
         private PlayerControls _controls;

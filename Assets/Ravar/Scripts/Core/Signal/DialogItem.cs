@@ -1,7 +1,7 @@
 namespace Itsdits.Ravar.Core.Signal
 {
     /// <summary>
-    /// Holds a dialog item containing the dialog to be displayed and the speaker's name.
+    /// Struct for a dialog item containing the dialog to be displayed and the speaker's name.
     /// </summary>
     public readonly struct DialogItem
     {

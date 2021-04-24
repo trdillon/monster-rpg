@@ -4,7 +4,6 @@ using Itsdits.Ravar.Core.Signal;
 using Itsdits.Ravar.Levels;
 using Itsdits.Ravar.Monster;
 using Itsdits.Ravar.Monster.Condition;
-using Itsdits.Ravar.UI.Dialog;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
@@ -23,8 +22,6 @@ namespace Itsdits.Ravar.Core
 
         [Tooltip("GameObject that holds the PlayerController component.")]
         [SerializeField] private PlayerController _playerController;
-        [Tooltip("GameObject that holds the DialogController component.")]
-        [SerializeField] private DialogController _dialogController;
         [Tooltip("GameObject that holds the BattleSystem component.")]
         [SerializeField] private BattleSystem _battleSystem;
         [Tooltip("The world camera that is attached to the Player GameObject.")]
@@ -52,6 +49,8 @@ namespace Itsdits.Ravar.Core
             GameSignals.PORTAL_EXIT.AddListener(OnPortalExit);
             GameSignals.DIALOG_OPEN.AddListener(OnDialogOpen);
             GameSignals.DIALOG_CLOSE.AddListener(OnDialogClose);
+            GameSignals.BATTLE_LOS.AddListener(OnBattlerEncounter);
+            GameSignals.BATTLE_START.AddListener(OnBattleStart);
             _battleSystem.OnBattleOver += EndBattle;
         }
         
@@ -64,6 +63,8 @@ namespace Itsdits.Ravar.Core
             GameSignals.PORTAL_EXIT.RemoveListener(OnPortalExit);
             GameSignals.DIALOG_OPEN.RemoveListener(OnDialogOpen);
             GameSignals.DIALOG_CLOSE.RemoveListener(OnDialogClose);
+            GameSignals.BATTLE_LOS.RemoveListener(OnBattlerEncounter);
+            GameSignals.BATTLE_START.RemoveListener(OnBattleStart);
             _battleSystem.OnBattleOver -= EndBattle;
         }
 
@@ -95,14 +96,22 @@ namespace Itsdits.Ravar.Core
             _battleSystem.StartWildBattle(playerParty, enemyMonster);
         }
 
-        /// <summary>
-        /// Starts an encounter with a character after LoS collider is triggered.
-        /// </summary>
-        /// <param name="battler">Character that was encountered.</param>
-        public void StartCharEncounter(BattlerController battler)
+        private void OnBattlerEncounter(BattlerEncounter encounter)
         {
             _state = GameState.Cutscene;
-            StartCoroutine(battler.TriggerBattle(_playerController));
+            StartCoroutine(encounter.Battler.TriggerEncounter(_playerController));
+        }
+
+        private void OnBattleStart(BattlerEncounter encounter)
+        {
+            _eventSystem.enabled = false;
+            _state = GameState.Battle;
+        }
+
+        private void OnBattleFinish()
+        {
+            _eventSystem.enabled = true;
+            _state = GameState.World;
         }
 
         /// <summary>
