@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Ravar/Scenes/Game.Core.unity
     guid: 10e395aaf64e9a14c95c39e79e4df4a0
   - enabled: 1
+    path: Assets/Ravar/Scenes/Game.Battle.unity
+    guid: 366e328c2cca30d4793821474e7a7781
+  - enabled: 1
     path: Assets/Ravar/Scenes/UI/UI.Menu.Main.unity
     guid: 87e770fc0eb69a747a999ef198db437c
   - enabled: 1
@@ -30,8 +33,11 @@ EditorBuildSettings:
     path: Assets/Ravar/Scenes/UI/UI.Menu.Info.unity
     guid: 220d2cb3e720aac4d9aaeabd3d160e0c
   - enabled: 1
-    path: Assets/Ravar/Scenes/UI/UI.Dialog.unity
+    path: Assets/Ravar/Scenes/UI/UI.Popup.Dialog.unity
     guid: 484e0dca5a5e2f749ba9483d04bfb783
+  - enabled: 1
+    path: Assets/Ravar/Scenes/UI/UI.Popup.Party.unity
+    guid: 553cc2ac794eb5c4583d623d40fea1dc
   - enabled: 1
     path: Assets/Ravar/Scenes/Fornwest/World.Fornwest.Main.unity
     guid: ca2c746788944c743bddcd221617b059

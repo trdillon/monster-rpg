@@ -110,7 +110,7 @@ namespace Itsdits.Ravar.Battle
                 }
                 
                 counter += 1;
-                yield return YieldHelper.TypingTime;
+                yield return YieldHelper.TYPING_TIME;
             }
         }
         

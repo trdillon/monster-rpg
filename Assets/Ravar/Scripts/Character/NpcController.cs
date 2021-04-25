@@ -40,12 +40,12 @@ namespace Itsdits.Ravar.Character
 
         private void OnEnable()
         {
-            GameSignals.DIALOG_FINISH.AddListener(OnDialogFinish);
+            GameSignals.DIALOG_CLOSE.AddListener(OnDialogClose);
         }
 
         private void OnDisable()
         {
-            GameSignals.DIALOG_FINISH.RemoveListener(OnDialogFinish);
+            GameSignals.DIALOG_CLOSE.RemoveListener(OnDialogClose);
         }
 
         private void Update()
@@ -89,8 +89,7 @@ namespace Itsdits.Ravar.Character
             if (_dialog.Count > 0)
             {
                 var dialog = new DialogItem(_dialog.ToArray(), _name);
-                GameSignals.DIALOG_OPEN.Dispatch(true);
-                GameSignals.DIALOG_SHOW.Dispatch(dialog);
+                GameSignals.DIALOG_OPEN.Dispatch(dialog);
             }
             else
             {
@@ -100,9 +99,9 @@ namespace Itsdits.Ravar.Character
             }
         }
 
-        private void OnDialogFinish(string npcName)
+        private void OnDialogClose(string speakerName)
         {
-            if (npcName != _name)
+            if (speakerName != _name)
             {
                 return;
             }

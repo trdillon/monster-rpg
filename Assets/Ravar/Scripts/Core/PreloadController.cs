@@ -23,9 +23,8 @@ namespace Itsdits.Ravar.Core
         private IEnumerator BootGame()
         {
             SceneManager.LoadScene("Game.Core", LoadSceneMode.Additive);
-            yield return SceneManager.LoadSceneAsync("UI.Dialog", LoadSceneMode.Additive);
             yield return SceneManager.LoadSceneAsync("UI.Menu.Main", LoadSceneMode.Additive);
-            yield return YieldHelper.EndOfFrame;
+            yield return YieldHelper.END_OF_FRAME;
             SceneManager.SetActiveScene(SceneManager.GetSceneByName("UI.Menu.Main"));
             SceneManager.UnloadSceneAsync("Game.Preload");
         }

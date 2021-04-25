@@ -73,12 +73,12 @@ namespace Itsdits.Ravar.UI.Battle
                 {
                     _dialogBuilder.Append(letter);
                     //_dialogText.text += letter;
-                    yield return YieldHelper.TypingTime;
+                    yield return YieldHelper.TYPING_TIME;
                 }
 
                 _dialogText.text = _dialogBuilder.ToString();
                 // Give the player time to read the dialog.
-                yield return YieldHelper.OneSecond;
+                yield return YieldHelper.ONE_SECOND;
             }
         }
 

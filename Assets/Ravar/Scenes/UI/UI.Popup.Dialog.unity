@@ -556,7 +556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 1568705541}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &1012222376
@@ -631,8 +631,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This is a long test message. It is just meant to test the wrapping and
-    display settings of this box. I wonder what happens when I go too far.
+  m_text: UI_NO_KEY
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e1aee14bb60271f4c9f91f9613d0a024, type: 2}
   m_sharedMaterial: {fileID: 9050939488759487715, guid: e1aee14bb60271f4c9f91f9613d0a024, type: 2}
@@ -713,7 +712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f8d1b6d622eade4c99a6e551e5dc5e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _key: DIALOG_TEST
+  _key: UI_NO_KEY
 --- !u!222 &1133957044
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1290,8 +1289,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6dc399f29fa66654184b945a9cb64ad4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _eventSystem: {fileID: 1012222375}
-  _canvas: {fileID: 1147561951}
   _dialogText: {fileID: 1133957042}
   _nameText: {fileID: 287819927}
-  _scrollRect: {fileID: 1874186059}

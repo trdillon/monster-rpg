@@ -1,9 +1,11 @@
+using System.Collections;
 using Itsdits.Ravar.Battle;
 using Itsdits.Ravar.Character;
 using Itsdits.Ravar.Core.Signal;
 using Itsdits.Ravar.Levels;
 using Itsdits.Ravar.Monster;
 using Itsdits.Ravar.Monster.Condition;
+using Itsdits.Ravar.Util;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
@@ -51,7 +53,7 @@ namespace Itsdits.Ravar.Core
             GameSignals.DIALOG_CLOSE.AddListener(OnDialogClose);
             GameSignals.BATTLE_LOS.AddListener(OnBattlerEncounter);
             GameSignals.BATTLE_START.AddListener(OnBattleStart);
-            _battleSystem.OnBattleOver += EndBattle;
+            //_battleSystem.OnBattleOver += EndBattle;
         }
         
         private void OnDestroy()
@@ -65,7 +67,7 @@ namespace Itsdits.Ravar.Core
             GameSignals.DIALOG_CLOSE.RemoveListener(OnDialogClose);
             GameSignals.BATTLE_LOS.RemoveListener(OnBattlerEncounter);
             GameSignals.BATTLE_START.RemoveListener(OnBattleStart);
-            _battleSystem.OnBattleOver -= EndBattle;
+            //_battleSystem.OnBattleOver -= EndBattle;
         }
 
         private void Update()
@@ -90,6 +92,7 @@ namespace Itsdits.Ravar.Core
             _worldCamera.gameObject.SetActive(false);
 
             var playerParty = _playerController.GetComponent<MonsterParty>();
+            //TODO - refactor the way we handle this. maybe a dictionary with the scenes and map areas in it?
             MonsterObj wildMonster = FindObjectOfType<MapArea>().GetComponent<MapArea>().GetRandomMonster();
             var enemyMonster = new MonsterObj(wildMonster.Base, wildMonster.Level);
 
@@ -164,17 +167,29 @@ namespace Itsdits.Ravar.Core
             _state = _prevState;
         }
         
-        private void OnDialogOpen(bool opened)
+        private void OnDialogOpen(DialogItem dialog)
         {
             _state = GameState.Dialog;
+            StartCoroutine(ShowDialog(dialog));
         }
 
-        private void OnDialogClose(bool closed)
+        private void OnDialogClose(string speakerName)
         {
             if (_state == GameState.Dialog)
             {
                 _state = GameState.World;
             }
+
+            StartCoroutine(SceneLoader.Instance.UnloadScene("UI.Popup.Dialog", true));
+        }
+
+        private IEnumerator ShowDialog(DialogItem dialog)
+        {
+            // We need to wait until the UI.Popup.Dialog scene is loaded before we can dispatch the signal, otherwise
+            // the DialogController won't be enabled to listen for it.
+            yield return SceneLoader.Instance.LoadSceneNoUnload("UI.Popup.Dialog", true);
+            yield return YieldHelper.END_OF_FRAME;
+            GameSignals.DIALOG_SHOW.Dispatch(dialog);
         }
 
         private void EndBattle(BattleResult result, bool isCharBattle)

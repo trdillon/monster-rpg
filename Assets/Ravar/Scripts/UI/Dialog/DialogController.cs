@@ -8,7 +8,6 @@ using Itsdits.Ravar.Settings;
 using Itsdits.Ravar.UI.Localization;
 using Itsdits.Ravar.Util;
 using TMPro;
-using UnityEngine.EventSystems;
 
 namespace Itsdits.Ravar.UI.Dialog
 {
@@ -17,12 +16,6 @@ namespace Itsdits.Ravar.UI.Dialog
     /// </summary>
     public class DialogController : MonoBehaviour
     {
-        [Header("Scene Management")]
-        [Tooltip("EventSystem for the Dialog scene.")]
-        [SerializeField] private EventSystem _eventSystem;
-        [Tooltip("Canvas that contains the UI elements in the scene.")]
-        [SerializeField] private GameObject _canvas;
-        
         [Header("UI Elements")]
         [Tooltip("The Text element of the Dialog Box.")]
         [SerializeField] private TextMeshProUGUI _dialogText;
@@ -38,19 +31,15 @@ namespace Itsdits.Ravar.UI.Dialog
         private void OnEnable()
         {
             _controls = new PlayerControls();
-            DisableDialog(true);
+            _controls.Enable();
             _interact = _controls.Player.Interact;
             _textLocalizer = _dialogText.GetComponent<TextLocalizer>();
-            GameSignals.DIALOG_OPEN.AddListener(EnableDialog);
-            GameSignals.DIALOG_CLOSE.AddListener(DisableDialog);
             GameSignals.DIALOG_SHOW.AddListener(OnDialogShow);
         }
 
         private void OnDisable()
         {
             _controls.Disable();
-            GameSignals.DIALOG_OPEN.RemoveListener(EnableDialog);
-            GameSignals.DIALOG_CLOSE.RemoveListener(DisableDialog);
             GameSignals.DIALOG_SHOW.RemoveListener(OnDialogShow);
         }
 
@@ -61,8 +50,7 @@ namespace Itsdits.Ravar.UI.Dialog
                 yield return TypeDialog(_dialog[i]);
             }
             
-            GameSignals.DIALOG_FINISH.Dispatch(_nameText.text);
-            GameSignals.DIALOG_CLOSE.Dispatch(true);
+            GameSignals.DIALOG_CLOSE.Dispatch(_nameText.text);
         }
 
         private IEnumerator TypeDialog(string dialog)
@@ -85,7 +73,7 @@ namespace Itsdits.Ravar.UI.Dialog
                 }
                 
                 counter += 1;
-                yield return YieldHelper.TypingTime;
+                yield return YieldHelper.TYPING_TIME;
             }
         }
 
@@ -100,23 +88,9 @@ namespace Itsdits.Ravar.UI.Dialog
             }
             else
             {
-                GameSignals.DIALOG_CLOSE.Dispatch(true);
+                GameSignals.DIALOG_CLOSE.Dispatch(null);
                 throw new ArgumentException($"Null dialog passed with signal. Speaker: {dialogItem.Speaker}");
             }
-        }
-
-        private void EnableDialog(bool enable)
-        {
-            _eventSystem.enabled = true;
-            _canvas.SetActive(true);
-            _controls.Enable();
-        }
-
-        private void DisableDialog(bool disabled)
-        {
-            _eventSystem.enabled = false;
-            _canvas.SetActive(false);
-            _controls.Disable();
         }
 
         private void SetNamePlate(string speakerName)

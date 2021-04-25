@@ -247,7 +247,7 @@ namespace Itsdits.Ravar.Battle
             if (CheckIfMoveHits(move, attackingMonster.Monster, defendingMonster.Monster))
             {
                 attackingMonster.PlayAttackAnimation();
-                yield return YieldHelper.HalfSecond;
+                yield return YieldHelper.HALF_SECOND;
                 defendingMonster.PlayHitAnimation();
 
                 // If status move then don't deal damage, switch to UseMoveEffects coroutine.
@@ -370,7 +370,7 @@ namespace Itsdits.Ravar.Battle
             }
 
             downedMonster.PlayDownedAnimation();
-            yield return YieldHelper.TwoSeconds;
+            yield return YieldHelper.TWO_SECONDS;
 
             if (!downedMonster.IsPlayerMonster)
             {
@@ -412,7 +412,7 @@ namespace Itsdits.Ravar.Battle
                     }
                 }
 
-                yield return YieldHelper.OneSecond;
+                yield return YieldHelper.ONE_SECOND;
             }
 
             // Wait until move learning is finished before calling CheckIfBattleIsOver.
@@ -439,7 +439,7 @@ namespace Itsdits.Ravar.Battle
             {
                 yield return _dialogBox.TypeDialog($"{_playerMonster.Monster.Base.Name}, fall back!");
                 _playerMonster.PlayDownedAnimation(); //TODO - create animation for returning to party
-                yield return YieldHelper.TwoSeconds;
+                yield return YieldHelper.TWO_SECONDS;
             }
 
             _playerMonster.Setup(newMonster);
@@ -490,7 +490,7 @@ namespace Itsdits.Ravar.Battle
                 _playerParty.AddMonster(_enemyMonster.Monster);
                 yield return _dialogBox.TypeDialog($"{_enemyMonster.Monster.Base.Name} was added to your team!");
                 
-                yield return YieldHelper.TwoSeconds;
+                yield return YieldHelper.TWO_SECONDS;
                 _battleAnimator.CleanUp();
                 BattleOver(BattleResult.Won);
             }
@@ -512,7 +512,7 @@ namespace Itsdits.Ravar.Battle
             }
 
             // Wait until the animation finishes to clean up.
-            yield return YieldHelper.TwoAndChangeSeconds;
+            yield return YieldHelper.TWO_AND_CHANGE_SECONDS;
             _battleAnimator.CleanUp();
         }
 

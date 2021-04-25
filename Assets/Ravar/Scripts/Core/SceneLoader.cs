@@ -59,7 +59,7 @@ namespace Itsdits.Ravar.Core
 
             // Load the next scene then wait for a frame to set it active.
             yield return SceneManager.LoadSceneAsync(nextScene, LoadSceneMode.Additive);
-            yield return YieldHelper.EndOfFrame;
+            yield return YieldHelper.END_OF_FRAME;
             SceneManager.SetActiveScene(SceneManager.GetSceneByName(nextScene));
             
             // Update the current world scene in case the player has changed levels.
@@ -84,12 +84,12 @@ namespace Itsdits.Ravar.Core
                 yield break;
             }
             
-            // Update the current world scene because the player might quit the game from the temp scene.
+            // Update the current world scene so we can set it back to active after the temp scene is unloaded.
             UpdateCurrentWorldScene();
             
             // Load the temp scene and wait a frame for it to finish.
             yield return SceneManager.LoadSceneAsync(tempScene, LoadSceneMode.Additive);
-            yield return YieldHelper.EndOfFrame;
+            yield return YieldHelper.END_OF_FRAME;
 
             // If the temp scene shouldn't be the active scene then break, otherwise set it active.
             if (!setActive)
@@ -104,11 +104,17 @@ namespace Itsdits.Ravar.Core
         /// Unloads a scene that is no longer needed.
         /// </summary>
         /// <param name="oldScene">Scene to unload.</param>
+        /// <param name="setLastWorldSceneActive">If the previous World scene needs to be set as the active scene after unloading.</param>
         /// <returns></returns>
-        public IEnumerator UnloadScene(string oldScene)
+        public IEnumerator UnloadScene(string oldScene, bool setLastWorldSceneActive)
         {
+            if (setLastWorldSceneActive)
+            {
+                SceneManager.SetActiveScene(SceneManager.GetSceneByName(_currentWorldScene));
+            }
+            
             yield return SceneManager.UnloadSceneAsync(oldScene);
-            yield return YieldHelper.EndOfFrame;
+            yield return YieldHelper.END_OF_FRAME;
         }
 
         /// <summary>
@@ -129,7 +135,7 @@ namespace Itsdits.Ravar.Core
             // be safe and make sure we didn't miss anything.
             for (var i = 0; i < activeWorldScenes.Count; i++)
             {
-                yield return Instance.UnloadScene(activeWorldScenes[i]);
+                yield return Instance.UnloadScene(activeWorldScenes[i], false);
             }
         }
 

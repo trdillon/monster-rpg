@@ -21,11 +21,10 @@ namespace Itsdits.Ravar.Core.Signal
         public static readonly Signal<bool> PORTAL_EXIT = new Signal<bool>();
         
         // Dialog
-        public static readonly Signal<bool> DIALOG_OPEN = new Signal<bool>();
-        public static readonly Signal<bool> DIALOG_CLOSE = new Signal<bool>();
+        public static readonly Signal<DialogItem> DIALOG_OPEN = new Signal<DialogItem>();
         public static readonly Signal<DialogItem> DIALOG_SHOW = new Signal<DialogItem>();
-        public static readonly Signal<string> DIALOG_FINISH = new Signal<string>();
-        
+        public static readonly Signal<string> DIALOG_CLOSE = new Signal<string>();
+
         // Battle
         public static readonly Signal<BattlerEncounter> BATTLE_LOS = new Signal<BattlerEncounter>();
         public static readonly Signal<BattlerEncounter> BATTLE_START = new Signal<BattlerEncounter>();

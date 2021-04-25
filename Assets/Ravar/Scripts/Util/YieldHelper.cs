@@ -7,14 +7,14 @@ namespace Itsdits.Ravar.Util
     /// </summary>
     public static class YieldHelper
     {
-        public static WaitForSeconds TypingTime = new WaitForSeconds(0.05f);
-        public static WaitForSeconds FifthSecond = new WaitForSeconds(0.2f);
-        public static WaitForSeconds HalfSecond = new WaitForSeconds(0.5f);
-        public static WaitForSeconds OneSecond = new WaitForSeconds(1f);
-        public static WaitForSeconds TwoSeconds = new WaitForSeconds(2f);
-        public static WaitForSeconds TwoAndChangeSeconds = new WaitForSeconds(2.1f);
-        public static WaitForSeconds ThreeSeconds = new WaitForSeconds(3f);
-        public static WaitForSeconds FourSeconds = new WaitForSeconds(4f);
-        public static WaitForEndOfFrame EndOfFrame = new WaitForEndOfFrame();
+        public static readonly WaitForSeconds TYPING_TIME = new WaitForSeconds(0.02f);
+        public static readonly WaitForSeconds FIFTH_SECOND = new WaitForSeconds(0.2f);
+        public static readonly WaitForSeconds HALF_SECOND = new WaitForSeconds(0.5f);
+        public static readonly WaitForSeconds ONE_SECOND = new WaitForSeconds(1f);
+        public static readonly WaitForSeconds TWO_SECONDS = new WaitForSeconds(2f);
+        public static readonly WaitForSeconds TWO_AND_CHANGE_SECONDS = new WaitForSeconds(2.1f);
+        public static readonly WaitForSeconds THREE_SECONDS = new WaitForSeconds(3f);
+        public static readonly WaitForSeconds FOUR_SECONDS = new WaitForSeconds(4f);
+        public static readonly WaitForEndOfFrame END_OF_FRAME = new WaitForEndOfFrame();
     }
 }

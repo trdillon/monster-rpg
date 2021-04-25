@@ -25,9 +25,9 @@ namespace Itsdits.Ravar
  
         private IEnumerator ActivateInputComponent()
         {
-            yield return YieldHelper.EndOfFrame;
+            yield return YieldHelper.END_OF_FRAME;
             _inputSystemUIInputModule.enabled = false;
-            yield return YieldHelper.FifthSecond;
+            yield return YieldHelper.FIFTH_SECOND;
             _inputSystemUIInputModule.enabled = true;
         }
     }

@@ -90,7 +90,7 @@ namespace Itsdits.Ravar.Animation
 
             _burstObj = Instantiate(_burstSprite, enemyPosition, Quaternion.identity);
             var burst = _burstObj.GetComponent<SpriteRenderer>();
-            yield return YieldHelper.TwoSeconds;
+            yield return YieldHelper.TWO_SECONDS;
 
             // Quit after 1 beam.
             if (beamCount == 0 || beamCount == 1)
@@ -105,7 +105,7 @@ namespace Itsdits.Ravar.Animation
             beam2.DOFade(0, 0.5f);
 
             burst.transform.DOScale(5f, 0.5f);
-            yield return YieldHelper.TwoSeconds;
+            yield return YieldHelper.TWO_SECONDS;
 
             // Quit after 2 beams.
             if (beamCount == 2)
@@ -120,7 +120,7 @@ namespace Itsdits.Ravar.Animation
 
             burst.transform.DOScale(10f, 0.5f);
             beam3.DOFade(0, 0.5f);
-            yield return YieldHelper.TwoSeconds;
+            yield return YieldHelper.TWO_SECONDS;
 
             // Quit after 3 beams.
             if (beamCount == 3)
@@ -134,10 +134,10 @@ namespace Itsdits.Ravar.Animation
             yield return burst.DOFade(0, 1f);
 
             crystal.transform.DOScale(2f, 1.5f);
-            yield return YieldHelper.OneSecond;
+            yield return YieldHelper.ONE_SECOND;
             crystal.transform.DOLocalMove(origin, 1.5f);
             crystal.DOFade(0f, 1.5f);
-            yield return YieldHelper.TwoSeconds;          
+            yield return YieldHelper.TWO_SECONDS;          
         }
 
         /// <summary>

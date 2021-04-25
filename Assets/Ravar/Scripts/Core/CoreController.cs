@@ -55,7 +55,7 @@ namespace Itsdits.Ravar.Core
             }
             else if (previousScene == "UI.Menu.Pause")
             {
-                StartCoroutine(SceneLoader.Instance.UnloadScene("UI.Menu.Load"));
+                StartCoroutine(SceneLoader.Instance.UnloadScene("UI.Menu.Load", false));
                 GameSignals.GAME_RESUME.Dispatch(true);
             }
         }
@@ -74,12 +74,12 @@ namespace Itsdits.Ravar.Core
             _playerController.GetComponent<SpriteRenderer>().enabled = false;
         }
 
-        private void OnDialogOpen(bool opened)
+        private void OnDialogOpen(DialogItem dialogItem)
         {
             _eventSystem.enabled = false;
         }
 
-        private void OnDialogClose(bool closed)
+        private void OnDialogClose(string speakerName)
         {
             _eventSystem.enabled = true;
         }

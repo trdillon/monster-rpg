@@ -59,12 +59,12 @@ namespace Itsdits.Ravar.Character
 
         private void OnEnable()
         {
-            GameSignals.DIALOG_FINISH.AddListener(OnDialogFinish);
+            GameSignals.DIALOG_CLOSE.AddListener(OnDialogClose);
         }
 
         private void OnDisable()
         {
-            GameSignals.DIALOG_FINISH.RemoveListener(OnDialogFinish);
+            GameSignals.DIALOG_CLOSE.RemoveListener(OnDialogClose);
         }
 
         private void Update()
@@ -80,7 +80,7 @@ namespace Itsdits.Ravar.Character
         {
             // Show alert over head.
             _alert.gameObject.SetActive(true);
-            yield return YieldHelper.OneSecond;
+            yield return YieldHelper.ONE_SECOND;
             _alert.gameObject.SetActive(false);
 
             // Move to the player, stopping 1 tile before them.
@@ -94,8 +94,7 @@ namespace Itsdits.Ravar.Character
             if (_introDialog.Count > 0) 
             {
                 var dialog = new DialogItem(_introDialog.ToArray(), _name);
-                GameSignals.DIALOG_OPEN.Dispatch(true);
-                GameSignals.DIALOG_SHOW.Dispatch(dialog);
+                GameSignals.DIALOG_OPEN.Dispatch(dialog);
             }
             else
             {
@@ -124,14 +123,12 @@ namespace Itsdits.Ravar.Character
             if (_state == BattlerState.Ready)
             {
                 var dialog = new DialogItem(_introDialog.ToArray(), _name);
-                GameSignals.DIALOG_OPEN.Dispatch(true);
-                GameSignals.DIALOG_SHOW.Dispatch(dialog);
+                GameSignals.DIALOG_OPEN.Dispatch(dialog);
             }
             else
             {
                 var dialog = new DialogItem(_outroDialog.ToArray(), _name);
-                GameSignals.DIALOG_OPEN.Dispatch(true);
-                GameSignals.DIALOG_SHOW.Dispatch(dialog);
+                GameSignals.DIALOG_OPEN.Dispatch(dialog);
             }
         }
 
@@ -159,7 +156,7 @@ namespace Itsdits.Ravar.Character
             }
         }
 
-        private void OnDialogFinish(string speakerName)
+        private void OnDialogClose(string speakerName)
         {
             if (speakerName != _name)
             {

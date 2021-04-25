@@ -94,7 +94,7 @@ namespace Itsdits.Ravar.UI.Menu
         private void ReturnToGame()
         {
             DisableSceneManagement();
-            StartCoroutine(SceneLoader.Instance.UnloadScene("UI.Menu.Pause"));
+            StartCoroutine(SceneLoader.Instance.UnloadScene("UI.Menu.Pause", false));
             GameSignals.GAME_RESUME.Dispatch(true);
         }
         
