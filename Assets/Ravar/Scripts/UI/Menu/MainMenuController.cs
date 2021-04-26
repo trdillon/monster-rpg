@@ -5,9 +5,9 @@ using UnityEngine.UI;
 namespace Itsdits.Ravar.UI.Menu
 {
     /// <summary>
-    /// Controller class for the Main Menu scene. <seealso cref="MenuController"/>
+    /// Controller class for the Main Menu scene.
     /// </summary>
-    public class MainMenuController : MenuController
+    public class MainMenuController : MonoBehaviour
     {
         [Header("UI Buttons")]
         [Tooltip("Button for starting a new game.")]
@@ -23,7 +23,6 @@ namespace Itsdits.Ravar.UI.Menu
 
         private void OnEnable()
         {
-            EnableSceneManagement();
             _newGameButton.onClick.AddListener(NewGame);
             _loadGameButton.onClick.AddListener(LoadGame);
             _settingsButton.onClick.AddListener(SettingsMenu);
@@ -43,25 +42,21 @@ namespace Itsdits.Ravar.UI.Menu
         
         private void NewGame()
         {
-            DisableSceneManagement();
             StartCoroutine(SceneLoader.Instance.LoadScene("UI.Menu.NewGame"));
         }
 
         private void LoadGame()
         {
-            DisableSceneManagement();
             StartCoroutine(SceneLoader.Instance.LoadScene("UI.Menu.Load"));
         }
 
         private void SettingsMenu()
         {
-            DisableSceneManagement();
             StartCoroutine(SceneLoader.Instance.LoadScene("UI.Menu.Settings"));
         }
 
         private void InfoMenu()
         {
-            DisableSceneManagement();
             StartCoroutine(SceneLoader.Instance.LoadScene("UI.Menu.Info"));
         }
 

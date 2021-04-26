@@ -1,18 +1,18 @@
-using System.Collections;
 using Itsdits.Ravar.Core;
 using Itsdits.Ravar.Data;
 using Itsdits.Ravar.Monster;
 using Itsdits.Ravar.UI.Localization;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 namespace Itsdits.Ravar.UI.Menu
 {
     /// <summary>
-    /// Controller class for the New Game scene. <seealso cref="MenuController"/>
+    /// Controller class for the New Game scene.
     /// </summary>
-    public class NewGameController : MenuController
+    public class NewGameController : MonoBehaviour
     {
         [Header("Player Input")]
         [Tooltip("Player name. This is how the saved game will be identified.")]
@@ -43,10 +43,11 @@ namespace Itsdits.Ravar.UI.Menu
         [SerializeField] private Button _startButton;
 
         private string _selectedMonster;
+        private TextLocalizer _feedbackLocalizer;
 
         private void OnEnable()
         {
-            EnableSceneManagement();
+            _feedbackLocalizer = _inputFeedback.GetComponent<TextLocalizer>();
             _startButton.onClick.AddListener(StartGame);
             _backButton.onClick.AddListener(ReturnToMenu);
         }
@@ -59,7 +60,7 @@ namespace Itsdits.Ravar.UI.Menu
 
         private void Update()
         {
-            UpdateMonsterSelection(EventSystem.currentSelectedGameObject);
+            UpdateMonsterSelection(EventSystem.current.currentSelectedGameObject);
         }
 
         private void StartGame()
@@ -68,14 +69,12 @@ namespace Itsdits.Ravar.UI.Menu
             {
                 return;
             }
-
-            DisableSceneManagement();
+            
             GameData.NewGameData(_nameInput.text, _selectedMonster);
         }
 
         private void ReturnToMenu()
         {
-            DisableSceneManagement();
             StartCoroutine(SceneLoader.Instance.LoadScene("UI.Menu.Main"));
         }
 
@@ -87,7 +86,7 @@ namespace Itsdits.Ravar.UI.Menu
                 return true;
             }
 
-            _inputFeedback.GetComponent<TextLocalizer>().ChangeKey("UI_NAME_LENGTH");
+            _feedbackLocalizer.ChangeKey("UI_NAME_LENGTH");
             return false;
         }
 
@@ -98,7 +97,7 @@ namespace Itsdits.Ravar.UI.Menu
                 return true;
             }
 
-            _inputFeedback.GetComponent<TextLocalizer>().ChangeKey("UI_MONSTER_EMPTY");
+            _feedbackLocalizer.ChangeKey("UI_MONSTER_EMPTY");
             return false;
         }
 

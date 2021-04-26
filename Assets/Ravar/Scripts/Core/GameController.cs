@@ -7,8 +7,6 @@ using Itsdits.Ravar.Monster;
 using Itsdits.Ravar.Monster.Condition;
 using Itsdits.Ravar.Util;
 using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.SceneManagement;
 
 namespace Itsdits.Ravar.Core
 {
@@ -28,13 +26,10 @@ namespace Itsdits.Ravar.Core
         [SerializeField] private BattleSystem _battleSystem;
         [Tooltip("The world camera that is attached to the Player GameObject.")]
         [SerializeField] private Camera _worldCamera;
-        [Tooltip("The event system for this scene.")]
-        [SerializeField] private EventSystem _eventSystem;
 
         private BattlerController _battler;
         private GameState _state;
         private GameState _prevState;
-        private string _previousSceneName;
 
         private void Awake()
         {
@@ -107,13 +102,11 @@ namespace Itsdits.Ravar.Core
 
         private void OnBattleStart(BattlerEncounter encounter)
         {
-            _eventSystem.enabled = false;
             _state = GameState.Battle;
         }
 
         private void OnBattleFinish()
         {
-            _eventSystem.enabled = true;
             _state = GameState.World;
         }
 
@@ -137,23 +130,24 @@ namespace Itsdits.Ravar.Core
         private void OnPause(bool pause)
         {
             _prevState = _state;
-            _previousSceneName = SceneManager.GetActiveScene().name;
-            _eventSystem.enabled = false;
-            StartCoroutine(SceneLoader.Instance.LoadSceneNoUnload("UI.Menu.Pause", true));
             _state = GameState.Pause;
+            Time.timeScale = 0;
+            StartCoroutine(SceneLoader.Instance.LoadSceneNoUnload("UI.Popup.Pause", true));
         }
         
         private void OnResume(bool resume)
         {
-            SceneManager.SetActiveScene(SceneManager.GetSceneByName(_previousSceneName));
             _state = _prevState;
-            _previousSceneName = null;
+            _prevState = GameState.Menu;
+            Time.timeScale = 1;
+            StartCoroutine(SceneLoader.Instance.UnloadScene("UI.Popup.Pause", true));
         }
 
         private void OnQuit(bool quit)
         {
-            _state = _prevState;
-            _previousSceneName = null;
+            _state = GameState.Menu;
+            StartCoroutine(SceneLoader.Instance.UnloadWorldScenes());
+            StartCoroutine(SceneLoader.Instance.LoadScene("UI.Menu.Main"));
         }
 
         private void OnPortalEnter(bool entered)
@@ -175,11 +169,7 @@ namespace Itsdits.Ravar.Core
 
         private void OnDialogClose(string speakerName)
         {
-            if (_state == GameState.Dialog)
-            {
-                _state = GameState.World;
-            }
-
+            _state = GameState.World;
             StartCoroutine(SceneLoader.Instance.UnloadScene("UI.Popup.Dialog", true));
         }
 

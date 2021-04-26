@@ -6,9 +6,9 @@ using UnityEngine.UI;
 namespace Itsdits.Ravar.UI.Menu
 {
     /// <summary>
-    /// Controller class for the Info Menu scene. <seealso cref="MenuController"/>
+    /// Controller class for the Info Menu scene.
     /// </summary>
-    public class InfoMenuController : MenuController
+    public class InfoMenuController : MonoBehaviour
     {
         [Header("UI Buttons")]
         [Tooltip("Back button to return to the Main Menu.")]
@@ -19,7 +19,6 @@ namespace Itsdits.Ravar.UI.Menu
         
         private void OnEnable()
         {
-            EnableSceneManagement();
             _backButton.onClick.AddListener(ReturnToMenu);
             _versionNumber.text = Application.version;
         }
@@ -31,7 +30,6 @@ namespace Itsdits.Ravar.UI.Menu
 
         private void ReturnToMenu()
         {
-            DisableSceneManagement();
             StartCoroutine(SceneLoader.Instance.LoadScene("UI.Menu.Main"));
         }
     }

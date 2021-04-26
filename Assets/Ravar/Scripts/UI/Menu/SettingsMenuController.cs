@@ -7,7 +7,7 @@ namespace Itsdits.Ravar.UI.Menu
     /// <summary>
     /// Controller class for the Settings Menu scene. <seealso cref="MenuController"/>
     /// </summary>
-    public class SettingsMenuController : MenuController
+    public class SettingsMenuController : MonoBehaviour
     {
         [Header("UI Buttons")]
         [Tooltip("Back button to return to the Main Menu.")]
@@ -17,7 +17,6 @@ namespace Itsdits.Ravar.UI.Menu
         
         private void OnEnable()
         {
-            EnableSceneManagement();
             _backButton.onClick.AddListener(ReturnToMenu);
             _saveButton.onClick.AddListener(SaveSettings);
         }
@@ -35,15 +34,13 @@ namespace Itsdits.Ravar.UI.Menu
         private void SaveSettings()
         {
             // Save settings
-            DisableSceneManagement();
             string previousScene = PlayerPrefs.GetString("previousMenu");
-            StartCoroutine(SceneLoader.Instance.LoadScene(previousScene == "UI.Menu.Pause" ? 
-                                                              "UI.Menu.Pause" : "UI.Menu.Main"));
+            StartCoroutine(SceneLoader.Instance.LoadScene(previousScene == "UI.Popup.Pause" ? 
+                                                              "UI.Popup.Pause" : "UI.Menu.Main"));
         }
 
         private void ReturnToMenu()
         {
-            DisableSceneManagement();
             StartCoroutine(SceneLoader.Instance.LoadScene("UI.Menu.Main"));
         }
     }
