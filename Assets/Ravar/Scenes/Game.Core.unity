@@ -210,8 +210,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerController: {fileID: 277360800994137942}
-  _playerCamera: {fileID: 277360800994137941}
-  _eventSystem: {fileID: 4571546569231960410}
 --- !u!1001 &277360800994137939
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -384,11 +382,35 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents:
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 277360800994137942}
+        m_TargetAssemblyTypeName: Itsdits.Ravar.Character.PlayerController, Assembly-CSharp
+        m_MethodName: OnMove
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: edbb856b-cf20-4920-b2c4-fbb071aad9f7
     m_ActionName: Player/Move[/Keyboard/w,/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/s,/Keyboard/leftArrow,/Keyboard/a,/Keyboard/rightArrow,/Keyboard/d]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 277360800994137942}
+        m_TargetAssemblyTypeName: Itsdits.Ravar.Character.PlayerController, Assembly-CSharp
+        m_MethodName: OnInteract
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 8dbbf1e9-38ef-449d-8e6a-9b71a5027366
     m_ActionName: Player/Interact[/Keyboard/z,/Keyboard/enter]
   - m_PersistentCalls:
@@ -396,7 +418,19 @@ MonoBehaviour:
     m_ActionId: 76637719-320f-4d8f-9e8e-0ff690ce0a88
     m_ActionName: Player/Cancel[/Keyboard/x,/Keyboard/backspace]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 277360800994137942}
+        m_TargetAssemblyTypeName: Itsdits.Ravar.Character.PlayerController, Assembly-CSharp
+        m_MethodName: OnPause
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: b23ce18c-f65f-4264-b173-13abece253c9
     m_ActionName: Player/Pause[/Keyboard/escape]
   - m_PersistentCalls:

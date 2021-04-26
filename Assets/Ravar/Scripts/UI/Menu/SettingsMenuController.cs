@@ -5,7 +5,7 @@ using UnityEngine.UI;
 namespace Itsdits.Ravar.UI.Menu
 {
     /// <summary>
-    /// Controller class for the Settings Menu scene. <seealso cref="MenuController"/>
+    /// Controller class for the Settings Menu scene.
     /// </summary>
     public class SettingsMenuController : MonoBehaviour
     {
@@ -41,7 +41,9 @@ namespace Itsdits.Ravar.UI.Menu
 
         private void ReturnToMenu()
         {
-            StartCoroutine(SceneLoader.Instance.LoadScene("UI.Menu.Main"));
+            string previousScene = PlayerPrefs.GetString("previousMenu");
+            StartCoroutine(SceneLoader.Instance.LoadScene(previousScene == "UI.Popup.Pause" ? 
+                                                              "UI.Popup.Pause" : "UI.Menu.Main"));
         }
     }
 }

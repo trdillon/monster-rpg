@@ -24,7 +24,7 @@ namespace Itsdits.Ravar.UI.Dialog
 
         private TextLocalizer _textLocalizer;
         private PlayerControls _controls;
-        private InputAction _interact;
+        private InputAction _interact; 
 
         private List<string> _dialog = new List<string>();
         

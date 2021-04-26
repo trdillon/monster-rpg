@@ -4,7 +4,6 @@ using Itsdits.Ravar.Core.Signal;
 using Itsdits.Ravar.Data;
 using Itsdits.Ravar.Levels;
 using Itsdits.Ravar.Monster;
-using Itsdits.Ravar.Settings;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -16,19 +15,12 @@ namespace Itsdits.Ravar.Character
     public class PlayerController : Moveable
     {
         [Header("Details")]
-        [Tooltip("Unique ID for this player to differentiate between save games. Automatically generated at runtime.")]
-        [SerializeField] private string _id;
         [Tooltip("The name of this player.")]
         [SerializeField] private string _name;
         [Tooltip("The sprite of the character to be displayed in the battle screen.")]
         [SerializeField] private Sprite _battleSprite;
 
         private MonsterParty _party;
-        
-        private PlayerControls _controls;
-        private InputAction _move;
-        private InputAction _interact;
-        private InputAction _pause;
         private Vector2 _inputVector;
         
         /// <summary>
@@ -46,11 +38,6 @@ namespace Itsdits.Ravar.Character
 
         private void Start()
         {
-            if (_id.Equals(null))
-            {
-                _id = _name + Random.Range(0, 65534);
-            }
-
             _party = GetComponent<MonsterParty>();
         }
 
@@ -59,14 +46,6 @@ namespace Itsdits.Ravar.Character
             GameSignals.GAME_NEW.AddListener(LoadPlayerData);
             GameSignals.GAME_SAVE.AddListener(SavePlayerData);
             GameSignals.GAME_LOAD.AddListener(LoadPlayerData);
-            _controls = new PlayerControls();
-            _controls.Enable();
-            _move = _controls.Player.Move;
-            _interact = _controls.Player.Interact;
-            _pause = _controls.Player.Pause;
-            _move.performed += OnMove;
-            _interact.performed += OnInteract;
-            _pause.performed += OnPause;
             _party = GetComponent<MonsterParty>();
         }
 
@@ -75,10 +54,6 @@ namespace Itsdits.Ravar.Character
             GameSignals.GAME_NEW.RemoveListener(LoadPlayerData);
             GameSignals.GAME_SAVE.RemoveListener(SavePlayerData);
             GameSignals.GAME_LOAD.RemoveListener(LoadPlayerData);
-            _move.performed -= OnMove;
-            _interact.performed -= OnInteract;
-            _pause.performed -= OnPause;
-            _controls.Disable();
         }
         
         /// <summary>
@@ -90,13 +65,18 @@ namespace Itsdits.Ravar.Character
             animator.IsMoving = IsMoving;
         }
         
-        private void OnMove(InputAction.CallbackContext context)
+        public void OnMove(InputAction.CallbackContext context)
         {
             _inputVector = context.ReadValue<Vector2>();
         }
 
-        private void OnInteract(InputAction.CallbackContext context)
+        public void OnInteract(InputAction.CallbackContext context)
         {
+            if (!context.performed)
+            {
+                return;
+            }
+
             // Check the direction the character is facing and get the next tile over.
             var lookingAt = new Vector3(animator.MoveX, animator.MoveY);
             Vector3 nextTile = transform.position + lookingAt;
@@ -109,14 +89,17 @@ namespace Itsdits.Ravar.Character
             }
         }
 
-        private void OnPause(InputAction.CallbackContext context)
+        public void OnPause(InputAction.CallbackContext context)
         {
-            GameSignals.GAME_PAUSE.Dispatch(true);
+            if (context.performed)
+            {
+                GameSignals.GAME_PAUSE.Dispatch(true);
+            }
         }
 
         private void SavePlayerData(string gameId)
         {
-            var playerData = new PlayerData(_id, SceneLoader.Instance.CurrentWorldScene, GetPositionAsIntArray());
+            var playerData = new PlayerData(_name, SceneLoader.Instance.CurrentWorldScene, GetPositionAsIntArray());
             List<MonsterData> partyData = _party.SaveMonsterParty();
             GameData.SaveGameData(playerData, partyData);
         }
@@ -124,7 +107,7 @@ namespace Itsdits.Ravar.Character
         private void LoadPlayerData(string gameId)
         {
             PlayerData loadData = GameData.PlayerData;
-            _id = loadData.id;
+            _name = loadData.id;
             var newPosition = new Vector2(loadData.currentPosition[0], loadData.currentPosition[1]);
             SetOffsetOnTile(newPosition);
             _party.LoadMonsterParty(GameData.MonsterData);
