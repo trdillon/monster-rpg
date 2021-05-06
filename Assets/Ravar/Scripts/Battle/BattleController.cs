@@ -84,7 +84,7 @@ namespace Itsdits.Ravar.Battle
             }
             else if (battleMove.State == BattleState.MoveSelection)
             {
-                if (_playerMonster.CurrentMove.Energy == 0)
+                if (_playerMonster.CurrentMove.Energy < 1)
                 {
                     return;
                 }
@@ -103,7 +103,7 @@ namespace Itsdits.Ravar.Battle
             _ui.HideHud();
             if (!_isCharBattle)
             {
-                yield return _ui.TypeDialog("BATTLE_WILD_ENCOUNTER");
+                yield return _ui.TypeDialog($"You have encountered an enemy {_enemyMonster.Base.Name}!");
                 
                 // Setup the monsters and send them into the battle.
                 _playerMonster = _playerParty.GetHealthyMonster();
@@ -118,7 +118,7 @@ namespace Itsdits.Ravar.Battle
             {
                 // Show the characters and battle intro dialog.
                 _animator.ShowCharacterSprites(_player, _battler);
-                yield return _ui.TypeDialog("BATTLE_CHAR_ENCOUNTER");
+                yield return _ui.TypeDialog($"{_battler.Name} has challenged you to a battle!");
                 
                 // Setup the monsters and send them into the battle.
                 _enemyMonster = _battlerParty.GetHealthyMonster();
@@ -135,7 +135,7 @@ namespace Itsdits.Ravar.Battle
             _escapeAttempts = 0;
             _state = BattleState.ActionSelection;
             _ui.ActionSelection();
-            yield return _ui.TypeDialog("BATTLE_ACTION_SELECT");
+            yield return _ui.TypeDialog("Select an action:");
         }
 
         private IEnumerator ExecuteTurn(BattleAction playerAction)

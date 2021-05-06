@@ -2,7 +2,6 @@ using System.Collections;
 using Itsdits.Ravar.Battle;
 using Itsdits.Ravar.Character;
 using Itsdits.Ravar.Core.Signal;
-using Itsdits.Ravar.Levels;
 using Itsdits.Ravar.Monster;
 using Itsdits.Ravar.Monster.Condition;
 using Itsdits.Ravar.Util;
@@ -106,18 +105,6 @@ namespace Itsdits.Ravar.Core
             GameSignals.ENCOUNTER_START.Dispatch(new EncounterItem(monster, _playerController));
         }
 
-        /// <summary>
-        /// Starts a battle with a wild monster after Encounter collider is triggered.
-        /// </summary>
-        public void StartWildBattle()
-        {
-            _state = GameState.Battle;
-            var playerParty = _playerController.GetComponent<MonsterParty>();
-            //TODO - refactor the way we handle this. maybe a dictionary with the scenes and map areas in it?
-            MonsterObj wildMonster = FindObjectOfType<MapArea>().GetComponent<MapArea>().GetRandomMonster();
-            var enemyMonster = new MonsterObj(wildMonster.Base, wildMonster.Level);
-        }
-        
         private void EndBattle(BattleResult result, bool isCharBattle)
         {
             _state = GameState.World;

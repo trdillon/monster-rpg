@@ -9,6 +9,7 @@ using Itsdits.Ravar.UI.Localization;
 using Itsdits.Ravar.Util;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
@@ -72,7 +73,7 @@ namespace Itsdits.Ravar.Battle
         private const string MOVE_KEY_PREFIX = "MOVE_";
 
         private BattleState _state;
-        private TextLocalizer _dialogLocalizer;
+        //private TextLocalizer _dialogLocalizer;
         
         private PlayerControls _controls;
         private InputAction _interact;
@@ -92,7 +93,7 @@ namespace Itsdits.Ravar.Battle
             _controls.Enable();
             _interact = _controls.Player.Interact;
             _cancel = _controls.Player.Cancel;
-            _dialogLocalizer = _dialogText.GetComponent<TextLocalizer>();
+            //_dialogLocalizer = _dialogText.GetComponent<TextLocalizer>();
             _fightButton.onClick.AddListener(() => OnActionSelected(BattleAction.Move));
             _itemButton.onClick.AddListener(() => OnActionSelected(BattleAction.UseItem));
             _partyButton.onClick.AddListener(() => OnActionSelected(BattleAction.SwitchMonster));
@@ -109,6 +110,14 @@ namespace Itsdits.Ravar.Battle
             _controls.Disable();
         }
 
+        private void Update()
+        {
+            if (_state == BattleState.MoveSelection)
+            {
+                UpdateMoveSelection(EventSystem.current.currentSelectedGameObject);
+            }
+        }
+
         /// <summary>
         /// Teletype the dialog one character at a time.
         /// </summary>
@@ -117,7 +126,8 @@ namespace Itsdits.Ravar.Battle
         public IEnumerator TypeDialog(string dialog)
         {
             // We first update the localizer key and force TMP to update.
-            _dialogLocalizer.ChangeKey(dialog);
+            //_dialogLocalizer.ChangeKey(dialog);
+            _dialogText.SetText(dialog);
             _dialogText.ForceMeshUpdate();
             
             // Get the character count and initialize the counter.
@@ -150,7 +160,7 @@ namespace Itsdits.Ravar.Battle
         {
             // Enable the action selector and wait for an onClick event.
             _actionSelector.SetActive(true);
-            _dialogLocalizer.ChangeKey("BATTLE_ACTION_SELECT");
+            //_dialogLocalizer.ChangeKey("BATTLE_ACTION_SELECT");
             _state = BattleState.ActionSelection;
         }
         
@@ -196,7 +206,7 @@ namespace Itsdits.Ravar.Battle
                 _currentMove = i;
                 var localizer = _moveButtons[i].GetComponentInChildren<TextLocalizer>();
                 localizer.ChangeKey(MOVE_KEY_PREFIX + _moves[i].Base.MoveName);
-                _moveButtons[i].onClick.AddListener(() => OnMoveSelected(_currentMove));
+                _moveButtons[i].onClick.AddListener(OnMoveSelected);
             }
         }
         
@@ -204,7 +214,7 @@ namespace Itsdits.Ravar.Battle
         {
             for (var i = 0; i < _moveButtons.Count; i++)
             {
-                _moveButtons[i].onClick.RemoveListener(() => OnMoveSelected(_currentMove));
+                _moveButtons[i].onClick.RemoveListener(OnMoveSelected);
             }
         }
 
@@ -229,14 +239,38 @@ namespace Itsdits.Ravar.Battle
             }
         }
 
-        private void OnMoveSelected(int moveNumber)
+        private void OnMoveSelected()
         {
             if (_state != BattleState.ForgetSelection && _state != BattleState.MoveSelection)
             {
                 return;
             }
          
-            GameSignals.BATTLE_MOVE_SELECT.Dispatch(new BattleMove(_state, moveNumber));
+            _moveSelector.SetActive(false);
+            _moveDetails.SetActive(false);
+            _dialogText.gameObject.SetActive(true);
+            GameSignals.BATTLE_MOVE_SELECT.Dispatch(new BattleMove(_state, _currentMove));
+        }
+
+        private void UpdateMoveSelection(GameObject selection)
+        {
+            string selectionName = selection.name;
+            if (!selectionName.Contains("Move"))
+            {
+                return;
+            }
+            
+            _currentMove = selectionName switch
+            {
+                "Move 1 Button" => 0,
+                "Move 2 Button" => 1,
+                "Move 3 Button" => 2,
+                "Move 4 Button" => 3,
+                _ => 0
+            };
+            
+            _energyText.SetText($"Energy: {_moves[_currentMove].Energy.ToString()}/{_moves[_currentMove].Base.Energy.ToString()}");
+            _typeText.SetText("Type: " + _moves[_currentMove].Base.Type);
         }
     }
 }
