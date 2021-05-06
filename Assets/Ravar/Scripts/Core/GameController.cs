@@ -38,6 +38,7 @@ namespace Itsdits.Ravar.Core
             GameSignals.DIALOG_CLOSE.AddListener(OnDialogClose);
             GameSignals.BATTLE_LOS.AddListener(OnBattlerEncounter);
             GameSignals.BATTLE_OPEN.AddListener(OnBattleOpen);
+            GameSignals.WILD_ENCOUNTER.AddListener(OnWildEncounter);
             GameSignals.PARTY_OPEN.AddListener(OnPartyOpen);
             GameSignals.PARTY_CLOSE.AddListener(OnPartyClose);
         }
@@ -53,6 +54,7 @@ namespace Itsdits.Ravar.Core
             GameSignals.DIALOG_CLOSE.RemoveListener(OnDialogClose);
             GameSignals.BATTLE_LOS.RemoveListener(OnBattlerEncounter);
             GameSignals.BATTLE_OPEN.RemoveListener(OnBattleOpen);
+            GameSignals.WILD_ENCOUNTER.RemoveListener(OnWildEncounter);
             GameSignals.PARTY_OPEN.RemoveListener(OnPartyOpen);
             GameSignals.PARTY_CLOSE.RemoveListener(OnPartyClose);
         }
@@ -81,6 +83,12 @@ namespace Itsdits.Ravar.Core
         {
             _state = GameState.World;
         }
+
+        private void OnWildEncounter(WildEncounter encounter)
+        {
+            _state = GameState.Battle;
+            StartCoroutine(ShowEncounter(encounter.Monster));
+        }
         
         private IEnumerator ShowBattle(BattlerController battler)
         {
@@ -89,6 +97,13 @@ namespace Itsdits.Ravar.Core
             yield return SceneLoader.Instance.LoadSceneNoUnload("Game.Battle", true);
             yield return YieldHelper.END_OF_FRAME;
             GameSignals.BATTLE_START.Dispatch(new BattleItem(_playerController, battler));
+        }
+
+        private IEnumerator ShowEncounter(MonsterObj monster)
+        {
+            yield return SceneLoader.Instance.LoadSceneNoUnload("Game.Battle", true);
+            yield return YieldHelper.END_OF_FRAME;
+            GameSignals.ENCOUNTER_START.Dispatch(new EncounterItem(monster, _playerController));
         }
 
         /// <summary>

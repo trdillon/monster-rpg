@@ -33,6 +33,10 @@ namespace Itsdits.Ravar.Core.Signal
         public static readonly Signal<bool> BATTLE_MOVE_UPDATE = new Signal<bool>();
         // public static readonly Signal<> BATTLE_END = new Signal<>();
         
+        // Encounter
+        public static readonly Signal<WildEncounter> WILD_ENCOUNTER = new Signal<WildEncounter>();
+        public static readonly Signal<EncounterItem> ENCOUNTER_START = new Signal<EncounterItem>();
+        
         // Party
         public static readonly Signal<bool> PARTY_OPEN = new Signal<bool>();
         public static readonly Signal<PartyItem> PARTY_SHOW = new Signal<PartyItem>();

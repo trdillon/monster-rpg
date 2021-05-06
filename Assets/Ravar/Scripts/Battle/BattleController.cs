@@ -27,8 +27,7 @@ namespace Itsdits.Ravar.Battle
         private MonsterParty _playerParty;
         private MonsterObj _playerMonster;
         private MonsterObj _enemyMonster;
-        private MonsterObj _wildMonster;
-        
+
         private BattleState _state;
         private BattleState? _prevState;
 
@@ -41,6 +40,7 @@ namespace Itsdits.Ravar.Battle
             _state = BattleState.Start;
             GameSignals.BATTLE_START.AddListener(OnBattleStart);
             GameSignals.BATTLE_MOVE_SELECT.AddListener(OnMoveSelect);
+            GameSignals.ENCOUNTER_START.AddListener(OnEncounterStart);
             GameSignals.PARTY_CHANGE.AddListener(OnPartyChange);
         }
 
@@ -48,6 +48,7 @@ namespace Itsdits.Ravar.Battle
         {
             GameSignals.BATTLE_START.RemoveListener(OnBattleStart);
             GameSignals.BATTLE_MOVE_SELECT.RemoveListener(OnMoveSelect);
+            GameSignals.ENCOUNTER_START.RemoveListener(OnEncounterStart);
             GameSignals.PARTY_CHANGE.RemoveListener(OnPartyChange);
         }
         
@@ -59,6 +60,16 @@ namespace Itsdits.Ravar.Battle
             _playerParty = _player.Party;
             _battlerParty = _battler.Party;
             _isCharBattle = true;
+            StartCoroutine(SetupBattle());
+        }
+
+        private void OnEncounterStart(EncounterItem encounterItem)
+        {
+            _state = BattleState.Busy;
+            _player = encounterItem.Player;
+            _enemyMonster = encounterItem.Monster;
+            _playerParty = _player.Party;
+            _isCharBattle = false;
             StartCoroutine(SetupBattle());
         }
 
@@ -96,10 +107,8 @@ namespace Itsdits.Ravar.Battle
                 
                 // Setup the monsters and send them into the battle.
                 _playerMonster = _playerParty.GetHealthyMonster();
-                //TODO - handle the passing of a wild monster into this
-                _wildMonster = _animator.EnemyMonster.Monster;
                 _animator.PlayerMonster.Setup(_playerMonster);
-                _animator.EnemyMonster.Setup(_wildMonster);
+                _animator.EnemyMonster.Setup(_enemyMonster);
                 _animator.ShowMonsterSprites();
                 
                 // Send the move list to the UI controller to be shown when the move selector is enabled.
