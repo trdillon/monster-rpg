@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Itsdits.Ravar.Core.Signal;
 using Itsdits.Ravar.Monster.Move;
 using Itsdits.Ravar.Settings;
 using Itsdits.Ravar.UI.Battle;
@@ -36,15 +38,21 @@ namespace Itsdits.Ravar.Battle
         [Header("Action Selector")]
         [Tooltip("GameObject that holds the Action Selector.")]
         [SerializeField] private GameObject _actionSelector;
-        [Tooltip("List of Text elements that display on the Action Selection screen.")]
-        [SerializeField] private List<Button> _actionButtons;
-        
+        [Tooltip("Button for the Fight action selection.")]
+        [SerializeField] private Button _fightButton;
+        [Tooltip("Button for the Item action selection.")]
+        [SerializeField] private Button _itemButton;
+        [Tooltip("Button for the Party action selection.")]
+        [SerializeField] private Button _partyButton;
+        [Tooltip("Button for the Run action selection.")]
+        [SerializeField] private Button _runButton;
+
         [Header("Move Selector")]
         [Tooltip("GameObject that holds the Move Selector.")]
         [SerializeField] private GameObject _moveSelector;
-        [Tooltip("List of Text elements that display on the Move Selection screen.")]
+        [Tooltip("List of buttons in the Move Selection box.")]
         [SerializeField] private List<Button> _moveButtons;
-        
+
         [Header("Move Details")]
         [Tooltip("GameObject that holds the Move Details.")]
         [SerializeField] private GameObject _moveDetails;
@@ -61,44 +69,64 @@ namespace Itsdits.Ravar.Battle
         [Tooltip("Text element that holds the No text.")]
         [SerializeField] private Button _noButton;
 
-        [Header("Variables")]
-        [Tooltip("The gradient to apply to the text to when highlighted.")]
-        [SerializeField] private TMP_ColorGradient _highlightGradient;
-        [Tooltip("The gradient to apply to the text when the text is not highlighted.")]
-        [SerializeField] private TMP_ColorGradient _standardGradient;
-
         private const string MOVE_KEY_PREFIX = "MOVE_";
+
+        private BattleState _state;
+        private TextLocalizer _dialogLocalizer;
         
         private PlayerControls _controls;
         private InputAction _interact;
         private InputAction _cancel;
-        private Vector2 _inputVector;
 
-        private TextLocalizer _textLocalizer;
+        private List<MoveObj> _moves;
+        private int _currentMove;
 
+        public BattleState State => _state;
+        public BattleHud PlayerHud => _playerHud;
+        public BattleHud EnemyHud => _enemyHud;
+        
         private void OnEnable()
         {
+            GameSignals.BATTLE_MOVE_UPDATE.AddListener(SetMoveList);
             _controls = new PlayerControls();
             _controls.Enable();
             _interact = _controls.Player.Interact;
             _cancel = _controls.Player.Cancel;
-            _textLocalizer = _dialogText.GetComponent<TextLocalizer>();
+            _dialogLocalizer = _dialogText.GetComponent<TextLocalizer>();
+            _fightButton.onClick.AddListener(() => OnActionSelected(BattleAction.Move));
+            _itemButton.onClick.AddListener(() => OnActionSelected(BattleAction.UseItem));
+            _partyButton.onClick.AddListener(() => OnActionSelected(BattleAction.SwitchMonster));
+            _runButton.onClick.AddListener(() => OnActionSelected(BattleAction.Run));
         }
 
         private void OnDisable()
         {
+            GameSignals.BATTLE_MOVE_UPDATE.RemoveListener(SetMoveList);
+            _fightButton.onClick.RemoveListener(() => OnActionSelected(BattleAction.Move));
+            _itemButton.onClick.RemoveListener(() => OnActionSelected(BattleAction.UseItem));
+            _partyButton.onClick.RemoveListener(() => OnActionSelected(BattleAction.SwitchMonster));
+            _runButton.onClick.RemoveListener(() => OnActionSelected(BattleAction.Run));
             _controls.Disable();
         }
-        
+
+        /// <summary>
+        /// Teletype the dialog one character at a time.
+        /// </summary>
+        /// <param name="dialog">Dialog to type.</param>
+        /// <returns>Typed dialog.</returns>
         public IEnumerator TypeDialog(string dialog)
         {
-            _textLocalizer.ChangeKey(dialog);
+            // We first update the localizer key and force TMP to update.
+            _dialogLocalizer.ChangeKey(dialog);
             _dialogText.ForceMeshUpdate();
+            
+            // Get the character count and initialize the counter.
             int totalVisibleCharacters = _dialogText.textInfo.characterCount;
             var counter = 0;
 
             while (true)
             {
+                // Display the next invisible character.
                 int visibleCount = counter % (totalVisibleCharacters + 1);
                 _dialogText.maxVisibleCharacters = visibleCount;
 
@@ -109,27 +137,30 @@ namespace Itsdits.Ravar.Battle
                     yield break;
                 }
                 
+                // Increment the counter and wait a fraction of a second.
                 counter += 1;
                 yield return YieldHelper.TYPING_TIME;
             }
         }
+
+        /// <summary>
+        /// Handle the action selection state.
+        /// </summary>
+        public void ActionSelection()
+        {
+            // Enable the action selector and wait for an onClick event.
+            _actionSelector.SetActive(true);
+            _dialogLocalizer.ChangeKey("BATTLE_ACTION_SELECT");
+            _state = BattleState.ActionSelection;
+        }
         
         /// <summary>
-        /// Set the move list.
+        /// Gets the move list for the player monster from the BattleController.
         /// </summary>
-        /// <param name="moves">Available moves.</param>
-        public void SetMoveList(List<MoveObj> moves)
+        /// <param name="moves">List of moves the current monster has.</param>
+        public void GetMoveList(List<MoveObj> moves)
         {
-            for (var i = 0; i < _moveButtons.Count; ++i)
-            {
-                if (i >= moves.Count)
-                {
-                    continue;
-                }
-                
-                var localizer = _moveButtons[i].GetComponentInChildren<TextLocalizer>();
-                localizer.ChangeKey(MOVE_KEY_PREFIX + moves[i].Base.MoveName);
-            }
+            _moves = moves;
         }
         
         /// <summary>
@@ -140,6 +171,72 @@ namespace Itsdits.Ravar.Battle
         {
             _playerHud.gameObject.SetActive(false);
             _enemyHud.gameObject.SetActive(false);
+        }
+
+        private void MoveSelection()
+        {
+            // Enable the move selector and wait for an onClick event.
+            _dialogText.gameObject.SetActive(false);
+            _actionSelector.SetActive(false);
+            _moveSelector.SetActive(true);
+            _moveDetails.SetActive(true);
+            SetMoveList(true);
+            _state = BattleState.MoveSelection;
+        }
+
+        private void SetMoveList(bool updated)
+        {
+            for (var i = 0; i < _moveButtons.Count; i++)
+            {
+                if (i > _moves.Count)
+                {
+                    return;
+                }
+
+                _currentMove = i;
+                var localizer = _moveButtons[i].GetComponentInChildren<TextLocalizer>();
+                localizer.ChangeKey(MOVE_KEY_PREFIX + _moves[i].Base.MoveName);
+                _moveButtons[i].onClick.AddListener(() => OnMoveSelected(_currentMove));
+            }
+        }
+        
+        private void ClearMoveList()
+        {
+            for (var i = 0; i < _moveButtons.Count; i++)
+            {
+                _moveButtons[i].onClick.RemoveListener(() => OnMoveSelected(_currentMove));
+            }
+        }
+
+        private void OnActionSelected(BattleAction action)
+        {
+            switch (action)
+            {
+                case BattleAction.Move:
+                    MoveSelection();
+                    break;
+                case BattleAction.UseItem:
+                    // Open inventory
+                    break;
+                case BattleAction.SwitchMonster:
+                    GameSignals.PARTY_OPEN.Dispatch(true);
+                    break;
+                case BattleAction.Run:
+                    // Run
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException(nameof(action), action, "Invalid BattleAction.");
+            }
+        }
+
+        private void OnMoveSelected(int moveNumber)
+        {
+            if (_state != BattleState.ForgetSelection && _state != BattleState.MoveSelection)
+            {
+                return;
+            }
+         
+            GameSignals.BATTLE_MOVE_SELECT.Dispatch(new BattleMove(_state, moveNumber));
         }
     }
 }

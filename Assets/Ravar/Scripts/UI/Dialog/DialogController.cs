@@ -12,7 +12,7 @@ using TMPro;
 namespace Itsdits.Ravar.UI.Dialog
 {
     /// <summary>
-    /// Controller class for displaying <see cref="Dialog"/>.
+    /// Controller class for displaying dialog.
     /// </summary>
     public class DialogController : MonoBehaviour
     {

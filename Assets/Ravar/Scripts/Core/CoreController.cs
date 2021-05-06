@@ -19,14 +19,14 @@ namespace Itsdits.Ravar.Core
             HidePlayer();
             GameSignals.GAME_NEW.AddListener(LoadGame);
             GameSignals.GAME_LOAD.AddListener(LoadGame);
-            GameSignals.BATTLE_START.AddListener(OnBattleStart);
+            GameSignals.BATTLE_OPEN.AddListener(OnBattleStart);
         }
 
         private void OnDestroy()
         {
             GameSignals.GAME_NEW.RemoveListener(LoadGame);
             GameSignals.GAME_LOAD.RemoveListener(LoadGame);
-            GameSignals.BATTLE_START.RemoveListener(OnBattleStart);
+            GameSignals.BATTLE_OPEN.RemoveListener(OnBattleStart);
         }
 
         private void LoadGame(string sceneName)

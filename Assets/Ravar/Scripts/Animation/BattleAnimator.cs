@@ -4,7 +4,6 @@ using DG.Tweening;
 using Itsdits.Ravar.Character;
 using Itsdits.Ravar.Monster;
 using Itsdits.Ravar.Util;
-using UnityEngine.UI;
 
 namespace Itsdits.Ravar.Animation
 {
@@ -15,9 +14,9 @@ namespace Itsdits.Ravar.Animation
     {
         [Header("Characters")]
         [Tooltip("Sprite of the player.")]
-        [SerializeField] private Image _playerImage;
+        [SerializeField] private BattleCharacter _player;
         [Tooltip("Sprite of the Battler.")]
-        [SerializeField] private Image _battlerImage;
+        [SerializeField] private BattleCharacter _battler;
         
         [Header("Monsters")]
         [Tooltip("Sprite of the player monster. Left-sided sprite.")]
@@ -35,14 +34,6 @@ namespace Itsdits.Ravar.Animation
         private GameObject _burstObj;
         private GameObject _crystalObj;
         
-        /// <summary>
-        /// Player's Battle scene character image.
-        /// </summary>
-        public Image PlayerImage => _playerImage;
-        /// <summary>
-        /// Enemy's Battle scene character image.
-        /// </summary>
-        public Image BattlerImage => _battlerImage;
         /// <summary>
         /// Player's BattleMonster in this Battle scene.
         /// </summary>
@@ -68,7 +59,6 @@ namespace Itsdits.Ravar.Animation
             * to just create this massive block of code to achieve it, but I'm sure my inexperience is showing here big time.
             * If it seems stupid, but it works, then I guess its not so stupid.
             */
-            //TODO - instantiate these under _Dynamic
             // Build the animation points.
             Vector3 enemyPosition = enemyMonster.transform.position;
             Vector3 origin = playerMonster.transform.position - new Vector3(2, 0);
@@ -151,18 +141,6 @@ namespace Itsdits.Ravar.Animation
             Destroy(_beamObj3, 0f);
             Destroy(_burstObj, 0f);
         }
-        
-        /// <summary>
-        /// Plays the battle start animation for the provided monster.
-        /// </summary>
-        /// <param name="monster">Monster to animate.</param>
-        public void PlayBattleStartAnimation(BattleMonster monster)
-        {
-            monster.Image.transform.localPosition = monster == _playerMonster ? 
-                new Vector3(-500f, monster.OriginalPos.y) : new Vector3(500f, monster.OriginalPos.y);
-
-            monster.Image.transform.DOLocalMoveX(monster.OriginalPos.x, 1f);
-        }
 
         /// <summary>
         /// Play the failed capture animation after breaking out of PlayCaptureAnimation.
@@ -184,10 +162,57 @@ namespace Itsdits.Ravar.Animation
         {
             _playerMonster.gameObject.SetActive(false);
             _enemyMonster.gameObject.SetActive(false);
-            _playerImage.gameObject.SetActive(true);
-            _battlerImage.gameObject.SetActive(true);
-            _playerImage.sprite = player.BattleSprite;
-            _battlerImage.sprite = battler.Sprite;
+            _player.gameObject.SetActive(true);
+            _battler.gameObject.SetActive(true);
+            _player.Image.sprite = player.Sprite;
+            _battler.Image.sprite = battler.Sprite;
+            PlayCharacterEnterAnimation(_player);
+            PlayCharacterEnterAnimation(_battler);
+        }
+
+        /// <summary>
+        /// Replaces the character sprites with the monster sprites.
+        /// </summary>
+        public void ReplaceCharactersWithMonsters()
+        {
+            PlayCharacterExitAnimation(_player);
+            PlayCharacterExitAnimation(_battler);
+            _player.gameObject.SetActive(false);
+            _battler.gameObject.SetActive(false);
+            _playerMonster.gameObject.SetActive(true);
+            _enemyMonster.gameObject.SetActive(true);
+            PlayMonsterEnterAnimation(_playerMonster);
+            PlayMonsterEnterAnimation(_enemyMonster);
+        }
+
+        /// <summary>
+        /// Shows the monster sprites in the battle scene.
+        /// </summary>
+        public void ShowMonsterSprites()
+        {
+            PlayMonsterEnterAnimation(_playerMonster);
+            PlayMonsterEnterAnimation(_enemyMonster);
+        }
+        
+        private void PlayCharacterEnterAnimation(BattleCharacter character)
+        {
+            character.Image.transform.localPosition = character == _player ? 
+                new Vector3(-500f, character.OriginalPos.y) : new Vector3(500f, character.OriginalPos.y);
+
+            character.Image.transform.DOLocalMoveX(character.OriginalPos.x, 1.5f);
+        }
+
+        private void PlayCharacterExitAnimation(BattleCharacter character)
+        {
+            character.Image.transform.DOLocalMoveX(-500f, 1.5f);
+        }
+        
+        private void PlayMonsterEnterAnimation(BattleMonster monster)
+        {
+            monster.Image.transform.localPosition = monster == _playerMonster ? 
+                new Vector3(-500f, monster.OriginalPos.y) : new Vector3(500f, monster.OriginalPos.y);
+
+            monster.Image.transform.DOLocalMoveX(monster.OriginalPos.x, 1.5f);
         }
     }
 }

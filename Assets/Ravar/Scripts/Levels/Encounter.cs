@@ -17,7 +17,7 @@ namespace Itsdits.Ravar.Levels
         {
             if (Random.Range(1, 101) <= 7)
             {
-                GameController.Instance.StartWildBattle();
+                //GameController.Instance.StartWildBattle();
             }
         }
     }

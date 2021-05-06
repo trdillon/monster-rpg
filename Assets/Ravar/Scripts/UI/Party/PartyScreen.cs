@@ -54,7 +54,7 @@ namespace Itsdits.Ravar.UI.Party
         {
             for (var i = 0; i < _monsters.Count; i++)
             {
-                _members[i].SetSelected(i == selectedMember);
+                //_members[i].SetSelected(i == selectedMember);
             }
         }
 

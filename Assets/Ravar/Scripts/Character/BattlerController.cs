@@ -36,6 +36,7 @@ namespace Itsdits.Ravar.Character
         [SerializeField] private GameObject _los;
 
         private MonsterParty _party;
+        private bool _isInteracting;
 
         /// <summary>
         /// Name of this Battler.
@@ -90,6 +91,7 @@ namespace Itsdits.Ravar.Character
             yield return Move(targetTile, null);
 
             // Show dialog for trash talk then start battle.
+            _isInteracting = true;
             player.ChangeDirection(transform.position);
             if (_introDialog.Count > 0) 
             {
@@ -101,6 +103,7 @@ namespace Itsdits.Ravar.Character
                 // If we are missing intro dialog we lock the Battler and throw an exception. This should allow us to
                 // gracefully recover and continue gameplay.
                 _state = BattlerState.Locked;
+                _isInteracting = false;
                 throw new ArgumentException($"Null dialog in Battler. Battler: {_name}");
             }
         }
@@ -111,12 +114,19 @@ namespace Itsdits.Ravar.Character
         /// <param name="interactingCharacter">Who or what to interact with.</param>
         public void InteractWith(Transform interactingCharacter)
         {
+            if (_isInteracting)
+            {
+                return;
+            }
+            
+            _isInteracting = true;
             ChangeDirection(interactingCharacter.position);
             if (_introDialog.Count < 1 || _outroDialog.Count < 1)
             {
                 // If we are missing intro or outro dialog we lock the Battler and throw an exception. This should
                 // allow us to gracefully recover and continue gameplay.
                 _state = BattlerState.Locked;
+                _isInteracting = false;
                 throw new ArgumentException($"Null dialog in Battler. Battler: {_name}");
             }
             
@@ -168,7 +178,7 @@ namespace Itsdits.Ravar.Character
                 return;
             }
             
-            GameSignals.BATTLE_START.Dispatch(new BattlerEncounter(this));
+            GameSignals.BATTLE_OPEN.Dispatch(new BattlerEncounter(this));
         }
         
         private void RotateLoS(Direction direction)

@@ -47,6 +47,7 @@ namespace Itsdits.Ravar.UI.Menu
 
         private void OnEnable()
         {
+            EventSystem.current.SetSelectedGameObject(_backButton.gameObject);
             _feedbackLocalizer = _inputFeedback.GetComponent<TextLocalizer>();
             _startButton.onClick.AddListener(StartGame);
             _backButton.onClick.AddListener(ReturnToMenu);

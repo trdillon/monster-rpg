@@ -18,7 +18,7 @@ namespace Itsdits.Ravar.Character
         [Tooltip("The name of this player.")]
         [SerializeField] private string _name;
         [Tooltip("The sprite of the character to be displayed in the battle screen.")]
-        [SerializeField] private Sprite _battleSprite;
+        [SerializeField] private Sprite _sprite;
 
         private MonsterParty _party;
         private Vector2 _inputVector;
@@ -30,7 +30,7 @@ namespace Itsdits.Ravar.Character
         /// <summary>
         /// The character sprite to be used in the battle screen.
         /// </summary>
-        public Sprite BattleSprite => _battleSprite;
+        public Sprite Sprite => _sprite;
         /// <summary>
         /// Exposes the player's monster party.
         /// </summary>

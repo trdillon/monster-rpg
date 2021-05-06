@@ -27787,10 +27787,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 397a013861aa0ac4dbd5affe2c0f8f8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _world: {fileID: 1379560797}
-  _characters:
-  - {fileID: 4234512495854693206}
-  - {fileID: 939942729593739407}
 --- !u!4 &1036887377
 Transform:
   m_ObjectHideFlags: 0
@@ -66180,11 +66176,6 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 939942729436302629, guid: 47cd7455646d355439d805c64a2ac9ab, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 47cd7455646d355439d805c64a2ac9ab, type: 3}
---- !u!1 &939942729593739407 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 939942729436302634, guid: 47cd7455646d355439d805c64a2ac9ab, type: 3}
-  m_PrefabInstance: {fileID: 939942729593739406}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4234512495854693205
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -66397,6 +66388,22 @@ PrefabInstance:
       value: 9.4
       objectReference: {fileID: 0}
     - target: {fileID: 4234512495102130386, guid: 9011473ac612dc7459683113ba4d8e02, type: 3}
+      propertyPath: _introDialog.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4234512495102130386, guid: 9011473ac612dc7459683113ba4d8e02, type: 3}
+      propertyPath: _introDialog.Array.data[0]
+      value: DIALOG_FORNWEST_THUG_GORDO_INTRO_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4234512495102130386, guid: 9011473ac612dc7459683113ba4d8e02, type: 3}
+      propertyPath: _introDialog.Array.data[1]
+      value: DIALOG_FORNWEST_THUG_GORDO_INTRO_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4234512495102130386, guid: 9011473ac612dc7459683113ba4d8e02, type: 3}
+      propertyPath: _outroDialog.Array.data[0]
+      value: DIALOG_FORNWEST_THUG_GORDO_OUTRO_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4234512495102130386, guid: 9011473ac612dc7459683113ba4d8e02, type: 3}
       propertyPath: introDialog.strings.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -66556,8 +66563,3 @@ PrefabInstance:
     - {fileID: 4234512495102130387, guid: 9011473ac612dc7459683113ba4d8e02, type: 3}
     - {fileID: 2390461265131322683, guid: 9011473ac612dc7459683113ba4d8e02, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9011473ac612dc7459683113ba4d8e02, type: 3}
---- !u!1 &4234512495854693206 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4234512495102130385, guid: 9011473ac612dc7459683113ba4d8e02, type: 3}
-  m_PrefabInstance: {fileID: 4234512495854693205}
-  m_PrefabAsset: {fileID: 0}

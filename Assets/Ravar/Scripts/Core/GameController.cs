@@ -11,21 +11,12 @@ using UnityEngine;
 namespace Itsdits.Ravar.Core
 {
     /// <summary>
-    /// Static controller for game state management.
+    /// Controller class for game flow management.
     /// </summary>
     public class GameController : MonoBehaviour
     {
-        /// <summary>
-        /// Static instance of the game controller.
-        /// </summary>
-        public static GameController Instance { get; private set; }
-
         [Tooltip("GameObject that holds the PlayerController component.")]
         [SerializeField] private PlayerController _playerController;
-        [Tooltip("GameObject that holds the BattleSystem component.")]
-        [SerializeField] private BattleSystem _battleSystem;
-        [Tooltip("The world camera that is attached to the Player GameObject.")]
-        [SerializeField] private Camera _worldCamera;
 
         private BattlerController _battler;
         private GameState _state;
@@ -33,7 +24,6 @@ namespace Itsdits.Ravar.Core
 
         private void Awake()
         {
-            Instance = this;
             ConditionDB.Init();
         }
 
@@ -47,8 +37,9 @@ namespace Itsdits.Ravar.Core
             GameSignals.DIALOG_OPEN.AddListener(OnDialogOpen);
             GameSignals.DIALOG_CLOSE.AddListener(OnDialogClose);
             GameSignals.BATTLE_LOS.AddListener(OnBattlerEncounter);
-            GameSignals.BATTLE_START.AddListener(OnBattleStart);
-            //_battleSystem.OnBattleOver += EndBattle;
+            GameSignals.BATTLE_OPEN.AddListener(OnBattleOpen);
+            GameSignals.PARTY_OPEN.AddListener(OnPartyOpen);
+            GameSignals.PARTY_CLOSE.AddListener(OnPartyClose);
         }
         
         private void OnDestroy()
@@ -61,8 +52,9 @@ namespace Itsdits.Ravar.Core
             GameSignals.DIALOG_OPEN.RemoveListener(OnDialogOpen);
             GameSignals.DIALOG_CLOSE.RemoveListener(OnDialogClose);
             GameSignals.BATTLE_LOS.RemoveListener(OnBattlerEncounter);
-            GameSignals.BATTLE_START.RemoveListener(OnBattleStart);
-            //_battleSystem.OnBattleOver -= EndBattle;
+            GameSignals.BATTLE_OPEN.RemoveListener(OnBattleOpen);
+            GameSignals.PARTY_OPEN.RemoveListener(OnPartyOpen);
+            GameSignals.PARTY_CLOSE.RemoveListener(OnPartyClose);
         }
 
         private void Update()
@@ -71,10 +63,32 @@ namespace Itsdits.Ravar.Core
             {
                 _playerController.HandleUpdate();
             }
-            else if (_state == GameState.Battle)
-            {
-                _battleSystem.HandleUpdate();
-            }
+        }
+        
+        private void OnBattlerEncounter(BattlerEncounter encounter)
+        {
+            _state = GameState.Cutscene;
+            StartCoroutine(encounter.Battler.TriggerEncounter(_playerController));
+        }
+
+        private void OnBattleOpen(BattlerEncounter encounter)
+        {
+            _state = GameState.Battle;
+            StartCoroutine(ShowBattle(encounter.Battler));
+        }
+        
+        private void OnBattleFinish()
+        {
+            _state = GameState.World;
+        }
+        
+        private IEnumerator ShowBattle(BattlerController battler)
+        {
+            // We need to wait until the Game.Battle scene is loaded before we can dispatch the signal, otherwise
+            // the BattleController won't be enabled to listen for it.
+            yield return SceneLoader.Instance.LoadSceneNoUnload("Game.Battle", true);
+            yield return YieldHelper.END_OF_FRAME;
+            GameSignals.BATTLE_START.Dispatch(new BattleItem(_playerController, battler));
         }
 
         /// <summary>
@@ -83,48 +97,28 @@ namespace Itsdits.Ravar.Core
         public void StartWildBattle()
         {
             _state = GameState.Battle;
-            _battleSystem.gameObject.SetActive(true);
-            _worldCamera.gameObject.SetActive(false);
-
             var playerParty = _playerController.GetComponent<MonsterParty>();
             //TODO - refactor the way we handle this. maybe a dictionary with the scenes and map areas in it?
             MonsterObj wildMonster = FindObjectOfType<MapArea>().GetComponent<MapArea>().GetRandomMonster();
             var enemyMonster = new MonsterObj(wildMonster.Base, wildMonster.Level);
-
-            _battleSystem.StartWildBattle(playerParty, enemyMonster);
         }
-
-        private void OnBattlerEncounter(BattlerEncounter encounter)
-        {
-            _state = GameState.Cutscene;
-            StartCoroutine(encounter.Battler.TriggerEncounter(_playerController));
-        }
-
-        private void OnBattleStart(BattlerEncounter encounter)
-        {
-            _state = GameState.Battle;
-        }
-
-        private void OnBattleFinish()
+        
+        private void EndBattle(BattleResult result, bool isCharBattle)
         {
             _state = GameState.World;
-        }
-
-        /// <summary>
-        /// Start a battle with enemy character.
-        /// </summary>
-        /// <param name="battler">Character to do battle with.</param>
-        public void StartCharBattle(BattlerController battler)
-        {
-            _state = GameState.Battle;
-            _battleSystem.gameObject.SetActive(true);
-            _worldCamera.gameObject.SetActive(false);
-
-            _battler = battler;
-            var playerParty = _playerController.GetComponent<MonsterParty>();
-            var battlerParty = battler.GetComponent<MonsterParty>();
-
-            _battleSystem.StartCharBattle(playerParty, battlerParty);
+            if (_battler != null && result == BattleResult.Won)
+            {
+                _battler.SetBattlerState(BattlerState.Defeated);
+                _battler = null;
+            }
+            else if (_battler != null && result == BattleResult.Lost)
+            {
+                //TODO - handle a loss
+            }
+            else
+            {
+                //TODO - handle error
+            }
         }
 
         private void OnPause(bool pause)
@@ -159,6 +153,7 @@ namespace Itsdits.Ravar.Core
         private void OnPortalExit(bool exited)
         {
             _state = _prevState;
+            _prevState = GameState.Cutscene;
         }
         
         private void OnDialogOpen(DialogItem dialog)
@@ -182,25 +177,25 @@ namespace Itsdits.Ravar.Core
             GameSignals.DIALOG_SHOW.Dispatch(dialog);
         }
 
-        private void EndBattle(BattleResult result, bool isCharBattle)
+        private void OnPartyOpen(bool opened)
         {
-            _state = GameState.World;
-            if (_battler != null && result == BattleResult.Won)
-            {
-                _battler.SetBattlerState(BattlerState.Defeated);
-                _battler = null;
-            }
-            else if (_battler != null && result == BattleResult.Lost)
-            {
-                //TODO - handle a loss
-            }
-            else
-            {
-                //TODO - handle error
-            }
+            _prevState = _state;
+            _state = GameState.Menu;
+            StartCoroutine(ShowParty());
+        }
 
-            _battleSystem.gameObject.SetActive(false);
-            _worldCamera.gameObject.SetActive(true);
+        private void OnPartyClose(bool closed)
+        {
+            _state = _prevState;
+            _prevState = GameState.Menu;
+            StartCoroutine(SceneLoader.Instance.UnloadScene("UI.Popup.Party", true));
+        }
+
+        private IEnumerator ShowParty()
+        {
+            StartCoroutine(SceneLoader.Instance.LoadSceneNoUnload("UI.Popup.Party", true));
+            yield return YieldHelper.END_OF_FRAME;
+            GameSignals.PARTY_SHOW.Dispatch(new PartyItem(_playerController.Party));
         }
     }
 }

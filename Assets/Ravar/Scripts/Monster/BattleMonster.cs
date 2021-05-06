@@ -57,15 +57,17 @@ namespace Itsdits.Ravar.Monster
         /// <param name="monster">Monster to setup.</param>
         public void Setup(MonsterObj monster)
         {
+            // Setup the monster and sprite
             Monster = monster;
             _image.sprite = _isPlayerMonster ? Monster.Base.LeftSprite : Monster.Base.RightSprite;
 
+            // Enable and set the HUD
             _hud.gameObject.SetActive(true);
             _hud.SetData(monster);
             
+            // Default color and scale
             _image.color = _originalColor;
             transform.localScale = new Vector3(1, 1, 1);
-            PlayBattleStartAnimation();
         }
 
         /// <summary>
@@ -117,20 +119,6 @@ namespace Itsdits.Ravar.Monster
         {
             Sequence sequence = DOTween.Sequence();
             sequence.Append(_image.transform.DOShakePosition(5f, 3));
-        }
-        
-        private void PlayBattleStartAnimation()
-        {
-            if (_isPlayerMonster)
-            {
-                _image.transform.localPosition = new Vector3(-500f, _originalPos.y);
-            }
-            else
-            {
-                _image.transform.localPosition = new Vector3(500f, _originalPos.y);
-            }
-
-            _image.transform.DOLocalMoveX(_originalPos.x, 1f);
         }
     }
 }
